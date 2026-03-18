@@ -1,5 +1,14 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Theme Design
+
+This project uses a custom dark theme tailored for a high-performance web scraping platform:
+
+### Color Palette
+
+- **Primary Colors**: Orange (`#f97316` / `orange-500`) and Amber (`#fbbf24` / `amber-400`). Used for branding, background glow effects, call-to-action buttons, and animated SVGs.
+- **Secondary Colors**: Slate (`#020617` / `slate-950` base backgrounds, `#0f172a` / `slate-900` component surfaces). Provides a sleek, high-contrast dark mode aesthetic suitable for developer tooling.
+
 ## Getting Started
 
 First, run the development server:
