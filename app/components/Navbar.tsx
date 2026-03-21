@@ -18,7 +18,12 @@ import {
   Code,
   Bot,
   Sparkles,
-  BrainCircuit
+  BrainCircuit,
+  ShoppingBag,
+  Users,
+  Home,
+  BarChart3,
+  Database
 } from 'lucide-react';
 
 /**
@@ -68,7 +73,7 @@ const mobileMenuVariants = {
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [activeDropdown, setActiveDropdown] = useState(null);
+  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -81,9 +86,45 @@ const Navbar = () => {
   const navLinks = [
     { name: 'AI Tools', hasDropdown: true },
     { name: 'Tools', hasDropdown: true },
+    { name: 'Datasets', hasDropdown: true },
     { name: 'About', hasDropdown: false },
     { name: 'Contact', hasDropdown: false },
     { name: 'Resources', hasDropdown: false },
+  ];
+
+  const datasetsMenu = [
+    {
+      category: 'E-commerce',
+      items: [
+        { name: 'Amazon Products', desc: 'Global product & pricing data', icon: <ShoppingBag size={18} /> },
+        { name: 'eBay Sold Items', desc: 'Market trend analysis', icon: <ShoppingBag size={18} /> },
+        { name: 'Walmart Listings', desc: 'Retail inventory data', icon: <ShoppingBag size={18} /> },
+      ]
+    },
+    {
+      category: 'Social Media',
+      items: [
+        { name: 'Instagram Profiles', desc: 'Influencer & post metrics', icon: <Users size={18} /> },
+        { name: 'Twitter Trends', desc: 'Real-time hashtag tracking', icon: <Twitter size={18} /> },
+        { name: 'LinkedIn Jobs', desc: 'Career market insights', icon: <Users size={18} /> },
+      ]
+    },
+    {
+      category: 'Real Estate',
+      items: [
+        { name: 'Zillow Property', desc: 'Housing market valuations', icon: <Home size={18} /> },
+        { name: 'Airbnb Reviews', desc: 'Short-term rental metrics', icon: <Home size={18} /> },
+        { name: 'Realtor Listings', desc: 'Commercial & residential', icon: <Home size={18} /> },
+      ]
+    },
+    {
+      category: 'Finance',
+      items: [
+        { name: 'Crypto Prices', desc: 'Live exchange rates', icon: <BarChart3 size={18} /> },
+        { name: 'Stock Markets', desc: 'Historical equity data', icon: <BarChart3 size={18} /> },
+        { name: 'Company Reports', desc: 'SEC filings & data', icon: <Database size={18} /> },
+      ]
+    }
   ];
 
   const aiTools = [
@@ -160,11 +201,16 @@ const Navbar = () => {
               >
                 <motion.button
                   variants={itemVariants}
-                  className="flex items-center gap-1 text-sm font-medium text-slate-300 hover:text-white transition-colors"
+                  className="flex items-center gap-1 text-sm font-medium text-slate-300 hover:text-white transition-colors py-2"
                 >
                   {link.name}
                   {link.hasDropdown && <ChevronDown size={14} className={`transition-transform duration-300 ${activeDropdown === link.name ? 'rotate-180' : ''}`} />}
                 </motion.button>
+
+                {/* Dropdown Bridge to prevent flickering */}
+                {link.hasDropdown && activeDropdown === link.name && (
+                  <div className="absolute top-full left-0 right-0 h-4 z-[40]" />
+                )}
 
                 <AnimatePresence>
                   {link.hasDropdown && activeDropdown === link.name && (
@@ -174,7 +220,7 @@ const Navbar = () => {
                       exit="hidden"
                       variants={dropdownVariants}
                       className={`absolute top-full mt-4 bg-slate-900 border border-white/10 rounded-2xl p-6 shadow-2xl backdrop-blur-xl z-50 overflow-hidden ${
-                        link.name === 'Tools' ? 'left-0 w-full' : link.name === 'AI Tools' ? 'left-0 w-80' : 'left-0 w-64'
+                        link.name === 'Tools' ? 'left-0 w-full' : link.name === 'AI Tools' ? 'left-0 w-80' : link.name === 'Datasets' ? '-left-64 lg:-left-80' : 'left-0 w-64'
                       }`}
                     >
                       {link.name === 'Tools' ? (
@@ -215,6 +261,29 @@ const Navbar = () => {
                                 <div className="text-xs text-slate-400 mt-0.5">{tool.desc}</div>
                               </div>
                             </button>
+                          ))}
+                        </div>
+                      ) : link.name === 'Datasets' ? (
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-[800px]">
+                          {datasetsMenu.map((category) => (
+                            <div key={category.category} className="flex flex-col gap-3">
+                              <h3 className="text-sm font-bold text-white uppercase tracking-wider mb-2">
+                                {category.category}
+                              </h3>
+                              <div className="flex flex-col gap-2">
+                                {category.items.map((item) => (
+                                  <button key={item.name} className="flex items-start gap-4 p-3 rounded-xl hover:bg-white/5 transition-colors text-left group">
+                                    <div className="mt-1 text-orange-400 group-hover:text-orange-300 transition-colors p-2 bg-orange-500/10 rounded-lg group-hover:bg-orange-500/20">
+                                      {item.icon}
+                                    </div>
+                                    <div>
+                                      <div className="text-sm font-bold text-slate-200 group-hover:text-white transition-colors">{item.name}</div>
+                                      <div className="text-xs text-slate-400 mt-0.5">{item.desc}</div>
+                                    </div>
+                                  </button>
+                                ))}
+                              </div>
+                            </div>
                           ))}
                         </div>
                       ) : (
