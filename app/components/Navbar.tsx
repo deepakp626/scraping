@@ -2,13 +2,14 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { 
-  Menu, 
-  X, 
-  ChevronDown, 
-  Settings, 
-  Shield, 
-  Zap, 
+import Link from 'next/link';
+import {
+  Menu,
+  X,
+  ChevronDown,
+  Settings,
+  Shield,
+  Zap,
   Search,
   Github,
   Twitter,
@@ -31,10 +32,10 @@ import {
  */
 const navVariants = {
   hidden: { y: -100, opacity: 0 },
-  visible: { 
-    y: 0, 
+  visible: {
+    y: 0,
     opacity: 1,
-    transition: { type: 'spring', stiffness: 100, damping: 20, staggerChildren: 0.1 } 
+    transition: { type: 'spring' as const, stiffness: 100, damping: 20, staggerChildren: 0.1 }
   }
 };
 
@@ -44,27 +45,27 @@ const itemVariants = {
 };
 
 const dropdownVariants = {
-  hidden: { 
-    opacity: 0, 
+  hidden: {
+    opacity: 0,
     y: 15,
     scale: 0.95,
     transition: { duration: 0.2 }
   },
-  visible: { 
-    opacity: 1, 
+  visible: {
+    opacity: 1,
     y: 0,
     scale: 1,
-    transition: { 
-      type: 'spring', 
-      stiffness: 300, 
-      damping: 20 
+    transition: {
+      type: 'spring' as const,
+      stiffness: 300,
+      damping: 20
     }
   }
 };
 
 const mobileMenuVariants = {
-  closed: { x: '100%', transition: { type: 'spring', stiffness: 400, damping: 40 } },
-  opened: { x: 0, transition: { type: 'spring', stiffness: 400, damping: 40 } }
+  closed: { x: '100%', transition: { type: 'spring' as const, stiffness: 400, damping: 40 } },
+  opened: { x: 0, transition: { type: 'spring' as const, stiffness: 400, damping: 40 } }
 };
 
 /**
@@ -88,8 +89,7 @@ const Navbar = () => {
     { name: 'Tools', hasDropdown: true },
     { name: 'Datasets', hasDropdown: true },
     { name: 'About', hasDropdown: false },
-    { name: 'Contact', hasDropdown: false },
-    { name: 'Resources', hasDropdown: false },
+    { name: 'Resources', hasDropdown: true },
   ];
 
   const datasetsMenu = [
@@ -135,6 +135,11 @@ const Navbar = () => {
     { name: 'Data Insights', desc: 'Extract insights from data', icon: <BrainCircuit size={18} /> },
   ];
 
+  const resourcesMenu = [
+    { name: 'Blog', desc: 'Read our latest insights and tutorials', icon: <FileText size={18} /> },
+    { name: 'Case Studies', desc: 'See how we helped other businesses', icon: <BarChart3 size={18} /> },
+  ];
+
   const toolsMenu = [
     {
       category: 'Document Tools',
@@ -168,32 +173,32 @@ const Navbar = () => {
         initial="hidden"
         animate="visible"
         variants={navVariants}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 px-4 md:px-6 py-4 ${
-          isScrolled ? 'mt-2' : 'mt-0'
-        }`}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 px-4 md:px-6 py-4 ${isScrolled ? 'mt-2' : 'mt-0'
+          }`}
       >
-        <div className={`relative w-full max-w-7xl mx-auto flex items-center justify-between px-6 py-3 rounded-2xl transition-all duration-500 ${
-          isScrolled 
-            ? 'bg-slate-900/80 backdrop-blur-xl border border-white/10 shadow-2xl' 
+        <div className={`relative w-full max-w-7xl mx-auto flex items-center justify-between px-6 py-3 rounded-2xl transition-all duration-500 ${isScrolled
+            ? 'bg-slate-900/80 backdrop-blur-xl border border-white/10 shadow-2xl'
             : 'bg-transparent'
-        }`}>
+          }`}>
           {/* Logo */}
-          <motion.div 
+          <motion.div
             variants={itemVariants}
-            className="flex items-center gap-2 cursor-pointer group"
+            className="cursor-pointer group"
           >
-            <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-amber-600 rounded-xl flex items-center justify-center shadow-lg group-hover:rotate-12 transition-transform">
-              <Zap className="fill-white" size={20} />
-            </div>
-            <span className="text-xl font-bold tracking-tight text-white">
-              Scraping
-            </span>
+            <Link href="/" className='flex items-center gap-2'>
+              <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-amber-600 rounded-xl flex items-center justify-center shadow-lg group-hover:rotate-12 transition-transform">
+                <Zap className="fill-white" size={20} />
+              </div>
+              <span className="text-xl font-bold tracking-tight text-white">
+                Scraping
+              </span>
+            </Link>
           </motion.div>
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
-              <div 
+              <div
                 key={link.name}
                 className={link.name === 'Tools' ? 'static' : 'relative'}
                 onMouseEnter={() => link.hasDropdown && setActiveDropdown(link.name)}
@@ -219,9 +224,8 @@ const Navbar = () => {
                       animate="visible"
                       exit="hidden"
                       variants={dropdownVariants}
-                      className={`absolute top-full mt-4 bg-slate-900 border border-white/10 rounded-2xl p-6 shadow-2xl backdrop-blur-xl z-50 overflow-hidden ${
-                        link.name === 'Tools' ? 'left-0 w-full' : link.name === 'AI Tools' ? 'left-0 w-80' : link.name === 'Datasets' ? '-left-64 lg:-left-80' : 'left-0 w-64'
-                      }`}
+                      className={`absolute top-full mt-4 bg-slate-900 border border-white/10 rounded-2xl p-6 shadow-2xl backdrop-blur-xl z-50 overflow-hidden ${link.name === 'Tools' ? 'left-0 w-full' : link.name === 'AI Tools' || link.name === 'Resources' ? 'left-0 w-80' : link.name === 'Datasets' ? '-left-64 lg:-left-80' : 'left-0 w-64'
+                        }`}
                     >
                       {link.name === 'Tools' ? (
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -286,6 +290,23 @@ const Navbar = () => {
                             </div>
                           ))}
                         </div>
+                      ) : link.name === 'Resources' ? (
+                        <div className="flex flex-col gap-2">
+                          <h3 className="text-sm font-bold text-white uppercase tracking-wider mb-2">
+                            Knowledge Center
+                          </h3>
+                          {resourcesMenu.map((item) => (
+                            <button key={item.name} className="flex items-start gap-4 p-3 rounded-xl hover:bg-white/5 transition-colors text-left group">
+                              <div className="mt-1 text-orange-400 group-hover:text-orange-300 transition-colors p-2 bg-orange-500/10 rounded-lg group-hover:bg-orange-500/20">
+                                {item.icon}
+                              </div>
+                              <div>
+                                <div className="text-sm font-bold text-slate-200 group-hover:text-white transition-colors">{item.name}</div>
+                                <div className="text-xs text-slate-400 mt-0.5">{item.desc}</div>
+                              </div>
+                            </button>
+                          ))}
+                        </div>
                       ) : (
                         <div className="flex flex-col gap-2">
                           <div className="p-4 text-sm text-slate-400">Content for {link.name}</div>
@@ -303,13 +324,13 @@ const Navbar = () => {
             <button className="p-2 text-slate-400 hover:text-white transition-colors">
               <Search size={20} />
             </button>
-            <button className="px-5 py-2.5 bg-orange-600 hover:bg-orange-500 rounded-xl text-sm font-bold text-white transition-all shadow-lg shadow-orange-500/20 active:scale-95">
-              Get Started
-            </button>
+            <Link href="/contact" className="px-5 py-2.5 bg-orange-600 hover:bg-orange-500 rounded-xl text-sm font-bold text-white transition-all shadow-lg shadow-orange-500/20 active:scale-95">
+              Contact
+            </Link>
           </motion.div>
 
           {/* Mobile Button */}
-          <motion.button 
+          <motion.button
             variants={itemVariants}
             className="md:hidden p-2 text-slate-300"
             onClick={() => setMobileMenuOpen(true)}
@@ -323,7 +344,7 @@ const Navbar = () => {
       <AnimatePresence>
         {mobileMenuOpen && (
           <>
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}

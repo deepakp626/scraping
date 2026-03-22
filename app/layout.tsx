@@ -4,6 +4,10 @@ import "./globals.css";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Resources from "./components/Resources";
+import WhatsAppChatIcon from "./components/WhatsAppChatIcon";
+import ConditionalContact from "./components/ConditionalContact";
+import Review from "./components/Review";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,11 +32,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
         <Navbar />
         {children}
+        <Resources />
+
+        <Review />
+        <ConditionalContact />
         <Footer />
+        <WhatsAppChatIcon />
       </body>
     </html>
   );

@@ -102,19 +102,22 @@ const Footer = () => {
           <p className="text-slate-500 text-sm">
             © {currentYear} Scraping Inc. All rights reserved.
           </p>
-          <div className="flex items-center gap-4">
-            <a href="#" className="text-slate-400 hover:text-orange-400 transition-colors p-2 hover:bg-orange-500/10 rounded-lg">
+          <div className="flex flex-wrap items-center justify-center gap-4">
+
+            <div className="w-px h-4 bg-white/10 hidden sm:block"></div>
+
+            <Link href="#" className="text-slate-400 hover:text-orange-400 transition-colors p-2 hover:bg-orange-500/10 rounded-lg">
               <Twitter size={18} />
-            </a>
-            <a href="#" className="text-slate-400 hover:text-orange-400 transition-colors p-2 hover:bg-orange-500/10 rounded-lg">
+            </Link>
+            <Link href="#" className="text-slate-400 hover:text-orange-400 transition-colors p-2 hover:bg-orange-500/10 rounded-lg">
               <Github size={18} />
-            </a>
-            <a href="#" className="text-slate-400 hover:text-orange-400 transition-colors p-2 hover:bg-orange-500/10 rounded-lg">
+            </Link>
+            <Link href="#" className="text-slate-400 hover:text-orange-400 transition-colors p-2 hover:bg-orange-500/10 rounded-lg">
               <Linkedin size={18} />
-            </a>
-            <a href="#" className="text-slate-400 hover:text-orange-400 transition-colors p-2 hover:bg-orange-500/10 rounded-lg">
+            </Link>
+            <Link href="#" className="text-slate-400 hover:text-orange-400 transition-colors p-2 hover:bg-orange-500/10 rounded-lg">
               <Mail size={18} />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
