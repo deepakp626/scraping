@@ -115,3 +115,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* @layer components {
+  a,
+  button,
+  [role="button"] {
+    @apply cursor-pointer;
+  }
+} */

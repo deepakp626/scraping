@@ -136,8 +136,8 @@ const Navbar = () => {
   ];
 
   const resourcesMenu = [
-    { name: 'Blog', desc: 'Read our latest insights and tutorials', icon: <FileText size={18} /> },
-    { name: 'Case Studies', desc: 'See how we helped other businesses', icon: <BarChart3 size={18} /> },
+    { name: 'Blog', href: '/blog', desc: 'Read our latest insights and tutorials', icon: <FileText size={18} /> },
+    { name: 'Case Studies', href: '/case-studies', desc: 'See how we helped other businesses', icon: <BarChart3 size={18} /> },
   ];
 
   const toolsMenu = [
@@ -177,8 +177,8 @@ const Navbar = () => {
           }`}
       >
         <div className={`relative w-full max-w-7xl mx-auto flex items-center justify-between px-6 py-3 rounded-2xl transition-all duration-500 ${isScrolled
-            ? 'bg-slate-900/80 backdrop-blur-xl border border-white/10 shadow-2xl'
-            : 'bg-transparent'
+          ? 'bg-slate-900/80 backdrop-blur-xl border border-white/10 shadow-2xl'
+          : 'border-1 border-white/10 bg-secondary-theme'
           }`}>
           {/* Logo */}
           <motion.div
@@ -208,7 +208,7 @@ const Navbar = () => {
                   variants={itemVariants}
                   className="flex items-center gap-1 text-sm font-medium text-slate-300 hover:text-white transition-colors py-2"
                 >
-                  {link.name}
+                  <Link href="/about">{link.name}</Link>
                   {link.hasDropdown && <ChevronDown size={14} className={`transition-transform duration-300 ${activeDropdown === link.name ? 'rotate-180' : ''}`} />}
                 </motion.button>
 
@@ -296,7 +296,7 @@ const Navbar = () => {
                             Knowledge Center
                           </h3>
                           {resourcesMenu.map((item) => (
-                            <button key={item.name} className="flex items-start gap-4 p-3 rounded-xl hover:bg-white/5 transition-colors text-left group">
+                            <Link href={item.href}  key={item.name} className="flex items-start gap-4 p-3 rounded-xl hover:bg-white/5 transition-colors text-left group">
                               <div className="mt-1 text-orange-400 group-hover:text-orange-300 transition-colors p-2 bg-orange-500/10 rounded-lg group-hover:bg-orange-500/20">
                                 {item.icon}
                               </div>
@@ -304,7 +304,7 @@ const Navbar = () => {
                                 <div className="text-sm font-bold text-slate-200 group-hover:text-white transition-colors">{item.name}</div>
                                 <div className="text-xs text-slate-400 mt-0.5">{item.desc}</div>
                               </div>
-                            </button>
+                            </Link>
                           ))}
                         </div>
                       ) : (

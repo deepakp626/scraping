@@ -8,6 +8,7 @@ import Resources from "./components/Resources";
 import WhatsAppChatIcon from "./components/WhatsAppChatIcon";
 import ConditionalContact from "./components/ConditionalContact";
 import Review from "./components/Review";
+import NextTopLoader from "nextjs-toploader";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,8 +33,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white`}
       >
+        <NextTopLoader color={'#f97316'} showSpinner={false} />
         <Navbar />
         {children}
         <Resources />

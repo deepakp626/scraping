@@ -129,7 +129,7 @@ export default function IndustryTabSection() {
         }
       }}
       className={`
-        flex items-center gap-4 p-4 rounded-xl border transition-all duration-200 text-left
+        flex items-center gap-4 p-4 rounded-xl border transition-all duration-200 text-left cursor-pointer
         ${activeTab === cat.id 
           ? 'bg-orange-600 text-white border-orange-600 shadow-lg shadow-orange-100 scale-[1.02]' 
           : 'bg-white text-gray-600 border-gray-200 hover:border-orange-200 hover:bg-orange-50'

@@ -14,6 +14,14 @@ import {
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
+  const companyLinks =[
+    { name: 'About Us', href: '/about' },
+    // { name: 'Careers', href: '/careers' },
+    { name: 'Blog', href: '/blog' },
+    { name: 'Contact', href: '/contact' },
+    { name: 'Privacy Policy', href: '/privacy-policy' },
+    ]
+
   return (
     <footer className="relative border-t border-white/10 bg-slate-950 pt-16 pb-8 overflow-hidden z-10 w-full mt-auto">
       {/* Background Subtle Glow */}
@@ -85,10 +93,10 @@ const Footer = () => {
           <div>
             <h3 className="text-sm font-bold text-slate-100 uppercase tracking-wider mb-4">Company</h3>
             <ul className="flex flex-col gap-3">
-              {['About Us', 'Careers', 'Blog', 'Contact', 'Privacy Policy'].map((item) => (
-                <li key={item}>
-                  <Link href="#" className="text-slate-400 hover:text-orange-400 text-sm transition-colors">
-                    {item}
+              {companyLinks.map((item) => (
+                <li key={item.name}>
+                  <Link href={item.href} className="text-slate-400 hover:text-orange-400 text-sm transition-colors">
+                    {item.name}
                   </Link>
                 </li>
               ))}

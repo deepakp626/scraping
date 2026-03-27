@@ -8,7 +8,6 @@ import ScrapingProcess from "./homeComponents/ScrapingProcess";
 import CountSection from "./homeComponents/CountSection";
 import ScrapingTechnology from "./homeComponents/ScrapingTechnology";
 
-
 export default function Home() {
   return (
     <main className="min-h-screen bg-slate-950 text-white ">
