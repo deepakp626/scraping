@@ -54,8 +54,8 @@ export default function FirecrawlFeatures() {
   return (
     <section className="relative min-h-screen bg-slate-950 p-6 md:p-12 lg:p-20 font-sans text-white overflow-hidden">
       {/* Ambient background glow */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-orange-500/10 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/2" />
-      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-500/10 blur-[100px] rounded-full translate-y-1/2 -translate-x-1/2" />
+      <div className="absolute top-0 right-0 w-125 h-125 bg-orange-500/10 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/2" />
+      <div className="absolute bottom-0 left-0 w-100 h-100 bg-blue-500/10 blur-[100px] rounded-full translate-y-1/2 -translate-x-1/2" />
 
       <div className="relative z-10 max-w-6xl mx-auto">
         <header className="text-center mb-16 space-y-4">
@@ -68,7 +68,7 @@ export default function FirecrawlFeatures() {
           </motion.div>
           <h2 className="text-3xl md:text-7xl font-bold tracking-tight">
             Why Choose {" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-amber-400 to-yellow-500">
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-orange-500 via-amber-400 to-yellow-500">
               Scraping
             </span>
           </h2>
@@ -81,7 +81,7 @@ export default function FirecrawlFeatures() {
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="group relative bg-white/[0.03] backdrop-blur-2xl rounded-[2rem] border border-white/10 shadow-3xl overflow-hidden flex flex-col hover:border-orange-500/30 transition-colors duration-500"
+            className="group relative bg-white/3 backdrop-blur-2xl rounded-4xl border border-white/10 shadow-3xl overflow-hidden flex flex-col hover:border-orange-500/30 transition-colors duration-500"
           >
             <div className="p-8 pb-10">
               <div className="flex items-center gap-3 text-orange-500 mb-4 font-semibold tracking-wide">
@@ -101,7 +101,7 @@ export default function FirecrawlFeatures() {
               <ComparisonRow 
                 label="Scraping.dev" 
                 value={percentages.firecrawl} 
-                color="bg-gradient-to-r from-orange-500 to-amber-500"
+                color="bg-linear-to-r from-orange-500 to-amber-500"
                 icon={<Zap className="text-white fill-white" size={20} />}
                 isPrimary
               />
@@ -126,7 +126,7 @@ export default function FirecrawlFeatures() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="group relative bg-white/[0.03] backdrop-blur-2xl rounded-[2rem] border border-white/10 shadow-3xl overflow-hidden flex flex-col hover:border-orange-500/30 transition-colors duration-500"
+            className="group relative bg-white/3 backdrop-blur-2xl rounded-4xl border border-white/10 shadow-3xl overflow-hidden flex flex-col hover:border-orange-500/30 transition-colors duration-500"
           >
             <div className="p-8 pb-10">
               <div className="flex items-center gap-3 text-orange-500 mb-4 font-semibold tracking-wide">
@@ -142,7 +142,7 @@ export default function FirecrawlFeatures() {
               </p>
             </div>
 
-            <div className="mt-auto border-t border-white/5 bg-black/40 relative min-h-[320px] overflow-hidden">
+            <div className="mt-auto border-t border-white/5 bg-black/40 relative min-h-80 overflow-hidden">
               <div className="p-8">
                  <table className="w-full text-left text-sm border-separate border-spacing-y-3">
                    <thead>
@@ -162,7 +162,7 @@ export default function FirecrawlFeatures() {
                            animate={{ opacity: 1, x: 0 }}
                            exit={{ opacity: 0, scale: 0.95 }}
                            transition={{ type: "spring", stiffness: 400, damping: 40 }}
-                           className={`group bg-white/[0.02] hover:bg-white/[0.05] transition-colors rounded-xl overflow-hidden ${row.highlighted ? 'bg-orange-500/5 ring-1 ring-orange-500/20' : ''}`}
+                           className={`group bg-white/2 hover:bg-white/5 transition-colors rounded-xl overflow-hidden ${row.highlighted ? 'bg-orange-500/5 ring-1 ring-orange-500/20' : ''}`}
                          >
                            <td className="py-4 px-3 font-medium rounded-l-xl">
                              <div className="flex flex-col">
@@ -215,10 +215,18 @@ export default function FirecrawlFeatures() {
   );
 }
 
-function ComparisonRow({ label, value, color, icon, isPrimary = false }) {
+interface ComparisonRowProps {
+  label: string;
+  value: number;
+  color: string;
+  icon: React.ReactNode;
+  isPrimary?: boolean;
+}
+
+function ComparisonRow({ label, value, color, icon, isPrimary = false }: ComparisonRowProps) {
   return (
     <div className="flex items-center gap-5 group/row">
-      <div className={`w-12 h-12 flex items-center justify-center rounded-xl bg-white/[0.03] border ${isPrimary ? 'border-orange-500/40 shadow-[0_0_15px_rgba(249,115,22,0.15)] bg-orange-500/5' : 'border-white/10'} group-hover/row:scale-110 transition-transform duration-300`}>
+      <div className={`w-12 h-12 flex items-center justify-center rounded-xl bg-white/3 border ${isPrimary ? 'border-orange-500/40 shadow-[0_0_15px_rgba(249,115,22,0.15)] bg-orange-500/5' : 'border-white/10'} group-hover/row:scale-110 transition-transform duration-300`}>
         {icon}
       </div>
       <div className="flex-1 space-y-1.5">

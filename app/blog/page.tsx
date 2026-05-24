@@ -71,7 +71,7 @@ const posts = [
 
 export default function Blog() {
   return (
-    <div className="container mx-auto min-h-screen from-orange-50 to-white px-6 py-12 pt-24">
+    <div className="container mx-auto min-h-screen from-orange-50 to-white px-6 py-12 pt-18">
       {/* Header */}
       <motion.div
         initial={{ opacity: 0, y: -40 }}
