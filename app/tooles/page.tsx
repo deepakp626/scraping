@@ -2,6 +2,7 @@
 import React from "react";
 import { PdfToolsSection } from "./pdf-tooles/page";
 import { ImageToolsSection } from "./image-tooles/page";
+import { CodingToolsSection } from "./coding-tooles/page";
 
 export default function Hero() {
   return (
@@ -45,6 +46,9 @@ export default function Hero() {
 
       {/* Image Tools */}
       <ImageToolsSection />
+
+      {/* Coding Tools */}
+      <CodingToolsSection />
     </section>
     </>
   );

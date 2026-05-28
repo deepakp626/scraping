@@ -1,5 +1,6 @@
 import React from "react";
 import dynamic from "next/dynamic";
+import { imageTools, ImageTool } from "../data/imageTools";
 
 interface PageProps {
   params: Promise<{
@@ -7,60 +8,33 @@ interface PageProps {
   }>;
 }
 
-type ImageTool = {
-  title: string;
-  subtitle: string;
-  description: string;
-  features: string[];
-  actionLabel: string;
-  component: string;
-};
-
 /* -----------------------------------
    Dynamic Component Imports
 ----------------------------------- */
 
 const componentsMap: Record<string, any> = {
-  ResizeImage: dynamic(
-    () => import("../components/ResizeImage")
-  ),
-
-  CompressImage: dynamic(
-    () => import("../components/CompressImage")
-  ),
+  CompressImage: dynamic(() => import("../components/CompressImage")),
+  ResizeImage: dynamic(() => import("../components/ResizeImage")),
+  CropImage: dynamic(() => import("../components/CropImage")),
+  ConvertJpg: dynamic(() => import("../components/ConvertJpg")),
+  ConvertPng: dynamic(() => import("../components/ConvertPng")),
+  ConvertWebp: dynamic(() => import("../components/ConvertWebp")),
+  RotateImage: dynamic(() => import("../components/RotateImage")),
+  FlipHorizontal: dynamic(() => import("../components/FlipHorizontal")),
+  FlipVertical: dynamic(() => import("../components/FlipVertical")),
+  ImageToPdf: dynamic(() => import("../components/ImageToPdf")),
+  RemoveBg: dynamic(() => import("../components/RemoveBg")),
+  EnhanceImage: dynamic(() => import("../components/EnhanceImage")),
+  AddWatermark: dynamic(() => import("../components/AddWatermark")),
+  BlurImage: dynamic(() => import("../components/BlurImage")),
+  SharpenImage: dynamic(() => import("../components/SharpenImage")),
+  ChangeFormat: dynamic(() => import("../components/ChangeFormat")),
+  ColorAdjust: dynamic(() => import("../components/ColorAdjust")),
+  MergeImages: dynamic(() => import("../components/MergeImages")),
+  SplitImage: dynamic(() => import("../components/SplitImage")),
+  AddText: dynamic(() => import("../components/AddText")),
 };
 
-/* -----------------------------------
-   Tool Config
------------------------------------ */
-
-const imageTools: Record<string, ImageTool> = {
-  "resize-image": {
-    title: "Resize Image",
-    subtitle: "Scale images easily",
-    description: "Resize images dynamically.",
-    features: [
-      "Custom width",
-      "Custom height",
-      "Maintain ratio",
-    ],
-    actionLabel: "Resize Now",
-    component: "ResizeImage",
-  },
-
-  "compress-image": {
-    title: "Compress Image",
-    subtitle: "Reduce image size",
-    description: "Compress image without quality loss.",
-    features: [
-      "Fast compression",
-      "High quality",
-      "Download instantly",
-    ],
-    actionLabel: "Compress Now",
-    component: "CompressImage",
-  },
-};
 
 /* -----------------------------------
    UI Component

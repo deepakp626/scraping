@@ -44,6 +44,7 @@ export function ImageToolsSection() {
     { name: "Merge Images", icon: Layers, link: "/tooles/image-tooles/merge-images" },
     { name: "Split Image", icon: Scissors, link: "/tooles/image-tooles/split-image" },
     { name: "Add Text to Image", icon: FilePlus, link: "/tooles/image-tooles/add-text" },
+    { name:"image to pdf", icon:FileUp, link:"/tooles/image-tooles/image-to-pdf"}
   ];
 
   return (
