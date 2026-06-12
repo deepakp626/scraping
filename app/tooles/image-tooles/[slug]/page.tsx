@@ -16,6 +16,7 @@ const componentsMap: Record<string, any> = {
   CompressImage: dynamic(() => import("../components/CompressImage")),
   ResizeImage: dynamic(() => import("../components/ResizeImage")),
   CropImage: dynamic(() => import("../components/CropImage")),
+  ConvertImages: dynamic(() => import("../components/ConvertImages")),
   ConvertJpg: dynamic(() => import("../components/ConvertJpg")),
   ConvertPng: dynamic(() => import("../components/ConvertPng")),
   ConvertWebp: dynamic(() => import("../components/ConvertWebp")),
@@ -33,6 +34,7 @@ const componentsMap: Record<string, any> = {
   MergeImages: dynamic(() => import("../components/MergeImages")),
   SplitImage: dynamic(() => import("../components/SplitImage")),
   AddText: dynamic(() => import("../components/AddText")),
+  PdfToImages: dynamic(() => import("../components/PdfToImages")),
 };
 
 
@@ -68,9 +70,9 @@ function ImageToolDetails({
             {tool.subtitle}
           </p>
 
-          <p className="max-w-3xl text-base leading-8 text-slate-700">
+          {/* <p className="max-w-3xl text-base leading-8 text-slate-700">
             {tool.description}
-          </p>
+          </p> */}
 
         </div>
 
@@ -80,7 +82,7 @@ function ImageToolDetails({
           {tool.features.map((feature) => (
             <div
               key={feature}
-              className="rounded-3xl border border-slate-200 bg-slate-50 p-5"
+              className="rounded-3xl border border-slate-200 bg-slate-50 p-2"
             >
               <p className="font-semibold text-slate-900">
                 {feature}

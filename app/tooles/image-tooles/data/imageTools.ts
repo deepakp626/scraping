@@ -167,5 +167,13 @@ export const imageTools: Record<string, ImageTool> = {
     features: ["Rich font library", "Color picker & styling", "Drag to reposition"],
     actionLabel: "Add Text Now",
     component: "AddText"
+  },
+  "pdf-to-images": {
+    title: "PDF to Images",
+    subtitle: "Convert PDF pages to images",
+    description: "Extract individual pages from PDF files and convert them into high-quality images.",
+    features: ["Extract all pages", "Adjust image resolution", "PDF to PNG/JPG conversion"],
+    actionLabel: "Convert Now",
+    component: "PdfToImages"
   }
 };

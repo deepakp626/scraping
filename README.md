@@ -43,3 +43,41 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+<!--  Graphify  -->
+## Graphify 
+
+<!-- graphify install -->
+```bash
+  uv tool install graphifyy
+```
+
+<!-- graphify build -->
+```bash
+  graphify build
+```
+
+<!-- installation for antigravity -->
+PS C:\Users\user\Desktop\scraping> graphify antigravity install
+  references       ->  C:\Users\user\.gemini\config\skills\graphify\references
+  skill installed  ->  C:\Users\user\.gemini\config\skills\graphify\SKILL.md
+
+Done. Open your AI coding assistant and type:
+
+  /graphify .
+
+graphify rule written to C:\Users\user\Desktop\scraping\.agents\rules\graphify.md        
+graphify workflow written to C:\Users\user\Desktop\scraping\.agents\workflows\graphify.md
+
+Antigravity will now check the knowledge graph before answering
+codebase questions. Run /graphify first to build the graph.
+
+To enable full MCP architecture navigation, add this to ~/.gemini/antigravity/mcp_config.json:    
+  "graphify": {
+    "command": "uv",
+    "args": ["run", "--with", "graphifyy", "--with", "mcp", "-m", "graphify.serve", "${workspace.path}/graphify-out/graph.json"]
+  }
+
+
+  

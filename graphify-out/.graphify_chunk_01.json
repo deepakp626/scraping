@@ -1,0 +1,719 @@
+{
+  "nodes": [
+    {
+      "id": "rules_graphify",
+      "label": "Graphify",
+      "file_type": "document",
+      "source_file": ".agents\\rules\\graphify.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "workflows_graphify",
+      "label": "Graphify",
+      "file_type": "document",
+      "source_file": ".agents\\workflows\\graphify.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "scraping_readme",
+      "label": "Readme",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_file",
+      "label": "File Icon",
+      "file_type": "image",
+      "source_file": "public\\file.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_globe",
+      "label": "Globe Icon",
+      "file_type": "image",
+      "source_file": "public\\globe.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "scrapingtechnology_beautifulsoup",
+      "label": "Beautifulsoup Icon",
+      "file_type": "image",
+      "source_file": "public\\images\\ScrapingTechnology\\beautifulsoup.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "scrapingtechnology_cheerio",
+      "label": "Cheerio Icon",
+      "file_type": "image",
+      "source_file": "public\\images\\ScrapingTechnology\\cheerio.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "scrapingtechnology_linux",
+      "label": "Linux Icon",
+      "file_type": "image",
+      "source_file": "public\\images\\ScrapingTechnology\\linux.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "scrapingtechnology_playwright",
+      "label": "Playwright Icon",
+      "file_type": "image",
+      "source_file": "public\\images\\ScrapingTechnology\\playwright.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "scrapingtechnology_puppeteer",
+      "label": "Puppeteer Icon",
+      "file_type": "image",
+      "source_file": "public\\images\\ScrapingTechnology\\puppeteer.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "scrapingtechnology_python",
+      "label": "Python Icon",
+      "file_type": "image",
+      "source_file": "public\\images\\ScrapingTechnology\\python.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "scrapingtechnology_scrapy",
+      "label": "Scrapy Icon",
+      "file_type": "image",
+      "source_file": "public\\images\\ScrapingTechnology\\scrapy.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "scrapingtechnology_selenium",
+      "label": "Selenium Icon",
+      "file_type": "image",
+      "source_file": "public\\images\\ScrapingTechnology\\selenium.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "industryicon_ecommerce_datasets",
+      "label": "Ecommerce Datasets Icon",
+      "file_type": "image",
+      "source_file": "public\\images\\datasets\\IndustryIcon\\Ecommerce-Datasets.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "industryicon_grocery_datasets",
+      "label": "Grocery Datasets Icon",
+      "file_type": "image",
+      "source_file": "public\\images\\datasets\\IndustryIcon\\Grocery-Datasets.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "industryicon_liquor_datasets",
+      "label": "Liquor Datasets Icon",
+      "file_type": "image",
+      "source_file": "public\\images\\datasets\\IndustryIcon\\Liquor-Datasets.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "industryicon_quick_commerce_datasets",
+      "label": "Quick Commerce Datasets Icon",
+      "file_type": "image",
+      "source_file": "public\\images\\datasets\\IndustryIcon\\Quick-Commerce-Datasets.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "industryicon_real_estate_datasets",
+      "label": "Real Estate Datasets Icon",
+      "file_type": "image",
+      "source_file": "public\\images\\datasets\\IndustryIcon\\Real-Estate-Datasets.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "industryicon_restaurant___food_delivery_tracking",
+      "label": "Restaurant And Food Delivery Tracking Icon",
+      "file_type": "image",
+      "source_file": "public\\images\\datasets\\IndustryIcon\\Restaurant-&-Food-Delivery-Tracking.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "industryicon_social_media_datasets",
+      "label": "Social Media Datasets Icon",
+      "file_type": "image",
+      "source_file": "public\\images\\datasets\\IndustryIcon\\Social-Media-Datasets.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "scrapingtechnology_beautifulsoup",
+      "target": "scrapingtechnology_cheerio",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "public/images/ScrapingTechnology/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "scrapingtechnology_beautifulsoup",
+      "target": "scrapingtechnology_linux",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "public/images/ScrapingTechnology/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "scrapingtechnology_beautifulsoup",
+      "target": "scrapingtechnology_playwright",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "public/images/ScrapingTechnology/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "scrapingtechnology_beautifulsoup",
+      "target": "scrapingtechnology_puppeteer",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "public/images/ScrapingTechnology/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "scrapingtechnology_beautifulsoup",
+      "target": "scrapingtechnology_python",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "public/images/ScrapingTechnology/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "scrapingtechnology_beautifulsoup",
+      "target": "scrapingtechnology_scrapy",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "public/images/ScrapingTechnology/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "scrapingtechnology_beautifulsoup",
+      "target": "scrapingtechnology_selenium",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "public/images/ScrapingTechnology/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "scrapingtechnology_cheerio",
+      "target": "scrapingtechnology_linux",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "public/images/ScrapingTechnology/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "scrapingtechnology_cheerio",
+      "target": "scrapingtechnology_playwright",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "public/images/ScrapingTechnology/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "scrapingtechnology_cheerio",
+      "target": "scrapingtechnology_puppeteer",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "public/images/ScrapingTechnology/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "scrapingtechnology_cheerio",
+      "target": "scrapingtechnology_python",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "public/images/ScrapingTechnology/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "scrapingtechnology_cheerio",
+      "target": "scrapingtechnology_scrapy",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "public/images/ScrapingTechnology/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "scrapingtechnology_cheerio",
+      "target": "scrapingtechnology_selenium",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "public/images/ScrapingTechnology/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "scrapingtechnology_linux",
+      "target": "scrapingtechnology_playwright",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "public/images/ScrapingTechnology/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "scrapingtechnology_linux",
+      "target": "scrapingtechnology_puppeteer",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "public/images/ScrapingTechnology/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "scrapingtechnology_linux",
+      "target": "scrapingtechnology_python",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "public/images/ScrapingTechnology/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "scrapingtechnology_linux",
+      "target": "scrapingtechnology_scrapy",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "public/images/ScrapingTechnology/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "scrapingtechnology_linux",
+      "target": "scrapingtechnology_selenium",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "public/images/ScrapingTechnology/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "scrapingtechnology_playwright",
+      "target": "scrapingtechnology_puppeteer",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "public/images/ScrapingTechnology/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "scrapingtechnology_playwright",
+      "target": "scrapingtechnology_python",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "public/images/ScrapingTechnology/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "scrapingtechnology_playwright",
+      "target": "scrapingtechnology_scrapy",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "public/images/ScrapingTechnology/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "scrapingtechnology_playwright",
+      "target": "scrapingtechnology_selenium",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "public/images/ScrapingTechnology/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "scrapingtechnology_puppeteer",
+      "target": "scrapingtechnology_python",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "public/images/ScrapingTechnology/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "scrapingtechnology_puppeteer",
+      "target": "scrapingtechnology_scrapy",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "public/images/ScrapingTechnology/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "scrapingtechnology_puppeteer",
+      "target": "scrapingtechnology_selenium",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "public/images/ScrapingTechnology/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "scrapingtechnology_python",
+      "target": "scrapingtechnology_scrapy",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "public/images/ScrapingTechnology/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "scrapingtechnology_python",
+      "target": "scrapingtechnology_selenium",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "public/images/ScrapingTechnology/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "scrapingtechnology_scrapy",
+      "target": "scrapingtechnology_selenium",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "public/images/ScrapingTechnology/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "industryicon_ecommerce_datasets",
+      "target": "industryicon_grocery_datasets",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/datasets/IndustryIcon/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "industryicon_ecommerce_datasets",
+      "target": "industryicon_liquor_datasets",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/datasets/IndustryIcon/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "industryicon_ecommerce_datasets",
+      "target": "industryicon_quick_commerce_datasets",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/datasets/IndustryIcon/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "industryicon_ecommerce_datasets",
+      "target": "industryicon_real_estate_datasets",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/datasets/IndustryIcon/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "industryicon_ecommerce_datasets",
+      "target": "industryicon_restaurant___food_delivery_tracking",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/datasets/IndustryIcon/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "industryicon_ecommerce_datasets",
+      "target": "industryicon_social_media_datasets",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/datasets/IndustryIcon/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "industryicon_grocery_datasets",
+      "target": "industryicon_liquor_datasets",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/datasets/IndustryIcon/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "industryicon_grocery_datasets",
+      "target": "industryicon_quick_commerce_datasets",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/datasets/IndustryIcon/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "industryicon_grocery_datasets",
+      "target": "industryicon_real_estate_datasets",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/datasets/IndustryIcon/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "industryicon_grocery_datasets",
+      "target": "industryicon_restaurant___food_delivery_tracking",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/datasets/IndustryIcon/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "industryicon_grocery_datasets",
+      "target": "industryicon_social_media_datasets",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/datasets/IndustryIcon/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "industryicon_liquor_datasets",
+      "target": "industryicon_quick_commerce_datasets",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/datasets/IndustryIcon/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "industryicon_liquor_datasets",
+      "target": "industryicon_real_estate_datasets",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/datasets/IndustryIcon/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "industryicon_liquor_datasets",
+      "target": "industryicon_restaurant___food_delivery_tracking",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/datasets/IndustryIcon/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "industryicon_liquor_datasets",
+      "target": "industryicon_social_media_datasets",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/datasets/IndustryIcon/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "industryicon_quick_commerce_datasets",
+      "target": "industryicon_real_estate_datasets",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/datasets/IndustryIcon/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "industryicon_quick_commerce_datasets",
+      "target": "industryicon_restaurant___food_delivery_tracking",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/datasets/IndustryIcon/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "industryicon_quick_commerce_datasets",
+      "target": "industryicon_social_media_datasets",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/datasets/IndustryIcon/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "industryicon_real_estate_datasets",
+      "target": "industryicon_restaurant___food_delivery_tracking",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/datasets/IndustryIcon/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "industryicon_real_estate_datasets",
+      "target": "industryicon_social_media_datasets",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/datasets/IndustryIcon/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "industryicon_restaurant___food_delivery_tracking",
+      "target": "industryicon_social_media_datasets",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/datasets/IndustryIcon/",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

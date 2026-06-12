@@ -3,6 +3,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
+import { ToolsMegaMenu } from './ToolsMegaMenu';
+import { DatasetsMegaMenu } from './DatasetsMegaMenu';
 import {
   Menu,
   X,
@@ -224,32 +226,16 @@ const Navbar = () => {
                       animate="visible"
                       exit="hidden"
                       variants={dropdownVariants}
-                      className={`absolute top-full mt-4 bg-slate-900 border border-white/10 rounded-2xl p-6 shadow-2xl backdrop-blur-xl z-50 overflow-hidden ${link.name === 'Tools' ? 'left-0 w-full' : link.name === 'AI Tools' || link.name === 'Resources' ? 'left-0 w-80' : link.name === 'Datasets' ? '-left-64 lg:-left-80' : 'left-0 w-64'
+                      className={`absolute top-full mt-4 bg-slate-900 border border-white/10 rounded-2xl p-6 shadow-2xl backdrop-blur-xl z-50 overflow-hidden ${
+                          link.name === 'Tools' || link.name === 'Datasets'
+                            ? 'left-1/2 -translate-x-1/2 w-auto'
+                            : link.name === 'AI Tools' || link.name === 'Resources'
+                            ? 'left-0 w-80'
+                            : 'left-0 w-64'
                         }`}
                     >
                       {link.name === 'Tools' ? (
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                          {toolsMenu.map((category) => (
-                            <div key={category.category} className="flex flex-col gap-3">
-                              <h3 className="text-sm font-bold text-white uppercase tracking-wider mb-2">
-                                {category.category}
-                              </h3>
-                              <div className="flex flex-col gap-2">
-                                {category.items.map((tool) => (
-                                  <button key={tool.name} className="flex items-start gap-4 p-3 rounded-xl hover:bg-white/5 transition-colors text-left group">
-                                    <div className="mt-1 text-orange-400 group-hover:text-orange-300 transition-colors p-2 bg-orange-500/10 rounded-lg group-hover:bg-orange-500/20">
-                                      {tool.icon}
-                                    </div>
-                                    <div>
-                                      <div className="text-sm font-bold text-slate-200 group-hover:text-white transition-colors">{tool.name}</div>
-                                      <div className="text-xs text-slate-400 mt-0.5">{tool.desc}</div>
-                                    </div>
-                                  </button>
-                                ))}
-                              </div>
-                            </div>
-                          ))}
-                        </div>
+                        <ToolsMegaMenu />
                       ) : link.name === 'AI Tools' ? (
                         <div className="flex flex-col gap-2">
                           <h3 className="text-sm font-bold text-white uppercase tracking-wider mb-2">
@@ -268,28 +254,7 @@ const Navbar = () => {
                           ))}
                         </div>
                       ) : link.name === 'Datasets' ? (
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-[800px]">
-                          {datasetsMenu.map((category) => (
-                            <div key={category.category} className="flex flex-col gap-3">
-                              <h3 className="text-sm font-bold text-white uppercase tracking-wider mb-2">
-                                {category.category}
-                              </h3>
-                              <div className="flex flex-col gap-2">
-                                {category.items.map((item) => (
-                                  <button key={item.name} className="flex items-start gap-4 p-3 rounded-xl hover:bg-white/5 transition-colors text-left group">
-                                    <div className="mt-1 text-orange-400 group-hover:text-orange-300 transition-colors p-2 bg-orange-500/10 rounded-lg group-hover:bg-orange-500/20">
-                                      {item.icon}
-                                    </div>
-                                    <div>
-                                      <div className="text-sm font-bold text-slate-200 group-hover:text-white transition-colors">{item.name}</div>
-                                      <div className="text-xs text-slate-400 mt-0.5">{item.desc}</div>
-                                    </div>
-                                  </button>
-                                ))}
-                              </div>
-                            </div>
-                          ))}
-                        </div>
+                        <DatasetsMegaMenu />
                       ) : link.name === 'Resources' ? (
                         <div className="flex flex-col gap-2">
                           <h3 className="text-sm font-bold text-white uppercase tracking-wider mb-2">

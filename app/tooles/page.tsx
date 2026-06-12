@@ -3,6 +3,7 @@ import React from "react";
 import { PdfToolsSection } from "./pdf-tooles/page";
 import { ImageToolsSection } from "./image-tooles/page";
 import { CodingToolsSection } from "./coding-tooles/page";
+import { ConverterToolsSection } from "./converter-tools/page";
 
 export default function Hero() {
   return (
@@ -49,6 +50,9 @@ export default function Hero() {
 
       {/* Coding Tools */}
       <CodingToolsSection />
+
+      {/* Converter Tools */}
+      <ConverterToolsSection />
     </section>
     </>
   );
