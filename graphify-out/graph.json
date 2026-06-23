@@ -211,60 +211,6 @@
       "norm_label": "conditionalcontact()"
     },
     {
-      "label": "DatasetsMegaMenu.tsx",
-      "file_type": "code",
-      "source_file": "app/components/DatasetsMegaMenu.tsx",
-      "source_location": "L1",
-      "id": "components_datasetsmegamenu",
-      "community": 4,
-      "norm_label": "datasetsmegamenu.tsx"
-    },
-    {
-      "label": "DatasetItem",
-      "file_type": "code",
-      "source_file": "app/components/DatasetsMegaMenu.tsx",
-      "source_location": "L43",
-      "id": "components_datasetsmegamenu_datasetitem",
-      "community": 4,
-      "norm_label": "datasetitem"
-    },
-    {
-      "label": "DatasetIndustry",
-      "file_type": "code",
-      "source_file": "app/components/DatasetsMegaMenu.tsx",
-      "source_location": "L49",
-      "id": "components_datasetsmegamenu_datasetindustry",
-      "community": 4,
-      "norm_label": "datasetindustry"
-    },
-    {
-      "label": "datasetIndustries",
-      "file_type": "code",
-      "source_file": "app/components/DatasetsMegaMenu.tsx",
-      "source_location": "L61",
-      "id": "components_datasetsmegamenu_datasetindustries",
-      "community": 4,
-      "norm_label": "datasetindustries"
-    },
-    {
-      "label": "panelVariants",
-      "file_type": "code",
-      "source_file": "app/components/DatasetsMegaMenu.tsx",
-      "source_location": "L260",
-      "id": "components_datasetsmegamenu_panelvariants",
-      "community": 4,
-      "norm_label": "panelvariants"
-    },
-    {
-      "label": "DatasetsMegaMenu()",
-      "file_type": "code",
-      "source_file": "app/components/DatasetsMegaMenu.tsx",
-      "source_location": "L270",
-      "id": "components_datasetsmegamenu_datasetsmegamenu",
-      "community": 4,
-      "norm_label": "datasetsmegamenu()"
-    },
-    {
       "label": "FAQ.tsx",
       "file_type": "code",
       "source_file": "app/components/FAQ.tsx",
@@ -301,58 +247,184 @@
       "norm_label": "footer()"
     },
     {
+      "label": "DatasetsMegaMenu.tsx",
+      "file_type": "code",
+      "source_file": "app/components/Navbar/DatasetsMegaMenu.tsx",
+      "source_location": "L1",
+      "id": "navbar_datasetsmegamenu",
+      "community": 4,
+      "norm_label": "datasetsmegamenu.tsx"
+    },
+    {
+      "label": "DatasetItem",
+      "file_type": "code",
+      "source_file": "app/components/Navbar/DatasetsMegaMenu.tsx",
+      "source_location": "L43",
+      "id": "navbar_datasetsmegamenu_datasetitem",
+      "community": 4,
+      "norm_label": "datasetitem"
+    },
+    {
+      "label": "DatasetIndustry",
+      "file_type": "code",
+      "source_file": "app/components/Navbar/DatasetsMegaMenu.tsx",
+      "source_location": "L49",
+      "id": "navbar_datasetsmegamenu_datasetindustry",
+      "community": 4,
+      "norm_label": "datasetindustry"
+    },
+    {
+      "label": "datasetIndustries",
+      "file_type": "code",
+      "source_file": "app/components/Navbar/DatasetsMegaMenu.tsx",
+      "source_location": "L61",
+      "id": "navbar_datasetsmegamenu_datasetindustries",
+      "community": 4,
+      "norm_label": "datasetindustries"
+    },
+    {
+      "label": "panelVariants",
+      "file_type": "code",
+      "source_file": "app/components/Navbar/DatasetsMegaMenu.tsx",
+      "source_location": "L260",
+      "id": "navbar_datasetsmegamenu_panelvariants",
+      "community": 4,
+      "norm_label": "panelvariants"
+    },
+    {
+      "label": "DatasetsMegaMenu()",
+      "file_type": "code",
+      "source_file": "app/components/Navbar/DatasetsMegaMenu.tsx",
+      "source_location": "L270",
+      "id": "navbar_datasetsmegamenu_datasetsmegamenu",
+      "community": 4,
+      "norm_label": "datasetsmegamenu()"
+    },
+    {
       "label": "Navbar.tsx",
       "file_type": "code",
-      "source_file": "app/components/Navbar.tsx",
+      "source_file": "app/components/Navbar/Navbar.tsx",
       "source_location": "L1",
-      "id": "components_navbar",
+      "id": "navbar_navbar",
       "community": 4,
       "norm_label": "navbar.tsx"
     },
     {
       "label": "navVariants",
       "file_type": "code",
-      "source_file": "app/components/Navbar.tsx",
-      "source_location": "L35",
-      "id": "components_navbar_navvariants",
+      "source_file": "app/components/Navbar/Navbar.tsx",
+      "source_location": "L36",
+      "id": "navbar_navbar_navvariants",
       "community": 4,
       "norm_label": "navvariants"
     },
     {
       "label": "itemVariants",
       "file_type": "code",
-      "source_file": "app/components/Navbar.tsx",
-      "source_location": "L44",
-      "id": "components_navbar_itemvariants",
+      "source_file": "app/components/Navbar/Navbar.tsx",
+      "source_location": "L45",
+      "id": "navbar_navbar_itemvariants",
       "community": 4,
       "norm_label": "itemvariants"
     },
     {
       "label": "dropdownVariants",
       "file_type": "code",
-      "source_file": "app/components/Navbar.tsx",
-      "source_location": "L49",
-      "id": "components_navbar_dropdownvariants",
+      "source_file": "app/components/Navbar/Navbar.tsx",
+      "source_location": "L50",
+      "id": "navbar_navbar_dropdownvariants",
       "community": 4,
       "norm_label": "dropdownvariants"
     },
     {
       "label": "mobileMenuVariants",
       "file_type": "code",
-      "source_file": "app/components/Navbar.tsx",
-      "source_location": "L68",
-      "id": "components_navbar_mobilemenuvariants",
+      "source_file": "app/components/Navbar/Navbar.tsx",
+      "source_location": "L69",
+      "id": "navbar_navbar_mobilemenuvariants",
       "community": 4,
       "norm_label": "mobilemenuvariants"
     },
     {
       "label": "Navbar()",
       "file_type": "code",
-      "source_file": "app/components/Navbar.tsx",
-      "source_location": "L76",
-      "id": "components_navbar_navbar",
+      "source_file": "app/components/Navbar/Navbar.tsx",
+      "source_location": "L77",
+      "id": "navbar_navbar_navbar",
       "community": 4,
       "norm_label": "navbar()"
+    },
+    {
+      "label": "ServicesMegaMenu.tsx",
+      "file_type": "code",
+      "source_file": "app/components/Navbar/ServicesMegaMenu.tsx",
+      "source_location": "L1",
+      "id": "navbar_servicesmegamenu",
+      "community": 4,
+      "norm_label": "servicesmegamenu.tsx"
+    },
+    {
+      "label": "ServicesMegaMenu()",
+      "file_type": "code",
+      "source_file": "app/components/Navbar/ServicesMegaMenu.tsx",
+      "source_location": "L24",
+      "id": "navbar_servicesmegamenu_servicesmegamenu",
+      "community": 4,
+      "norm_label": "servicesmegamenu()"
+    },
+    {
+      "label": "ToolsMegaMenu.tsx",
+      "file_type": "code",
+      "source_file": "app/components/Navbar/ToolsMegaMenu.tsx",
+      "source_location": "L1",
+      "id": "navbar_toolsmegamenu",
+      "community": 4,
+      "norm_label": "toolsmegamenu.tsx"
+    },
+    {
+      "label": "Tool",
+      "file_type": "code",
+      "source_file": "app/components/Navbar/ToolsMegaMenu.tsx",
+      "source_location": "L28",
+      "id": "navbar_toolsmegamenu_tool",
+      "community": 4,
+      "norm_label": "tool"
+    },
+    {
+      "label": "ToolCategory",
+      "file_type": "code",
+      "source_file": "app/components/Navbar/ToolsMegaMenu.tsx",
+      "source_location": "L35",
+      "id": "navbar_toolsmegamenu_toolcategory",
+      "community": 4,
+      "norm_label": "toolcategory"
+    },
+    {
+      "label": "toolCategories",
+      "file_type": "code",
+      "source_file": "app/components/Navbar/ToolsMegaMenu.tsx",
+      "source_location": "L43",
+      "id": "navbar_toolsmegamenu_toolcategories",
+      "community": 4,
+      "norm_label": "toolcategories"
+    },
+    {
+      "label": "panelVariants",
+      "file_type": "code",
+      "source_file": "app/components/Navbar/ToolsMegaMenu.tsx",
+      "source_location": "L150",
+      "id": "navbar_toolsmegamenu_panelvariants",
+      "community": 4,
+      "norm_label": "panelvariants"
+    },
+    {
+      "label": "ToolsMegaMenu()",
+      "file_type": "code",
+      "source_file": "app/components/Navbar/ToolsMegaMenu.tsx",
+      "source_location": "L156",
+      "id": "navbar_toolsmegamenu_toolsmegamenu",
+      "community": 4,
+      "norm_label": "toolsmegamenu()"
     },
     {
       "label": "Resources.tsx",
@@ -443,60 +515,6 @@
       "id": "components_slider_slider",
       "community": 0,
       "norm_label": "slider()"
-    },
-    {
-      "label": "ToolsMegaMenu.tsx",
-      "file_type": "code",
-      "source_file": "app/components/ToolsMegaMenu.tsx",
-      "source_location": "L1",
-      "id": "components_toolsmegamenu",
-      "community": 4,
-      "norm_label": "toolsmegamenu.tsx"
-    },
-    {
-      "label": "Tool",
-      "file_type": "code",
-      "source_file": "app/components/ToolsMegaMenu.tsx",
-      "source_location": "L28",
-      "id": "components_toolsmegamenu_tool",
-      "community": 4,
-      "norm_label": "tool"
-    },
-    {
-      "label": "ToolCategory",
-      "file_type": "code",
-      "source_file": "app/components/ToolsMegaMenu.tsx",
-      "source_location": "L35",
-      "id": "components_toolsmegamenu_toolcategory",
-      "community": 4,
-      "norm_label": "toolcategory"
-    },
-    {
-      "label": "toolCategories",
-      "file_type": "code",
-      "source_file": "app/components/ToolsMegaMenu.tsx",
-      "source_location": "L43",
-      "id": "components_toolsmegamenu_toolcategories",
-      "community": 4,
-      "norm_label": "toolcategories"
-    },
-    {
-      "label": "panelVariants",
-      "file_type": "code",
-      "source_file": "app/components/ToolsMegaMenu.tsx",
-      "source_location": "L150",
-      "id": "components_toolsmegamenu_panelvariants",
-      "community": 4,
-      "norm_label": "panelvariants"
-    },
-    {
-      "label": "ToolsMegaMenu()",
-      "file_type": "code",
-      "source_file": "app/components/ToolsMegaMenu.tsx",
-      "source_location": "L156",
-      "id": "components_toolsmegamenu_toolsmegamenu",
-      "community": 4,
-      "norm_label": "toolsmegamenu()"
     },
     {
       "label": "WhatsAppChatIcon.tsx",
@@ -1278,7 +1296,7 @@
       "source_file": "app/tooles/coding-tooles/page.tsx",
       "source_location": "L1",
       "id": "coding_tooles_page",
-      "community": 6,
+      "community": 12,
       "norm_label": "page.tsx"
     },
     {
@@ -1287,7 +1305,7 @@
       "source_file": "app/tooles/coding-tooles/page.tsx",
       "source_location": "L26",
       "id": "coding_tooles_page_codingtoolssection",
-      "community": 6,
+      "community": 12,
       "norm_label": "codingtoolssection()"
     },
     {
@@ -2464,16 +2482,25 @@
       "label": "loadJsZip()",
       "file_type": "code",
       "source_file": "app/tooles/image-tooles/components/PdfToImages.tsx",
-      "source_location": "L25",
+      "source_location": "L26",
       "id": "components_pdftoimages_loadjszip",
       "community": 44,
       "norm_label": "loadjszip()"
     },
     {
+      "label": "SelectedImage",
+      "file_type": "code",
+      "source_file": "app/tooles/image-tooles/components/PdfToImages.tsx",
+      "source_location": "L42",
+      "id": "components_pdftoimages_selectedimage",
+      "community": 44,
+      "norm_label": "selectedimage"
+    },
+    {
       "label": "App()",
       "file_type": "code",
       "source_file": "app/tooles/image-tooles/components/PdfToImages.tsx",
-      "source_location": "L40",
+      "source_location": "L47",
       "id": "components_pdftoimages_app",
       "community": 44,
       "norm_label": "app()"
@@ -3586,13 +3613,40 @@
       "norm_label": "graphify"
     },
     {
-      "label": "componentsMap",
+      "label": "ServiceItem",
       "file_type": "code",
-      "source_file": "app/tooles/image-tooles/[slug]/page.tsx",
-      "source_location": "L15",
-      "community": 9,
-      "norm_label": "componentsmap",
-      "id": "slug_page_componentsmap"
+      "source_file": "app/components/Navbar/ServicesMegaMenu.tsx",
+      "source_location": "L30",
+      "community": 4,
+      "norm_label": "serviceitem",
+      "id": "navbar_servicesmegamenu_serviceitem"
+    },
+    {
+      "label": "ServiceCategory",
+      "file_type": "code",
+      "source_file": "app/components/Navbar/ServicesMegaMenu.tsx",
+      "source_location": "L37",
+      "community": 4,
+      "norm_label": "servicecategory",
+      "id": "navbar_servicesmegamenu_servicecategory"
+    },
+    {
+      "label": "serviceCategories",
+      "file_type": "code",
+      "source_file": "app/components/Navbar/ServicesMegaMenu.tsx",
+      "source_location": "L49",
+      "community": 4,
+      "norm_label": "servicecategories",
+      "id": "navbar_servicesmegamenu_servicecategories"
+    },
+    {
+      "label": "panelVariants",
+      "file_type": "code",
+      "source_file": "app/components/Navbar/ServicesMegaMenu.tsx",
+      "source_location": "L154",
+      "community": 4,
+      "norm_label": "panelvariants",
+      "id": "navbar_servicesmegamenu_panelvariants"
     }
   ],
   "links": [
@@ -3790,78 +3844,6 @@
       "target": "contact_page"
     },
     {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/components/DatasetsMegaMenu.tsx",
-      "source_location": "L61",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_datasetsmegamenu",
-      "target": "components_datasetsmegamenu_datasetindustries"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/components/DatasetsMegaMenu.tsx",
-      "source_location": "L49",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_datasetsmegamenu",
-      "target": "components_datasetsmegamenu_datasetindustry"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/components/DatasetsMegaMenu.tsx",
-      "source_location": "L43",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_datasetsmegamenu",
-      "target": "components_datasetsmegamenu_datasetitem"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/components/DatasetsMegaMenu.tsx",
-      "source_location": "L270",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_datasetsmegamenu",
-      "target": "components_datasetsmegamenu_datasetsmegamenu"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/components/DatasetsMegaMenu.tsx",
-      "source_location": "L260",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_datasetsmegamenu",
-      "target": "components_datasetsmegamenu_panelvariants"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "app/components/Navbar.tsx",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_navbar",
-      "target": "components_datasetsmegamenu"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "app/components/Navbar.tsx",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_navbar",
-      "target": "components_datasetsmegamenu_datasetsmegamenu"
-    },
-    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -3904,6 +3886,78 @@
       "target": "components_footer_footer"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/Navbar/DatasetsMegaMenu.tsx",
+      "source_location": "L61",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "navbar_datasetsmegamenu",
+      "target": "navbar_datasetsmegamenu_datasetindustries"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/Navbar/DatasetsMegaMenu.tsx",
+      "source_location": "L49",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "navbar_datasetsmegamenu",
+      "target": "navbar_datasetsmegamenu_datasetindustry"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/Navbar/DatasetsMegaMenu.tsx",
+      "source_location": "L43",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "navbar_datasetsmegamenu",
+      "target": "navbar_datasetsmegamenu_datasetitem"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/Navbar/DatasetsMegaMenu.tsx",
+      "source_location": "L270",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "navbar_datasetsmegamenu",
+      "target": "navbar_datasetsmegamenu_datasetsmegamenu"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/Navbar/DatasetsMegaMenu.tsx",
+      "source_location": "L260",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "navbar_datasetsmegamenu",
+      "target": "navbar_datasetsmegamenu_panelvariants"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/Navbar/Navbar.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "navbar_navbar",
+      "target": "navbar_datasetsmegamenu"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/Navbar/Navbar.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "navbar_navbar",
+      "target": "navbar_datasetsmegamenu_datasetsmegamenu"
+    },
+    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -3912,79 +3966,201 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "app_layout",
-      "target": "components_navbar"
+      "target": "navbar_navbar"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "app/components/Navbar.tsx",
+      "source_file": "app/components/Navbar/Navbar.tsx",
       "source_location": "L49",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "components_navbar",
-      "target": "components_navbar_dropdownvariants"
+      "source": "navbar_navbar",
+      "target": "navbar_navbar_dropdownvariants"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "app/components/Navbar.tsx",
+      "source_file": "app/components/Navbar/Navbar.tsx",
       "source_location": "L44",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "components_navbar",
-      "target": "components_navbar_itemvariants"
+      "source": "navbar_navbar",
+      "target": "navbar_navbar_itemvariants"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "app/components/Navbar.tsx",
+      "source_file": "app/components/Navbar/Navbar.tsx",
       "source_location": "L68",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "components_navbar",
-      "target": "components_navbar_mobilemenuvariants"
+      "source": "navbar_navbar",
+      "target": "navbar_navbar_mobilemenuvariants"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "app/components/Navbar.tsx",
+      "source_file": "app/components/Navbar/Navbar.tsx",
       "source_location": "L76",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "components_navbar",
-      "target": "components_navbar_navbar"
+      "source": "navbar_navbar",
+      "target": "navbar_navbar_navbar"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "app/components/Navbar.tsx",
+      "source_file": "app/components/Navbar/Navbar.tsx",
       "source_location": "L35",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "components_navbar",
-      "target": "components_navbar_navvariants"
+      "source": "navbar_navbar",
+      "target": "navbar_navbar_navvariants"
     },
     {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "app/components/Navbar.tsx",
-      "source_location": "L6",
+      "source_file": "app/components/Navbar/Navbar.tsx",
+      "source_location": "L8",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "components_navbar",
-      "target": "components_toolsmegamenu"
+      "source": "navbar_navbar",
+      "target": "navbar_servicesmegamenu"
     },
     {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "app/components/Navbar.tsx",
+      "source_file": "app/components/Navbar/Navbar.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "navbar_navbar",
+      "target": "navbar_servicesmegamenu_servicesmegamenu"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/Navbar/Navbar.tsx",
       "source_location": "L6",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "components_navbar",
-      "target": "components_toolsmegamenu_toolsmegamenu"
+      "source": "navbar_navbar",
+      "target": "navbar_toolsmegamenu"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/Navbar/Navbar.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "navbar_navbar",
+      "target": "navbar_toolsmegamenu_toolsmegamenu"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/Navbar/ServicesMegaMenu.tsx",
+      "source_location": "L154",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "navbar_servicesmegamenu",
+      "target": "navbar_servicesmegamenu_panelvariants"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/Navbar/ServicesMegaMenu.tsx",
+      "source_location": "L49",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "navbar_servicesmegamenu",
+      "target": "navbar_servicesmegamenu_servicecategories"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/Navbar/ServicesMegaMenu.tsx",
+      "source_location": "L37",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "navbar_servicesmegamenu",
+      "target": "navbar_servicesmegamenu_servicecategory"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/Navbar/ServicesMegaMenu.tsx",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "navbar_servicesmegamenu",
+      "target": "navbar_servicesmegamenu_serviceitem"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/Navbar/ServicesMegaMenu.tsx",
+      "source_location": "L164",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "navbar_servicesmegamenu",
+      "target": "navbar_servicesmegamenu_servicesmegamenu"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/Navbar/ToolsMegaMenu.tsx",
+      "source_location": "L150",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "navbar_toolsmegamenu",
+      "target": "navbar_toolsmegamenu_panelvariants"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/Navbar/ToolsMegaMenu.tsx",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "navbar_toolsmegamenu",
+      "target": "navbar_toolsmegamenu_tool"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/Navbar/ToolsMegaMenu.tsx",
+      "source_location": "L43",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "navbar_toolsmegamenu",
+      "target": "navbar_toolsmegamenu_toolcategories"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/Navbar/ToolsMegaMenu.tsx",
+      "source_location": "L35",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "navbar_toolsmegamenu",
+      "target": "navbar_toolsmegamenu_toolcategory"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/Navbar/ToolsMegaMenu.tsx",
+      "source_location": "L156",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "navbar_toolsmegamenu",
+      "target": "navbar_toolsmegamenu_toolsmegamenu"
     },
     {
       "relation": "imports_from",
@@ -4088,56 +4264,6 @@
       "confidence_score": 1.0,
       "source": "components_slider",
       "target": "components_slider_slideritems"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/components/ToolsMegaMenu.tsx",
-      "source_location": "L150",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_toolsmegamenu",
-      "target": "components_toolsmegamenu_panelvariants"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/components/ToolsMegaMenu.tsx",
-      "source_location": "L28",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_toolsmegamenu",
-      "target": "components_toolsmegamenu_tool"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/components/ToolsMegaMenu.tsx",
-      "source_location": "L43",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_toolsmegamenu",
-      "target": "components_toolsmegamenu_toolcategories"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/components/ToolsMegaMenu.tsx",
-      "source_location": "L35",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_toolsmegamenu",
-      "target": "components_toolsmegamenu_toolcategory"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/components/ToolsMegaMenu.tsx",
-      "source_location": "L156",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_toolsmegamenu",
-      "target": "components_toolsmegamenu_toolsmegamenu"
     },
     {
       "relation": "imports_from",
@@ -5506,9 +5632,9 @@
       "source_file": "app/tooles/converter-tools/[slug]/page.tsx",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_tooles_converter_tools_slug_page_tsx_slug_page",
-      "target": "app_tooles_converter_tools_slug_page_tsx_slug_page_componentsmap",
-      "confidence_score": 1.0
+      "target": "app_tooles_converter_tools_slug_page_tsx_slug_page_componentsmap"
     },
     {
       "relation": "contains",
@@ -5516,9 +5642,9 @@
       "source_file": "app/tooles/converter-tools/[slug]/page.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_tooles_converter_tools_slug_page_tsx_slug_page",
-      "target": "app_tooles_converter_tools_slug_page_tsx_slug_page_pageprops",
-      "confidence_score": 1.0
+      "target": "app_tooles_converter_tools_slug_page_tsx_slug_page_pageprops"
     },
     {
       "relation": "contains",
@@ -5526,9 +5652,9 @@
       "source_file": "app/tooles/converter-tools/[slug]/page.tsx",
       "source_location": "L155",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_tooles_converter_tools_slug_page_tsx_slug_page",
-      "target": "slug_page_convertertoolpage",
-      "confidence_score": 1.0
+      "target": "slug_page_convertertoolpage"
     },
     {
       "relation": "contains",
@@ -5536,9 +5662,9 @@
       "source_file": "app/tooles/converter-tools/components/ArchiveConverter.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_archiveconverter",
-      "target": "components_archiveconverter_archiveconverter",
-      "confidence_score": 1.0
+      "target": "components_archiveconverter_archiveconverter"
     },
     {
       "relation": "imports_from",
@@ -5547,9 +5673,9 @@
       "source_file": "app/tooles/converter-tools/components/ArchiveConverter.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_archiveconverter",
-      "target": "components_convertertemplate",
-      "confidence_score": 1.0
+      "target": "components_convertertemplate"
     },
     {
       "relation": "contains",
@@ -5557,9 +5683,9 @@
       "source_file": "app/tooles/converter-tools/components/AudioConverter.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_audioconverter",
-      "target": "components_audioconverter_audioconverter",
-      "confidence_score": 1.0
+      "target": "components_audioconverter_audioconverter"
     },
     {
       "relation": "imports_from",
@@ -5568,9 +5694,9 @@
       "source_file": "app/tooles/converter-tools/components/AudioConverter.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_audioconverter",
-      "target": "components_convertertemplate",
-      "confidence_score": 1.0
+      "target": "components_convertertemplate"
     },
     {
       "relation": "contains",
@@ -5578,9 +5704,9 @@
       "source_file": "app/tooles/converter-tools/components/Base64.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_base64",
-      "target": "components_base64_base64",
-      "confidence_score": 1.0
+      "target": "components_base64_base64"
     },
     {
       "relation": "contains",
@@ -5588,9 +5714,9 @@
       "source_file": "app/tooles/converter-tools/components/BaseConverter.tsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_baseconverter",
-      "target": "components_baseconverter_baseconverter",
-      "confidence_score": 1.0
+      "target": "components_baseconverter_baseconverter"
     },
     {
       "relation": "contains",
@@ -5598,9 +5724,9 @@
       "source_file": "app/tooles/converter-tools/components/BaseConverter.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_baseconverter",
-      "target": "components_baseconverter_basetype",
-      "confidence_score": 1.0
+      "target": "components_baseconverter_basetype"
     },
     {
       "relation": "imports_from",
@@ -5609,9 +5735,9 @@
       "source_file": "app/tooles/converter-tools/components/CSVToExcel.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_csvtoexcel",
-      "target": "components_convertertemplate",
-      "confidence_score": 1.0
+      "target": "components_convertertemplate"
     },
     {
       "relation": "contains",
@@ -5619,9 +5745,9 @@
       "source_file": "app/tooles/converter-tools/components/CSVToExcel.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_csvtoexcel",
-      "target": "components_csvtoexcel_csvtoexcel",
-      "confidence_score": 1.0
+      "target": "components_csvtoexcel_csvtoexcel"
     },
     {
       "relation": "imports_from",
@@ -5630,9 +5756,9 @@
       "source_file": "app/tooles/converter-tools/components/CSVToJSON.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_csvtojson",
-      "target": "components_convertertemplate",
-      "confidence_score": 1.0
+      "target": "components_convertertemplate"
     },
     {
       "relation": "contains",
@@ -5640,9 +5766,9 @@
       "source_file": "app/tooles/converter-tools/components/CSVToJSON.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_csvtojson",
-      "target": "components_csvtojson_csvtojson",
-      "confidence_score": 1.0
+      "target": "components_csvtojson_csvtojson"
     },
     {
       "relation": "contains",
@@ -5650,9 +5776,9 @@
       "source_file": "app/tooles/converter-tools/components/CaseConverter.tsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_caseconverter",
-      "target": "components_caseconverter_caseconverter",
-      "confidence_score": 1.0
+      "target": "components_caseconverter_caseconverter"
     },
     {
       "relation": "contains",
@@ -5660,9 +5786,9 @@
       "source_file": "app/tooles/converter-tools/components/CaseConverter.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_caseconverter",
-      "target": "components_caseconverter_casetype",
-      "confidence_score": 1.0
+      "target": "components_caseconverter_casetype"
     },
     {
       "relation": "contains",
@@ -5670,9 +5796,9 @@
       "source_file": "app/tooles/converter-tools/components/ColorConverter.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_colorconverter",
-      "target": "components_colorconverter_colorconverter",
-      "confidence_score": 1.0
+      "target": "components_colorconverter_colorconverter"
     },
     {
       "relation": "contains",
@@ -5680,9 +5806,9 @@
       "source_file": "app/tooles/converter-tools/components/ConverterTemplate.tsx",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_convertertemplate",
-      "target": "components_convertertemplate_convertertemplate",
-      "confidence_score": 1.0
+      "target": "components_convertertemplate_convertertemplate"
     },
     {
       "relation": "contains",
@@ -5690,9 +5816,9 @@
       "source_file": "app/tooles/converter-tools/components/ConverterTemplate.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_convertertemplate",
-      "target": "components_convertertemplate_convertertemplateprops",
-      "confidence_score": 1.0
+      "target": "components_convertertemplate_convertertemplateprops"
     },
     {
       "relation": "imports_from",
@@ -5701,9 +5827,9 @@
       "source_file": "app/tooles/converter-tools/components/EPUBToAZW3.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_epubtoazw3",
-      "target": "components_convertertemplate",
-      "confidence_score": 1.0
+      "target": "components_convertertemplate"
     },
     {
       "relation": "imports_from",
@@ -5712,9 +5838,9 @@
       "source_file": "app/tooles/converter-tools/components/EPUBToMOBI.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_epubtomobi",
-      "target": "components_convertertemplate",
-      "confidence_score": 1.0
+      "target": "components_convertertemplate"
     },
     {
       "relation": "imports_from",
@@ -5723,9 +5849,9 @@
       "source_file": "app/tooles/converter-tools/components/EPUBToPDF.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_epubtopdf",
-      "target": "components_convertertemplate",
-      "confidence_score": 1.0
+      "target": "components_convertertemplate"
     },
     {
       "relation": "imports_from",
@@ -5734,9 +5860,9 @@
       "source_file": "app/tooles/converter-tools/components/ExcelToCSV.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_exceltocsv",
-      "target": "components_convertertemplate",
-      "confidence_score": 1.0
+      "target": "components_convertertemplate"
     },
     {
       "relation": "imports_from",
@@ -5745,9 +5871,9 @@
       "source_file": "app/tooles/converter-tools/components/ExcelToPDF.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_exceltopdf",
-      "target": "components_convertertemplate",
-      "confidence_score": 1.0
+      "target": "components_convertertemplate"
     },
     {
       "relation": "imports_from",
@@ -5756,9 +5882,9 @@
       "source_file": "app/tooles/converter-tools/components/ExcelToXML.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_exceltoxml",
-      "target": "components_convertertemplate",
-      "confidence_score": 1.0
+      "target": "components_convertertemplate"
     },
     {
       "relation": "imports_from",
@@ -5767,9 +5893,9 @@
       "source_file": "app/tooles/converter-tools/components/ImageConverter.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_imageconverter",
-      "target": "components_convertertemplate",
-      "confidence_score": 1.0
+      "target": "components_convertertemplate"
     },
     {
       "relation": "imports_from",
@@ -5778,9 +5904,9 @@
       "source_file": "app/tooles/converter-tools/components/JSONToCSV.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_jsontocsv",
-      "target": "components_convertertemplate",
-      "confidence_score": 1.0
+      "target": "components_convertertemplate"
     },
     {
       "relation": "imports_from",
@@ -5789,9 +5915,9 @@
       "source_file": "app/tooles/converter-tools/components/JSONToExcel.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_jsontoexcel",
-      "target": "components_convertertemplate",
-      "confidence_score": 1.0
+      "target": "components_convertertemplate"
     },
     {
       "relation": "imports_from",
@@ -5800,9 +5926,9 @@
       "source_file": "app/tooles/converter-tools/components/JSONToXML.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_jsontoxml",
-      "target": "components_convertertemplate",
-      "confidence_score": 1.0
+      "target": "components_convertertemplate"
     },
     {
       "relation": "imports_from",
@@ -5811,9 +5937,9 @@
       "source_file": "app/tooles/converter-tools/components/MOBIToEPUB.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_mobitoepub",
-      "target": "components_convertertemplate",
-      "confidence_score": 1.0
+      "target": "components_convertertemplate"
     },
     {
       "relation": "imports_from",
@@ -5822,9 +5948,9 @@
       "source_file": "app/tooles/converter-tools/components/SplitCSV.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_splitcsv",
-      "target": "components_convertertemplate",
-      "confidence_score": 1.0
+      "target": "components_convertertemplate"
     },
     {
       "relation": "imports_from",
@@ -5833,9 +5959,9 @@
       "source_file": "app/tooles/converter-tools/components/SplitExcel.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_splitexcel",
-      "target": "components_convertertemplate",
-      "confidence_score": 1.0
+      "target": "components_convertertemplate"
     },
     {
       "relation": "imports_from",
@@ -5844,9 +5970,9 @@
       "source_file": "app/tooles/converter-tools/components/VideoConverter.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_videoconverter",
-      "target": "components_convertertemplate",
-      "confidence_score": 1.0
+      "target": "components_convertertemplate"
     },
     {
       "relation": "imports_from",
@@ -5855,9 +5981,9 @@
       "source_file": "app/tooles/converter-tools/components/XMLToCSV.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_xmltocsv",
-      "target": "components_convertertemplate",
-      "confidence_score": 1.0
+      "target": "components_convertertemplate"
     },
     {
       "relation": "imports_from",
@@ -5866,9 +5992,9 @@
       "source_file": "app/tooles/converter-tools/components/XMLToExcel.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_xmltoexcel",
-      "target": "components_convertertemplate",
-      "confidence_score": 1.0
+      "target": "components_convertertemplate"
     },
     {
       "relation": "contains",
@@ -5876,9 +6002,9 @@
       "source_file": "app/tooles/converter-tools/components/EPUBToAZW3.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_epubtoazw3",
-      "target": "components_epubtoazw3_epubtoazw3",
-      "confidence_score": 1.0
+      "target": "components_epubtoazw3_epubtoazw3"
     },
     {
       "relation": "contains",
@@ -5886,9 +6012,9 @@
       "source_file": "app/tooles/converter-tools/components/EPUBToMOBI.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_epubtomobi",
-      "target": "components_epubtomobi_epubtomobi",
-      "confidence_score": 1.0
+      "target": "components_epubtomobi_epubtomobi"
     },
     {
       "relation": "contains",
@@ -5896,9 +6022,9 @@
       "source_file": "app/tooles/converter-tools/components/EPUBToPDF.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_epubtopdf",
-      "target": "components_epubtopdf_epubtopdf",
-      "confidence_score": 1.0
+      "target": "components_epubtopdf_epubtopdf"
     },
     {
       "relation": "contains",
@@ -5906,9 +6032,9 @@
       "source_file": "app/tooles/converter-tools/components/ExcelToCSV.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_exceltocsv",
-      "target": "components_exceltocsv_exceltocsv",
-      "confidence_score": 1.0
+      "target": "components_exceltocsv_exceltocsv"
     },
     {
       "relation": "contains",
@@ -5916,9 +6042,9 @@
       "source_file": "app/tooles/converter-tools/components/ExcelToPDF.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_exceltopdf",
-      "target": "components_exceltopdf_exceltopdf",
-      "confidence_score": 1.0
+      "target": "components_exceltopdf_exceltopdf"
     },
     {
       "relation": "contains",
@@ -5926,9 +6052,9 @@
       "source_file": "app/tooles/converter-tools/components/ExcelToXML.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_exceltoxml",
-      "target": "components_exceltoxml_exceltoxml",
-      "confidence_score": 1.0
+      "target": "components_exceltoxml_exceltoxml"
     },
     {
       "relation": "contains",
@@ -5936,9 +6062,9 @@
       "source_file": "app/tooles/converter-tools/components/HTMLEncoder.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_htmlencoder",
-      "target": "components_htmlencoder_htmlencoder",
-      "confidence_score": 1.0
+      "target": "components_htmlencoder_htmlencoder"
     },
     {
       "relation": "contains",
@@ -5946,9 +6072,9 @@
       "source_file": "app/tooles/converter-tools/components/ImageConverter.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_imageconverter",
-      "target": "components_imageconverter_imageconverter",
-      "confidence_score": 1.0
+      "target": "components_imageconverter_imageconverter"
     },
     {
       "relation": "contains",
@@ -5956,9 +6082,9 @@
       "source_file": "app/tooles/converter-tools/components/JSONToCSV.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_jsontocsv",
-      "target": "components_jsontocsv_jsontocsv",
-      "confidence_score": 1.0
+      "target": "components_jsontocsv_jsontocsv"
     },
     {
       "relation": "contains",
@@ -5966,9 +6092,9 @@
       "source_file": "app/tooles/converter-tools/components/JSONToExcel.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_jsontoexcel",
-      "target": "components_jsontoexcel_jsontoexcel",
-      "confidence_score": 1.0
+      "target": "components_jsontoexcel_jsontoexcel"
     },
     {
       "relation": "contains",
@@ -5976,9 +6102,9 @@
       "source_file": "app/tooles/converter-tools/components/JSONToXML.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_jsontoxml",
-      "target": "components_jsontoxml_jsontoxml",
-      "confidence_score": 1.0
+      "target": "components_jsontoxml_jsontoxml"
     },
     {
       "relation": "contains",
@@ -5986,9 +6112,9 @@
       "source_file": "app/tooles/converter-tools/components/MOBIToEPUB.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_mobitoepub",
-      "target": "components_mobitoepub_mobitoepub",
-      "confidence_score": 1.0
+      "target": "components_mobitoepub_mobitoepub"
     },
     {
       "relation": "contains",
@@ -5996,9 +6122,9 @@
       "source_file": "app/tooles/converter-tools/components/QRCode.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_qrcode",
-      "target": "components_qrcode_qrcodegenerator",
-      "confidence_score": 1.0
+      "target": "components_qrcode_qrcodegenerator"
     },
     {
       "relation": "contains",
@@ -6006,9 +6132,9 @@
       "source_file": "app/tooles/converter-tools/components/SplitCSV.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_splitcsv",
-      "target": "components_splitcsv_splitcsv",
-      "confidence_score": 1.0
+      "target": "components_splitcsv_splitcsv"
     },
     {
       "relation": "contains",
@@ -6016,9 +6142,9 @@
       "source_file": "app/tooles/converter-tools/components/SplitExcel.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_splitexcel",
-      "target": "components_splitexcel_splitexcel",
-      "confidence_score": 1.0
+      "target": "components_splitexcel_splitexcel"
     },
     {
       "relation": "contains",
@@ -6026,9 +6152,9 @@
       "source_file": "app/tooles/converter-tools/components/URLEncoder.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_urlencoder",
-      "target": "components_urlencoder_urlencoder",
-      "confidence_score": 1.0
+      "target": "components_urlencoder_urlencoder"
     },
     {
       "relation": "contains",
@@ -6036,9 +6162,9 @@
       "source_file": "app/tooles/converter-tools/components/UnitConverter.tsx",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_unitconverter",
-      "target": "components_unitconverter_length_units",
-      "confidence_score": 1.0
+      "target": "components_unitconverter_length_units"
     },
     {
       "relation": "contains",
@@ -6046,9 +6172,9 @@
       "source_file": "app/tooles/converter-tools/components/UnitConverter.tsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_unitconverter",
-      "target": "components_unitconverter_unitconfig",
-      "confidence_score": 1.0
+      "target": "components_unitconverter_unitconfig"
     },
     {
       "relation": "contains",
@@ -6056,9 +6182,9 @@
       "source_file": "app/tooles/converter-tools/components/UnitConverter.tsx",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_unitconverter",
-      "target": "components_unitconverter_unitconverter",
-      "confidence_score": 1.0
+      "target": "components_unitconverter_unitconverter"
     },
     {
       "relation": "contains",
@@ -6066,9 +6192,9 @@
       "source_file": "app/tooles/converter-tools/components/UnitConverter.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_unitconverter",
-      "target": "components_unitconverter_unittype",
-      "confidence_score": 1.0
+      "target": "components_unitconverter_unittype"
     },
     {
       "relation": "contains",
@@ -6076,9 +6202,9 @@
       "source_file": "app/tooles/converter-tools/components/UnitConverter.tsx",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_unitconverter",
-      "target": "components_unitconverter_weight_units",
-      "confidence_score": 1.0
+      "target": "components_unitconverter_weight_units"
     },
     {
       "relation": "contains",
@@ -6086,9 +6212,9 @@
       "source_file": "app/tooles/converter-tools/components/VideoConverter.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_videoconverter",
-      "target": "components_videoconverter_videoconverter",
-      "confidence_score": 1.0
+      "target": "components_videoconverter_videoconverter"
     },
     {
       "relation": "contains",
@@ -6096,9 +6222,9 @@
       "source_file": "app/tooles/converter-tools/components/XMLToCSV.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_xmltocsv",
-      "target": "components_xmltocsv_xmltocsv",
-      "confidence_score": 1.0
+      "target": "components_xmltocsv_xmltocsv"
     },
     {
       "relation": "contains",
@@ -6106,9 +6232,9 @@
       "source_file": "app/tooles/converter-tools/components/XMLToExcel.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_xmltoexcel",
-      "target": "components_xmltoexcel_xmltoexcel",
-      "confidence_score": 1.0
+      "target": "components_xmltoexcel_xmltoexcel"
     },
     {
       "relation": "contains",
@@ -6168,9 +6294,9 @@
       "source_file": "app/tooles/image-tooles/[slug]/page.tsx",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_tooles_image_tooles_slug_page_tsx_slug_page",
-      "target": "app_tooles_image_tooles_slug_page_tsx_slug_page_componentsmap",
-      "confidence_score": 1.0
+      "target": "app_tooles_image_tooles_slug_page_tsx_slug_page_componentsmap"
     },
     {
       "relation": "contains",
@@ -6214,16 +6340,6 @@
       "confidence_score": 1.0,
       "source": "app_tooles_image_tooles_slug_page_tsx_slug_page",
       "target": "data_imagetools_imagetools"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/tooles/image-tooles/[slug]/page.tsx",
-      "source_location": "L15",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "app_tooles_image_tooles_slug_page_tsx_slug_page",
-      "target": "slug_page_componentsmap"
     },
     {
       "relation": "contains",
@@ -6588,6 +6704,16 @@
       "confidence_score": 1.0,
       "source": "components_pdftoimages",
       "target": "components_pdftoimages_loadpdfjs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/image-tooles/components/PdfToImages.tsx",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "components_pdftoimages",
+      "target": "components_pdftoimages_selectedimage",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -7675,5 +7801,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "8a69c4a21538477ded86ec4c0593fd95859ea33e"
+  "built_at_commit": "65b6943244feeee0fc0628fb78b0d02f91ac1dce"
 }

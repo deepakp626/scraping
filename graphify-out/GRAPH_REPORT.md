@@ -1,16 +1,16 @@
-# Graph Report - scraping  (2026-06-13)
+# Graph Report - scraping  (2026-06-24)
 
 ## Corpus Check
-- 109 files · ~337,376 words
+- 110 files · ~338,097 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 399 nodes · 397 edges · 57 communities (42 shown, 15 thin omitted)
+- 405 nodes · 404 edges · 57 communities (41 shown, 16 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `8a69c4a2`
+- Built from commit: `65b69432`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -40,6 +40,7 @@
 - [[_COMMUNITY_Community 40|Community 40]]
 - [[_COMMUNITY_Community 42|Community 42]]
 - [[_COMMUNITY_Community 43|Community 43]]
+- [[_COMMUNITY_Community 44|Community 44]]
 - [[_COMMUNITY_Community 47|Community 47]]
 - [[_COMMUNITY_Community 48|Community 48]]
 - [[_COMMUNITY_Community 49|Community 49]]
@@ -73,7 +74,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (57 total, 15 thin omitted)
+## Communities (57 total, 16 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.07
@@ -92,16 +93,16 @@ Cohesion: 0.11
 Nodes (18): devDependencies, eslint, eslint-config-next, tailwindcss, @tailwindcss/postcss, @types/node, @types/react, @types/react-dom (+10 more)
 
 ### Community 4 - "Community 4"
-Cohesion: 0.12
-Nodes (14): datasetIndustries, DatasetIndustry, DatasetItem, DatasetsMegaMenu(), panelVariants, dropdownVariants, itemVariants, mobileMenuVariants (+6 more)
+Cohesion: 0.09
+Nodes (19): datasetIndustries, DatasetIndustry, DatasetItem, DatasetsMegaMenu(), panelVariants, dropdownVariants, itemVariants, mobileMenuVariants (+11 more)
 
 ### Community 5 - "Community 5"
 Cohesion: 0.04
 Nodes (45): dependencies, axios, browser-image-compression, clsx, @codemirror/lang-cpp, @codemirror/lang-css, @codemirror/lang-go, @codemirror/lang-html (+37 more)
 
 ### Community 6 - "Community 6"
-Cohesion: 0.23
-Nodes (6): CodingToolsSection(), ConverterTool, ConverterToolsSection(), tools, ImageToolsSection(), PdfToolsSection()
+Cohesion: 0.27
+Nodes (5): ConverterTool, ConverterToolsSection(), tools, ImageToolsSection(), PdfToolsSection()
 
 ### Community 7 - "Community 7"
 Cohesion: 0.22
@@ -112,16 +113,16 @@ Cohesion: 0.25
 Nodes (6): aboutUs, datasetProcess, metadata, services, stats, useCases
 
 ### Community 9 - "Community 9"
-Cohesion: 0.28
-Nodes (5): componentsMap, PageProps, ImageTool, imageTools, componentsMap
+Cohesion: 0.32
+Nodes (4): componentsMap, PageProps, ImageTool, imageTools
 
 ### Community 10 - "Community 10"
 Cohesion: 0.29
 Nodes (6): Color Palette, Deploy on Vercel, Getting Started, Graphify, Learn More, Theme Design
 
 ### Community 12 - "Community 12"
-Cohesion: 0.09
-Nodes (26): CodeEditorProps, THEME_MAP, CodeEditor, CodeRunEditor(), CodeRunEditorProps, OutputPanelProps, SHORTCUTS, TABS (+18 more)
+Cohesion: 0.08
+Nodes (27): CodingToolsSection(), CodeEditorProps, THEME_MAP, CodeEditor, CodeRunEditor(), CodeRunEditorProps, OutputPanelProps, SHORTCUTS (+19 more)
 
 ### Community 14 - "Community 14"
 Cohesion: 0.83
@@ -136,17 +137,17 @@ Cohesion: 0.33
 Nodes (4): LENGTH_UNITS, UnitConfig, UnitType, WEIGHT_UNITS
 
 ## Knowledge Gaps
-- **156 isolated node(s):** `metadata`, `stats`, `services`, `datasetProcess`, `useCases` (+151 more)
+- **160 isolated node(s):** `metadata`, `stats`, `services`, `datasetProcess`, `useCases` (+155 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **15 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **16 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `dependencies` connect `Community 5` to `Community 3`?**
-  _High betweenness centrality (0.023) - this node is a cross-community bridge._
+  _High betweenness centrality (0.022) - this node is a cross-community bridge._
 - **What connects `metadata`, `stats`, `services` to the rest of the system?**
-  _156 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _160 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.06666666666666667 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
@@ -156,4 +157,4 @@ _Questions this graph is uniquely positioned to answer:_
 - **Should `Community 3` be split into smaller, more focused modules?**
   _Cohesion score 0.10526315789473684 - nodes in this community are weakly interconnected._
 - **Should `Community 4` be split into smaller, more focused modules?**
-  _Cohesion score 0.12418300653594772 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.09420289855072464 - nodes in this community are weakly interconnected._

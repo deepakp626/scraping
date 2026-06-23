@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import { ToolsMegaMenu } from './ToolsMegaMenu';
 import { DatasetsMegaMenu } from './DatasetsMegaMenu';
+import { ServicesMegaMenu } from './ServicesMegaMenu';
 import {
   Menu,
   X,
@@ -90,6 +91,7 @@ const Navbar = () => {
     { name: 'AI Tools', hasDropdown: true },
     { name: 'Tools', hasDropdown: true },
     { name: 'Datasets', hasDropdown: true },
+    { name: 'Services', hasDropdown: true },
     { name: 'About', hasDropdown: false },
     { name: 'Resources', hasDropdown: true },
   ];
@@ -208,7 +210,7 @@ const Navbar = () => {
               >
                 <motion.button
                   variants={itemVariants}
-                  className="flex items-center gap-1 text-sm font-medium text-slate-300 hover:text-white transition-colors py-2"
+                  className="flex items-center gap-1 text-base font-medium text-slate-300 hover:text-white transition-colors py-2"
                 >
                   <Link href="/about">{link.name}</Link>
                   {link.hasDropdown && <ChevronDown size={14} className={`transition-transform duration-300 ${activeDropdown === link.name ? 'rotate-180' : ''}`} />}
@@ -226,11 +228,10 @@ const Navbar = () => {
                       animate="visible"
                       exit="hidden"
                       variants={dropdownVariants}
-                      className={`absolute top-full mt-4 bg-slate-900 border border-white/10 rounded-2xl p-6 shadow-2xl backdrop-blur-xl z-50 overflow-hidden ${
-                          link.name === 'Tools' || link.name === 'Datasets'
-                            ? 'left-1/2 -translate-x-1/2 w-auto'
-                            : link.name === 'AI Tools' || link.name === 'Resources'
-                            ? 'left-0 w-80'
+                      className={`absolute top-full mt-4 bg-white border border-slate-200 rounded-2xl p-6 shadow-2xl z-50 overflow-hidden ${link.name === 'Tools' || link.name === 'Datasets' || link.name === 'Services'
+                          ? 'left-1/2 -translate-x-1/2 w-auto'
+                          : link.name === 'AI Tools' || link.name === 'Resources'
+                            ? 'left-0 w-96'
                             : 'left-0 w-64'
                         }`}
                     >
@@ -238,43 +239,45 @@ const Navbar = () => {
                         <ToolsMegaMenu />
                       ) : link.name === 'AI Tools' ? (
                         <div className="flex flex-col gap-2">
-                          <h3 className="text-sm font-bold text-white uppercase tracking-wider mb-2">
+                          <h3 className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">
                             Featured AI Tools
                           </h3>
                           {aiTools.map((tool) => (
-                            <button key={tool.name} className="flex items-start gap-4 p-3 rounded-xl hover:bg-white/5 transition-colors text-left group">
-                              <div className="mt-1 text-orange-400 group-hover:text-orange-300 transition-colors p-2 bg-orange-500/10 rounded-lg group-hover:bg-orange-500/20">
+                            <button key={tool.name} className="flex items-start gap-4 p-3 rounded-xl hover:bg-slate-50 transition-colors text-left group">
+                              <div className="mt-1 text-orange-600 group-hover:text-orange-700 transition-colors p-2 bg-orange-50 rounded-lg group-hover:bg-orange-100">
                                 {tool.icon}
                               </div>
                               <div>
-                                <div className="text-sm font-bold text-slate-200 group-hover:text-white transition-colors">{tool.name}</div>
-                                <div className="text-xs text-slate-400 mt-0.5">{tool.desc}</div>
+                                <div className="text-base font-semibold text-slate-800 group-hover:text-orange-600 transition-colors">{tool.name}</div>
+                                <div className="text-xs text-slate-500 mt-0.5">{tool.desc}</div>
                               </div>
                             </button>
                           ))}
                         </div>
                       ) : link.name === 'Datasets' ? (
                         <DatasetsMegaMenu />
+                      ) : link.name === 'Services' ? (
+                        <ServicesMegaMenu />
                       ) : link.name === 'Resources' ? (
                         <div className="flex flex-col gap-2">
-                          <h3 className="text-sm font-bold text-white uppercase tracking-wider mb-2">
+                          <h3 className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">
                             Knowledge Center
                           </h3>
                           {resourcesMenu.map((item) => (
-                            <Link href={item.href}  key={item.name} className="flex items-start gap-4 p-3 rounded-xl hover:bg-white/5 transition-colors text-left group">
-                              <div className="mt-1 text-orange-400 group-hover:text-orange-300 transition-colors p-2 bg-orange-500/10 rounded-lg group-hover:bg-orange-500/20">
+                            <Link href={item.href} key={item.name} className="flex items-start gap-4 p-3 rounded-xl hover:bg-slate-50 transition-colors text-left group">
+                              <div className="mt-1 text-orange-600 group-hover:text-orange-700 transition-colors p-2 bg-orange-50 rounded-lg group-hover:bg-orange-100">
                                 {item.icon}
                               </div>
                               <div>
-                                <div className="text-sm font-bold text-slate-200 group-hover:text-white transition-colors">{item.name}</div>
-                                <div className="text-xs text-slate-400 mt-0.5">{item.desc}</div>
+                                <div className="text-base font-semibold text-slate-800 group-hover:text-orange-600 transition-colors">{item.name}</div>
+                                <div className="text-xs text-slate-500 mt-0.5">{item.desc}</div>
                               </div>
                             </Link>
                           ))}
                         </div>
                       ) : (
                         <div className="flex flex-col gap-2">
-                          <div className="p-4 text-sm text-slate-400">Content for {link.name}</div>
+                          <div className="p-4 text-base text-slate-600">Content for {link.name}</div>
                         </div>
                       )}
                     </motion.div>

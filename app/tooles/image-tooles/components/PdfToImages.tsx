@@ -2,49 +2,56 @@
 import React, { useRef, useState, useEffect } from "react";
 
 // Robust dynamic loader for PDF.js from a stable CDN
-const loadPdfJs = () => {
+const loadPdfJs = (): Promise<any> => {
   return new Promise((resolve, reject) => {
-    if (window.pdfjsLib) {
-      resolve(window.pdfjsLib);
+    const globalWindow = window as any;
+    if (globalWindow.pdfjsLib) {
+      resolve(globalWindow.pdfjsLib);
       return;
     }
     const script = document.createElement("script");
     script.src = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js";
     script.async = true;
     script.onload = () => {
-      window.pdfjsLib.GlobalWorkerOptions.workerSrc =
+      globalWindow.pdfjsLib.GlobalWorkerOptions.workerSrc =
         "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
-      resolve(window.pdfjsLib);
+      resolve(globalWindow.pdfjsLib);
     };
-    script.onerror = (err) => reject(new Error("Failed to load PDF.js library"));
+    script.onerror = () => reject(new Error("Failed to load PDF.js library"));
     document.head.appendChild(script);
   });
 };
 
 // Robust dynamic loader for JSZip
-const loadJsZip = () => {
+const loadJsZip = (): Promise<any> => {
   return new Promise((resolve, reject) => {
-    if (window.JSZip) {
-      resolve(window.JSZip);
+    const globalWindow = window as any;
+    if (globalWindow.JSZip) {
+      resolve(globalWindow.JSZip);
       return;
     }
     const script = document.createElement("script");
     script.src = "https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js";
     script.async = true;
-    script.onload = () => resolve(window.JSZip);
-    script.onerror = (err) => reject(new Error("Failed to load JSZip library"));
+    script.onload = () => resolve(globalWindow.JSZip);
+    script.onerror = () => reject(new Error("Failed to load JSZip library"));
     document.head.appendChild(script);
   });
 };
 
+interface SelectedImage {
+  url: string;
+  page: number;
+}
+
 export default function App() {
-  const fileInputRef = useRef(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
   
   // State
   const [mounted, setMounted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [progress, setProgress] = useState({ current: 0, total: 0 });
-  const [images, setImages] = useState([]);
+  const [images, setImages] = useState<string[]>([]);
   const [pdfName, setPdfName] = useState("");
   const [pdfSize, setPdfSize] = useState("");
   const [isDragging, setIsDragging] = useState(false);
@@ -52,7 +59,7 @@ export default function App() {
   const [imageFormat, setImageFormat] = useState("image/png");
   const [errorMsg, setErrorMsg] = useState("");
   const [zipLoading, setZipLoading] = useState(false);
-  const [selectedImage, setSelectedImage] = useState(null); // Lightbox
+  const [selectedImage, setSelectedImage] = useState<SelectedImage | null>(null); // Lightbox
   const [viewMode, setViewMode] = useState("grid"); // grid | list
 
   useEffect(() => {
@@ -60,7 +67,7 @@ export default function App() {
   }, []);
 
   // Format File Size
-  const formatBytes = (bytes, decimals = 2) => {
+  const formatBytes = (bytes: number, decimals = 2) => {
     if (bytes === 0) return "0 Bytes";
     const k = 1024;
     const dm = decimals < 0 ? 0 : decimals;
@@ -70,7 +77,7 @@ export default function App() {
   };
 
   // Convert PDF to Images
-  const processPdfFile = async (file) => {
+  const processPdfFile = async (file: File) => {
     if (!file || file.type !== "application/pdf") {
       setErrorMsg("Please upload a valid PDF file.");
       return;
@@ -88,13 +95,14 @@ export default function App() {
       const fileReader = new FileReader();
 
       fileReader.onload = async function () {
+        if (!this.result || typeof this.result === "string") return;
         try {
           const typedArray = new Uint8Array(this.result);
           const pdf = await pdfjsLib.getDocument({ data: typedArray }).promise;
           const totalPages = pdf.numPages;
           setProgress({ current: 0, total: totalPages });
 
-          const generatedImages = [];
+          const generatedImages: string[] = [];
 
           for (let pageNum = 1; pageNum <= totalPages; pageNum++) {
             setProgress((prev) => ({ ...prev, current: pageNum }));
@@ -136,13 +144,13 @@ export default function App() {
     }
   };
 
-  const handlePdfUpload = (e) => {
+  const handlePdfUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (file) processPdfFile(file);
   };
 
   // Drag and Drop support
-  const handleDragOver = (e) => {
+  const handleDragOver = (e: React.DragEvent) => {
     e.preventDefault();
     setIsDragging(true);
   };
@@ -151,7 +159,7 @@ export default function App() {
     setIsDragging(false);
   };
 
-  const handleDrop = (e) => {
+  const handleDrop = (e: React.DragEvent) => {
     e.preventDefault();
     setIsDragging(false);
     const file = e.dataTransfer.files?.[0];
@@ -159,7 +167,7 @@ export default function App() {
   };
 
   // Download Single Image
-  const downloadImage = (image, index) => {
+  const downloadImage = (image: string, index: number) => {
     const link = document.createElement("a");
     link.href = image;
     const extension = imageFormat === "image/jpeg" ? "jpg" : "png";
@@ -172,8 +180,8 @@ export default function App() {
     if (images.length === 0) return;
     setZipLoading(true);
     try {
-      const JSZip = await loadJsZip();
-      const zip = new JSZip();
+      const JSZipLib: any = await loadJsZip();
+      const zip = new JSZipLib();
       const folderName = pdfName.replace(/\.[^/.]+$/, "") + "_pages";
       const folder = zip.folder(folderName);
 

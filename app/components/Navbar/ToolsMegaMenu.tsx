@@ -159,9 +159,9 @@ export function ToolsMegaMenu() {
   const activeCategory = toolCategories.find((c) => c.id === activeTab)!;
 
   return (
-    <div style={{ minWidth: 680, maxWidth: 780 }}>
+    <div style={{ minWidth: 780, maxWidth: 900 }}>
       {/* ── Horizontal tab bar ── */}
-      <div className="flex items-center gap-1 border-b border-white/10 mb-4 pb-0">
+      <div className="flex items-center gap-1 border-b border-slate-200 mb-4 pb-0">
         {toolCategories.map((cat) => {
           const TabIcon = cat.tabIcon;
           const isActive = cat.id === activeTab;
@@ -172,8 +172,8 @@ export function ToolsMegaMenu() {
               onClick={() => setActiveTab(cat.id)}
               className={`relative flex items-center gap-2 px-4 py-2.5 text-sm font-medium transition-all duration-200 ${
                 isActive
-                  ? 'text-orange-400'
-                  : 'text-slate-400 hover:text-white'
+                  ? 'text-orange-600'
+                  : 'text-slate-500 hover:text-slate-800'
               }`}
             >
               <TabIcon size={14} />
@@ -182,7 +182,7 @@ export function ToolsMegaMenu() {
               {isActive && (
                 <motion.span
                   layoutId="tab-underline"
-                  className="absolute bottom-0 left-0 right-0 h-0.5 bg-orange-400 rounded-full"
+                  className="absolute bottom-0 left-0 right-0 h-0.5 bg-orange-500 rounded-full"
                   transition={{ type: 'spring', stiffness: 400, damping: 30 }}
                 />
               )}
@@ -193,7 +193,7 @@ export function ToolsMegaMenu() {
         {/* View all link pushed to right */}
         <Link
           href={`/tooles/${activeTab}-tooles`}
-          className="ml-auto flex items-center gap-1 text-xs text-orange-400 hover:text-orange-300 font-medium transition-colors px-2 py-1 shrink-0"
+          className="ml-auto flex items-center gap-1 text-xs text-orange-600 hover:text-orange-700 font-medium transition-colors px-2 py-1 shrink-0"
         >
           View all {activeCategory.label} →
         </Link>
@@ -218,12 +218,12 @@ export function ToolsMegaMenu() {
                 <Link
                   key={tool.name}
                   href={tool.link}
-                  className="flex items-center gap-2.5 px-3 py-2.5 rounded-xl hover:bg-white/5 transition-all group"
+                  className="flex items-center gap-2.5 px-3 py-2.5 rounded-xl hover:bg-slate-50 transition-all group"
                 >
-                  <div className="shrink-0 p-1.5 bg-orange-500/10 rounded-lg group-hover:bg-orange-500/20 transition-colors">
-                    <Icon size={14} className="text-orange-400 group-hover:text-orange-300 transition-colors" />
+                  <div className="shrink-0 p-1.5 bg-orange-50 rounded-lg group-hover:bg-orange-100 transition-colors">
+                    <Icon size={14} className="text-orange-600 group-hover:text-orange-700 transition-colors" />
                   </div>
-                  <span className="text-xs font-medium text-slate-300 group-hover:text-white transition-colors leading-tight">
+                  <span className="text-base font-medium text-slate-700 group-hover:text-orange-600 transition-colors leading-tight">
                     {tool.name}
                   </span>
                 </Link>
@@ -235,7 +235,7 @@ export function ToolsMegaMenu() {
           {activeCategory.tools.length > 16 && (
             <Link
               href={`/tooles/${activeTab}-tooles`}
-              className="mt-3 inline-flex items-center gap-1 text-xs text-slate-500 hover:text-orange-400 transition-colors pl-1"
+              className="mt-3 inline-flex items-center gap-1 text-xs text-slate-500 hover:text-orange-600 transition-colors pl-1"
             >
               +{activeCategory.tools.length - 16} more tools →
             </Link>
