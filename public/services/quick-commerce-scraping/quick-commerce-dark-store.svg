@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#faf8ff"/>
+      <stop offset="100%" stop-color="#f5f0ff"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#6d28d9"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="8" stdDeviation="6" flood-color="#5b21b6" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="500" height="500" rx="24" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle tech lines -->
+  <g stroke="#ddd6fe" stroke-width="1" opacity="0.4">
+    <circle cx="250" cy="250" r="180" fill="none" stroke-dasharray="8 8"/>
+    <circle cx="250" cy="250" r="100" fill="none" stroke-dasharray="4 4"/>
+  </g>
+
+  <g transform="translate(50, 60)" filter="url(#shadow)">
+    <!-- Main UI container -->
+    <rect width="400" height="360" rx="16" fill="#ffffff" stroke="#e4e4e7" stroke-width="1.5"/>
+
+    <!-- Map/Dark Store Pins visual -->
+    <g transform="translate(30, 40)">
+      <!-- Map Background Panel -->
+      <rect width="340" height="150" rx="12" fill="#f8fafc" stroke="#e2e8f0"/>
+      <!-- Grid representing store placement -->
+      <path d="M 0 50 L 340 50 M 0 100 L 340 100 M 110 0 L 110 150 M 220 0 L 220 150" fill="none" stroke="#f1f5f9" stroke-width="6"/>
+
+      <!-- Dark Store 1 -->
+      <g transform="translate(80, 40)">
+        <circle r="16" fill="#8b5cf6" opacity="0.2"/>
+        <circle r="8" fill="#8b5cf6"/>
+        <text y="-22" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="bold" fill="#5b21b6" text-anchor="middle">Dark Store A</text>
+        <text y="24" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#71717a" text-anchor="middle">Active Stock: 94%</text>
+      </g>
+
+      <!-- Dark Store 2 -->
+      <g transform="translate(260, 90)">
+        <circle r="16" fill="#ec4899" opacity="0.2"/>
+        <circle r="8" fill="#ec4899"/>
+        <text y="-22" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="bold" fill="#be185d" text-anchor="middle">Dark Store B</text>
+        <text y="24" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#71717a" text-anchor="middle">Active Stock: 88%</text>
+      </g>
+    </g>
+
+    <!-- Stock level bar list -->
+    <g transform="translate(30, 220)">
+      <text y="0" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800" fill="#18181b">Micro-Fulfillment SKU Monitoring</text>
+      
+      <!-- Item 1 -->
+      <g transform="translate(0, 20)">
+        <text y="10" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#4b5563">Ice Cream Pint (Vanilla)</text>
+        <rect x="150" y="0" width="160" height="10" rx="5" fill="#f1f5f9"/>
+        <rect x="150" y="0" width="130" height="10" rx="5" fill="#8b5cf6"/>
+        <text x="325" y="10" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="bold" fill="#7c3aed">81% In-Stock</text>
+      </g>
+
+      <!-- Item 2 -->
+      <g transform="translate(0, 50)">
+        <text y="10" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#4b5563">Energy Drink 250ml</text>
+        <rect x="150" y="0" width="160" height="10" rx="5" fill="#f1f5f9"/>
+        <rect x="150" y="0" width="40" height="10" rx="5" fill="#ef4444"/>
+        <text x="325" y="10" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="bold" fill="#b91c1c">25% Low Stock</text>
+      </g>
+
+      <!-- Item 3 -->
+      <g transform="translate(0, 80)">
+        <text y="10" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#4b5563">Paper Towels (2-Pack)</text>
+        <rect x="150" y="0" width="160" height="10" rx="5" fill="#f1f5f9"/>
+        <rect x="150" y="0" width="160" height="10" rx="5" fill="#10b981"/>
+        <text x="325" y="10" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="bold" fill="#047857">100% Full</text>
+      </g>
+    </g>
+  </g>
+</svg>

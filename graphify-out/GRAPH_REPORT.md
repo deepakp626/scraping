@@ -1,16 +1,16 @@
-# Graph Report - scraping  (2026-06-24)
+# Graph Report - scraping  (2026-07-20)
 
 ## Corpus Check
-- 110 files · ~338,097 words
+- 144 files · ~1,006,663 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 405 nodes · 404 edges · 57 communities (41 shown, 16 thin omitted)
+- 493 nodes · 501 edges · 66 communities (45 shown, 21 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `65b69432`
+- Built from commit: `75630c8b`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -46,6 +46,14 @@
 - [[_COMMUNITY_Community 49|Community 49]]
 - [[_COMMUNITY_Community 50|Community 50]]
 - [[_COMMUNITY_Community 51|Community 51]]
+- [[_COMMUNITY_Community 57|Community 57]]
+- [[_COMMUNITY_Community 58|Community 58]]
+- [[_COMMUNITY_Community 59|Community 59]]
+- [[_COMMUNITY_Community 61|Community 61]]
+- [[_COMMUNITY_Community 62|Community 62]]
+- [[_COMMUNITY_Community 63|Community 63]]
+- [[_COMMUNITY_Community 64|Community 64]]
+- [[_COMMUNITY_Community 65|Community 65]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `compilerOptions` - 16 edges
@@ -74,7 +82,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (57 total, 16 thin omitted)
+## Communities (66 total, 21 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.07
@@ -93,8 +101,8 @@ Cohesion: 0.11
 Nodes (18): devDependencies, eslint, eslint-config-next, tailwindcss, @tailwindcss/postcss, @types/node, @types/react, @types/react-dom (+10 more)
 
 ### Community 4 - "Community 4"
-Cohesion: 0.09
-Nodes (19): datasetIndustries, DatasetIndustry, DatasetItem, DatasetsMegaMenu(), panelVariants, dropdownVariants, itemVariants, mobileMenuVariants (+11 more)
+Cohesion: 0.10
+Nodes (18): datasetIndustries, DatasetIndustry, DatasetItem, DatasetsMegaMenu(), panelVariants, dropdownVariants, itemVariants, mobileMenuVariants (+10 more)
 
 ### Community 5 - "Community 5"
 Cohesion: 0.04
@@ -136,18 +144,30 @@ Nodes (3): ConvertWebp(), formatSize(), savingsPct()
 Cohesion: 0.33
 Nodes (4): LENGTH_UNITS, UnitConfig, UnitType, WEIGHT_UNITS
 
+### Community 57 - "Community 57"
+Cohesion: 0.20
+Nodes (6): metadata, capabilities, categories, keyFeatures, ServiceItem, servicesData
+
+### Community 58 - "Community 58"
+Cohesion: 0.25
+Nodes (6): benefits, ecommerIcons, features, highlights, stats, useCases
+
+### Community 61 - "Community 61"
+Cohesion: 0.05
+Nodes (17): carRentalData, BenefitItem, FeatureBlock, GridFeatureItem, PlatformItem, ServiceTemplateProps, StatItem, UseCaseItem (+9 more)
+
 ## Knowledge Gaps
-- **160 isolated node(s):** `metadata`, `stats`, `services`, `datasetProcess`, `useCases` (+155 more)
+- **180 isolated node(s):** `metadata`, `stats`, `services`, `datasetProcess`, `useCases` (+175 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **16 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **21 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `dependencies` connect `Community 5` to `Community 3`?**
-  _High betweenness centrality (0.022) - this node is a cross-community bridge._
+  _High betweenness centrality (0.015) - this node is a cross-community bridge._
 - **What connects `metadata`, `stats`, `services` to the rest of the system?**
-  _160 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _180 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.06666666666666667 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
@@ -157,4 +177,4 @@ _Questions this graph is uniquely positioned to answer:_
 - **Should `Community 3` be split into smaller, more focused modules?**
   _Cohesion score 0.10526315789473684 - nodes in this community are weakly interconnected._
 - **Should `Community 4` be split into smaller, more focused modules?**
-  _Cohesion score 0.09420289855072464 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.09881422924901186 - nodes in this community are weakly interconnected._

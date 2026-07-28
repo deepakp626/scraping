@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Background and Card Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#16a34a"/>
+      <stop offset="100%" stop-color="#15803d"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#c2410c"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="10" stdDeviation="8" flood-color="#0f172a" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="500" height="500" rx="24" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle background grid patterns -->
+  <g opacity="0.3">
+    <line x1="50" y1="0" x2="50" y2="500" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="5 5"/>
+    <line x1="150" y1="0" x2="150" y2="500" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="5 5"/>
+    <line x1="250" y1="0" x2="250" y2="500" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="5 5"/>
+    <line x1="350" y1="0" x2="350" y2="500" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="5 5"/>
+    <line x1="450" y1="0" x2="450" y2="500" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="5 5"/>
+    <line x1="0" y1="100" x2="500" y2="100" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="5 5"/>
+    <line x1="0" y1="200" x2="500" y2="200" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="5 5"/>
+    <line x1="0" y1="300" x2="500" y2="300" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="5 5"/>
+    <line x1="0" y1="400" x2="500" y2="400" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="5 5"/>
+  </g>
+
+  <!-- Card Base (Mockup Dashboard Panel) -->
+  <rect x="50" y="60" width="400" height="380" rx="16" fill="url(#cardGrad)" filter="url(#shadow)" stroke="#cbd5e1" stroke-width="1"/>
+  
+  <!-- Dashboard Header -->
+  <rect x="50" y="60" width="400" height="50" rx="16" fill="#ffffff" />
+  <circle cx="80" cy="85" r="6" fill="#ef4444"/>
+  <circle cx="100" cy="85" r="6" fill="#f59e0b"/>
+  <circle cx="120" cy="85" r="6" fill="#10b981"/>
+  <text x="150" y="90" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="#64748b">Grocery Promos Scraper</text>
+  <line x1="50" y1="110" x2="450" y2="110" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- Left Side: Coupon Graphic -->
+  <g transform="translate(75, 140)">
+    <!-- Coupon Ticket Background -->
+    <path d="M 0 0 L 150 0 C 150 15, 150 35, 150 50 L 150 100 L 0 100 C 0 85, 0 65, 0 50 Z" fill="url(#primaryGrad)" filter="url(#shadow)"/>
+    <path d="M 150 0 L 220 0 L 220 100 L 150 100 Z" fill="#22c55e" opacity="0.95" filter="url(#shadow)"/>
+    <!-- Coupon Dotted Separator -->
+    <line x1="150" y1="5" x2="150" y2="95" stroke="#ffffff" stroke-width="2" stroke-dasharray="4 4"/>
+    
+    <!-- Ticket Details -->
+    <text x="15" y="35" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#ffffff" opacity="0.8">SPECIAL DEALS</text>
+    <text x="15" y="65" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="800" fill="#ffffff">SAVE 30%</text>
+    <text x="15" y="85" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="bold" fill="#dcfce7">EXP: REAL-TIME FEED</text>
+    
+    <!-- Barcode representation -->
+    <g transform="translate(165, 20)">
+      <line x1="0" y1="0" x2="0" y2="60" stroke="#ffffff" stroke-width="3"/>
+      <line x1="6" y1="0" x2="6" y2="60" stroke="#ffffff" stroke-width="1"/>
+      <line x1="10" y1="0" x2="10" y2="60" stroke="#ffffff" stroke-width="4"/>
+      <line x1="16" y1="0" x2="16" y2="60" stroke="#ffffff" stroke-width="2"/>
+      <line x1="22" y1="0" x2="22" y2="60" stroke="#ffffff" stroke-width="1"/>
+      <line x1="28" y1="0" x2="28" y2="60" stroke="#ffffff" stroke-width="3"/>
+      <line x1="34" y1="0" x2="34" y2="60" stroke="#ffffff" stroke-width="2"/>
+      <line x1="40" y1="0" x2="40" y2="60" stroke="#ffffff" stroke-width="4"/>
+    </g>
+  </g>
+
+  <!-- Right Side: Store Discount Tags -->
+  <g transform="translate(315, 140)">
+    <!-- Red Accent Discount Tag -->
+    <path d="M 10 0 L 75 0 A 10 10 0 0 1 85 10 L 85 85 L 47 115 L 10 85 Z" fill="url(#accentGrad)" filter="url(#shadow)"/>
+    <circle cx="47" cy="20" r="6" fill="#ffffff"/>
+    <text x="47" y="55" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">OFFER</text>
+    <text x="47" y="78" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="800" fill="#ffffff" text-anchor="middle">BOGO</text>
+  </g>
+
+  <!-- Bottom Side: Discount Graph Tracker -->
+  <g transform="translate(75, 280)">
+    <!-- Chart Background Panel -->
+    <rect width="350" height="130" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+    
+    <text x="15" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#334155">Historical Discount Depth (Weekly)</text>
+    
+    <!-- Y Axis Labels -->
+    <text x="15" y="55" font-family="system-ui, -apple-system, sans-serif" font-size="8" font-weight="600" fill="#94a3b8">40%</text>
+    <text x="15" y="85" font-family="system-ui, -apple-system, sans-serif" font-size="8" font-weight="600" fill="#94a3b8">20%</text>
+    <text x="15" y="115" font-family="system-ui, -apple-system, sans-serif" font-size="8" font-weight="600" fill="#94a3b8">0%</text>
+    
+    <!-- Grid Lines -->
+    <line x1="35" y1="52" x2="335" y2="52" stroke="#f1f5f9" stroke-width="1"/>
+    <line x1="35" y1="82" x2="335" y2="82" stroke="#f1f5f9" stroke-width="1"/>
+    <line x1="35" y1="112" x2="335" y2="112" stroke="#cbd5e1" stroke-width="1.5"/>
+
+    <!-- Chart Line & Area -->
+    <path d="M 50 100 L 100 80 L 150 45 L 200 85 L 250 35 L 300 60 L 320 40 L 320 112 L 50 112 Z" fill="#16a34a" fill-opacity="0.1"/>
+    <path d="M 50 100 L 100 80 L 150 45 L 200 85 L 250 35 L 300 60 L 320 40" fill="none" stroke="#16a34a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Highlight points -->
+    <circle cx="150" cy="45" r="4" fill="#15803d" stroke="#ffffff" stroke-width="1.5"/>
+    <circle cx="250" cy="35" r="4" fill="#15803d" stroke="#ffffff" stroke-width="1.5"/>
+
+    <!-- X Axis Labels -->
+    <text x="50" y="125" font-family="system-ui, -apple-system, sans-serif" font-size="8" font-weight="600" fill="#94a3b8" text-anchor="middle">Mon</text>
+    <text x="100" y="125" font-family="system-ui, -apple-system, sans-serif" font-size="8" font-weight="600" fill="#94a3b8" text-anchor="middle">Tue</text>
+    <text x="150" y="125" font-family="system-ui, -apple-system, sans-serif" font-size="8" font-weight="600" fill="#94a3b8" text-anchor="middle">Wed</text>
+    <text x="200" y="125" font-family="system-ui, -apple-system, sans-serif" font-size="8" font-weight="600" fill="#94a3b8" text-anchor="middle">Thu</text>
+    <text x="250" y="125" font-family="system-ui, -apple-system, sans-serif" font-size="8" font-weight="600" fill="#94a3b8" text-anchor="middle">Fri</text>
+    <text x="300" y="125" font-family="system-ui, -apple-system, sans-serif" font-size="8" font-weight="600" fill="#94a3b8" text-anchor="middle">Sat</text>
+  </g>
+</svg>

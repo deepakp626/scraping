@@ -220,8 +220,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\image-tooles\\components\\RemoveBg.tsx": {
-    "mtime": 1780524327.643759,
-    "ast_hash": "b10fe8572af44d2b1a9b77b6bbf75b4d",
+    "mtime": 1783361291.8099644,
+    "ast_hash": "54d79677090ec9f24997545815733175",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\image-tooles\\components\\ResizeImage.tsx": {
@@ -810,7 +810,7 @@
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\components\\Navbar\\Navbar.tsx": {
-    "mtime": 1782249983.8813858,
+    "mtime": 1784049963.0264282,
     "ast_hash": "28ac7fed260094b11a50d32834a2e115",
     "semantic_hash": ""
   },
@@ -820,8 +820,398 @@
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\components\\Navbar\\ServicesMegaMenu.tsx": {
-    "mtime": 1782251812.8546174,
-    "ast_hash": "597e2444f60dfce782cd16167e1e888b",
+    "mtime": 1784486024.9744668,
+    "ast_hash": "3d3da093c2d1e8cde725ef9cedecf900",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\services\\page.tsx": {
+    "mtime": 1782326701.4543066,
+    "ast_hash": "314e80c095ec5141d72df8ae0d7d9b16",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\services\\ServicesPageClient.tsx": {
+    "mtime": 1784485960.7066286,
+    "ast_hash": "0ff901dc2fdbe735f8a4027c6a39e79c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\services\\ecommerce-data-scraping\\page.tsx": {
+    "mtime": 1784059846.9451187,
+    "ast_hash": "758fe92018c696158fd26ab4c54d7563",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\services\\servicesData.ts": {
+    "mtime": 1784485988.5292275,
+    "ast_hash": "55a5ffd36eb6824e0e5d5f821343db12",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\.agents\\rules\\scraping-frontend-rule.md": {
+    "mtime": 1783364134.1362865,
+    "ast_hash": "dc294ff2cc184be452ff447d8e0baf22",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\ecommerce-data-scraping\\Gemini_Generated-removebg-preview_image.webp": {
+    "mtime": 1783366043.5646029,
+    "ast_hash": "ac9457424bd6c25733539d693381cd27",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\ecommerce-data-scraping\\Gemini_Generated_Image_l6plmzl6plmzl6pl.webp": {
+    "mtime": 1783365611.1554964,
+    "ast_hash": "b0aa91f476678288c3b4b1e10362ceb8",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\ecommerce-data-scraping\\ecommerce-data-scraping-hero-image.png": {
+    "mtime": 1782939265.4249156,
+    "ast_hash": "e7a09cd20565be554027aaca1ec6e239",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\ecommerce-data-scraping\\vecteezy_online-shopping-concept_1903669.jpg": {
+    "mtime": 1783371535.592558,
+    "ast_hash": "002cd0fba79eef583a999907be85b38e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\services\\components\\ServiceTemplate.tsx": {
+    "mtime": 1784060457.0404234,
+    "ast_hash": "5753f604c6ec1b34e48a638ac4d7fc3d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\services\\fashion-scraping\\fashionData.ts": {
+    "mtime": 1784138697.3775713,
+    "ast_hash": "68cc32d8db446fc5090af99a5e7e57c5",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\services\\fashion-scraping\\page.tsx": {
+    "mtime": 1784056514.3609872,
+    "ast_hash": "3833acfa271eb55b576b6af18c485631",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\ecommerce-data-scraping\\ecommerce-icons\\Flipkart.svg": {
+    "mtime": 1783456694.2771182,
+    "ast_hash": "fde91e5f991744a6fa8c35c51184eb81",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\fashion-scraping\\fashion-benefits.png": {
+    "mtime": 1784056486.4246745,
+    "ast_hash": "4d458740418d21a016df39bdfa458d0c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\fashion-scraping\\fashion-data-mockup.png": {
+    "mtime": 1784056473.91022,
+    "ast_hash": "ab55d1b76b360d2214ae46138c72f270",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\fashion-scraping\\fashion-hero.png": {
+    "mtime": 1784056461.957649,
+    "ast_hash": "20749c2e58b981dc5d152f4f1ccd1c81",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\services\\car-rental-data-scraping\\carRentalData.ts": {
+    "mtime": 1784147735.5710537,
+    "ast_hash": "f7d176503771b2cf8674750c40a5a2d5",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\services\\car-rental-data-scraping\\page.tsx": {
+    "mtime": 1784139467.3124278,
+    "ast_hash": "885cac0f93ee38ac02fadf225fa06e28",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\services\\grocery-scraping\\page.tsx": {
+    "mtime": 1784228710.9706347,
+    "ast_hash": "39a1eba62b339fc00f50c594affec708",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\car-rental-data-scraping\\car-rental-benefits.png": {
+    "mtime": 1784139392.7625144,
+    "ast_hash": "e078a10fbff452f730afccc286b5531a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\car-rental-data-scraping\\car-rental-data-mockup.png": {
+    "mtime": 1784139367.9726002,
+    "ast_hash": "a95ac51051d17aeef0c55ad660cc926a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\car-rental-data-scraping\\car-rental-fleet.png": {
+    "mtime": 1784147695.6291547,
+    "ast_hash": "f8034242e98deb80f6c2642cc2f9ca64",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\car-rental-data-scraping\\car-rental-hero.png": {
+    "mtime": 1784139343.7398417,
+    "ast_hash": "f797ede9069e3f1296384e1d30390f26",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\car-rental-data-scraping\\car-rental-icons\\alamo.svg": {
+    "mtime": 1784139435.4210885,
+    "ast_hash": "63565f9086276bceecc4850777894bf0",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\car-rental-data-scraping\\car-rental-icons\\avis.svg": {
+    "mtime": 1784139435.4031837,
+    "ast_hash": "2c536ecbe06b085a684b88ec4218f8c4",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\car-rental-data-scraping\\car-rental-icons\\budget.svg": {
+    "mtime": 1784139435.4210885,
+    "ast_hash": "da1396a95e4f483daee25c24cbe1a186",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\car-rental-data-scraping\\car-rental-icons\\enterprise.svg": {
+    "mtime": 1784139435.4082358,
+    "ast_hash": "b2879b80a3bf508b2fd3a7c4f20f6d39",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\car-rental-data-scraping\\car-rental-icons\\expedia.svg": {
+    "mtime": 1784139435.4381487,
+    "ast_hash": "0c6e937dea051eb3ad3cc99fead49c0d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\car-rental-data-scraping\\car-rental-icons\\hertz.svg": {
+    "mtime": 1784139435.3968997,
+    "ast_hash": "2786e5007db9d2481f08e56e50ca4c74",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\car-rental-data-scraping\\car-rental-icons\\kayak.svg": {
+    "mtime": 1784139435.4210885,
+    "ast_hash": "bff6d7db15835d0784d108b9e17cca2c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\car-rental-data-scraping\\car-rental-icons\\national.svg": {
+    "mtime": 1784139435.4210885,
+    "ast_hash": "d4e94b19f29d615bcd76bd1c7036ec13",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\car-rental-data-scraping\\car-rental-icons\\rentalcars.svg": {
+    "mtime": 1784139435.439279,
+    "ast_hash": "36841158956de43e3f4ffd9642a05f56",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\car-rental-data-scraping\\car-rental-icons\\sixt.svg": {
+    "mtime": 1784139435.4148629,
+    "ast_hash": "50305acfb50fb9ae7423836815c74f44",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\car-rental-data-scraping\\car-rental-pricing.png": {
+    "mtime": 1784147710.730455,
+    "ast_hash": "6ee63c8da74858121f556beeabb2d160",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\services\\grocery-scraping\\groceryScrapingData.ts": {
+    "mtime": 1784228705.8743584,
+    "ast_hash": "2c53a1aa29e1255748b028ef4da9a419",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\grocery-scraping\\grocery-benefits.svg": {
+    "mtime": 1784228657.7993984,
+    "ast_hash": "297555a9d81ae0fcdbae024e067eb30b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\grocery-scraping\\grocery-data-mockup.png": {
+    "mtime": 1784228600.273451,
+    "ast_hash": "e7e8aa3c7b6acab82e25e397021d8bef",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\grocery-scraping\\grocery-hero.png": {
+    "mtime": 1784228588.5240388,
+    "ast_hash": "cb441b4ee158270215f5a81d0a44136a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\grocery-scraping\\grocery-icons\\aldi.svg": {
+    "mtime": 1784228694.8664675,
+    "ast_hash": "0e76bb0f6c294b7705d74a6d7d535999",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\grocery-scraping\\grocery-icons\\carrefour.svg": {
+    "mtime": 1784228676.9532475,
+    "ast_hash": "9f52225b4759170e56fd22de5e0b8beb",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\grocery-scraping\\grocery-icons\\instacart.svg": {
+    "mtime": 1784228681.3004847,
+    "ast_hash": "afd455a5bf578c62963373abeefc2a33",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\grocery-scraping\\grocery-icons\\kroger.svg": {
+    "mtime": 1784228667.7631252,
+    "ast_hash": "9d1fbba336e413cff83f6e535b955095",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\grocery-scraping\\grocery-icons\\target.svg": {
+    "mtime": 1784228690.5660634,
+    "ast_hash": "c7a83f4026af23ae9383a54d20febb95",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\grocery-scraping\\grocery-icons\\tesco.svg": {
+    "mtime": 1784228672.4127555,
+    "ast_hash": "3e13051809b8978bbd3f2e6b26d47857",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\grocery-scraping\\grocery-icons\\walmart.svg": {
+    "mtime": 1784228663.4841406,
+    "ast_hash": "1f51e450a359d21411e64e81290927fd",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\grocery-scraping\\grocery-icons\\woolworths.svg": {
+    "mtime": 1784228686.4618587,
+    "ast_hash": "4d60971620f09ad50ec392cbeb87b020",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\grocery-scraping\\grocery-inventory.png": {
+    "mtime": 1784228624.477278,
+    "ast_hash": "0c650fd444b5065b67759b690d7c3872",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\grocery-scraping\\grocery-promotions.svg": {
+    "mtime": 1784228650.223441,
+    "ast_hash": "146518d7436d9c158a39a6922ff14ade",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\grocery-scraping\\grocery-zipcode.png": {
+    "mtime": 1784228611.8713546,
+    "ast_hash": "24795caaa3548586ce0ccbee2dbfb774",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\services\\quick-commerce-scraping\\page.tsx": {
+    "mtime": 1784231286.784277,
+    "ast_hash": "d002eb57df8f47b6b1beac45848f20ef",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\services\\quick-commerce-scraping\\quickCommerceScrapingData.ts": {
+    "mtime": 1784230086.921121,
+    "ast_hash": "578ee56ab3c129b225e743e5a9ededc2",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\quick-commerce-scraping\\quick-commerce-benefits.svg": {
+    "mtime": 1784230073.9333138,
+    "ast_hash": "39b82c25292f3e8656850de3eed1e98b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\quick-commerce-scraping\\quick-commerce-dark-store.svg": {
+    "mtime": 1784230047.0588095,
+    "ast_hash": "6b80afb92427e963be72839a62534288",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\quick-commerce-scraping\\quick-commerce-data-mockup.svg": {
+    "mtime": 1784230040.5020032,
+    "ast_hash": "68d2d69f4eae227a5f51663bf477d629",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\quick-commerce-scraping\\quick-commerce-delivery-time.svg": {
+    "mtime": 1784230054.2709064,
+    "ast_hash": "3440b91a99343dc286ecf9ba5cc34912",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\quick-commerce-scraping\\quick-commerce-flash-sales.svg": {
+    "mtime": 1784230067.9505768,
+    "ast_hash": "6d5233a27635ded5b859efd08d7fd41e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\quick-commerce-scraping\\quick-commerce-hero.svg": {
+    "mtime": 1784230725.2410996,
+    "ast_hash": "1d5dc9ea32b7a00056899847fca5afea",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\quick-commerce-scraping\\quick-commerce-shelf-share.svg": {
+    "mtime": 1784230061.6466627,
+    "ast_hash": "c6e1d344684f3586314b6a9712d644d1",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\services\\food-data-scraping\\foodScrapingData.ts": {
+    "mtime": 1784400337.6764586,
+    "ast_hash": "14ae8b72167a36dbc729311293ef7166",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\services\\food-data-scraping\\page.tsx": {
+    "mtime": 1784400389.0480876,
+    "ast_hash": "c888cea6eeecefb9eabba4ec921e1167",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\services\\food-delivery-data-scraping-service\\foodDeliveryDataScrapingData.ts": {
+    "mtime": 1784402927.1866987,
+    "ast_hash": "c8898b0f8f08794be1ad9dece92d18c0",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\services\\food-delivery-data-scraping-service\\page.tsx": {
+    "mtime": 1784402504.134548,
+    "ast_hash": "a6b149e61c34361ac80d67d9ade70017",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\services\\healthcare-data-scraping\\healthcareDataScrapingData.ts": {
+    "mtime": 1784399585.871838,
+    "ast_hash": "035231673582ab159f3d480202a004eb",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\services\\healthcare-data-scraping\\page.tsx": {
+    "mtime": 1784399594.3827088,
+    "ast_hash": "aa07a1ea53c2d41507a943ce25d15346",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\services\\quick-commerce-fmcg-data-scraping\\fmcgScrapingData.ts": {
+    "mtime": 1784313210.2150133,
+    "ast_hash": "cf399028a1bc444903ee49230fbe6d3e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\services\\quick-commerce-fmcg-data-scraping\\page.tsx": {
+    "mtime": 1784313220.5637674,
+    "ast_hash": "d7ac216e62c315220f3a3e98f3477b65",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\services\\travel-data-scraping\\page.tsx": {
+    "mtime": 1784398589.6318233,
+    "ast_hash": "4d7a1bd23e792657eeb808d68ba0e6a0",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\services\\travel-data-scraping\\travelDataScrapingData.ts": {
+    "mtime": 1784398581.4617743,
+    "ast_hash": "e36202e1e2c7c1d49f0fdef7214a59a4",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\services\\finance-and-stock-scraping\\page.tsx": {
+    "mtime": 1784406824.976716,
+    "ast_hash": "125c8eb064356d44e0cb96c545ad26bb",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\services\\real-estate-property-data-scraping\\page.tsx": {
+    "mtime": 1784404160.41786,
+    "ast_hash": "23742dea9eb32a801c5a16a15861b05c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\services\\real-estate-property-data-scraping\\realEstatePropertyDataScrapingData.ts": {
+    "mtime": 1784404152.512825,
+    "ast_hash": "d755c1dc2b879371bddd55f9246a9d91",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\services\\finance-and-stock-scraping\\financeAndStockScrapingData.ts": {
+    "mtime": 1784406828.5844986,
+    "ast_hash": "773f7a2c185e704b13a4d583535d960a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\services\\ott-streaming-data-scraping-service\\ottStreamingData.ts": {
+    "mtime": 1784407748.641433,
+    "ast_hash": "05976a43092658ffd7312970b387c969",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\services\\ott-streaming-data-scraping-service\\page.tsx": {
+    "mtime": 1784407748.641433,
+    "ast_hash": "3b2641a6d4cacd18391eaad37a38165c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\services\\recruitment-data-scraping-service\\page.tsx": {
+    "mtime": 1784487001.5351815,
+    "ast_hash": "37719b4c9fcd0f48d6b5bda6fc8ea9fe",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\services\\social-media-scraping-services\\page.tsx": {
+    "mtime": 1784408230.0010746,
+    "ast_hash": "da0701a07ed0ad6dce1a0182a8af3713",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\services\\social-media-scraping-services\\socialMediaScrapingData.ts": {
+    "mtime": 1784408660.2782288,
+    "ast_hash": "054a989b650c63e5f68fae978af07210",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\services\\recruitment-data-scraping-service\\recruitmentScrapingData.ts": {
+    "mtime": 1784486992.1993532,
+    "ast_hash": "aa9efaa4179b16758d9cd1158d923d82",
     "semantic_hash": ""
   }
 }

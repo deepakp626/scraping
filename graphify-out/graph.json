@@ -364,10 +364,37 @@
       "norm_label": "servicesmegamenu.tsx"
     },
     {
-      "label": "ServicesMegaMenu()",
+      "label": "ServiceLink",
       "file_type": "code",
       "source_file": "app/components/Navbar/ServicesMegaMenu.tsx",
       "source_location": "L24",
+      "id": "navbar_servicesmegamenu_servicelink",
+      "community": 4,
+      "norm_label": "servicelink"
+    },
+    {
+      "label": "ServiceGroup",
+      "file_type": "code",
+      "source_file": "app/components/Navbar/ServicesMegaMenu.tsx",
+      "source_location": "L31",
+      "id": "navbar_servicesmegamenu_servicegroup",
+      "community": 4,
+      "norm_label": "servicegroup"
+    },
+    {
+      "label": "servicesColumns",
+      "file_type": "code",
+      "source_file": "app/components/Navbar/ServicesMegaMenu.tsx",
+      "source_location": "L36",
+      "id": "navbar_servicesmegamenu_servicescolumns",
+      "community": 4,
+      "norm_label": "servicescolumns"
+    },
+    {
+      "label": "ServicesMegaMenu()",
+      "file_type": "code",
+      "source_file": "app/components/Navbar/ServicesMegaMenu.tsx",
+      "source_location": "L121",
       "id": "navbar_servicesmegamenu_servicesmegamenu",
       "community": 4,
       "norm_label": "servicesmegamenu()"
@@ -956,6 +983,798 @@
       "id": "app_page_home",
       "community": 0,
       "norm_label": "home()"
+    },
+    {
+      "label": "ServicesPageClient.tsx",
+      "file_type": "code",
+      "source_file": "app/services/ServicesPageClient.tsx",
+      "source_location": "L1",
+      "id": "services_servicespageclient",
+      "community": 57,
+      "norm_label": "servicespageclient.tsx"
+    },
+    {
+      "label": "ServiceItem",
+      "file_type": "code",
+      "source_file": "app/services/ServicesPageClient.tsx",
+      "source_location": "L40",
+      "id": "services_servicespageclient_serviceitem",
+      "community": 57,
+      "norm_label": "serviceitem"
+    },
+    {
+      "label": "categories",
+      "file_type": "code",
+      "source_file": "app/services/ServicesPageClient.tsx",
+      "source_location": "L52",
+      "id": "services_servicespageclient_categories",
+      "community": 57,
+      "norm_label": "categories"
+    },
+    {
+      "label": "servicesData",
+      "file_type": "code",
+      "source_file": "app/services/ServicesPageClient.tsx",
+      "source_location": "L64",
+      "id": "services_servicespageclient_servicesdata",
+      "community": 57,
+      "norm_label": "servicesdata"
+    },
+    {
+      "label": "capabilities",
+      "file_type": "code",
+      "source_file": "app/services/ServicesPageClient.tsx",
+      "source_location": "L227",
+      "id": "services_servicespageclient_capabilities",
+      "community": 57,
+      "norm_label": "capabilities"
+    },
+    {
+      "label": "keyFeatures",
+      "file_type": "code",
+      "source_file": "app/services/ServicesPageClient.tsx",
+      "source_location": "L260",
+      "id": "services_servicespageclient_keyfeatures",
+      "community": 57,
+      "norm_label": "keyfeatures"
+    },
+    {
+      "label": "ServicesPageClient()",
+      "file_type": "code",
+      "source_file": "app/services/ServicesPageClient.tsx",
+      "source_location": "L303",
+      "id": "services_servicespageclient_servicespageclient",
+      "community": 57,
+      "norm_label": "servicespageclient()"
+    },
+    {
+      "label": "carRentalData.ts",
+      "file_type": "code",
+      "source_file": "app/services/car-rental-data-scraping/carRentalData.ts",
+      "source_location": "L1",
+      "id": "car_rental_data_scraping_carrentaldata",
+      "community": 61,
+      "norm_label": "carrentaldata.ts"
+    },
+    {
+      "label": "carRentalData",
+      "file_type": "code",
+      "source_file": "app/services/car-rental-data-scraping/carRentalData.ts",
+      "source_location": "L15",
+      "id": "car_rental_data_scraping_carrentaldata_carrentaldata",
+      "community": 61,
+      "norm_label": "carrentaldata"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/services/car-rental-data-scraping/page.tsx",
+      "source_location": "L1",
+      "id": "car_rental_data_scraping_page",
+      "community": 61,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "CarRentalScrapingPage()",
+      "file_type": "code",
+      "source_file": "app/services/car-rental-data-scraping/page.tsx",
+      "source_location": "L6",
+      "id": "car_rental_data_scraping_page_carrentalscrapingpage",
+      "community": 61,
+      "norm_label": "carrentalscrapingpage()"
+    },
+    {
+      "label": "ServiceTemplate.tsx",
+      "file_type": "code",
+      "source_file": "app/services/components/ServiceTemplate.tsx",
+      "source_location": "L1",
+      "id": "components_servicetemplate",
+      "community": 61,
+      "norm_label": "servicetemplate.tsx"
+    },
+    {
+      "label": "StatItem",
+      "file_type": "code",
+      "source_file": "app/services/components/ServiceTemplate.tsx",
+      "source_location": "L7",
+      "id": "components_servicetemplate_statitem",
+      "community": 61,
+      "norm_label": "statitem"
+    },
+    {
+      "label": "FeatureBlock",
+      "file_type": "code",
+      "source_file": "app/services/components/ServiceTemplate.tsx",
+      "source_location": "L12",
+      "id": "components_servicetemplate_featureblock",
+      "community": 61,
+      "norm_label": "featureblock"
+    },
+    {
+      "label": "BenefitItem",
+      "file_type": "code",
+      "source_file": "app/services/components/ServiceTemplate.tsx",
+      "source_location": "L23",
+      "id": "components_servicetemplate_benefititem",
+      "community": 61,
+      "norm_label": "benefititem"
+    },
+    {
+      "label": "GridFeatureItem",
+      "file_type": "code",
+      "source_file": "app/services/components/ServiceTemplate.tsx",
+      "source_location": "L28",
+      "id": "components_servicetemplate_gridfeatureitem",
+      "community": 61,
+      "norm_label": "gridfeatureitem"
+    },
+    {
+      "label": "UseCaseItem",
+      "file_type": "code",
+      "source_file": "app/services/components/ServiceTemplate.tsx",
+      "source_location": "L34",
+      "id": "components_servicetemplate_usecaseitem",
+      "community": 61,
+      "norm_label": "usecaseitem"
+    },
+    {
+      "label": "PlatformItem",
+      "file_type": "code",
+      "source_file": "app/services/components/ServiceTemplate.tsx",
+      "source_location": "L40",
+      "id": "components_servicetemplate_platformitem",
+      "community": 61,
+      "norm_label": "platformitem"
+    },
+    {
+      "label": "ServiceTemplateProps",
+      "file_type": "code",
+      "source_file": "app/services/components/ServiceTemplate.tsx",
+      "source_location": "L45",
+      "id": "components_servicetemplate_servicetemplateprops",
+      "community": 61,
+      "norm_label": "servicetemplateprops"
+    },
+    {
+      "label": "ServiceTemplate()",
+      "file_type": "code",
+      "source_file": "app/services/components/ServiceTemplate.tsx",
+      "source_location": "L99",
+      "id": "components_servicetemplate_servicetemplate",
+      "community": 61,
+      "norm_label": "servicetemplate()"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/services/ecommerce-data-scraping/page.tsx",
+      "source_location": "L1",
+      "id": "ecommerce_data_scraping_page",
+      "community": 58,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "ecommerIcons",
+      "file_type": "code",
+      "source_file": "app/services/ecommerce-data-scraping/page.tsx",
+      "source_location": "L26",
+      "id": "ecommerce_data_scraping_page_ecommericons",
+      "community": 58,
+      "norm_label": "ecommericons"
+    },
+    {
+      "label": "benefits",
+      "file_type": "code",
+      "source_file": "app/services/ecommerce-data-scraping/page.tsx",
+      "source_location": "L113",
+      "id": "ecommerce_data_scraping_page_benefits",
+      "community": 58,
+      "norm_label": "benefits"
+    },
+    {
+      "label": "features",
+      "file_type": "code",
+      "source_file": "app/services/ecommerce-data-scraping/page.tsx",
+      "source_location": "L146",
+      "id": "ecommerce_data_scraping_page_features",
+      "community": 58,
+      "norm_label": "features"
+    },
+    {
+      "label": "useCases",
+      "file_type": "code",
+      "source_file": "app/services/ecommerce-data-scraping/page.tsx",
+      "source_location": "L185",
+      "id": "ecommerce_data_scraping_page_usecases",
+      "community": 58,
+      "norm_label": "usecases"
+    },
+    {
+      "label": "highlights",
+      "file_type": "code",
+      "source_file": "app/services/ecommerce-data-scraping/page.tsx",
+      "source_location": "L212",
+      "id": "ecommerce_data_scraping_page_highlights",
+      "community": 58,
+      "norm_label": "highlights"
+    },
+    {
+      "label": "stats",
+      "file_type": "code",
+      "source_file": "app/services/ecommerce-data-scraping/page.tsx",
+      "source_location": "L223",
+      "id": "ecommerce_data_scraping_page_stats",
+      "community": 58,
+      "norm_label": "stats"
+    },
+    {
+      "label": "EcommercePage()",
+      "file_type": "code",
+      "source_file": "app/services/ecommerce-data-scraping/page.tsx",
+      "source_location": "L232",
+      "id": "ecommerce_data_scraping_page_ecommercepage",
+      "community": 58,
+      "norm_label": "ecommercepage()"
+    },
+    {
+      "label": "fashionData.ts",
+      "file_type": "code",
+      "source_file": "app/services/fashion-scraping/fashionData.ts",
+      "source_location": "L1",
+      "id": "fashion_scraping_fashiondata",
+      "community": 61,
+      "norm_label": "fashiondata.ts"
+    },
+    {
+      "label": "fashionData",
+      "file_type": "code",
+      "source_file": "app/services/fashion-scraping/fashionData.ts",
+      "source_location": "L15",
+      "id": "fashion_scraping_fashiondata_fashiondata",
+      "community": 61,
+      "norm_label": "fashiondata"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/services/fashion-scraping/page.tsx",
+      "source_location": "L1",
+      "id": "fashion_scraping_page",
+      "community": 61,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "FashionScrapingPage()",
+      "file_type": "code",
+      "source_file": "app/services/fashion-scraping/page.tsx",
+      "source_location": "L6",
+      "id": "fashion_scraping_page_fashionscrapingpage",
+      "community": 61,
+      "norm_label": "fashionscrapingpage()"
+    },
+    {
+      "label": "financeAndStockScrapingData.ts",
+      "file_type": "code",
+      "source_file": "app/services/finance-and-stock-scraping/financeAndStockScrapingData.ts",
+      "source_location": "L1",
+      "id": "finance_and_stock_scraping_financeandstockscrapingdata",
+      "community": 61,
+      "norm_label": "financeandstockscrapingdata.ts"
+    },
+    {
+      "label": "financeAndStockScrapingData",
+      "file_type": "code",
+      "source_file": "app/services/finance-and-stock-scraping/financeAndStockScrapingData.ts",
+      "source_location": "L16",
+      "id": "finance_and_stock_scraping_financeandstockscrapingdata_financeandstockscrapingdata",
+      "community": 61,
+      "norm_label": "financeandstockscrapingdata"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/services/finance-and-stock-scraping/page.tsx",
+      "source_location": "L1",
+      "id": "finance_and_stock_scraping_page",
+      "community": 61,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "FinanceAndStockScrapingPage()",
+      "file_type": "code",
+      "source_file": "app/services/finance-and-stock-scraping/page.tsx",
+      "source_location": "L5",
+      "id": "finance_and_stock_scraping_page_financeandstockscrapingpage",
+      "community": 61,
+      "norm_label": "financeandstockscrapingpage()"
+    },
+    {
+      "label": "foodScrapingData.ts",
+      "file_type": "code",
+      "source_file": "app/services/food-data-scraping/foodScrapingData.ts",
+      "source_location": "L1",
+      "id": "food_data_scraping_foodscrapingdata",
+      "community": 61,
+      "norm_label": "foodscrapingdata.ts"
+    },
+    {
+      "label": "foodScrapingData",
+      "file_type": "code",
+      "source_file": "app/services/food-data-scraping/foodScrapingData.ts",
+      "source_location": "L15",
+      "id": "food_data_scraping_foodscrapingdata_foodscrapingdata",
+      "community": 61,
+      "norm_label": "foodscrapingdata"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/services/food-data-scraping/page.tsx",
+      "source_location": "L1",
+      "id": "food_data_scraping_page",
+      "community": 61,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "GroceryScrapingPage()",
+      "file_type": "code",
+      "source_file": "app/services/food-data-scraping/page.tsx",
+      "source_location": "L6",
+      "id": "food_data_scraping_page_groceryscrapingpage",
+      "community": 61,
+      "norm_label": "groceryscrapingpage()"
+    },
+    {
+      "label": "foodDeliveryDataScrapingData.ts",
+      "file_type": "code",
+      "source_file": "app/services/food-delivery-data-scraping-service/foodDeliveryDataScrapingData.ts",
+      "source_location": "L1",
+      "id": "food_delivery_data_scraping_service_fooddeliverydatascrapingdata",
+      "community": 62,
+      "norm_label": "fooddeliverydatascrapingdata.ts"
+    },
+    {
+      "label": "foodDeliveryDataScrapingData",
+      "file_type": "code",
+      "source_file": "app/services/food-delivery-data-scraping-service/foodDeliveryDataScrapingData.ts",
+      "source_location": "L20",
+      "id": "food_delivery_data_scraping_service_fooddeliverydatascrapingdata_fooddeliverydatascrapingdata",
+      "community": 62,
+      "norm_label": "fooddeliverydatascrapingdata"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/services/food-delivery-data-scraping-service/page.tsx",
+      "source_location": "L1",
+      "id": "food_delivery_data_scraping_service_page",
+      "community": 62,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "FoodDeliveryDataScrapingPage()",
+      "file_type": "code",
+      "source_file": "app/services/food-delivery-data-scraping-service/page.tsx",
+      "source_location": "L5",
+      "id": "food_delivery_data_scraping_service_page_fooddeliverydatascrapingpage",
+      "community": 62,
+      "norm_label": "fooddeliverydatascrapingpage()"
+    },
+    {
+      "label": "groceryScrapingData.ts",
+      "file_type": "code",
+      "source_file": "app/services/grocery-scraping/groceryScrapingData.ts",
+      "source_location": "L1",
+      "id": "grocery_scraping_groceryscrapingdata",
+      "community": 63,
+      "norm_label": "groceryscrapingdata.ts"
+    },
+    {
+      "label": "groceryScrapingData",
+      "file_type": "code",
+      "source_file": "app/services/grocery-scraping/groceryScrapingData.ts",
+      "source_location": "L14",
+      "id": "grocery_scraping_groceryscrapingdata_groceryscrapingdata",
+      "community": 63,
+      "norm_label": "groceryscrapingdata"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/services/grocery-scraping/page.tsx",
+      "source_location": "L1",
+      "id": "grocery_scraping_page",
+      "community": 63,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "GroceryScrapingPage()",
+      "file_type": "code",
+      "source_file": "app/services/grocery-scraping/page.tsx",
+      "source_location": "L6",
+      "id": "grocery_scraping_page_groceryscrapingpage",
+      "community": 63,
+      "norm_label": "groceryscrapingpage()"
+    },
+    {
+      "label": "healthcareDataScrapingData.ts",
+      "file_type": "code",
+      "source_file": "app/services/healthcare-data-scraping/healthcareDataScrapingData.ts",
+      "source_location": "L1",
+      "id": "healthcare_data_scraping_healthcaredatascrapingdata",
+      "community": 61,
+      "norm_label": "healthcaredatascrapingdata.ts"
+    },
+    {
+      "label": "healthcareDataScrapingData",
+      "file_type": "code",
+      "source_file": "app/services/healthcare-data-scraping/healthcareDataScrapingData.ts",
+      "source_location": "L16",
+      "id": "healthcare_data_scraping_healthcaredatascrapingdata_healthcaredatascrapingdata",
+      "community": 61,
+      "norm_label": "healthcaredatascrapingdata"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/services/healthcare-data-scraping/page.tsx",
+      "source_location": "L1",
+      "id": "healthcare_data_scraping_page",
+      "community": 61,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "HealthcareDataScrapingPage()",
+      "file_type": "code",
+      "source_file": "app/services/healthcare-data-scraping/page.tsx",
+      "source_location": "L5",
+      "id": "healthcare_data_scraping_page_healthcaredatascrapingpage",
+      "community": 61,
+      "norm_label": "healthcaredatascrapingpage()"
+    },
+    {
+      "label": "ottStreamingData.ts",
+      "file_type": "code",
+      "source_file": "app/services/ott-streaming-data-scraping-service/ottStreamingData.ts",
+      "source_location": "L1",
+      "id": "ott_streaming_data_scraping_service_ottstreamingdata",
+      "community": 61,
+      "norm_label": "ottstreamingdata.ts"
+    },
+    {
+      "label": "ottStreamingData",
+      "file_type": "code",
+      "source_file": "app/services/ott-streaming-data-scraping-service/ottStreamingData.ts",
+      "source_location": "L17",
+      "id": "ott_streaming_data_scraping_service_ottstreamingdata_ottstreamingdata",
+      "community": 61,
+      "norm_label": "ottstreamingdata"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/services/ott-streaming-data-scraping-service/page.tsx",
+      "source_location": "L1",
+      "id": "ott_streaming_data_scraping_service_page",
+      "community": 61,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "OttStreamingDataScrapingServicePage()",
+      "file_type": "code",
+      "source_file": "app/services/ott-streaming-data-scraping-service/page.tsx",
+      "source_location": "L5",
+      "id": "ott_streaming_data_scraping_service_page_ottstreamingdatascrapingservicepage",
+      "community": 61,
+      "norm_label": "ottstreamingdatascrapingservicepage()"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/services/page.tsx",
+      "source_location": "L1",
+      "id": "services_page",
+      "community": 57,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "metadata",
+      "file_type": "code",
+      "source_file": "app/services/page.tsx",
+      "source_location": "L5",
+      "id": "services_page_metadata",
+      "community": 57,
+      "norm_label": "metadata"
+    },
+    {
+      "label": "ServicesPage()",
+      "file_type": "code",
+      "source_file": "app/services/page.tsx",
+      "source_location": "L10",
+      "id": "services_page_servicespage",
+      "community": 57,
+      "norm_label": "servicespage()"
+    },
+    {
+      "label": "fmcgScrapingData.ts",
+      "file_type": "code",
+      "source_file": "app/services/quick-commerce-fmcg-data-scraping/fmcgScrapingData.ts",
+      "source_location": "L1",
+      "id": "quick_commerce_fmcg_data_scraping_fmcgscrapingdata",
+      "community": 64,
+      "norm_label": "fmcgscrapingdata.ts"
+    },
+    {
+      "label": "fmcgScrapingData",
+      "file_type": "code",
+      "source_file": "app/services/quick-commerce-fmcg-data-scraping/fmcgScrapingData.ts",
+      "source_location": "L14",
+      "id": "quick_commerce_fmcg_data_scraping_fmcgscrapingdata_fmcgscrapingdata",
+      "community": 64,
+      "norm_label": "fmcgscrapingdata"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/services/quick-commerce-fmcg-data-scraping/page.tsx",
+      "source_location": "L1",
+      "id": "quick_commerce_fmcg_data_scraping_page",
+      "community": 64,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "QuickCommerceFmcgDataScrapingPage()",
+      "file_type": "code",
+      "source_file": "app/services/quick-commerce-fmcg-data-scraping/page.tsx",
+      "source_location": "L5",
+      "id": "quick_commerce_fmcg_data_scraping_page_quickcommercefmcgdatascrapingpage",
+      "community": 64,
+      "norm_label": "quickcommercefmcgdatascrapingpage()"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/services/quick-commerce-scraping/page.tsx",
+      "source_location": "L1",
+      "id": "quick_commerce_scraping_page",
+      "community": 61,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "QuickCommerceScrapingPage()",
+      "file_type": "code",
+      "source_file": "app/services/quick-commerce-scraping/page.tsx",
+      "source_location": "L6",
+      "id": "quick_commerce_scraping_page_quickcommercescrapingpage",
+      "community": 61,
+      "norm_label": "quickcommercescrapingpage()"
+    },
+    {
+      "label": "quickCommerceScrapingData.ts",
+      "file_type": "code",
+      "source_file": "app/services/quick-commerce-scraping/quickCommerceScrapingData.ts",
+      "source_location": "L1",
+      "id": "quick_commerce_scraping_quickcommercescrapingdata",
+      "community": 61,
+      "norm_label": "quickcommercescrapingdata.ts"
+    },
+    {
+      "label": "quickCommerceScrapingData",
+      "file_type": "code",
+      "source_file": "app/services/quick-commerce-scraping/quickCommerceScrapingData.ts",
+      "source_location": "L13",
+      "id": "quick_commerce_scraping_quickcommercescrapingdata_quickcommercescrapingdata",
+      "community": 61,
+      "norm_label": "quickcommercescrapingdata"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/services/real-estate-property-data-scraping/page.tsx",
+      "source_location": "L1",
+      "id": "real_estate_property_data_scraping_page",
+      "community": 61,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "RealEstatePropertyDataScrapingPage()",
+      "file_type": "code",
+      "source_file": "app/services/real-estate-property-data-scraping/page.tsx",
+      "source_location": "L5",
+      "id": "real_estate_property_data_scraping_page_realestatepropertydatascrapingpage",
+      "community": 61,
+      "norm_label": "realestatepropertydatascrapingpage()"
+    },
+    {
+      "label": "realEstatePropertyDataScrapingData.ts",
+      "file_type": "code",
+      "source_file": "app/services/real-estate-property-data-scraping/realEstatePropertyDataScrapingData.ts",
+      "source_location": "L1",
+      "id": "real_estate_property_data_scraping_realestatepropertydatascrapingdata",
+      "community": 61,
+      "norm_label": "realestatepropertydatascrapingdata.ts"
+    },
+    {
+      "label": "realEstatePropertyDataScrapingData",
+      "file_type": "code",
+      "source_file": "app/services/real-estate-property-data-scraping/realEstatePropertyDataScrapingData.ts",
+      "source_location": "L21",
+      "id": "real_estate_property_data_scraping_realestatepropertydatascrapingdata_realestatepropertydatascrapingdata",
+      "community": 61,
+      "norm_label": "realestatepropertydatascrapingdata"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/services/recruitment-data-scraping-service/page.tsx",
+      "source_location": "L1",
+      "id": "recruitment_data_scraping_service_page",
+      "community": 61,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "RecruitmentScrapingPage()",
+      "file_type": "code",
+      "source_file": "app/services/recruitment-data-scraping-service/page.tsx",
+      "source_location": "L6",
+      "id": "recruitment_data_scraping_service_page_recruitmentscrapingpage",
+      "community": 61,
+      "norm_label": "recruitmentscrapingpage()"
+    },
+    {
+      "label": "recruitmentScrapingData.ts",
+      "file_type": "code",
+      "source_file": "app/services/recruitment-data-scraping-service/recruitmentScrapingData.ts",
+      "source_location": "L1",
+      "id": "recruitment_data_scraping_service_recruitmentscrapingdata",
+      "community": 61,
+      "norm_label": "recruitmentscrapingdata.ts"
+    },
+    {
+      "label": "recruitmentScrapingData",
+      "file_type": "code",
+      "source_file": "app/services/recruitment-data-scraping-service/recruitmentScrapingData.ts",
+      "source_location": "L15",
+      "id": "recruitment_data_scraping_service_recruitmentscrapingdata_recruitmentscrapingdata",
+      "community": 61,
+      "norm_label": "recruitmentscrapingdata"
+    },
+    {
+      "label": "servicesData.ts",
+      "file_type": "code",
+      "source_file": "app/services/servicesData.ts",
+      "source_location": "L1",
+      "id": "services_servicesdata",
+      "community": 59,
+      "norm_label": "servicesdata.ts"
+    },
+    {
+      "label": "ServiceItem",
+      "file_type": "code",
+      "source_file": "app/services/servicesData.ts",
+      "source_location": "L21",
+      "id": "services_servicesdata_serviceitem",
+      "community": 59,
+      "norm_label": "serviceitem"
+    },
+    {
+      "label": "servicesData",
+      "file_type": "code",
+      "source_file": "app/services/servicesData.ts",
+      "source_location": "L37",
+      "id": "services_servicesdata_servicesdata",
+      "community": 59,
+      "norm_label": "servicesdata"
+    },
+    {
+      "label": "getServiceBySlug()",
+      "file_type": "code",
+      "source_file": "app/services/servicesData.ts",
+      "source_location": "L264",
+      "id": "services_servicesdata_getservicebyslug",
+      "community": 59,
+      "norm_label": "getservicebyslug()"
+    },
+    {
+      "label": "getAllServiceSlugs()",
+      "file_type": "code",
+      "source_file": "app/services/servicesData.ts",
+      "source_location": "L269",
+      "id": "services_servicesdata_getallserviceslugs",
+      "community": 59,
+      "norm_label": "getallserviceslugs()"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/services/social-media-scraping-services/page.tsx",
+      "source_location": "L1",
+      "id": "social_media_scraping_services_page",
+      "community": 65,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "SocialMediaScrapingServicesPage()",
+      "file_type": "code",
+      "source_file": "app/services/social-media-scraping-services/page.tsx",
+      "source_location": "L5",
+      "id": "social_media_scraping_services_page_socialmediascrapingservicespage",
+      "community": 65,
+      "norm_label": "socialmediascrapingservicespage()"
+    },
+    {
+      "label": "socialMediaScrapingData.ts",
+      "file_type": "code",
+      "source_file": "app/services/social-media-scraping-services/socialMediaScrapingData.ts",
+      "source_location": "L1",
+      "id": "social_media_scraping_services_socialmediascrapingdata",
+      "community": 65,
+      "norm_label": "socialmediascrapingdata.ts"
+    },
+    {
+      "label": "socialMediaScrapingData",
+      "file_type": "code",
+      "source_file": "app/services/social-media-scraping-services/socialMediaScrapingData.ts",
+      "source_location": "L17",
+      "id": "social_media_scraping_services_socialmediascrapingdata_socialmediascrapingdata",
+      "community": 65,
+      "norm_label": "socialmediascrapingdata"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/services/travel-data-scraping/page.tsx",
+      "source_location": "L1",
+      "id": "travel_data_scraping_page",
+      "community": 61,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "TravelDataScrapingPage()",
+      "file_type": "code",
+      "source_file": "app/services/travel-data-scraping/page.tsx",
+      "source_location": "L5",
+      "id": "travel_data_scraping_page_traveldatascrapingpage",
+      "community": 61,
+      "norm_label": "traveldatascrapingpage()"
+    },
+    {
+      "label": "travelDataScrapingData.ts",
+      "file_type": "code",
+      "source_file": "app/services/travel-data-scraping/travelDataScrapingData.ts",
+      "source_location": "L1",
+      "id": "travel_data_scraping_traveldatascrapingdata",
+      "community": 61,
+      "norm_label": "traveldatascrapingdata.ts"
+    },
+    {
+      "label": "travelDataScrapingData",
+      "file_type": "code",
+      "source_file": "app/services/travel-data-scraping/travelDataScrapingData.ts",
+      "source_location": "L15",
+      "id": "travel_data_scraping_traveldatascrapingdata_traveldatascrapingdata",
+      "community": 61,
+      "norm_label": "traveldatascrapingdata"
     },
     {
       "label": "CodeEditor.tsx",
@@ -3523,6 +4342,15 @@
       "norm_label": "graphify"
     },
     {
+      "label": "scraping-frontend-rule.md",
+      "file_type": "document",
+      "source_file": ".agents/rules/scraping-frontend-rule.md",
+      "source_location": "L1",
+      "id": "rules_scraping_frontend_rule",
+      "community": 60,
+      "norm_label": "scraping-frontend-rule.md"
+    },
+    {
       "label": "tool-website-guide.md",
       "file_type": "document",
       "source_file": ".agents/rules/tool-website-guide.md",
@@ -3611,42 +4439,6 @@
       "id": "readme_graphify",
       "community": 10,
       "norm_label": "graphify"
-    },
-    {
-      "label": "ServiceItem",
-      "file_type": "code",
-      "source_file": "app/components/Navbar/ServicesMegaMenu.tsx",
-      "source_location": "L30",
-      "community": 4,
-      "norm_label": "serviceitem",
-      "id": "navbar_servicesmegamenu_serviceitem"
-    },
-    {
-      "label": "ServiceCategory",
-      "file_type": "code",
-      "source_file": "app/components/Navbar/ServicesMegaMenu.tsx",
-      "source_location": "L37",
-      "community": 4,
-      "norm_label": "servicecategory",
-      "id": "navbar_servicesmegamenu_servicecategory"
-    },
-    {
-      "label": "serviceCategories",
-      "file_type": "code",
-      "source_file": "app/components/Navbar/ServicesMegaMenu.tsx",
-      "source_location": "L49",
-      "community": 4,
-      "norm_label": "servicecategories",
-      "id": "navbar_servicesmegamenu_servicecategories"
-    },
-    {
-      "label": "panelVariants",
-      "file_type": "code",
-      "source_file": "app/components/Navbar/ServicesMegaMenu.tsx",
-      "source_location": "L154",
-      "community": 4,
-      "norm_label": "panelvariants",
-      "id": "navbar_servicesmegamenu_panelvariants"
     }
   ],
   "links": [
@@ -4066,41 +4858,31 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/components/Navbar/ServicesMegaMenu.tsx",
-      "source_location": "L154",
+      "source_location": "L31",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "navbar_servicesmegamenu",
-      "target": "navbar_servicesmegamenu_panelvariants"
+      "target": "navbar_servicesmegamenu_servicegroup"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/components/Navbar/ServicesMegaMenu.tsx",
-      "source_location": "L49",
+      "source_location": "L24",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "navbar_servicesmegamenu",
-      "target": "navbar_servicesmegamenu_servicecategories"
+      "target": "navbar_servicesmegamenu_servicelink"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/components/Navbar/ServicesMegaMenu.tsx",
-      "source_location": "L37",
+      "source_location": "L36",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "navbar_servicesmegamenu",
-      "target": "navbar_servicesmegamenu_servicecategory"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/components/Navbar/ServicesMegaMenu.tsx",
-      "source_location": "L30",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "navbar_servicesmegamenu",
-      "target": "navbar_servicesmegamenu_serviceitem"
+      "target": "navbar_servicesmegamenu_servicescolumns"
     },
     {
       "relation": "contains",
@@ -4702,6 +5484,1029 @@
       "confidence_score": 1.0,
       "source": "app_page",
       "target": "app_page_home"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_page",
+      "target": "services_servicespageclient"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/ServicesPageClient.tsx",
+      "source_location": "L227",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_servicespageclient",
+      "target": "services_servicespageclient_capabilities"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/ServicesPageClient.tsx",
+      "source_location": "L52",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_servicespageclient",
+      "target": "services_servicespageclient_categories"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/ServicesPageClient.tsx",
+      "source_location": "L260",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_servicespageclient",
+      "target": "services_servicespageclient_keyfeatures"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/ServicesPageClient.tsx",
+      "source_location": "L40",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_servicespageclient",
+      "target": "services_servicespageclient_serviceitem"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/ServicesPageClient.tsx",
+      "source_location": "L64",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_servicespageclient",
+      "target": "services_servicespageclient_servicesdata"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/ServicesPageClient.tsx",
+      "source_location": "L303",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_servicespageclient",
+      "target": "services_servicespageclient_servicespageclient"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/car-rental-data-scraping/carRentalData.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "car_rental_data_scraping_carrentaldata",
+      "target": "car_rental_data_scraping_carrentaldata_carrentaldata"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/car-rental-data-scraping/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "car_rental_data_scraping_page",
+      "target": "car_rental_data_scraping_carrentaldata"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/car-rental-data-scraping/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "car_rental_data_scraping_page",
+      "target": "car_rental_data_scraping_carrentaldata_carrentaldata"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/car-rental-data-scraping/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "car_rental_data_scraping_page",
+      "target": "car_rental_data_scraping_page_carrentalscrapingpage"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/car-rental-data-scraping/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "car_rental_data_scraping_page",
+      "target": "components_servicetemplate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/components/ServiceTemplate.tsx",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_servicetemplate",
+      "target": "components_servicetemplate_benefititem"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/components/ServiceTemplate.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_servicetemplate",
+      "target": "components_servicetemplate_featureblock"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/components/ServiceTemplate.tsx",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_servicetemplate",
+      "target": "components_servicetemplate_gridfeatureitem"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/components/ServiceTemplate.tsx",
+      "source_location": "L40",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_servicetemplate",
+      "target": "components_servicetemplate_platformitem"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/components/ServiceTemplate.tsx",
+      "source_location": "L99",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_servicetemplate",
+      "target": "components_servicetemplate_servicetemplate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/components/ServiceTemplate.tsx",
+      "source_location": "L45",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_servicetemplate",
+      "target": "components_servicetemplate_servicetemplateprops"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/components/ServiceTemplate.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_servicetemplate",
+      "target": "components_servicetemplate_statitem"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/components/ServiceTemplate.tsx",
+      "source_location": "L34",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_servicetemplate",
+      "target": "components_servicetemplate_usecaseitem"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/fashion-scraping/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "fashion_scraping_page",
+      "target": "components_servicetemplate"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/finance-and-stock-scraping/page.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "finance_and_stock_scraping_page",
+      "target": "components_servicetemplate"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/food-data-scraping/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "food_data_scraping_page",
+      "target": "components_servicetemplate"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/food-delivery-data-scraping-service/page.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "food_delivery_data_scraping_service_page",
+      "target": "components_servicetemplate"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/grocery-scraping/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "grocery_scraping_page",
+      "target": "components_servicetemplate"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/healthcare-data-scraping/page.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "healthcare_data_scraping_page",
+      "target": "components_servicetemplate"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/ott-streaming-data-scraping-service/page.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ott_streaming_data_scraping_service_page",
+      "target": "components_servicetemplate"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/quick-commerce-fmcg-data-scraping/page.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "quick_commerce_fmcg_data_scraping_page",
+      "target": "components_servicetemplate"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/quick-commerce-scraping/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "quick_commerce_scraping_page",
+      "target": "components_servicetemplate"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/real-estate-property-data-scraping/page.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "real_estate_property_data_scraping_page",
+      "target": "components_servicetemplate"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/recruitment-data-scraping-service/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "recruitment_data_scraping_service_page",
+      "target": "components_servicetemplate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/social-media-scraping-services/page.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "social_media_scraping_services_page",
+      "target": "components_servicetemplate"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/travel-data-scraping/page.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "travel_data_scraping_page",
+      "target": "components_servicetemplate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/ecommerce-data-scraping/page.tsx",
+      "source_location": "L113",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ecommerce_data_scraping_page",
+      "target": "ecommerce_data_scraping_page_benefits"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/ecommerce-data-scraping/page.tsx",
+      "source_location": "L112",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ecommerce_data_scraping_page",
+      "target": "ecommerce_data_scraping_page_ecommercepage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/ecommerce-data-scraping/page.tsx",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ecommerce_data_scraping_page",
+      "target": "ecommerce_data_scraping_page_ecommericons"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/ecommerce-data-scraping/page.tsx",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ecommerce_data_scraping_page",
+      "target": "ecommerce_data_scraping_page_features"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/ecommerce-data-scraping/page.tsx",
+      "source_location": "L92",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ecommerce_data_scraping_page",
+      "target": "ecommerce_data_scraping_page_highlights"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/ecommerce-data-scraping/page.tsx",
+      "source_location": "L103",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ecommerce_data_scraping_page",
+      "target": "ecommerce_data_scraping_page_stats"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/ecommerce-data-scraping/page.tsx",
+      "source_location": "L65",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ecommerce_data_scraping_page",
+      "target": "ecommerce_data_scraping_page_usecases"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/fashion-scraping/fashionData.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "fashion_scraping_fashiondata",
+      "target": "fashion_scraping_fashiondata_fashiondata"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/fashion-scraping/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "fashion_scraping_page",
+      "target": "fashion_scraping_fashiondata"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/fashion-scraping/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "fashion_scraping_page",
+      "target": "fashion_scraping_fashiondata_fashiondata"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/fashion-scraping/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "fashion_scraping_page",
+      "target": "fashion_scraping_page_fashionscrapingpage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/finance-and-stock-scraping/financeAndStockScrapingData.ts",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "finance_and_stock_scraping_financeandstockscrapingdata",
+      "target": "finance_and_stock_scraping_financeandstockscrapingdata_financeandstockscrapingdata"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/finance-and-stock-scraping/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "finance_and_stock_scraping_page",
+      "target": "finance_and_stock_scraping_financeandstockscrapingdata"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/finance-and-stock-scraping/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "finance_and_stock_scraping_page",
+      "target": "finance_and_stock_scraping_financeandstockscrapingdata_financeandstockscrapingdata"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/finance-and-stock-scraping/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "finance_and_stock_scraping_page",
+      "target": "finance_and_stock_scraping_page_financeandstockscrapingpage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/food-data-scraping/foodScrapingData.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "food_data_scraping_foodscrapingdata",
+      "target": "food_data_scraping_foodscrapingdata_foodscrapingdata"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/food-data-scraping/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "food_data_scraping_page",
+      "target": "food_data_scraping_foodscrapingdata"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/food-data-scraping/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "food_data_scraping_page",
+      "target": "food_data_scraping_foodscrapingdata_foodscrapingdata"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/food-data-scraping/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "food_data_scraping_page",
+      "target": "food_data_scraping_page_groceryscrapingpage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/food-delivery-data-scraping-service/foodDeliveryDataScrapingData.ts",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "food_delivery_data_scraping_service_fooddeliverydatascrapingdata",
+      "target": "food_delivery_data_scraping_service_fooddeliverydatascrapingdata_fooddeliverydatascrapingdata"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/food-delivery-data-scraping-service/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "food_delivery_data_scraping_service_page",
+      "target": "food_delivery_data_scraping_service_fooddeliverydatascrapingdata"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/food-delivery-data-scraping-service/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "food_delivery_data_scraping_service_page",
+      "target": "food_delivery_data_scraping_service_fooddeliverydatascrapingdata_fooddeliverydatascrapingdata"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/food-delivery-data-scraping-service/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "food_delivery_data_scraping_service_page",
+      "target": "food_delivery_data_scraping_service_page_fooddeliverydatascrapingpage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/grocery-scraping/groceryScrapingData.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "grocery_scraping_groceryscrapingdata",
+      "target": "grocery_scraping_groceryscrapingdata_groceryscrapingdata"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/grocery-scraping/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "grocery_scraping_page",
+      "target": "grocery_scraping_groceryscrapingdata"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/grocery-scraping/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "grocery_scraping_page",
+      "target": "grocery_scraping_groceryscrapingdata_groceryscrapingdata"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/grocery-scraping/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "grocery_scraping_page",
+      "target": "grocery_scraping_page_groceryscrapingpage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/healthcare-data-scraping/healthcareDataScrapingData.ts",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "healthcare_data_scraping_healthcaredatascrapingdata",
+      "target": "healthcare_data_scraping_healthcaredatascrapingdata_healthcaredatascrapingdata"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/healthcare-data-scraping/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "healthcare_data_scraping_page",
+      "target": "healthcare_data_scraping_healthcaredatascrapingdata"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/healthcare-data-scraping/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "healthcare_data_scraping_page",
+      "target": "healthcare_data_scraping_healthcaredatascrapingdata_healthcaredatascrapingdata"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/healthcare-data-scraping/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "healthcare_data_scraping_page",
+      "target": "healthcare_data_scraping_page_healthcaredatascrapingpage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/ott-streaming-data-scraping-service/ottStreamingData.ts",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ott_streaming_data_scraping_service_ottstreamingdata",
+      "target": "ott_streaming_data_scraping_service_ottstreamingdata_ottstreamingdata"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/ott-streaming-data-scraping-service/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ott_streaming_data_scraping_service_page",
+      "target": "ott_streaming_data_scraping_service_ottstreamingdata"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/ott-streaming-data-scraping-service/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ott_streaming_data_scraping_service_page",
+      "target": "ott_streaming_data_scraping_service_ottstreamingdata_ottstreamingdata"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/ott-streaming-data-scraping-service/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ott_streaming_data_scraping_service_page",
+      "target": "ott_streaming_data_scraping_service_page_ottstreamingdatascrapingservicepage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_page",
+      "target": "services_page_metadata"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/page.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_page",
+      "target": "services_page_servicespage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/quick-commerce-fmcg-data-scraping/fmcgScrapingData.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "quick_commerce_fmcg_data_scraping_fmcgscrapingdata",
+      "target": "quick_commerce_fmcg_data_scraping_fmcgscrapingdata_fmcgscrapingdata"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/quick-commerce-fmcg-data-scraping/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "quick_commerce_fmcg_data_scraping_page",
+      "target": "quick_commerce_fmcg_data_scraping_fmcgscrapingdata"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/quick-commerce-fmcg-data-scraping/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "quick_commerce_fmcg_data_scraping_page",
+      "target": "quick_commerce_fmcg_data_scraping_fmcgscrapingdata_fmcgscrapingdata"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/quick-commerce-fmcg-data-scraping/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "quick_commerce_fmcg_data_scraping_page",
+      "target": "quick_commerce_fmcg_data_scraping_page_quickcommercefmcgdatascrapingpage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/quick-commerce-scraping/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "quick_commerce_scraping_page",
+      "target": "quick_commerce_scraping_page_quickcommercescrapingpage"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/quick-commerce-scraping/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "quick_commerce_scraping_page",
+      "target": "quick_commerce_scraping_quickcommercescrapingdata"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/quick-commerce-scraping/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "quick_commerce_scraping_page",
+      "target": "quick_commerce_scraping_quickcommercescrapingdata_quickcommercescrapingdata"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/quick-commerce-scraping/quickCommerceScrapingData.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "quick_commerce_scraping_quickcommercescrapingdata",
+      "target": "quick_commerce_scraping_quickcommercescrapingdata_quickcommercescrapingdata"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/real-estate-property-data-scraping/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "real_estate_property_data_scraping_page",
+      "target": "real_estate_property_data_scraping_page_realestatepropertydatascrapingpage"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/real-estate-property-data-scraping/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "real_estate_property_data_scraping_page",
+      "target": "real_estate_property_data_scraping_realestatepropertydatascrapingdata"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/real-estate-property-data-scraping/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "real_estate_property_data_scraping_page",
+      "target": "real_estate_property_data_scraping_realestatepropertydatascrapingdata_realestatepropertydatascrapingdata"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/real-estate-property-data-scraping/realEstatePropertyDataScrapingData.ts",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "real_estate_property_data_scraping_realestatepropertydatascrapingdata",
+      "target": "real_estate_property_data_scraping_realestatepropertydatascrapingdata_realestatepropertydatascrapingdata"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/recruitment-data-scraping-service/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "recruitment_data_scraping_service_page",
+      "target": "recruitment_data_scraping_service_page_recruitmentscrapingpage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/recruitment-data-scraping-service/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "recruitment_data_scraping_service_page",
+      "target": "recruitment_data_scraping_service_recruitmentscrapingdata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/recruitment-data-scraping-service/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "recruitment_data_scraping_service_page",
+      "target": "recruitment_data_scraping_service_recruitmentscrapingdata_recruitmentscrapingdata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/recruitment-data-scraping-service/recruitmentScrapingData.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "recruitment_data_scraping_service_recruitmentscrapingdata",
+      "target": "recruitment_data_scraping_service_recruitmentscrapingdata_recruitmentscrapingdata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/servicesData.ts",
+      "source_location": "L269",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_servicesdata",
+      "target": "services_servicesdata_getallserviceslugs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/servicesData.ts",
+      "source_location": "L264",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_servicesdata",
+      "target": "services_servicesdata_getservicebyslug"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/servicesData.ts",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_servicesdata",
+      "target": "services_servicesdata_serviceitem"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/servicesData.ts",
+      "source_location": "L37",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_servicesdata",
+      "target": "services_servicesdata_servicesdata"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/social-media-scraping-services/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "social_media_scraping_services_page",
+      "target": "social_media_scraping_services_page_socialmediascrapingservicespage"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/social-media-scraping-services/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "social_media_scraping_services_page",
+      "target": "social_media_scraping_services_socialmediascrapingdata"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/social-media-scraping-services/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "social_media_scraping_services_page",
+      "target": "social_media_scraping_services_socialmediascrapingdata_socialmediascrapingdata"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/social-media-scraping-services/socialMediaScrapingData.ts",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "social_media_scraping_services_socialmediascrapingdata",
+      "target": "social_media_scraping_services_socialmediascrapingdata_socialmediascrapingdata"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/travel-data-scraping/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "travel_data_scraping_page",
+      "target": "travel_data_scraping_page_traveldatascrapingpage"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/travel-data-scraping/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "travel_data_scraping_page",
+      "target": "travel_data_scraping_traveldatascrapingdata"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/travel-data-scraping/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "travel_data_scraping_page",
+      "target": "travel_data_scraping_traveldatascrapingdata_traveldatascrapingdata"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/services/travel-data-scraping/travelDataScrapingData.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "travel_data_scraping_traveldatascrapingdata",
+      "target": "travel_data_scraping_traveldatascrapingdata_traveldatascrapingdata"
     },
     {
       "relation": "contains",
@@ -6711,9 +8516,9 @@
       "source_file": "app/tooles/image-tooles/components/PdfToImages.tsx",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_pdftoimages",
-      "target": "components_pdftoimages_selectedimage",
-      "confidence_score": 1.0
+      "target": "components_pdftoimages_selectedimage"
     },
     {
       "relation": "contains",
@@ -7801,5 +9606,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "65b6943244feeee0fc0628fb78b0d02f91ac1dce"
+  "built_at_commit": "75630c8b9533f167b6edbd6ac47a759062dffe18"
 }

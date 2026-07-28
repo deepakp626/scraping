@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fafafa"/>
+      <stop offset="100%" stop-color="#f4f4f5"/>
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="8" stdDeviation="6" flood-color="#18181b" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <rect width="500" height="500" rx="24" fill="url(#bgGrad)"/>
+
+  <!-- Main browser card -->
+  <g transform="translate(40, 50)" filter="url(#shadow)">
+    <rect width="420" height="400" rx="16" fill="#ffffff" stroke="#e4e4e7" stroke-width="1.5"/>
+    
+    <!-- Browser Header -->
+    <rect width="420" height="45" rx="16" fill="#f4f4f5"/>
+    <circle cx="20" cy="22" r="5" fill="#ef4444"/>
+    <circle cx="36" cy="22" r="5" fill="#f59e0b"/>
+    <circle cx="52" cy="22" r="5" fill="#10b981"/>
+    
+    <rect x="80" y="14" width="260" height="18" rx="6" fill="#ffffff" stroke="#e4e4e7" stroke-width="1"/>
+    <text x="210" y="27" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#a1a1aa" text-anchor="middle">api.antigravity.io/v1/quick-commerce/data</text>
+    
+    <line x1="0" y1="45" x2="420" y2="45" stroke="#e4e4e7" stroke-width="1.5"/>
+
+    <!-- Tab Section -->
+    <text x="25" y="75" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800" fill="#7c3aed">JSON Feed</text>
+    <text x="110" y="75" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#71717a">CSV Export</text>
+    <text x="195" y="75" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#71717a">API Docs</text>
+    
+    <line x1="25" y1="83" x2="85" y2="83" stroke="#7c3aed" stroke-width="2" stroke-linecap="round"/>
+    <line x1="0" y1="85" x2="420" y2="85" stroke="#f4f4f5" stroke-width="1.5"/>
+
+    <!-- Data Columns -->
+    <g transform="translate(20, 105)">
+      <!-- Table Header -->
+      <rect width="380" height="30" rx="6" fill="#f9fafb"/>
+      <text x="10" y="20" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#4b5563">PRODUCT NAME</text>
+      <text x="145" y="20" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#4b5563">DARK STORE ID</text>
+      <text x="255" y="20" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#4b5563">STOCK</text>
+      <text x="320" y="20" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#4b5563">PRICE/ETA</text>
+      
+      <!-- Row 1 -->
+      <g transform="translate(0, 40)">
+        <text x="10" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#1f2937">Organic Whole Milk</text>
+        <text x="145" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#4b5563">DS-LON-W2</text>
+        <!-- In Stock Badge -->
+        <rect x="250" y="6" width="50" height="16" rx="4" fill="#dcfce7"/>
+        <text x="275" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="bold" fill="#166534" text-anchor="middle">38 Units</text>
+        <text x="320" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#111827">$3.49 <tspan font-weight="normal" fill="#9ca3af">/ 12m</tspan></text>
+        <line x1="0" y1="30" x2="380" y2="30" stroke="#f3f4f6" stroke-width="1"/>
+      </g>
+
+      <!-- Row 2 -->
+      <g transform="translate(0, 80)">
+        <text x="10" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#1f2937">Fresh Strawberries 250g</text>
+        <text x="145" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#4b5563">DS-LON-W2</text>
+        <!-- Out of Stock Badge -->
+        <rect x="250" y="6" width="50" height="16" rx="4" fill="#fee2e2"/>
+        <text x="275" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="bold" fill="#991b1b" text-anchor="middle">OUT</text>
+        <text x="320" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#111827">$2.99 <tspan font-weight="normal" fill="#9ca3af">/ --</tspan></text>
+        <line x1="0" y1="30" x2="380" y2="30" stroke="#f3f4f6" stroke-width="1"/>
+      </g>
+
+      <!-- Row 3 -->
+      <g transform="translate(0, 120)">
+        <text x="10" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#1f2937">Avocado Hass (Single)</text>
+        <text x="145" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#4b5563">DS-LON-C1</text>
+        <!-- Low Stock Badge -->
+        <rect x="250" y="6" width="50" height="16" rx="4" fill="#fef3c7"/>
+        <text x="275" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="bold" fill="#92400e" text-anchor="middle">2 Units</text>
+        <text x="320" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#111827">$1.89 <tspan font-weight="normal" fill="#9ca3af">/ 18m</tspan></text>
+        <line x1="0" y1="30" x2="380" y2="30" stroke="#f3f4f6" stroke-width="1"/>
+      </g>
+
+      <!-- Row 4 -->
+      <g transform="translate(0, 160)">
+        <text x="10" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#1f2937">Greek Yogurt Honey 500g</text>
+        <text x="145" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#4b5563">DS-LON-N1</text>
+        <!-- In Stock Badge -->
+        <rect x="250" y="6" width="50" height="16" rx="4" fill="#dcfce7"/>
+        <text x="275" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="bold" fill="#166534" text-anchor="middle">104 Units</text>
+        <text x="320" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#111827">$4.20 <tspan font-weight="normal" fill="#9ca3af">/ 15m</tspan></text>
+        <line x1="0" y1="30" x2="380" y2="30" stroke="#f3f4f6" stroke-width="1"/>
+      </g>
+
+      <!-- Pagination / Footer representation -->
+      <g transform="translate(0, 205)">
+        <rect width="380" height="30" rx="6" fill="#f9fafb"/>
+        <text x="20" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9ca3af">Showing 1 to 4 of 249 items</text>
+        <text x="360" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="bold" fill="#7c3aed" text-anchor="end">Next Page →</text>
+      </g>
+    </g>
+  </g>
+</svg>

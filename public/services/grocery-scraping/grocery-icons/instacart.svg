@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <circle cx="24" cy="24" r="22" fill="#43b02a"/>
+  <!-- Stylized Orange Carrot -->
+  <path d="M 28 14 C 28 14 30 16 28 18 L 18 28 C 16 30 14 28 16 26 L 26 16 C 28 14 28 14 28 14 Z" fill="#ff8200" stroke="#ffffff" stroke-width="1.5"/>
+  <!-- Green leaf -->
+  <path d="M 28 14 C 30 11 33 13 32 15 Z" fill="#43b02a" stroke="#ffffff" stroke-width="1.5"/>
+</svg>

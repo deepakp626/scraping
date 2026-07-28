@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff5f5"/>
+      <stop offset="100%" stop-color="#fee2e2"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#dc2626"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="8" stdDeviation="6" flood-color="#991b1b" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <rect width="500" height="500" rx="24" fill="url(#bgGrad)"/>
+
+  <g transform="translate(50, 60)" filter="url(#shadow)">
+    <!-- Main container -->
+    <rect width="400" height="360" rx="16" fill="#ffffff" stroke="#e4e4e7" stroke-width="1.5"/>
+
+    <!-- Flash Sales Banner & Countdown -->
+    <g transform="translate(30, 25)">
+      <rect width="340" height="80" rx="12" fill="url(#redGrad)"/>
+      <text x="20" y="32" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="900" fill="#ffffff">FLASH SALE ALERT</text>
+      <text x="20" y="52" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#fecaca">50% off select snacks &amp; beverages</text>
+      <rect x="235" y="15" width="90" height="24" rx="12" fill="#7f1d1d"/>
+      <text x="280" y="29" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="bold" fill="#fca5a5" text-anchor="middle">Ends in: 14m 30s</text>
+    </g>
+
+    <!-- Markup Auditing Chart -->
+    <g transform="translate(30, 135)">
+      <text x="0" y="15" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800" fill="#111827">Delivery Markup vs. In-Store Pricing</text>
+      
+      <!-- Table Mockup -->
+      <g transform="translate(0, 30)">
+        <rect width="340" height="25" rx="4" fill="#f9fafb"/>
+        <text x="10" y="16" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="bold" fill="#4b5563">PRODUCT</text>
+        <text x="140" y="16" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="bold" fill="#4b5563">IN-STORE</text>
+        <text x="220" y="16" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="bold" fill="#4b5563">DELIVERY</text>
+        <text x="290" y="16" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="bold" fill="#4b5563">MARKUP</text>
+      </g>
+
+      <!-- Row 1 -->
+      <g transform="translate(0, 60)">
+        <text x="10" y="16" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#111827">Frozen Pizza</text>
+        <text x="140" y="16" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#4b5563">$4.99</text>
+        <text x="220" y="16" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="bold" fill="#111827">$6.25</text>
+        <!-- markup badge -->
+        <rect x="285" y="4" width="45" height="15" rx="3" fill="#fee2e2"/>
+        <text x="307" y="15" font-family="system-ui, -apple-system, sans-serif" font-size="8" font-weight="bold" fill="#b91c1c" text-anchor="middle">+25.2%</text>
+        <line x1="0" y1="25" x2="340" y2="25" stroke="#f3f4f6" stroke-width="1"/>
+      </g>
+
+      <!-- Row 2 -->
+      <g transform="translate(0, 90)">
+        <text x="10" y="16" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#111827">Potato Chips XL</text>
+        <text x="140" y="16" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#4b5563">$2.49</text>
+        <text x="220" y="16" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="bold" fill="#111827">$3.10</text>
+        <!-- markup badge -->
+        <rect x="285" y="4" width="45" height="15" rx="3" fill="#fee2e2"/>
+        <text x="307" y="15" font-family="system-ui, -apple-system, sans-serif" font-size="8" font-weight="bold" fill="#b91c1c" text-anchor="middle">+24.5%</text>
+        <line x1="0" y1="25" x2="340" y2="25" stroke="#f3f4f6" stroke-width="1"/>
+      </g>
+
+      <!-- Row 3 -->
+      <g transform="translate(0, 120)">
+        <text x="10" y="16" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#111827">Soda Multipack</text>
+        <text x="140" y="16" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#4b5563">$5.99</text>
+        <text x="220" y="16" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="bold" fill="#111827">$7.49</text>
+        <!-- markup badge -->
+        <rect x="285" y="4" width="45" height="15" rx="3" fill="#fee2e2"/>
+        <text x="307" y="15" font-family="system-ui, -apple-system, sans-serif" font-size="8" font-weight="bold" fill="#b91c1c" text-anchor="middle">+25.0%</text>
+        <line x1="0" y1="25" x2="340" y2="25" stroke="#f3f4f6" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

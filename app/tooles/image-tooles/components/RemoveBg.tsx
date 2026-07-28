@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { removeBackground } from "@imgly/background-removal";
 
 export default function RemoveBg() {
-  const [highQuality, setHighQuality] = useState(false);
+  const [highQuality, setHighQuality] = useState<boolean>(true);
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [preview, setPreview] = useState<string>("");
   const [resultImage, setResultImage] = useState<string>("");
@@ -29,7 +29,9 @@ export default function RemoveBg() {
       setLoading(true);
 
       const blob = await removeBackground(selectedFile, {
-        quality: highQuality ? "high" : "medium",
+        output: {
+          quality: highQuality ? 1.0 : 0.5,
+        },
       });
 
       const url = URL.createObjectURL(blob);

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <circle cx="24" cy="24" r="22" fill="#002b49"/>
+  <!-- Aldi Styled A -->
+  <path d="M 16 36 L 24 16 L 32 36" fill="none" stroke="#ffc220" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 20 32 L 28 32" fill="none" stroke="#ea580c" stroke-width="4" stroke-linecap="round"/>
+</svg>

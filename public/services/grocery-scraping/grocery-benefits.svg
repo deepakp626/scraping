@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Background and Card Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#16a34a"/>
+      <stop offset="100%" stop-color="#15803d"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="10" stdDeviation="8" flood-color="#0f172a" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="500" height="500" rx="24" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle background grid patterns -->
+  <g opacity="0.3">
+    <line x1="50" y1="0" x2="50" y2="500" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="5 5"/>
+    <line x1="150" y1="0" x2="150" y2="500" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="5 5"/>
+    <line x1="250" y1="0" x2="250" y2="500" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="5 5"/>
+    <line x1="350" y1="0" x2="350" y2="500" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="5 5"/>
+    <line x1="450" y1="0" x2="450" y2="500" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="5 5"/>
+    <line x1="0" y1="100" x2="500" y2="100" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="5 5"/>
+    <line x1="0" y1="200" x2="500" y2="200" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="5 5"/>
+    <line x1="0" y1="300" x2="500" y2="300" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="5 5"/>
+    <line x1="0" y1="400" x2="500" y2="400" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="5 5"/>
+  </g>
+
+  <!-- Card Base (Mockup Dashboard Panel) -->
+  <rect x="50" y="60" width="400" height="380" rx="16" fill="url(#cardGrad)" filter="url(#shadow)" stroke="#cbd5e1" stroke-width="1"/>
+  
+  <!-- Dashboard Header -->
+  <rect x="50" y="60" width="400" height="50" rx="16" fill="#ffffff" />
+  <circle cx="80" cy="85" r="6" fill="#ef4444"/>
+  <circle cx="100" cy="85" r="6" fill="#f59e0b"/>
+  <circle cx="120" cy="85" r="6" fill="#10b981"/>
+  <text x="150" y="90" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="#64748b">Market Yield Intelligence</text>
+  <line x1="50" y1="110" x2="450" y2="110" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- Left Stat Card: ROI Growth -->
+  <g transform="translate(75, 130)">
+    <rect width="160" height="110" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow)"/>
+    <text x="15" y="30" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="bold" fill="#94a3b8" text-transform="uppercase">Yield Optimization</text>
+    <text x="15" y="65" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="800" fill="#0f172a">+18.6%</text>
+    <!-- Arrow indicator -->
+    <path d="M 125 50 L 135 40 L 145 50 M 135 40 L 135 65" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="15" y="90" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#16a34a">Increase in Profit Margins</text>
+  </g>
+
+  <!-- Right Stat Card: Competitor Monitoring -->
+  <g transform="translate(265, 130)">
+    <rect width="160" height="110" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow)"/>
+    <text x="15" y="30" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="bold" fill="#94a3b8" text-transform="uppercase">Competitor Matches</text>
+    <text x="15" y="65" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="800" fill="#0f172a">99.4%</text>
+    <!-- Check badge -->
+    <circle cx="135" cy="52" r="12" fill="#dcfce7"/>
+    <path d="M 130 52 L 133 55 L 140 48" fill="none" stroke="#16a34a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="15" y="90" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#475569">Real-time SKU matching</text>
+  </g>
+
+  <!-- Bottom: Market Pricing Trends -->
+  <g transform="translate(75, 265)">
+    <!-- Chart Background Panel -->
+    <rect width="350" height="150" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="15" y="25" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#1e293b">Competitor Price Dispersion Index</text>
+    
+    <!-- Legend -->
+    <circle cx="250" cy="20" r="4" fill="#3b82f6"/>
+    <text x="258" y="23" font-family="system-ui, -apple-system, sans-serif" font-size="8" font-weight="600" fill="#64748b">Our Price</text>
+    <circle cx="300" cy="20" r="4" fill="#ea580c"/>
+    <text x="308" y="23" font-family="system-ui, -apple-system, sans-serif" font-size="8" font-weight="600" fill="#64748b">Avg Competitor</text>
+
+    <!-- Grid lines -->
+    <line x1="30" y1="55" x2="330" y2="55" stroke="#f1f5f9" stroke-width="1"/>
+    <line x1="30" y1="90" x2="330" y2="90" stroke="#f1f5f9" stroke-width="1"/>
+    <line x1="30" y1="125" x2="330" y2="125" stroke="#cbd5e1" stroke-width="1.5"/>
+
+    <!-- Axis Labels -->
+    <text x="12" y="58" font-family="system-ui, -apple-system, sans-serif" font-size="8" font-weight="600" fill="#94a3b8">$12</text>
+    <text x="12" y="93" font-family="system-ui, -apple-system, sans-serif" font-size="8" font-weight="600" fill="#94a3b8">$10</text>
+    <text x="12" y="128" font-family="system-ui, -apple-system, sans-serif" font-size="8" font-weight="600" fill="#94a3b8">$8</text>
+
+    <!-- Line 1: Avg Competitor (Orange) -->
+    <path d="M 40 70 L 90 60 L 140 100 L 190 75 L 240 85 L 290 50 L 320 65" fill="none" stroke="#ea580c" stroke-width="2.5" stroke-dasharray="3 3" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Line 2: Our Price (Blue) -->
+    <path d="M 40 85 L 90 75 L 140 115 L 190 90 L 240 70 L 290 40 L 320 50" fill="none" stroke="#3b82f6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <circle cx="290" cy="40" r="3" fill="#1d4ed8" stroke="#ffffff" stroke-width="1"/>
+    <circle cx="290" cy="50" r="3" fill="#c2410c" stroke="#ffffff" stroke-width="1"/>
+
+    <!-- X Axis labels -->
+    <text x="40" y="140" font-family="system-ui, -apple-system, sans-serif" font-size="8" font-weight="600" fill="#94a3b8" text-anchor="middle">9:00 AM</text>
+    <text x="110" y="140" font-family="system-ui, -apple-system, sans-serif" font-size="8" font-weight="600" fill="#94a3b8" text-anchor="middle">12:00 PM</text>
+    <text x="180" y="140" font-family="system-ui, -apple-system, sans-serif" font-size="8" font-weight="600" fill="#94a3b8" text-anchor="middle">3:00 PM</text>
+    <text x="250" y="140" font-family="system-ui, -apple-system, sans-serif" font-size="8" font-weight="600" fill="#94a3b8" text-anchor="middle">6:00 PM</text>
+    <text x="320" y="140" font-family="system-ui, -apple-system, sans-serif" font-size="8" font-weight="600" fill="#94a3b8" text-anchor="middle">9:00 PM</text>
+  </g>
+</svg>
