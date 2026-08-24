@@ -4,6 +4,7 @@ import { PdfToolsSection } from "./pdf-tooles/page";
 import { ImageToolsSection } from "./image-tooles/page";
 import { CodingToolsSection } from "./coding-tooles/page";
 import { ConverterToolsSection } from "./converter-tools/page";
+import { JsonToolsSection } from "./json-tooles/page";
 
 export default function Hero() {
   return (
@@ -37,8 +38,6 @@ export default function Hero() {
           </div>
         </div>
 
-
-
       </div>
     </section>
     <section className=" px-4 md:px-10 bg-gray-50">
@@ -53,6 +52,9 @@ export default function Hero() {
 
       {/* Converter Tools */}
       <ConverterToolsSection />
+
+      {/* JSON Tools */}
+      <JsonToolsSection />
     </section>
     </>
   );

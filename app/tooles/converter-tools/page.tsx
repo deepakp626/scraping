@@ -5,25 +5,19 @@ import {
   Split,
   FileCode,
   FileJson,
-  BookOpen,
-  ArrowRightLeft,
   FileUp,
   FileDown,
-  RefreshCw,
   Binary,
-  Globe,
   Link2,
-  FileType,
-  Sigma,
   QrCode,
-  Music,
-  Video,
   Image as ImageIcon,
   Table2,
-  Archive,
-  Hash,
   Palette,
   Repeat2,
+  Merge,
+  Minimize2,
+  CheckCircle2,
+  Sparkles,
 } from "lucide-react";
 
 export type ConverterTool = {
@@ -36,215 +30,90 @@ export type ConverterTool = {
 };
 
 const tools: ConverterTool[] = [
-  // ── Spreadsheet / Data ──────────────────────────────────────────
+  // 1. PDF to Word
   {
-    name: "Excel to PDF",
-    category: "Converter Tools",
-    desc: "Convert Excel to PDF",
-    icon: FileSpreadsheet,
-    link: "/tooles/converter-tools/excel-to-pdf",
+    name: "PDF to Word",
+    category: "PDF Tools",
+    desc: "Convert PDF documents to editable Word files",
+    icon: FileText,
+    link: "/tooles/pdf-tooles/pdf-to-word",
   },
+  // 2. Word to PDF
   {
-    name: "CSV to Excel",
-    category: "Converter Tools",
-    desc: "Convert CSV to Excel",
-    icon: Table2,
-    link: "/tooles/converter-tools/csv-to-excel",
+    name: "Word to PDF",
+    category: "PDF Tools",
+    desc: "Convert Word DOC/DOCX documents to PDF",
+    icon: FileText,
+    link: "/tooles/pdf-tooles/word-to-pdf",
   },
+  // 3. PDF Compressor
   {
-    name: "Split Excel",
-    category: "Converter Tools",
-    desc: "Split into one or multiple Excel files",
+    name: "PDF Compressor",
+    category: "PDF Tools",
+    desc: "Compress PDF file size without quality loss",
+    icon: Minimize2,
+    link: "/tooles/pdf-tooles/compress-pdf",
+  },
+  // 4. Merge PDF
+  {
+    name: "Merge PDF",
+    category: "PDF Tools",
+    desc: "Combine multiple PDF files into one document",
+    icon: Merge,
+    link: "/tooles/pdf-tooles/merge-pdf",
+  },
+  // 5. Split PDF
+  {
+    name: "Split PDF",
+    category: "PDF Tools",
+    desc: "Split a PDF into separate pages or ranges",
     icon: Split,
-    link: "/tooles/converter-tools/split-excel",
+    link: "/tooles/pdf-tooles/split-pdf",
   },
+  // 21. Base64 Encoder/Decoder
   {
-    name: "XML to Excel",
-    category: "Converter Tools",
-    desc: "Convert XML to Excel",
-    icon: FileCode,
-    link: "/tooles/converter-tools/xml-to-excel",
-  },
-  {
-    name: "Split CSV",
-    category: "Converter Tools",
-    desc: "Split into one or multiple CSV files",
-    icon: Split,
-    link: "/tooles/converter-tools/split-csv",
-  },
-  {
-    name: "Excel to CSV",
-    category: "Converter Tools",
-    desc: "Convert Excel to CSV",
-    icon: FileSpreadsheet,
-    link: "/tooles/converter-tools/excel-to-csv",
-  },
-  {
-    name: "XML to CSV",
-    category: "Converter Tools",
-    desc: "Convert XML to CSV",
-    icon: FileCode,
-    link: "/tooles/converter-tools/xml-to-csv",
-  },
-  {
-    name: "CSV to JSON",
-    category: "Converter Tools",
-    desc: "Convert CSV to JSON",
-    icon: FileJson,
-    link: "/tooles/converter-tools/csv-to-json",
-  },
-  {
-    name: "Excel to XML",
-    category: "Converter Tools",
-    desc: "Convert Excel to XML",
-    icon: FileSpreadsheet,
-    link: "/tooles/converter-tools/excel-to-xml",
-  },
-  {
-    name: "JSON to XML",
-    category: "Converter Tools",
-    desc: "Convert JSON to XML",
-    icon: FileJson,
-    link: "/tooles/converter-tools/json-to-xml",
-  },
-  {
-    name: "JSON to CSV",
-    category: "Converter Tools",
-    desc: "Convert JSON to CSV",
-    icon: FileJson,
-    link: "/tooles/converter-tools/json-to-csv",
-  },
-  {
-    name: "JSON to Excel",
-    category: "Converter Tools",
-    desc: "Convert JSON to Excel",
-    icon: FileJson,
-    link: "/tooles/converter-tools/json-to-excel",
-  },
-
-  // ── eBook ────────────────────────────────────────────────────────
-  {
-    name: "EPUB to MOBI",
-    category: "Converter Tools",
-    desc: "Convert EPUB file to MOBI file",
-    icon: BookOpen,
-    link: "/tooles/converter-tools/epub-to-mobi",
-  },
-  {
-    name: "EPUB to AZW3",
-    category: "Converter Tools",
-    desc: "Convert EPUB file to AZW3 file",
-    icon: BookOpen,
-    link: "/tooles/converter-tools/epub-to-azw3",
-  },
-  {
-    name: "EPUB to PDF",
-    category: "Converter Tools",
-    desc: "Convert EPUB file to PDF",
-    icon: BookOpen,
-    link: "/tooles/converter-tools/epub-to-pdf",
-  },
-  {
-    name: "MOBI to EPUB",
-    category: "Converter Tools",
-    desc: "Convert MOBI file to EPUB",
-    icon: BookOpen,
-    link: "/tooles/converter-tools/mobi-to-epub",
-  },
-
-  // ── Text & Encoding ──────────────────────────────────────────────
-  {
-    name: "Base64 Encode/Decode",
-    category: "Converter Tools",
-    desc: "Encode or decode Base64 strings",
+    name: "Base64 Encoder / Decoder",
+    category: "Encoding",
+    desc: "Encode or decode Base64 strings safely",
     icon: Binary,
     link: "/tooles/converter-tools/base64",
   },
+  // 22. URL Encoder/Decoder
   {
     name: "URL Encoder / Decoder",
-    category: "Converter Tools",
-    desc: "Encode or decode URL strings",
+    category: "Encoding",
+    desc: "Encode or decode URL query parameters",
     icon: Link2,
     link: "/tooles/converter-tools/url-encoder",
   },
-  {
-    name: "HTML Encoder / Decoder",
-    category: "Converter Tools",
-    desc: "Encode or decode HTML entities",
-    icon: Globe,
-    link: "/tooles/converter-tools/html-encoder",
-  },
-  {
-    name: "Case Converter",
-    category: "Converter Tools",
-    desc: "Convert text case (upper, lower, title…)",
-    icon: Sigma,
-    link: "/tooles/converter-tools/case-converter",
-  },
-
-  // ── Media ────────────────────────────────────────────────────────
-  {
-    name: "Image Format Converter",
-    category: "Converter Tools",
-    desc: "Convert between JPG, PNG, WebP, GIF…",
-    icon: ImageIcon,
-    link: "/tooles/converter-tools/image-converter",
-  },
-  {
-    name: "Audio Converter",
-    category: "Converter Tools",
-    desc: "Convert MP3, WAV, OGG, FLAC and more",
-    icon: Music,
-    link: "/tooles/converter-tools/audio-converter",
-  },
-  {
-    name: "Video Converter",
-    category: "Converter Tools",
-    desc: "Convert MP4, AVI, MKV and more",
-    icon: Video,
-    link: "/tooles/converter-tools/video-converter",
-  },
-
-  // ── Utility ──────────────────────────────────────────────────────
+  // 23. QR Code Generator
   {
     name: "QR Code Generator",
-    category: "Converter Tools",
+    category: "Utility",
     desc: "Generate QR codes from any text or URL",
     icon: QrCode,
     link: "/tooles/converter-tools/qr-code",
   },
+  // 24. Unit Converter
   {
     name: "Unit Converter",
-    category: "Converter Tools",
-    desc: "Convert length, weight, temperature…",
+    category: "Utility",
+    desc: "Convert length, weight, temperature, and area",
     icon: Repeat2,
     link: "/tooles/converter-tools/unit-converter",
   },
+  // 25. Color Converter
   {
     name: "Color Converter",
-    category: "Converter Tools",
-    desc: "Convert HEX, RGB, HSL, CMYK",
+    category: "Utility",
+    desc: "Convert HEX, RGB, HSL, and CMYK colors",
     icon: Palette,
     link: "/tooles/converter-tools/color-converter",
-  },
-  {
-    name: "Number Base Converter",
-    category: "Converter Tools",
-    desc: "Convert binary, octal, decimal, hex",
-    icon: Hash,
-    link: "/tooles/converter-tools/base-converter",
-  },
-  {
-    name: "Archive Converter",
-    category: "Converter Tools",
-    desc: "Convert ZIP, RAR, TAR, 7Z archives",
-    icon: Archive,
-    link: "/tooles/converter-tools/archive-converter",
   },
 ];
 
 // ─────────────────────────────────────────────────────────────────
-// Page
+// Page Component
 // ─────────────────────────────────────────────────────────────────
 export function ConverterToolsSection() {
   return (
@@ -252,15 +121,12 @@ export function ConverterToolsSection() {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-10">
-          <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-primary-theme/10 text-primary-theme mb-3 tracking-wide uppercase">
-            Converter Tools
-          </span>
           <h1 className="text-2xl sm:text-4xl font-bold tracking-tight text-slate-900 mb-3">
             Explore Our Converter Tools
           </h1>
           <p className="text-gray-500 text-base max-w-xl mx-auto">
-            Convert files between formats instantly — spreadsheets, eBooks,
-            media, data formats, and more.
+            Convert files between formats instantly — spreadsheets, PDFs, images,
+            data formats, and more.
           </p>
         </div>
 

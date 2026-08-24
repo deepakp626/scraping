@@ -150,6 +150,36 @@ const componentsMap: Record<string, { title: string; subtitle: string; component
     subtitle: "Convert compressed archives between ZIP, RAR, TAR, and 7Z formats.",
     component: dynamic(() => import("../components/ArchiveConverter")),
   },
+  "pdf-to-excel": {
+    title: "PDF to Excel Converter",
+    subtitle: "Extract tabular data from PDF files directly into editable Excel spreadsheets.",
+    component: dynamic(() => import("../components/PDFToExcel")),
+  },
+  "pdf-to-ppt": {
+    title: "PDF to PowerPoint Converter",
+    subtitle: "Convert PDF documents into editable PowerPoint (.pptx) presentation slides.",
+    component: dynamic(() => import("../components/PDFToPPT")),
+  },
+  "ppt-to-pdf": {
+    title: "PowerPoint to PDF Converter",
+    subtitle: "Convert PowerPoint presentations (.pptx, .ppt) to PDF documents.",
+    component: dynamic(() => import("../components/PPTToPDF")),
+  },
+  "pdf-to-text": {
+    title: "PDF to Text Converter",
+    subtitle: "Extract plain text content from PDF documents instantly.",
+    component: dynamic(() => import("../components/PDFToText")),
+  },
+  "video-compressor": {
+    title: "Video Compressor",
+    subtitle: "Compress large video files (MP4, MKV, AVI, MOV) while maintaining high quality.",
+    component: dynamic(() => import("../components/VideoCompressor")),
+  },
+  "mp4-converter": {
+    title: "MP4 Converter",
+    subtitle: "Convert any video format (AVI, MKV, MOV, FLV, WMV) to standard MP4 format.",
+    component: dynamic(() => import("../components/MP4Converter")),
+  },
 };
 
 export default async function ConverterToolPage({ params }: PageProps) {

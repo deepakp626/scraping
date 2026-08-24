@@ -18,7 +18,7 @@ import {
   Braces, RefreshCw,
   // Converter icons
   ArrowRightLeft, Binary, Globe, FileType, Sigma, Repeat2,
-  QrCode, Link2, Music, Video,
+  QrCode, Link2, Music, Video, Sparkles, Wrench, Printer, Edit3, Table,
 } from 'lucide-react';
 
 // ─────────────────────────────────────────────
@@ -123,6 +123,33 @@ export const toolCategories: ToolCategory[] = [
     ],
   },
   {
+    id: 'json',
+    label: 'JSON',
+    tabIcon: FileJson,
+    tools: [
+      { name: 'JSON Formatter', icon: FileCode, link: '/tooles/json-tooles/json-formatter' },
+      { name: 'JSON Formatter Online', icon: Globe, link: '/tooles/json-tooles/json-formatter-online' },
+      { name: 'JSON Validator', icon: ShieldCheck, link: '/tooles/json-tooles/json-validator' },
+      { name: 'JSON Viewer', icon: Eye, link: '/tooles/json-tooles/json-viewer' },
+      { name: 'JSON Beautifier', icon: Sparkles, link: '/tooles/json-tooles/json-beautifier' },
+      { name: 'JSON Editor', icon: Edit3, link: '/tooles/json-tooles/json-editor' },
+      { name: 'JSON Parser', icon: Code, link: '/tooles/json-tooles/json-parser' },
+      { name: 'JSON Minifier', icon: Minimize, link: '/tooles/json-tooles/json-minifier' },
+      { name: 'JSON to CSV', icon: Table, link: '/tooles/json-tooles/json-to-csv' },
+      { name: 'JSON to XML', icon: Code, link: '/tooles/json-tooles/json-to-xml' },
+      { name: 'JSON to YAML', icon: FileText, link: '/tooles/json-tooles/json-to-yaml' },
+      { name: 'JSON Pretty Print', icon: Printer, link: '/tooles/json-tooles/json-pretty-print' },
+      { name: 'JSON Compare', icon: RefreshCw, link: '/tooles/json-tooles/json-compare' },
+      { name: 'JSON Diff', icon: RefreshCw, link: '/tooles/json-tooles/json-diff' },
+      { name: 'JSON Tree Viewer', icon: Layers, link: '/tooles/json-tooles/json-tree-viewer' },
+      { name: 'JSON Repair', icon: Wrench, link: '/tooles/json-tooles/json-repair' },
+      { name: 'JSON to Excel', icon: FileType, link: '/tooles/json-tooles/json-to-excel' },
+      { name: 'JSON to TypeScript', icon: SquareCode, link: '/tooles/json-tooles/json-to-typescript' },
+      { name: 'JSON to Java POJO', icon: Coffee, link: '/tooles/json-tooles/json-to-java' },
+      { name: 'JSON to Go Struct', icon: Zap, link: '/tooles/json-tooles/json-to-go' },
+    ],
+  },
+  {
     id: 'converter',
     label: 'Converter',
     tabIcon: ArrowRightLeft,
@@ -170,11 +197,10 @@ export function ToolsMegaMenu() {
               key={cat.id}
               onMouseEnter={() => setActiveTab(cat.id)}
               onClick={() => setActiveTab(cat.id)}
-              className={`relative flex items-center gap-2 px-4 py-2.5 text-sm font-medium transition-all duration-200 ${
-                isActive
+              className={`relative flex items-center gap-2 px-4 py-2.5 text-sm font-medium transition-all duration-200 ${isActive
                   ? 'text-orange-600'
                   : 'text-slate-500 hover:text-slate-800'
-              }`}
+                }`}
             >
               <TabIcon size={14} />
               {cat.label}
