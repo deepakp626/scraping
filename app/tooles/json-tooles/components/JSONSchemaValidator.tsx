@@ -52,7 +52,6 @@ export default function JSONSchemaValidator() {
   const ajv = useMemo(() => {
     return new Ajv({
       allErrors: true,
-      strict: false,
       verbose: false,
     });
   }, []);
@@ -67,10 +66,12 @@ export default function JSONSchemaValidator() {
       return ["Validation failed against schema rules."];
     }
 
-    return errors.map((error) => {
+    return errors.map((error: any) => {
       const path =
         error.instancePath && error.instancePath.length > 0
           ? error.instancePath
+          : error.dataPath && error.dataPath.length > 0
+          ? error.dataPath
           : "root";
 
       switch (error.keyword) {

@@ -190,7 +190,7 @@ export default function JSONParser() {
     if (!input.trim()) return;
     try {
       const blob = new Blob([input], { type: "application/json" });
-      const url = URL.URL.createObjectURL(blob);
+      const url = URL.createObjectURL(blob);
       const a = document.createElement("a");
       a.href = url;
       a.download = "parsed-payload.json";

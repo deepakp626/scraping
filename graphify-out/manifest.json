@@ -130,8 +130,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\converter-tools\\page.tsx": {
-    "mtime": 1787253201.8553448,
-    "ast_hash": "a38e653ed3172761ce0eee9babddacc5",
+    "mtime": 1787428446.1499946,
+    "ast_hash": "11ffce3c8f98366a2a6d0a8eb3d96437",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\image-tooles\\[slug]\\page.tsx": {
@@ -260,12 +260,12 @@
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\pdf-tooles\\[pdf-tool-slug]\\page.tsx": {
-    "mtime": 1774730250.497807,
-    "ast_hash": "fc41718e8dfa412f7644ab4c5dfd3219",
+    "mtime": 1787604120.2997494,
+    "ast_hash": "85b2cfa2229a7c74a103085568aaba39",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\pdf-tooles\\page.tsx": {
-    "mtime": 1774730200.4081624,
+    "mtime": 1787602883.531292,
     "ast_hash": "a989f17b74b83fa5526a05e8f554360a",
     "semantic_hash": ""
   },
@@ -280,8 +280,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\package.json": {
-    "mtime": 1787167453.9914014,
-    "ast_hash": "c61221f1768a37c5cabc4e469a97b101",
+    "mtime": 1787689029.559177,
+    "ast_hash": "46856061b3f9f56041c44bba89d3a9c0",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\postcss.config.mjs": {
@@ -1422,6 +1422,136 @@
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\converter-tools\\components\\VideoCompressor.tsx": {
     "mtime": 1787248284.74351,
     "ast_hash": "cf02122018bf51ed7bd4b50126d9d77d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\pdf-tooles\\components\\AddWatermark.tsx": {
+    "mtime": 1787603397.7442923,
+    "ast_hash": "276aa8c8a51446e04256ff9cc899ea05",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\pdf-tooles\\components\\CompressPDF.tsx": {
+    "mtime": 1787678771.8041177,
+    "ast_hash": "e278b89d920dcac42f34c9932936f50a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\pdf-tooles\\components\\ExtractPages.tsx": {
+    "mtime": 1787603412.8227057,
+    "ast_hash": "9441d7ebc7d3c32df99ea3a7348c4e46",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\pdf-tooles\\components\\ImageToPdf.tsx": {
+    "mtime": 1787690282.4217885,
+    "ast_hash": "3655c357c0496c0611b4ab0b79c0de8b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\pdf-tooles\\components\\LockPDF.tsx": {
+    "mtime": 1787603374.935054,
+    "ast_hash": "a46d7375457fa0062c56e1962a1b7a7c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\pdf-tooles\\components\\MergePDF.tsx": {
+    "mtime": 1787604298.614701,
+    "ast_hash": "b2f754a6018e6cce9fb7543538cd152b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\pdf-tooles\\components\\OcrPDF.tsx": {
+    "mtime": 1787603432.595006,
+    "ast_hash": "caf4eab53ce715852169e9cd145ab22a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\pdf-tooles\\components\\PageNumbers.tsx": {
+    "mtime": 1787603424.7466385,
+    "ast_hash": "8dfecdd0e80c8813e09c2db50e417545",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\pdf-tooles\\components\\PdfToHtml.tsx": {
+    "mtime": 1787603467.3682215,
+    "ast_hash": "59702afcde9136d18d9b2b6fd6c5dcc6",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\pdf-tooles\\components\\PdfToImage.tsx": {
+    "mtime": 1787689799.1301508,
+    "ast_hash": "778207c55182b628720202f5538191bc",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\pdf-tooles\\components\\PdfToWord.tsx": {
+    "mtime": 1787684290.47333,
+    "ast_hash": "51fdb25479dd0a0737fb45d283a67746",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\pdf-tooles\\components\\ProtectPDF.tsx": {
+    "mtime": 1787603452.2346742,
+    "ast_hash": "b3385dc0c8af6034639240da43669234",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\pdf-tooles\\components\\RemovePages.tsx": {
+    "mtime": 1787603405.3614368,
+    "ast_hash": "ab85bf0c91116760847e2c5742abcc21",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\pdf-tooles\\components\\RotateLeft.tsx": {
+    "mtime": 1787603389.8425105,
+    "ast_hash": "225254b679ba48a7bff33d2edafc89b2",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\pdf-tooles\\components\\RotatePDF.tsx": {
+    "mtime": 1787603383.0998678,
+    "ast_hash": "59aeb21b4be6585dc36dbab7af520507",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\pdf-tooles\\components\\SearchPDF.tsx": {
+    "mtime": 1787603475.5979207,
+    "ast_hash": "68a9d5a27cb4aed2cae3d668749a2b1e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\pdf-tooles\\components\\SignPDF.tsx": {
+    "mtime": 1787603443.1194086,
+    "ast_hash": "5306d3ddc60ae018f436313d33e6fef9",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\pdf-tooles\\components\\SplitPDF.tsx": {
+    "mtime": 1787604739.828035,
+    "ast_hash": "c33d62391a6ddbabae971298aee66199",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\pdf-tooles\\components\\UnlockPDF.tsx": {
+    "mtime": 1787603368.0794144,
+    "ast_hash": "b01e37b313389dfa388ab7d9185ccd43",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\pdf-tooles\\components\\WordToPdf.tsx": {
+    "mtime": 1787687664.3309827,
+    "ast_hash": "8b05369d2ab0bcfab2cb63f8931eaa9c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\components\\tiptap-ui-primitive\\popover\\index.tsx": {
+    "mtime": 1787682270.334016,
+    "ast_hash": "e75d74c1a5e25fc4c9d6884b0c1a21f9",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\components\\tiptap-ui-primitive\\popover\\popover.tsx": {
+    "mtime": 1787682270.3238814,
+    "ast_hash": "53cae9331ccbb7e28131f0e0a62051f3",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\lib\\apiClient.ts": {
+    "mtime": 1787677961.6596613,
+    "ast_hash": "e45198f18b3d896c93eea615df4ed269",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\lib\\apiEndpoints.ts": {
+    "mtime": 1787691382.2030697,
+    "ast_hash": "868a6322e02c8e0ee2602298b2149e12",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\lib\\tiptap-utils.ts": {
+    "mtime": 1787682270.2902415,
+    "ast_hash": "69d4891f43b48bfa83147847a93cfa0f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\scss.d.ts": {
+    "mtime": 1787682270.3351886,
+    "ast_hash": "d4b73df9b41bd6aeddc94c7958c6d743",
     "semantic_hash": ""
   }
 }

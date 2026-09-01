@@ -2151,7 +2151,7 @@
       "source_file": "app/tooles/coding-tooles/page.tsx",
       "source_location": "L1",
       "id": "coding_tooles_page",
-      "community": 6,
+      "community": 12,
       "norm_label": "page.tsx"
     },
     {
@@ -2160,7 +2160,7 @@
       "source_file": "app/tooles/coding-tooles/page.tsx",
       "source_location": "L26",
       "id": "coding_tooles_page_codingtoolssection",
-      "community": 6,
+      "community": 12,
       "norm_label": "codingtoolssection()"
     },
     {
@@ -2986,7 +2986,7 @@
       "label": "ConverterToolsSection()",
       "file_type": "code",
       "source_file": "app/tooles/converter-tools/page.tsx",
-      "source_location": "L238",
+      "source_location": "L118",
       "id": "converter_tools_page_convertertoolssection",
       "community": 6,
       "norm_label": "convertertoolssection()"
@@ -3059,8 +3059,8 @@
       "file_type": "code",
       "source_file": "app/tooles/image-tooles/components/AddWatermark.tsx",
       "source_location": "L1",
-      "id": "components_addwatermark",
-      "community": 20,
+      "id": "app_tooles_image_tooles_components_addwatermark_tsx_components_addwatermark",
+      "community": 142,
       "norm_label": "addwatermark.tsx"
     },
     {
@@ -3068,8 +3068,8 @@
       "file_type": "code",
       "source_file": "app/tooles/image-tooles/components/AddWatermark.tsx",
       "source_location": "L6",
-      "id": "components_addwatermark_addwatermark",
-      "community": 20,
+      "id": "app_tooles_image_tooles_components_addwatermark_tsx_components_addwatermark_addwatermark",
+      "community": 142,
       "norm_label": "addwatermark()"
     },
     {
@@ -3392,8 +3392,8 @@
       "file_type": "code",
       "source_file": "app/tooles/image-tooles/components/ImageToPdf.tsx",
       "source_location": "L1",
-      "id": "components_imagetopdf",
-      "community": 28,
+      "id": "app_tooles_image_tooles_components_imagetopdf_tsx_components_imagetopdf",
+      "community": 143,
       "norm_label": "imagetopdf.tsx"
     },
     {
@@ -3401,8 +3401,8 @@
       "file_type": "code",
       "source_file": "app/tooles/image-tooles/components/ImageToPdf.tsx",
       "source_location": "L7",
-      "id": "components_imagetopdf_imagetopdf",
-      "community": 28,
+      "id": "app_tooles_image_tooles_components_imagetopdf_tsx_components_imagetopdf_imagetopdf",
+      "community": 143,
       "norm_label": "imagetopdf()"
     },
     {
@@ -4477,13 +4477,436 @@
       "norm_label": "page.tsx"
     },
     {
-      "label": "page()",
+      "label": "PageProps",
       "file_type": "code",
       "source_file": "app/tooles/pdf-tooles/[pdf-tool-slug]/page.tsx",
-      "source_location": "L3",
-      "id": "pdf_tool_slug_page_page",
+      "source_location": "L6",
+      "id": "pdf_tool_slug_page_pageprops",
       "community": 39,
-      "norm_label": "page()"
+      "norm_label": "pageprops"
+    },
+    {
+      "label": "ToolConfig",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/[pdf-tool-slug]/page.tsx",
+      "source_location": "L12",
+      "id": "pdf_tool_slug_page_toolconfig",
+      "community": 39,
+      "norm_label": "toolconfig"
+    },
+    {
+      "label": "componentsMap",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/[pdf-tool-slug]/page.tsx",
+      "source_location": "L19",
+      "id": "pdf_tool_slug_page_componentsmap",
+      "community": 39,
+      "norm_label": "componentsmap"
+    },
+    {
+      "label": "PdfToolPage()",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/[pdf-tool-slug]/page.tsx",
+      "source_location": "L142",
+      "id": "pdf_tool_slug_page_pdftoolpage",
+      "community": 39,
+      "norm_label": "pdftoolpage()"
+    },
+    {
+      "label": "AddWatermark.tsx",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/AddWatermark.tsx",
+      "source_location": "L1",
+      "id": "app_tooles_pdf_tooles_components_addwatermark_tsx_components_addwatermark",
+      "community": 144,
+      "norm_label": "addwatermark.tsx"
+    },
+    {
+      "label": "AddWatermark()",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/AddWatermark.tsx",
+      "source_location": "L7",
+      "id": "app_tooles_pdf_tooles_components_addwatermark_tsx_components_addwatermark_addwatermark",
+      "community": 144,
+      "norm_label": "addwatermark()"
+    },
+    {
+      "label": "CompressPDF.tsx",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/CompressPDF.tsx",
+      "source_location": "L1",
+      "id": "components_compresspdf",
+      "community": 137,
+      "norm_label": "compresspdf.tsx"
+    },
+    {
+      "label": "CompressPDF()",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/CompressPDF.tsx",
+      "source_location": "L8",
+      "id": "components_compresspdf_compresspdf",
+      "community": 137,
+      "norm_label": "compresspdf()"
+    },
+    {
+      "label": "ExtractPages.tsx",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/ExtractPages.tsx",
+      "source_location": "L1",
+      "id": "components_extractpages",
+      "community": 145,
+      "norm_label": "extractpages.tsx"
+    },
+    {
+      "label": "ExtractPages()",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/ExtractPages.tsx",
+      "source_location": "L7",
+      "id": "components_extractpages_extractpages",
+      "community": 145,
+      "norm_label": "extractpages()"
+    },
+    {
+      "label": "ImageToPdf.tsx",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/ImageToPdf.tsx",
+      "source_location": "L1",
+      "id": "app_tooles_pdf_tooles_components_imagetopdf_tsx_components_imagetopdf",
+      "community": 138,
+      "norm_label": "imagetopdf.tsx"
+    },
+    {
+      "label": "ImageItem",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/ImageToPdf.tsx",
+      "source_location": "L7",
+      "id": "components_imagetopdf_imageitem",
+      "community": 138,
+      "norm_label": "imageitem"
+    },
+    {
+      "label": "ImageToPdf()",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/ImageToPdf.tsx",
+      "source_location": "L14",
+      "id": "app_tooles_pdf_tooles_components_imagetopdf_tsx_components_imagetopdf_imagetopdf",
+      "community": 138,
+      "norm_label": "imagetopdf()"
+    },
+    {
+      "label": "LockPDF.tsx",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/LockPDF.tsx",
+      "source_location": "L1",
+      "id": "components_lockpdf",
+      "community": 146,
+      "norm_label": "lockpdf.tsx"
+    },
+    {
+      "label": "LockPDF()",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/LockPDF.tsx",
+      "source_location": "L7",
+      "id": "components_lockpdf_lockpdf",
+      "community": 146,
+      "norm_label": "lockpdf()"
+    },
+    {
+      "label": "MergePDF.tsx",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/MergePDF.tsx",
+      "source_location": "L1",
+      "id": "components_mergepdf",
+      "community": 139,
+      "norm_label": "mergepdf.tsx"
+    },
+    {
+      "label": "PDFItem",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/MergePDF.tsx",
+      "source_location": "L7",
+      "id": "components_mergepdf_pdfitem",
+      "community": 139,
+      "norm_label": "pdfitem"
+    },
+    {
+      "label": "MergePDF()",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/MergePDF.tsx",
+      "source_location": "L14",
+      "id": "components_mergepdf_mergepdf",
+      "community": 139,
+      "norm_label": "mergepdf()"
+    },
+    {
+      "label": "OcrPDF.tsx",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/OcrPDF.tsx",
+      "source_location": "L1",
+      "id": "components_ocrpdf",
+      "community": 147,
+      "norm_label": "ocrpdf.tsx"
+    },
+    {
+      "label": "OcrPDF()",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/OcrPDF.tsx",
+      "source_location": "L6",
+      "id": "components_ocrpdf_ocrpdf",
+      "community": 147,
+      "norm_label": "ocrpdf()"
+    },
+    {
+      "label": "PageNumbers.tsx",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/PageNumbers.tsx",
+      "source_location": "L1",
+      "id": "components_pagenumbers",
+      "community": 148,
+      "norm_label": "pagenumbers.tsx"
+    },
+    {
+      "label": "PageNumbers()",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/PageNumbers.tsx",
+      "source_location": "L7",
+      "id": "components_pagenumbers_pagenumbers",
+      "community": 148,
+      "norm_label": "pagenumbers()"
+    },
+    {
+      "label": "PdfToHtml.tsx",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/PdfToHtml.tsx",
+      "source_location": "L1",
+      "id": "components_pdftohtml",
+      "community": 149,
+      "norm_label": "pdftohtml.tsx"
+    },
+    {
+      "label": "PdfToHtml()",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/PdfToHtml.tsx",
+      "source_location": "L6",
+      "id": "components_pdftohtml_pdftohtml",
+      "community": 149,
+      "norm_label": "pdftohtml()"
+    },
+    {
+      "label": "PdfToImage.tsx",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/PdfToImage.tsx",
+      "source_location": "L1",
+      "id": "components_pdftoimage",
+      "community": 150,
+      "norm_label": "pdftoimage.tsx"
+    },
+    {
+      "label": "PdfToImage()",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/PdfToImage.tsx",
+      "source_location": "L6",
+      "id": "components_pdftoimage_pdftoimage",
+      "community": 150,
+      "norm_label": "pdftoimage()"
+    },
+    {
+      "label": "PdfToWord.tsx",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/PdfToWord.tsx",
+      "source_location": "L1",
+      "id": "components_pdftoword",
+      "community": 137,
+      "norm_label": "pdftoword.tsx"
+    },
+    {
+      "label": "PdfToWord()",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/PdfToWord.tsx",
+      "source_location": "L32",
+      "id": "components_pdftoword_pdftoword",
+      "community": 137,
+      "norm_label": "pdftoword()"
+    },
+    {
+      "label": "ProtectPDF.tsx",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/ProtectPDF.tsx",
+      "source_location": "L1",
+      "id": "components_protectpdf",
+      "community": 151,
+      "norm_label": "protectpdf.tsx"
+    },
+    {
+      "label": "ProtectPDF()",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/ProtectPDF.tsx",
+      "source_location": "L7",
+      "id": "components_protectpdf_protectpdf",
+      "community": 151,
+      "norm_label": "protectpdf()"
+    },
+    {
+      "label": "RemovePages.tsx",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/RemovePages.tsx",
+      "source_location": "L1",
+      "id": "components_removepages",
+      "community": 152,
+      "norm_label": "removepages.tsx"
+    },
+    {
+      "label": "RemovePages()",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/RemovePages.tsx",
+      "source_location": "L7",
+      "id": "components_removepages_removepages",
+      "community": 152,
+      "norm_label": "removepages()"
+    },
+    {
+      "label": "RotateLeft.tsx",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/RotateLeft.tsx",
+      "source_location": "L1",
+      "id": "components_rotateleft",
+      "community": 153,
+      "norm_label": "rotateleft.tsx"
+    },
+    {
+      "label": "RotateLeft()",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/RotateLeft.tsx",
+      "source_location": "L7",
+      "id": "components_rotateleft_rotateleft",
+      "community": 153,
+      "norm_label": "rotateleft()"
+    },
+    {
+      "label": "RotatePDF.tsx",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/RotatePDF.tsx",
+      "source_location": "L1",
+      "id": "components_rotatepdf",
+      "community": 154,
+      "norm_label": "rotatepdf.tsx"
+    },
+    {
+      "label": "RotatePDF()",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/RotatePDF.tsx",
+      "source_location": "L7",
+      "id": "components_rotatepdf_rotatepdf",
+      "community": 154,
+      "norm_label": "rotatepdf()"
+    },
+    {
+      "label": "SearchPDF.tsx",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/SearchPDF.tsx",
+      "source_location": "L1",
+      "id": "components_searchpdf",
+      "community": 140,
+      "norm_label": "searchpdf.tsx"
+    },
+    {
+      "label": "SearchMatch",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/SearchPDF.tsx",
+      "source_location": "L6",
+      "id": "components_searchpdf_searchmatch",
+      "community": 140,
+      "norm_label": "searchmatch"
+    },
+    {
+      "label": "SearchPDF()",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/SearchPDF.tsx",
+      "source_location": "L13",
+      "id": "components_searchpdf_searchpdf",
+      "community": 140,
+      "norm_label": "searchpdf()"
+    },
+    {
+      "label": "SignPDF.tsx",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/SignPDF.tsx",
+      "source_location": "L1",
+      "id": "components_signpdf",
+      "community": 155,
+      "norm_label": "signpdf.tsx"
+    },
+    {
+      "label": "SignPDF()",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/SignPDF.tsx",
+      "source_location": "L7",
+      "id": "components_signpdf_signpdf",
+      "community": 155,
+      "norm_label": "signpdf()"
+    },
+    {
+      "label": "SplitPDF.tsx",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/SplitPDF.tsx",
+      "source_location": "L1",
+      "id": "components_splitpdf",
+      "community": 141,
+      "norm_label": "splitpdf.tsx"
+    },
+    {
+      "label": "SplitResult",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/SplitPDF.tsx",
+      "source_location": "L7",
+      "id": "components_splitpdf_splitresult",
+      "community": 141,
+      "norm_label": "splitresult"
+    },
+    {
+      "label": "SplitPDF()",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/SplitPDF.tsx",
+      "source_location": "L16",
+      "id": "components_splitpdf_splitpdf",
+      "community": 141,
+      "norm_label": "splitpdf()"
+    },
+    {
+      "label": "UnlockPDF.tsx",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/UnlockPDF.tsx",
+      "source_location": "L1",
+      "id": "components_unlockpdf",
+      "community": 156,
+      "norm_label": "unlockpdf.tsx"
+    },
+    {
+      "label": "UnlockPDF()",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/UnlockPDF.tsx",
+      "source_location": "L7",
+      "id": "components_unlockpdf_unlockpdf",
+      "community": 156,
+      "norm_label": "unlockpdf()"
+    },
+    {
+      "label": "WordToPdf.tsx",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/WordToPdf.tsx",
+      "source_location": "L1",
+      "id": "components_wordtopdf",
+      "community": 157,
+      "norm_label": "wordtopdf.tsx"
+    },
+    {
+      "label": "WordToPdf()",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/WordToPdf.tsx",
+      "source_location": "L35",
+      "id": "components_wordtopdf_wordtopdf",
+      "community": 157,
+      "norm_label": "wordtopdf()"
     },
     {
       "label": "page.tsx",
@@ -4504,6 +4927,51 @@
       "norm_label": "pdftoolssection()"
     },
     {
+      "label": "index.tsx",
+      "file_type": "code",
+      "source_file": "components/tiptap-ui-primitive/popover/index.tsx",
+      "source_location": "L1",
+      "id": "popover_index",
+      "community": 136,
+      "norm_label": "index.tsx"
+    },
+    {
+      "label": "popover.tsx",
+      "file_type": "code",
+      "source_file": "components/tiptap-ui-primitive/popover/popover.tsx",
+      "source_location": "L1",
+      "id": "popover_popover",
+      "community": 136,
+      "norm_label": "popover.tsx"
+    },
+    {
+      "label": "Popover()",
+      "file_type": "code",
+      "source_file": "components/tiptap-ui-primitive/popover/popover.tsx",
+      "source_location": "L7",
+      "id": "popover_popover_popover",
+      "community": 136,
+      "norm_label": "popover()"
+    },
+    {
+      "label": "PopoverTrigger()",
+      "file_type": "code",
+      "source_file": "components/tiptap-ui-primitive/popover/popover.tsx",
+      "source_location": "L13",
+      "id": "popover_popover_popovertrigger",
+      "community": 136,
+      "norm_label": "popovertrigger()"
+    },
+    {
+      "label": "PopoverContent()",
+      "file_type": "code",
+      "source_file": "components/tiptap-ui-primitive/popover/popover.tsx",
+      "source_location": "L19",
+      "id": "popover_popover_popovercontent",
+      "community": 136,
+      "norm_label": "popovercontent()"
+    },
+    {
       "label": "eslint.config.mjs",
       "file_type": "code",
       "source_file": "eslint.config.mjs",
@@ -4520,6 +4988,285 @@
       "id": "eslint_config_eslintconfig",
       "community": 37,
       "norm_label": "eslintconfig"
+    },
+    {
+      "label": "apiClient.ts",
+      "file_type": "code",
+      "source_file": "lib/apiClient.ts",
+      "source_location": "L1",
+      "id": "lib_apiclient",
+      "community": 137,
+      "norm_label": "apiclient.ts"
+    },
+    {
+      "label": "apiClient",
+      "file_type": "code",
+      "source_file": "lib/apiClient.ts",
+      "source_location": "L7",
+      "id": "lib_apiclient_apiclient",
+      "community": 137,
+      "norm_label": "apiclient"
+    },
+    {
+      "label": "apiEndpoints.ts",
+      "file_type": "code",
+      "source_file": "lib/apiEndpoints.ts",
+      "source_location": "L1",
+      "id": "lib_apiendpoints",
+      "community": 137,
+      "norm_label": "apiendpoints.ts"
+    },
+    {
+      "label": "API_ENDPOINTS",
+      "file_type": "code",
+      "source_file": "lib/apiEndpoints.ts",
+      "source_location": "L9",
+      "id": "lib_apiendpoints_api_endpoints",
+      "community": 137,
+      "norm_label": "api_endpoints"
+    },
+    {
+      "label": "tiptap-utils.ts",
+      "file_type": "code",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L1",
+      "id": "lib_tiptap_utils",
+      "community": 136,
+      "norm_label": "tiptap-utils.ts"
+    },
+    {
+      "label": "MAC_SYMBOLS",
+      "file_type": "code",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L19",
+      "id": "lib_tiptap_utils_mac_symbols",
+      "community": 136,
+      "norm_label": "mac_symbols"
+    },
+    {
+      "label": "SR_ONLY",
+      "file_type": "code",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L35",
+      "id": "lib_tiptap_utils_sr_only",
+      "community": 136,
+      "norm_label": "sr_only"
+    },
+    {
+      "label": "cn()",
+      "file_type": "code",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L47",
+      "id": "lib_tiptap_utils_cn",
+      "community": 136,
+      "norm_label": "cn()"
+    },
+    {
+      "label": "isMac()",
+      "file_type": "code",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L55",
+      "id": "lib_tiptap_utils_ismac",
+      "community": 136,
+      "norm_label": "ismac()"
+    },
+    {
+      "label": "formatShortcutKey()",
+      "file_type": "code",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L69",
+      "id": "lib_tiptap_utils_formatshortcutkey",
+      "community": 136,
+      "norm_label": "formatshortcutkey()"
+    },
+    {
+      "label": "parseShortcutKeys()",
+      "file_type": "code",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L89",
+      "id": "lib_tiptap_utils_parseshortcutkeys",
+      "community": 136,
+      "norm_label": "parseshortcutkeys()"
+    },
+    {
+      "label": "isMarkInSchema()",
+      "file_type": "code",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L110",
+      "id": "lib_tiptap_utils_ismarkinschema",
+      "community": 136,
+      "norm_label": "ismarkinschema()"
+    },
+    {
+      "label": "isNodeInSchema()",
+      "file_type": "code",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L124",
+      "id": "lib_tiptap_utils_isnodeinschema",
+      "community": 136,
+      "norm_label": "isnodeinschema()"
+    },
+    {
+      "label": "focusNextNode()",
+      "file_type": "code",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L137",
+      "id": "lib_tiptap_utils_focusnextnode",
+      "community": 136,
+      "norm_label": "focusnextnode()"
+    },
+    {
+      "label": "isValidPosition()",
+      "file_type": "code",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L169",
+      "id": "lib_tiptap_utils_isvalidposition",
+      "community": 136,
+      "norm_label": "isvalidposition()"
+    },
+    {
+      "label": "warnedMissingExtensions",
+      "file_type": "code",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L182",
+      "id": "lib_tiptap_utils_warnedmissingextensions",
+      "community": 136,
+      "norm_label": "warnedmissingextensions"
+    },
+    {
+      "label": "isExtensionAvailable()",
+      "file_type": "code",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L184",
+      "id": "lib_tiptap_utils_isextensionavailable",
+      "community": 136,
+      "norm_label": "isextensionavailable()"
+    },
+    {
+      "label": "findNodeAtPosition()",
+      "file_type": "code",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L221",
+      "id": "lib_tiptap_utils_findnodeatposition",
+      "community": 136,
+      "norm_label": "findnodeatposition()"
+    },
+    {
+      "label": "findNodePosition()",
+      "file_type": "code",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L243",
+      "id": "lib_tiptap_utils_findnodeposition",
+      "community": 136,
+      "norm_label": "findnodeposition()"
+    },
+    {
+      "label": "isNodeTypeSelected()",
+      "file_type": "code",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L299",
+      "id": "lib_tiptap_utils_isnodetypeselected",
+      "community": 136,
+      "norm_label": "isnodetypeselected()"
+    },
+    {
+      "label": "selectionWithinConvertibleTypes()",
+      "file_type": "code",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L336",
+      "id": "lib_tiptap_utils_selectionwithinconvertibletypes",
+      "community": 136,
+      "norm_label": "selectionwithinconvertibletypes()"
+    },
+    {
+      "label": "handleImageUpload()",
+      "file_type": "code",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L373",
+      "id": "lib_tiptap_utils_handleimageupload",
+      "community": 136,
+      "norm_label": "handleimageupload()"
+    },
+    {
+      "label": "ProtocolOptions",
+      "file_type": "code",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L402",
+      "id": "lib_tiptap_utils_protocoloptions",
+      "community": 136,
+      "norm_label": "protocoloptions"
+    },
+    {
+      "label": "ProtocolConfig",
+      "file_type": "code",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L419",
+      "id": "lib_tiptap_utils_protocolconfig",
+      "community": 136,
+      "norm_label": "protocolconfig"
+    },
+    {
+      "label": "isAllowedUri()",
+      "file_type": "code",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L425",
+      "id": "lib_tiptap_utils_isalloweduri",
+      "community": 136,
+      "norm_label": "isalloweduri()"
+    },
+    {
+      "label": "sanitizeUrl()",
+      "file_type": "code",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L465",
+      "id": "lib_tiptap_utils_sanitizeurl",
+      "community": 136,
+      "norm_label": "sanitizeurl()"
+    },
+    {
+      "label": "updateNodesAttr()",
+      "file_type": "code",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L492",
+      "id": "lib_tiptap_utils_updatenodesattr",
+      "community": 136,
+      "norm_label": "updatenodesattr()"
+    },
+    {
+      "label": "selectCurrentBlockContent()",
+      "file_type": "code",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L537",
+      "id": "lib_tiptap_utils_selectcurrentblockcontent",
+      "community": 136,
+      "norm_label": "selectcurrentblockcontent()"
+    },
+    {
+      "label": "getSelectedNodesOfType()",
+      "file_type": "code",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L579",
+      "id": "lib_tiptap_utils_getselectednodesoftype",
+      "community": 136,
+      "norm_label": "getselectednodesoftype()"
+    },
+    {
+      "label": "clamp()",
+      "file_type": "code",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L629",
+      "id": "lib_tiptap_utils_clamp",
+      "community": 136,
+      "norm_label": "clamp()"
+    },
+    {
+      "label": "getSelectedBlockNodes()",
+      "file_type": "code",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L633",
+      "id": "lib_tiptap_utils_getselectedblocknodes",
+      "community": 136,
+      "norm_label": "getselectedblocknodes()"
     },
     {
       "label": "next.config.ts",
@@ -4810,10 +5557,64 @@
       "norm_label": "@imgly/background-removal"
     },
     {
-      "label": "@types/papaparse",
+      "label": "@radix-ui/react-popover",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L32",
+      "id": "package_dependencies_radix_ui_react_popover",
+      "community": 5,
+      "norm_label": "@radix-ui/react-popover"
+    },
+    {
+      "label": "@tiptap/extension-bubble-menu",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L33",
+      "id": "package_dependencies_tiptap_extension_bubble_menu",
+      "community": 5,
+      "norm_label": "@tiptap/extension-bubble-menu"
+    },
+    {
+      "label": "@tiptap/extension-link",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L34",
+      "id": "package_dependencies_tiptap_extension_link",
+      "community": 5,
+      "norm_label": "@tiptap/extension-link"
+    },
+    {
+      "label": "@tiptap/pm",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L35",
+      "id": "package_dependencies_tiptap_pm",
+      "community": 5,
+      "norm_label": "@tiptap/pm"
+    },
+    {
+      "label": "@tiptap/react",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L36",
+      "id": "package_dependencies_tiptap_react",
+      "community": 5,
+      "norm_label": "@tiptap/react"
+    },
+    {
+      "label": "@tiptap/starter-kit",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L37",
+      "id": "package_dependencies_tiptap_starter_kit",
+      "community": 5,
+      "norm_label": "@tiptap/starter-kit"
+    },
+    {
+      "label": "@types/papaparse",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L38",
       "id": "package_dependencies_types_papaparse",
       "community": 5,
       "norm_label": "@types/papaparse"
@@ -4822,7 +5623,7 @@
       "label": "@uiw/codemirror-theme-dracula",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L33",
+      "source_location": "L39",
       "id": "package_dependencies_uiw_codemirror_theme_dracula",
       "community": 5,
       "norm_label": "@uiw/codemirror-theme-dracula"
@@ -4831,7 +5632,7 @@
       "label": "@uiw/codemirror-theme-github",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L34",
+      "source_location": "L40",
       "id": "package_dependencies_uiw_codemirror_theme_github",
       "community": 5,
       "norm_label": "@uiw/codemirror-theme-github"
@@ -4840,7 +5641,7 @@
       "label": "@uiw/codemirror-theme-monokai",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L35",
+      "source_location": "L41",
       "id": "package_dependencies_uiw_codemirror_theme_monokai",
       "community": 5,
       "norm_label": "@uiw/codemirror-theme-monokai"
@@ -4849,7 +5650,7 @@
       "label": "@uiw/codemirror-theme-nord",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L36",
+      "source_location": "L42",
       "id": "package_dependencies_uiw_codemirror_theme_nord",
       "community": 5,
       "norm_label": "@uiw/codemirror-theme-nord"
@@ -4858,7 +5659,7 @@
       "label": "@uiw/codemirror-theme-okaidia",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L37",
+      "source_location": "L43",
       "id": "package_dependencies_uiw_codemirror_theme_okaidia",
       "community": 5,
       "norm_label": "@uiw/codemirror-theme-okaidia"
@@ -4867,7 +5668,7 @@
       "label": "@uiw/codemirror-theme-tokyo-night",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L38",
+      "source_location": "L44",
       "id": "package_dependencies_uiw_codemirror_theme_tokyo_night",
       "community": 5,
       "norm_label": "@uiw/codemirror-theme-tokyo-night"
@@ -4876,7 +5677,7 @@
       "label": "@uiw/codemirror-theme-vscode",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L39",
+      "source_location": "L45",
       "id": "package_dependencies_uiw_codemirror_theme_vscode",
       "community": 5,
       "norm_label": "@uiw/codemirror-theme-vscode"
@@ -4885,7 +5686,7 @@
       "label": "@uiw/codemirror-themes",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L40",
+      "source_location": "L46",
       "id": "package_dependencies_uiw_codemirror_themes",
       "community": 5,
       "norm_label": "@uiw/codemirror-themes"
@@ -4894,7 +5695,7 @@
       "label": "@uiw/react-codemirror",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L41",
+      "source_location": "L47",
       "id": "package_dependencies_uiw_react_codemirror",
       "community": 5,
       "norm_label": "@uiw/react-codemirror"
@@ -4903,7 +5704,7 @@
       "label": "@uiw/react-json-view",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L42",
+      "source_location": "L48",
       "id": "package_dependencies_uiw_react_json_view",
       "community": 5,
       "norm_label": "@uiw/react-json-view"
@@ -4912,7 +5713,7 @@
       "label": "axios",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L43",
+      "source_location": "L49",
       "id": "package_dependencies_axios",
       "community": 5,
       "norm_label": "axios"
@@ -4921,7 +5722,7 @@
       "label": "browser-image-compression",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L44",
+      "source_location": "L50",
       "id": "package_dependencies_browser_image_compression",
       "community": 5,
       "norm_label": "browser-image-compression"
@@ -4930,7 +5731,7 @@
       "label": "clsx",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L45",
+      "source_location": "L51",
       "id": "package_dependencies_clsx",
       "community": 5,
       "norm_label": "clsx"
@@ -4939,7 +5740,7 @@
       "label": "fast-xml-parser",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L46",
+      "source_location": "L52",
       "id": "package_dependencies_fast_xml_parser",
       "community": 5,
       "norm_label": "fast-xml-parser"
@@ -4948,7 +5749,7 @@
       "label": "framer-motion",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L47",
+      "source_location": "L53",
       "id": "package_dependencies_framer_motion",
       "community": 5,
       "norm_label": "framer-motion"
@@ -4957,7 +5758,7 @@
       "label": "image-conversion",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L48",
+      "source_location": "L54",
       "id": "package_dependencies_image_conversion",
       "community": 5,
       "norm_label": "image-conversion"
@@ -4966,7 +5767,7 @@
       "label": "js-yaml",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L49",
+      "source_location": "L55",
       "id": "package_dependencies_js_yaml",
       "community": 5,
       "norm_label": "js-yaml"
@@ -4975,7 +5776,7 @@
       "label": "json-2-csv",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L50",
+      "source_location": "L56",
       "id": "package_dependencies_json_2_csv",
       "community": 5,
       "norm_label": "json-2-csv"
@@ -4984,7 +5785,7 @@
       "label": "json-schema-faker",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L51",
+      "source_location": "L57",
       "id": "package_dependencies_json_schema_faker",
       "community": 5,
       "norm_label": "json-schema-faker"
@@ -4993,7 +5794,7 @@
       "label": "json-to-table",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L52",
+      "source_location": "L58",
       "id": "package_dependencies_json_to_table",
       "community": 5,
       "norm_label": "json-to-table"
@@ -5002,7 +5803,7 @@
       "label": "jsondiffpatch",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L53",
+      "source_location": "L59",
       "id": "package_dependencies_jsondiffpatch",
       "community": 5,
       "norm_label": "jsondiffpatch"
@@ -5011,7 +5812,7 @@
       "label": "jsonfile",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L54",
+      "source_location": "L60",
       "id": "package_dependencies_jsonfile",
       "community": 5,
       "norm_label": "jsonfile"
@@ -5020,7 +5821,7 @@
       "label": "jsonpath-plus",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L55",
+      "source_location": "L61",
       "id": "package_dependencies_jsonpath_plus",
       "community": 5,
       "norm_label": "jsonpath-plus"
@@ -5029,7 +5830,7 @@
       "label": "jsonrepair",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L56",
+      "source_location": "L62",
       "id": "package_dependencies_jsonrepair",
       "community": 5,
       "norm_label": "jsonrepair"
@@ -5038,7 +5839,7 @@
       "label": "jspdf",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L57",
+      "source_location": "L63",
       "id": "package_dependencies_jspdf",
       "community": 5,
       "norm_label": "jspdf"
@@ -5047,16 +5848,25 @@
       "label": "lucide-react",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L58",
+      "source_location": "L64",
       "id": "package_dependencies_lucide_react",
       "community": 5,
       "norm_label": "lucide-react"
     },
     {
+      "label": "mammoth",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L65",
+      "id": "package_dependencies_mammoth",
+      "community": 5,
+      "norm_label": "mammoth"
+    },
+    {
       "label": "next",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L59",
+      "source_location": "L66",
       "id": "package_dependencies_next",
       "community": 5,
       "norm_label": "next"
@@ -5065,7 +5875,7 @@
       "label": "nextjs-toploader",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L60",
+      "source_location": "L67",
       "id": "package_dependencies_nextjs_toploader",
       "community": 5,
       "norm_label": "nextjs-toploader"
@@ -5074,7 +5884,7 @@
       "label": "papaparse",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L61",
+      "source_location": "L68",
       "id": "package_dependencies_papaparse",
       "community": 5,
       "norm_label": "papaparse"
@@ -5083,7 +5893,7 @@
       "label": "pdf-lib",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L62",
+      "source_location": "L69",
       "id": "package_dependencies_pdf_lib",
       "community": 5,
       "norm_label": "pdf-lib"
@@ -5092,7 +5902,7 @@
       "label": "pdfjs-dist",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L63",
+      "source_location": "L70",
       "id": "package_dependencies_pdfjs_dist",
       "community": 5,
       "norm_label": "pdfjs-dist"
@@ -5101,7 +5911,7 @@
       "label": "pica",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L64",
+      "source_location": "L71",
       "id": "package_dependencies_pica",
       "community": 5,
       "norm_label": "pica"
@@ -5110,7 +5920,7 @@
       "label": "react",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L65",
+      "source_location": "L72",
       "id": "package_dependencies_react",
       "community": 5,
       "norm_label": "react"
@@ -5119,7 +5929,7 @@
       "label": "react-countup",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L66",
+      "source_location": "L73",
       "id": "package_dependencies_react_countup",
       "community": 5,
       "norm_label": "react-countup"
@@ -5128,7 +5938,7 @@
       "label": "react-csv",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L67",
+      "source_location": "L74",
       "id": "package_dependencies_react_csv",
       "community": 5,
       "norm_label": "react-csv"
@@ -5137,7 +5947,7 @@
       "label": "react-dom",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L68",
+      "source_location": "L75",
       "id": "package_dependencies_react_dom",
       "community": 5,
       "norm_label": "react-dom"
@@ -5146,7 +5956,7 @@
       "label": "react-easy-crop",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L69",
+      "source_location": "L76",
       "id": "package_dependencies_react_easy_crop",
       "community": 5,
       "norm_label": "react-easy-crop"
@@ -5155,7 +5965,7 @@
       "label": "sharp",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L70",
+      "source_location": "L77",
       "id": "package_dependencies_sharp",
       "community": 5,
       "norm_label": "sharp"
@@ -5164,7 +5974,7 @@
       "label": "xlsx",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L71",
+      "source_location": "L78",
       "id": "package_dependencies_xlsx",
       "community": 5,
       "norm_label": "xlsx"
@@ -5173,7 +5983,7 @@
       "label": "devDependencies",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L73",
+      "source_location": "L80",
       "id": "package_devdependencies",
       "community": 3,
       "norm_label": "devdependencies"
@@ -5182,7 +5992,7 @@
       "label": "@tailwindcss/postcss",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L74",
+      "source_location": "L81",
       "id": "package_devdependencies_tailwindcss_postcss",
       "community": 3,
       "norm_label": "@tailwindcss/postcss"
@@ -5191,7 +6001,7 @@
       "label": "@types/js-yaml",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L75",
+      "source_location": "L82",
       "id": "package_devdependencies_types_js_yaml",
       "community": 3,
       "norm_label": "@types/js-yaml"
@@ -5200,7 +6010,7 @@
       "label": "@types/node",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L76",
+      "source_location": "L83",
       "id": "package_devdependencies_types_node",
       "community": 3,
       "norm_label": "@types/node"
@@ -5209,7 +6019,7 @@
       "label": "@types/react",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L77",
+      "source_location": "L84",
       "id": "package_devdependencies_types_react",
       "community": 3,
       "norm_label": "@types/react"
@@ -5218,7 +6028,7 @@
       "label": "@types/react-csv",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L78",
+      "source_location": "L85",
       "id": "package_devdependencies_types_react_csv",
       "community": 3,
       "norm_label": "@types/react-csv"
@@ -5227,7 +6037,7 @@
       "label": "@types/react-dom",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L79",
+      "source_location": "L86",
       "id": "package_devdependencies_types_react_dom",
       "community": 3,
       "norm_label": "@types/react-dom"
@@ -5236,7 +6046,7 @@
       "label": "eslint",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L80",
+      "source_location": "L87",
       "id": "package_devdependencies_eslint",
       "community": 3,
       "norm_label": "eslint"
@@ -5245,16 +6055,25 @@
       "label": "eslint-config-next",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L81",
+      "source_location": "L88",
       "id": "package_devdependencies_eslint_config_next",
       "community": 3,
       "norm_label": "eslint-config-next"
     },
     {
+      "label": "sass",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L89",
+      "id": "package_devdependencies_sass",
+      "community": 3,
+      "norm_label": "sass"
+    },
+    {
       "label": "tailwindcss",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L82",
+      "source_location": "L90",
       "id": "package_devdependencies_tailwindcss",
       "community": 3,
       "norm_label": "tailwindcss"
@@ -5263,7 +6082,7 @@
       "label": "typescript",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L83",
+      "source_location": "L91",
       "id": "package_devdependencies_typescript",
       "community": 3,
       "norm_label": "typescript"
@@ -5285,6 +6104,15 @@
       "id": "postcss_config_config",
       "community": 40,
       "norm_label": "config"
+    },
+    {
+      "label": "scss.d.ts",
+      "file_type": "code",
+      "source_file": "scss.d.ts",
+      "source_location": "L1",
+      "id": "scss_d",
+      "community": 158,
+      "norm_label": "scss.d.ts"
     },
     {
       "label": "tsconfig.json",
@@ -5584,81 +6412,54 @@
       "norm_label": "graphify"
     },
     {
-      "label": "SAMPLES",
+      "label": "AddWatermark.tsx",
       "file_type": "code",
-      "source_file": "app/tooles/json-tooles/components/CSVToJSON.tsx",
-      "source_location": "L27",
-      "community": 83,
-      "norm_label": "samples",
-      "id": "components_csvtojson_samples"
+      "source_file": "app/tooles/image-tooles/components/AddWatermark.tsx",
+      "source_location": "L1",
+      "community": 20,
+      "norm_label": "addwatermark.tsx",
+      "id": "components_addwatermark"
     },
     {
-      "label": "NodeProps",
+      "label": "AddWatermark()",
       "file_type": "code",
-      "source_file": "app/tooles/json-tooles/components/JSONTreeViewer.tsx",
+      "source_file": "app/tooles/image-tooles/components/AddWatermark.tsx",
       "source_location": "L6",
-      "community": 78,
-      "norm_label": "nodeprops",
-      "id": "components_jsontreeviewer_nodeprops"
+      "community": 20,
+      "norm_label": "addwatermark()",
+      "id": "components_addwatermark_addwatermark"
     },
     {
-      "label": "TreeBranch()",
+      "label": "ImageToPdf.tsx",
       "file_type": "code",
-      "source_file": "app/tooles/json-tooles/components/JSONTreeViewer.tsx",
-      "source_location": "L12",
-      "community": 78,
-      "norm_label": "treebranch()",
-      "id": "components_jsontreeviewer_treebranch"
+      "source_file": "app/tooles/image-tooles/components/ImageToPdf.tsx",
+      "source_location": "L1",
+      "community": 28,
+      "norm_label": "imagetopdf.tsx",
+      "id": "components_imagetopdf"
     },
     {
-      "label": "JSONTreeViewProps",
+      "label": "ImageToPDF()",
       "file_type": "code",
-      "source_file": "app/tooles/json-tooles/components/JSONViewer.tsx",
-      "source_location": "L36",
-      "community": 79,
-      "norm_label": "jsontreeviewprops",
-      "id": "components_jsonviewer_jsontreeviewprops"
+      "source_file": "app/tooles/image-tooles/components/ImageToPdf.tsx",
+      "source_location": "L7",
+      "community": 28,
+      "norm_label": "imagetopdf()",
+      "id": "components_imagetopdf_imagetopdf"
     },
     {
-      "label": "JSONTreeView()",
+      "label": "page()",
       "file_type": "code",
-      "source_file": "app/tooles/json-tooles/components/JSONViewer.tsx",
-      "source_location": "L41",
-      "community": 79,
-      "norm_label": "jsontreeview()",
-      "id": "components_jsonviewer_jsontreeview"
-    },
-    {
-      "label": "JSONToCSV()",
-      "file_type": "code",
-      "source_file": "app/tooles/converter-tools/components/JSONToCSV.tsx",
-      "source_location": "L6",
-      "community": 80,
-      "norm_label": "jsontocsv()",
-      "id": "components_jsontocsv_jsontocsv"
-    },
-    {
-      "label": "TreeNode()",
-      "file_type": "code",
-      "source_file": "app/tooles/json-tooles/components/JSONTreeViewer.tsx",
-      "source_location": "L49",
-      "community": 78,
-      "norm_label": "treenode()",
-      "id": "components_jsontreeviewer_treenode"
-    },
-    {
-      "label": "JSONNode()",
-      "file_type": "code",
-      "source_file": "app/tooles/json-tooles/components/JSONViewer.tsx",
-      "source_location": "L76",
-      "community": 79,
-      "norm_label": "jsonnode()",
-      "id": "components_jsonviewer_jsonnode"
+      "source_file": "app/tooles/pdf-tooles/[pdf-tool-slug]/page.tsx",
+      "source_location": "L3",
+      "community": 39,
+      "norm_label": "page()",
+      "id": "pdf_tool_slug_page_page"
     },
     {
       "label": "CSVToJSON.tsx",
       "file_type": "code",
-      "source_file": "app/tooles/converter-tools/components/CSVToJSON.tsx",
+      "source_file": "app/tooles/json-tooles/components/CSVToJSON.tsx",
       "source_location": "L1",
       "community": 90,
       "norm_label": "csvtojson.tsx",
@@ -5667,8 +6468,8 @@
     {
       "label": "CSVToJSON()",
       "file_type": "code",
-      "source_file": "app/tooles/converter-tools/components/CSVToJSON.tsx",
-      "source_location": "L6",
+      "source_file": "app/tooles/json-tooles/components/CSVToJSON.tsx",
+      "source_location": "L27",
       "community": 90,
       "norm_label": "csvtojson()",
       "id": "components_csvtojson_csvtojson"
@@ -5676,16 +6477,25 @@
     {
       "label": "JSONToCSV.tsx",
       "file_type": "code",
-      "source_file": "app/tooles/converter-tools/components/JSONToCSV.tsx",
+      "source_file": "app/tooles/json-tooles/components/JSONToCSV.tsx",
       "source_location": "L1",
       "community": 80,
       "norm_label": "jsontocsv.tsx",
       "id": "components_jsontocsv"
     },
     {
+      "label": "JSONToCSV()",
+      "file_type": "code",
+      "source_file": "app/tooles/json-tooles/components/JSONToCSV.tsx",
+      "source_location": "L20",
+      "community": 80,
+      "norm_label": "jsontocsv()",
+      "id": "components_jsontocsv_jsontocsv"
+    },
+    {
       "label": "JSONToExcel.tsx",
       "file_type": "code",
-      "source_file": "app/tooles/converter-tools/components/JSONToExcel.tsx",
+      "source_file": "app/tooles/json-tooles/components/JSONToExcel.tsx",
       "source_location": "L1",
       "community": 117,
       "norm_label": "jsontoexcel.tsx",
@@ -5694,8 +6504,8 @@
     {
       "label": "JSONToExcel()",
       "file_type": "code",
-      "source_file": "app/tooles/converter-tools/components/JSONToExcel.tsx",
-      "source_location": "L6",
+      "source_file": "app/tooles/json-tooles/components/JSONToExcel.tsx",
+      "source_location": "L19",
       "community": 117,
       "norm_label": "jsontoexcel()",
       "id": "components_jsontoexcel_jsontoexcel"
@@ -5703,7 +6513,7 @@
     {
       "label": "JSONToXML.tsx",
       "file_type": "code",
-      "source_file": "app/tooles/converter-tools/components/JSONToXML.tsx",
+      "source_file": "app/tooles/json-tooles/components/JSONToXML.tsx",
       "source_location": "L1",
       "community": 97,
       "norm_label": "jsontoxml.tsx",
@@ -5712,8 +6522,8 @@
     {
       "label": "JSONToXML()",
       "file_type": "code",
-      "source_file": "app/tooles/converter-tools/components/JSONToXML.tsx",
-      "source_location": "L6",
+      "source_file": "app/tooles/json-tooles/components/JSONToXML.tsx",
+      "source_location": "L36",
       "community": 97,
       "norm_label": "jsontoxml()",
       "id": "components_jsontoxml_jsontoxml"
@@ -9128,9 +9938,9 @@
       "source_file": "app/tooles/converter-tools/components/MP4Converter.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_mp4converter",
-      "target": "components_convertertemplate",
-      "confidence_score": 1.0
+      "target": "components_convertertemplate"
     },
     {
       "relation": "imports_from",
@@ -9139,9 +9949,9 @@
       "source_file": "app/tooles/converter-tools/components/PDFToExcel.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_pdftoexcel",
-      "target": "components_convertertemplate",
-      "confidence_score": 1.0
+      "target": "components_convertertemplate"
     },
     {
       "relation": "imports_from",
@@ -9150,9 +9960,9 @@
       "source_file": "app/tooles/converter-tools/components/PDFToPPT.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_pdftoppt",
-      "target": "components_convertertemplate",
-      "confidence_score": 1.0
+      "target": "components_convertertemplate"
     },
     {
       "relation": "imports_from",
@@ -9161,9 +9971,9 @@
       "source_file": "app/tooles/converter-tools/components/PDFToText.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_pdftotext",
-      "target": "components_convertertemplate",
-      "confidence_score": 1.0
+      "target": "components_convertertemplate"
     },
     {
       "relation": "imports_from",
@@ -9172,9 +9982,9 @@
       "source_file": "app/tooles/converter-tools/components/PPTToPDF.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_ppttopdf",
-      "target": "components_convertertemplate",
-      "confidence_score": 1.0
+      "target": "components_convertertemplate"
     },
     {
       "relation": "imports_from",
@@ -9205,9 +10015,9 @@
       "source_file": "app/tooles/converter-tools/components/VideoCompressor.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_videocompressor",
-      "target": "components_convertertemplate",
-      "confidence_score": 1.0
+      "target": "components_convertertemplate"
     },
     {
       "relation": "imports_from",
@@ -9378,9 +10188,9 @@
       "source_file": "app/tooles/converter-tools/components/MP4Converter.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_mp4converter",
-      "target": "components_mp4converter_mp4converter",
-      "confidence_score": 1.0
+      "target": "components_mp4converter_mp4converter"
     },
     {
       "relation": "contains",
@@ -9388,9 +10198,9 @@
       "source_file": "app/tooles/converter-tools/components/PDFToExcel.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_pdftoexcel",
-      "target": "components_pdftoexcel_pdftoexcel",
-      "confidence_score": 1.0
+      "target": "components_pdftoexcel_pdftoexcel"
     },
     {
       "relation": "contains",
@@ -9398,9 +10208,9 @@
       "source_file": "app/tooles/converter-tools/components/PDFToPPT.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_pdftoppt",
-      "target": "components_pdftoppt_pdftoppt",
-      "confidence_score": 1.0
+      "target": "components_pdftoppt_pdftoppt"
     },
     {
       "relation": "contains",
@@ -9408,9 +10218,9 @@
       "source_file": "app/tooles/converter-tools/components/PDFToText.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_pdftotext",
-      "target": "components_pdftotext_pdftotext",
-      "confidence_score": 1.0
+      "target": "components_pdftotext_pdftotext"
     },
     {
       "relation": "contains",
@@ -9418,9 +10228,9 @@
       "source_file": "app/tooles/converter-tools/components/PPTToPDF.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_ppttopdf",
-      "target": "components_ppttopdf_ppttopdf",
-      "confidence_score": 1.0
+      "target": "components_ppttopdf_ppttopdf"
     },
     {
       "relation": "contains",
@@ -9518,9 +10328,9 @@
       "source_file": "app/tooles/converter-tools/components/VideoCompressor.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_videocompressor",
-      "target": "components_videocompressor_videocompressor",
-      "confidence_score": 1.0
+      "target": "components_videocompressor_videocompressor"
     },
     {
       "relation": "contains",
@@ -9691,11 +10501,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/tooles/image-tooles/components/AddWatermark.tsx",
-      "source_location": "L5",
+      "source_location": "L6",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_addwatermark",
-      "target": "components_addwatermark_addwatermark"
+      "source": "app_tooles_image_tooles_components_addwatermark_tsx_components_addwatermark",
+      "target": "app_tooles_image_tooles_components_addwatermark_tsx_components_addwatermark_addwatermark",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -9977,9 +10787,9 @@
       "source_file": "app/tooles/image-tooles/components/ImageToPdf.tsx",
       "source_location": "L7",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_imagetopdf",
-      "target": "components_imagetopdf_imagetopdf"
+      "source": "app_tooles_image_tooles_components_imagetopdf_tsx_components_imagetopdf",
+      "target": "app_tooles_image_tooles_components_imagetopdf_tsx_components_imagetopdf_imagetopdf",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -10167,21 +10977,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/tooles/json-tooles/components/CSVToJSON.tsx",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "app_tooles_json_tooles_components_csvtojson_tsx_components_csvtojson",
-      "target": "app_tooles_json_tooles_components_csvtojson_tsx_components_csvtojson_csvtojson"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/tooles/json-tooles/components/CSVToJSON.tsx",
       "source_location": "L27",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "app_tooles_json_tooles_components_csvtojson_tsx_components_csvtojson",
-      "target": "components_csvtojson_samples"
+      "target": "app_tooles_json_tooles_components_csvtojson_tsx_components_csvtojson_csvtojson"
     },
     {
       "relation": "contains",
@@ -10529,7 +11329,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/tooles/json-tooles/components/JSONToCSV.tsx",
-      "source_location": "L6",
+      "source_location": "L20",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "app_tooles_json_tooles_components_jsontocsv_tsx_components_jsontocsv",
@@ -10539,7 +11339,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/tooles/json-tooles/components/JSONToExcel.tsx",
-      "source_location": "L6",
+      "source_location": "L19",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "app_tooles_json_tooles_components_jsontoexcel_tsx_components_jsontoexcel",
@@ -10609,7 +11409,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/tooles/json-tooles/components/JSONToXML.tsx",
-      "source_location": "L6",
+      "source_location": "L36",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "app_tooles_json_tooles_components_jsontoxml_tsx_components_jsontoxml",
@@ -10634,36 +11434,6 @@
       "confidence_score": 1.0,
       "source": "components_jsontreeviewer",
       "target": "components_jsontreeviewer_jsontreeviewer"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/tooles/json-tooles/components/JSONTreeViewer.tsx",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_jsontreeviewer",
-      "target": "components_jsontreeviewer_nodeprops"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/tooles/json-tooles/components/JSONTreeViewer.tsx",
-      "source_location": "L12",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_jsontreeviewer",
-      "target": "components_jsontreeviewer_treebranch"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/tooles/json-tooles/components/JSONTreeViewer.tsx",
-      "source_location": "L49",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_jsontreeviewer",
-      "target": "components_jsontreeviewer_treenode"
     },
     {
       "relation": "contains",
@@ -10714,36 +11484,6 @@
       "confidence_score": 1.0,
       "source": "components_jsonvalidator",
       "target": "components_jsonvalidator_validationstats"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/tooles/json-tooles/components/JSONViewer.tsx",
-      "source_location": "L76",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_jsonviewer",
-      "target": "components_jsonviewer_jsonnode"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/tooles/json-tooles/components/JSONViewer.tsx",
-      "source_location": "L41",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_jsonviewer",
-      "target": "components_jsonviewer_jsontreeview"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/tooles/json-tooles/components/JSONViewer.tsx",
-      "source_location": "L36",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "components_jsonviewer",
-      "target": "components_jsonviewer_jsontreeviewprops"
     },
     {
       "relation": "contains",
@@ -10883,11 +11623,357 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/tooles/pdf-tooles/[pdf-tool-slug]/page.tsx",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "pdf_tool_slug_page",
+      "target": "pdf_tool_slug_page_componentsmap",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/[pdf-tool-slug]/page.tsx",
       "source_location": "L3",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "pdf_tool_slug_page",
       "target": "pdf_tool_slug_page_page"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/[pdf-tool-slug]/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "pdf_tool_slug_page",
+      "target": "pdf_tool_slug_page_pageprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/[pdf-tool-slug]/page.tsx",
+      "source_location": "L142",
+      "weight": 1.0,
+      "source": "pdf_tool_slug_page",
+      "target": "pdf_tool_slug_page_pdftoolpage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/[pdf-tool-slug]/page.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "pdf_tool_slug_page",
+      "target": "pdf_tool_slug_page_toolconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/AddWatermark.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "app_tooles_pdf_tooles_components_addwatermark_tsx_components_addwatermark",
+      "target": "app_tooles_pdf_tooles_components_addwatermark_tsx_components_addwatermark_addwatermark",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/CompressPDF.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "components_compresspdf",
+      "target": "components_compresspdf_compresspdf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/CompressPDF.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "components_compresspdf",
+      "target": "lib_apiclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/CompressPDF.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "components_compresspdf",
+      "target": "lib_apiendpoints",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/CompressPDF.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "components_compresspdf",
+      "target": "lib_apiendpoints_api_endpoints",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/ExtractPages.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "components_extractpages",
+      "target": "components_extractpages_extractpages",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/ImageToPdf.tsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "app_tooles_pdf_tooles_components_imagetopdf_tsx_components_imagetopdf",
+      "target": "app_tooles_pdf_tooles_components_imagetopdf_tsx_components_imagetopdf_imagetopdf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/ImageToPdf.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "app_tooles_pdf_tooles_components_imagetopdf_tsx_components_imagetopdf",
+      "target": "components_imagetopdf_imageitem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/LockPDF.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "components_lockpdf",
+      "target": "components_lockpdf_lockpdf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/MergePDF.tsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "components_mergepdf",
+      "target": "components_mergepdf_mergepdf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/MergePDF.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "components_mergepdf",
+      "target": "components_mergepdf_pdfitem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/OcrPDF.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "components_ocrpdf",
+      "target": "components_ocrpdf_ocrpdf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/PageNumbers.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "components_pagenumbers",
+      "target": "components_pagenumbers_pagenumbers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/PdfToHtml.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "components_pdftohtml",
+      "target": "components_pdftohtml_pdftohtml",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/PdfToImage.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "components_pdftoimage",
+      "target": "components_pdftoimage_pdftoimage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/PdfToWord.tsx",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "components_pdftoword",
+      "target": "components_pdftoword_pdftoword",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/PdfToWord.tsx",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "components_pdftoword",
+      "target": "lib_apiclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/PdfToWord.tsx",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "components_pdftoword",
+      "target": "lib_apiendpoints",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/PdfToWord.tsx",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "components_pdftoword",
+      "target": "lib_apiendpoints_api_endpoints",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/ProtectPDF.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "components_protectpdf",
+      "target": "components_protectpdf_protectpdf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/RemovePages.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "components_removepages",
+      "target": "components_removepages_removepages",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/RotateLeft.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "components_rotateleft",
+      "target": "components_rotateleft_rotateleft",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/RotatePDF.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "components_rotatepdf",
+      "target": "components_rotatepdf_rotatepdf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/SearchPDF.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "components_searchpdf",
+      "target": "components_searchpdf_searchmatch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/SearchPDF.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "components_searchpdf",
+      "target": "components_searchpdf_searchpdf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/SignPDF.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "components_signpdf",
+      "target": "components_signpdf_signpdf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/SplitPDF.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "components_splitpdf",
+      "target": "components_splitpdf_splitpdf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/SplitPDF.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "components_splitpdf",
+      "target": "components_splitpdf_splitresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/UnlockPDF.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "components_unlockpdf",
+      "target": "components_unlockpdf_unlockpdf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/WordToPdf.tsx",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "components_wordtopdf",
+      "target": "components_wordtopdf_wordtopdf",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -10900,6 +11986,80 @@
       "target": "pdf_tooles_page_pdftoolssection"
     },
     {
+      "relation": "re_exports",
+      "context": "export",
+      "confidence": "EXTRACTED",
+      "source_file": "components/tiptap-ui-primitive/popover/index.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "popover_index",
+      "target": "popover_popover",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/tiptap-ui-primitive/popover/popover.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "popover_popover",
+      "target": "lib_tiptap_utils",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/tiptap-ui-primitive/popover/popover.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "popover_popover",
+      "target": "lib_tiptap_utils_cn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/tiptap-ui-primitive/popover/popover.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "popover_popover",
+      "target": "popover_popover_popover",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/tiptap-ui-primitive/popover/popover.tsx",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "popover_popover",
+      "target": "popover_popover_popovercontent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/tiptap-ui-primitive/popover/popover.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "popover_popover",
+      "target": "popover_popover_popovertrigger",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "components/tiptap-ui-primitive/popover/popover.tsx",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "popover_popover_popovercontent",
+      "target": "lib_tiptap_utils_cn"
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "eslint.config.mjs",
@@ -10908,6 +12068,330 @@
       "confidence_score": 1.0,
       "source": "eslint_config",
       "target": "eslint_config_eslintconfig"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/apiClient.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "lib_apiclient",
+      "target": "lib_apiclient_apiclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/apiClient.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "lib_apiclient",
+      "target": "lib_apiendpoints",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/apiEndpoints.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "lib_apiendpoints",
+      "target": "lib_apiendpoints_api_endpoints",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L629",
+      "weight": 1.0,
+      "source": "lib_tiptap_utils",
+      "target": "lib_tiptap_utils_clamp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "lib_tiptap_utils",
+      "target": "lib_tiptap_utils_cn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L221",
+      "weight": 1.0,
+      "source": "lib_tiptap_utils",
+      "target": "lib_tiptap_utils_findnodeatposition",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L243",
+      "weight": 1.0,
+      "source": "lib_tiptap_utils",
+      "target": "lib_tiptap_utils_findnodeposition",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L137",
+      "weight": 1.0,
+      "source": "lib_tiptap_utils",
+      "target": "lib_tiptap_utils_focusnextnode",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "lib_tiptap_utils",
+      "target": "lib_tiptap_utils_formatshortcutkey",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L633",
+      "weight": 1.0,
+      "source": "lib_tiptap_utils",
+      "target": "lib_tiptap_utils_getselectedblocknodes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L579",
+      "weight": 1.0,
+      "source": "lib_tiptap_utils",
+      "target": "lib_tiptap_utils_getselectednodesoftype",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L373",
+      "weight": 1.0,
+      "source": "lib_tiptap_utils",
+      "target": "lib_tiptap_utils_handleimageupload",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L425",
+      "weight": 1.0,
+      "source": "lib_tiptap_utils",
+      "target": "lib_tiptap_utils_isalloweduri",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L184",
+      "weight": 1.0,
+      "source": "lib_tiptap_utils",
+      "target": "lib_tiptap_utils_isextensionavailable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "lib_tiptap_utils",
+      "target": "lib_tiptap_utils_ismac",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L110",
+      "weight": 1.0,
+      "source": "lib_tiptap_utils",
+      "target": "lib_tiptap_utils_ismarkinschema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L124",
+      "weight": 1.0,
+      "source": "lib_tiptap_utils",
+      "target": "lib_tiptap_utils_isnodeinschema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L299",
+      "weight": 1.0,
+      "source": "lib_tiptap_utils",
+      "target": "lib_tiptap_utils_isnodetypeselected",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L169",
+      "weight": 1.0,
+      "source": "lib_tiptap_utils",
+      "target": "lib_tiptap_utils_isvalidposition",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "lib_tiptap_utils",
+      "target": "lib_tiptap_utils_mac_symbols",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L89",
+      "weight": 1.0,
+      "source": "lib_tiptap_utils",
+      "target": "lib_tiptap_utils_parseshortcutkeys",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L419",
+      "weight": 1.0,
+      "source": "lib_tiptap_utils",
+      "target": "lib_tiptap_utils_protocolconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L402",
+      "weight": 1.0,
+      "source": "lib_tiptap_utils",
+      "target": "lib_tiptap_utils_protocoloptions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L465",
+      "weight": 1.0,
+      "source": "lib_tiptap_utils",
+      "target": "lib_tiptap_utils_sanitizeurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L537",
+      "weight": 1.0,
+      "source": "lib_tiptap_utils",
+      "target": "lib_tiptap_utils_selectcurrentblockcontent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L336",
+      "weight": 1.0,
+      "source": "lib_tiptap_utils",
+      "target": "lib_tiptap_utils_selectionwithinconvertibletypes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "lib_tiptap_utils",
+      "target": "lib_tiptap_utils_sr_only",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L492",
+      "weight": 1.0,
+      "source": "lib_tiptap_utils",
+      "target": "lib_tiptap_utils_updatenodesattr",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L182",
+      "weight": 1.0,
+      "source": "lib_tiptap_utils",
+      "target": "lib_tiptap_utils_warnedmissingextensions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L254",
+      "weight": 1.0,
+      "source": "lib_tiptap_utils_findnodeposition",
+      "target": "lib_tiptap_utils_isvalidposition",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L283",
+      "weight": 1.0,
+      "source": "lib_tiptap_utils_findnodeposition",
+      "target": "lib_tiptap_utils_findnodeatposition",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/tiptap-utils.ts",
+      "source_location": "L473",
+      "weight": 1.0,
+      "source": "lib_tiptap_utils_sanitizeurl",
+      "target": "lib_tiptap_utils_isalloweduri",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -11383,6 +12867,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_mammoth",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
       "source_location": "L19",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -11443,6 +12937,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_radix_ui_react_popover",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
       "source_location": "L22",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -11498,6 +13002,56 @@
       "confidence_score": 1.0,
       "source": "package_dependencies",
       "target": "package_dependencies_sharp"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_tiptap_extension_bubble_menu",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_tiptap_extension_link",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_tiptap_pm",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_tiptap_react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_tiptap_starter_kit",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -11638,6 +13192,16 @@
       "confidence_score": 1.0,
       "source": "package_devdependencies",
       "target": "package_devdependencies_eslint_config_next"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L89",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_sass",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -12002,12 +13566,22 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "app/tooles/converter-tools/components/JSONToCSV.tsx",
-      "source_location": "L6",
+      "source_file": "app/tooles/image-tooles/components/AddWatermark.tsx",
+      "source_location": "L5",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "components_jsontocsv",
-      "target": "components_jsontocsv_jsontocsv"
+      "source": "components_addwatermark",
+      "target": "components_addwatermark_addwatermark"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/image-tooles/components/ImageToPdf.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_imagetopdf",
+      "target": "components_imagetopdf_imagetopdf"
     },
     {
       "relation": "contains",
@@ -12018,6 +13592,16 @@
       "confidence_score": 1.0,
       "source": "components_csvtojson",
       "target": "components_csvtojson_csvtojson"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/converter-tools/components/JSONToCSV.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_jsontocsv",
+      "target": "components_jsontocsv_jsontocsv"
     },
     {
       "relation": "contains",
@@ -12041,5 +13625,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "9b84a5fcbcf6e5d74b05d8da120586e7973cfebc"
+  "built_at_commit": "de053f00f612fee4266f2c981f393ace5fa79211"
 }

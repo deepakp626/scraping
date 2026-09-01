@@ -19,11 +19,12 @@ export  function PdfToolsSection() {
   { name: "Remove Pages", icon: FileX, link: "/tooles/pdf-tooles/remove-pages" },
   { name: "Extract Pages", icon: FileDown, link: "/tooles/pdf-tooles/extract-pages" },
   { name: "Add Page Numbers", icon: FileDigit, link: "/tooles/pdf-tooles/page-numbers" },
-  // { name: "OCR PDF", icon: Eye, link: "/tooles/pdf-tooles/ocr-pdf" },
+  { name: "OCR PDF", icon: Eye, link: "/tooles/pdf-tooles/ocr-pdf" },
   { name: "Sign PDF", icon: FileSignature, link: "/tooles/pdf-tooles/sign-pdf" },
-  { name: "Protect PDF", icon: ShieldCheck, link: "/tooles/pdf-tooles/protect-pdf" },
+  // { name: "Protect PDF", icon: ShieldCheck, link: "/tooles/pdf-tooles/protect-pdf" },
   { name: "PDF to HTML", icon: FileCode, link: "/tooles/pdf-tooles/pdf-to-html" },
   { name: "Search in PDF", icon: FileSearch, link: "/tooles/pdf-tooles/search-pdf" },
+  { name: "Extract Images from PDF", icon: FileImage, link: "/tooles/pdf-tooles/extract-images-from-pdf"},
 ];
   return (
     <section className="py-12 px-4  md:px-10 bg-gray-50">
