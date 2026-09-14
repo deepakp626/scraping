@@ -88,7 +88,7 @@ export const fashionData = {
       title: "Real-Time Variant & SKU Mapping",
       description:
         "Fashion items are highly complex, with each product having dozens of size, color, and fit combinations. Our scrapers map out the full tree of variants for each listing, identifying which color-size combinations are popular and which are out of stock.",
-      image: "/services/fashion-scraping/fashion-benefits.png",
+      image: "/services/fashion-scraping/fashion-features.png",
       imageAlt: "Variant mapping illustration",
       bulletPoints: [
         {
@@ -109,7 +109,7 @@ export const fashionData = {
       title: "Digital Shelf & Visual Auditing",
       description:
         "Acquire high-resolution product imagery and rich descriptive tags automatically. Use image links to power machine learning visual search tools, catalog ingestion systems, or style trend analyzers.",
-      image: "/services/fashion-scraping/fashion-benefits.png",
+      image: "/services/fashion-scraping/Digital-Shelf.png",
       imageAlt: "Visual auditing illustration",
       bulletPoints: [
         {
@@ -130,7 +130,7 @@ export const fashionData = {
       title: "Competitor Catalog & Inventory Auditing",
       description:
         "Track competitors' design launch frequencies, product counts, out-of-stock items, and inventory replacement cycles. Get warning signals when a popular design style runs low on stock elsewhere.",
-      image: "/services/fashion-scraping/fashion-benefits.png",
+      image: "/services/fashion-scraping/Competitor-Catalog.png",
       imageAlt: "Catalog auditing illustration",
       bulletPoints: [
         {
@@ -151,7 +151,7 @@ export const fashionData = {
       title: "Dynamic Pricing & Discount Intel",
       description:
         "Scrape discount structures, active vouchers, category markdowns, and historical pricing logs across platforms. Feed raw data to auto-repricing engines to maintain an edge during seasonal sales.",
-      image: "/services/fashion-scraping/fashion-benefits.png",
+      image: "/services/fashion-scraping/Dynamic-Pricing.png",
       imageAlt: "Pricing intelligence illustration",
       bulletPoints: [
         {

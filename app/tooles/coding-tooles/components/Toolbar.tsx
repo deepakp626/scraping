@@ -2,7 +2,7 @@
 "use client";
 
 import React from "react";
-import { Play, RotateCcw, Copy, Settings2, ChevronDown } from "lucide-react";
+import { Play, RotateCcw, Copy, Settings2, ChevronDown , Fullscreen} from "lucide-react";
 import clsx from "clsx";
 import { LANGUAGE_LIST } from "../lib/languages";
 import { THEMES } from "../lib/themes";
@@ -86,7 +86,7 @@ export default function Toolbar({
       {/* Lang color badge */}
       {currentLang && (
         <div
-          className="hidden sm:flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-mono font-semibold"
+          className="hidden sm:flex items-center gap-1.5 px-2.5 py-1 rounded-full text-sm  font-mono font-semibold"
           style={{ backgroundColor: currentLang.color + "22", color: currentLang.color }}
         >
           <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: currentLang.color }} />
@@ -140,6 +140,15 @@ export default function Toolbar({
 
       {/* Spacer */}
       <div className="flex-1" />
+
+      {/* Full screen button */}
+      <button
+        onClick={() => {}}
+        className="p-1.5 rounded-lg border border-editor-border text-editor-muted hover:text-editor-text hover:border-editor-accent/30 transition-colors"
+        title="Full screen"
+      >
+        <Fullscreen className="w-4 h-4" />
+      </button>
 
       {/* Action buttons */}
       <button

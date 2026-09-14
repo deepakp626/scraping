@@ -88,7 +88,7 @@ export const carRentalData = {
       title: "Geo-Targeted Pricing and Multi-Location Scraping",
       description:
         "Rental rates fluctuate heavily depending on the pickup branch and the user's IP location. Our scrapers utilize high-quality proxy networks to scan rates across thousands of airports and city locations worldwide.",
-      image: "/services/car-rental-data-scraping/car-rental-benefits.png",
+      image: "/services/car-rental-data-scraping/Geo-Targeting.png",
       imageAlt: "Geo-targeted scraping illustration",
       bulletPoints: [
         {
@@ -109,7 +109,7 @@ export const carRentalData = {
       title: "Fleet Specifications and Category Mapping",
       description:
         "We normalize vehicle information across providers to ensure consistent classifications. Make standard comparisons between Hertz, Avis, and Enterprise groups easily.",
-      image: "/services/car-rental-data-scraping/car-rental-fleet.png",
+      image: "/services/car-rental-data-scraping/Fleet-Specifications-and-Category-Mapping.png",
       imageAlt: "Fleet category mapping illustration",
       bulletPoints: [
         {
@@ -130,7 +130,7 @@ export const carRentalData = {
       title: "Dynamic Price & Yield Intelligence",
       description:
         "Track price sensitivity based on booking windows, seasonality, and occupancy levels. Empower yield engines with clean, high-frequency rental feeds.",
-      image: "/services/car-rental-data-scraping/car-rental-pricing.png",
+      image: "/services/car-rental-data-scraping/Dynamic-Price-and-Yield-Intelligence.png",
       imageAlt: "Yield intelligence illustration",
       bulletPoints: [
         {
@@ -173,7 +173,7 @@ export const carRentalData = {
         "Gather granular intelligence on fuel guidelines, rental requirements, deposit amounts, and insurance coverage trends in the rental sector.",
     },
   ],
-  benefitsImage: "/services/car-rental-data-scraping/car-rental-benefits.png",
+  benefitsImage: "/services/car-rental-data-scraping/Car-Rental-Web-Scraping-Services.png",
   benefitsImageAlt: "Car rental scraping benefits illustration",
 
   // Everything You Need section (Grid)

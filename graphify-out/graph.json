@@ -1813,48 +1813,84 @@
       "norm_label": "traveldatascrapingdata"
     },
     {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/[code-tool-slug]/page.tsx",
+      "source_location": "L1",
+      "id": "code_tool_slug_page",
+      "community": 144,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "detectLanguageFromSlug()",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/[code-tool-slug]/page.tsx",
+      "source_location": "L39",
+      "id": "code_tool_slug_page_detectlanguagefromslug",
+      "community": 144,
+      "norm_label": "detectlanguagefromslug()"
+    },
+    {
+      "label": "getLanguageIcon()",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/[code-tool-slug]/page.tsx",
+      "source_location": "L235",
+      "id": "code_tool_slug_page_getlanguageicon",
+      "community": 144,
+      "norm_label": "getlanguageicon()"
+    },
+    {
+      "label": "DynamicCodeToolPage()",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/[code-tool-slug]/page.tsx",
+      "source_location": "L259",
+      "id": "code_tool_slug_page_dynamiccodetoolpage",
+      "community": 144,
+      "norm_label": "dynamiccodetoolpage()"
+    },
+    {
       "label": "CodeEditor.tsx",
       "file_type": "code",
       "source_file": "app/tooles/coding-tooles/components/CodeEditor.tsx",
       "source_location": "L1",
       "id": "components_codeeditor",
-      "community": 12,
+      "community": 144,
       "norm_label": "codeeditor.tsx"
     },
     {
       "label": "THEME_MAP",
       "file_type": "code",
       "source_file": "app/tooles/coding-tooles/components/CodeEditor.tsx",
-      "source_location": "L46",
+      "source_location": "L47",
       "id": "components_codeeditor_theme_map",
-      "community": 12,
+      "community": 144,
       "norm_label": "theme_map"
     },
     {
       "label": "getLanguageExtension()",
       "file_type": "code",
       "source_file": "app/tooles/coding-tooles/components/CodeEditor.tsx",
-      "source_location": "L57",
+      "source_location": "L58",
       "id": "components_codeeditor_getlanguageextension",
-      "community": 12,
+      "community": 144,
       "norm_label": "getlanguageextension()"
     },
     {
       "label": "CodeEditorProps",
       "file_type": "code",
       "source_file": "app/tooles/coding-tooles/components/CodeEditor.tsx",
-      "source_location": "L89",
+      "source_location": "L91",
       "id": "components_codeeditor_codeeditorprops",
-      "community": 12,
+      "community": 144,
       "norm_label": "codeeditorprops"
     },
     {
       "label": "CodeEditor()",
       "file_type": "code",
       "source_file": "app/tooles/coding-tooles/components/CodeEditor.tsx",
-      "source_location": "L101",
+      "source_location": "L103",
       "id": "components_codeeditor_codeeditor",
-      "community": 12,
+      "community": 144,
       "norm_label": "codeeditor()"
     },
     {
@@ -1863,7 +1899,7 @@
       "source_file": "app/tooles/coding-tooles/components/CodeRunEditor.tsx",
       "source_location": "L1",
       "id": "components_coderuneditor",
-      "community": 12,
+      "community": 146,
       "norm_label": "coderuneditor.tsx"
     },
     {
@@ -1872,7 +1908,7 @@
       "source_file": "app/tooles/coding-tooles/components/CodeRunEditor.tsx",
       "source_location": "L12",
       "id": "components_coderuneditor_codeeditor",
-      "community": 12,
+      "community": 146,
       "norm_label": "codeeditor"
     },
     {
@@ -1881,7 +1917,7 @@
       "source_file": "app/tooles/coding-tooles/components/CodeRunEditor.tsx",
       "source_location": "L26",
       "id": "components_coderuneditor_coderuneditorprops",
-      "community": 12,
+      "community": 146,
       "norm_label": "coderuneditorprops"
     },
     {
@@ -1890,7 +1926,7 @@
       "source_file": "app/tooles/coding-tooles/components/CodeRunEditor.tsx",
       "source_location": "L39",
       "id": "components_coderuneditor_coderuneditor",
-      "community": 12,
+      "community": 146,
       "norm_label": "coderuneditor()"
     },
     {
@@ -1899,7 +1935,7 @@
       "source_file": "app/tooles/coding-tooles/components/OutputPanel.tsx",
       "source_location": "L1",
       "id": "components_outputpanel",
-      "community": 12,
+      "community": 149,
       "norm_label": "outputpanel.tsx"
     },
     {
@@ -1908,7 +1944,7 @@
       "source_file": "app/tooles/coding-tooles/components/OutputPanel.tsx",
       "source_location": "L10",
       "id": "components_outputpanel_outputpanelprops",
-      "community": 12,
+      "community": 149,
       "norm_label": "outputpanelprops"
     },
     {
@@ -1917,7 +1953,7 @@
       "source_file": "app/tooles/coding-tooles/components/OutputPanel.tsx",
       "source_location": "L25",
       "id": "components_outputpanel_tabs",
-      "community": 12,
+      "community": 149,
       "norm_label": "tabs"
     },
     {
@@ -1926,7 +1962,7 @@
       "source_file": "app/tooles/coding-tooles/components/OutputPanel.tsx",
       "source_location": "L31",
       "id": "components_outputpanel_shortcuts",
-      "community": 12,
+      "community": 149,
       "norm_label": "shortcuts"
     },
     {
@@ -1935,7 +1971,7 @@
       "source_file": "app/tooles/coding-tooles/components/OutputPanel.tsx",
       "source_location": "L44",
       "id": "components_outputpanel_outputpanel",
-      "community": 12,
+      "community": 149,
       "norm_label": "outputpanel()"
     },
     {
@@ -1944,7 +1980,7 @@
       "source_file": "app/tooles/coding-tooles/components/StatusBar.tsx",
       "source_location": "L1",
       "id": "components_statusbar",
-      "community": 12,
+      "community": 144,
       "norm_label": "statusbar.tsx"
     },
     {
@@ -1953,7 +1989,7 @@
       "source_file": "app/tooles/coding-tooles/components/StatusBar.tsx",
       "source_location": "L9",
       "id": "components_statusbar_statusbarprops",
-      "community": 12,
+      "community": 144,
       "norm_label": "statusbarprops"
     },
     {
@@ -1962,7 +1998,7 @@
       "source_file": "app/tooles/coding-tooles/components/StatusBar.tsx",
       "source_location": "L16",
       "id": "components_statusbar_statusbar",
-      "community": 12,
+      "community": 144,
       "norm_label": "statusbar()"
     },
     {
@@ -1971,7 +2007,7 @@
       "source_file": "app/tooles/coding-tooles/components/Toolbar.tsx",
       "source_location": "L1",
       "id": "components_toolbar",
-      "community": 12,
+      "community": 159,
       "norm_label": "toolbar.tsx"
     },
     {
@@ -1980,7 +2016,7 @@
       "source_file": "app/tooles/coding-tooles/components/Toolbar.tsx",
       "source_location": "L11",
       "id": "components_toolbar_toolbarprops",
-      "community": 12,
+      "community": 159,
       "norm_label": "toolbarprops"
     },
     {
@@ -1989,7 +2025,7 @@
       "source_file": "app/tooles/coding-tooles/components/Toolbar.tsx",
       "source_location": "L25",
       "id": "components_toolbar_toolbar",
-      "community": 12,
+      "community": 159,
       "norm_label": "toolbar()"
     },
     {
@@ -1998,7 +2034,7 @@
       "source_file": "app/tooles/coding-tooles/components/index.ts",
       "source_location": "L1",
       "id": "components_index",
-      "community": 12,
+      "community": 144,
       "norm_label": "index.ts"
     },
     {
@@ -2007,7 +2043,7 @@
       "source_file": "app/tooles/coding-tooles/lib/judge0.ts",
       "source_location": "L1",
       "id": "lib_judge0",
-      "community": 12,
+      "community": 146,
       "norm_label": "judge0.ts"
     },
     {
@@ -2016,7 +2052,7 @@
       "source_file": "app/tooles/coding-tooles/lib/judge0.ts",
       "source_location": "L9",
       "id": "lib_judge0_submissionpayload",
-      "community": 12,
+      "community": 146,
       "norm_label": "submissionpayload"
     },
     {
@@ -2025,7 +2061,7 @@
       "source_file": "app/tooles/coding-tooles/lib/judge0.ts",
       "source_location": "L18",
       "id": "lib_judge0_judge0error",
-      "community": 12,
+      "community": 146,
       "norm_label": "judge0error"
     },
     {
@@ -2034,7 +2070,7 @@
       "source_file": "app/tooles/coding-tooles/lib/judge0.ts",
       "source_location": "L19",
       "id": "lib_judge0_judge0error_constructor",
-      "community": 12,
+      "community": 146,
       "norm_label": ".constructor()"
     },
     {
@@ -2043,25 +2079,25 @@
       "source_file": "app/tooles/coding-tooles/lib/judge0.ts",
       "source_location": "L32",
       "id": "lib_judge0_runlocally",
-      "community": 12,
+      "community": 146,
       "norm_label": "runlocally()"
     },
     {
       "label": "executeCode()",
       "file_type": "code",
       "source_file": "app/tooles/coding-tooles/lib/judge0.ts",
-      "source_location": "L90",
+      "source_location": "L159",
       "id": "lib_judge0_executecode",
-      "community": 12,
+      "community": 146,
       "norm_label": "executecode()"
     },
     {
       "label": "formatOutput()",
       "file_type": "code",
       "source_file": "app/tooles/coding-tooles/lib/judge0.ts",
-      "source_location": "L130",
+      "source_location": "L199",
       "id": "lib_judge0_formatoutput",
-      "community": 12,
+      "community": 146,
       "norm_label": "formatoutput()"
     },
     {
@@ -2070,34 +2106,43 @@
       "source_file": "app/tooles/coding-tooles/lib/languages.ts",
       "source_location": "L1",
       "id": "lib_languages",
-      "community": 12,
+      "community": 147,
       "norm_label": "languages.ts"
     },
     {
       "label": "LANGUAGES",
       "file_type": "code",
       "source_file": "app/tooles/coding-tooles/lib/languages.ts",
-      "source_location": "L4",
+      "source_location": "L29",
       "id": "lib_languages_languages",
-      "community": 12,
+      "community": 144,
       "norm_label": "languages"
+    },
+    {
+      "label": "getLanguageIcon()",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/lib/languages.ts",
+      "source_location": "L1150",
+      "id": "lib_languages_getlanguageicon",
+      "community": 147,
+      "norm_label": "getlanguageicon()"
     },
     {
       "label": "LANGUAGE_LIST",
       "file_type": "code",
       "source_file": "app/tooles/coding-tooles/lib/languages.ts",
-      "source_location": "L876",
+      "source_location": "L1189",
       "id": "lib_languages_language_list",
-      "community": 12,
+      "community": 147,
       "norm_label": "language_list"
     },
     {
       "label": "getLanguage()",
       "file_type": "code",
       "source_file": "app/tooles/coding-tooles/lib/languages.ts",
-      "source_location": "L878",
+      "source_location": "L1191",
       "id": "lib_languages_getlanguage",
-      "community": 12,
+      "community": 144,
       "norm_label": "getlanguage()"
     },
     {
@@ -2106,7 +2151,7 @@
       "source_file": "app/tooles/coding-tooles/lib/themes.ts",
       "source_location": "L1",
       "id": "lib_themes",
-      "community": 12,
+      "community": 159,
       "norm_label": "themes.ts"
     },
     {
@@ -2115,7 +2160,7 @@
       "source_file": "app/tooles/coding-tooles/lib/themes.ts",
       "source_location": "L4",
       "id": "lib_themes_themes",
-      "community": 12,
+      "community": 159,
       "norm_label": "themes"
     },
     {
@@ -2124,7 +2169,7 @@
       "source_file": "app/tooles/coding-tooles/lib/themes.ts",
       "source_location": "L15",
       "id": "lib_themes_themeid",
-      "community": 12,
+      "community": 159,
       "norm_label": "themeid"
     },
     {
@@ -2133,7 +2178,7 @@
       "source_file": "app/tooles/coding-tooles/lib/useEditorStore.ts",
       "source_location": "L1",
       "id": "lib_useeditorstore",
-      "community": 12,
+      "community": 146,
       "norm_label": "useeditorstore.ts"
     },
     {
@@ -2142,8 +2187,377 @@
       "source_file": "app/tooles/coding-tooles/lib/useEditorStore.ts",
       "source_location": "L8",
       "id": "lib_useeditorstore_useeditorstore",
-      "community": 12,
+      "community": 146,
       "norm_label": "useeditorstore()"
+    },
+    {
+      "label": "MonacoCodeRunEditor.tsx",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoCodeRunEditor.tsx",
+      "source_location": "L1",
+      "id": "monaco_components_monacocoderuneditor",
+      "community": 156,
+      "norm_label": "monacocoderuneditor.tsx"
+    },
+    {
+      "label": "MonacoEditor",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoCodeRunEditor.tsx",
+      "source_location": "L18",
+      "id": "monaco_components_monacocoderuneditor_monacoeditor",
+      "community": 156,
+      "norm_label": "monacoeditor"
+    },
+    {
+      "label": "MonacoDiffEditor",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoCodeRunEditor.tsx",
+      "source_location": "L30",
+      "id": "monaco_components_monacocoderuneditor_monacodiffeditor",
+      "community": 156,
+      "norm_label": "monacodiffeditor"
+    },
+    {
+      "label": "MonacoCodeRunEditorProps",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoCodeRunEditor.tsx",
+      "source_location": "L42",
+      "id": "monaco_components_monacocoderuneditor_monacocoderuneditorprops",
+      "community": 156,
+      "norm_label": "monacocoderuneditorprops"
+    },
+    {
+      "label": "detectLangFromFilename()",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoCodeRunEditor.tsx",
+      "source_location": "L57",
+      "id": "monaco_components_monacocoderuneditor_detectlangfromfilename",
+      "community": 156,
+      "norm_label": "detectlangfromfilename()"
+    },
+    {
+      "label": "MonacoCodeRunEditor()",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoCodeRunEditor.tsx",
+      "source_location": "L63",
+      "id": "monaco_components_monacocoderuneditor_monacocoderuneditor",
+      "community": 156,
+      "norm_label": "monacocoderuneditor()"
+    },
+    {
+      "label": "MonacoDiffEditor.tsx",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoDiffEditor.tsx",
+      "source_location": "L1",
+      "id": "monaco_components_monacodiffeditor",
+      "community": 12,
+      "norm_label": "monacodiffeditor.tsx"
+    },
+    {
+      "label": "MonacoDiffEditorProps",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoDiffEditor.tsx",
+      "source_location": "L8",
+      "id": "monaco_components_monacodiffeditor_monacodiffeditorprops",
+      "community": 12,
+      "norm_label": "monacodiffeditorprops"
+    },
+    {
+      "label": "MonacoDiffEditor()",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoDiffEditor.tsx",
+      "source_location": "L22",
+      "id": "monaco_components_monacodiffeditor_monacodiffeditor",
+      "community": 12,
+      "norm_label": "monacodiffeditor()"
+    },
+    {
+      "label": "MonacoEditor.tsx",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoEditor.tsx",
+      "source_location": "L1",
+      "id": "monaco_components_monacoeditor",
+      "community": 12,
+      "norm_label": "monacoeditor.tsx"
+    },
+    {
+      "label": "MonacoEditorStats",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoEditor.tsx",
+      "source_location": "L8",
+      "id": "monaco_components_monacoeditor_monacoeditorstats",
+      "community": 12,
+      "norm_label": "monacoeditorstats"
+    },
+    {
+      "label": "MonacoEditorProps",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoEditor.tsx",
+      "source_location": "L17",
+      "id": "monaco_components_monacoeditor_monacoeditorprops",
+      "community": 12,
+      "norm_label": "monacoeditorprops"
+    },
+    {
+      "label": "MonacoEditor()",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoEditor.tsx",
+      "source_location": "L35",
+      "id": "monaco_components_monacoeditor_monacoeditor",
+      "community": 12,
+      "norm_label": "monacoeditor()"
+    },
+    {
+      "label": "MonacoFileExplorer.tsx",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoFileExplorer.tsx",
+      "source_location": "L1",
+      "id": "monaco_components_monacofileexplorer",
+      "community": 156,
+      "norm_label": "monacofileexplorer.tsx"
+    },
+    {
+      "label": "EditorFile",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoFileExplorer.tsx",
+      "source_location": "L23",
+      "id": "monaco_components_monacofileexplorer_editorfile",
+      "community": 156,
+      "norm_label": "editorfile"
+    },
+    {
+      "label": "MonacoFileExplorerProps",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoFileExplorer.tsx",
+      "source_location": "L32",
+      "id": "monaco_components_monacofileexplorer_monacofileexplorerprops",
+      "community": 156,
+      "norm_label": "monacofileexplorerprops"
+    },
+    {
+      "label": "getFileBadge()",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoFileExplorer.tsx",
+      "source_location": "L45",
+      "id": "monaco_components_monacofileexplorer_getfilebadge",
+      "community": 156,
+      "norm_label": "getfilebadge()"
+    },
+    {
+      "label": "MonacoFileExplorer()",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoFileExplorer.tsx",
+      "source_location": "L80",
+      "id": "monaco_components_monacofileexplorer_monacofileexplorer",
+      "community": 156,
+      "norm_label": "monacofileexplorer()"
+    },
+    {
+      "label": "MonacoLanguageModal.tsx",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoLanguageModal.tsx",
+      "source_location": "L1",
+      "id": "monaco_components_monacolanguagemodal",
+      "community": 147,
+      "norm_label": "monacolanguagemodal.tsx"
+    },
+    {
+      "label": "MonacoLanguageModalProps",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoLanguageModal.tsx",
+      "source_location": "L9",
+      "id": "monaco_components_monacolanguagemodal_monacolanguagemodalprops",
+      "community": 147,
+      "norm_label": "monacolanguagemodalprops"
+    },
+    {
+      "label": "LANGUAGE_IMAGE_MAP",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoLanguageModal.tsx",
+      "source_location": "L24",
+      "id": "monaco_components_monacolanguagemodal_language_image_map",
+      "community": 147,
+      "norm_label": "language_image_map"
+    },
+    {
+      "label": "MonacoLanguageModal()",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoLanguageModal.tsx",
+      "source_location": "L54",
+      "id": "monaco_components_monacolanguagemodal_monacolanguagemodal",
+      "community": 147,
+      "norm_label": "monacolanguagemodal()"
+    },
+    {
+      "label": "MonacoOutputPanel.tsx",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoOutputPanel.tsx",
+      "source_location": "L1",
+      "id": "monaco_components_monacooutputpanel",
+      "community": 149,
+      "norm_label": "monacooutputpanel.tsx"
+    },
+    {
+      "label": "MonacoOutputPanelProps",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoOutputPanel.tsx",
+      "source_location": "L23",
+      "id": "monaco_components_monacooutputpanel_monacooutputpanelprops",
+      "community": 149,
+      "norm_label": "monacooutputpanelprops"
+    },
+    {
+      "label": "MONACO_SHORTCUTS",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoOutputPanel.tsx",
+      "source_location": "L38",
+      "id": "monaco_components_monacooutputpanel_monaco_shortcuts",
+      "community": 149,
+      "norm_label": "monaco_shortcuts"
+    },
+    {
+      "label": "MonacoOutputPanel()",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoOutputPanel.tsx",
+      "source_location": "L53",
+      "id": "monaco_components_monacooutputpanel_monacooutputpanel",
+      "community": 149,
+      "norm_label": "monacooutputpanel()"
+    },
+    {
+      "label": "MonacoStatusBar.tsx",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoStatusBar.tsx",
+      "source_location": "L1",
+      "id": "monaco_components_monacostatusbar",
+      "community": 12,
+      "norm_label": "monacostatusbar.tsx"
+    },
+    {
+      "label": "MonacoStatusBarProps",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoStatusBar.tsx",
+      "source_location": "L9",
+      "id": "monaco_components_monacostatusbar_monacostatusbarprops",
+      "community": 12,
+      "norm_label": "monacostatusbarprops"
+    },
+    {
+      "label": "MonacoStatusBar()",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoStatusBar.tsx",
+      "source_location": "L16",
+      "id": "monaco_components_monacostatusbar_monacostatusbar",
+      "community": 12,
+      "norm_label": "monacostatusbar()"
+    },
+    {
+      "label": "MonacoToolbar.tsx",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoToolbar.tsx",
+      "source_location": "L1",
+      "id": "monaco_components_monacotoolbar",
+      "community": 147,
+      "norm_label": "monacotoolbar.tsx"
+    },
+    {
+      "label": "MonacoToolbarProps",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoToolbar.tsx",
+      "source_location": "L26",
+      "id": "monaco_components_monacotoolbar_monacotoolbarprops",
+      "community": 147,
+      "norm_label": "monacotoolbarprops"
+    },
+    {
+      "label": "FONT_FAMILIES",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoToolbar.tsx",
+      "source_location": "L54",
+      "id": "monaco_components_monacotoolbar_font_families",
+      "community": 147,
+      "norm_label": "font_families"
+    },
+    {
+      "label": "MonacoToolbar()",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoToolbar.tsx",
+      "source_location": "L62",
+      "id": "monaco_components_monacotoolbar_monacotoolbar",
+      "community": 147,
+      "norm_label": "monacotoolbar()"
+    },
+    {
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/monaco-components/index.ts",
+      "source_location": "L1",
+      "id": "monaco_components_index",
+      "community": 12,
+      "norm_label": "index.ts"
+    },
+    {
+      "label": "monaco-loader.ts",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/monaco-components/monaco-loader.ts",
+      "source_location": "L1",
+      "id": "monaco_components_monaco_loader",
+      "community": 12,
+      "norm_label": "monaco-loader.ts"
+    },
+    {
+      "label": "MonacoThemeItem",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/monaco-components/monaco-loader.ts",
+      "source_location": "L9",
+      "id": "monaco_components_monaco_loader_monacothemeitem",
+      "community": 12,
+      "norm_label": "monacothemeitem"
+    },
+    {
+      "label": "MONACO_THEMES",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/monaco-components/monaco-loader.ts",
+      "source_location": "L16",
+      "id": "monaco_components_monaco_loader_monaco_themes",
+      "community": 12,
+      "norm_label": "monaco_themes"
+    },
+    {
+      "label": "setupMonacoEnvironment()",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/monaco-components/monaco-loader.ts",
+      "source_location": "L33",
+      "id": "monaco_components_monaco_loader_setupmonacoenvironment",
+      "community": 12,
+      "norm_label": "setupmonacoenvironment()"
+    },
+    {
+      "label": "registerMonacoThemes()",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/monaco-components/monaco-loader.ts",
+      "source_location": "L70",
+      "id": "monaco_components_monaco_loader_registermonacothemes",
+      "community": 12,
+      "norm_label": "registermonacothemes()"
+    },
+    {
+      "label": "loadMonaco()",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/monaco-components/monaco-loader.ts",
+      "source_location": "L239",
+      "id": "monaco_components_monaco_loader_loadmonaco",
+      "community": 12,
+      "norm_label": "loadmonaco()"
+    },
+    {
+      "label": "normalizeMonacoLanguage()",
+      "file_type": "code",
+      "source_file": "app/tooles/coding-tooles/monaco-components/monaco-loader.ts",
+      "source_location": "L259",
+      "id": "monaco_components_monaco_loader_normalizemonacolanguage",
+      "community": 12,
+      "norm_label": "normalizemonacolanguage()"
     },
     {
       "label": "page.tsx",
@@ -2151,7 +2565,7 @@
       "source_file": "app/tooles/coding-tooles/page.tsx",
       "source_location": "L1",
       "id": "coding_tooles_page",
-      "community": 12,
+      "community": 144,
       "norm_label": "page.tsx"
     },
     {
@@ -2160,7 +2574,7 @@
       "source_file": "app/tooles/coding-tooles/page.tsx",
       "source_location": "L26",
       "id": "coding_tooles_page_codingtoolssection",
-      "community": 12,
+      "community": 144,
       "norm_label": "codingtoolssection()"
     },
     {
@@ -2169,7 +2583,7 @@
       "source_file": "app/tooles/coding-tooles/types/editor.ts",
       "source_location": "L1",
       "id": "types_editor",
-      "community": 12,
+      "community": 146,
       "norm_label": "editor.ts"
     },
     {
@@ -2178,7 +2592,7 @@
       "source_file": "app/tooles/coding-tooles/types/editor.ts",
       "source_location": "L3",
       "id": "types_editor_themename",
-      "community": 12,
+      "community": 146,
       "norm_label": "themename"
     },
     {
@@ -2187,43 +2601,43 @@
       "source_file": "app/tooles/coding-tooles/types/editor.ts",
       "source_location": "L13",
       "id": "types_editor_languageconfig",
-      "community": 12,
+      "community": 147,
       "norm_label": "languageconfig"
     },
     {
       "label": "ExecutionResult",
       "file_type": "code",
       "source_file": "app/tooles/coding-tooles/types/editor.ts",
-      "source_location": "L29",
+      "source_location": "L31",
       "id": "types_editor_executionresult",
-      "community": 12,
+      "community": 146,
       "norm_label": "executionresult"
     },
     {
       "label": "EditorStats",
       "file_type": "code",
       "source_file": "app/tooles/coding-tooles/types/editor.ts",
-      "source_location": "L42",
+      "source_location": "L44",
       "id": "types_editor_editorstats",
-      "community": 12,
+      "community": 144,
       "norm_label": "editorstats"
     },
     {
       "label": "OutputTab",
       "file_type": "code",
       "source_file": "app/tooles/coding-tooles/types/editor.ts",
-      "source_location": "L50",
+      "source_location": "L52",
       "id": "types_editor_outputtab",
-      "community": 12,
+      "community": 149,
       "norm_label": "outputtab"
     },
     {
       "label": "RunStatus",
       "file_type": "code",
       "source_file": "app/tooles/coding-tooles/types/editor.ts",
-      "source_location": "L51",
+      "source_location": "L53",
       "id": "types_editor_runstatus",
-      "community": 12,
+      "community": 149,
       "norm_label": "runstatus"
     },
     {
@@ -4507,7 +4921,7 @@
       "label": "PdfToolPage()",
       "file_type": "code",
       "source_file": "app/tooles/pdf-tooles/[pdf-tool-slug]/page.tsx",
-      "source_location": "L142",
+      "source_location": "L148",
       "id": "pdf_tool_slug_page_pdftoolpage",
       "community": 39,
       "norm_label": "pdftoolpage()"
@@ -4518,16 +4932,16 @@
       "source_file": "app/tooles/pdf-tooles/components/AddWatermark.tsx",
       "source_location": "L1",
       "id": "app_tooles_pdf_tooles_components_addwatermark_tsx_components_addwatermark",
-      "community": 144,
+      "community": 138,
       "norm_label": "addwatermark.tsx"
     },
     {
       "label": "AddWatermark()",
       "file_type": "code",
       "source_file": "app/tooles/pdf-tooles/components/AddWatermark.tsx",
-      "source_location": "L7",
+      "source_location": "L26",
       "id": "app_tooles_pdf_tooles_components_addwatermark_tsx_components_addwatermark_addwatermark",
-      "community": 144,
+      "community": 138,
       "norm_label": "addwatermark()"
     },
     {
@@ -4549,6 +4963,24 @@
       "norm_label": "compresspdf()"
     },
     {
+      "label": "ExtractImagesFromPDF.tsx",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/ExtractImagesFromPDF.tsx",
+      "source_location": "L1",
+      "id": "components_extractimagesfrompdf",
+      "community": 137,
+      "norm_label": "extractimagesfrompdf.tsx"
+    },
+    {
+      "label": "ExtractImagesFromPDF()",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/ExtractImagesFromPDF.tsx",
+      "source_location": "L9",
+      "id": "components_extractimagesfrompdf_extractimagesfrompdf",
+      "community": 137,
+      "norm_label": "extractimagesfrompdf()"
+    },
+    {
       "label": "ExtractPages.tsx",
       "file_type": "code",
       "source_file": "app/tooles/pdf-tooles/components/ExtractPages.tsx",
@@ -4561,7 +4993,7 @@
       "label": "ExtractPages()",
       "file_type": "code",
       "source_file": "app/tooles/pdf-tooles/components/ExtractPages.tsx",
-      "source_location": "L7",
+      "source_location": "L23",
       "id": "components_extractpages_extractpages",
       "community": 145,
       "norm_label": "extractpages()"
@@ -4572,7 +5004,7 @@
       "source_file": "app/tooles/pdf-tooles/components/ImageToPdf.tsx",
       "source_location": "L1",
       "id": "app_tooles_pdf_tooles_components_imagetopdf_tsx_components_imagetopdf",
-      "community": 138,
+      "community": 28,
       "norm_label": "imagetopdf.tsx"
     },
     {
@@ -4581,7 +5013,7 @@
       "source_file": "app/tooles/pdf-tooles/components/ImageToPdf.tsx",
       "source_location": "L7",
       "id": "components_imagetopdf_imageitem",
-      "community": 138,
+      "community": 28,
       "norm_label": "imageitem"
     },
     {
@@ -4590,7 +5022,7 @@
       "source_file": "app/tooles/pdf-tooles/components/ImageToPdf.tsx",
       "source_location": "L14",
       "id": "app_tooles_pdf_tooles_components_imagetopdf_tsx_components_imagetopdf_imagetopdf",
-      "community": 138,
+      "community": 28,
       "norm_label": "imagetopdf()"
     },
     {
@@ -4599,16 +5031,16 @@
       "source_file": "app/tooles/pdf-tooles/components/LockPDF.tsx",
       "source_location": "L1",
       "id": "components_lockpdf",
-      "community": 146,
+      "community": 137,
       "norm_label": "lockpdf.tsx"
     },
     {
       "label": "LockPDF()",
       "file_type": "code",
       "source_file": "app/tooles/pdf-tooles/components/LockPDF.tsx",
-      "source_location": "L7",
+      "source_location": "L8",
       "id": "components_lockpdf_lockpdf",
-      "community": 146,
+      "community": 137,
       "norm_label": "lockpdf()"
     },
     {
@@ -4644,16 +5076,34 @@
       "source_file": "app/tooles/pdf-tooles/components/OcrPDF.tsx",
       "source_location": "L1",
       "id": "components_ocrpdf",
-      "community": 147,
+      "community": 137,
       "norm_label": "ocrpdf.tsx"
+    },
+    {
+      "label": "PageData",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/OcrPDF.tsx",
+      "source_location": "L32",
+      "id": "components_ocrpdf_pagedata",
+      "community": 137,
+      "norm_label": "pagedata"
+    },
+    {
+      "label": "OcrApiResponse",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/OcrPDF.tsx",
+      "source_location": "L39",
+      "id": "components_ocrpdf_ocrapiresponse",
+      "community": 137,
+      "norm_label": "ocrapiresponse"
     },
     {
       "label": "OcrPDF()",
       "file_type": "code",
       "source_file": "app/tooles/pdf-tooles/components/OcrPDF.tsx",
-      "source_location": "L6",
+      "source_location": "L64",
       "id": "components_ocrpdf_ocrpdf",
-      "community": 147,
+      "community": 137,
       "norm_label": "ocrpdf()"
     },
     {
@@ -4669,7 +5119,7 @@
       "label": "PageNumbers()",
       "file_type": "code",
       "source_file": "app/tooles/pdf-tooles/components/PageNumbers.tsx",
-      "source_location": "L7",
+      "source_location": "L27",
       "id": "components_pagenumbers_pagenumbers",
       "community": 148,
       "norm_label": "pagenumbers()"
@@ -4680,16 +5130,25 @@
       "source_file": "app/tooles/pdf-tooles/components/PdfToHtml.tsx",
       "source_location": "L1",
       "id": "components_pdftohtml",
-      "community": 149,
+      "community": 137,
       "norm_label": "pdftohtml.tsx"
+    },
+    {
+      "label": "PreviewDevice",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/PdfToHtml.tsx",
+      "source_location": "L31",
+      "id": "components_pdftohtml_previewdevice",
+      "community": 137,
+      "norm_label": "previewdevice"
     },
     {
       "label": "PdfToHtml()",
       "file_type": "code",
       "source_file": "app/tooles/pdf-tooles/components/PdfToHtml.tsx",
-      "source_location": "L6",
+      "source_location": "L33",
       "id": "components_pdftohtml_pdftohtml",
-      "community": 149,
+      "community": 137,
       "norm_label": "pdftohtml()"
     },
     {
@@ -4759,7 +5218,7 @@
       "label": "RemovePages()",
       "file_type": "code",
       "source_file": "app/tooles/pdf-tooles/components/RemovePages.tsx",
-      "source_location": "L7",
+      "source_location": "L22",
       "id": "components_removepages_removepages",
       "community": 152,
       "norm_label": "removepages()"
@@ -4777,7 +5236,7 @@
       "label": "RotateLeft()",
       "file_type": "code",
       "source_file": "app/tooles/pdf-tooles/components/RotateLeft.tsx",
-      "source_location": "L7",
+      "source_location": "L22",
       "id": "components_rotateleft_rotateleft",
       "community": 153,
       "norm_label": "rotateleft()"
@@ -4795,7 +5254,7 @@
       "label": "RotatePDF()",
       "file_type": "code",
       "source_file": "app/tooles/pdf-tooles/components/RotatePDF.tsx",
-      "source_location": "L7",
+      "source_location": "L22",
       "id": "components_rotatepdf_rotatepdf",
       "community": 154,
       "norm_label": "rotatepdf()"
@@ -4813,16 +5272,25 @@
       "label": "SearchMatch",
       "file_type": "code",
       "source_file": "app/tooles/pdf-tooles/components/SearchPDF.tsx",
-      "source_location": "L6",
+      "source_location": "L38",
       "id": "components_searchpdf_searchmatch",
       "community": 140,
       "norm_label": "searchmatch"
     },
     {
+      "label": "PageTextRecord",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/SearchPDF.tsx",
+      "source_location": "L47",
+      "id": "components_searchpdf_pagetextrecord",
+      "community": 140,
+      "norm_label": "pagetextrecord"
+    },
+    {
       "label": "SearchPDF()",
       "file_type": "code",
       "source_file": "app/tooles/pdf-tooles/components/SearchPDF.tsx",
-      "source_location": "L13",
+      "source_location": "L52",
       "id": "components_searchpdf_searchpdf",
       "community": 140,
       "norm_label": "searchpdf()"
@@ -4837,10 +5305,37 @@
       "norm_label": "signpdf.tsx"
     },
     {
+      "label": "SignatureCanvas",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/SignPDF.tsx",
+      "source_location": "L34",
+      "id": "components_signpdf_signaturecanvas",
+      "community": 155,
+      "norm_label": "signaturecanvas"
+    },
+    {
+      "label": "SignatureMode",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/SignPDF.tsx",
+      "source_location": "L43",
+      "id": "components_signpdf_signaturemode",
+      "community": 155,
+      "norm_label": "signaturemode"
+    },
+    {
+      "label": "PositionPreset",
+      "file_type": "code",
+      "source_file": "app/tooles/pdf-tooles/components/SignPDF.tsx",
+      "source_location": "L44",
+      "id": "components_signpdf_positionpreset",
+      "community": 155,
+      "norm_label": "positionpreset"
+    },
+    {
       "label": "SignPDF()",
       "file_type": "code",
       "source_file": "app/tooles/pdf-tooles/components/SignPDF.tsx",
-      "source_location": "L7",
+      "source_location": "L53",
       "id": "components_signpdf_signpdf",
       "community": 155,
       "norm_label": "signpdf()"
@@ -4878,16 +5373,16 @@
       "source_file": "app/tooles/pdf-tooles/components/UnlockPDF.tsx",
       "source_location": "L1",
       "id": "components_unlockpdf",
-      "community": 156,
+      "community": 137,
       "norm_label": "unlockpdf.tsx"
     },
     {
       "label": "UnlockPDF()",
       "file_type": "code",
       "source_file": "app/tooles/pdf-tooles/components/UnlockPDF.tsx",
-      "source_location": "L7",
+      "source_location": "L8",
       "id": "components_unlockpdf_unlockpdf",
-      "community": 156,
+      "community": 137,
       "norm_label": "unlockpdf()"
     },
     {
@@ -5006,6 +5501,15 @@
       "id": "lib_apiclient_apiclient",
       "community": 137,
       "norm_label": "apiclient"
+    },
+    {
+      "label": "extractApiErrorMessage()",
+      "file_type": "code",
+      "source_file": "lib/apiClient.ts",
+      "source_location": "L20",
+      "id": "lib_apiclient_extractapierrormessage",
+      "community": 137,
+      "norm_label": "extractapierrormessage()"
     },
     {
       "label": "apiEndpoints.ts",
@@ -5863,10 +6367,19 @@
       "norm_label": "mammoth"
     },
     {
-      "label": "next",
+      "label": "monaco-editor",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L66",
+      "id": "package_dependencies_monaco_editor",
+      "community": 5,
+      "norm_label": "monaco-editor"
+    },
+    {
+      "label": "next",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L67",
       "id": "package_dependencies_next",
       "community": 5,
       "norm_label": "next"
@@ -5875,7 +6388,7 @@
       "label": "nextjs-toploader",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L67",
+      "source_location": "L68",
       "id": "package_dependencies_nextjs_toploader",
       "community": 5,
       "norm_label": "nextjs-toploader"
@@ -5884,7 +6397,7 @@
       "label": "papaparse",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L68",
+      "source_location": "L69",
       "id": "package_dependencies_papaparse",
       "community": 5,
       "norm_label": "papaparse"
@@ -5893,7 +6406,7 @@
       "label": "pdf-lib",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L69",
+      "source_location": "L70",
       "id": "package_dependencies_pdf_lib",
       "community": 5,
       "norm_label": "pdf-lib"
@@ -5902,7 +6415,7 @@
       "label": "pdfjs-dist",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L70",
+      "source_location": "L71",
       "id": "package_dependencies_pdfjs_dist",
       "community": 5,
       "norm_label": "pdfjs-dist"
@@ -5911,7 +6424,7 @@
       "label": "pica",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L71",
+      "source_location": "L72",
       "id": "package_dependencies_pica",
       "community": 5,
       "norm_label": "pica"
@@ -5920,7 +6433,7 @@
       "label": "react",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L72",
+      "source_location": "L73",
       "id": "package_dependencies_react",
       "community": 5,
       "norm_label": "react"
@@ -5929,7 +6442,7 @@
       "label": "react-countup",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L73",
+      "source_location": "L74",
       "id": "package_dependencies_react_countup",
       "community": 5,
       "norm_label": "react-countup"
@@ -5938,7 +6451,7 @@
       "label": "react-csv",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L74",
+      "source_location": "L75",
       "id": "package_dependencies_react_csv",
       "community": 5,
       "norm_label": "react-csv"
@@ -5947,7 +6460,7 @@
       "label": "react-dom",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L75",
+      "source_location": "L76",
       "id": "package_dependencies_react_dom",
       "community": 5,
       "norm_label": "react-dom"
@@ -5956,16 +6469,25 @@
       "label": "react-easy-crop",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L76",
+      "source_location": "L77",
       "id": "package_dependencies_react_easy_crop",
       "community": 5,
       "norm_label": "react-easy-crop"
     },
     {
+      "label": "react-signature-canvas",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L78",
+      "id": "package_dependencies_react_signature_canvas",
+      "community": 5,
+      "norm_label": "react-signature-canvas"
+    },
+    {
       "label": "sharp",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L77",
+      "source_location": "L79",
       "id": "package_dependencies_sharp",
       "community": 5,
       "norm_label": "sharp"
@@ -5974,7 +6496,7 @@
       "label": "xlsx",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L78",
+      "source_location": "L80",
       "id": "package_dependencies_xlsx",
       "community": 5,
       "norm_label": "xlsx"
@@ -5983,7 +6505,7 @@
       "label": "devDependencies",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L80",
+      "source_location": "L82",
       "id": "package_devdependencies",
       "community": 3,
       "norm_label": "devdependencies"
@@ -5992,7 +6514,7 @@
       "label": "@tailwindcss/postcss",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L81",
+      "source_location": "L83",
       "id": "package_devdependencies_tailwindcss_postcss",
       "community": 3,
       "norm_label": "@tailwindcss/postcss"
@@ -6001,7 +6523,7 @@
       "label": "@types/js-yaml",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L82",
+      "source_location": "L84",
       "id": "package_devdependencies_types_js_yaml",
       "community": 3,
       "norm_label": "@types/js-yaml"
@@ -6010,7 +6532,7 @@
       "label": "@types/node",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L83",
+      "source_location": "L85",
       "id": "package_devdependencies_types_node",
       "community": 3,
       "norm_label": "@types/node"
@@ -6019,7 +6541,7 @@
       "label": "@types/react",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L84",
+      "source_location": "L86",
       "id": "package_devdependencies_types_react",
       "community": 3,
       "norm_label": "@types/react"
@@ -6028,7 +6550,7 @@
       "label": "@types/react-csv",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L85",
+      "source_location": "L87",
       "id": "package_devdependencies_types_react_csv",
       "community": 3,
       "norm_label": "@types/react-csv"
@@ -6037,7 +6559,7 @@
       "label": "@types/react-dom",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L86",
+      "source_location": "L88",
       "id": "package_devdependencies_types_react_dom",
       "community": 3,
       "norm_label": "@types/react-dom"
@@ -6046,7 +6568,7 @@
       "label": "eslint",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L87",
+      "source_location": "L89",
       "id": "package_devdependencies_eslint",
       "community": 3,
       "norm_label": "eslint"
@@ -6055,7 +6577,7 @@
       "label": "eslint-config-next",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L88",
+      "source_location": "L90",
       "id": "package_devdependencies_eslint_config_next",
       "community": 3,
       "norm_label": "eslint-config-next"
@@ -6064,7 +6586,7 @@
       "label": "sass",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L89",
+      "source_location": "L91",
       "id": "package_devdependencies_sass",
       "community": 3,
       "norm_label": "sass"
@@ -6073,7 +6595,7 @@
       "label": "tailwindcss",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L90",
+      "source_location": "L92",
       "id": "package_devdependencies_tailwindcss",
       "community": 3,
       "norm_label": "tailwindcss"
@@ -6082,7 +6604,7 @@
       "label": "typescript",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L91",
+      "source_location": "L93",
       "id": "package_devdependencies_typescript",
       "community": 3,
       "norm_label": "typescript"
@@ -6414,7 +6936,7 @@
     {
       "label": "AddWatermark.tsx",
       "file_type": "code",
-      "source_file": "app/tooles/image-tooles/components/AddWatermark.tsx",
+      "source_file": "app/tooles/pdf-tooles/components/AddWatermark.tsx",
       "source_location": "L1",
       "community": 20,
       "norm_label": "addwatermark.tsx",
@@ -6423,8 +6945,8 @@
     {
       "label": "AddWatermark()",
       "file_type": "code",
-      "source_file": "app/tooles/image-tooles/components/AddWatermark.tsx",
-      "source_location": "L6",
+      "source_file": "app/tooles/pdf-tooles/components/AddWatermark.tsx",
+      "source_location": "L26",
       "community": 20,
       "norm_label": "addwatermark()",
       "id": "components_addwatermark_addwatermark"
@@ -6432,29 +6954,20 @@
     {
       "label": "ImageToPdf.tsx",
       "file_type": "code",
-      "source_file": "app/tooles/image-tooles/components/ImageToPdf.tsx",
+      "source_file": "app/tooles/pdf-tooles/components/ImageToPdf.tsx",
       "source_location": "L1",
       "community": 28,
       "norm_label": "imagetopdf.tsx",
       "id": "components_imagetopdf"
     },
     {
-      "label": "ImageToPDF()",
+      "label": "ImageToPdf()",
       "file_type": "code",
-      "source_file": "app/tooles/image-tooles/components/ImageToPdf.tsx",
-      "source_location": "L7",
+      "source_file": "app/tooles/pdf-tooles/components/ImageToPdf.tsx",
+      "source_location": "L14",
       "community": 28,
       "norm_label": "imagetopdf()",
       "id": "components_imagetopdf_imagetopdf"
-    },
-    {
-      "label": "page()",
-      "file_type": "code",
-      "source_file": "app/tooles/pdf-tooles/[pdf-tool-slug]/page.tsx",
-      "source_location": "L3",
-      "community": 39,
-      "norm_label": "page()",
-      "id": "pdf_tool_slug_page_page"
     },
     {
       "label": "CSVToJSON.tsx",
@@ -8652,6 +9165,91 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/[code-tool-slug]/page.tsx",
+      "source_location": "L38",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "code_tool_slug_page",
+      "target": "code_tool_slug_page_detectlanguagefromslug"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/[code-tool-slug]/page.tsx",
+      "source_location": "L258",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "code_tool_slug_page",
+      "target": "code_tool_slug_page_dynamiccodetoolpage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/[code-tool-slug]/page.tsx",
+      "source_location": "L234",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "code_tool_slug_page",
+      "target": "code_tool_slug_page_getlanguageicon"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/[code-tool-slug]/page.tsx",
+      "source_location": "L31",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "code_tool_slug_page",
+      "target": "components_index"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/[code-tool-slug]/page.tsx",
+      "source_location": "L32",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "code_tool_slug_page",
+      "target": "lib_languages"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/[code-tool-slug]/page.tsx",
+      "source_location": "L32",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "code_tool_slug_page",
+      "target": "lib_languages_getlanguage"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/[code-tool-slug]/page.tsx",
+      "source_location": "L32",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "code_tool_slug_page",
+      "target": "lib_languages_languages"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/[code-tool-slug]/page.tsx",
+      "source_location": "L32",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "code_tool_slug_page",
+      "target": "monaco_components_index"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "app/tooles/coding-tooles/components/CodeEditor.tsx",
       "source_location": "L101",
       "weight": 1.0,
@@ -9279,6 +9877,17 @@
       "target": "lib_judge0"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoCodeRunEditor.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacocoderuneditor",
+      "target": "lib_judge0"
+    },
+    {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "app/tooles/coding-tooles/lib/judge0.ts",
@@ -9297,6 +9906,17 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "lib_useeditorstore",
+      "target": "lib_judge0_judge0error"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoCodeRunEditor.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacocoderuneditor",
       "target": "lib_judge0_judge0error"
     },
     {
@@ -9325,11 +9945,33 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoCodeRunEditor.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacocoderuneditor",
+      "target": "lib_judge0_executecode"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "app/tooles/coding-tooles/lib/useEditorStore.ts",
       "source_location": "L6",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "lib_useeditorstore",
+      "target": "lib_judge0_formatoutput"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoCodeRunEditor.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacocoderuneditor",
       "target": "lib_judge0_formatoutput"
     },
     {
@@ -9341,6 +9983,16 @@
       "confidence_score": 1.0,
       "source": "lib_languages",
       "target": "lib_languages_getlanguage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/lib/languages.ts",
+      "source_location": "L1150",
+      "weight": 1.0,
+      "source": "lib_languages",
+      "target": "lib_languages_getlanguageicon",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -9396,6 +10048,61 @@
       "target": "lib_languages"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoCodeRunEditor.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacocoderuneditor",
+      "target": "lib_languages"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoLanguageModal.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "monaco_components_monacolanguagemodal",
+      "target": "lib_languages",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoOutputPanel.tsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacooutputpanel",
+      "target": "lib_languages"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoStatusBar.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacostatusbar",
+      "target": "lib_languages"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoToolbar.tsx",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacotoolbar",
+      "target": "lib_languages"
+    },
+    {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -9405,6 +10112,72 @@
       "confidence_score": 1.0,
       "source": "lib_useeditorstore",
       "target": "lib_languages_languages"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoCodeRunEditor.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacocoderuneditor",
+      "target": "lib_languages_languages"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoOutputPanel.tsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacooutputpanel",
+      "target": "lib_languages_languages"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoStatusBar.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacostatusbar",
+      "target": "lib_languages_languages"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoLanguageModal.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "monaco_components_monacolanguagemodal",
+      "target": "lib_languages_language_list",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoToolbar.tsx",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacotoolbar",
+      "target": "lib_languages_language_list"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoCodeRunEditor.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacocoderuneditor",
+      "target": "lib_languages_getlanguage"
     },
     {
       "relation": "contains",
@@ -9479,6 +10252,998 @@
       "confidence_score": 1.0,
       "source": "lib_useeditorstore",
       "target": "types_editor_runstatus"
+    },
+    {
+      "relation": "re_exports",
+      "context": "export",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/index.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_index",
+      "target": "monaco_components_monacocoderuneditor"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoCodeRunEditor.tsx",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "monaco_components_monacocoderuneditor",
+      "target": "monaco_components_monacocoderuneditor_detectlangfromfilename",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoCodeRunEditor.tsx",
+      "source_location": "L55",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacocoderuneditor",
+      "target": "monaco_components_monacocoderuneditor_monacocoderuneditor"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoCodeRunEditor.tsx",
+      "source_location": "L40",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacocoderuneditor",
+      "target": "monaco_components_monacocoderuneditor_monacocoderuneditorprops"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoCodeRunEditor.tsx",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacocoderuneditor",
+      "target": "monaco_components_monacocoderuneditor_monacodiffeditor"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoCodeRunEditor.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacocoderuneditor",
+      "target": "monaco_components_monacocoderuneditor_monacoeditor"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoCodeRunEditor.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacocoderuneditor",
+      "target": "monaco_components_monacoeditor"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoCodeRunEditor.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacocoderuneditor",
+      "target": "monaco_components_monacoeditor_monacoeditorstats"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoCodeRunEditor.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "monaco_components_monacocoderuneditor",
+      "target": "monaco_components_monacofileexplorer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoCodeRunEditor.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "monaco_components_monacocoderuneditor",
+      "target": "monaco_components_monacofileexplorer_editorfile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoCodeRunEditor.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacocoderuneditor",
+      "target": "monaco_components_monacooutputpanel"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoCodeRunEditor.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacocoderuneditor",
+      "target": "monaco_components_monacostatusbar"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoCodeRunEditor.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacocoderuneditor",
+      "target": "monaco_components_monacotoolbar"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoCodeRunEditor.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacocoderuneditor",
+      "target": "types_editor"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoCodeRunEditor.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacocoderuneditor",
+      "target": "types_editor_outputtab"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoCodeRunEditor.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacocoderuneditor",
+      "target": "types_editor_runstatus"
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/index.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_index",
+      "target": "monaco_components_monacocoderuneditor_monacocoderuneditorprops"
+    },
+    {
+      "relation": "re_exports",
+      "context": "export",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/index.ts",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_index",
+      "target": "monaco_components_monacodiffeditor"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoDiffEditor.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacodiffeditor",
+      "target": "monaco_components_monaco_loader"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoDiffEditor.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacodiffeditor",
+      "target": "monaco_components_monaco_loader_loadmonaco"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoDiffEditor.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacodiffeditor",
+      "target": "monaco_components_monaco_loader_normalizemonacolanguage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoDiffEditor.tsx",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacodiffeditor",
+      "target": "monaco_components_monacodiffeditor_monacodiffeditor"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoDiffEditor.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacodiffeditor",
+      "target": "monaco_components_monacodiffeditor_monacodiffeditorprops"
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/index.ts",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_index",
+      "target": "monaco_components_monacodiffeditor_monacodiffeditorprops"
+    },
+    {
+      "relation": "re_exports",
+      "context": "export",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/index.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_index",
+      "target": "monaco_components_monacoeditor"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoEditor.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacoeditor",
+      "target": "monaco_components_monaco_loader"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoEditor.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacoeditor",
+      "target": "monaco_components_monaco_loader_loadmonaco"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoEditor.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacoeditor",
+      "target": "monaco_components_monaco_loader_normalizemonacolanguage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoEditor.tsx",
+      "source_location": "L35",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacoeditor",
+      "target": "monaco_components_monacoeditor_monacoeditor"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoEditor.tsx",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacoeditor",
+      "target": "monaco_components_monacoeditor_monacoeditorprops"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoEditor.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacoeditor",
+      "target": "monaco_components_monacoeditor_monacoeditorstats"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoStatusBar.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacostatusbar",
+      "target": "monaco_components_monacoeditor"
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/index.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_index",
+      "target": "monaco_components_monacoeditor_monacoeditorstats"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoStatusBar.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacostatusbar",
+      "target": "monaco_components_monacoeditor_monacoeditorstats"
+    },
+    {
+      "relation": "references",
+      "context": "field",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoStatusBar.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacostatusbar_monacostatusbarprops",
+      "target": "monaco_components_monacoeditor_monacoeditorstats"
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/index.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_index",
+      "target": "monaco_components_monacoeditor_monacoeditorprops"
+    },
+    {
+      "relation": "re_exports",
+      "context": "export",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/index.ts",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "monaco_components_index",
+      "target": "monaco_components_monacofileexplorer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoFileExplorer.tsx",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "monaco_components_monacofileexplorer",
+      "target": "monaco_components_monaco_loader",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoFileExplorer.tsx",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "monaco_components_monacofileexplorer",
+      "target": "monaco_components_monaco_loader_normalizemonacolanguage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoFileExplorer.tsx",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "monaco_components_monacofileexplorer",
+      "target": "monaco_components_monacofileexplorer_editorfile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoFileExplorer.tsx",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "monaco_components_monacofileexplorer",
+      "target": "monaco_components_monacofileexplorer_getfilebadge",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoFileExplorer.tsx",
+      "source_location": "L80",
+      "weight": 1.0,
+      "source": "monaco_components_monacofileexplorer",
+      "target": "monaco_components_monacofileexplorer_monacofileexplorer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoFileExplorer.tsx",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "monaco_components_monacofileexplorer",
+      "target": "monaco_components_monacofileexplorer_monacofileexplorerprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/index.ts",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "monaco_components_index",
+      "target": "monaco_components_monacofileexplorer_editorfile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/index.ts",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "monaco_components_index",
+      "target": "monaco_components_monacofileexplorer_monacofileexplorerprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "re_exports",
+      "context": "export",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/index.ts",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "monaco_components_index",
+      "target": "monaco_components_monacolanguagemodal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoLanguageModal.tsx",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "monaco_components_monacolanguagemodal",
+      "target": "monaco_components_monacolanguagemodal_language_image_map",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoLanguageModal.tsx",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "monaco_components_monacolanguagemodal",
+      "target": "monaco_components_monacolanguagemodal_monacolanguagemodal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoLanguageModal.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "monaco_components_monacolanguagemodal",
+      "target": "monaco_components_monacolanguagemodal_monacolanguagemodalprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoLanguageModal.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "monaco_components_monacolanguagemodal",
+      "target": "types_editor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoLanguageModal.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "monaco_components_monacolanguagemodal",
+      "target": "types_editor_languageconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoToolbar.tsx",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "monaco_components_monacotoolbar",
+      "target": "monaco_components_monacolanguagemodal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/index.ts",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "monaco_components_index",
+      "target": "monaco_components_monacolanguagemodal_monacolanguagemodalprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "field",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoLanguageModal.tsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "monaco_components_monacolanguagemodal_monacolanguagemodalprops",
+      "target": "types_editor_languageconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoToolbar.tsx",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "monaco_components_monacotoolbar",
+      "target": "monaco_components_monacolanguagemodal_language_image_map",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "re_exports",
+      "context": "export",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/index.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_index",
+      "target": "monaco_components_monacooutputpanel"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoOutputPanel.tsx",
+      "source_location": "L38",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacooutputpanel",
+      "target": "monaco_components_monacooutputpanel_monaco_shortcuts"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoOutputPanel.tsx",
+      "source_location": "L53",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacooutputpanel",
+      "target": "monaco_components_monacooutputpanel_monacooutputpanel"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoOutputPanel.tsx",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacooutputpanel",
+      "target": "monaco_components_monacooutputpanel_monacooutputpanelprops"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoOutputPanel.tsx",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacooutputpanel",
+      "target": "types_editor"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoOutputPanel.tsx",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacooutputpanel",
+      "target": "types_editor_outputtab"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoOutputPanel.tsx",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacooutputpanel",
+      "target": "types_editor_runstatus"
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/index.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_index",
+      "target": "monaco_components_monacooutputpanel_monacooutputpanelprops"
+    },
+    {
+      "relation": "references",
+      "context": "field",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoOutputPanel.tsx",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacooutputpanel_monacooutputpanelprops",
+      "target": "types_editor_outputtab"
+    },
+    {
+      "relation": "references",
+      "context": "field",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoOutputPanel.tsx",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacooutputpanel_monacooutputpanelprops",
+      "target": "types_editor_runstatus"
+    },
+    {
+      "relation": "re_exports",
+      "context": "export",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/index.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_index",
+      "target": "monaco_components_monacostatusbar"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoStatusBar.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacostatusbar",
+      "target": "monaco_components_monacostatusbar_monacostatusbar"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoStatusBar.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacostatusbar",
+      "target": "monaco_components_monacostatusbar_monacostatusbarprops"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoStatusBar.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacostatusbar",
+      "target": "types_editor"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoStatusBar.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacostatusbar",
+      "target": "types_editor_runstatus"
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/index.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_index",
+      "target": "monaco_components_monacostatusbar_monacostatusbarprops"
+    },
+    {
+      "relation": "references",
+      "context": "field",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoStatusBar.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacostatusbar_monacostatusbarprops",
+      "target": "types_editor_runstatus"
+    },
+    {
+      "relation": "re_exports",
+      "context": "export",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/index.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_index",
+      "target": "monaco_components_monacotoolbar"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoToolbar.tsx",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacotoolbar",
+      "target": "monaco_components_monaco_loader"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoToolbar.tsx",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacotoolbar",
+      "target": "monaco_components_monaco_loader_monaco_themes"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoToolbar.tsx",
+      "source_location": "L53",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacotoolbar",
+      "target": "monaco_components_monacotoolbar_font_families"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoToolbar.tsx",
+      "source_location": "L61",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacotoolbar",
+      "target": "monaco_components_monacotoolbar_monacotoolbar"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoToolbar.tsx",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacotoolbar",
+      "target": "monaco_components_monacotoolbar_monacotoolbarprops"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoToolbar.tsx",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacotoolbar",
+      "target": "types_editor"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoToolbar.tsx",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacotoolbar",
+      "target": "types_editor_runstatus"
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/index.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_index",
+      "target": "monaco_components_monacotoolbar_monacotoolbarprops"
+    },
+    {
+      "relation": "references",
+      "context": "field",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/MonacoToolbar.tsx",
+      "source_location": "L35",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monacotoolbar_monacotoolbarprops",
+      "target": "types_editor_runstatus"
+    },
+    {
+      "relation": "re_exports",
+      "context": "export",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/index.ts",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_index",
+      "target": "monaco_components_monaco_loader"
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/index.ts",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_index",
+      "target": "monaco_components_monaco_loader_loadmonaco"
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/index.ts",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_index",
+      "target": "monaco_components_monaco_loader_monaco_themes"
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/index.ts",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_index",
+      "target": "monaco_components_monaco_loader_monacothemeitem"
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/index.ts",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_index",
+      "target": "monaco_components_monaco_loader_normalizemonacolanguage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/monaco-loader.ts",
+      "source_location": "L239",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monaco_loader",
+      "target": "monaco_components_monaco_loader_loadmonaco"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/monaco-loader.ts",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monaco_loader",
+      "target": "monaco_components_monaco_loader_monaco_themes"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/monaco-loader.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monaco_loader",
+      "target": "monaco_components_monaco_loader_monacothemeitem"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/monaco-loader.ts",
+      "source_location": "L259",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monaco_loader",
+      "target": "monaco_components_monaco_loader_normalizemonacolanguage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/monaco-loader.ts",
+      "source_location": "L70",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monaco_loader",
+      "target": "monaco_components_monaco_loader_registermonacothemes"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/coding-tooles/monaco-components/monaco-loader.ts",
+      "source_location": "L33",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "monaco_components_monaco_loader",
+      "target": "monaco_components_monaco_loader_setupmonacoenvironment"
     },
     {
       "relation": "contains",
@@ -10503,9 +12268,9 @@
       "source_file": "app/tooles/image-tooles/components/AddWatermark.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_tooles_image_tooles_components_addwatermark_tsx_components_addwatermark",
-      "target": "app_tooles_image_tooles_components_addwatermark_tsx_components_addwatermark_addwatermark",
-      "confidence_score": 1.0
+      "target": "app_tooles_image_tooles_components_addwatermark_tsx_components_addwatermark_addwatermark"
     },
     {
       "relation": "contains",
@@ -10787,9 +12552,9 @@
       "source_file": "app/tooles/image-tooles/components/ImageToPdf.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_tooles_image_tooles_components_imagetopdf_tsx_components_imagetopdf",
-      "target": "app_tooles_image_tooles_components_imagetopdf_tsx_components_imagetopdf_imagetopdf",
-      "confidence_score": 1.0
+      "target": "app_tooles_image_tooles_components_imagetopdf_tsx_components_imagetopdf_imagetopdf"
     },
     {
       "relation": "contains",
@@ -11625,19 +13390,9 @@
       "source_file": "app/tooles/pdf-tooles/[pdf-tool-slug]/page.tsx",
       "source_location": "L19",
       "weight": 1.0,
-      "source": "pdf_tool_slug_page",
-      "target": "pdf_tool_slug_page_componentsmap",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/tooles/pdf-tooles/[pdf-tool-slug]/page.tsx",
-      "source_location": "L3",
-      "weight": 1.0,
       "confidence_score": 1.0,
       "source": "pdf_tool_slug_page",
-      "target": "pdf_tool_slug_page_page"
+      "target": "pdf_tool_slug_page_componentsmap"
     },
     {
       "relation": "contains",
@@ -11645,9 +13400,9 @@
       "source_file": "app/tooles/pdf-tooles/[pdf-tool-slug]/page.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pdf_tool_slug_page",
-      "target": "pdf_tool_slug_page_pageprops",
-      "confidence_score": 1.0
+      "target": "pdf_tool_slug_page_pageprops"
     },
     {
       "relation": "contains",
@@ -11655,9 +13410,9 @@
       "source_file": "app/tooles/pdf-tooles/[pdf-tool-slug]/page.tsx",
       "source_location": "L142",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pdf_tool_slug_page",
-      "target": "pdf_tool_slug_page_pdftoolpage",
-      "confidence_score": 1.0
+      "target": "pdf_tool_slug_page_pdftoolpage"
     },
     {
       "relation": "contains",
@@ -11665,19 +13420,19 @@
       "source_file": "app/tooles/pdf-tooles/[pdf-tool-slug]/page.tsx",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pdf_tool_slug_page",
-      "target": "pdf_tool_slug_page_toolconfig",
-      "confidence_score": 1.0
+      "target": "pdf_tool_slug_page_toolconfig"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/tooles/pdf-tooles/components/AddWatermark.tsx",
-      "source_location": "L7",
+      "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_tooles_pdf_tooles_components_addwatermark_tsx_components_addwatermark",
-      "target": "app_tooles_pdf_tooles_components_addwatermark_tsx_components_addwatermark_addwatermark",
-      "confidence_score": 1.0
+      "target": "app_tooles_pdf_tooles_components_addwatermark_tsx_components_addwatermark_addwatermark"
     },
     {
       "relation": "contains",
@@ -11685,9 +13440,9 @@
       "source_file": "app/tooles/pdf-tooles/components/CompressPDF.tsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_compresspdf",
-      "target": "components_compresspdf_compresspdf",
-      "confidence_score": 1.0
+      "target": "components_compresspdf_compresspdf"
     },
     {
       "relation": "imports_from",
@@ -11696,9 +13451,9 @@
       "source_file": "app/tooles/pdf-tooles/components/CompressPDF.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_compresspdf",
-      "target": "lib_apiclient",
-      "confidence_score": 1.0
+      "target": "lib_apiclient"
     },
     {
       "relation": "imports_from",
@@ -11707,9 +13462,9 @@
       "source_file": "app/tooles/pdf-tooles/components/CompressPDF.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_compresspdf",
-      "target": "lib_apiendpoints",
-      "confidence_score": 1.0
+      "target": "lib_apiendpoints"
     },
     {
       "relation": "imports",
@@ -11718,9 +13473,41 @@
       "source_file": "app/tooles/pdf-tooles/components/CompressPDF.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_compresspdf",
-      "target": "lib_apiendpoints_api_endpoints",
-      "confidence_score": 1.0
+      "target": "lib_apiendpoints_api_endpoints"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/ExtractImagesFromPDF.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_extractimagesfrompdf",
+      "target": "components_extractimagesfrompdf_extractimagesfrompdf"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/ExtractImagesFromPDF.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_extractimagesfrompdf",
+      "target": "lib_apiendpoints"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/ExtractImagesFromPDF.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_extractimagesfrompdf",
+      "target": "lib_apiendpoints_api_endpoints"
     },
     {
       "relation": "contains",
@@ -11728,9 +13515,9 @@
       "source_file": "app/tooles/pdf-tooles/components/ExtractPages.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_extractpages",
-      "target": "components_extractpages_extractpages",
-      "confidence_score": 1.0
+      "target": "components_extractpages_extractpages"
     },
     {
       "relation": "contains",
@@ -11738,9 +13525,9 @@
       "source_file": "app/tooles/pdf-tooles/components/ImageToPdf.tsx",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_tooles_pdf_tooles_components_imagetopdf_tsx_components_imagetopdf",
-      "target": "app_tooles_pdf_tooles_components_imagetopdf_tsx_components_imagetopdf_imagetopdf",
-      "confidence_score": 1.0
+      "target": "app_tooles_pdf_tooles_components_imagetopdf_tsx_components_imagetopdf_imagetopdf"
     },
     {
       "relation": "contains",
@@ -11748,9 +13535,19 @@
       "source_file": "app/tooles/pdf-tooles/components/ImageToPdf.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_tooles_pdf_tooles_components_imagetopdf_tsx_components_imagetopdf",
-      "target": "components_imagetopdf_imageitem",
-      "confidence_score": 1.0
+      "target": "components_imagetopdf_imageitem"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/ImageToPdf.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_imagetopdf",
+      "target": "components_imagetopdf_imageitem"
     },
     {
       "relation": "contains",
@@ -11758,9 +13555,53 @@
       "source_file": "app/tooles/pdf-tooles/components/LockPDF.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_lockpdf",
-      "target": "components_lockpdf_lockpdf",
-      "confidence_score": 1.0
+      "target": "components_lockpdf_lockpdf"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/LockPDF.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_lockpdf",
+      "target": "lib_apiclient"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/LockPDF.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_lockpdf",
+      "target": "lib_apiclient_extractapierrormessage"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/LockPDF.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_lockpdf",
+      "target": "lib_apiendpoints"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/LockPDF.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_lockpdf",
+      "target": "lib_apiendpoints_api_endpoints"
     },
     {
       "relation": "contains",
@@ -11768,9 +13609,9 @@
       "source_file": "app/tooles/pdf-tooles/components/MergePDF.tsx",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_mergepdf",
-      "target": "components_mergepdf_mergepdf",
-      "confidence_score": 1.0
+      "target": "components_mergepdf_mergepdf"
     },
     {
       "relation": "contains",
@@ -11778,9 +13619,19 @@
       "source_file": "app/tooles/pdf-tooles/components/MergePDF.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_mergepdf",
-      "target": "components_mergepdf_pdfitem",
-      "confidence_score": 1.0
+      "target": "components_mergepdf_pdfitem"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/OcrPDF.tsx",
+      "source_location": "L39",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_ocrpdf",
+      "target": "components_ocrpdf_ocrapiresponse"
     },
     {
       "relation": "contains",
@@ -11788,9 +13639,63 @@
       "source_file": "app/tooles/pdf-tooles/components/OcrPDF.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_ocrpdf",
-      "target": "components_ocrpdf_ocrpdf",
-      "confidence_score": 1.0
+      "target": "components_ocrpdf_ocrpdf"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/OcrPDF.tsx",
+      "source_location": "L32",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_ocrpdf",
+      "target": "components_ocrpdf_pagedata"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/OcrPDF.tsx",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_ocrpdf",
+      "target": "lib_apiclient"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/OcrPDF.tsx",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_ocrpdf",
+      "target": "lib_apiclient_extractapierrormessage"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/OcrPDF.tsx",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_ocrpdf",
+      "target": "lib_apiendpoints"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/OcrPDF.tsx",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_ocrpdf",
+      "target": "lib_apiendpoints_api_endpoints"
     },
     {
       "relation": "contains",
@@ -11798,9 +13703,9 @@
       "source_file": "app/tooles/pdf-tooles/components/PageNumbers.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_pagenumbers",
-      "target": "components_pagenumbers_pagenumbers",
-      "confidence_score": 1.0
+      "target": "components_pagenumbers_pagenumbers"
     },
     {
       "relation": "contains",
@@ -11808,9 +13713,63 @@
       "source_file": "app/tooles/pdf-tooles/components/PdfToHtml.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_pdftohtml",
-      "target": "components_pdftohtml_pdftohtml",
-      "confidence_score": 1.0
+      "target": "components_pdftohtml_pdftohtml"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/PdfToHtml.tsx",
+      "source_location": "L31",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_pdftohtml",
+      "target": "components_pdftohtml_previewdevice"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/PdfToHtml.tsx",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_pdftohtml",
+      "target": "lib_apiclient"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/PdfToHtml.tsx",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_pdftohtml",
+      "target": "lib_apiclient_extractapierrormessage"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/PdfToHtml.tsx",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_pdftohtml",
+      "target": "lib_apiendpoints"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/PdfToHtml.tsx",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_pdftohtml",
+      "target": "lib_apiendpoints_api_endpoints"
     },
     {
       "relation": "contains",
@@ -11818,9 +13777,9 @@
       "source_file": "app/tooles/pdf-tooles/components/PdfToImage.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_pdftoimage",
-      "target": "components_pdftoimage_pdftoimage",
-      "confidence_score": 1.0
+      "target": "components_pdftoimage_pdftoimage"
     },
     {
       "relation": "contains",
@@ -11828,9 +13787,9 @@
       "source_file": "app/tooles/pdf-tooles/components/PdfToWord.tsx",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_pdftoword",
-      "target": "components_pdftoword_pdftoword",
-      "confidence_score": 1.0
+      "target": "components_pdftoword_pdftoword"
     },
     {
       "relation": "imports_from",
@@ -11839,9 +13798,9 @@
       "source_file": "app/tooles/pdf-tooles/components/PdfToWord.tsx",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_pdftoword",
-      "target": "lib_apiclient",
-      "confidence_score": 1.0
+      "target": "lib_apiclient"
     },
     {
       "relation": "imports_from",
@@ -11850,9 +13809,9 @@
       "source_file": "app/tooles/pdf-tooles/components/PdfToWord.tsx",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_pdftoword",
-      "target": "lib_apiendpoints",
-      "confidence_score": 1.0
+      "target": "lib_apiendpoints"
     },
     {
       "relation": "imports",
@@ -11861,9 +13820,9 @@
       "source_file": "app/tooles/pdf-tooles/components/PdfToWord.tsx",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_pdftoword",
-      "target": "lib_apiendpoints_api_endpoints",
-      "confidence_score": 1.0
+      "target": "lib_apiendpoints_api_endpoints"
     },
     {
       "relation": "contains",
@@ -11871,9 +13830,9 @@
       "source_file": "app/tooles/pdf-tooles/components/ProtectPDF.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_protectpdf",
-      "target": "components_protectpdf_protectpdf",
-      "confidence_score": 1.0
+      "target": "components_protectpdf_protectpdf"
     },
     {
       "relation": "contains",
@@ -11881,9 +13840,9 @@
       "source_file": "app/tooles/pdf-tooles/components/RemovePages.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_removepages",
-      "target": "components_removepages_removepages",
-      "confidence_score": 1.0
+      "target": "components_removepages_removepages"
     },
     {
       "relation": "contains",
@@ -11891,9 +13850,9 @@
       "source_file": "app/tooles/pdf-tooles/components/RotateLeft.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_rotateleft",
-      "target": "components_rotateleft_rotateleft",
-      "confidence_score": 1.0
+      "target": "components_rotateleft_rotateleft"
     },
     {
       "relation": "contains",
@@ -11901,9 +13860,19 @@
       "source_file": "app/tooles/pdf-tooles/components/RotatePDF.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_rotatepdf",
-      "target": "components_rotatepdf_rotatepdf",
-      "confidence_score": 1.0
+      "target": "components_rotatepdf_rotatepdf"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/SearchPDF.tsx",
+      "source_location": "L47",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_searchpdf",
+      "target": "components_searchpdf_pagetextrecord"
     },
     {
       "relation": "contains",
@@ -11911,9 +13880,9 @@
       "source_file": "app/tooles/pdf-tooles/components/SearchPDF.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_searchpdf",
-      "target": "components_searchpdf_searchmatch",
-      "confidence_score": 1.0
+      "target": "components_searchpdf_searchmatch"
     },
     {
       "relation": "contains",
@@ -11921,9 +13890,39 @@
       "source_file": "app/tooles/pdf-tooles/components/SearchPDF.tsx",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_searchpdf",
-      "target": "components_searchpdf_searchpdf",
-      "confidence_score": 1.0
+      "target": "components_searchpdf_searchpdf"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/SignPDF.tsx",
+      "source_location": "L44",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_signpdf",
+      "target": "components_signpdf_positionpreset"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/SignPDF.tsx",
+      "source_location": "L34",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_signpdf",
+      "target": "components_signpdf_signaturecanvas"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/SignPDF.tsx",
+      "source_location": "L43",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_signpdf",
+      "target": "components_signpdf_signaturemode"
     },
     {
       "relation": "contains",
@@ -11931,9 +13930,9 @@
       "source_file": "app/tooles/pdf-tooles/components/SignPDF.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_signpdf",
-      "target": "components_signpdf_signpdf",
-      "confidence_score": 1.0
+      "target": "components_signpdf_signpdf"
     },
     {
       "relation": "contains",
@@ -11941,9 +13940,9 @@
       "source_file": "app/tooles/pdf-tooles/components/SplitPDF.tsx",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_splitpdf",
-      "target": "components_splitpdf_splitpdf",
-      "confidence_score": 1.0
+      "target": "components_splitpdf_splitpdf"
     },
     {
       "relation": "contains",
@@ -11951,9 +13950,9 @@
       "source_file": "app/tooles/pdf-tooles/components/SplitPDF.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_splitpdf",
-      "target": "components_splitpdf_splitresult",
-      "confidence_score": 1.0
+      "target": "components_splitpdf_splitresult"
     },
     {
       "relation": "contains",
@@ -11961,9 +13960,53 @@
       "source_file": "app/tooles/pdf-tooles/components/UnlockPDF.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_unlockpdf",
-      "target": "components_unlockpdf_unlockpdf",
-      "confidence_score": 1.0
+      "target": "components_unlockpdf_unlockpdf"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/UnlockPDF.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_unlockpdf",
+      "target": "lib_apiclient"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/UnlockPDF.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_unlockpdf",
+      "target": "lib_apiclient_extractapierrormessage"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/UnlockPDF.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_unlockpdf",
+      "target": "lib_apiendpoints"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/tooles/pdf-tooles/components/UnlockPDF.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_unlockpdf",
+      "target": "lib_apiendpoints_api_endpoints"
     },
     {
       "relation": "contains",
@@ -11971,9 +14014,9 @@
       "source_file": "app/tooles/pdf-tooles/components/WordToPdf.tsx",
       "source_location": "L35",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_wordtopdf",
-      "target": "components_wordtopdf_wordtopdf",
-      "confidence_score": 1.0
+      "target": "components_wordtopdf_wordtopdf"
     },
     {
       "relation": "contains",
@@ -11992,9 +14035,9 @@
       "source_file": "components/tiptap-ui-primitive/popover/index.tsx",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "popover_index",
-      "target": "popover_popover",
-      "confidence_score": 1.0
+      "target": "popover_popover"
     },
     {
       "relation": "imports_from",
@@ -12003,9 +14046,9 @@
       "source_file": "components/tiptap-ui-primitive/popover/popover.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "popover_popover",
-      "target": "lib_tiptap_utils",
-      "confidence_score": 1.0
+      "target": "lib_tiptap_utils"
     },
     {
       "relation": "imports",
@@ -12014,9 +14057,9 @@
       "source_file": "components/tiptap-ui-primitive/popover/popover.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "popover_popover",
-      "target": "lib_tiptap_utils_cn",
-      "confidence_score": 1.0
+      "target": "lib_tiptap_utils_cn"
     },
     {
       "relation": "contains",
@@ -12024,9 +14067,9 @@
       "source_file": "components/tiptap-ui-primitive/popover/popover.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "popover_popover",
-      "target": "popover_popover_popover",
-      "confidence_score": 1.0
+      "target": "popover_popover_popover"
     },
     {
       "relation": "contains",
@@ -12034,9 +14077,9 @@
       "source_file": "components/tiptap-ui-primitive/popover/popover.tsx",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "popover_popover",
-      "target": "popover_popover_popovercontent",
-      "confidence_score": 1.0
+      "target": "popover_popover_popovercontent"
     },
     {
       "relation": "contains",
@@ -12044,9 +14087,9 @@
       "source_file": "components/tiptap-ui-primitive/popover/popover.tsx",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "popover_popover",
-      "target": "popover_popover_popovertrigger",
-      "confidence_score": 1.0
+      "target": "popover_popover_popovertrigger"
     },
     {
       "relation": "calls",
@@ -12075,9 +14118,19 @@
       "source_file": "lib/apiClient.ts",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_apiclient",
-      "target": "lib_apiclient_apiclient",
-      "confidence_score": 1.0
+      "target": "lib_apiclient_apiclient"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/apiClient.ts",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_apiclient",
+      "target": "lib_apiclient_extractapierrormessage"
     },
     {
       "relation": "imports_from",
@@ -12086,9 +14139,9 @@
       "source_file": "lib/apiClient.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_apiclient",
-      "target": "lib_apiendpoints",
-      "confidence_score": 1.0
+      "target": "lib_apiendpoints"
     },
     {
       "relation": "contains",
@@ -12096,9 +14149,9 @@
       "source_file": "lib/apiEndpoints.ts",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_apiendpoints",
-      "target": "lib_apiendpoints_api_endpoints",
-      "confidence_score": 1.0
+      "target": "lib_apiendpoints_api_endpoints"
     },
     {
       "relation": "contains",
@@ -12106,9 +14159,9 @@
       "source_file": "lib/tiptap-utils.ts",
       "source_location": "L629",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_tiptap_utils",
-      "target": "lib_tiptap_utils_clamp",
-      "confidence_score": 1.0
+      "target": "lib_tiptap_utils_clamp"
     },
     {
       "relation": "contains",
@@ -12116,9 +14169,9 @@
       "source_file": "lib/tiptap-utils.ts",
       "source_location": "L47",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_tiptap_utils",
-      "target": "lib_tiptap_utils_cn",
-      "confidence_score": 1.0
+      "target": "lib_tiptap_utils_cn"
     },
     {
       "relation": "contains",
@@ -12126,9 +14179,9 @@
       "source_file": "lib/tiptap-utils.ts",
       "source_location": "L221",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_tiptap_utils",
-      "target": "lib_tiptap_utils_findnodeatposition",
-      "confidence_score": 1.0
+      "target": "lib_tiptap_utils_findnodeatposition"
     },
     {
       "relation": "contains",
@@ -12136,9 +14189,9 @@
       "source_file": "lib/tiptap-utils.ts",
       "source_location": "L243",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_tiptap_utils",
-      "target": "lib_tiptap_utils_findnodeposition",
-      "confidence_score": 1.0
+      "target": "lib_tiptap_utils_findnodeposition"
     },
     {
       "relation": "contains",
@@ -12146,9 +14199,9 @@
       "source_file": "lib/tiptap-utils.ts",
       "source_location": "L137",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_tiptap_utils",
-      "target": "lib_tiptap_utils_focusnextnode",
-      "confidence_score": 1.0
+      "target": "lib_tiptap_utils_focusnextnode"
     },
     {
       "relation": "contains",
@@ -12156,9 +14209,9 @@
       "source_file": "lib/tiptap-utils.ts",
       "source_location": "L69",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_tiptap_utils",
-      "target": "lib_tiptap_utils_formatshortcutkey",
-      "confidence_score": 1.0
+      "target": "lib_tiptap_utils_formatshortcutkey"
     },
     {
       "relation": "contains",
@@ -12166,9 +14219,9 @@
       "source_file": "lib/tiptap-utils.ts",
       "source_location": "L633",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_tiptap_utils",
-      "target": "lib_tiptap_utils_getselectedblocknodes",
-      "confidence_score": 1.0
+      "target": "lib_tiptap_utils_getselectedblocknodes"
     },
     {
       "relation": "contains",
@@ -12176,9 +14229,9 @@
       "source_file": "lib/tiptap-utils.ts",
       "source_location": "L579",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_tiptap_utils",
-      "target": "lib_tiptap_utils_getselectednodesoftype",
-      "confidence_score": 1.0
+      "target": "lib_tiptap_utils_getselectednodesoftype"
     },
     {
       "relation": "contains",
@@ -12186,9 +14239,9 @@
       "source_file": "lib/tiptap-utils.ts",
       "source_location": "L373",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_tiptap_utils",
-      "target": "lib_tiptap_utils_handleimageupload",
-      "confidence_score": 1.0
+      "target": "lib_tiptap_utils_handleimageupload"
     },
     {
       "relation": "contains",
@@ -12196,9 +14249,9 @@
       "source_file": "lib/tiptap-utils.ts",
       "source_location": "L425",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_tiptap_utils",
-      "target": "lib_tiptap_utils_isalloweduri",
-      "confidence_score": 1.0
+      "target": "lib_tiptap_utils_isalloweduri"
     },
     {
       "relation": "contains",
@@ -12206,9 +14259,9 @@
       "source_file": "lib/tiptap-utils.ts",
       "source_location": "L184",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_tiptap_utils",
-      "target": "lib_tiptap_utils_isextensionavailable",
-      "confidence_score": 1.0
+      "target": "lib_tiptap_utils_isextensionavailable"
     },
     {
       "relation": "contains",
@@ -12216,9 +14269,9 @@
       "source_file": "lib/tiptap-utils.ts",
       "source_location": "L55",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_tiptap_utils",
-      "target": "lib_tiptap_utils_ismac",
-      "confidence_score": 1.0
+      "target": "lib_tiptap_utils_ismac"
     },
     {
       "relation": "contains",
@@ -12226,9 +14279,9 @@
       "source_file": "lib/tiptap-utils.ts",
       "source_location": "L110",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_tiptap_utils",
-      "target": "lib_tiptap_utils_ismarkinschema",
-      "confidence_score": 1.0
+      "target": "lib_tiptap_utils_ismarkinschema"
     },
     {
       "relation": "contains",
@@ -12236,9 +14289,9 @@
       "source_file": "lib/tiptap-utils.ts",
       "source_location": "L124",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_tiptap_utils",
-      "target": "lib_tiptap_utils_isnodeinschema",
-      "confidence_score": 1.0
+      "target": "lib_tiptap_utils_isnodeinschema"
     },
     {
       "relation": "contains",
@@ -12246,9 +14299,9 @@
       "source_file": "lib/tiptap-utils.ts",
       "source_location": "L299",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_tiptap_utils",
-      "target": "lib_tiptap_utils_isnodetypeselected",
-      "confidence_score": 1.0
+      "target": "lib_tiptap_utils_isnodetypeselected"
     },
     {
       "relation": "contains",
@@ -12256,9 +14309,9 @@
       "source_file": "lib/tiptap-utils.ts",
       "source_location": "L169",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_tiptap_utils",
-      "target": "lib_tiptap_utils_isvalidposition",
-      "confidence_score": 1.0
+      "target": "lib_tiptap_utils_isvalidposition"
     },
     {
       "relation": "contains",
@@ -12266,9 +14319,9 @@
       "source_file": "lib/tiptap-utils.ts",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_tiptap_utils",
-      "target": "lib_tiptap_utils_mac_symbols",
-      "confidence_score": 1.0
+      "target": "lib_tiptap_utils_mac_symbols"
     },
     {
       "relation": "contains",
@@ -12276,9 +14329,9 @@
       "source_file": "lib/tiptap-utils.ts",
       "source_location": "L89",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_tiptap_utils",
-      "target": "lib_tiptap_utils_parseshortcutkeys",
-      "confidence_score": 1.0
+      "target": "lib_tiptap_utils_parseshortcutkeys"
     },
     {
       "relation": "contains",
@@ -12286,9 +14339,9 @@
       "source_file": "lib/tiptap-utils.ts",
       "source_location": "L419",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_tiptap_utils",
-      "target": "lib_tiptap_utils_protocolconfig",
-      "confidence_score": 1.0
+      "target": "lib_tiptap_utils_protocolconfig"
     },
     {
       "relation": "contains",
@@ -12296,9 +14349,9 @@
       "source_file": "lib/tiptap-utils.ts",
       "source_location": "L402",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_tiptap_utils",
-      "target": "lib_tiptap_utils_protocoloptions",
-      "confidence_score": 1.0
+      "target": "lib_tiptap_utils_protocoloptions"
     },
     {
       "relation": "contains",
@@ -12306,9 +14359,9 @@
       "source_file": "lib/tiptap-utils.ts",
       "source_location": "L465",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_tiptap_utils",
-      "target": "lib_tiptap_utils_sanitizeurl",
-      "confidence_score": 1.0
+      "target": "lib_tiptap_utils_sanitizeurl"
     },
     {
       "relation": "contains",
@@ -12316,9 +14369,9 @@
       "source_file": "lib/tiptap-utils.ts",
       "source_location": "L537",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_tiptap_utils",
-      "target": "lib_tiptap_utils_selectcurrentblockcontent",
-      "confidence_score": 1.0
+      "target": "lib_tiptap_utils_selectcurrentblockcontent"
     },
     {
       "relation": "contains",
@@ -12326,9 +14379,9 @@
       "source_file": "lib/tiptap-utils.ts",
       "source_location": "L336",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_tiptap_utils",
-      "target": "lib_tiptap_utils_selectionwithinconvertibletypes",
-      "confidence_score": 1.0
+      "target": "lib_tiptap_utils_selectionwithinconvertibletypes"
     },
     {
       "relation": "contains",
@@ -12336,9 +14389,9 @@
       "source_file": "lib/tiptap-utils.ts",
       "source_location": "L35",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_tiptap_utils",
-      "target": "lib_tiptap_utils_sr_only",
-      "confidence_score": 1.0
+      "target": "lib_tiptap_utils_sr_only"
     },
     {
       "relation": "contains",
@@ -12346,9 +14399,9 @@
       "source_file": "lib/tiptap-utils.ts",
       "source_location": "L492",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_tiptap_utils",
-      "target": "lib_tiptap_utils_updatenodesattr",
-      "confidence_score": 1.0
+      "target": "lib_tiptap_utils_updatenodesattr"
     },
     {
       "relation": "contains",
@@ -12356,9 +14409,9 @@
       "source_file": "lib/tiptap-utils.ts",
       "source_location": "L182",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_tiptap_utils",
-      "target": "lib_tiptap_utils_warnedmissingextensions",
-      "confidence_score": 1.0
+      "target": "lib_tiptap_utils_warnedmissingextensions"
     },
     {
       "relation": "calls",
@@ -12367,9 +14420,9 @@
       "source_file": "lib/tiptap-utils.ts",
       "source_location": "L254",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_tiptap_utils_findnodeposition",
-      "target": "lib_tiptap_utils_isvalidposition",
-      "confidence_score": 1.0
+      "target": "lib_tiptap_utils_isvalidposition"
     },
     {
       "relation": "calls",
@@ -12378,9 +14431,9 @@
       "source_file": "lib/tiptap-utils.ts",
       "source_location": "L283",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_tiptap_utils_findnodeposition",
-      "target": "lib_tiptap_utils_findnodeatposition",
-      "confidence_score": 1.0
+      "target": "lib_tiptap_utils_findnodeatposition"
     },
     {
       "relation": "calls",
@@ -12389,9 +14442,9 @@
       "source_file": "lib/tiptap-utils.ts",
       "source_location": "L473",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_tiptap_utils_sanitizeurl",
-      "target": "lib_tiptap_utils_isalloweduri",
-      "confidence_score": 1.0
+      "target": "lib_tiptap_utils_isalloweduri"
     },
     {
       "relation": "contains",
@@ -12869,9 +14922,19 @@
       "source_file": "package.json",
       "source_location": "L65",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_dependencies",
-      "target": "package_dependencies_mammoth",
-      "confidence_score": 1.0
+      "target": "package_dependencies_mammoth"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L66",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_monaco_editor"
     },
     {
       "relation": "contains",
@@ -12939,9 +15002,9 @@
       "source_file": "package.json",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_dependencies",
-      "target": "package_dependencies_radix_ui_react_popover",
-      "confidence_score": 1.0
+      "target": "package_dependencies_radix_ui_react_popover"
     },
     {
       "relation": "contains",
@@ -12997,6 +15060,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
+      "source_location": "L77",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_react_signature_canvas"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
       "source_location": "L26",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -13009,9 +15082,9 @@
       "source_file": "package.json",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_dependencies",
-      "target": "package_dependencies_tiptap_extension_bubble_menu",
-      "confidence_score": 1.0
+      "target": "package_dependencies_tiptap_extension_bubble_menu"
     },
     {
       "relation": "contains",
@@ -13019,9 +15092,9 @@
       "source_file": "package.json",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_dependencies",
-      "target": "package_dependencies_tiptap_extension_link",
-      "confidence_score": 1.0
+      "target": "package_dependencies_tiptap_extension_link"
     },
     {
       "relation": "contains",
@@ -13029,9 +15102,9 @@
       "source_file": "package.json",
       "source_location": "L35",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_dependencies",
-      "target": "package_dependencies_tiptap_pm",
-      "confidence_score": 1.0
+      "target": "package_dependencies_tiptap_pm"
     },
     {
       "relation": "contains",
@@ -13039,9 +15112,9 @@
       "source_file": "package.json",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_dependencies",
-      "target": "package_dependencies_tiptap_react",
-      "confidence_score": 1.0
+      "target": "package_dependencies_tiptap_react"
     },
     {
       "relation": "contains",
@@ -13049,9 +15122,9 @@
       "source_file": "package.json",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_dependencies",
-      "target": "package_dependencies_tiptap_starter_kit",
-      "confidence_score": 1.0
+      "target": "package_dependencies_tiptap_starter_kit"
     },
     {
       "relation": "contains",
@@ -13199,9 +15272,9 @@
       "source_file": "package.json",
       "source_location": "L89",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_sass",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_sass"
     },
     {
       "relation": "contains",
@@ -13625,5 +15698,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "de053f00f612fee4266f2c981f393ace5fa79211"
+  "built_at_commit": "2a51b241657877c1185ac0df268027f115187fe5"
 }

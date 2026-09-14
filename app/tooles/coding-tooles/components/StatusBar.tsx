@@ -36,7 +36,7 @@ export default function StatusBar({
   }[runStatus];
 
   return (
-    <div className="flex items-center gap-4 px-3 py-1 bg-editor-surface border-t border-editor-border text-[11px] font-mono text-editor-muted select-none overflow-hidden">
+    <div className="flex items-center gap-4 px-3 py-1 bg-editor-surface border-t border-editor-border text-sm md:text-base font-mono text-editor-muted select-none overflow-hidden">
       {/* Status indicator */}
       <div className="flex items-center gap-1.5">
         <span className={clsx("w-1.5 h-1.5 rounded-full", statusColor)} />
@@ -44,6 +44,7 @@ export default function StatusBar({
           runStatus === "success" && "text-green-400",
           runStatus === "error" && "text-red-400",
           runStatus === "running" && "text-yellow-400",
+          runStatus === "idle" && "text-gray-400",
         )}>
           {statusText}
         </span>

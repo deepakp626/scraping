@@ -1,16 +1,16 @@
-# Graph Report - scraping  (2026-08-26)
+# Graph Report - scraping  (2026-09-07)
 
 ## Corpus Check
-- 212 files · ~1,067,038 words
+- 224 files · ~1,096,501 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 725 nodes · 691 edges · 159 communities (115 shown, 44 thin omitted)
+- 782 nodes · 837 edges · 160 communities (117 shown, 43 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `de053f00`
+- Built from commit: `2a51b241`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -35,6 +35,7 @@
 - [[_COMMUNITY_Community 17|Community 17]]
 - [[_COMMUNITY_Community 18|Community 18]]
 - [[_COMMUNITY_Community 22|Community 22]]
+- [[_COMMUNITY_Community 28|Community 28]]
 - [[_COMMUNITY_Community 37|Community 37]]
 - [[_COMMUNITY_Community 38|Community 38]]
 - [[_COMMUNITY_Community 39|Community 39]]
@@ -78,39 +79,45 @@
 - [[_COMMUNITY_Community 124|Community 124]]
 - [[_COMMUNITY_Community 136|Community 136]]
 - [[_COMMUNITY_Community 137|Community 137]]
-- [[_COMMUNITY_Community 138|Community 138]]
 - [[_COMMUNITY_Community 139|Community 139]]
 - [[_COMMUNITY_Community 140|Community 140]]
 - [[_COMMUNITY_Community 141|Community 141]]
+- [[_COMMUNITY_Community 144|Community 144]]
+- [[_COMMUNITY_Community 146|Community 146]]
+- [[_COMMUNITY_Community 147|Community 147]]
+- [[_COMMUNITY_Community 149|Community 149]]
+- [[_COMMUNITY_Community 155|Community 155]]
+- [[_COMMUNITY_Community 156|Community 156]]
+- [[_COMMUNITY_Community 159|Community 159]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `compilerOptions` - 16 edges
-2. `RunStatus` - 8 edges
-3. `EditorStats` - 6 edges
-4. `scripts` - 6 edges
-5. `LANGUAGES` - 4 edges
-6. `OutputTab` - 4 edges
-7. `OutputPanelProps` - 3 edges
-8. `StatusBarProps` - 3 edges
-9. `Judge0Error` - 3 edges
-10. `executeCode()` - 3 edges
+2. `RunStatus` - 15 edges
+3. `LANGUAGES` - 8 edges
+4. `API_ENDPOINTS` - 8 edges
+5. `OutputTab` - 7 edges
+6. `EditorStats` - 6 edges
+7. `scripts` - 6 edges
+8. `MonacoEditorStats` - 5 edges
+9. `normalizeMonacoLanguage()` - 5 edges
+10. `extractApiErrorMessage()` - 5 edges
 
 ## Surprising Connections (you probably didn't know these)
+- `ToolbarProps` --references--> `RunStatus`  [EXTRACTED]
+  app/tooles/coding-tooles/components/Toolbar.tsx → app/tooles/coding-tooles/types/editor.ts
 - `PopoverContent()` --calls--> `cn()`  [EXTRACTED]
   components/tiptap-ui-primitive/popover/popover.tsx → lib/tiptap-utils.ts
 - `CodeEditorProps` --references--> `EditorStats`  [EXTRACTED]
   app/tooles/coding-tooles/components/CodeEditor.tsx → app/tooles/coding-tooles/types/editor.ts
-- `ToolbarProps` --references--> `RunStatus`  [EXTRACTED]
-  app/tooles/coding-tooles/components/Toolbar.tsx → app/tooles/coding-tooles/types/editor.ts
-- `CodeRunEditor()` --calls--> `useEditorStore()`  [EXTRACTED]
-  app/tooles/coding-tooles/components/CodeRunEditor.tsx → app/tooles/coding-tooles/lib/useEditorStore.ts
-- `OutputPanelProps` --references--> `OutputTab`  [EXTRACTED]
-  app/tooles/coding-tooles/components/OutputPanel.tsx → app/tooles/coding-tooles/types/editor.ts
+- `StatusBarProps` --references--> `RunStatus`  [EXTRACTED]
+  app/tooles/coding-tooles/components/StatusBar.tsx → app/tooles/coding-tooles/types/editor.ts
+- `MonacoStatusBarProps` --references--> `RunStatus`  [EXTRACTED]
+  app/tooles/coding-tooles/monaco-components/MonacoStatusBar.tsx → app/tooles/coding-tooles/types/editor.ts
 
 ## Import Cycles
 - None detected.
 
-## Communities (159 total, 44 thin omitted)
+## Communities (160 total, 43 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.07
@@ -134,7 +141,7 @@ Nodes (18): datasetIndustries, DatasetIndustry, DatasetItem, DatasetsMegaMenu(),
 
 ### Community 5 - "Community 5"
 Cohesion: 0.03
-Nodes (67): dependencies, axios, browser-image-compression, clsx, @codemirror/lang-cpp, @codemirror/lang-css, @codemirror/lang-go, @codemirror/lang-html (+59 more)
+Nodes (69): dependencies, axios, browser-image-compression, clsx, @codemirror/lang-cpp, @codemirror/lang-css, @codemirror/lang-go, @codemirror/lang-html (+61 more)
 
 ### Community 6 - "Community 6"
 Cohesion: 0.23
@@ -157,8 +164,8 @@ Cohesion: 0.29
 Nodes (6): Color Palette, Deploy on Vercel, Getting Started, Graphify, Learn More, Theme Design
 
 ### Community 12 - "Community 12"
-Cohesion: 0.08
-Nodes (27): CodingToolsSection(), CodeEditorProps, THEME_MAP, CodeEditor, CodeRunEditor(), CodeRunEditorProps, OutputPanelProps, SHORTCUTS (+19 more)
+Cohesion: 0.22
+Nodes (8): loadMonaco(), MONACO_THEMES, MonacoThemeItem, normalizeMonacoLanguage(), MonacoDiffEditorProps, MonacoEditorProps, MonacoEditorStats, MonacoStatusBarProps
 
 ### Community 14 - "Community 14"
 Cohesion: 0.83
@@ -169,7 +176,7 @@ Cohesion: 0.83
 Nodes (3): ConvertWebp(), formatSize(), savingsPct()
 
 ### Community 39 - "Community 39"
-Cohesion: 0.33
+Cohesion: 0.40
 Nodes (3): componentsMap, PageProps, ToolConfig
 
 ### Community 48 - "Community 48"
@@ -204,18 +211,52 @@ Nodes (3): JsonErrorDetails, ValidationResult, ValidationStats
 Cohesion: 0.07
 Nodes (12): cn(), findNodeAtPosition(), findNodePosition(), isAllowedUri(), isValidPosition(), MAC_SYMBOLS, ProtocolConfig, ProtocolOptions (+4 more)
 
+### Community 137 - "Community 137"
+Cohesion: 0.16
+Nodes (6): OcrApiResponse, PageData, PreviewDevice, apiClient, extractApiErrorMessage(), API_ENDPOINTS
+
+### Community 144 - "Community 144"
+Cohesion: 0.14
+Nodes (7): CodingToolsSection(), CodeEditorProps, THEME_MAP, StatusBarProps, getLanguage(), LANGUAGES, EditorStats
+
+### Community 146 - "Community 146"
+Cohesion: 0.19
+Nodes (11): CodeEditor, CodeRunEditor(), CodeRunEditorProps, executeCode(), formatOutput(), Judge0Error, runLocally(), SubmissionPayload (+3 more)
+
+### Community 147 - "Community 147"
+Cohesion: 0.26
+Nodes (6): LANGUAGE_LIST, LANGUAGE_IMAGE_MAP, MonacoLanguageModalProps, FONT_FAMILIES, MonacoToolbarProps, LanguageConfig
+
+### Community 149 - "Community 149"
+Cohesion: 0.27
+Nodes (7): OutputPanelProps, SHORTCUTS, TABS, MONACO_SHORTCUTS, MonacoOutputPanelProps, OutputTab, RunStatus
+
+### Community 155 - "Community 155"
+Cohesion: 0.40
+Nodes (3): PositionPreset, SignatureCanvas, SignatureMode
+
+### Community 156 - "Community 156"
+Cohesion: 0.20
+Nodes (5): MonacoCodeRunEditorProps, MonacoDiffEditor, MonacoEditor, EditorFile, MonacoFileExplorerProps
+
+### Community 159 - "Community 159"
+Cohesion: 0.40
+Nodes (3): ToolbarProps, ThemeId, THEMES
+
 ## Knowledge Gaps
-- **232 isolated node(s):** `metadata`, `stats`, `services`, `datasetProcess`, `useCases` (+227 more)
+- **244 isolated node(s):** `metadata`, `stats`, `services`, `datasetProcess`, `useCases` (+239 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **44 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **43 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `dependencies` connect `Community 5` to `Community 3`?**
-  _High betweenness centrality (0.014) - this node is a cross-community bridge._
+  _High betweenness centrality (0.012) - this node is a cross-community bridge._
+- **Why does `RunStatus` connect `Community 149` to `Community 12`, `Community 144`, `Community 146`, `Community 147`, `Community 156`, `Community 159`?**
+  _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **What connects `metadata`, `stats`, `services` to the rest of the system?**
-  _232 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _244 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.06666666666666667 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
@@ -224,5 +265,3 @@ _Questions this graph is uniquely positioned to answer:_
   _Cohesion score 0.1 - nodes in this community are weakly interconnected._
 - **Should `Community 3` be split into smaller, more focused modules?**
   _Cohesion score 0.09090909090909091 - nodes in this community are weakly interconnected._
-- **Should `Community 4` be split into smaller, more focused modules?**
-  _Cohesion score 0.09881422924901186 - nodes in this community are weakly interconnected._

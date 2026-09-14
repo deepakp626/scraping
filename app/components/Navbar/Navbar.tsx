@@ -88,7 +88,7 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: 'AI Tools', hasDropdown: true },
+    // { name: 'AI Tools', hasDropdown: true },
     { name: 'Tools', hasDropdown: true },
     { name: 'Datasets', hasDropdown: true },
     { name: 'Services', hasDropdown: true },

@@ -1,4 +1,4 @@
-// app/tooles/coding-tooles/types/editor.ts
+import type React from "react";
 
 export type ThemeName =
   | "vscodeDark"
@@ -17,6 +17,8 @@ export interface LanguageConfig {
   extension: string;
   monacoLang: string;
   color: string;
+  icon?: React.ComponentType<{ className?: string; style?: React.CSSProperties }>;
+  image?: string;
   starter: string;
   info: {
     description: string;

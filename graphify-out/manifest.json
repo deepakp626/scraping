@@ -125,8 +125,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\coding-tooles\\page.tsx": {
-    "mtime": 1781121635.7712576,
-    "ast_hash": "4ed9e42856ff5d58006527de97438174",
+    "mtime": 1788902737.3248148,
+    "ast_hash": "3ec1444dc0179fada56900bb48df9697",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\converter-tools\\page.tsx": {
@@ -260,13 +260,13 @@
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\pdf-tooles\\[pdf-tool-slug]\\page.tsx": {
-    "mtime": 1787604120.2997494,
-    "ast_hash": "85b2cfa2229a7c74a103085568aaba39",
+    "mtime": 1788299833.558263,
+    "ast_hash": "29768b5be890902fe30f0baa5cc23f14",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\pdf-tooles\\page.tsx": {
-    "mtime": 1787602883.531292,
-    "ast_hash": "a989f17b74b83fa5526a05e8f554360a",
+    "mtime": 1788299811.6631866,
+    "ast_hash": "c0862322628044ff5af2d12ece0d5590",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\eslint.config.mjs": {
@@ -280,8 +280,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\package.json": {
-    "mtime": 1787689029.559177,
-    "ast_hash": "46856061b3f9f56041c44bba89d3a9c0",
+    "mtime": 1788723160.8725874,
+    "ast_hash": "1fe325b3e0a66816aaef4eb9b3432ac8",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\postcss.config.mjs": {
@@ -590,28 +590,28 @@
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\coding-tooles\\components\\CodeEditor.tsx": {
-    "mtime": 1781291369.881608,
-    "ast_hash": "479a42a6e333fdec906f0dc88c374d9e",
+    "mtime": 1788465694.313187,
+    "ast_hash": "755fc50962d9740d50d1d524c8befcae",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\coding-tooles\\components\\CodeRunEditor.tsx": {
-    "mtime": 1781121578.2183933,
-    "ast_hash": "088bf5371cc7255b601facc9d03f9acd",
+    "mtime": 1788465818.2768426,
+    "ast_hash": "19579626c68a3f1243313b44adfb754a",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\coding-tooles\\components\\OutputPanel.tsx": {
-    "mtime": 1781121578.2183933,
+    "mtime": 1788466245.193465,
     "ast_hash": "4661568fc79443de11f894a1736e9520",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\coding-tooles\\components\\StatusBar.tsx": {
-    "mtime": 1781121578.2183933,
-    "ast_hash": "9b1e307ae27941872643e4bf4784e62a",
+    "mtime": 1788466150.5772543,
+    "ast_hash": "efdd037002e0742afb8eb1c769a3bf46",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\coding-tooles\\components\\Toolbar.tsx": {
-    "mtime": 1781121578.2183933,
-    "ast_hash": "c94e1cfdbca49ca0c31ec2dbef10a9a6",
+    "mtime": 1788468242.060184,
+    "ast_hash": "485959bed8ae344823629deeece28c6a",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\coding-tooles\\components\\index.ts": {
@@ -620,13 +620,13 @@
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\coding-tooles\\lib\\judge0.ts": {
-    "mtime": 1781122898.11242,
-    "ast_hash": "1d9774d1b4810eeab77d937f943aba7c",
+    "mtime": 1788463695.6145904,
+    "ast_hash": "e7209fe0a1370904eb372eae0356f840",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\coding-tooles\\lib\\languages.ts": {
-    "mtime": 1781122260.956532,
-    "ast_hash": "8702376abd6db9649c9d5b40ab41693f",
+    "mtime": 1788728211.9045868,
+    "ast_hash": "e5b97da867e2890d8976a25e1db0b0ab",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\coding-tooles\\lib\\themes.ts": {
@@ -635,13 +635,13 @@
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\coding-tooles\\lib\\useEditorStore.ts": {
-    "mtime": 1781121578.2183933,
-    "ast_hash": "24a2e55752bef2f05c590e1f6fe10bf9",
+    "mtime": 1788465693.8843472,
+    "ast_hash": "f44789f6447e86a4344e9f3784ba39b8",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\coding-tooles\\types\\editor.ts": {
-    "mtime": 1781121578.1980162,
-    "ast_hash": "18d848f294f9a3c1bda42b6dd56fdcae",
+    "mtime": 1788728154.717777,
+    "ast_hash": "92f205bb07b5620c058039e49ba439ff",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\image-tooles\\components\\PdfToImages.tsx": {
@@ -810,8 +810,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\components\\Navbar\\Navbar.tsx": {
-    "mtime": 1784049963.0264282,
-    "ast_hash": "28ac7fed260094b11a50d32834a2e115",
+    "mtime": 1788980672.5024278,
+    "ast_hash": "faf6c10edf93043ebe79b3338d9d0eff",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\components\\Navbar\\ToolsMegaMenu.tsx": {
@@ -835,8 +835,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\services\\ecommerce-data-scraping\\page.tsx": {
-    "mtime": 1784059846.9451187,
-    "ast_hash": "758fe92018c696158fd26ab4c54d7563",
+    "mtime": 1789328352.3816588,
+    "ast_hash": "36e7abd0975fd8dd75510dd74aa1de73",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\services\\servicesData.ts": {
@@ -875,8 +875,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\services\\fashion-scraping\\fashionData.ts": {
-    "mtime": 1784138697.3775713,
-    "ast_hash": "68cc32d8db446fc5090af99a5e7e57c5",
+    "mtime": 1789413633.4200194,
+    "ast_hash": "37bb20057e25903d57c23c9afcdc7001",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\services\\fashion-scraping\\page.tsx": {
@@ -905,8 +905,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\services\\car-rental-data-scraping\\carRentalData.ts": {
-    "mtime": 1784147735.5710537,
-    "ast_hash": "f7d176503771b2cf8674750c40a5a2d5",
+    "mtime": 1789417716.764738,
+    "ast_hash": "01a276f7d2c90db08dcc21c5c2e8e033",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\services\\car-rental-data-scraping\\page.tsx": {
@@ -919,19 +919,9 @@
     "ast_hash": "39a1eba62b339fc00f50c594affec708",
     "semantic_hash": ""
   },
-  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\car-rental-data-scraping\\car-rental-benefits.png": {
-    "mtime": 1784139392.7625144,
-    "ast_hash": "e078a10fbff452f730afccc286b5531a",
-    "semantic_hash": ""
-  },
   "C:\\Users\\user\\Desktop\\scraping\\public\\services\\car-rental-data-scraping\\car-rental-data-mockup.png": {
     "mtime": 1784139367.9726002,
     "ast_hash": "a95ac51051d17aeef0c55ad660cc926a",
-    "semantic_hash": ""
-  },
-  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\car-rental-data-scraping\\car-rental-fleet.png": {
-    "mtime": 1784147695.6291547,
-    "ast_hash": "f8034242e98deb80f6c2642cc2f9ca64",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\public\\services\\car-rental-data-scraping\\car-rental-hero.png": {
@@ -989,19 +979,9 @@
     "ast_hash": "50305acfb50fb9ae7423836815c74f44",
     "semantic_hash": ""
   },
-  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\car-rental-data-scraping\\car-rental-pricing.png": {
-    "mtime": 1784147710.730455,
-    "ast_hash": "6ee63c8da74858121f556beeabb2d160",
-    "semantic_hash": ""
-  },
   "C:\\Users\\user\\Desktop\\scraping\\app\\services\\grocery-scraping\\groceryScrapingData.ts": {
-    "mtime": 1784228705.8743584,
-    "ast_hash": "2c53a1aa29e1255748b028ef4da9a419",
-    "semantic_hash": ""
-  },
-  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\grocery-scraping\\grocery-benefits.svg": {
-    "mtime": 1784228657.7993984,
-    "ast_hash": "297555a9d81ae0fcdbae024e067eb30b",
+    "mtime": 1789418349.1128445,
+    "ast_hash": "e071d9c3371a01f6cafc484f580028be",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\public\\services\\grocery-scraping\\grocery-data-mockup.png": {
@@ -1059,11 +1039,6 @@
     "ast_hash": "0c650fd444b5065b67759b690d7c3872",
     "semantic_hash": ""
   },
-  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\grocery-scraping\\grocery-promotions.svg": {
-    "mtime": 1784228650.223441,
-    "ast_hash": "146518d7436d9c158a39a6922ff14ade",
-    "semantic_hash": ""
-  },
   "C:\\Users\\user\\Desktop\\scraping\\public\\services\\grocery-scraping\\grocery-zipcode.png": {
     "mtime": 1784228611.8713546,
     "ast_hash": "24795caaa3548586ce0ccbee2dbfb774",
@@ -1075,43 +1050,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\services\\quick-commerce-scraping\\quickCommerceScrapingData.ts": {
-    "mtime": 1784230086.921121,
-    "ast_hash": "578ee56ab3c129b225e743e5a9ededc2",
-    "semantic_hash": ""
-  },
-  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\quick-commerce-scraping\\quick-commerce-benefits.svg": {
-    "mtime": 1784230073.9333138,
-    "ast_hash": "39b82c25292f3e8656850de3eed1e98b",
-    "semantic_hash": ""
-  },
-  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\quick-commerce-scraping\\quick-commerce-dark-store.svg": {
-    "mtime": 1784230047.0588095,
-    "ast_hash": "6b80afb92427e963be72839a62534288",
-    "semantic_hash": ""
-  },
-  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\quick-commerce-scraping\\quick-commerce-data-mockup.svg": {
-    "mtime": 1784230040.5020032,
-    "ast_hash": "68d2d69f4eae227a5f51663bf477d629",
-    "semantic_hash": ""
-  },
-  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\quick-commerce-scraping\\quick-commerce-delivery-time.svg": {
-    "mtime": 1784230054.2709064,
-    "ast_hash": "3440b91a99343dc286ecf9ba5cc34912",
-    "semantic_hash": ""
-  },
-  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\quick-commerce-scraping\\quick-commerce-flash-sales.svg": {
-    "mtime": 1784230067.9505768,
-    "ast_hash": "6d5233a27635ded5b859efd08d7fd41e",
-    "semantic_hash": ""
-  },
-  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\quick-commerce-scraping\\quick-commerce-hero.svg": {
-    "mtime": 1784230725.2410996,
-    "ast_hash": "1d5dc9ea32b7a00056899847fca5afea",
-    "semantic_hash": ""
-  },
-  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\quick-commerce-scraping\\quick-commerce-shelf-share.svg": {
-    "mtime": 1784230061.6466627,
-    "ast_hash": "c6e1d344684f3586314b6a9712d644d1",
+    "mtime": 1789418564.877015,
+    "ast_hash": "6317452fdc937ceaa983318a55f3f647",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\services\\food-data-scraping\\foodScrapingData.ts": {
@@ -1285,8 +1225,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\json-tooles\\components\\JSONParser.tsx": {
-    "mtime": 1786649658.1561024,
-    "ast_hash": "2ade518ba7c09bc95b818ed0696ed151",
+    "mtime": 1788298699.6316042,
+    "ast_hash": "48148f1f7c0f185ac042bb3c5c910de1",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\json-tooles\\components\\JSONPathEvaluator.tsx": {
@@ -1315,8 +1255,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\json-tooles\\components\\JSONSchemaValidator.tsx": {
-    "mtime": 1787082287.0411534,
-    "ast_hash": "a4cbd85a8e6f3076eebe3d92733993bf",
+    "mtime": 1788298867.6284533,
+    "ast_hash": "a320340eb3f7002d6d29b2990a6cde73",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\json-tooles\\components\\JSONToCSV.tsx": {
@@ -1425,8 +1365,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\pdf-tooles\\components\\AddWatermark.tsx": {
-    "mtime": 1787603397.7442923,
-    "ast_hash": "276aa8c8a51446e04256ff9cc899ea05",
+    "mtime": 1787776486.6503606,
+    "ast_hash": "95225f6e0e47cad3041d8a6f0d077037",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\pdf-tooles\\components\\CompressPDF.tsx": {
@@ -1435,8 +1375,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\pdf-tooles\\components\\ExtractPages.tsx": {
-    "mtime": 1787603412.8227057,
-    "ast_hash": "9441d7ebc7d3c32df99ea3a7348c4e46",
+    "mtime": 1788299079.5852075,
+    "ast_hash": "41cdc7669e4e9752fceb49bbecd7d745",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\pdf-tooles\\components\\ImageToPdf.tsx": {
@@ -1445,8 +1385,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\pdf-tooles\\components\\LockPDF.tsx": {
-    "mtime": 1787603374.935054,
-    "ast_hash": "a46d7375457fa0062c56e1962a1b7a7c",
+    "mtime": 1787771390.6684215,
+    "ast_hash": "e9824a79aa8dd5001aaaf3faafddc3e7",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\pdf-tooles\\components\\MergePDF.tsx": {
@@ -1455,23 +1395,23 @@
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\pdf-tooles\\components\\OcrPDF.tsx": {
-    "mtime": 1787603432.595006,
-    "ast_hash": "caf4eab53ce715852169e9cd145ab22a",
+    "mtime": 1788293569.1208594,
+    "ast_hash": "d7177ee03c928ea4613e95550837dc45",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\pdf-tooles\\components\\PageNumbers.tsx": {
-    "mtime": 1787603424.7466385,
-    "ast_hash": "8dfecdd0e80c8813e09c2db50e417545",
+    "mtime": 1788299168.5306544,
+    "ast_hash": "229411ef04f57e43163b3af062394277",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\pdf-tooles\\components\\PdfToHtml.tsx": {
-    "mtime": 1787603467.3682215,
-    "ast_hash": "59702afcde9136d18d9b2b6fd6c5dcc6",
+    "mtime": 1788298100.4798257,
+    "ast_hash": "1c4871507a841a80a02383ce3ba0cdc3",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\pdf-tooles\\components\\PdfToImage.tsx": {
-    "mtime": 1787689799.1301508,
-    "ast_hash": "778207c55182b628720202f5538191bc",
+    "mtime": 1788299251.8524163,
+    "ast_hash": "457978b84626cbb4fca6f8a52abd2a34",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\pdf-tooles\\components\\PdfToWord.tsx": {
@@ -1485,38 +1425,38 @@
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\pdf-tooles\\components\\RemovePages.tsx": {
-    "mtime": 1787603405.3614368,
-    "ast_hash": "ab85bf0c91116760847e2c5742abcc21",
+    "mtime": 1788299364.8891194,
+    "ast_hash": "db6e279b57dcb837e543bc9d8ef2b023",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\pdf-tooles\\components\\RotateLeft.tsx": {
-    "mtime": 1787603389.8425105,
-    "ast_hash": "225254b679ba48a7bff33d2edafc89b2",
+    "mtime": 1787775751.0361133,
+    "ast_hash": "7d00ac3d14da4f8774f06c16e199cd68",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\pdf-tooles\\components\\RotatePDF.tsx": {
-    "mtime": 1787603383.0998678,
-    "ast_hash": "59aeb21b4be6585dc36dbab7af520507",
+    "mtime": 1787775770.4938467,
+    "ast_hash": "8fbf2a957bcf630ee5e22244c507a86b",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\pdf-tooles\\components\\SearchPDF.tsx": {
-    "mtime": 1787603475.5979207,
-    "ast_hash": "68a9d5a27cb4aed2cae3d668749a2b1e",
+    "mtime": 1788299422.2424386,
+    "ast_hash": "41de864ca09a16ace34d304405bb6a0c",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\pdf-tooles\\components\\SignPDF.tsx": {
-    "mtime": 1787603443.1194086,
-    "ast_hash": "5306d3ddc60ae018f436313d33e6fef9",
+    "mtime": 1788299642.910293,
+    "ast_hash": "435d72512e6669d19e018da5293e488d",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\pdf-tooles\\components\\SplitPDF.tsx": {
-    "mtime": 1787604739.828035,
-    "ast_hash": "c33d62391a6ddbabae971298aee66199",
+    "mtime": 1788299671.2999856,
+    "ast_hash": "769a39dc7b26135e942694539aecb3bb",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\pdf-tooles\\components\\UnlockPDF.tsx": {
-    "mtime": 1787603368.0794144,
-    "ast_hash": "b01e37b313389dfa388ab7d9185ccd43",
+    "mtime": 1787771379.4445684,
+    "ast_hash": "c7726dcb23d6f854a7a9b0f6b1a384f9",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\pdf-tooles\\components\\WordToPdf.tsx": {
@@ -1535,13 +1475,13 @@
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\lib\\apiClient.ts": {
-    "mtime": 1787677961.6596613,
-    "ast_hash": "e45198f18b3d896c93eea615df4ed269",
+    "mtime": 1787771373.244427,
+    "ast_hash": "56f6ddd6d0c98c6228d56db7aeff091c",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\lib\\apiEndpoints.ts": {
-    "mtime": 1787691382.2030697,
-    "ast_hash": "868a6322e02c8e0ee2602298b2149e12",
+    "mtime": 1788300226.4798172,
+    "ast_hash": "aa822cfea27da9f8720231d53d14ccb5",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\scraping\\lib\\tiptap-utils.ts": {
@@ -1552,6 +1492,151 @@
   "C:\\Users\\user\\Desktop\\scraping\\scss.d.ts": {
     "mtime": 1787682270.3351886,
     "ast_hash": "d4b73df9b41bd6aeddc94c7958c6d743",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\pdf-tooles\\components\\ExtractImagesFromPDF.tsx": {
+    "mtime": 1788300776.8237548,
+    "ast_hash": "c93767e89f7f9fc6ed2d2c18306ae398",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\coding-tooles\\[code-tool-slug]\\page.tsx": {
+    "mtime": 1788724303.3951123,
+    "ast_hash": "fad09207bd6a7020bf0dad77b674a8d6",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\coding-tooles\\monaco-components\\MonacoCodeRunEditor.tsx": {
+    "mtime": 1788724888.9469721,
+    "ast_hash": "8bf7c337928c21321d875026b5f58071",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\coding-tooles\\monaco-components\\MonacoDiffEditor.tsx": {
+    "mtime": 1788723713.6305025,
+    "ast_hash": "87bedce835cf1feb7823e9593d199467",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\coding-tooles\\monaco-components\\MonacoEditor.tsx": {
+    "mtime": 1788723663.1732597,
+    "ast_hash": "59052e71c1ce3d4b6ce0a61c3798b1ed",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\coding-tooles\\monaco-components\\MonacoOutputPanel.tsx": {
+    "mtime": 1788723694.912099,
+    "ast_hash": "8c2bcc837f418713bbdceb10bd1c08af",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\coding-tooles\\monaco-components\\MonacoStatusBar.tsx": {
+    "mtime": 1788723704.9649491,
+    "ast_hash": "4d8fd90c235a95b70f0e8c66fe335ecf",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\coding-tooles\\monaco-components\\MonacoToolbar.tsx": {
+    "mtime": 1788728202.830856,
+    "ast_hash": "3360d9009fb5a4fda452a00e53a312f2",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\coding-tooles\\monaco-components\\index.ts": {
+    "mtime": 1788728175.7894845,
+    "ast_hash": "b7d518f8368a57a4eedd9963c964a0e4",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\coding-tooles\\monaco-components\\monaco-loader.ts": {
+    "mtime": 1788723651.1034803,
+    "ast_hash": "c14080ffe5211d9f5c6afc039da88a29",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\coding-tooles\\monaco-components\\MonacoFileExplorer.tsx": {
+    "mtime": 1788724857.6703012,
+    "ast_hash": "520fd3e3003db61201f83d8f8f8fe023",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\app\\tooles\\coding-tooles\\monaco-components\\MonacoLanguageModal.tsx": {
+    "mtime": 1788728167.6058404,
+    "ast_hash": "a315f37017188a5195c40095594252cc",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\programming-languages\\python.svg": {
+    "mtime": 1788726843.8409405,
+    "ast_hash": "c217c27d577c07b923b65e85c095ac22",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\ecommerce-data-scraping\\ecommerce-benefits.jpg": {
+    "mtime": 1789328264.9463215,
+    "ast_hash": "5378557ccabcd14d22b07e5e9257d6af",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\ecommerce-data-scraping\\ecommerce-feature-accuracy-compliance.jpg": {
+    "mtime": 1789328243.9542892,
+    "ast_hash": "c2ac4d04062a683f59bd3548fb73dd71",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\ecommerce-data-scraping\\ecommerce-feature-global-coverage.jpg": {
+    "mtime": 1789328219.3063166,
+    "ast_hash": "6b1876a1cbc3d4d512d1912c0f8b6183",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\ecommerce-data-scraping\\ecommerce-feature-realtime-data.jpg": {
+    "mtime": 1789328176.854965,
+    "ast_hash": "cba5aff3a4a9d014663c7ef0c139c7da",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\ecommerce-data-scraping\\ecommerce-feature-seller-intelligence.jpg": {
+    "mtime": 1789328196.964125,
+    "ast_hash": "80629f954b18966d0de7aec1e5a93ee0",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\fashion-scraping\\fashion-features.png": {
+    "mtime": 1789411029.2206306,
+    "ast_hash": "5dec8bccadd7e305a4591f35cf78867f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\fashion-scraping\\fashion-variant-mapping.png": {
+    "mtime": 1789411029.2206306,
+    "ast_hash": "5dec8bccadd7e305a4591f35cf78867f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\car-rental-data-scraping\\Car-Rental-Web-Scraping-Services.png": {
+    "mtime": 1789417678.6424828,
+    "ast_hash": "8d40992bf2754b2d5dbc146b355eb228",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\car-rental-data-scraping\\Dynamic-Price-and-Yield-Intelligence.png": {
+    "mtime": 1789415156.6210885,
+    "ast_hash": "9b4fa3d83fff0595a13041329a348aef",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\car-rental-data-scraping\\Fleet-Specifications-and-Category-Mapping.png": {
+    "mtime": 1789415033.4896145,
+    "ast_hash": "7d2ed89d1c8de1e6043a4caa59e62b65",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\car-rental-data-scraping\\Geo-Targeting.png": {
+    "mtime": 1789414864.3086882,
+    "ast_hash": "ddcd3237d8fcf452ac70b0bb2f963074",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\fashion-scraping\\Competitor-Catalog.png": {
+    "mtime": 1789413136.6075835,
+    "ast_hash": "3d7e651cf3427888595ec1f784c4e79d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\fashion-scraping\\Digital-Shelf.png": {
+    "mtime": 1789412718.9750302,
+    "ast_hash": "55eb5f394c848e4d1fc392500d0ef06a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\fashion-scraping\\Dynamic-Pricing.png": {
+    "mtime": 1789413587.1975963,
+    "ast_hash": "abc938f9ade8428456c70f9525405eb8",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\grocery-scraping\\Grocery-Web-Scraping-Services-benefits.png": {
+    "mtime": 1789418315.404525,
+    "ast_hash": "0b6aa894093de76c75a2f7cb0d37b502",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\scraping\\public\\services\\grocery-scraping\\grocery-promotions.png": {
+    "mtime": 1789418036.8050058,
+    "ast_hash": "9d30dc0a637f905640aa3f6cd11d3d1e",
     "semantic_hash": ""
   }
 }

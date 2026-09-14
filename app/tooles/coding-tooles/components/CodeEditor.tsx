@@ -16,6 +16,7 @@ import { html } from "@codemirror/lang-html";
 import { css } from "@codemirror/lang-css";
 import { json } from "@codemirror/lang-json";
 import { xml } from "@codemirror/lang-xml";
+import { yaml } from "@codemirror/lang-yaml";
 import { StreamLanguage } from "@codemirror/language";
 import { ruby } from "@codemirror/legacy-modes/mode/ruby";
 import { kotlin } from "@codemirror/legacy-modes/mode/clike";
@@ -58,31 +59,32 @@ function getLanguageExtension(langId: string): Extension {
   switch (langId) {
     case "javascript": return javascript({ jsx: true });
     case "typescript": return javascript({ jsx: true, typescript: true });
-    case "python":     return python();
-    case "java":       return java();
-    case "cpp":        return cpp();
-    case "c":          return cpp();
-    case "csharp":     return StreamLanguage.define(scala); // closest available
-    case "go":         return go();
-    case "rust":       return rust();
-    case "kotlin":     return StreamLanguage.define(kotlin);
-    case "swift":      return StreamLanguage.define(swift);
-    case "ruby":       return StreamLanguage.define(ruby);
-    case "php":        return php();
-    case "sql":        return sql();
-    case "r":          return StreamLanguage.define(r);
-    case "bash":       return StreamLanguage.define(shell);
-    case "perl":       return StreamLanguage.define(perl);
-    case "haskell":    return StreamLanguage.define(haskell);
-    case "scala":      return StreamLanguage.define(scala);
-    case "lua":        return StreamLanguage.define(lua);
+    case "python": return python();
+    case "java": return java();
+    case "cpp": return cpp();
+    case "c": return cpp();
+    case "csharp": return StreamLanguage.define(scala); // closest available
+    case "go": return go();
+    case "rust": return rust();
+    case "kotlin": return StreamLanguage.define(kotlin);
+    case "swift": return StreamLanguage.define(swift);
+    case "ruby": return StreamLanguage.define(ruby);
+    case "php": return php();
+    case "sql": return sql();
+    case "r": return StreamLanguage.define(r);
+    case "bash": return StreamLanguage.define(shell);
+    case "perl": return StreamLanguage.define(perl);
+    case "haskell": return StreamLanguage.define(haskell);
+    case "scala": return StreamLanguage.define(scala);
+    case "lua": return StreamLanguage.define(lua);
     // case "dart":       return StreamLanguage.define(dart);
-    case "markdown":   return markdown();
-    case "html":       return html();
-    case "css":        return css();
-    case "json":       return json();
-    case "xml":        return xml();
-    default:           return javascript();
+    case "markdown": return markdown();
+    case "html": return html();
+    case "css": return css();
+    case "json": return json();
+    case "xml": return xml();
+    case "yaml": return yaml();
+    default: return javascript();
   }
 }
 

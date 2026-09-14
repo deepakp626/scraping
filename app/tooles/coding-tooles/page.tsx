@@ -52,7 +52,7 @@ export function CodingToolsSection() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Editor Hero Section */}
-      <section className="bg-editor-bg py-12 px-4 md:px-10 border-b border-editor-border">
+      {/* <section className="bg-editor-bg py-12 px-4 md:px-10 border-b border-editor-border">
         <div className="max-w-7xl mx-auto">
           <div className="mb-8 text-center">
             <h1 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-4">
@@ -66,7 +66,7 @@ export function CodingToolsSection() {
           
           <CodeRunEditor height="700px" />
         </div>
-      </section>
+      </section> */}
 
       {/* Tools Grid Section */}
       <section className="py-12 px-4 md:px-10 bg-gray-50 flex-1">

@@ -1,5 +1,30 @@
 // src/lib/languages.ts
+import type React from "react";
+import {
+  Terminal,
+  Play,
+  SquareCode,
+  Code,
+  Palette,
+  Database,
+  FileJson,
+  FileCode,
+  Cpu,
+  Coffee,
+  Zap,
+  Hammer,
+  Gem,
+  Hash,
+  Feather,
+  Layers,
+  BookOpen,
+  Brackets,
+  FileText,
+  Boxes,
+} from "lucide-react";
 import type { LanguageConfig } from "../types/editor";
+
+import pythonSvg from "@/public/programming-languages/python.svg"
 
 export const LANGUAGES: Record<string, LanguageConfig> = {
   python: {
@@ -9,6 +34,7 @@ export const LANGUAGES: Record<string, LanguageConfig> = {
     extension: "py",
     monacoLang: "python",
     color: "#3b82f6",
+    icon: pythonSvg,
     starter: `# Python 3.12
 def greet(name: str) -> str:
     return f"Hello, {name}!"
@@ -868,10 +894,297 @@ ORDER BY avg_salary DESC;
       website: "https://postgresql.org",
     },
   },
+
+  html: {
+    id: "html",
+    name: "HTML5",
+    judge0Id: 96,
+    extension: "html",
+    monacoLang: "html",
+    color: "#e34f26",
+    starter: `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online HTML5 Playground</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      margin: 2rem;
+      background: #f8fafc;
+      color: #0f172a;
+    }
+    .card {
+      padding: 1.5rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+      border-left: 4px solid #f97316;
+    }
+    h1 { color: #f97316; margin-top: 0; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>🚀 HTML5 Online Editor</h1>
+    <p>Build, inspect, and test web markup directly in the browser.</p>
+    <button onclick="alert('Hello from HTML5!')">Click Me</button>
+  </div>
+</body>
+</html>
+`,
+    info: {
+      description:
+        "HyperText Markup Language standard for structuring modern web applications and accessible interactive pages.",
+      version: "HTML5 Living Standard",
+      tip: "Use semantic elements (<header>, <main>, <article>, <footer>) for superior accessibility and SEO.",
+      website: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+    },
+  },
+
+  css: {
+    id: "css",
+    name: "CSS3",
+    judge0Id: 97,
+    extension: "css",
+    monacoLang: "css",
+    color: "#264de4",
+    starter: `/* Modern CSS3 Styling */
+:root {
+  --primary: #f97316;
+  --bg-surface: #ffffff;
+  --radius-lg: 1rem;
+}
+
+.developer-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  background: var(--bg-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.developer-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.15);
+}
+
+.badge {
+  display: inline-flex;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  background-color: var(--primary);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+`,
+    info: {
+      description:
+        "Cascading Style Sheets powering responsive layout, custom properties, animations, and modern UI design.",
+      version: "CSS3 / Modern CSS",
+      tip: "Leverage CSS custom properties (--var), Flexbox, CSS Grid, and clamp() for fluid typography.",
+      website: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    },
+  },
+
+  json: {
+    id: "json",
+    name: "JSON",
+    judge0Id: 98,
+    extension: "json",
+    monacoLang: "json",
+    color: "#0f172a",
+    starter: `{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "tool": "Online Code Playground",
+  "version": "2.0.0",
+  "capabilities": {
+    "autoLanguageDetection": true,
+    "instantExecution": true,
+    "syntaxHighlighting": true,
+    "themes": [
+      "vscodeDark",
+      "monokai",
+      "dracula",
+      "githubLight"
+    ]
+  },
+  "metrics": {
+    "supportedLanguages": 27,
+    "uptime": "99.99%",
+    "activeUsers": 125000
+  },
+  "verified": true
+}
+`,
+    info: {
+      description:
+        "JavaScript Object Notation, the universal lightweight standard for data interchange, APIs, and configuration.",
+      version: "ECMA-404",
+      tip: "JSON keys must always be double-quoted. Trailing commas are invalid in standard JSON.",
+      website: "https://www.json.org/",
+    },
+  },
+
+  xml: {
+    id: "xml",
+    name: "XML",
+    judge0Id: 99,
+    extension: "xml",
+    monacoLang: "xml",
+    color: "#e44d26",
+    starter: `<?xml version="1.0" encoding="UTF-8"?>
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <application>
+    <name>Developer Code Playground</name>
+    <version>2.0.0</version>
+    <environment>production</environment>
+  </application>
+  <features>
+    <feature enabled="true">
+      <id>auto-detect</id>
+      <description>Detects programming language from URL slug</description>
+    </feature>
+    <feature enabled="true">
+      <id>frontend-run</id>
+      <description>Direct client-side and cloud code execution</description>
+    </feature>
+  </features>
+</configuration>
+`,
+    info: {
+      description:
+        "Extensible Markup Language used in enterprise configurations, SVG graphics, RSS feeds, and legacy APIs.",
+      version: "1.0 (Fifth Edition)",
+      tip: "Ensure all tags are properly closed and attribute values enclosed in quotes.",
+      website: "https://www.w3.org/XML/",
+    },
+  },
+
+  yaml: {
+    id: "yaml",
+    name: "YAML",
+    judge0Id: 100,
+    extension: "yaml",
+    monacoLang: "yaml",
+    color: "#cb171e",
+    starter: `# Modern YAML Configuration
+version: "3.8"
+
+services:
+  app:
+    image: node:20-alpine
+    container_name: coding-playground
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+`,
+    info: {
+      description:
+        "Human-friendly data serialization standard, widely used in Kubernetes, CI/CD pipelines (GitHub Actions), and Docker.",
+      version: "YAML 1.2",
+      tip: "Indentation matters: always use spaces (never tabs) to define hierarchy.",
+      website: "https://yaml.org/",
+    },
+  },
+
+  markdown: {
+    id: "markdown",
+    name: "Markdown",
+    judge0Id: 101,
+    extension: "md",
+    monacoLang: "markdown",
+    color: "#083fa1",
+    starter: `# 🚀 Markdown Online Editor & Live Documentation
+
+Welcome to the **browser-based Markdown compiler & editor**.
+
+## Features Checklist
+- [x] Full GitHub Flavored Markdown (GFM)
+- [x] Syntax-highlighted code blocks
+- [x] Fast instant rendering & editing
+- [x] Free and open for everyone
+
+### Sample Code Block
+\`\`\`typescript
+interface Developer {
+  name: string;
+  tools: string[];
+}
+
+const coder: Developer = {
+  name: "Alex",
+  tools: ["Next.js", "TypeScript", "TailwindCSS"]
+};
+\`\`\`
+
+> *"Simplicity is prerequisite for reliability."* — Edsger W. Dijkstra
+`,
+    info: {
+      description:
+        "Lightweight formatting syntax designed to be converted into structurally valid HTML and rich documentation.",
+      version: "CommonMark / GFM",
+      tip: "Use triple backticks with a language tag for formatted code blocks.",
+      website: "https://commonmark.org/",
+    },
+  },
 };
 
 // Remove the placeholder
 delete (LANGUAGES as Record<string, unknown>).rust2;
+
+// Helper to resolve icon component for any language ID
+export function getLanguageIcon(id: string): React.ComponentType<{ className?: string; style?: React.CSSProperties }> {
+  const map: Record<string, React.ComponentType<{ className?: string; style?: React.CSSProperties }>> = {
+    python: Terminal,
+    javascript: Play,
+    typescript: SquareCode,
+    html: Code,
+    css: Palette,
+    sql: Database,
+    json: FileJson,
+    xml: FileCode,
+    cpp: Cpu,
+    c: Cpu,
+    csharp: Hash,
+    java: Coffee,
+    go: Zap,
+    rust: Hammer,
+    php: FileCode,
+    ruby: Gem,
+    swift: Feather,
+    kotlin: Layers,
+    markdown: BookOpen,
+    bash: Terminal,
+    yaml: Brackets,
+    r: FileText,
+    lua: Boxes,
+    scala: Layers,
+    perl: FileCode,
+  };
+  return map[id] || FileCode;
+}
+
+// Automatically assign icon component and default image to each language config
+for (const key in LANGUAGES) {
+  LANGUAGES[key].icon = getLanguageIcon(key);
+  if (!LANGUAGES[key].image) {
+    LANGUAGES[key].image = "/programming-languages/python.svg";
+  }
+}
 
 export const LANGUAGE_LIST = Object.values(LANGUAGES);
 

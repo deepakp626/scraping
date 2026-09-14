@@ -436,8 +436,8 @@ export default function EcommercePage() {
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-orange-400/20 to-red-400/20 blur-2xl scale-105" />
                 <Image
                   className="relative mx-auto rounded-2xl shadow-2xl shadow-orange-200/60 border border-white/80 object-cover"
-                  alt="Powerful Features of Our E-Commerce Data Scraping Services"
-                  src="/services/ecommerce-data-scraping/vecteezy_online-shopping-concept_1903669.jpg"
+                  alt="Real-Time E-Commerce Data Scraping at Scale"
+                  src="/services/ecommerce-data-scraping/ecommerce-feature-realtime-data.jpg"
                   width={500}
                   height={500}
                 />
@@ -569,8 +569,8 @@ export default function EcommercePage() {
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-orange-400/20 to-red-400/20 blur-2xl scale-105" />
                 <Image
                   className="relative mx-auto rounded-2xl shadow-2xl shadow-orange-200/60 border border-white/80 object-cover"
-                  alt="Powerful Features of Our E-Commerce Data Scraping Services"
-                  src="/services/ecommerce-data-scraping/vecteezy_online-shopping-concept_1903669.jpg"
+                  alt="Seller & Merchant Intelligence Scraping"
+                  src="/services/ecommerce-data-scraping/ecommerce-feature-seller-intelligence.jpg"
                   width={500}
                   height={500}
                 />
@@ -591,8 +591,8 @@ export default function EcommercePage() {
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-orange-400/20 to-red-400/20 blur-2xl scale-105" />
                 <Image
                   className="relative mx-auto rounded-2xl shadow-2xl shadow-orange-200/60 border border-white/80 object-cover"
-                  alt="Powerful Features of Our E-Commerce Data Scraping Services"
-                  src="/services/ecommerce-data-scraping/vecteezy_online-shopping-concept_1903669.jpg"
+                  alt="Global Marketplace Coverage & Research"
+                  src="/services/ecommerce-data-scraping/ecommerce-feature-global-coverage.jpg"
                   width={500}
                   height={500}
                 />
@@ -722,8 +722,8 @@ export default function EcommercePage() {
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-orange-400/20 to-red-400/20 blur-2xl scale-105" />
                 <Image
                   className="relative mx-auto rounded-2xl shadow-2xl shadow-orange-200/60 border border-white/80 object-cover"
-                  alt="Powerful Features of Our E-Commerce Data Scraping Services"
-                  src="/services/ecommerce-data-scraping/vecteezy_online-shopping-concept_1903669.jpg"
+                  alt="Enterprise-Grade Accuracy & Compliance"
+                  src="/services/ecommerce-data-scraping/ecommerce-feature-accuracy-compliance.jpg"
                   width={500}
                   height={500}
                 />
@@ -774,13 +774,16 @@ export default function EcommercePage() {
 
           {/* Right */}
           <div className="flex justify-center">
-            <Image
-              src="/images/benefits.jpg"
-              alt="Benefits"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover"
-            />
+            <div className="relative">
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-orange-400/20 to-red-400/20 blur-2xl scale-105" />
+              <Image
+                src="/services/ecommerce-data-scraping/ecommerce-benefits.jpg"
+                alt="Benefits of Our E-Commerce Data Scraping Services"
+                width={500}
+                height={500}
+                className="relative mx-auto rounded-2xl shadow-2xl shadow-orange-200/60 border border-white/80 object-cover"
+              />
+            </div>
           </div>
         </div>
       </div>

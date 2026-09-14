@@ -5,9 +5,12 @@ import type { RunStatus, OutputTab, EditorStats } from "../types/editor";
 import { LANGUAGES } from "./languages";
 import { executeCode, formatOutput, Judge0Error } from "./judge0";
 
-export function useEditorStore() {
-  const [currentLangId, setCurrentLangId] = useState("python");
-  const [code, setCode] = useState(LANGUAGES.python.starter);
+export function useEditorStore(initialLangId: string = "python", initialCode?: string) {
+  const resolvedLang = LANGUAGES[initialLangId] ? initialLangId : "python";
+  const [currentLangId, setCurrentLangId] = useState(resolvedLang);
+  const [code, setCode] = useState(
+    initialCode ?? (LANGUAGES[resolvedLang]?.starter || LANGUAGES.python?.starter || "")
+  );
   const [themeId, setThemeId] = useState("vscodeDark");
   const [fontSize, setFontSize] = useState(14);
   const [stdin, setStdin] = useState("");

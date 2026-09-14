@@ -125,7 +125,7 @@ export const groceryScrapingData = {
       title: "Promotions, Coupons & Discount Monitoring",
       description:
         "Supermarket promotions change on weekly cycles. We capture promotional mechanics, digital coupons, and store-specific markups automatically.",
-      image: "/services/grocery-scraping/grocery-promotions.svg",
+      image: "/services/grocery-scraping/grocery-promotions.png",
       imageAlt: "Promotions and discounts illustration",
       bulletPoints: [
         {
@@ -168,7 +168,7 @@ export const groceryScrapingData = {
         "Deconstruct competitor promotional cycles (weekly flyers, flash sales, discount coupons) to build smarter marketing campaigns.",
     },
   ],
-  benefitsImage: "/services/grocery-scraping/grocery-benefits.svg",
+  benefitsImage: "/services/grocery-scraping/Grocery-Web-Scraping-Services-benefits.png",
   benefitsImageAlt: "Grocery scraping benefits illustration",
 
   // Everything You Need section (Grid)

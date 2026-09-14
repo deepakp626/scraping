@@ -43,7 +43,7 @@ export default function CodeRunEditor({
   showStatusBar = true,
   onCodeChange,
 }: CodeRunEditorProps) {
-  const store = useEditorStore();
+  const store = useEditorStore(defaultLang, defaultCode);
   const containerRef = useRef<HTMLDivElement>(null);
 
   // Draggable split
@@ -60,7 +60,7 @@ export default function CodeRunEditor({
   const handleMouseUp = () => { dragging.current = false; };
 
   const handleCopy = useCallback(() => {
-    navigator.clipboard.writeText(store.code).catch(() => {});
+    navigator.clipboard.writeText(store.code).catch(() => { });
   }, [store.code]);
 
   const handleCodeChange = useCallback((value: string) => {
@@ -68,12 +68,19 @@ export default function CodeRunEditor({
     onCodeChange?.(value, store.currentLangId);
   }, [store, onCodeChange]);
 
-  // Apply defaultLang on first render if different
+  // Synchronize language if defaultLang changes dynamically
   React.useEffect(() => {
-    if (defaultLang !== "python") store.changeLang(defaultLang);
-    if (defaultCode) store.handleCodeChange(defaultCode);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+    if (defaultLang && store.currentLangId !== defaultLang) {
+      store.changeLang(defaultLang);
+    }
+  }, [defaultLang]);
+
+  // Synchronize code if defaultCode is explicitly passed
+  React.useEffect(() => {
+    if (defaultCode !== undefined && store.code !== defaultCode) {
+      store.handleCodeChange(defaultCode);
+    }
+  }, [defaultCode]);
 
   return (
     <div
@@ -103,10 +110,10 @@ export default function CodeRunEditor({
         {/* Editor pane */}
         <div style={{ width: `${splitPercent}%` }} className="flex flex-col min-h-0 overflow-hidden">
           <div className="flex items-center px-3 py-1 bg-editor-surface border-b border-editor-border">
-            <span className="text-[10px] font-semibold text-editor-muted uppercase tracking-wider">
+            <span className="text-[10px] md:text-sm font-semibold text-editor-muted uppercase tracking-wider">
               Editor
             </span>
-            <span className="ml-auto font-mono text-[10px] text-editor-muted/50">
+            <span className="ml-auto font-mono text-[10px] md:text-sm text-editor-muted/50">
               Ctrl+Enter to run
             </span>
           </div>

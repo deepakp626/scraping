@@ -25,7 +25,7 @@ export const quickCommerceScrapingData = {
     "Compare delivery markup rates vs in-store prices",
     "Bypass cloudflare & mobile app anti-bot barriers",
   ],
-  heroImage: "/services/quick-commerce-scraping/quick-commerce-hero.svg",
+  heroImage: "/services/quick-commerce-scraping/",
   heroImageAlt: "Quick Commerce scraping hero illustration",
   heroCtaIcon: Zap,
 
@@ -82,7 +82,7 @@ export const quickCommerceScrapingData = {
       title: "Sub-Hour Real-Time Dark Store Inventory Ingestion",
       description:
         "Quick commerce inventory turns over rapidly. Our scrapers are built to crawl dark store inventory levels on high frequencies (down to every 15-30 minutes) without triggering rate limits.",
-      image: "/services/quick-commerce-scraping/quick-commerce-dark-store.svg",
+      image: "/services/quick-commerce-scraping/",
       imageAlt: "Dark store inventory illustration",
       bulletPoints: [
         {
@@ -103,7 +103,7 @@ export const quickCommerceScrapingData = {
       title: "Delivery Time (ETA) & Dynamic Fees Monitoring",
       description:
         "Delivery speeds and dynamic pricing spikes are crucial conversion factors. We monitor and track ETAs and delivery fees across geographic target areas.",
-      image: "/services/quick-commerce-scraping/quick-commerce-delivery-time.svg",
+      image: "/services/quick-commerce-scraping/",
       imageAlt: "Delivery time and fees illustration",
       bulletPoints: [
         {
@@ -124,7 +124,7 @@ export const quickCommerceScrapingData = {
       title: "Share-of-Shelf Auditing & Sponsored Ad Placements",
       description:
         "Understand your visibility on the digital shelf. Monitor organic positions, top search listings, and home-page banner slots to measure campaign compliance.",
-      image: "/services/quick-commerce-scraping/quick-commerce-shelf-share.svg",
+      image: "/services/quick-commerce-scraping/",
       imageAlt: "Share-of-shelf and banner ads illustration",
       bulletPoints: [
         {
@@ -145,7 +145,7 @@ export const quickCommerceScrapingData = {
       title: "Flash Promotion & Markups Analytics",
       description:
         "Quick delivery apps run frequent flash promotions that last only a few minutes or hours. We capture flyer deals, discount codes, and platform-specific markups.",
-      image: "/services/quick-commerce-scraping/quick-commerce-flash-sales.svg",
+      image: "/services/quick-commerce-scraping/",
       imageAlt: "Flash promotions illustration",
       bulletPoints: [
         {
@@ -188,7 +188,7 @@ export const quickCommerceScrapingData = {
         "Audit sponsored banners and category shelf shares to make sure your CPG marketing campaigns are compliant.",
     },
   ],
-  benefitsImage: "/services/quick-commerce-scraping/quick-commerce-benefits.svg",
+  benefitsImage: "/services/quick-commerce-scraping/",
   benefitsImageAlt: "Quick commerce scraping benefits illustration",
 
   // Everything You Need section (Grid)
