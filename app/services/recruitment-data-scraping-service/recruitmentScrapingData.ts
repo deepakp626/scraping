@@ -27,7 +27,7 @@ export const recruitmentScrapingData = {
     "Gather remote/hybrid/on-site designations and location metrics",
     "Bypass anti-bot mechanisms on complex job portals and networks",
   ],
-  heroImage: "/services/recruitment-data-scraping-service/recruitment-hero.svg",
+  heroImage: "/services/recruitment-data-scraping-service/recruitment-hero.png",
   heroImageAlt: "Recruitment data scraping hero illustration",
   heroCtaIcon: Briefcase,
   sampleDataLink: "/contact",
@@ -57,7 +57,7 @@ export const recruitmentScrapingData = {
   dataFieldsTitle: "Structured Recruitment & Job Data Fields",
   dataFieldsDescription:
     "We clean and structure employment data from public boards, career sites, and corporate networks into a unified, query-ready format for human resources planning and market intelligence.",
-  dataFieldsImage: "/services/recruitment-data-scraping-service/recruitment-data-mockup.svg",
+  dataFieldsImage: "/services/recruitment-data-scraping-service/recruitment-data-mockup.png",
   dataFieldsLeft: [
     "Job Title & Role Level",
     "Company Name & Profile Link",
@@ -86,7 +86,7 @@ export const recruitmentScrapingData = {
       title: "Real-time Job Board Aggregation",
       description:
         "Gather the latest job listings across multiple global and regional platforms like LinkedIn, Indeed, Glassdoor, and ZipRecruiter to build a unified talent directory or monitor industry hiring patterns.",
-      image: "/services/recruitment-data-scraping-service/job-board-scraping.svg",
+      image: "/services/recruitment-data-scraping-service/job-board-scraping.png",
       imageAlt: "Job board aggregation illustration",
       bulletPoints: [
         {
@@ -107,7 +107,7 @@ export const recruitmentScrapingData = {
       title: "Salary Benchmarking & Compensation Analysis",
       description:
         "Extract stated salary ranges, hourly rates, signing bonuses, and non-monetary benefits to track real-time wage shifts and construct dynamic salary benchmarking indexes.",
-      image: "/services/recruitment-data-scraping-service/salary-analysis.svg",
+      image: "/services/recruitment-data-scraping-service/salary-analysis.png",
       imageAlt: "Salary analysis illustration",
       bulletPoints: [
         {
@@ -128,7 +128,7 @@ export const recruitmentScrapingData = {
       title: "Skill & Technology Demand Mapping",
       description:
         "Analyze job requirements to map the demand velocity of specific software, languages, certifications, and soft skills to identify emerging industry skill trends.",
-      image: "/services/recruitment-data-scraping-service/skills-mapping.svg",
+      image: "/services/recruitment-data-scraping-service/skills-mapping.png",
       imageAlt: "Skills demand mapping illustration",
       bulletPoints: [
         {
@@ -149,7 +149,7 @@ export const recruitmentScrapingData = {
       title: "Employer Brand & Headcount Monitoring",
       description:
         "Scrape corporate profiles, employee ratings, review trends, and dynamic headcount data to analyze competitor attrition and hiring volume shifts.",
-      image: "/services/recruitment-data-scraping-service/brand-monitoring.svg",
+      image: "/services/recruitment-data-scraping-service/brand-monitoring.png",
       imageAlt: "Employer brand monitoring illustration",
       bulletPoints: [
         {
@@ -192,7 +192,7 @@ export const recruitmentScrapingData = {
         "Trace talent migrations, geographic job density, and remote work adoption to guide corporate relocation or site selection plans.",
     },
   ],
-  benefitsImage: "/services/recruitment-data-scraping-service/recruitment-benefits.svg",
+  benefitsImage: "/services/recruitment-data-scraping-service/recruitment-benefits.png",
   benefitsImageAlt: "Recruitment data benefits illustration",
 
   // Everything You Need section (Grid)
@@ -273,26 +273,5 @@ export const recruitmentScrapingData = {
   platformsSectionTitle: "Monitored Job Boards & Recruitment Networks",
   platformsSectionDescription:
     "We extract job listings and company profiles from the world's leading professional platforms and job directories.",
-  platforms: [
-    {
-      imagePath: "/services/recruitment-data-scraping-service/icons/linkedin.svg",
-      name: "LinkedIn",
-    },
-    {
-      imagePath: "/services/recruitment-data-scraping-service/icons/indeed.svg",
-      name: "Indeed",
-    },
-    {
-      imagePath: "/services/recruitment-data-scraping-service/icons/glassdoor.svg",
-      name: "Glassdoor",
-    },
-    {
-      imagePath: "/services/recruitment-data-scraping-service/icons/ziprecruiter.svg",
-      name: "ZipRecruiter",
-    },
-    {
-      imagePath: "/services/recruitment-data-scraping-service/icons/monster.svg",
-      name: "Monster",
-    },
-  ],
+  platforms: [],
 };

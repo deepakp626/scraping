@@ -35,7 +35,7 @@ export const foodDeliveryDataScrapingData = {
     "Structured CSV / JSON delivery to your warehouse or BI tool",
   ],
   heroImage:
-    "/services/food-delivery-data-scraping-service/food-delivery-hero.svg",
+    "/services/food-delivery-data-scraping-service/food-delivery-hero.png",
   heroImageAlt: "Food delivery platform data scraping hero illustration",
   heroCtaIcon: Bike,
 
@@ -64,7 +64,7 @@ export const foodDeliveryDataScrapingData = {
   dataFieldsDescription:
     "We normalise commercial, operational, and demand-side data points from food delivery platforms into a clean schema purpose-built for restaurant consultants, aggregator analysts, and logistics strategists.",
   dataFieldsImage:
-    "/services/food-delivery-data-scraping-service/food-delivery-data-mockup.svg",
+    "/services/food-delivery-data-scraping-service/food-delivery-data-mockup.png",
   dataFieldsLeft: [
     "Platform Commission Rate (%)",
     "Onboarding & Activation Fee",
@@ -95,7 +95,7 @@ export const foodDeliveryDataScrapingData = {
       description:
         "Uncover the real cost of selling on each delivery platform by scraping commission tier breakdowns, onboarding incentive schedules, packaging fee policies, and self-delivery vs. marketplace contract differentials — giving restaurant groups and consultants the data to negotiate better deals and optimise platform mix.",
       image:
-        "/services/food-delivery-data-scraping-service/food-delivery-commission-scraping.svg",
+        "/services/food-delivery-data-scraping-service/food-delivery-commission-scraping.png",
       imageAlt: "Platform commission and fee architecture scraping illustration",
       bulletPoints: [
         {
@@ -117,7 +117,7 @@ export const foodDeliveryDataScrapingData = {
       description:
         "Understand what drives a restaurant to the top of the feed by systematically scraping listing positions before and after rating changes, price edits, promotional activations, and review volume shifts — building an evidence-based map of each platform's ranking algorithm.",
       image:
-        "/services/food-delivery-data-scraping-service/food-delivery-ranking-intelligence.svg",
+        "/services/food-delivery-data-scraping-service/food-delivery-ranking-intelligence.png",
       imageAlt: "Food delivery ranking algorithm intelligence illustration",
       bulletPoints: [
         {
@@ -139,7 +139,7 @@ export const foodDeliveryDataScrapingData = {
       description:
         "Capture the courier-facing economics of each platform — base pay-per-delivery, time-based guarantees, surge multipliers, long-distance bonuses, and refer-a-friend incentive structures — to model driver supply, predict delivery capacity constraints, and benchmark gig worker earnings across markets.",
       image:
-        "/services/food-delivery-data-scraping-service/food-delivery-courier-data.svg",
+        "/services/food-delivery-data-scraping-service/food-delivery-courier-data.png",
       imageAlt: "Courier pay and incentives data scraping illustration",
       bulletPoints: [
         {
@@ -161,7 +161,7 @@ export const foodDeliveryDataScrapingData = {
       description:
         "Extract consumer demand signals — estimated order frequency bands, basket size ranges, cuisine-level popularity trends, and postcode-level demand heatmaps — to power market entry decisions, dark kitchen site selection, and platform ad budget allocation for restaurant brands.",
       image:
-        "/services/food-delivery-data-scraping-service/food-delivery-demand-data.svg",
+        "/services/food-delivery-data-scraping-service/food-delivery-demand-data.png",
       imageAlt: "Food delivery demand and consumer behaviour data illustration",
       bulletPoints: [
         {
@@ -205,7 +205,7 @@ export const foodDeliveryDataScrapingData = {
     },
   ],
   benefitsImage:
-    "/services/food-delivery-data-scraping-service/food-delivery-benefits.svg",
+    "/services/food-delivery-data-scraping-service/food-delivery-benefits.png",
   benefitsImageAlt: "Food delivery platform data scraping benefits illustration",
 
   // ── Grid Features ─────────────────────────────────────────────────────

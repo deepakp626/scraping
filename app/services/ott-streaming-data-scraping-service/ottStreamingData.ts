@@ -29,7 +29,7 @@ export const ottStreamingData = {
     "New release and trending show tracking",
     "Data delivery optimized for content strategy teams",
   ],
-  heroImage: "/services/ott-streaming-data-scraping-service/ott-streaming-hero.svg",
+  heroImage: "/services/ott-streaming-data-scraping-service/1-hero.png",
   heroImageAlt: "OTT streaming data scraping hero illustration",
   heroCtaIcon: Film,
   sampleDataLink: "/contact",
@@ -88,7 +88,7 @@ export const ottStreamingData = {
       title: "Global Content Availability Tracking",
       description:
         "Detect where each title is licensed, geo-blocked, or locally restricted. Our scrapers follow content feeds and catalogue APIs to keep availability windows updated across countries.",
-      image: "/services/ott-streaming-data-scraping-service/ott-streaming-availability.svg",
+      image: "/services/ott-streaming-data-scraping-service/3-global.png",
       imageAlt: "Regional availability tracking illustration",
       bulletPoints: [
         {
@@ -110,7 +110,7 @@ export const ottStreamingData = {
       description:
         "Understand how OTT services price content and subscriptions, including bundle deals, trial offers, and ad-supported changes. This helps you benchmark packages and forecast revenue impact.",
       image: "/services/ott-streaming-data-scraping-service/ott-streaming-pricing.svg",
-      imageAlt: "Pricing intelligence illustration",
+      imageAlt: "OTT pricing and subscription intelligence illustration",
       bulletPoints: [
         {
           title: "Subscription Tier Comparison",
@@ -131,7 +131,7 @@ export const ottStreamingData = {
       description:
         "Measure what content is trending, gaining viewers, or losing momentum. We extract popularity signals and ratings so you can spot hits, niche titles, and churn risk early.",
       image: "/services/ott-streaming-data-scraping-service/ott-streaming-trends.svg",
-      imageAlt: "Content trend analytics illustration",
+      imageAlt: "Content trend and popularity analytics illustration",
       bulletPoints: [
         {
           title: "Trending Charts",
@@ -173,7 +173,7 @@ export const ottStreamingData = {
         "See what content is resonating through ratings, trending positions, and popularity signals so your editorial strategy stays data-driven.",
     },
   ],
-  benefitsImage: "/services/ott-streaming-data-scraping-service/ott-streaming-benefits.svg",
+  benefitsImage: "/services/ott-streaming-data-scraping-service/2-middle-banner.png",
   benefitsImageAlt: "OTT streaming data benefits illustration",
 
   // Everything You Need section (Grid)

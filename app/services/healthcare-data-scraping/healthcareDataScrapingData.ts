@@ -28,7 +28,7 @@ export const healthcareDataScrapingData = {
     "Aggregate medical journal abstracts and PubMed publications",
     "Bypass complex anti-bot systems on healthcare portals",
   ],
-  heroImage: "/services/healthcare-data-scraping/healthcare-hero.svg",
+  heroImage: "/services/healthcare-data-scraping/healthcare-hero.png",
   heroImageAlt: "Healthcare data scraping hero illustration",
   heroCtaIcon: Pill,
 
@@ -57,7 +57,7 @@ export const healthcareDataScrapingData = {
   dataFieldsDescription:
     "We normalize healthcare data from provider directories, pharma databases, and regulatory portals into a unified schema ready for analytics, CRM enrichment, and compliance workflows.",
   dataFieldsImage:
-    "/services/healthcare-data-scraping/healthcare-data-mockup.svg",
+    "/services/healthcare-data-scraping/healthcare-data-mockup.png",
   dataFieldsLeft: [
     "Physician Name & Credentials",
     "NPI Number & License State",
@@ -87,7 +87,7 @@ export const healthcareDataScrapingData = {
       description:
         "Build and enrich comprehensive provider databases by scraping physician profiles, NPI records, specialty codes, hospital affiliations, and office contact details from national directories, payer networks, and state licensing boards at scale.",
       image:
-        "/services/healthcare-data-scraping/healthcare-provider-directory.svg",
+        "/services/healthcare-data-scraping/healthcare-provider-directory.png",
       imageAlt: "Provider directory scraping illustration",
       bulletPoints: [
         {
@@ -109,7 +109,7 @@ export const healthcareDataScrapingData = {
       description:
         "Track branded and generic drug prices across retail pharmacies, wholesale distributors, PBM formularies, and government drug pricing schedules in real time to support market access strategy and contract negotiations.",
       image:
-        "/services/healthcare-data-scraping/healthcare-pharma-pricing.svg",
+        "/services/healthcare-data-scraping/healthcare-pharma-pricing.png",
       imageAlt: "Pharmaceutical pricing intelligence illustration",
       bulletPoints: [
         {
@@ -130,7 +130,7 @@ export const healthcareDataScrapingData = {
       title: "FDA Regulatory & Approval Tracking",
       description:
         "Stay ahead of regulatory milestones by automatically monitoring FDA drug approval decisions, PDUFA dates, biologics license applications, device clearances, drug recalls, and safety label updates from FDA.gov and related government portals.",
-      image: "/services/healthcare-data-scraping/healthcare-fda-tracking.svg",
+      image: "/services/healthcare-data-scraping/healthcare-fda-tracking.png",
       imageAlt: "FDA regulatory tracking illustration",
       bulletPoints: [
         {
@@ -152,7 +152,7 @@ export const healthcareDataScrapingData = {
       description:
         "Accelerate clinical intelligence by scraping trial registries, eligibility criteria, phase progression, site locations, and published outcomes from ClinicalTrials.gov, WHO ICTRP, and major academic medical journal databases.",
       image:
-        "/services/healthcare-data-scraping/healthcare-clinical-trials.svg",
+        "/services/healthcare-data-scraping/healthcare-clinical-trials.png",
       imageAlt: "Clinical trial data scraping illustration",
       bulletPoints: [
         {
@@ -195,7 +195,7 @@ export const healthcareDataScrapingData = {
         "Aggregate clinical trial data, publication trends, and competitive pipeline intelligence into dashboards that drive smarter R&D investment and commercial planning decisions.",
     },
   ],
-  benefitsImage: "/services/healthcare-data-scraping/healthcare-benefits.svg",
+  benefitsImage: "/services/healthcare-data-scraping/healthcare-benefits.png",
   benefitsImageAlt: "Healthcare data scraping benefits illustration",
 
   // Everything You Need section (Grid)

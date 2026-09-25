@@ -27,7 +27,7 @@ export const liquorScrapingData = {
     "Bypass age-verification gates and anti-bot systems automatically",
     "Aggregate listings from major delivery apps and retail chains",
   ],
-  heroImage: "/services/liquor-or-alchol-data-scraping/liquor-hero.svg",
+  heroImage: "/services/liquor-or-alchol-data-scraping/liquor-hero.png",
   heroImageAlt: "Liquor data scraping hero illustration",
   heroCtaIcon: Wine,
   sampleDataLink: "/contact",
@@ -57,7 +57,7 @@ export const liquorScrapingData = {
   dataFieldsTitle: "Structured Alcohol & Beverage Data Fields",
   dataFieldsDescription:
     "We clean and structure wine, beer, and spirits catalog metrics from online stores and distribution networks into a unified dataset ready for pricing analysis and stock intelligence.",
-  dataFieldsImage: "/services/liquor-or-alchol-data-scraping/liquor-data-mockup.svg",
+  dataFieldsImage: "/services/liquor-or-alchol-data-scraping/liquor-data-mockup.png",
   dataFieldsLeft: [
     "Brand & Product Name",
     "Beverage Category (Wine/Spirits/Beer)",
@@ -86,7 +86,7 @@ export const liquorScrapingData = {
       title: "Automated Age Verification Bypassing",
       description:
         "Our scraper is equipped with session-handling and cookie management to navigate past legal age-verification screens on retail websites without manual intervention.",
-      image: "/services/liquor-or-alchol-data-scraping/age-gate-bypass.svg",
+      image: "/services/liquor-or-alchol-data-scraping/age-gate-bypass.png",
       imageAlt: "Age gate bypass illustration",
       bulletPoints: [
         {
@@ -107,7 +107,7 @@ export const liquorScrapingData = {
       title: "SKU Matching & Pricing Intelligence",
       description:
         "Compare pricing for identical products across multiple vendors, including Total Wine, Wine.com, Drizly, and BevMo, by utilizing automated UPC and brand-matching algorithms.",
-      image: "/services/liquor-or-alchol-data-scraping/sku-matching.svg",
+      image: "/services/liquor-or-alchol-data-scraping/sku-matching.png",
       imageAlt: "SKU matching illustration",
       bulletPoints: [
         {
@@ -128,7 +128,7 @@ export const liquorScrapingData = {
       title: "Live Inventory & Store-Level Stock Tracking",
       description:
         "Crawl stock availability indicators down to specific postal codes and local brick-and-mortar stores to build real-time local product maps.",
-      image: "/services/liquor-or-alchol-data-scraping/inventory-tracking.svg",
+      image: "/services/liquor-or-alchol-data-scraping/inventory-tracking.png",
       imageAlt: "Inventory tracking illustration",
       bulletPoints: [
         {
@@ -149,7 +149,7 @@ export const liquorScrapingData = {
       title: "Critic Reviews & Tasting Data Ingestion",
       description:
         "Aggregate critic ratings, expert scores (e.g. Wine Advocate, Wine Spectator), flavor descriptors, and consumer comments to fuel recommendation engines.",
-      image: "/services/liquor-or-alchol-data-scraping/review-aggregation.svg",
+      image: "/services/liquor-or-alchol-data-scraping/review-aggregation.png",
       imageAlt: "Review aggregation illustration",
       bulletPoints: [
         {
@@ -192,7 +192,7 @@ export const liquorScrapingData = {
         "Gain competitive supply insights by detecting which product categories or imports are experiencing out-of-stock periods.",
     },
   ],
-  benefitsImage: "/services/liquor-or-alchol-data-scraping/liquor-benefits.svg",
+  benefitsImage: "/services/liquor-or-alchol-data-scraping/liquor-benefits.png",
   benefitsImageAlt: "Liquor data benefits illustration",
 
   // Everything You Need section (Grid)
@@ -273,26 +273,5 @@ export const liquorScrapingData = {
   platformsSectionTitle: "Monitored Beverage Platforms & Retailers",
   platformsSectionDescription:
     "We extract product details, prices, reviews, and inventory status from leading beverage sites and local delivery apps.",
-  platforms: [
-    {
-      imagePath: "/services/liquor-or-alchol-data-scraping/icons/totalwine.svg",
-      name: "Total Wine",
-    },
-    {
-      imagePath: "/services/liquor-or-alchol-data-scraping/icons/drizly.svg",
-      name: "Drizly",
-    },
-    {
-      imagePath: "/services/liquor-or-alchol-data-scraping/icons/bevmo.svg",
-      name: "BevMo",
-    },
-    {
-      imagePath: "/services/liquor-or-alchol-data-scraping/icons/wine.svg",
-      name: "Wine.com",
-    },
-    {
-      imagePath: "/services/liquor-or-alchol-data-scraping/icons/vivino.svg",
-      name: "Vivino",
-    },
-  ],
+  platforms: [],
 };

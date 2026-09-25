@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="100%" height="100%">
+  <defs>
+    <linearGradient id="mockupBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fff7ed"/>
+    </linearGradient>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#eb1c3f"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="24" stdDeviation="30" flood-color="#0f172a" flood-opacity="0.08"/>
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.04"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="1000" rx="36" fill="url(#mockupBg)"/>
+
+  <!-- Main Structured Data Card -->
+  <g transform="translate(100, 80)" filter="url(#cardShadow)">
+    <rect width="800" height="840" rx="24" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+
+    <!-- Window Header / Browser Bar -->
+    <path d="M 0 24 Q 0 0 24 0 L 776 0 Q 800 0 800 24 L 800 68 L 0 68 Z" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+    <circle cx="36" cy="34" r="7" fill="#ef4444"/>
+    <circle cx="58" cy="34" r="7" fill="#f59e0b"/>
+    <circle cx="80" cy="34" r="7" fill="#10b981"/>
+
+    <rect x="130" y="18" width="540" height="32" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="400" y="39" text-anchor="middle" font-family="monospace" font-size="12" fill="#64748b">https://api.scraping.com/v1/fmcg/sku/8901030829104.json</text>
+
+    <!-- Header Banner Inside Card -->
+    <rect x="36" y="96" width="728" height="110" rx="16" fill="#fff7ed" stroke="#fed7aa" stroke-width="1"/>
+    
+    <!-- Thumbnail of Product -->
+    <rect x="56" y="112" width="78" height="78" rx="12" fill="url(#headerGrad)"/>
+    <text x="95" y="156" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="900" font-size="28" fill="#ffffff">FMCG</text>
+
+    <text x="154" y="136" font-family="system-ui, sans-serif" font-weight="900" font-size="20" fill="#0f172a">Organic Crunchy Peanut Butter (450g)</text>
+    <text x="154" y="160" font-family="system-ui, sans-serif" font-weight="600" font-size="12" fill="#64748b">Brand: <tspan font-weight="800" fill="#ea580c">NutriSpread Co.</tspan> • EAN: 8901030829104 • Category: Spreads &amp; Jams</text>
+    <text x="154" y="184" font-family="system-ui, sans-serif" font-weight="700" font-size="12" fill="#16a34a">● Active on 28 Regional Dark Stores &amp; Retailers</text>
+
+    <!-- Schema Field Sections Grid -->
+    <!-- Column 1 -->
+    <g transform="translate(36, 230)">
+      <rect width="350" height="95" rx="14" fill="#f8fafc" stroke="#f1f5f9" stroke-width="1"/>
+      <text x="18" y="28" font-family="system-ui, sans-serif" font-weight="800" font-size="11" fill="#94a3b8">ORGANIC SEARCH RANK</text>
+      <text x="18" y="60" font-family="system-ui, sans-serif" font-weight="900" font-size="24" fill="#0f172a">#1 Position <tspan font-size="13" font-weight="700" fill="#10b981">(Top Shelf)</tspan></text>
+      <text x="18" y="80" font-family="system-ui, sans-serif" font-weight="600" font-size="11" fill="#64748b">Query: "peanut butter no added sugar"</text>
+    </g>
+
+    <!-- Column 2 -->
+    <g transform="translate(414, 230)">
+      <rect width="350" height="95" rx="14" fill="#f8fafc" stroke="#f1f5f9" stroke-width="1"/>
+      <text x="18" y="28" font-family="system-ui, sans-serif" font-weight="800" font-size="11" fill="#94a3b8">SPONSORED AD PLACEMENT</text>
+      <text x="18" y="60" font-family="system-ui, sans-serif" font-weight="900" font-size="22" fill="#ea580c">Hero Banner Slot #1</text>
+      <text x="18" y="80" font-family="system-ui, sans-serif" font-weight="600" font-size="11" fill="#16a34a">✓ Compliance Verified (100% Impression)</text>
+    </g>
+
+    <!-- Row 2: Pricing & Discount -->
+    <g transform="translate(36, 345)">
+      <rect width="350" height="95" rx="14" fill="#f8fafc" stroke="#f1f5f9" stroke-width="1"/>
+      <text x="18" y="28" font-family="system-ui, sans-serif" font-weight="800" font-size="11" fill="#94a3b8">PRICING &amp; PROMOTION</text>
+      <text x="18" y="60" font-family="system-ui, sans-serif" font-weight="900" font-size="24" fill="#0f172a">$5.49 <tspan font-size="14" font-weight="600" fill="#94a3b8" text-decoration="line-through">$6.99</tspan></text>
+      <rect x="18" y="68" width="80" height="18" rx="4" fill="#fee2e2"/>
+      <text x="58" y="81" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="800" font-size="10" fill="#ef4444">-21% PROMO</text>
+    </g>
+
+    <g transform="translate(414, 345)">
+      <rect width="350" height="95" rx="14" fill="#f8fafc" stroke="#f1f5f9" stroke-width="1"/>
+      <text x="18" y="28" font-family="system-ui, sans-serif" font-weight="800" font-size="11" fill="#94a3b8">STOCK &amp; AVAILABILITY</text>
+      <text x="18" y="60" font-family="system-ui, sans-serif" font-weight="900" font-size="22" fill="#10b981">In-Stock (98.4%)</text>
+      <text x="18" y="80" font-family="system-ui, sans-serif" font-weight="600" font-size="11" fill="#64748b">Dark Store Inventory: 185 units on hand</text>
+    </g>
+
+    <!-- Row 3: Ratings & Review Count -->
+    <g transform="translate(36, 460)">
+      <rect width="350" height="95" rx="14" fill="#f8fafc" stroke="#f1f5f9" stroke-width="1"/>
+      <text x="18" y="28" font-family="system-ui, sans-serif" font-weight="800" font-size="11" fill="#94a3b8">RATINGS &amp; REVIEWS</text>
+      <text x="18" y="60" font-family="system-ui, sans-serif" font-weight="900" font-size="24" fill="#f59e0b">4.8 ★ <tspan font-size="14" font-weight="700" fill="#334155">(3,420 Reviews)</tspan></text>
+      <text x="18" y="80" font-family="system-ui, sans-serif" font-weight="600" font-size="11" fill="#10b981">92% Verified Purchase Rate</text>
+    </g>
+
+    <g transform="translate(414, 460)">
+      <rect width="350" height="95" rx="14" fill="#f8fafc" stroke="#f1f5f9" stroke-width="1"/>
+      <text x="18" y="28" font-family="system-ui, sans-serif" font-weight="800" font-size="11" fill="#94a3b8">SENTIMENT SCORE</text>
+      <text x="18" y="60" font-family="system-ui, sans-serif" font-weight="900" font-size="22" fill="#059669">+0.88 Positive</text>
+      <text x="18" y="80" font-family="system-ui, sans-serif" font-weight="600" font-size="11" fill="#64748b">Top Driver: "rich flavor &amp; no palm oil"</text>
+    </g>
+
+    <!-- Raw JSON Data Snippet Box at Bottom -->
+    <g transform="translate(36, 575)">
+      <rect width="728" height="225" rx="14" fill="#0f172a"/>
+      <text x="24" y="28" font-family="monospace" font-size="12" fill="#94a3b8">// Normalized Output Payload (JSON)</text>
+      
+      <text x="24" y="58" font-family="monospace" font-size="13" fill="#f8fafc">{</text>
+      <text x="44" y="82" font-family="monospace" font-size="12" fill="#cbd5e1">  <tspan fill="#38bdf8">"sku_id"</tspan>: <tspan fill="#fed7aa">"CPG-8901030829104"</tspan>,</text>
+      <text x="44" y="104" font-family="monospace" font-size="12" fill="#cbd5e1">  <tspan fill="#38bdf8">"brand_name"</tspan>: <tspan fill="#fed7aa">"NutriSpread Co."</tspan>,</text>
+      <text x="44" y="126" font-family="monospace" font-size="12" fill="#cbd5e1">  <tspan fill="#38bdf8">"organic_shelf_share"</tspan>: <tspan fill="#f43f5e">0.428</tspan>, <tspan fill="#38bdf8">"shelf_rank"</tspan>: <tspan fill="#f43f5e">1</tspan>,</text>
+      <text x="44" y="148" font-family="monospace" font-size="12" fill="#cbd5e1">  <tspan fill="#38bdf8">"regular_price"</tspan>: <tspan fill="#f43f5e">6.99</tspan>, <tspan fill="#38bdf8">"promo_price"</tspan>: <tspan fill="#f43f5e">5.49</tspan>,</text>
+      <text x="44" y="170" font-family="monospace" font-size="12" fill="#cbd5e1">  <tspan fill="#38bdf8">"in_stock"</tspan>: <tspan fill="#34d399">true</tspan>, <tspan fill="#38bdf8">"stock_count"</tspan>: <tspan fill="#f43f5e">185</tspan>,</text>
+      <text x="44" y="192" font-family="monospace" font-size="12" fill="#cbd5e1">  <tspan fill="#38bdf8">"last_scraped"</tspan>: <tspan fill="#fed7aa">"2026-09-22T01:45:00Z"</tspan></text>
+      <text x="24" y="212" font-family="monospace" font-size="13" fill="#f8fafc">}</text>
+    </g>
+  </g>
+</svg>

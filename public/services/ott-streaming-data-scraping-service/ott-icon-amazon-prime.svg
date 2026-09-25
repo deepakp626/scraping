@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
+  <defs>
+    <linearGradient id="amzGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#232F3E"/>
+      <stop offset="100%" style="stop-color:#131921"/>
+    </linearGradient>
+  </defs>
+  <rect width="80" height="80" rx="16" fill="url(#amzGrad)"/>
+  <!-- Prime blue arrow -->
+  <path d="M 14 38 L 28 32 L 28 44 Z" fill="#00A8E1"/>
+  <path d="M 66 38 L 52 32 L 52 44 Z" fill="#00A8E1"/>
+  <!-- Amazon smile arrow -->
+  <path d="M 20 54 Q 40 64 60 54" stroke="#FF9900" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <polygon points="56,50 62,56 58,57" fill="#FF9900"/>
+  <!-- P letter -->
+  <text x="40" y="46" font-family="Arial, sans-serif" font-size="22" font-weight="900" fill="#00A8E1" text-anchor="middle">P</text>
+</svg>

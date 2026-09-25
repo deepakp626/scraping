@@ -27,7 +27,7 @@ export const foodScrapingData = {
     "Collect cuisine types, dietary tags & allergen information",
     "Bypass anti-bot systems on major food directories & maps",
   ],
-  heroImage: "/services/food-data-scraping/food-hero.svg",
+  heroImage: "/services/food-data-scraping/food-hero.png",
   heroImageAlt: "Food data scraping hero illustration",
   heroCtaIcon: Utensils,
 
@@ -55,7 +55,7 @@ export const foodScrapingData = {
   dataFieldsTitle: "Structured Food & Restaurant Data Fields",
   dataFieldsDescription:
     "We normalize restaurant and menu data from directories, maps, and review portals into a unified schema ready for analytics, recommendation engines, and market intelligence platforms.",
-  dataFieldsImage: "/services/food-data-scraping/food-data-mockup.svg",
+  dataFieldsImage: "/services/food-data-scraping/food-data-mockup.png",
   dataFieldsLeft: [
     "Restaurant Name & Brand",
     "Cuisine Type & Category",
@@ -84,7 +84,7 @@ export const foodScrapingData = {
       title: "Restaurant Directory & Profile Scraping",
       description:
         "Build exhaustive restaurant databases by scraping complete business profiles across Yelp, Google Maps, TripAdvisor, Zomato, and OpenTable — including contact details, cuisine classifications, chain ownership, amenities, and geo-coordinates at city and country scale.",
-      image: "/services/food-data-scraping/food-directory-scraping.svg",
+      image: "/services/food-data-scraping/food-directory-scraping.png",
       imageAlt: "Restaurant directory scraping illustration",
       bulletPoints: [
         {
@@ -105,7 +105,7 @@ export const foodScrapingData = {
       title: "Menu Data & Item Pricing Extraction",
       description:
         "Scrape complete menu hierarchies — categories, subcategories, items, descriptions, prices, portion sizes, and dietary flags — directly from restaurant websites, food delivery apps, and listing portals to power menu intelligence and competitive benchmarking.",
-      image: "/services/food-data-scraping/food-menu-scraping.svg",
+      image: "/services/food-data-scraping/food-menu-scraping.png",
       imageAlt: "Menu and pricing data extraction illustration",
       bulletPoints: [
         {
@@ -126,7 +126,7 @@ export const foodScrapingData = {
       title: "Ratings, Reviews & Sentiment Mining",
       description:
         "Aggregate consumer feedback at scale by scraping star ratings, review texts, verified diner statuses, and response counts from TripAdvisor, Yelp, Google Maps, and Zomato — enabling sentiment analysis, reputation monitoring, and competitive benchmarking.",
-      image: "/services/food-data-scraping/food-reviews-scraping.svg",
+      image: "/services/food-data-scraping/food-reviews-scraping.png",
       imageAlt: "Restaurant reviews and ratings scraping illustration",
       bulletPoints: [
         {
@@ -147,7 +147,7 @@ export const foodScrapingData = {
       title: "Geolocation & Market Coverage Mapping",
       description:
         "Extract geo-coded restaurant data with latitude/longitude coordinates, neighborhood classifications, and city-level density metrics to power location intelligence, market gap analysis, and site selection models for new restaurant openings.",
-      image: "/services/food-data-scraping/food-geo-mapping.svg",
+      image: "/services/food-data-scraping/food-geo-mapping.png",
       imageAlt: "Restaurant geolocation mapping illustration",
       bulletPoints: [
         {
@@ -190,7 +190,7 @@ export const foodScrapingData = {
         "Aggregate competitor and self-review data across platforms to proactively manage your online reputation and respond faster to emerging service issues.",
     },
   ],
-  benefitsImage: "/services/food-data-scraping/food-benefits.svg",
+  benefitsImage: "/services/food-data-scraping/food-benefits.png",
   benefitsImageAlt: "Food data scraping benefits illustration",
 
   // Everything You Need section (Grid)

@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="f3Bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fff7ed"/>
+    </linearGradient>
+    <filter id="f3Shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0f172a" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="800" rx="32" fill="url(#f3Bg)"/>
+
+  <!-- Top Metrics Row -->
+  <g transform="translate(60, 60)">
+    <!-- Score Card -->
+    <rect width="270" height="150" rx="20" fill="#ffffff" stroke="#fed7aa" stroke-width="2" filter="url(#f3Shadow)"/>
+    <text x="24" y="36" fill="#64748b" font-family="system-ui, sans-serif" font-size="12" font-weight="700">AGGREGATED RATING</text>
+    <text x="24" y="85" fill="#f97316" font-family="system-ui, sans-serif" font-size="44" font-weight="900">4.86</text>
+    <text x="130" y="70" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="20">★★★★★</text>
+    <text x="24" y="125" fill="#0f172a" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Based on 18,490 Verified Reviews</text>
+
+    <!-- Sentiment Breakdown Card -->
+    <g transform="translate(305, 0)">
+      <rect width="270" height="150" rx="20" fill="#ffffff" stroke="#fed7aa" stroke-width="2" filter="url(#f3Shadow)"/>
+      <text x="24" y="36" fill="#64748b" font-family="system-ui, sans-serif" font-size="12" font-weight="700">NLP SENTIMENT INDEX</text>
+      <text x="24" y="85" fill="#16a34a" font-family="system-ui, sans-serif" font-size="44" font-weight="900">92.4%</text>
+      <rect x="24" y="108" width="180" height="16" rx="8" fill="#dcfce7"/>
+      <text x="32" y="120" fill="#15803d" font-family="system-ui, sans-serif" font-size="10" font-weight="800">POSITIVE SENTIMENT</text>
+    </g>
+
+    <!-- Review Velocity Card -->
+    <g transform="translate(610, 0)">
+      <rect width="270" height="150" rx="20" fill="#0f172a" filter="url(#f3Shadow)"/>
+      <text x="24" y="36" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12" font-weight="700">CRAWL FREQUENCY</text>
+      <text x="24" y="85" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="38" font-weight="900">Hourly</text>
+      <text x="24" y="125" fill="#22c55e" font-family="system-ui, sans-serif" font-size="12" font-weight="700">⚡ 0 Captcha Blocks • 100% Fresh</text>
+    </g>
+  </g>
+
+  <!-- Sentiment Topic Chips & Sentiment Distribution -->
+  <g transform="translate(60, 240)">
+    <!-- Left: NLP Topic Extraction -->
+    <rect width="420" height="490" rx="24" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" filter="url(#f3Shadow)"/>
+    <path d="M 0 24 Q 0 0 24 0 L 396 0 Q 420 0 420 24 L 420 70 L 0 70 Z" fill="#0f172a"/>
+    <text x="24" y="42" fill="#ffffff" font-family="system-ui, sans-serif" font-size="16" font-weight="800">
+      NLP TOPIC &amp; TASTE ANALYSIS
+    </text>
+
+    <g transform="translate(24, 90)">
+      <!-- Topic 1 -->
+      <rect width="370" height="65" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+      <text x="16" y="28" fill="#0f172a" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Food Taste &amp; Quality</text>
+      <text x="310" y="28" fill="#16a34a" font-family="system-ui, sans-serif" font-size="14" font-weight="800">96% +</text>
+      <rect x="16" y="42" width="338" height="8" rx="4" fill="#e2e8f0"/>
+      <rect x="16" y="42" width="324" height="8" rx="4" fill="#16a34a"/>
+
+      <!-- Topic 2 -->
+      <g transform="translate(0, 80)">
+        <rect width="370" height="65" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+        <text x="16" y="28" fill="#0f172a" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Service &amp; Staff Friendliness</text>
+        <text x="310" y="28" fill="#16a34a" font-family="system-ui, sans-serif" font-size="14" font-weight="800">91% +</text>
+        <rect x="16" y="42" width="338" height="8" rx="4" fill="#e2e8f0"/>
+        <rect x="16" y="42" width="307" height="8" rx="4" fill="#16a34a"/>
+      </g>
+
+      <!-- Topic 3 -->
+      <g transform="translate(0, 160)">
+        <rect width="370" height="65" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+        <text x="16" y="28" fill="#0f172a" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Ambiance &amp; Cleanliness</text>
+        <text x="310" y="28" fill="#16a34a" font-family="system-ui, sans-serif" font-size="14" font-weight="800">94% +</text>
+        <rect x="16" y="42" width="338" height="8" rx="4" fill="#e2e8f0"/>
+        <rect x="16" y="42" width="318" height="8" rx="4" fill="#16a34a"/>
+      </g>
+
+      <!-- Topic 4 -->
+      <g transform="translate(0, 240)">
+        <rect width="370" height="65" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+        <text x="16" y="28" fill="#0f172a" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Value for Money</text>
+        <text x="310" y="28" fill="#eab308" font-family="system-ui, sans-serif" font-size="14" font-weight="800">84% +</text>
+        <rect x="16" y="42" width="338" height="8" rx="4" fill="#e2e8f0"/>
+        <rect x="16" y="42" width="284" height="8" rx="4" fill="#eab308"/>
+      </g>
+
+      <!-- Topic 5 -->
+      <g transform="translate(0, 320)">
+        <rect width="370" height="65" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+        <text x="16" y="28" fill="#0f172a" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Delivery Speed &amp; Packaging</text>
+        <text x="310" y="28" fill="#16a34a" font-family="system-ui, sans-serif" font-size="14" font-weight="800">89% +</text>
+        <rect x="16" y="42" width="338" height="8" rx="4" fill="#e2e8f0"/>
+        <rect x="16" y="42" width="300" height="8" rx="4" fill="#16a34a"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right: Live Scraped Customer Review Feed -->
+  <g filter="url(#f3Shadow)" transform="translate(510, 240)">
+    <rect width="430" height="490" rx="24" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <path d="M 0 24 Q 0 0 24 0 L 406 0 Q 430 0 430 24 L 430 70 L 0 70 Z" fill="#f97316"/>
+    <text x="24" y="42" fill="#ffffff" font-family="system-ui, sans-serif" font-size="16" font-weight="800">
+      LIVE MINED REVIEWS FEED
+    </text>
+
+    <g transform="translate(20, 90)">
+      <!-- Review 1 -->
+      <rect width="390" height="115" rx="14" fill="#fff7ed" stroke="#fed7aa" stroke-width="1"/>
+      <circle cx="35" cy="35" r="16" fill="#ea580c"/>
+      <text x="29" y="41" fill="#fff" font-family="system-ui, sans-serif" font-size="12" font-weight="800">ER</text>
+      <text x="60" y="32" fill="#0f172a" font-family="system-ui, sans-serif" font-size="13" font-weight="700">Emily R. • Verified Diner</text>
+      <text x="60" y="48" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="12">★★★★★ (TripAdvisor)</text>
+      <text x="20" y="78" fill="#475569" font-family="system-ui, sans-serif" font-size="12">"The handmade truffle pasta was divine! Fast service and warm ambiance. Must visit!"</text>
+      <text x="20" y="100" fill="#16a34a" font-family="system-ui, sans-serif" font-size="10" font-weight="800">SENTIMENT: POSITIVE (+0.96)</text>
+
+      <!-- Review 2 -->
+      <g transform="translate(0, 130)">
+        <rect width="390" height="115" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+        <circle cx="35" cy="35" r="16" fill="#0284c7"/>
+        <text x="28" y="41" fill="#fff" font-family="system-ui, sans-serif" font-size="12" font-weight="800">MD</text>
+        <text x="60" y="32" fill="#0f172a" font-family="system-ui, sans-serif" font-size="13" font-weight="700">Marcus D. • Google Maps Local Guide</text>
+        <text x="60" y="48" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="12">★★★★★ (Google Maps)</text>
+        <text x="20" y="78" fill="#475569" font-family="system-ui, sans-serif" font-size="12">"Great wine selection and prime ribeye steak cooked to perfection. 10/10 experience."</text>
+        <text x="20" y="100" fill="#16a34a" font-family="system-ui, sans-serif" font-size="10" font-weight="800">SENTIMENT: POSITIVE (+0.92)</text>
+      </g>
+
+      <!-- Review 3 -->
+      <g transform="translate(0, 260)">
+        <rect width="390" height="115" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+        <circle cx="35" cy="35" r="16" fill="#8b5cf6"/>
+        <text x="28" y="41" fill="#fff" font-family="system-ui, sans-serif" font-size="12" font-weight="800">SK</text>
+        <text x="60" y="32" fill="#0f172a" font-family="system-ui, sans-serif" font-size="13" font-weight="700">Sarah K. • Yelp Elite '24</text>
+        <text x="60" y="48" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="12">★★★★☆ (Yelp)</text>
+        <text x="20" y="78" fill="#475569" font-family="system-ui, sans-serif" font-size="12">"Delicious burrata pizza! A bit crowded on Saturday night but worth the 15m wait."</text>
+        <text x="20" y="100" fill="#16a34a" font-family="system-ui, sans-serif" font-size="10" font-weight="800">SENTIMENT: POSITIVE (+0.81)</text>
+      </g>
+    </g>
+  </g>
+</svg>

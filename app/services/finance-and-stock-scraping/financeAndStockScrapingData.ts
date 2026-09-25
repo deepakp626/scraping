@@ -1,4 +1,4 @@
-﻿import {
+import {
   TrendingUp,
   BarChart3,
   DollarSign,
@@ -28,7 +28,7 @@ export const financeAndStockScrapingData = {
     "ETF holdings, sector exposures, and index membership",
     "Automated data feeds for trading desks and fintech apps",
   ],
-  heroImage: "/services/finance-and-stock-scraping/finance-stock-hero.svg",
+  heroImage: "/services/finance-and-stock-scraping/finance-stock-hero.png",
   heroImageAlt: "Finance and stock market scraping hero illustration",
   heroCtaIcon: TrendingUp,
   sampleDataLink: "/contact",
@@ -58,7 +58,7 @@ export const financeAndStockScrapingData = {
   dataFieldsTitle: "Finance & Stock Data Fields We Scrape",
   dataFieldsDescription:
     "We normalize raw financial content into a consistent schema so your models, dashboards, and data feeds are ready without manual cleanup.",
-  dataFieldsImage: "/services/finance-and-stock-scraping/finance-stock-data-mockup.svg",
+  dataFieldsImage: "/services/finance-and-stock-scraping/finance-stock-data-mockup.png",
   dataFieldsLeft: [
     "Ticker symbol & company name",
     "Last trade price & recent change",
@@ -87,7 +87,7 @@ export const financeAndStockScrapingData = {
       title: "Real-Time Quote & Market Depth Extraction",
       description:
         "Capture live bid/ask spreads, trade sizes, and quote updates from equity pages, exchange feeds, and broker-level market data portals. Our engine keeps pace with active markets while retaining clean output for downstream analytics.",
-      image: "/services/finance-and-stock-scraping/finance-stock-quotes.svg",
+      image: "/services/finance-and-stock-scraping/finance-stock-quotes.png",
       imageAlt: "Real-time quote extraction illustration",
       bulletPoints: [
         {
@@ -108,7 +108,7 @@ export const financeAndStockScrapingData = {
       title: "Fundamentals, Filings & Corporate Event Capture",
       description:
         "Extract financial statements, regulatory filings, and corporate event details from investor relations pages, EDGAR archives, and analyst research portals. This gives you the underlying context behind every price move.",
-      image: "/services/finance-and-stock-scraping/finance-stock-fundamentals.svg",
+      image: "/services/finance-and-stock-scraping/finance-stock-fundamentals.png",
       imageAlt: "Financial fundamentals illustration",
       bulletPoints: [
         {
@@ -129,7 +129,7 @@ export const financeAndStockScrapingData = {
       title: "Analyst Ratings & Sentiment Signal Generation",
       description:
         "Monitor analyst recommendations, target price changes, headline sentiment, and market commentary from top finance portals. Convert these signals into clean structured inputs for screening and alerting workflows.",
-      image: "/services/finance-and-stock-scraping/finance-stock-sentiment.svg",
+      image: "/services/finance-and-stock-scraping/finance-stock-sentiment.png",
       imageAlt: "Analyst sentiment illustration",
       bulletPoints: [
         {
@@ -172,7 +172,7 @@ export const financeAndStockScrapingData = {
         "Get scraped financial datasets delivered as CSV, JSON, API payloads, or cloud exports so your trading desk, research team, or fintech product can consume them without manual processing.",
     },
   ],
-  benefitsImage: "/services/finance-and-stock-scraping/finance-stock-benefits.svg",
+  benefitsImage: "/services/finance-and-stock-scraping/finance-stock-benefits.png",
   benefitsImageAlt: "Finance and stock data benefits illustration",
 
   // Everything You Need section (Grid)

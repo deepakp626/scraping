@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="dBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fff7ed"/>
+    </linearGradient>
+    <filter id="dShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0f172a" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="800" rx="32" fill="url(#dBg)"/>
+
+  <!-- Left: Cuisine Demand Heatmap & Basket Metrics -->
+  <g filter="url(#dShadow)" transform="translate(60, 80)">
+    <rect width="430" height="640" rx="24" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <path d="M 0 24 Q 0 0 24 0 L 406 0 Q 430 0 430 24 L 430 70 L 0 70 Z" fill="#0f172a"/>
+    <text x="24" y="42" fill="#ffffff" font-family="system-ui, sans-serif" font-size="16" font-weight="800">
+      CUISINE DEMAND &amp; BASKET METRICS
+    </text>
+
+    <g transform="translate(24, 90)">
+      <!-- Metric Summary Row -->
+      <g>
+        <rect width="180" height="85" rx="14" fill="#fff7ed" stroke="#fed7aa" stroke-width="1.5"/>
+        <text x="16" y="26" fill="#9a3412" font-family="system-ui, sans-serif" font-size="11" font-weight="800">AVG BASKET SIZE</text>
+        <text x="16" y="60" fill="#ea580c" font-family="system-ui, sans-serif" font-size="26" font-weight="900">$34.80</text>
+        <text x="16" y="76" fill="#16a34a" font-family="system-ui, sans-serif" font-size="10" font-weight="700">+$3.20 vs City Avg</text>
+      </g>
+
+      <g transform="translate(195, 0)">
+        <rect width="185" height="85" rx="14" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.5"/>
+        <text x="16" y="26" fill="#166534" font-family="system-ui, sans-serif" font-size="11" font-weight="800">RE-ORDER RATE</text>
+        <text x="16" y="60" fill="#16a34a" font-family="system-ui, sans-serif" font-size="26" font-weight="900">68.4%</text>
+        <text x="16" y="76" fill="#475569" font-family="system-ui, sans-serif" font-size="10" font-weight="600">14-Day Repeat Window</text>
+      </g>
+
+      <!-- Category Rankings -->
+      <g transform="translate(0, 105)">
+        <text x="4" y="20" fill="#0f172a" font-family="system-ui, sans-serif" font-size="14" font-weight="800">TOP CUISINE VELOCITY SCORE</text>
+        
+        <!-- Category 1 -->
+        <g transform="translate(0, 35)">
+          <rect width="380" height="58" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+          <text x="16" y="24" fill="#0f172a" font-family="system-ui, sans-serif" font-size="13" font-weight="700">🍔 Gourmet Burgers &amp; Wings</text>
+          <text x="310" y="24" fill="#ea580c" font-family="system-ui, sans-serif" font-size="14" font-weight="800">96 / 100</text>
+          <rect x="16" y="36" width="348" height="6" rx="3" fill="#e2e8f0"/>
+          <rect x="16" y="36" width="334" height="6" rx="3" fill="#ea580c"/>
+        </g>
+
+        <!-- Category 2 -->
+        <g transform="translate(0, 105)">
+          <rect width="380" height="58" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+          <text x="16" y="24" fill="#0f172a" font-family="system-ui, sans-serif" font-size="13" font-weight="700">🍣 Japanese &amp; Poke Bowls</text>
+          <text x="310" y="24" fill="#16a34a" font-family="system-ui, sans-serif" font-size="14" font-weight="800">91 / 100</text>
+          <rect x="16" y="36" width="348" height="6" rx="3" fill="#e2e8f0"/>
+          <rect x="16" y="36" width="316" height="6" rx="3" fill="#16a34a"/>
+        </g>
+
+        <!-- Category 3 -->
+        <g transform="translate(0, 175)">
+          <rect width="380" height="58" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+          <text x="16" y="24" fill="#0f172a" font-family="system-ui, sans-serif" font-size="13" font-weight="700">🍕 Woodfired Neapolitan Pizza</text>
+          <text x="310" y="24" fill="#16a34a" font-family="system-ui, sans-serif" font-size="14" font-weight="800">88 / 100</text>
+          <rect x="16" y="36" width="348" height="6" rx="3" fill="#e2e8f0"/>
+          <rect x="16" y="36" width="306" height="6" rx="3" fill="#16a34a"/>
+        </g>
+
+        <!-- Category 4 -->
+        <g transform="translate(0, 245)">
+          <rect width="380" height="58" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+          <text x="16" y="24" fill="#0f172a" font-family="system-ui, sans-serif" font-size="13" font-weight="700">🥗 Clean Bowls &amp; Organic Salads</text>
+          <text x="310" y="24" fill="#0284c7" font-family="system-ui, sans-serif" font-size="14" font-weight="800">82 / 100</text>
+          <rect x="16" y="36" width="348" height="6" rx="3" fill="#e2e8f0"/>
+          <rect x="16" y="36" width="285" height="6" rx="3" fill="#0284c7"/>
+        </g>
+
+        <!-- Category 5 -->
+        <g transform="translate(0, 315)">
+          <rect width="380" height="58" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+          <text x="16" y="24" fill="#0f172a" font-family="system-ui, sans-serif" font-size="13" font-weight="700">🌮 Mexican &amp; Birria Tacos</text>
+          <text x="310" y="24" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="14" font-weight="800">79 / 100</text>
+          <rect x="16" y="36" width="348" height="6" rx="3" fill="#e2e8f0"/>
+          <rect x="16" y="36" width="275" height="6" rx="3" fill="#f59e0b"/>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right: Postcode Order Density & Peak Time Analysis -->
+  <g filter="url(#dShadow)" transform="translate(515, 80)">
+    <rect width="425" height="640" rx="24" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <path d="M 0 24 Q 0 0 24 0 L 401 0 Q 425 0 425 24 L 425 70 L 0 70 Z" fill="#f97316"/>
+    <text x="24" y="42" fill="#ffffff" font-family="system-ui, sans-serif" font-size="16" font-weight="800">
+      POSTCODE HEATMAP &amp; TIME PEAKS
+    </text>
+
+    <g transform="translate(24, 90)">
+      <!-- Dark Kitchen Opportunity Card -->
+      <rect width="377" height="150" rx="16" fill="#0f172a"/>
+      <text x="20" y="30" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="12" font-weight="800">DARK KITCHEN SITE RECOMMENDATION</text>
+      <text x="20" y="60" fill="#ffffff" font-family="system-ui, sans-serif" font-size="18" font-weight="800">Postcode SW4 7AA (Southside)</text>
+      <text x="20" y="85" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">High unmet Asian cuisine demand • 12.5k target population</text>
+      
+      <rect x="20" y="105" width="140" height="26" rx="13" fill="#22c55e"/>
+      <text x="32" y="122" fill="#ffffff" font-family="system-ui, sans-serif" font-size="11" font-weight="800">⚡ HIGH ROI SCORE 9.4</text>
+
+      <!-- Peak Volume Window Chart -->
+      <g transform="translate(0, 175)">
+        <rect width="377" height="325" rx="16" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+        <text x="20" y="30" fill="#0f172a" font-family="system-ui, sans-serif" font-size="14" font-weight="800">24-HOUR ORDER DISTRIBUTION CURVE</text>
+        
+        <!-- Graph Area -->
+        <g transform="translate(20, 50)">
+          <!-- Grid Lines -->
+          <line x1="0" y1="200" x2="335" y2="200" stroke="#cbd5e1" stroke-width="1"/>
+          <line x1="0" y1="140" x2="335" y2="140" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4 4"/>
+          <line x1="0" y1="80" x2="335" y2="80" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4 4"/>
+          <line x1="0" y1="20" x2="335" y2="20" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4 4"/>
+
+          <!-- Shaded Area for Evening Peak -->
+          <path d="M 0 190 Q 60 185 100 130 T 160 160 T 230 40 T 290 110 L 335 180 L 335 200 L 0 200 Z" fill="#ffedd5" opacity="0.6"/>
+          
+          <!-- Curve Line -->
+          <path d="M 0 190 Q 60 185 100 130 T 160 160 T 230 40 T 290 110 L 335 180" fill="none" stroke="#ea580c" stroke-width="3.5" stroke-linecap="round"/>
+
+          <!-- Peak Marker -->
+          <circle cx="230" cy="40" r="6" fill="#ea580c"/>
+          <rect x="180" y="0" width="100" height="24" rx="6" fill="#0f172a"/>
+          <text x="190" y="16" fill="#ffffff" font-family="system-ui, sans-serif" font-size="10" font-weight="800">20:15 PEAK (4.2k)</text>
+
+          <!-- X-Axis Labels -->
+          <text x="0" y="225" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">06:00</text>
+          <text x="90" y="225" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">12:30 (Lunch)</text>
+          <text x="210" y="225" fill="#ea580c" font-family="system-ui, sans-serif" font-size="10" font-weight="700">20:00 (Dinner)</text>
+          <text x="300" y="225" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">00:00</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

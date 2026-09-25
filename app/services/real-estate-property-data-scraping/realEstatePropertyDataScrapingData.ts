@@ -36,7 +36,7 @@ export const realEstatePropertyDataScrapingData = {
     "Delivered as clean CSV, JSON or direct database integration",
   ],
   heroImage:
-    "/services/real-estate-property-data-scraping/real-estate-hero.svg",
+    "/services/real-estate-property-data-scraping/real-estate-hero.png",
   heroImageAlt: "Real estate property data scraping hero illustration",
   heroCtaIcon: Home,
 
@@ -65,7 +65,7 @@ export const realEstatePropertyDataScrapingData = {
   dataFieldsDescription:
     "We normalise listing, pricing, ownership, and neighbourhood data from real estate portals and public land records into a unified schema built for PropTech platforms, investment analysts, and property developers.",
   dataFieldsImage:
-    "/services/real-estate-property-data-scraping/real-estate-data-mockup.svg",
+    "/services/real-estate-property-data-scraping/real-estate-data-mockup.png",
   dataFieldsLeft: [
     "Property Address & Postcode",
     "Asking Price & Price History",
@@ -96,7 +96,7 @@ export const realEstatePropertyDataScrapingData = {
       description:
         "Capture every detail of active and historic property listings — from headline asking price and floor plans to price reduction timelines, listing refresh events, and final sold price — giving investors, valuers, and platform builders the full pricing narrative for any property or postcode.",
       image:
-        "/services/real-estate-property-data-scraping/real-estate-listing-scraping.svg",
+        "/services/real-estate-property-data-scraping/real-estate-listing-scraping.png",
       imageAlt: "Property listing and price history scraping illustration",
       bulletPoints: [
         {
@@ -118,7 +118,7 @@ export const realEstatePropertyDataScrapingData = {
       description:
         "Combine live rental asking prices with sale listing data to calculate gross and net rental yields at postcode, street, or property-type level — giving buy-to-let investors, fund managers, and mortgage brokers the financial metrics they need to evaluate acquisitions with confidence.",
       image:
-        "/services/real-estate-property-data-scraping/real-estate-rental-yield.svg",
+        "/services/real-estate-property-data-scraping/real-estate-rental-yield.png",
       imageAlt: "Rental yield and investment return analysis illustration",
       bulletPoints: [
         {
@@ -140,7 +140,7 @@ export const realEstatePropertyDataScrapingData = {
       description:
         "Scrape agent instruction volumes, average days-to-sell records, fee disclosures, and vendor review scores across all active estate agents in your target market — enabling comparison platforms, recruitment tools, and developer vendor selection processes to be powered by real performance data.",
       image:
-        "/services/real-estate-property-data-scraping/real-estate-agent-intelligence.svg",
+        "/services/real-estate-property-data-scraping/real-estate-agent-intelligence.png",
       imageAlt: "Estate agent performance and market coverage illustration",
       bulletPoints: [
         {
@@ -162,7 +162,7 @@ export const realEstatePropertyDataScrapingData = {
       description:
         "Augment every property record with hyper-local context — Ofsted-rated school distances, public transport walk scores, planning application history, flood risk indicators, and crime rate statistics — so your platform or investment model scores locations as thoroughly as it scores buildings.",
       image:
-        "/services/real-estate-property-data-scraping/real-estate-neighbourhood-data.svg",
+        "/services/real-estate-property-data-scraping/real-estate-neighbourhood-data.png",
       imageAlt: "Neighbourhood and location data enrichment illustration",
       bulletPoints: [
         {
@@ -206,7 +206,7 @@ export const realEstatePropertyDataScrapingData = {
     },
   ],
   benefitsImage:
-    "/services/real-estate-property-data-scraping/real-estate-benefits.svg",
+    "/services/real-estate-property-data-scraping/real-estate-benefits.png",
   benefitsImageAlt:
     "Real estate property data scraping benefits illustration",
 

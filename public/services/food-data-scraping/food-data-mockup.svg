@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="dfBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fff7ed"/>
+    </linearGradient>
+    <linearGradient id="dfHeader" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+    <filter id="dfShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0f172a" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="800" rx="32" fill="url(#dfBg)"/>
+
+  <!-- Subtle circles -->
+  <circle cx="400" cy="400" r="320" fill="none" stroke="#fed7aa" stroke-width="1.5" stroke-dasharray="6 6"/>
+  <circle cx="400" cy="400" r="220" fill="none" stroke="#ffedd5" stroke-width="1.5"/>
+
+  <!-- Center Card -->
+  <g filter="url(#dfShadow)" transform="translate(100, 70)">
+    <rect width="600" height="660" rx="24" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+    
+    <!-- Code Editor Header -->
+    <rect width="600" height="50" rx="24" fill="#1e293b"/>
+    <rect y="30" width="600" height="20" fill="#1e293b"/>
+    <circle cx="30" cy="25" r="6" fill="#ef4444"/>
+    <circle cx="50" cy="25" r="6" fill="#f59e0b"/>
+    <circle cx="70" cy="25" r="6" fill="#10b981"/>
+    <text x="110" y="30" fill="#94a3b8" font-family="monospace" font-size="13" font-weight="600">
+      restaurant_schema_normalized.json
+    </text>
+    <rect x="470" y="12" width="105" height="26" rx="13" fill="#f97316"/>
+    <text x="484" y="29" fill="#ffffff" font-family="system-ui, sans-serif" font-size="11" font-weight="800">200 OK</text>
+
+    <!-- JSON Code Snippet -->
+    <g transform="translate(30, 75)" font-family="monospace" font-size="13" line-height="22">
+      <text x="0" y="20" fill="#38bdf8">{</text>
+      <text x="20" y="45" fill="#f43f5e">"restaurant_id"</text><text x="175" y="45" fill="#94a3b8">:</text><text x="195" y="45" fill="#fef08a">"REST_NYC_90412"</text><text x="350" y="45" fill="#94a3b8">,</text>
+      
+      <text x="20" y="70" fill="#f43f5e">"brand_name"</text><text x="175" y="70" fill="#94a3b8">:</text><text x="195" y="70" fill="#fef08a">"Toscana Osteria &amp; Bar"</text><text x="410" y="70" fill="#94a3b8">,</text>
+      
+      <text x="20" y="95" fill="#f43f5e">"cuisine_tags"</text><text x="175" y="95" fill="#94a3b8">:</text><text x="195" y="95" fill="#38bdf8">[</text><text x="205" y="95" fill="#fef08a">"Italian"</text><text x="290" y="95" fill="#94a3b8">,</text><text x="305" y="95" fill="#fef08a">"Tuscan"</text><text x="385" y="95" fill="#38bdf8">]</text><text x="395" y="95" fill="#94a3b8">,</text>
+      
+      <text x="20" y="120" fill="#f43f5e">"rating_summary"</text><text x="175" y="120" fill="#94a3b8">:</text><text x="195" y="120" fill="#38bdf8">{</text>
+      <text x="40" y="145" fill="#f43f5e">"score"</text><text x="175" y="145" fill="#94a3b8">:</text><text x="195" y="145" fill="#4ade80">4.85</text><text x="235" y="145" fill="#94a3b8">,</text>
+      <text x="40" y="170" fill="#f43f5e">"reviews_count"</text><text x="175" y="170" fill="#94a3b8">:</text><text x="195" y="170" fill="#4ade80">3410</text>
+      <text x="20" y="195" fill="#38bdf8">}</text><text x="30" y="195" fill="#94a3b8">,</text>
+      
+      <text x="20" y="220" fill="#f43f5e">"location"</text><text x="175" y="220" fill="#94a3b8">:</text><text x="195" y="220" fill="#38bdf8">{</text>
+      <text x="40" y="245" fill="#f43f5e">"latitude"</text><text x="175" y="245" fill="#94a3b8">:</text><text x="195" y="245" fill="#4ade80">40.758896</text><text x="285" y="245" fill="#94a3b8">,</text>
+      <text x="40" y="270" fill="#f43f5e">"longitude"</text><text x="175" y="270" fill="#94a3b8">:</text><text x="195" y="270" fill="#4ade80">-73.985130</text><text x="295" y="270" fill="#94a3b8">,</text>
+      <text x="40" y="295" fill="#f43f5e">"postcode"</text><text x="175" y="295" fill="#94a3b8">:</text><text x="195" y="295" fill="#fef08a">"10036"</text>
+      <text x="20" y="320" fill="#38bdf8">}</text><text x="30" y="320" fill="#94a3b8">,</text>
+
+      <text x="20" y="345" fill="#f43f5e">"menu_sections"</text><text x="175" y="345" fill="#94a3b8">:</text><text x="195" y="345" fill="#38bdf8">[</text>
+      <text x="40" y="370" fill="#38bdf8">{</text>
+      <text x="60" y="395" fill="#f43f5e">"item_name"</text><text x="175" y="395" fill="#94a3b8">:</text><text x="195" y="395" fill="#fef08a">"Wild Truffle Gnocchi"</text><text x="410" y="395" fill="#94a3b8">,</text>
+      <text x="60" y="420" fill="#f43f5e">"item_price"</text><text x="175" y="420" fill="#94a3b8">:</text><text x="195" y="420" fill="#4ade80">24.50</text><text x="245" y="420" fill="#94a3b8">,</text>
+      <text x="60" y="445" fill="#f43f5e">"currency"</text><text x="175" y="445" fill="#94a3b8">:</text><text x="195" y="445" fill="#fef08a">"USD"</text><text x="245" y="445" fill="#94a3b8">,</text>
+      <text x="60" y="470" fill="#f43f5e">"allergens"</text><text x="175" y="470" fill="#94a3b8">:</text><text x="195" y="470" fill="#38bdf8">[</text><text x="205" y="470" fill="#fef08a">"Dairy"</text><text x="270" y="470" fill="#94a3b8">,</text><text x="285" y="470" fill="#fef08a">"Gluten"</text><text x="360" y="470" fill="#38bdf8">]</text>
+      <text x="40" y="495" fill="#38bdf8">}</text>
+      <text x="20" y="520" fill="#38bdf8">]</text>
+      <text x="0" y="545" fill="#38bdf8">}</text>
+    </g>
+
+    <!-- Bottom Status Bar -->
+    <rect y="610" width="600" height="50" rx="0" fill="#1e293b"/>
+    <text x="30" y="640" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">
+      ⚡ Schema Validation: <tspan fill="#22c55e" font-weight="700">100% PASSED</tspan> • Enriched with GPS &amp; Yelp ID
+    </text>
+  </g>
+</svg>

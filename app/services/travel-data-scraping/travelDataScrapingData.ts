@@ -27,7 +27,7 @@ export const travelDataScrapingData = {
     "Aggregate traveler reviews and sentiment from booking platforms",
     "Bypass advanced anti-bot systems on travel portals",
   ],
-  heroImage: "/services/travel-data-scraping/travel-hero.svg",
+  heroImage: "/services/travel-data-scraping/travel-hero.png",
   heroImageAlt: "Travel data scraping hero illustration",
   heroCtaIcon: Plane,
 
@@ -55,7 +55,7 @@ export const travelDataScrapingData = {
   dataFieldsTitle: "Structured Travel Data Fields",
   dataFieldsDescription:
     "We normalize travel data from OTAs, airline portals, and hotel booking engines into a unified schema ready for analytics and revenue management pipelines.",
-  dataFieldsImage: "/services/travel-data-scraping/travel-data-mockup.svg",
+  dataFieldsImage: "/services/travel-data-scraping/travel-data-mockup.png",
   dataFieldsLeft: [
     "Flight Route & Airline",
     "Departure & Arrival Time",
@@ -84,7 +84,7 @@ export const travelDataScrapingData = {
       title: "Real-Time Flight Fare Tracking",
       description:
         "Monitor airfare fluctuations across thousands of routes, airlines, and booking classes in real time. Our scrapers handle dynamic pricing engines, JavaScript-rendered search results, and session-based fare locking to deliver accurate, timestamped fare data for every query.",
-      image: "/services/travel-data-scraping/travel-flight-fares.svg",
+      image: "/services/travel-data-scraping/travel-flight-fares.png",
       imageAlt: "Flight fare tracking illustration",
       bulletPoints: [
         {
@@ -105,7 +105,7 @@ export const travelDataScrapingData = {
       title: "Hotel Rate Parity & Availability Scraping",
       description:
         "Ensure rate parity and uncover pricing inconsistencies across OTAs and direct hotel channels. We scrape room rates, cancellation policies, minimum stay requirements, and availability calendars across global hotel inventory at scale.",
-      image: "/services/travel-data-scraping/travel-hotel-rates.svg",
+      image: "/services/travel-data-scraping/travel-hotel-rates.png",
       imageAlt: "Hotel rate parity monitoring illustration",
       bulletPoints: [
         {
@@ -126,7 +126,7 @@ export const travelDataScrapingData = {
       title: "Tour Package & Vacation Rental Intelligence",
       description:
         "Stay ahead of competitor tour operators and vacation rental hosts by monitoring package inclusions, nightly rates, property amenities, and promotional offers across global booking platforms and listing aggregators.",
-      image: "/services/travel-data-scraping/travel-packages.svg",
+      image: "/services/travel-data-scraping/travel-packages.png",
       imageAlt: "Tour packages and vacation rental illustration",
       bulletPoints: [
         {
@@ -147,7 +147,7 @@ export const travelDataScrapingData = {
       title: "Traveler Reviews & Sentiment Analytics",
       description:
         "Aggregate thousands of traveler reviews, star ratings, response times, and verified guest feedback from leading booking platforms, review aggregators, and meta-search sites to fuel reputation management and product improvement strategies.",
-      image: "/services/travel-data-scraping/travel-reviews.svg",
+      image: "/services/travel-data-scraping/travel-reviews.png",
       imageAlt: "Traveler reviews and sentiment illustration",
       bulletPoints: [
         {
@@ -190,7 +190,7 @@ export const travelDataScrapingData = {
         "Mine traveler reviews at scale to identify recurring pain points, surface unmet expectations, and benchmark your service quality against the competition.",
     },
   ],
-  benefitsImage: "/services/travel-data-scraping/travel-benefits.svg",
+  benefitsImage: "/services/travel-data-scraping/travel-benefits.png",
   benefitsImageAlt: "Travel data scraping benefits illustration",
 
   // Everything You Need section (Grid)

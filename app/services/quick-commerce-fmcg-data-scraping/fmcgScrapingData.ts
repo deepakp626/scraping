@@ -26,7 +26,7 @@ export const fmcgScrapingData = {
     "Benchmark brand visibility across 50+ retail portals",
     "Bypass advanced anti-bot systems on retail platforms",
   ],
-  heroImage: "/services/quick-commerce-fmcg-data-scraping/fmcg-hero.svg",
+  heroImage: "/services/quick-commerce-fmcg-data-scraping/fmcg-hero.png",
   heroImageAlt: "FMCG data scraping hero illustration",
   heroCtaIcon: Database,
 
@@ -55,7 +55,7 @@ export const fmcgScrapingData = {
   dataFieldsDescription:
     "We normalize FMCG data across retail portals, supermarkets, and quick commerce apps into a unified schema ready for analytics.",
   dataFieldsImage:
-    "/services/quick-commerce-fmcg-data-scraping/fmcg-data-mockup.svg",
+    "/services/quick-commerce-fmcg-data-scraping/fmcg-data-mockup.png",
   dataFieldsLeft: [
     "Product Name & Brand",
     "SKU / EAN / Barcode",
@@ -85,7 +85,7 @@ export const fmcgScrapingData = {
       description:
         "Know exactly where your brand appears across category search pages on retailer websites and apps. Our scrapers extract paginated search result sets for hundreds of keywords daily to calculate your share-of-search and organic shelf visibility index.",
       image:
-        "/services/quick-commerce-fmcg-data-scraping/fmcg-search-rank.svg",
+        "/services/quick-commerce-fmcg-data-scraping/fmcg-search-rank.png",
       imageAlt: "Share-of-search and shelf rank illustration",
       bulletPoints: [
         {
@@ -107,7 +107,7 @@ export const fmcgScrapingData = {
       description:
         "Retail media investment is growing rapidly. We audit sponsored product listings, category banner placements, and home-page hero ads to verify your media spend is delivering maximum visibility and ensure compliance with retailer agreements.",
       image:
-        "/services/quick-commerce-fmcg-data-scraping/fmcg-banner-ads.svg",
+        "/services/quick-commerce-fmcg-data-scraping/fmcg-banner-ads.png",
       imageAlt: "Banner ad placement monitoring illustration",
       bulletPoints: [
         {
@@ -129,7 +129,7 @@ export const fmcgScrapingData = {
       description:
         "Consumer trust is built on ratings and reviews. We scrape star ratings, review texts, and verified purchase counts across every SKU, enabling sentiment analysis and reputation monitoring at product level.",
       image:
-        "/services/quick-commerce-fmcg-data-scraping/fmcg-ratings.svg",
+        "/services/quick-commerce-fmcg-data-scraping/fmcg-ratings.png",
       imageAlt: "Product ratings and reviews illustration",
       bulletPoints: [
         {
@@ -151,7 +151,7 @@ export const fmcgScrapingData = {
       description:
         "Keep pace with competitor price moves and promotional activities. We track competitor SKU catalogues, pricing, discount events, and new product launches to feed your pricing and assortment strategy engines.",
       image:
-        "/services/quick-commerce-fmcg-data-scraping/fmcg-competitor.svg",
+        "/services/quick-commerce-fmcg-data-scraping/fmcg-competitor.png",
       imageAlt: "Competitor pricing intelligence illustration",
       bulletPoints: [
         {
@@ -195,7 +195,7 @@ export const fmcgScrapingData = {
     },
   ],
   benefitsImage:
-    "/services/quick-commerce-fmcg-data-scraping/fmcg-benefits.svg",
+    "/services/quick-commerce-fmcg-data-scraping/fmcg-benefits.png",
   benefitsImageAlt: "FMCG data scraping benefits illustration",
 
   // Everything You Need section (Grid)
@@ -279,128 +279,123 @@ export const fmcgScrapingData = {
   platforms: [
     {
       imagePath:
-        "/services/quick-commerce-fmcg-data-scraping/fmcg-icons/amazon-fresh.svg",
-      name: "Amazon Fresh",
-    },
-    {
-      imagePath:
-        "/services/quick-commerce-fmcg-data-scraping/fmcg-icons/walmart.svg",
+        "/services/grocery-scraping/grocery-icons/walmart.svg",
       name: "Walmart",
     },
     {
       imagePath:
-        "/services/quick-commerce-fmcg-data-scraping/fmcg-icons/ocado.svg",
-      name: "Ocado",
-    },
-    {
-      imagePath:
-        "/services/quick-commerce-fmcg-data-scraping/fmcg-icons/sainsburys.svg",
-      name: "Sainsbury's",
-    },
-    {
-      imagePath:
-        "/services/quick-commerce-fmcg-data-scraping/fmcg-icons/tesco.svg",
-      name: "Tesco",
-    },
-    {
-      imagePath:
-        "/services/quick-commerce-fmcg-data-scraping/fmcg-icons/asda.svg",
-      name: "Asda",
-    },
-    {
-      imagePath:
-        "/services/quick-commerce-fmcg-data-scraping/fmcg-icons/morrisons.svg",
-      name: "Morrisons",
-    },
-    {
-      imagePath:
-        "/services/quick-commerce-fmcg-data-scraping/fmcg-icons/kroger.svg",
-      name: "Kroger",
-    },
-    {
-      imagePath:
-        "/services/quick-commerce-fmcg-data-scraping/fmcg-icons/instacart.svg",
-      name: "Instacart",
-    },
-    {
-      imagePath:
-        "/services/quick-commerce-fmcg-data-scraping/fmcg-icons/carrefour.svg",
-      name: "Carrefour",
-    },
-    {
-      imagePath:
-        "/services/quick-commerce-fmcg-data-scraping/fmcg-icons/albertsons.svg",
-      name: "Albertsons",
-    },
-    {
-      imagePath:
-        "/services/quick-commerce-fmcg-data-scraping/fmcg-icons/target.svg",
+        "/services/grocery-scraping/grocery-icons/target.svg",
       name: "Target",
     },
     {
       imagePath:
-        "/services/quick-commerce-fmcg-data-scraping/fmcg-icons/costco.svg",
-      name: "Costco",
+        "/services/grocery-scraping/grocery-icons/tesco.svg",
+      name: "Tesco",
     },
     {
       imagePath:
-        "/services/quick-commerce-fmcg-data-scraping/fmcg-icons/aldi.svg",
+        "/services/grocery-scraping/grocery-icons/carrefour.svg",
+      name: "Carrefour",
+    },
+    {
+      imagePath:
+        "/services/grocery-scraping/grocery-icons/kroger.svg",
+      name: "Kroger",
+    },
+    {
+      imagePath:
+        "/services/grocery-scraping/grocery-icons/aldi.svg",
       name: "Aldi",
     },
     {
       imagePath:
-        "/services/quick-commerce-fmcg-data-scraping/fmcg-icons/lidl.svg",
-      name: "Lidl",
-    },
-    {
-      imagePath:
-        "/services/quick-commerce-fmcg-data-scraping/fmcg-icons/blinkit.svg",
-      name: "Blinkit",
-    },
-    {
-      imagePath:
-        "/services/quick-commerce-fmcg-data-scraping/fmcg-icons/zepto.svg",
-      name: "Zepto",
-    },
-    {
-      imagePath:
-        "/services/quick-commerce-fmcg-data-scraping/fmcg-icons/swiggy-instamart.svg",
-      name: "Swiggy Instamart",
-    },
-    {
-      imagePath:
-        "/services/quick-commerce-fmcg-data-scraping/fmcg-icons/bigbasket.svg",
-      name: "BigBasket",
-    },
-    {
-      imagePath:
-        "/services/quick-commerce-fmcg-data-scraping/fmcg-icons/gorillas.svg",
-      name: "Gorillas",
-    },
-    {
-      imagePath:
-        "/services/quick-commerce-fmcg-data-scraping/fmcg-icons/getir.svg",
-      name: "Getir",
-    },
-    {
-      imagePath:
-        "/services/quick-commerce-fmcg-data-scraping/fmcg-icons/woolworths.svg",
+        "/services/grocery-scraping/grocery-icons/woolworths.svg",
       name: "Woolworths",
     },
     {
       imagePath:
-        "/services/quick-commerce-fmcg-data-scraping/fmcg-icons/coles.svg",
-      name: "Coles",
+        "/services/grocery-scraping/grocery-icons/instacart.svg",
+      name: "Instacart",
     },
     {
       imagePath:
-        "/services/quick-commerce-fmcg-data-scraping/fmcg-icons/flipkart-grocery.svg",
+        "/services/quick-commerce-scraping/quick-commerce-icons/blinkit.svg",
+      name: "Blinkit",
+    },
+    {
+      imagePath:
+        "/services/quick-commerce-scraping/quick-commerce-icons/zepto.svg",
+      name: "Zepto",
+    },
+    {
+      imagePath:
+        "/services/quick-commerce-scraping/quick-commerce-icons/getir.svg",
+      name: "Getir",
+    },
+    {
+      imagePath:
+        "/services/quick-commerce-scraping/quick-commerce-icons/gorillas.svg",
+      name: "Gorillas",
+    },
+    {
+      imagePath:
+        "/services/quick-commerce-scraping/quick-commerce-icons/gopuff.svg",
+      name: "Gopuff",
+    },
+    {
+      imagePath:
+        "/services/quick-commerce-scraping/quick-commerce-icons/flink.svg",
+      name: "Flink",
+    },
+    {
+      imagePath:
+        "/services/quick-commerce-scraping/quick-commerce-icons/glovo-express.svg",
+      name: "Glovo Express",
+    },
+    {
+      imagePath:
+        "/services/quick-commerce-scraping/quick-commerce-icons/talabat.svg",
+      name: "Talabat Mart",
+    },
+    {
+      imagePath:
+        "/services/quick-commerce-scraping/quick-commerce-icons/pandamart.svg",
+      name: "Foodpanda Pandamart",
+    },
+    {
+      imagePath:
+        "/services/quick-commerce-scraping/quick-commerce-icons/deliveroo-hop.svg",
+      name: "Deliveroo Hop",
+    },
+    {
+      imagePath:
+        "/services/quick-commerce-scraping/quick-commerce-icons/dashmart.svg",
+      name: "DoorDash DashMart",
+    },
+    {
+      imagePath:
+        "/services/quick-commerce-scraping/quick-commerce-icons/uber-grocery.svg",
+      name: "Uber Grocery",
+    },
+    {
+      imagePath:
+        "/services/ecommerce-data-scraping/ecommerce-icons/Flipkart.svg",
       name: "Flipkart Grocery",
     },
     {
       imagePath:
-        "/services/quick-commerce-fmcg-data-scraping/fmcg-icons/jiomart.svg",
-      name: "JioMart",
+        "/images/slider/Unilever.svg",
+      name: "Unilever Brands",
+    },
+    {
+      imagePath:
+        "/images/slider/P-g.svg",
+      name: "P&G Consumer",
+    },
+    {
+      imagePath:
+        "/images/slider/TATA-Consumer-logo.svg",
+      name: "Tata Consumer",
     },
   ],
 };

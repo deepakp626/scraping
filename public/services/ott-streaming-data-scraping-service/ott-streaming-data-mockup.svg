@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f4ff"/>
+      <stop offset="100%" style="stop-color:#ede9fe"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c3aed"/>
+      <stop offset="100%" style="stop-color:#4f46e5"/>
+    </linearGradient>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed"/>
+      <stop offset="100%" style="stop-color:#6366f1"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#7c3aed" flood-opacity="0.15"/>
+    </filter>
+    <filter id="softShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="540" fill="url(#bgGrad)" rx="16"/>
+
+  <!-- Decorative circles -->
+  <circle cx="820" cy="80" r="120" fill="#7c3aed" opacity="0.06"/>
+  <circle cx="100" cy="460" r="80" fill="#6366f1" opacity="0.08"/>
+  <circle cx="450" cy="20" r="50" fill="#8b5cf6" opacity="0.05"/>
+
+  <!-- Main table card -->
+  <rect x="40" y="40" width="820" height="460" rx="16" fill="white" filter="url(#shadow)"/>
+
+  <!-- Table header -->
+  <rect x="40" y="40" width="820" height="56" rx="16" fill="url(#headerGrad)"/>
+  <rect x="40" y="72" width="820" height="24" rx="0" fill="url(#headerGrad)"/>
+
+  <!-- Header labels -->
+  <text x="70" y="74" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="white">TITLE</text>
+  <text x="220" y="74" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="white">GENRE</text>
+  <text x="340" y="74" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="white">PLATFORM</text>
+  <text x="470" y="74" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="white">RATING</text>
+  <text x="560" y="74" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="white">REGION</text>
+  <text x="680" y="74" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="white">TYPE</text>
+  <text x="780" y="74" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="white">YEAR</text>
+
+  <!-- Row 1 -->
+  <rect x="40" y="96" width="820" height="52" fill="#faf9ff"/>
+  <!-- Thumbnail -->
+  <rect x="58" y="104" width="36" height="36" rx="6" fill="#7c3aed"/>
+  <polygon points="69,115 69,131 82,123" fill="white"/>
+  <text x="102" y="121" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#1e1b4b">Stranger Things</text>
+  <text x="102" y="136" font-family="Inter, sans-serif" font-size="11" fill="#6b7280">S4 • 9 Episodes</text>
+  <!-- Genre tag -->
+  <rect x="215" y="112" width="64" height="20" rx="10" fill="#ede9fe"/>
+  <text x="231" y="126" font-family="Inter, sans-serif" font-size="11" font-weight="500" fill="#7c3aed">Sci-Fi</text>
+  <!-- Platform -->
+  <rect x="338" y="112" width="68" height="20" rx="10" fill="#fef3c7"/>
+  <text x="351" y="126" font-family="Inter, sans-serif" font-size="11" font-weight="500" fill="#d97706">Netflix</text>
+  <!-- Rating -->
+  <text x="474" y="126" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#f59e0b">★ 8.7</text>
+  <!-- Region -->
+  <text x="560" y="121" font-family="Inter, sans-serif" font-size="11" fill="#374151">🌍 Global</text>
+  <!-- Type -->
+  <rect x="678" y="112" width="66" height="20" rx="10" fill="#dcfce7"/>
+  <text x="692" y="126" font-family="Inter, sans-serif" font-size="11" font-weight="500" fill="#16a34a">Original</text>
+  <!-- Year -->
+  <text x="785" y="126" font-family="Inter, sans-serif" font-size="13" fill="#374151">2022</text>
+
+  <!-- Row 2 -->
+  <rect x="40" y="148" width="820" height="52" fill="white"/>
+  <rect x="58" y="156" width="36" height="36" rx="6" fill="#4f46e5"/>
+  <polygon points="69,167 69,183 82,175" fill="white"/>
+  <text x="102" y="173" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#1e1b4b">The Boys</text>
+  <text x="102" y="188" font-family="Inter, sans-serif" font-size="11" fill="#6b7280">S3 • 8 Episodes</text>
+  <rect x="215" y="164" width="72" height="20" rx="10" fill="#fee2e2"/>
+  <text x="229" y="178" font-family="Inter, sans-serif" font-size="11" font-weight="500" fill="#dc2626">Action</text>
+  <rect x="338" y="164" width="80" height="20" rx="10" fill="#dbeafe"/>
+  <text x="345" y="178" font-family="Inter, sans-serif" font-size="11" font-weight="500" fill="#2563eb">Prime Video</text>
+  <text x="474" y="178" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#f59e0b">★ 8.9</text>
+  <text x="560" y="173" font-family="Inter, sans-serif" font-size="11" fill="#374151">🌍 Global</text>
+  <rect x="678" y="164" width="66" height="20" rx="10" fill="#dcfce7"/>
+  <text x="692" y="178" font-family="Inter, sans-serif" font-size="11" font-weight="500" fill="#16a34a">Original</text>
+  <text x="785" y="178" font-family="Inter, sans-serif" font-size="13" fill="#374151">2022</text>
+
+  <!-- Row 3 -->
+  <rect x="40" y="200" width="820" height="52" fill="#faf9ff"/>
+  <rect x="58" y="208" width="36" height="36" rx="6" fill="#ec4899"/>
+  <polygon points="69,219 69,235 82,227" fill="white"/>
+  <text x="102" y="225" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#1e1b4b">Succession</text>
+  <text x="102" y="240" font-family="Inter, sans-serif" font-size="11" fill="#6b7280">S4 • 10 Episodes</text>
+  <rect x="215" y="216" width="56" height="20" rx="10" fill="#fce7f3"/>
+  <text x="229" y="230" font-family="Inter, sans-serif" font-size="11" font-weight="500" fill="#be185d">Drama</text>
+  <rect x="338" y="216" width="72" height="20" rx="10" fill="#f3e8ff"/>
+  <text x="352" y="230" font-family="Inter, sans-serif" font-size="11" font-weight="500" fill="#7c3aed">HBO Max</text>
+  <text x="474" y="230" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#f59e0b">★ 9.3</text>
+  <text x="560" y="225" font-family="Inter, sans-serif" font-size="11" fill="#374151">🇺🇸 US/UK</text>
+  <rect x="678" y="216" width="74" height="20" rx="10" fill="#fef3c7"/>
+  <text x="688" y="230" font-family="Inter, sans-serif" font-size="11" font-weight="500" fill="#d97706">Licensed</text>
+  <text x="785" y="230" font-family="Inter, sans-serif" font-size="13" fill="#374151">2023</text>
+
+  <!-- Row 4 -->
+  <rect x="40" y="252" width="820" height="52" fill="white"/>
+  <rect x="58" y="260" width="36" height="36" rx="6" fill="#0ea5e9"/>
+  <polygon points="69,271 69,287 82,279" fill="white"/>
+  <text x="102" y="277" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#1e1b4b">Andor</text>
+  <text x="102" y="292" font-family="Inter, sans-serif" font-size="11" fill="#6b7280">S1 • 12 Episodes</text>
+  <rect x="215" y="268" width="70" height="20" rx="10" fill="#e0f2fe"/>
+  <text x="228" y="282" font-family="Inter, sans-serif" font-size="11" font-weight="500" fill="#0284c7">Sci-Fi</text>
+  <rect x="338" y="268" width="68" height="20" rx="10" fill="#dbeafe"/>
+  <text x="349" y="282" font-family="Inter, sans-serif" font-size="11" font-weight="500" fill="#2563eb">Disney+</text>
+  <text x="474" y="282" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#f59e0b">★ 8.4</text>
+  <text x="560" y="277" font-family="Inter, sans-serif" font-size="11" fill="#374151">🌍 Global</text>
+  <rect x="678" y="268" width="66" height="20" rx="10" fill="#dcfce7"/>
+  <text x="692" y="282" font-family="Inter, sans-serif" font-size="11" font-weight="500" fill="#16a34a">Original</text>
+  <text x="785" y="282" font-family="Inter, sans-serif" font-size="13" fill="#374151">2022</text>
+
+  <!-- Row 5 -->
+  <rect x="40" y="304" width="820" height="52" fill="#faf9ff"/>
+  <rect x="58" y="312" width="36" height="36" rx="6" fill="#f97316"/>
+  <polygon points="69,323 69,339 82,331" fill="white"/>
+  <text x="102" y="329" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#1e1b4b">Ted Lasso</text>
+  <text x="102" y="344" font-family="Inter, sans-serif" font-size="11" fill="#6b7280">S3 • 12 Episodes</text>
+  <rect x="215" y="320" width="60" height="20" rx="10" fill="#ffedd5"/>
+  <text x="228" y="334" font-family="Inter, sans-serif" font-size="11" font-weight="500" fill="#ea580c">Comedy</text>
+  <rect x="338" y="320" width="68" height="20" rx="10" fill="#f1f5f9"/>
+  <text x="350" y="334" font-family="Inter, sans-serif" font-size="11" font-weight="500" fill="#475569">Apple TV+</text>
+  <text x="474" y="334" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#f59e0b">★ 8.8</text>
+  <text x="560" y="329" font-family="Inter, sans-serif" font-size="11" fill="#374151">🌍 Global</text>
+  <rect x="678" y="320" width="66" height="20" rx="10" fill="#dcfce7"/>
+  <text x="692" y="334" font-family="Inter, sans-serif" font-size="11" font-weight="500" fill="#16a34a">Original</text>
+  <text x="785" y="334" font-family="Inter, sans-serif" font-size="13" fill="#374151">2023</text>
+
+  <!-- Row 6 -->
+  <rect x="40" y="356" width="820" height="52" fill="white"/>
+  <rect x="58" y="364" width="36" height="36" rx="6" fill="#10b981"/>
+  <polygon points="69,375 69,391 82,383" fill="white"/>
+  <text x="102" y="381" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#1e1b4b">Yellowstone</text>
+  <text x="102" y="396" font-family="Inter, sans-serif" font-size="11" fill="#6b7280">S5 • 14 Episodes</text>
+  <rect x="215" y="372" width="56" height="20" rx="10" fill="#d1fae5"/>
+  <text x="226" y="386" font-family="Inter, sans-serif" font-size="11" font-weight="500" fill="#059669">Drama</text>
+  <rect x="338" y="372" width="80" height="20" rx="10" fill="#fce7f3"/>
+  <text x="348" y="386" font-family="Inter, sans-serif" font-size="11" font-weight="500" fill="#be185d">Paramount+</text>
+  <text x="474" y="386" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#f59e0b">★ 8.6</text>
+  <text x="560" y="381" font-family="Inter, sans-serif" font-size="11" fill="#374151">🇺🇸 US Only</text>
+  <rect x="678" y="372" width="74" height="20" rx="10" fill="#fef3c7"/>
+  <text x="688" y="386" font-family="Inter, sans-serif" font-size="11" font-weight="500" fill="#d97706">Licensed</text>
+  <text x="785" y="386" font-family="Inter, sans-serif" font-size="13" fill="#374151">2022</text>
+
+  <!-- Divider line -->
+  <rect x="40" y="408" width="820" height="1" fill="#e5e7eb"/>
+
+  <!-- Bottom stats row -->
+  <rect x="40" y="409" width="820" height="91" rx="0" fill="white"/>
+  <rect x="40" y="468" width="820" height="32" rx="16" fill="white"/>
+
+  <!-- Stats cards at bottom -->
+  <rect x="60" y="420" width="160" height="60" rx="10" fill="#ede9fe"/>
+  <text x="140" y="445" font-family="Inter, sans-serif" font-size="22" font-weight="800" fill="#7c3aed" text-anchor="middle">1M+</text>
+  <text x="140" y="463" font-family="Inter, sans-serif" font-size="11" fill="#6b7280" text-anchor="middle">Titles Indexed</text>
+
+  <rect x="240" y="420" width="160" height="60" rx="10" fill="#dbeafe"/>
+  <text x="320" y="445" font-family="Inter, sans-serif" font-size="22" font-weight="800" fill="#2563eb" text-anchor="middle">85+</text>
+  <text x="320" y="463" font-family="Inter, sans-serif" font-size="11" fill="#6b7280" text-anchor="middle">Platforms Covered</text>
+
+  <rect x="420" y="420" width="160" height="60" rx="10" fill="#d1fae5"/>
+  <text x="500" y="445" font-family="Inter, sans-serif" font-size="22" font-weight="800" fill="#059669" text-anchor="middle">99.5%</text>
+  <text x="500" y="463" font-family="Inter, sans-serif" font-size="11" fill="#6b7280" text-anchor="middle">Data Freshness</text>
+
+  <rect x="600" y="420" width="160" height="60" rx="10" fill="#fce7f3"/>
+  <text x="680" y="445" font-family="Inter, sans-serif" font-size="22" font-weight="800" fill="#be185d" text-anchor="middle">24/7</text>
+  <text x="680" y="463" font-family="Inter, sans-serif" font-size="11" fill="#6b7280" text-anchor="middle">Live Monitoring</text>
+</svg>

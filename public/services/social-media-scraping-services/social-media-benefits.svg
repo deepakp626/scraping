@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="480" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#f9f7ff"/>
+      <stop offset="50%" stop-color="#f0ebff"/>
+      <stop offset="100%" stop-color="#e8f5e9"/>
+    </linearGradient>
+    <linearGradient id="heroGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="8" stdDeviation="20" flood-color="#7c3aed" flood-opacity="0.12"/>
+    </filter>
+    <filter id="cardShadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="10" flood-color="#4f46e5" flood-opacity="0.1"/>
+    </filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="480" fill="url(#bg)"/>
+
+  <!-- Background decoration circles -->
+  <circle cx="700" cy="80" r="140" fill="#7c3aed" fill-opacity="0.05"/>
+  <circle cx="100" cy="400" r="120" fill="#10b981" fill-opacity="0.05"/>
+  <circle cx="400" cy="480" r="100" fill="#4f46e5" fill-opacity="0.04"/>
+
+  <!-- Main benefit cards grid -->
+
+  <!-- Card 1 - Stronger Campaign Decisions -->
+  <g filter="url(#cardShadow)">
+    <rect x="40" y="30" width="335" height="190" rx="18" fill="white" stroke="#ede9fe" stroke-width="1.5"/>
+  </g>
+  <!-- Purple accent top bar -->
+  <rect x="40" y="30" width="335" height="6" rx="18" fill="url(#heroGrad)"/>
+  <rect x="40" y="33" width="335" height="3" fill="url(#heroGrad)"/>
+  <!-- Icon circle -->
+  <circle cx="78" cy="85" r="26" fill="#ede9fe"/>
+  <!-- Chart icon -->
+  <rect x="64" y="78" width="7" height="14" rx="2" fill="#7c3aed"/>
+  <rect x="75" y="71" width="7" height="21" rx="2" fill="#7c3aed"/>
+  <rect x="86" y="74" width="7" height="18" rx="2" fill="#a78bfa"/>
+  <!-- Trend line -->
+  <polyline points="64,77 79,70 93,73" stroke="#10b981" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <text x="115" y="78" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" fill="#1e1b4b">Stronger Campaign</text>
+  <text x="115" y="96" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" fill="#1e1b4b">Decisions</text>
+  <text x="57" y="130" font-family="Inter,Arial,sans-serif" font-size="11" fill="#4b5563" leading="1.6">Use raw audience and engagement data</text>
+  <text x="57" y="147" font-family="Inter,Arial,sans-serif" font-size="11" fill="#4b5563">to optimize creative execution, posting</text>
+  <text x="57" y="164" font-family="Inter,Arial,sans-serif" font-size="11" fill="#4b5563">schedules, and promotion strategies.</text>
+  <!-- ROI badge -->
+  <rect x="57" y="180" width="100" height="26" rx="13" fill="#ede9fe"/>
+  <text x="107" y="197" font-family="Inter,Arial,sans-serif" font-size="10" fill="#7c3aed" text-anchor="middle" font-weight="600">+42% Campaign ROI</text>
+
+  <!-- Card 2 - Crisis Monitoring -->
+  <g filter="url(#cardShadow)">
+    <rect x="425" y="30" width="335" height="190" rx="18" fill="white" stroke="#fce7f3" stroke-width="1.5"/>
+  </g>
+  <rect x="425" y="30" width="335" height="6" rx="18" fill="#ec4899"/>
+  <rect x="425" y="33" width="335" height="3" fill="#ec4899"/>
+  <!-- Icon circle -->
+  <circle cx="463" cy="85" r="26" fill="#fce7f3"/>
+  <!-- Shield icon -->
+  <path d="M463 70 L476 76 L476 87 Q476 96 463 101 Q450 96 450 87 L450 76 Z" fill="none" stroke="#ec4899" stroke-width="2.5" stroke-linejoin="round"/>
+  <polyline points="456,87 461,92 470,81" stroke="#ec4899" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="500" y="78" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" fill="#1e1b4b">Crisis &amp; Reputation</text>
+  <text x="500" y="96" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" fill="#1e1b4b">Monitoring</text>
+  <text x="442" y="130" font-family="Inter,Arial,sans-serif" font-size="11" fill="#4b5563">Spot negative sentiment and emerging</text>
+  <text x="442" y="147" font-family="Inter,Arial,sans-serif" font-size="11" fill="#4b5563">issues quickly so you can respond before</text>
+  <text x="442" y="164" font-family="Inter,Arial,sans-serif" font-size="11" fill="#4b5563">they escalate across social channels.</text>
+  <!-- Alert badge -->
+  <rect x="442" y="180" width="110" height="26" rx="13" fill="#fce7f3"/>
+  <text x="497" y="197" font-family="Inter,Arial,sans-serif" font-size="10" fill="#ec4899" text-anchor="middle" font-weight="600">Real-time alerts</text>
+
+  <!-- Card 3 - Growth Visibility -->
+  <g filter="url(#cardShadow)">
+    <rect x="40" y="260" width="335" height="190" rx="18" fill="white" stroke="#d1fae5" stroke-width="1.5"/>
+  </g>
+  <rect x="40" y="260" width="335" height="6" rx="18" fill="url(#greenGrad)"/>
+  <rect x="40" y="263" width="335" height="3" fill="url(#greenGrad)"/>
+  <!-- Icon circle -->
+  <circle cx="78" cy="315" r="26" fill="#d1fae5"/>
+  <!-- Growth arrow icon -->
+  <polyline points="62,324 72,314 82,319 92,307" stroke="#10b981" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="92,301 98,307 92,313" fill="#10b981"/>
+  <text x="115" y="308" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" fill="#1e1b4b">Growth &amp; Engagement</text>
+  <text x="115" y="326" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" fill="#1e1b4b">Visibility</text>
+  <text x="57" y="360" font-family="Inter,Arial,sans-serif" font-size="11" fill="#4b5563">Track follower changes, engagement</text>
+  <text x="57" y="377" font-family="Inter,Arial,sans-serif" font-size="11" fill="#4b5563">performance, and community health to</text>
+  <text x="57" y="394" font-family="Inter,Arial,sans-serif" font-size="11" fill="#4b5563">measure social ROI accurately.</text>
+  <!-- Metric badge -->
+  <rect x="57" y="410" width="125" height="26" rx="13" fill="#d1fae5"/>
+  <text x="119" y="427" font-family="Inter,Arial,sans-serif" font-size="10" fill="#059669" text-anchor="middle" font-weight="600">Followers tracked: 2.1M+</text>
+
+  <!-- Card 4 - Competitor Intelligence -->
+  <g filter="url(#cardShadow)">
+    <rect x="425" y="260" width="335" height="190" rx="18" fill="white" stroke="#fef3c7" stroke-width="1.5"/>
+  </g>
+  <rect x="425" y="260" width="335" height="6" rx="18" fill="url(#orangeGrad)"/>
+  <rect x="425" y="263" width="335" height="3" fill="url(#orangeGrad)"/>
+  <!-- Icon circle -->
+  <circle cx="463" cy="315" r="26" fill="#fef3c7"/>
+  <!-- Eye / scan icon -->
+  <ellipse cx="463" cy="315" rx="14" ry="9" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+  <circle cx="463" cy="315" r="4" fill="#f59e0b"/>
+  <!-- scan lines -->
+  <line x1="450" y1="308" x2="447" y2="305" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="476" y1="308" x2="479" y2="305" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="450" y1="322" x2="447" y2="325" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="476" y1="322" x2="479" y2="325" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="500" y="308" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" fill="#1e1b4b">Competitor Content</text>
+  <text x="500" y="326" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" fill="#1e1b4b">Intelligence</text>
+  <text x="442" y="360" font-family="Inter,Arial,sans-serif" font-size="11" fill="#4b5563">Understand what content works best for</text>
+  <text x="442" y="377" font-family="Inter,Arial,sans-serif" font-size="11" fill="#4b5563">competitors and learn which themes drive</text>
+  <text x="442" y="394" font-family="Inter,Arial,sans-serif" font-size="11" fill="#4b5563">the most engagement in your category.</text>
+  <!-- Badge -->
+  <rect x="442" y="410" width="110" height="26" rx="13" fill="#fef3c7"/>
+  <text x="497" y="427" font-family="Inter,Arial,sans-serif" font-size="10" fill="#d97706" text-anchor="middle" font-weight="600">50+ brands tracked</text>
+
+  <!-- Center connector decoration -->
+  <circle cx="400" cy="233" r="18" fill="white" stroke="#e5e7eb" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="400" y="238" font-family="Inter,Arial,sans-serif" font-size="16" fill="#7c3aed" text-anchor="middle" font-weight="700">+</text>
+</svg>
