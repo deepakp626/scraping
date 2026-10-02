@@ -196,24 +196,43 @@ export async function executeCode(
   }
 }
 
-export function formatOutput(result: ExecutionResult): {
+export function formatOutput(result: ExecutionResult | any): {
   text: string;
   isError: boolean;
   statusLabel: string;
 } {
-  const statusId = result.status?.id ?? 0;
-  const isError = statusId > 3;
+  const statusId =
+    typeof result.status === "object" && result.status !== null
+      ? result.status?.id ?? result.status_id ?? 0
+      : typeof result.status_id === "number"
+      ? result.status_id
+      : 0;
+
+  const statusLabel =
+    typeof result.status === "object" && result.status !== null
+      ? result.status?.description || "Unknown"
+      : typeof result.status === "string" && result.status.trim()
+      ? result.status
+      : statusId === 3
+      ? "Accepted"
+      : "Unknown";
+
+  const isError =
+    statusId > 3 ||
+    (statusLabel !== "Unknown" &&
+      statusLabel.toLowerCase() !== "accepted" &&
+      Boolean(result.stderr || result.compile_output));
 
   let text = "";
   if (result.compile_output) text += `[Compile Error]\n${result.compile_output}\n`;
   if (result.stderr) text += result.stderr;
   if (result.stdout) text += result.stdout;
   if (result.message) text += `\n[System Message]: ${result.message}\n`;
-  if (!text) text = isError ? result.status?.description || "Unknown error" : "(no output)";
+  if (!text) text = isError ? statusLabel || "Unknown error" : "(no output)";
 
   return {
     text: text.trim(),
     isError,
-    statusLabel: result.status?.description || "Unknown",
+    statusLabel,
   };
 }

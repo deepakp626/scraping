@@ -3,8 +3,7 @@
  * Base URL is configured via environment variables with fallback to localhost.
  */
 
-export const API_BASE_URL =
-  process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:8000";
+export const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:8000";
 
 export const API_ENDPOINTS = {
   // Base / Health Check
@@ -35,9 +34,16 @@ export const API_ENDPOINTS = {
   BLOG: {
     LIST: `${API_BASE_URL}/api/blog/posts`,
     DETAIL: (slugOrId: string | number) => `${API_BASE_URL}/api/blog/posts/${slugOrId}`,
-    CREATE: `${API_BASE_URL}/api/blog/posts`,
-    UPDATE: (id: string | number) => `${API_BASE_URL}/api/blog/posts/${id}`,
-    DELETE: (id: string | number) => `${API_BASE_URL}/api/blog/posts/${id}`,
+    GET_BLOG_BY_SLUG:`${API_BASE_URL}/api/blogs/getBlogBySlug`,
+    GET_PAGINATED_BLOGS: `${API_BASE_URL}/api/blogs/getPaginatedBlog`,
+  },
+
+  // Code execution engine 
+  CODE:{
+    RUN: `${API_BASE_URL}/api/code/run`,
+    COMPILE: `${API_BASE_URL}/api/code/compile`,
+    DEBUG: `${API_BASE_URL}/api/code/debug`,
+    
   },
 
   // Scraping Endpoints

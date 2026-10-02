@@ -21,7 +21,6 @@ import {
   Brackets, 
   RefreshCw 
 } from "lucide-react";
-import { CodeRunEditor } from "./components";
 
 export function CodingToolsSection() {
   const tools = [

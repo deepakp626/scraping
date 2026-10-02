@@ -53,6 +53,8 @@ export default function MonacoEditor({
   const editorRef = useRef<MonacoType.editor.IStandaloneCodeEditor | null>(null);
   const monacoRef = useRef<typeof MonacoType | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+  // Prevents the onChange callback from firing when WE are syncing an external code prop
+  const isSyncingRef = useRef(false);
 
   // Keep references to latest callbacks to avoid stale closures
   const onChangeRef = useRef(onChange);
@@ -151,6 +153,8 @@ export default function MonacoEditor({
 
         // Content change listener
         const contentDisposable = editor.onDidChangeModelContent(() => {
+          // Skip onChange notification when we are applying an external sync
+          if (isSyncingRef.current) return;
           const val = editor.getValue();
           onChangeRef.current(val);
           calculateStats(editor);
@@ -205,17 +209,30 @@ export default function MonacoEditor({
     };
   }, []); // Run once on mount
 
-  // 2. Synchronize external code changes (without resetting cursor or history if identical)
+  // 2. Synchronize external code changes (preserve undo history, cursor & selection)
   useEffect(() => {
     const editor = editorRef.current;
-    if (editor && editor.getValue() !== code) {
-      const position = editor.getPosition();
-      editor.setValue(code);
-      if (position) {
-        editor.setPosition(position);
-      }
-      calculateStats(editor);
-    }
+    const model = editor?.getModel();
+    if (!editor || !model || model.getValue() === code) return;
+
+    // Suppress the onChange callback while we apply the external edit
+    isSyncingRef.current = true;
+    const savedPosition = editor.getPosition();
+    const savedSelections = editor.getSelections();
+
+    // Replace full content via edit operation so undo history is preserved
+    model.pushEditOperations(
+      [],
+      [{ range: model.getFullModelRange(), text: code }],
+      () => null
+    );
+
+    // Restore cursor / selection
+    if (savedPosition) editor.setPosition(savedPosition);
+    if (savedSelections) editor.setSelections(savedSelections);
+
+    isSyncingRef.current = false;
+    calculateStats(editor);
   }, [code, calculateStats]);
 
   // 3. Update language

@@ -16,23 +16,51 @@ import {
   AlertCircle,
   ExternalLink,
   CornerDownLeft,
+  Hash,
 } from "lucide-react";
 import { LANGUAGES } from "../lib/languages";
 import type { OutputTab, RunStatus } from "../types/editor";
+import type { CodeRunResponse } from "./MonacoCodeRunEditor";
 
 export interface MonacoOutputPanelProps {
-  output: string;
-  isError: boolean;
+  apiResponse: CodeRunResponse | null;
   runStatus: RunStatus;
-  execTime: string | null;
-  execMemory: number | null;
-  statusLabel: string;
   activeTab: OutputTab;
   currentLangId: string;
   stdin: string;
+  fontSize?: number;
   onTabChange: (tab: OutputTab) => void;
   onStdinChange: (val: string) => void;
   onClear: () => void;
+}
+
+// Accepted = status_id 3 in Judge0
+function isAccepted(r: CodeRunResponse | null): boolean {
+  if (!r) return false;
+  if (r.status_id === 3) return true;
+  if (typeof r.status === "object" && r.status !== null) {
+    return (
+      r.status.id === 3 ||
+      r.status.description?.toLowerCase() === "accepted"
+    );
+  }
+  if (typeof r.status === "string") {
+    return r.status.toLowerCase() === "accepted";
+  }
+  return false;
+}
+
+function getStatusLabel(r: CodeRunResponse | null): string {
+  if (!r) return "";
+  if (typeof r.status === "object" && r.status !== null) {
+    return r.status.description || (r.status.id === 3 ? "Accepted" : `Status ${r.status.id ?? ""}`);
+  }
+  if (typeof r.status === "string" && r.status.trim()) {
+    return r.status;
+  }
+  if (r.status_id === 3) return "Accepted";
+  if (r.status_id) return `Status ${r.status_id}`;
+  return "Executed";
 }
 
 const MONACO_SHORTCUTS = [
@@ -51,32 +79,33 @@ const MONACO_SHORTCUTS = [
 ];
 
 export default function MonacoOutputPanel({
-  output,
-  isError,
+  apiResponse,
   runStatus,
-  execTime,
-  execMemory,
-  statusLabel,
   activeTab,
   currentLangId,
   stdin,
+  fontSize = 14,
   onTabChange,
   onStdinChange,
   onClear,
 }: MonacoOutputPanelProps) {
   const [copied, setCopied] = useState(false);
   const lang = LANGUAGES[currentLangId];
+  const accepted = isAccepted(apiResponse);
+
+  // Text used for copy / download — prefer stdout, fallback to stderr or compile_output
+  const copyText = apiResponse?.stdout ?? apiResponse?.stderr ?? apiResponse?.compile_output ?? "";
 
   const handleCopyOutput = () => {
-    if (!output) return;
-    navigator.clipboard.writeText(output).catch(() => {});
+    if (!copyText) return;
+    navigator.clipboard.writeText(copyText).catch(() => {});
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
 
   const handleDownloadOutput = () => {
-    if (!output) return;
-    const blob = new Blob([output], { type: "text/plain;charset=utf-8" });
+    if (!copyText) return;
+    const blob = new Blob([copyText], { type: "text/plain;charset=utf-8" });
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
@@ -86,9 +115,9 @@ export default function MonacoOutputPanel({
   };
 
   return (
-    <div className="flex flex-col h-full bg-slate-950 text-slate-200 border-l border-slate-800 select-text overflow-hidden font-sans">
+    <div className="flex flex-col bg-slate-950 border-slate-800 border-l h-full overflow-hidden font-sans text-slate-200 select-text">
       {/* Panel Tab Navigation Bar */}
-      <div className="flex items-center justify-between px-2 bg-slate-900 border-b border-slate-800 shrink-0">
+      <div className="flex justify-between items-center bg-slate-900 px-2 border-slate-800 border-b shrink-0">
         <div className="flex items-center">
           <button
             onClick={() => onTabChange("output")}
@@ -100,7 +129,7 @@ export default function MonacoOutputPanel({
           >
             <Terminal className="w-3.5 h-3.5 text-primary-theme" />
             <span>Terminal</span>
-            {output && <span className="w-1.5 h-1.5 rounded-full bg-primary-theme ml-0.5" />}
+            {apiResponse && <span className="bg-primary-theme ml-0.5 rounded-full w-1.5 h-1.5" />}
           </button>
 
           <button
@@ -129,25 +158,25 @@ export default function MonacoOutputPanel({
         </div>
 
         {/* Action icons on the tab bar */}
-        {activeTab === "output" && output && (
+        {activeTab === "output" && apiResponse && (
           <div className="flex items-center gap-1">
             <button
               onClick={handleCopyOutput}
-              className="p-1.5 text-slate-400 hover:text-white rounded-md hover:bg-slate-800 transition"
+              className="hover:bg-slate-800 p-1.5 rounded-md text-slate-400 hover:text-white transition"
               title="Copy Output"
             >
               {copied ? <Check className="w-3.5 h-3.5 text-green-400" /> : <Copy className="w-3.5 h-3.5" />}
             </button>
             <button
               onClick={handleDownloadOutput}
-              className="p-1.5 text-slate-400 hover:text-white rounded-md hover:bg-slate-800 transition"
+              className="hover:bg-slate-800 p-1.5 rounded-md text-slate-400 hover:text-white transition"
               title="Download Output Log"
             >
               <Download className="w-3.5 h-3.5" />
             </button>
             <button
               onClick={onClear}
-              className="p-1.5 text-slate-400 hover:text-red-400 rounded-md hover:bg-slate-800 transition"
+              className="hover:bg-slate-800 p-1.5 rounded-md text-slate-400 hover:text-red-400 transition"
               title="Clear Terminal Output"
             >
               <Trash2 className="w-3.5 h-3.5" />
@@ -162,16 +191,16 @@ export default function MonacoOutputPanel({
         {activeTab === "output" && (
           <div className="flex flex-col h-full">
             {/* Interactive Stdin input drawer */}
-            <div className="bg-slate-900/60 border-b border-slate-800 p-2.5 shrink-0">
-              <div className="flex items-center justify-between mb-1">
-                <div className="flex items-center gap-1.5 text-slate-400 text-[11px] font-semibold uppercase tracking-wider">
+            <div className="bg-slate-900/60 p-2.5 border-slate-800 border-b shrink-0">
+              <div className="flex justify-between items-center mb-1.5">
+                <div className="flex items-center gap-1.5 font-semibold text-slate-400 text-xs uppercase tracking-wider">
                   <CornerDownLeft className="w-3 h-3 text-primary-theme" />
                   <span>Standard Input (stdin)</span>
                 </div>
                 {stdin && (
                   <button
                     onClick={() => onStdinChange("")}
-                    className="text-[10px] text-slate-400 hover:text-slate-200"
+                    className="text-slate-400 hover:text-slate-200 text-xs transition-colors"
                   >
                     Clear
                   </button>
@@ -182,79 +211,130 @@ export default function MonacoOutputPanel({
                 onChange={(e) => onStdinChange(e.target.value)}
                 placeholder="Enter arguments or input passed into your program..."
                 rows={2}
-                className="w-full bg-slate-950 text-slate-200 font-mono text-xs rounded-md p-2 border border-slate-800 outline-none focus:border-primary-theme resize-none placeholder:text-slate-600"
+                style={{ fontSize: `${fontSize}px` }}
+                className="bg-slate-950 p-2.5 border border-slate-800 focus:border-primary-theme rounded-md outline-none w-full font-mono text-slate-200 placeholder:text-slate-600 transition-colors resize-none"
               />
             </div>
 
             {/* Output view */}
             <div className="flex-1 p-3 overflow-auto">
               {runStatus === "running" && (
-                <div className="flex items-center gap-3 text-amber-400 py-6 justify-center">
+                <div className="flex justify-center items-center gap-3 py-6 text-amber-400">
                   <svg className="w-5 h-5 animate-spin" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                     <path d="M21 12a9 9 0 11-6.22-8.56" strokeLinecap="round" />
                   </svg>
-                  <span className="font-mono text-xs font-semibold tracking-wide">
+                  <span className="font-mono font-semibold text-sm tracking-wide">
                     Executing {lang?.name || "code"}…
                   </span>
                 </div>
               )}
 
-              {runStatus === "idle" && !output && (
-                <div className="flex flex-col items-center justify-center h-full min-h-[140px] text-slate-500 gap-2 select-none">
-                  <Terminal className="w-8 h-8 opacity-25" />
-                  <span className="text-xs font-medium">Ready to execute</span>
-                  <div className="flex items-center gap-1 text-[11px] font-mono text-slate-400 bg-slate-900 px-2 py-0.5 rounded border border-slate-800">
+              {/* Idle — no response yet */}
+              {runStatus === "idle" && !apiResponse && (
+                <div className="flex flex-col justify-center items-center gap-2.5 h-full min-h-[140px] text-slate-500 select-none">
+                  <Terminal className="opacity-25 w-9 h-9" />
+                  <span className="font-medium text-slate-400 text-sm">Ready to execute</span>
+                  <div className="flex items-center gap-1.5 bg-slate-900 px-2.5 py-1 border border-slate-800 rounded font-mono text-slate-400 text-xs">
                     <span>Press Run or</span>
-                    <kbd className="text-primary-theme font-bold">Ctrl + Enter</kbd>
+                    <kbd className="font-bold text-primary-theme">Ctrl + Enter</kbd>
                   </div>
                 </div>
               )}
 
-              {output && (
-                <div className="space-y-3">
-                  <pre
-                    className={`font-mono text-xs leading-relaxed whitespace-pre-wrap break-words ${
-                      isError ? "text-red-400" : "text-emerald-300"
-                    }`}
-                  >
-                    {output}
-                  </pre>
+              {/* API Response Output */}
+              {apiResponse && runStatus !== "running" && (
+                <div className="space-y-3.5">
 
-                  {/* Execution Metrics Bar */}
-                  {(execTime || execMemory || statusLabel) && (
-                    <div className="pt-2.5 mt-2 border-t border-slate-800 flex flex-wrap items-center gap-3 text-[11px] font-mono text-slate-400">
-                      {statusLabel && (
-                        <div
-                          className={`flex items-center gap-1 px-2 py-0.5 rounded ${
-                            isError
-                              ? "bg-red-950/80 text-red-400 border border-red-800/40"
-                              : "bg-emerald-950/80 text-emerald-400 border border-emerald-800/40"
-                          }`}
-                        >
-                          {isError ? (
-                            <AlertCircle className="w-3 h-3" />
-                          ) : (
-                            <CheckCircle2 className="w-3 h-3" />
-                          )}
-                          <span>{statusLabel}</span>
-                        </div>
-                      )}
-
-                      {execTime && (
-                        <div className="flex items-center gap-1">
-                          <Clock className="w-3 h-3 text-slate-500" />
-                          <span>{execTime}s</span>
-                        </div>
-                      )}
-
-                      {execMemory && (
-                        <div className="flex items-center gap-1">
-                          <Cpu className="w-3 h-3 text-slate-500" />
-                          <span>{execMemory} KB</span>
-                        </div>
-                      )}
+                  {/* stdout */}
+                  {apiResponse.stdout && (
+                    <div>
+                      <div className="mb-1.5 font-bold text-emerald-500 text-xs uppercase tracking-wider">stdout</div>
+                      <pre
+                        style={{ fontSize: `${fontSize}px` }}
+                        className="font-mono text-emerald-300 break-words leading-relaxed whitespace-pre-wrap"
+                      >
+                        {apiResponse.stdout}
+                      </pre>
                     </div>
                   )}
+
+                  {/* stderr */}
+                  {apiResponse.stderr && (
+                    <div>
+                      <div className="mb-1.5 font-bold text-red-400 text-xs uppercase tracking-wider">stderr</div>
+                      <pre
+                        style={{ fontSize: `${fontSize}px` }}
+                        className="font-mono text-red-400 break-words leading-relaxed whitespace-pre-wrap"
+                      >
+                        {apiResponse.stderr}
+                      </pre>
+                    </div>
+                  )}
+
+                  {/* compile_output */}
+                  {apiResponse.compile_output && (
+                    <div>
+                      <div className="mb-1.5 font-bold text-amber-400 text-xs uppercase tracking-wider">Compile Output</div>
+                      <pre
+                        style={{ fontSize: `${fontSize}px` }}
+                        className="font-mono text-amber-300 break-words leading-relaxed whitespace-pre-wrap"
+                      >
+                        {apiResponse.compile_output}
+                      </pre>
+                    </div>
+                  )}
+
+                  {/* message */}
+                  {apiResponse.message && (
+                    <div>
+                      <div className="mb-1.5 font-bold text-sky-400 text-xs uppercase tracking-wider">Message</div>
+                      <pre
+                        style={{ fontSize: `${fontSize}px` }}
+                        className="font-mono text-sky-300 break-words leading-relaxed whitespace-pre-wrap"
+                      >
+                        {apiResponse.message}
+                      </pre>
+                    </div>
+                  )}
+
+                  {/* No output at all */}
+                  {!apiResponse.stdout && !apiResponse.stderr && !apiResponse.compile_output && !apiResponse.message && (
+                    <div className="font-mono text-slate-500 text-sm italic">(no output)</div>
+                  )}
+
+                  {/* Execution Metrics Bar */}
+                  <div className="flex flex-wrap items-center gap-3.5 mt-3 pt-3 border-slate-800 border-t font-mono text-slate-400 text-xs">
+                    {/* Status badge */}
+                    <div className={`flex items-center gap-1.5 px-2.5 py-1 rounded ${
+                      accepted
+                        ? "bg-emerald-950/80 text-emerald-400 border border-emerald-800/40"
+                        : "bg-red-950/80 text-red-400 border border-red-800/40"
+                    }`}>
+                      {accepted ? <CheckCircle2 className="w-3.5 h-3.5" /> : <AlertCircle className="w-3.5 h-3.5" />}
+                      <span className="font-semibold">{getStatusLabel(apiResponse)}</span>
+                    </div>
+
+                    {apiResponse.time && (
+                      <div className="flex items-center gap-1.5">
+                        <Clock className="w-3.5 h-3.5 text-slate-500" />
+                        <span>{apiResponse.time}s</span>
+                      </div>
+                    )}
+
+                    {apiResponse.memory && (
+                      <div className="flex items-center gap-1.5">
+                        <Cpu className="w-3.5 h-3.5 text-slate-500" />
+                        <span>{apiResponse.memory} KB</span>
+                      </div>
+                    )}
+
+                    {apiResponse.token && (
+                      <div className="flex items-center gap-1.5 ml-auto text-slate-500" title={apiResponse.token}>
+                        <Hash className="w-3.5 h-3.5" />
+                        <span className="max-w-[120px] truncate">{apiResponse.token.slice(0, 8)}…</span>
+                      </div>
+                    )}
+                  </div>
                 </div>
               )}
             </div>
@@ -263,40 +343,40 @@ export default function MonacoOutputPanel({
 
         {/* 2. Docs / Lang Info Tab */}
         {activeTab === "info" && lang && (
-          <div className="p-4 space-y-4">
-            <div className="flex items-center gap-3 pb-3 border-b border-slate-800">
+          <div className="space-y-4 p-4 text-sm">
+            <div className="flex items-center gap-3 pb-3 border-slate-800 border-b">
               <div
-                className="w-9 h-9 rounded-xl flex items-center justify-center font-bold font-mono text-sm"
+                className="flex justify-center items-center rounded-xl w-10 h-10 font-mono font-bold text-base"
                 style={{ backgroundColor: `${lang.color}25`, color: lang.color }}
               >
                 .{lang.extension}
               </div>
               <div>
-                <h3 className="text-sm font-bold text-white flex items-center gap-2">
+                <h3 className="flex items-center gap-2 font-bold text-white text-sm">
                   {lang.name}
                   {lang.info?.version && (
-                    <span className="text-[10px] px-1.5 py-0.5 bg-slate-800 text-slate-300 rounded font-mono">
+                    <span className="bg-slate-800 px-1.5 py-0.5 rounded font-mono text-slate-300 text-xs">
                       v{lang.info.version}
                     </span>
                   )}
                 </h3>
-                <span className="text-[11px] text-slate-400">Environment & Syntax Spec</span>
+                <span className="text-slate-400 text-xs">Environment & Syntax Spec</span>
               </div>
             </div>
 
             <div>
-              <h4 className="text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">
+              <h4 className="mb-1 font-semibold text-slate-300 text-xs uppercase tracking-wider">
                 About {lang.name}
               </h4>
-              <p className="text-xs text-slate-400 leading-relaxed">
+              <p className="text-slate-300 text-sm leading-relaxed">
                 {lang.info?.description || "High-performance versatile programming language."}
               </p>
             </div>
 
             {lang.info?.tip && (
-              <div className="p-3 bg-slate-900 rounded-lg border border-slate-800">
-                <div className="text-xs font-semibold text-primary-theme mb-1">Recommended Practice</div>
-                <p className="text-xs text-slate-300 font-mono leading-relaxed">{lang.info.tip}</p>
+              <div className="bg-slate-900 p-3.5 border border-slate-800 rounded-lg">
+                <div className="mb-1 font-semibold text-primary-theme text-xs uppercase tracking-wider">Recommended Practice</div>
+                <p className="font-mono text-slate-200 text-sm leading-relaxed">{lang.info.tip}</p>
               </div>
             )}
 
@@ -305,10 +385,10 @@ export default function MonacoOutputPanel({
                 href={lang.info.website}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-xs text-primary-theme hover:underline font-medium"
+                className="inline-flex items-center gap-1.5 font-medium text-primary-theme text-sm hover:underline"
               >
                 <span>Visit Official {lang.name} Website</span>
-                <ExternalLink className="w-3.5 h-3.5" />
+                <ExternalLink className="w-4 h-4" />
               </a>
             )}
           </div>
@@ -317,19 +397,19 @@ export default function MonacoOutputPanel({
         {/* 3. Shortcuts Cheat Sheet Tab */}
         {activeTab === "shortcuts" && (
           <div className="p-3">
-            <div className="text-xs font-bold text-slate-300 uppercase tracking-wider mb-3">
+            <div className="mb-3 font-bold text-slate-300 text-xs uppercase tracking-wider">
               Monaco Editor Keybindings
             </div>
             <div className="space-y-1.5">
               {MONACO_SHORTCUTS.map((item) => (
                 <div
                   key={item.key}
-                  className="flex items-center justify-between p-2 rounded-lg bg-slate-900/80 border border-slate-800/80 text-xs"
+                  className="flex justify-between items-center bg-slate-900/80 p-2.5 border border-slate-800/80 rounded-lg text-sm"
                 >
-                  <span className="text-slate-300">{item.action}</span>
+                  <span className="font-medium text-slate-200">{item.action}</span>
                   <div className="flex items-center gap-2">
-                    <span className="text-[10px] text-slate-500 font-mono hidden sm:inline">{item.tag}</span>
-                    <kbd className="font-mono text-[11px] bg-slate-800 text-primary-theme px-2 py-0.5 rounded border border-slate-700 shadow-2xs font-semibold">
+                    <span className="hidden sm:inline font-mono text-slate-400 text-xs">{item.tag}</span>
+                    <kbd className="bg-slate-800 shadow-2xs px-2 py-0.5 border border-slate-700 rounded font-mono font-semibold text-primary-theme text-xs">
                       {item.key}
                     </kbd>
                   </div>

@@ -1,12 +1,12 @@
-# Graph Report - scraping  (2026-09-30)
+# Graph Report - scraping  (2026-09-27)
 
 ## Corpus Check
-- 228 files · ~3,973,408 words
+- 228 files · ~3,969,835 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 9 file(s) not represented in the graph (top: .css 3, .scss 3, (none) 2)
 
 ## Summary
-- 933 nodes · 1687 edges · 105 communities (53 shown, 52 thin omitted)
+- 923 nodes · 1663 edges · 101 communities (48 shown, 53 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
@@ -25,7 +25,7 @@
 - package.json
 - @codemirror/lang-json
 - ConverterTemplate.tsx
-- [pdf-tool-slug]/page.tsx
+- pdf-tooles/components/ImageToPdf.tsx
 - README.md
 - image-tooles/[slug]/page.tsx
 - lucide-react
@@ -42,7 +42,7 @@
 - about/page.tsx
 - ServiceTemplate.tsx
 - ecommerce-data-scraping/page.tsx
-- apiClient.ts
+- framer-motion
 - json-tooles/components/CSVToJSON.tsx
 - DatasetsMegaMenu.tsx
 - ToolsMegaMenu.tsx
@@ -51,9 +51,9 @@
 - What You Must Do When Invoked
 - YAMLToJSON.tsx
 - JSONValidator.tsx
-- pdf-lib
 - json-tooles/[slug]/page.tsx
-- ref_components
+- scripts
+- eslint.config.mjs
 - generate-liquor-images.js
 - TerminalAnimation.tsx
 - postcss.config.mjs
@@ -63,7 +63,7 @@
 - PdfToImages.tsx
 - blog/[slug]/page.tsx
 - CountSection.tsx
-- framer-motion
+- FireAnimation.tsx
 - ScrapingProcess.tsx
 - car-rental-data-scraping/page.tsx
 - fashion-scraping/page.tsx
@@ -87,11 +87,6 @@
 - RemoveBg.tsx
 - rules/graphify.md
 - workflows/graphify.md
-- WordToPdf.tsx
-- scripts
-- JSONParser.tsx
-- eslint.config.mjs
-- BaseConverter.tsx
 - graphify reference: extra exports and benchmark
 - graphify reference: query, path, explain
 - themes.ts
@@ -101,16 +96,17 @@
 - graphify reference: GitHub clone and cross-repo merge
 - graphify reference: transcribe video and audio
 - extraction-spec.md
+- JSONParser.tsx
+- SignatureCanvas
 - app_tooles_coding_tooles_components_index_coderuneditor
 - ref_codemirror_state
-- SignatureCanvas
 - tiptap-utils.ts
 - scss.d.ts
 
 ## God Nodes (most connected - your core abstractions)
 1. `react` - 165 edges
 2. `lucide-react` - 127 edges
-3. `next` - 47 edges
+3. `next` - 45 edges
 4. `@codemirror/lang-json` - 28 edges
 5. `@uiw/react-codemirror` - 28 edges
 6. `ConverterTemplate()` - 27 edges
@@ -122,10 +118,10 @@
 ## Surprising Connections (you probably didn't know these)
 - `LockPDF()` --calls--> `extractApiErrorMessage()`  [EXTRACTED]
   app/tooles/pdf-tooles/components/LockPDF.tsx → lib/apiClient.ts
-- `OcrPDF()` --calls--> `extractApiErrorMessage()`  [EXTRACTED]
-  app/tooles/pdf-tooles/components/OcrPDF.tsx → lib/apiClient.ts
 - `UnlockPDF()` --calls--> `extractApiErrorMessage()`  [EXTRACTED]
   app/tooles/pdf-tooles/components/UnlockPDF.tsx → lib/apiClient.ts
+- `OcrPDF()` --calls--> `extractApiErrorMessage()`  [EXTRACTED]
+  app/tooles/pdf-tooles/components/OcrPDF.tsx → lib/apiClient.ts
 - `PdfToHtml()` --calls--> `extractApiErrorMessage()`  [EXTRACTED]
   app/tooles/pdf-tooles/components/PdfToHtml.tsx → lib/apiClient.ts
 - `PopoverContent()` --calls--> `cn()`  [EXTRACTED]
@@ -134,11 +130,11 @@
 ## Import Cycles
 - None detected.
 
-## Communities (105 total, 52 thin omitted)
+## Communities (101 total, 53 thin omitted)
 
 ### Community 0 - "app/page.tsx"
-Cohesion: 0.19
-Nodes (8): Slider(), sliderItems, HeroSection(), terminalLines, categories, IndustryTabSection(), ScrapingTechnology(), technologies
+Cohesion: 0.24
+Nodes (6): Slider(), sliderItems, HeroSection(), terminalLines, categories, IndustryTabSection()
 
 ### Community 1 - "layout.tsx"
 Cohesion: 0.10
@@ -153,8 +149,8 @@ Cohesion: 0.17
 Nodes (12): devDependencies, eslint, eslint-config-next, sass, tailwindcss, @tailwindcss/postcss, @types/js-yaml, @types/node (+4 more)
 
 ### Community 4 - "MonacoCodeRunEditor.tsx"
-Cohesion: 0.06
-Nodes (62): detectLanguageFromSlug(), DynamicCodeToolPage(), getLanguageIcon(), executeCode(), formatOutput(), Judge0Error, runLocally(), SubmissionPayload (+54 more)
+Cohesion: 0.07
+Nodes (57): detectLanguageFromSlug(), DynamicCodeToolPage(), getLanguageIcon(), executeCode(), formatOutput(), Judge0Error, runLocally(), SubmissionPayload (+49 more)
 
 ### Community 5 - "dependencies"
 Cohesion: 0.03
@@ -168,10 +164,6 @@ Nodes (39): name, private, version, axios, @codemirror/lang-cpp, @codemirror/lan
 Cohesion: 0.12
 Nodes (5): @codemirror/lang-javascript, @codemirror/lang-json, jsonpath-plus, @uiw/react-codemirror, xlsx
 
-### Community 9 - "[pdf-tool-slug]/page.tsx"
-Cohesion: 0.13
-Nodes (8): ImageItem, PDFItem, PageTextRecord, SearchMatch, SearchPDF(), componentsMap, PageProps, ToolConfig
-
 ### Community 10 - "README.md"
 Cohesion: 0.29
 Nodes (6): Color Palette, Deploy on Vercel, Getting Started, Graphify, Learn More, Theme Design
@@ -181,12 +173,12 @@ Cohesion: 0.11
 Nodes (4): ImageTool, imageTools, componentsMap, PageProps
 
 ### Community 12 - "lucide-react"
-Cohesion: 0.14
-Nodes (10): CodingToolsSection(), ConverterTool, ConverterToolsSection(), tools, ImageToolsSection(), JsonToolsSection(), PdfToolsSection(), nextConfig (+2 more)
+Cohesion: 0.05
+Nodes (44): CodingToolsSection(), ConverterTool, ConverterToolsSection(), tools, ImageToolsSection(), JsonToolsSection(), ExtractPages(), LockPDF() (+36 more)
 
 ### Community 13 - "converter-tools/[slug]/page.tsx"
 Cohesion: 0.12
-Nodes (3): CaseType, componentsMap, PageProps
+Nodes (4): BaseType, CaseType, componentsMap, PageProps
 
 ### Community 15 - "JSONViewer.tsx"
 Cohesion: 0.16
@@ -228,9 +220,9 @@ Nodes (7): BenefitItem, FeatureBlock, GridFeatureItem, PlatformItem, ServiceTemp
 Cohesion: 0.25
 Nodes (6): benefits, ecommerIcons, features, highlights, stats, useCases
 
-### Community 26 - "apiClient.ts"
-Cohesion: 0.17
-Nodes (13): BlogPost, PaginatedBlogsResponse, Pagination, LockPDF(), OcrApiResponse, PageData, PdfToHtml(), PreviewDevice (+5 more)
+### Community 26 - "framer-motion"
+Cohesion: 0.29
+Nodes (4): posts, ScrapingTechnology(), technologies, framer-motion
 
 ### Community 27 - "json-tooles/components/CSVToJSON.tsx"
 Cohesion: 0.29
@@ -260,13 +252,17 @@ Nodes (24): For /graphify add and --watch, For /graphify query, For the commit h
 Cohesion: 0.40
 Nodes (5): getJsonErrorDetails(), JsonErrorDetails, JSONValidator(), ValidationResult, ValidationStats
 
-### Community 35 - "pdf-lib"
-Cohesion: 0.12
-Nodes (13): ExtractPages(), OcrPDF(), PageNumbers(), PdfToImage(), PdfToWord(), RemovePages(), PositionPreset, SignatureMode (+5 more)
-
-### Community 36 - "json-tooles/[slug]/page.tsx"
+### Community 35 - "json-tooles/[slug]/page.tsx"
 Cohesion: 0.17
 Nodes (4): DiffItem, componentsMap, PageProps, @uiw/react-json-view
+
+### Community 36 - "scripts"
+Cohesion: 0.33
+Nodes (6): scripts, build, dev, lint, start, type-check
+
+### Community 37 - "eslint.config.mjs"
+Cohesion: 0.50
+Nodes (3): eslintConfig, eslint, eslint-config-next
 
 ### Community 38 - "generate-liquor-images.js"
 Cohesion: 0.15
@@ -284,17 +280,9 @@ Nodes (3): ConvertJpg(), FORMAT_OPTIONS, image-conversion
 Cohesion: 0.60
 Nodes (4): App(), loadJsZip(), loadPdfJs(), SelectedImage
 
-### Community 45 - "blog/[slug]/page.tsx"
-Cohesion: 0.43
-Nodes (6): app_blog, BlogDetail, BlogPostPage(), estimateReadingTime(), formatDate(), formatISODate()
-
 ### Community 46 - "CountSection.tsx"
 Cohesion: 0.50
 Nodes (3): CountSection(), stats, react-countup
-
-### Community 47 - "framer-motion"
-Cohesion: 0.29
-Nodes (3): ComparisonRowProps, FirecrawlFeatures(), framer-motion
 
 ### Community 63 - "ConvertPng.tsx"
 Cohesion: 0.83
@@ -307,18 +295,6 @@ Nodes (3): ConvertWebp(), formatSize(), savingsPct()
 ### Community 65 - "JSONToHTMLTable.tsx"
 Cohesion: 0.67
 Nodes (3): escapeHtml(), JSONToHTMLTable(), @codemirror/lang-html
-
-### Community 73 - "WordToPdf.tsx"
-Cohesion: 0.25
-Nodes (4): jspdf, @tiptap/extension-link, @tiptap/react, @tiptap/starter-kit
-
-### Community 74 - "scripts"
-Cohesion: 0.33
-Nodes (6): scripts, build, dev, lint, start, type-check
-
-### Community 77 - "eslint.config.mjs"
-Cohesion: 0.50
-Nodes (3): eslintConfig, eslint, eslint-config-next
 
 ### Community 86 - "graphify reference: extra exports and benchmark"
 Cohesion: 0.22
@@ -349,24 +325,24 @@ Cohesion: 0.06
 Nodes (20): PopoverContent(), cn(), findNodeAtPosition(), findNodePosition(), formatShortcutKey(), isAllowedUri(), isMac(), isValidPosition() (+12 more)
 
 ## Knowledge Gaps
-- **326 isolated node(s):** `metadata`, `stats`, `services`, `datasetProcess`, `useCases` (+321 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 507 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **52 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **320 isolated node(s):** `metadata`, `stats`, `services`, `datasetProcess`, `useCases` (+315 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 501 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **53 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `react` connect `react` to `app/page.tsx`, `layout.tsx`, `MonacoCodeRunEditor.tsx`, `package.json`, `@codemirror/lang-json`, `ConverterTemplate.tsx`, `[pdf-tool-slug]/page.tsx`, `image-tooles/[slug]/page.tsx`, `lucide-react`, `converter-tools/[slug]/page.tsx`, `JSONViewer.tsx`, `browser-image-compression`, `JSONSchemaValidator.tsx`, `Navbar.tsx`, `ServicesPageClient.tsx`, `JSONDiff.tsx`, `dataset/page.tsx`, `JSONFormatter.tsx`, `about/page.tsx`, `ServiceTemplate.tsx`, `ecommerce-data-scraping/page.tsx`, `apiClient.ts`, `json-tooles/components/CSVToJSON.tsx`, `DatasetsMegaMenu.tsx`, `ToolsMegaMenu.tsx`, `UnitConverter.tsx`, `CropImage.tsx`, `YAMLToJSON.tsx`, `JSONValidator.tsx`, `pdf-lib`, `json-tooles/[slug]/page.tsx`, `TerminalAnimation.tsx`, `ServiceTemplate`, `servicesData.ts`, `ConvertJpg.tsx`, `PdfToImages.tsx`, `blog/[slug]/page.tsx`, `CountSection.tsx`, `framer-motion`, `ScrapingProcess.tsx`, `car-rental-data-scraping/page.tsx`, `fashion-scraping/page.tsx`, `food-data-scraping/page.tsx`, `liquor-or-alchol-data-scraping/page.tsx`, `quick-commerce-scraping/page.tsx`, `recruitment-data-scraping-service/page.tsx`, `ConvertPng.tsx`, `ConvertWebp.tsx`, `JSONToHTMLTable.tsx`, `ChangeFormat.tsx`, `ColorAdjust.tsx`, `json-tooles/components/JSONToXML.tsx`, `RemoveBg.tsx`, `CSVToExcel.tsx`, `WordToPdf.tsx`, `JSONParser.tsx`, `ImageConverter.tsx`, `MP4Converter.tsx`, `PDFToExcel.tsx`, `BaseConverter.tsx`, `ExcelToCSV.tsx`, `VideoConverter.tsx`, `converter-tools/components/JSONToCSV.tsx`, `converter-tools/components/JSONToXML.tsx`, `PDFToText.tsx`, `SplitExcel.tsx`, `VideoCompressor.tsx`, `XMLToCSV.tsx`?**
-  _High betweenness centrality (0.372) - this node is a cross-community bridge._
-- **Why does `lucide-react` connect `lucide-react` to `app/page.tsx`, `layout.tsx`, `MonacoCodeRunEditor.tsx`, `package.json`, `@codemirror/lang-json`, `ConverterTemplate.tsx`, `[pdf-tool-slug]/page.tsx`, `image-tooles/[slug]/page.tsx`, `converter-tools/[slug]/page.tsx`, `react`, `JSONViewer.tsx`, `browser-image-compression`, `JSONSchemaValidator.tsx`, `Navbar.tsx`, `ServicesPageClient.tsx`, `JSONDiff.tsx`, `dataset/page.tsx`, `JSONFormatter.tsx`, `ServiceTemplate.tsx`, `ecommerce-data-scraping/page.tsx`, `apiClient.ts`, `json-tooles/components/CSVToJSON.tsx`, `DatasetsMegaMenu.tsx`, `ToolsMegaMenu.tsx`, `UnitConverter.tsx`, `CropImage.tsx`, `YAMLToJSON.tsx`, `JSONValidator.tsx`, `pdf-lib`, `json-tooles/[slug]/page.tsx`, `TerminalAnimation.tsx`, `ServiceTemplate`, `servicesData.ts`, `ConvertJpg.tsx`, `CountSection.tsx`, `framer-motion`, `ScrapingProcess.tsx`, `car-rental-data-scraping/page.tsx`, `fashion-scraping/page.tsx`, `finance-and-stock-scraping/page.tsx`, `food-data-scraping/page.tsx`, `food-delivery-data-scraping-service/page.tsx`, `healthcare-data-scraping/page.tsx`, `liquor-or-alchol-data-scraping/page.tsx`, `ott-streaming-data-scraping-service/page.tsx`, `quick-commerce-fmcg-data-scraping/page.tsx`, `quick-commerce-scraping/page.tsx`, `real-estate-property-data-scraping/page.tsx`, `recruitment-data-scraping-service/page.tsx`, `social-media-scraping-services/page.tsx`, `travel-data-scraping/page.tsx`, `ConvertPng.tsx`, `ConvertWebp.tsx`, `JSONToHTMLTable.tsx`, `ChangeFormat.tsx`, `ColorAdjust.tsx`, `json-tooles/components/JSONToXML.tsx`, `WordToPdf.tsx`, `JSONParser.tsx`, `BaseConverter.tsx`?**
-  _High betweenness centrality (0.201) - this node is a cross-community bridge._
+- **Why does `react` connect `react` to `app/page.tsx`, `layout.tsx`, `MonacoCodeRunEditor.tsx`, `package.json`, `@codemirror/lang-json`, `ConverterTemplate.tsx`, `pdf-tooles/components/ImageToPdf.tsx`, `image-tooles/[slug]/page.tsx`, `lucide-react`, `converter-tools/[slug]/page.tsx`, `JSONViewer.tsx`, `browser-image-compression`, `JSONSchemaValidator.tsx`, `Navbar.tsx`, `ServicesPageClient.tsx`, `JSONDiff.tsx`, `dataset/page.tsx`, `JSONFormatter.tsx`, `about/page.tsx`, `ServiceTemplate.tsx`, `ecommerce-data-scraping/page.tsx`, `framer-motion`, `json-tooles/components/CSVToJSON.tsx`, `DatasetsMegaMenu.tsx`, `ToolsMegaMenu.tsx`, `UnitConverter.tsx`, `CropImage.tsx`, `YAMLToJSON.tsx`, `JSONValidator.tsx`, `json-tooles/[slug]/page.tsx`, `TerminalAnimation.tsx`, `ServiceTemplate`, `servicesData.ts`, `ConvertJpg.tsx`, `PdfToImages.tsx`, `blog/[slug]/page.tsx`, `CountSection.tsx`, `FireAnimation.tsx`, `ScrapingProcess.tsx`, `car-rental-data-scraping/page.tsx`, `fashion-scraping/page.tsx`, `food-data-scraping/page.tsx`, `liquor-or-alchol-data-scraping/page.tsx`, `quick-commerce-scraping/page.tsx`, `recruitment-data-scraping-service/page.tsx`, `ConvertPng.tsx`, `ConvertWebp.tsx`, `JSONToHTMLTable.tsx`, `ChangeFormat.tsx`, `ColorAdjust.tsx`, `json-tooles/components/JSONToXML.tsx`, `RemoveBg.tsx`, `CSVToExcel.tsx`, `EPUBToMOBI.tsx`, `EPUBToPDF.tsx`, `ExcelToXML.tsx`, `ImageConverter.tsx`, `converter-tools/components/JSONToExcel.tsx`, `MP4Converter.tsx`, `PDFToExcel.tsx`, `PDFToPPT.tsx`, `SplitCSV.tsx`, `VideoConverter.tsx`, `XMLToExcel.tsx`, `JSONParser.tsx`?**
+  _High betweenness centrality (0.373) - this node is a cross-community bridge._
+- **Why does `lucide-react` connect `lucide-react` to `app/page.tsx`, `layout.tsx`, `MonacoCodeRunEditor.tsx`, `package.json`, `@codemirror/lang-json`, `ConverterTemplate.tsx`, `pdf-tooles/components/ImageToPdf.tsx`, `image-tooles/[slug]/page.tsx`, `converter-tools/[slug]/page.tsx`, `react`, `JSONViewer.tsx`, `browser-image-compression`, `JSONSchemaValidator.tsx`, `Navbar.tsx`, `ServicesPageClient.tsx`, `JSONDiff.tsx`, `dataset/page.tsx`, `JSONFormatter.tsx`, `ServiceTemplate.tsx`, `ecommerce-data-scraping/page.tsx`, `framer-motion`, `json-tooles/components/CSVToJSON.tsx`, `DatasetsMegaMenu.tsx`, `ToolsMegaMenu.tsx`, `UnitConverter.tsx`, `CropImage.tsx`, `YAMLToJSON.tsx`, `JSONValidator.tsx`, `json-tooles/[slug]/page.tsx`, `TerminalAnimation.tsx`, `ServiceTemplate`, `servicesData.ts`, `ConvertJpg.tsx`, `CountSection.tsx`, `FireAnimation.tsx`, `ScrapingProcess.tsx`, `car-rental-data-scraping/page.tsx`, `fashion-scraping/page.tsx`, `finance-and-stock-scraping/page.tsx`, `food-data-scraping/page.tsx`, `food-delivery-data-scraping-service/page.tsx`, `healthcare-data-scraping/page.tsx`, `liquor-or-alchol-data-scraping/page.tsx`, `ott-streaming-data-scraping-service/page.tsx`, `quick-commerce-fmcg-data-scraping/page.tsx`, `quick-commerce-scraping/page.tsx`, `real-estate-property-data-scraping/page.tsx`, `recruitment-data-scraping-service/page.tsx`, `social-media-scraping-services/page.tsx`, `travel-data-scraping/page.tsx`, `ConvertPng.tsx`, `ConvertWebp.tsx`, `JSONToHTMLTable.tsx`, `ChangeFormat.tsx`, `ColorAdjust.tsx`, `json-tooles/components/JSONToXML.tsx`, `JSONParser.tsx`?**
+  _High betweenness centrality (0.203) - this node is a cross-community bridge._
 - **Why does `dependencies` connect `dependencies` to `package.json`?**
-  _High betweenness centrality (0.125) - this node is a cross-community bridge._
+  _High betweenness centrality (0.126) - this node is a cross-community bridge._
 - **What connects `metadata`, `stats`, `services` to the rest of the system?**
-  _326 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _320 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `layout.tsx` be split into smaller, more focused modules?**
   _Cohesion score 0.10153846153846154 - nodes in this community are weakly interconnected._
 - **Should `compilerOptions` be split into smaller, more focused modules?**
   _Cohesion score 0.10526315789473684 - nodes in this community are weakly interconnected._
 - **Should `MonacoCodeRunEditor.tsx` be split into smaller, more focused modules?**
-  _Cohesion score 0.06234567901234568 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06842105263157895 - nodes in this community are weakly interconnected._

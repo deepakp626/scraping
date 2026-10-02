@@ -17,6 +17,8 @@ export interface LanguageConfig {
   extension: string;
   monacoLang: string;
   color: string;
+  version?: string;
+  isLatest?: boolean;
   icon?: React.ComponentType<{ className?: string; style?: React.CSSProperties }>;
   image?: string;
   starter: string;

@@ -21,880 +21,1349 @@ import {
   Brackets,
   FileText,
   Boxes,
+  Binary,
 } from "lucide-react";
 import type { LanguageConfig } from "../types/editor";
+import pythonSvg from "@/public/programming-languages/python.svg";
 
-import pythonSvg from "@/public/programming-languages/python.svg"
+/**
+ * Raw Judge0 CE Language list provided for exact mapping.
+ */
+export const JUDGE0_RAW_LANGUAGES = [
+  { id: 45, name: "Assembly (NASM 2.14.02)" },
+  { id: 46, name: "Bash (5.0.0)" },
+  { id: 47, name: "Basic (FBC 1.07.1)" },
+  { id: 75, name: "C (Clang 7.0.1)" },
+  { id: 76, name: "C++ (Clang 7.0.1)" },
+  { id: 48, name: "C (GCC 7.4.0)" },
+  { id: 52, name: "C++ (GCC 7.4.0)" },
+  { id: 49, name: "C (GCC 8.3.0)" },
+  { id: 53, name: "C++ (GCC 8.3.0)" },
+  { id: 50, name: "C (GCC 9.2.0)" },
+  { id: 54, name: "C++ (GCC 9.2.0)" },
+  { id: 86, name: "Clojure (1.10.1)" },
+  { id: 51, name: "C# (Mono 6.6.0.161)" },
+  { id: 77, name: "COBOL (GnuCOBOL 2.2)" },
+  { id: 55, name: "Common Lisp (SBCL 2.0.0)" },
+  { id: 56, name: "D (DMD 2.089.1)" },
+  { id: 57, name: "Elixir (1.9.4)" },
+  { id: 58, name: "Erlang (OTP 22.2)" },
+  { id: 44, name: "Executable" },
+  { id: 87, name: "F# (.NET Core SDK 3.1.202)" },
+  { id: 59, name: "Fortran (GFortran 9.2.0)" },
+  { id: 60, name: "Go (1.13.5)" },
+  { id: 88, name: "Groovy (3.0.3)" },
+  { id: 61, name: "Haskell (GHC 8.8.1)" },
+  { id: 62, name: "Java (OpenJDK 13.0.1)" },
+  { id: 63, name: "JavaScript (Node.js 12.14.0)" },
+  { id: 78, name: "Kotlin (1.3.70)" },
+  { id: 64, name: "Lua (5.3.5)" },
+  { id: 89, name: "Multi-file program" },
+  { id: 79, name: "Objective-C (Clang 7.0.1)" },
+  { id: 65, name: "OCaml (4.09.0)" },
+  { id: 66, name: "Octave (5.1.0)" },
+  { id: 67, name: "Pascal (FPC 3.0.4)" },
+  { id: 85, name: "Perl (5.28.1)" },
+  { id: 68, name: "PHP (7.4.1)" },
+  { id: 43, name: "Plain Text" },
+  { id: 69, name: "Prolog (GNU Prolog 1.4.5)" },
+  { id: 70, name: "Python (2.7.17)" },
+  { id: 71, name: "Python (3.8.1)" },
+  { id: 80, name: "R (4.0.0)" },
+  { id: 72, name: "Ruby (2.7.0)" },
+  { id: 73, name: "Rust (1.40.0)" },
+  { id: 81, name: "Scala (2.13.2)" },
+  { id: 82, name: "SQL (SQLite 3.27.2)" },
+  { id: 83, name: "Swift (5.2.3)" },
+  { id: 74, name: "TypeScript (3.7.4)" },
+  { id: 84, name: "Visual Basic.Net (vbnc 0.0.0.5943)" },
+] as const;
 
-export const LANGUAGES: Record<string, LanguageConfig> = {
+/**
+ * Unique primary language definitions.
+ */
+const PRIMARY_LANGUAGES: Record<string, LanguageConfig> = {
+  // ── Python ─────────────────────────────────────────────────────────────
   python: {
     id: "python",
-    name: "Python",
+    name: "Python (3.8.1)",
     judge0Id: 71,
     extension: "py",
     monacoLang: "python",
     color: "#3b82f6",
-    icon: pythonSvg,
-    starter: `# Python 3.12
+    version: "3.8.1",
+    isLatest: true,
+    starter: `# Python 3.8.1 (Latest)
 def greet(name: str) -> str:
     return f"Hello, {name}!"
 
-# List comprehension
+# List comprehension & dict
 squares = [x**2 for x in range(1, 6)]
 print(greet("World"))
 print("Squares:", squares)
 
-# Dictionary operations
-person = {"name": "Alice", "age": 30}
+person = {"name": "Alice", "role": "Developer"}
 for key, value in person.items():
     print(f"  {key}: {value}")
 `,
     info: {
-      description:
-        "General-purpose, high-level language famous for its clean syntax. Excellent for data science, AI/ML, scripting, and web backends.",
-      version: "3.12",
-      tip: 'Use f-strings for formatting: f"Hello, {name}". List comprehensions for concise loops.',
+      description: "Python 3.8.1 - Clean, versatile high-level language widely used for web development, scripting, data science, and AI/ML.",
+      version: "3.8.1",
+      tip: "Use f-strings for string interpolation: f'Hello, {name}'.",
       website: "https://python.org",
     },
   },
 
+  python2: {
+    id: "python2",
+    name: "Python (2.7.17)",
+    judge0Id: 70,
+    extension: "py",
+    monacoLang: "python",
+    color: "#f59e0b",
+    version: "2.7.17",
+    isLatest: false,
+    starter: `# Python 2.7.17 (Legacy)
+print "Hello, World from Python 2.7!"
+
+squares = [x**2 for x in range(1, 6)]
+print "Squares:", squares
+`,
+    info: {
+      description: "Legacy Python 2.7.17 runtime for backwards compatibility with legacy Python scripts.",
+      version: "2.7.17",
+      tip: "Print statement does not require parentheses in Python 2: print 'Hello'.",
+      website: "https://python.org",
+    },
+  },
+
+  // ── JavaScript / TypeScript ────────────────────────────────────────────
   javascript: {
     id: "javascript",
-    name: "JavaScript",
+    name: "JavaScript (Node.js 12.14.0)",
     judge0Id: 63,
     extension: "js",
     monacoLang: "javascript",
     color: "#eab308",
-    starter: `// JavaScript (Node.js 20)
+    version: "Node.js 12.14.0",
+    isLatest: true,
+    starter: `// JavaScript (Node.js 12.14.0)
 const greet = (name) => \`Hello, \${name}!\`;
 
-// Async/await example
-const fetchData = async () => {
-  return new Promise(resolve => {
-    setTimeout(() => resolve([1, 2, 3, 4, 5]), 100);
-  });
-};
-
-(async () => {
-  console.log(greet("World"));
-  const data = await fetchData();
-  console.log("Data:", data.map(x => x ** 2));
-  
-  // Destructuring
-  const { a = 10, b = 20 } = {};
-  console.log(\`a=\${a}, b=\${b}\`);
-})();
+const numbers = [1, 2, 3, 4, 5];
+console.log(greet("World"));
+console.log("Squares:", numbers.map(n => n * n));
 `,
     info: {
-      description:
-        "The language of the web — runs in browsers and Node.js. Supports async/await, modules, and modern ES2024 features.",
-      version: "Node.js 20 LTS",
-      tip: "Use const/let instead of var. Optional chaining: obj?.prop. Nullish coalescing: val ?? default.",
+      description: "High-performance JavaScript runtime on Node.js 12.14.0 engine.",
+      version: "Node.js 12.14.0",
+      tip: "Use const/let over var and template literals for string interpolation.",
       website: "https://nodejs.org",
     },
   },
 
   typescript: {
     id: "typescript",
-    name: "TypeScript",
+    name: "TypeScript (3.7.4)",
     judge0Id: 74,
     extension: "ts",
     monacoLang: "typescript",
     color: "#2563eb",
-    starter: `// TypeScript 5.4
+    version: "3.7.4",
+    isLatest: true,
+    starter: `// TypeScript 3.7.4
 interface User {
   id: number;
   name: string;
-  email: string;
 }
 
 const greet = (user: User): string => {
   return \`Hello, \${user.name}! (ID: \${user.id})\`;
 };
 
-// Generic function
-function identity<T>(arg: T): T {
-  return arg;
-}
-
-const alice: User = { id: 1, name: "Alice", email: "alice@example.com" };
-console.log(greet(alice));
-console.log(identity<number>(42));
-console.log(identity<string>("TypeScript rocks!"));
+const user: User = { id: 1, name: "World" };
+console.log(greet(user));
 `,
     info: {
-      description:
-        "JavaScript with static types. Compiles to JS. Catches errors at compile-time. Industry standard for large React/Node.js projects.",
-      version: "5.4",
-      tip: "Use interface for object shapes, type for unions. Generics: function fn<T>(arg: T): T",
+      description: "Typed superset of JavaScript that compiles to plain JavaScript.",
+      version: "3.7.4",
+      tip: "Use interfaces to enforce typed contracts across your application.",
       website: "https://typescriptlang.org",
     },
   },
 
-  java: {
-    id: "java",
-    name: "Java",
-    judge0Id: 62,
-    extension: "java",
-    monacoLang: "java",
-    color: "#f97316",
-    starter: `// Java 21
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
-
-public class Main {
-    record Person(String name, int age) {}
-
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-
-        // Streams API
-        List<Integer> nums = Arrays.asList(1, 2, 3, 4, 5);
-        List<Integer> squares = nums.stream()
-            .map(n -> n * n)
-            .collect(Collectors.toList());
-        System.out.println("Squares: " + squares);
-
-        // Records (Java 16+)
-        var alice = new Person("Alice", 30);
-        System.out.printf("Person: %s, age %d%n", alice.name(), alice.age());
-    }
-}
-`,
-    info: {
-      description:
-        "Strongly-typed, object-oriented language. Write once, run anywhere on the JVM. Powers Android and enterprise backends.",
-      version: "JDK 21 LTS",
-      tip: "Entry point: public static void main(String[] args). Use var for type inference (Java 10+).",
-      website: "https://openjdk.org",
-    },
-  },
-
-  cpp: {
-    id: "cpp",
-    name: "C++",
-    judge0Id: 54,
-    extension: "cpp",
-    monacoLang: "cpp",
-    color: "#7c3aed",
-    starter: `// C++17
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include <string>
-
-int main() {
-    std::cout << "Hello, World!" << std::endl;
-
-    // Range-based for loop
-    std::vector<int> nums = {5, 2, 8, 1, 9, 3};
-    std::sort(nums.begin(), nums.end());
-    
-    std::cout << "Sorted: ";
-    for (const auto& n : nums) {
-        std::cout << n << " ";
-    }
-    std::cout << std::endl;
-
-    // Lambda
-    auto square = [](int x) { return x * x; };
-    std::cout << "5² = " << square(5) << std::endl;
-
-    return 0;
-}
-`,
-    info: {
-      description:
-        "High-performance systems language with zero-cost abstractions. Used in game engines, OS, compilers, and embedded systems.",
-      version: "C++17/20",
-      tip: "Use #include <iostream> and std::cout. Prefer references (&) over pointers. Use auto for type inference.",
-      website: "https://isocpp.org",
-    },
-  },
-
+  // ── C (GCC 9.2.0 is latest, GCC 8.3.0, GCC 7.4.0, Clang 7.0.1) ──────────
   c: {
     id: "c",
-    name: "C",
+    name: "C (GCC 9.2.0)",
     judge0Id: 50,
     extension: "c",
     monacoLang: "c",
     color: "#6366f1",
-    starter: `// C11
+    version: "GCC 9.2.0",
+    isLatest: true,
+    starter: `// C (GCC 9.2.0 - Latest)
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
-void reverse(char* str) {
-    int n = strlen(str);
-    for (int i = 0; i < n / 2; i++) {
-        char tmp = str[i];
-        str[i] = str[n - 1 - i];
-        str[n - 1 - i] = tmp;
-    }
-}
-
-int main() {
+int main(void) {
     printf("Hello, World!\\n");
-
-    // Array operations
-    int arr[] = {1, 2, 3, 4, 5};
+    int nums[] = {1, 2, 3, 4, 5};
     int sum = 0;
-    for (int i = 0; i < 5; i++) sum += arr[i];
+    for (int i = 0; i < 5; i++) {
+        sum += nums[i];
+    }
     printf("Sum: %d\\n", sum);
-
-    // String manipulation
-    char word[] = "coderun";
-    reverse(word);
-    printf("Reversed: %s\\n", word);
-
     return 0;
 }
 `,
     info: {
-      description:
-        "Low-level systems language. Foundation of modern operating systems and compilers. Manual memory management gives full control.",
-      version: "C11/C17",
-      tip: "printf() for output, scanf() for input. Always free() malloc'd memory. Use sizeof() for array sizes.",
+      description: "C compiled with GCC 9.2.0. Foundational low-level systems programming language.",
+      version: "GCC 9.2.0",
+      tip: "Remember to include <stdio.h> for printf and manage pointers carefully.",
       website: "https://en.cppreference.com",
     },
   },
 
+  c_gcc8: {
+    id: "c_gcc8",
+    name: "C (GCC 8.3.0)",
+    judge0Id: 49,
+    extension: "c",
+    monacoLang: "c",
+    color: "#6366f1",
+    version: "GCC 8.3.0",
+    isLatest: false,
+    starter: `// C (GCC 8.3.0)
+#include <stdio.h>
+
+int main(void) {
+    printf("Hello, World from GCC 8.3.0!\\n");
+    return 0;
+}
+`,
+    info: {
+      description: "C language compiled with GNU Compiler Collection 8.3.0.",
+      version: "GCC 8.3.0",
+      tip: "Standard C compiler.",
+      website: "https://gcc.gnu.org",
+    },
+  },
+
+  c_gcc7: {
+    id: "c_gcc7",
+    name: "C (GCC 7.4.0)",
+    judge0Id: 48,
+    extension: "c",
+    monacoLang: "c",
+    color: "#6366f1",
+    version: "GCC 7.4.0",
+    isLatest: false,
+    starter: `// C (GCC 7.4.0)
+#include <stdio.h>
+
+int main(void) {
+    printf("Hello, World from GCC 7.4.0!\\n");
+    return 0;
+}
+`,
+    info: {
+      description: "C language compiled with GNU Compiler Collection 7.4.0.",
+      version: "GCC 7.4.0",
+      tip: "Standard C compiler.",
+      website: "https://gcc.gnu.org",
+    },
+  },
+
+  c_clang: {
+    id: "c_clang",
+    name: "C (Clang 7.0.1)",
+    judge0Id: 75,
+    extension: "c",
+    monacoLang: "c",
+    color: "#0284c7",
+    version: "Clang 7.0.1",
+    isLatest: false,
+    starter: `// C (Clang 7.0.1)
+#include <stdio.h>
+
+int main(void) {
+    printf("Hello, World from Clang 7.0.1!\\n");
+    return 0;
+}
+`,
+    info: {
+      description: "C language compiled with LLVM Clang 7.0.1 compiler.",
+      version: "Clang 7.0.1",
+      tip: "LLVM-based C compiler with fast compilation.",
+      website: "https://clang.llvm.org",
+    },
+  },
+
+  // ── C++ (GCC 9.2.0 is latest, GCC 8.3.0, GCC 7.4.0, Clang 7.0.1) ────────
+  cpp: {
+    id: "cpp",
+    name: "C++ (GCC 9.2.0)",
+    judge0Id: 54,
+    extension: "cpp",
+    monacoLang: "cpp",
+    color: "#7c3aed",
+    version: "GCC 9.2.0",
+    isLatest: true,
+    starter: `// C++ (GCC 9.2.0 - Latest)
+#include <iostream>
+#include <vector>
+#include <numeric>
+
+int main() {
+    std::cout << "Hello, World!" << std::endl;
+    std::vector<int> nums = {1, 2, 3, 4, 5};
+    int sum = std::accumulate(nums.begin(), nums.end(), 0);
+    std::cout << "Sum: " << sum << std::endl;
+    return 0;
+}
+`,
+    info: {
+      description: "C++ compiled with GCC 9.2.0 supporting C++17 modern features and STL.",
+      version: "GCC 9.2.0",
+      tip: "Use std::vector and modern STL algorithms instead of raw arrays.",
+      website: "https://isocpp.org",
+    },
+  },
+
+  cpp_gcc8: {
+    id: "cpp_gcc8",
+    name: "C++ (GCC 8.3.0)",
+    judge0Id: 53,
+    extension: "cpp",
+    monacoLang: "cpp",
+    color: "#8b5cf6",
+    version: "GCC 8.3.0",
+    isLatest: false,
+    starter: `// C++ (GCC 8.3.0)
+#include <iostream>
+
+int main() {
+    std::cout << "Hello, World from GCC 8.3.0 C++!" << std::endl;
+    return 0;
+}
+`,
+    info: {
+      description: "C++ compiled with GNU Compiler Collection 8.3.0.",
+      version: "GCC 8.3.0",
+      tip: "Supports modern C++ features.",
+      website: "https://gcc.gnu.org",
+    },
+  },
+
+  cpp_gcc7: {
+    id: "cpp_gcc7",
+    name: "C++ (GCC 7.4.0)",
+    judge0Id: 52,
+    extension: "cpp",
+    monacoLang: "cpp",
+    color: "#8b5cf6",
+    version: "GCC 7.4.0",
+    isLatest: false,
+    starter: `// C++ (GCC 7.4.0)
+#include <iostream>
+
+int main() {
+    std::cout << "Hello, World from GCC 7.4.0 C++!" << std::endl;
+    return 0;
+}
+`,
+    info: {
+      description: "C++ compiled with GNU Compiler Collection 7.4.0.",
+      version: "GCC 7.4.0",
+      tip: "Supports standard C++14/17.",
+      website: "https://gcc.gnu.org",
+    },
+  },
+
+  cpp_clang: {
+    id: "cpp_clang",
+    name: "C++ (Clang 7.0.1)",
+    judge0Id: 76,
+    extension: "cpp",
+    monacoLang: "cpp",
+    color: "#7c3aed",
+    version: "Clang 7.0.1",
+    isLatest: false,
+    starter: `// C++ (Clang 7.0.1)
+#include <iostream>
+
+int main() {
+    std::cout << "Hello, World from Clang 7.0.1 C++!" << std::endl;
+    return 0;
+}
+`,
+    info: {
+      description: "C++ compiled with LLVM Clang 7.0.1 frontend.",
+      version: "Clang 7.0.1",
+      tip: "Fast LLVM diagnostic compiler.",
+      website: "https://clang.llvm.org",
+    },
+  },
+
+  // ── Assembly ───────────────────────────────────────────────────────────
+  assembly: {
+    id: "assembly",
+    name: "Assembly (NASM 2.14.02)",
+    judge0Id: 45,
+    extension: "asm",
+    monacoLang: "mips",
+    color: "#64748b",
+    version: "NASM 2.14.02",
+    isLatest: true,
+    starter: `section .data
+    msg db "Hello, World!", 10
+    len equ $ - msg
+
+section .text
+    global _start
+
+_start:
+    ; sys_write (eax=4, ebx=1, ecx=msg, edx=len)
+    mov eax, 4
+    mov ebx, 1
+    mov ecx, msg
+    mov edx, len
+    int 0x80
+
+    ; sys_exit (eax=1, ebx=0)
+    mov eax, 1
+    xor ebx, ebx
+    int 0x80
+`,
+    info: {
+      description: "Netwide Assembler (NASM) x86 assembly language runtime.",
+      version: "NASM 2.14.02",
+      tip: "Uses 32-bit Linux int 0x80 system calls for I/O operations.",
+      website: "https://nasm.us",
+    },
+  },
+
+  // ── Bash ───────────────────────────────────────────────────────────────
+  bash: {
+    id: "bash",
+    name: "Bash (5.0.0)",
+    judge0Id: 46,
+    extension: "sh",
+    monacoLang: "shell",
+    color: "#22c55e",
+    version: "5.0.0",
+    isLatest: true,
+    starter: `#!/bin/bash
+# Bash 5.0.0
+echo "Hello, World!"
+
+# Loop calculation
+for ((i=1; i<=5; i++)); do
+    echo "  $i squared = $((i * i))"
+done
+`,
+    info: {
+      description: "GNU Bourne Again Shell scripting environment.",
+      version: "5.0.0",
+      tip: "Use $(( ... )) for native integer arithmetic in Bash.",
+      website: "https://gnu.org/software/bash",
+    },
+  },
+
+  // ── Basic ──────────────────────────────────────────────────────────────
+  basic: {
+    id: "basic",
+    name: "Basic (FBC 1.07.1)",
+    judge0Id: 47,
+    extension: "bas",
+    monacoLang: "vb",
+    color: "#0284c7",
+    version: "FBC 1.07.1",
+    isLatest: true,
+    starter: `' FreeBASIC (FBC 1.07.1)
+Print "Hello, World!"
+
+Dim As Integer i, sum = 0
+For i = 1 To 5
+    sum += i * i
+Next i
+
+Print "Sum of squares (1..5): "; sum
+`,
+    info: {
+      description: "FreeBASIC high-level syntax compiler compatible with QuickBASIC.",
+      version: "FBC 1.07.1",
+      tip: "Use Dim As Integer for typed variable declarations.",
+      website: "https://freebasic.net",
+    },
+  },
+
+  // ── Clojure ────────────────────────────────────────────────────────────
+  clojure: {
+    id: "clojure",
+    name: "Clojure (1.10.1)",
+    judge0Id: 86,
+    extension: "clj",
+    monacoLang: "clojure",
+    color: "#5881d8",
+    version: "1.10.1",
+    isLatest: true,
+    starter: `; Clojure 1.10.1
+(defn greet [name]
+  (str "Hello, " name "!"))
+
+(println (greet "World"))
+
+(def numbers [1 2 3 4 5])
+(println "Squares:" (map #( * % % ) numbers))
+`,
+    info: {
+      description: "Dynamic, general-purpose functional programming language for the JVM.",
+      version: "1.10.1",
+      tip: "Parentheses wrap function invocations: (fn arg1 arg2).",
+      website: "https://clojure.org",
+    },
+  },
+
+  // ── C# ─────────────────────────────────────────────────────────────────
   csharp: {
     id: "csharp",
-    name: "C#",
+    name: "C# (Mono 6.6.0.161)",
     judge0Id: 51,
     extension: "cs",
     monacoLang: "csharp",
     color: "#8b5cf6",
-    starter: `// C# 12 / .NET 8
+    version: "Mono 6.6.0.161",
+    isLatest: true,
+    starter: `// C# (Mono 6.6.0.161)
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
 class Program {
-    record Product(string Name, decimal Price);
-
     static void Main() {
         Console.WriteLine("Hello, World!");
-
-        // LINQ
-        var products = new List<Product> {
-            new("Apple", 1.5m),
-            new("Banana", 0.75m),
-            new("Cherry", 3.0m),
-        };
-
-        var expensive = products
-            .Where(p => p.Price > 1.0m)
-            .OrderBy(p => p.Price)
-            .Select(p => $"{p.Name}: £{p.Price:F2}");
-
-        foreach (var item in expensive)
-            Console.WriteLine(item);
+        var nums = new List<int> { 1, 2, 3, 4, 5 };
+        Console.WriteLine("Sum: " + nums.Sum());
     }
 }
 `,
     info: {
-      description:
-        "Microsoft's flagship language for .NET. Excellent for Windows apps, ASP.NET web APIs, Unity games, and Xamarin mobile.",
-      version: ".NET 8 / C# 12",
-      tip: "Use LINQ for collections. Records for immutable data. var for type inference. string interpolation: $\"Hello {name}\"",
-      website: "https://learn.microsoft.com/dotnet/csharp",
+      description: "Modern, object-oriented language for .NET running on Mono runtime.",
+      version: "Mono 6.6.0.161",
+      tip: "Use LINQ methods like .Select() and .Where() for concise collection processing.",
+      website: "https://mono-project.com",
     },
   },
 
+  // ── COBOL ──────────────────────────────────────────────────────────────
+  cobol: {
+    id: "cobol",
+    name: "COBOL (GnuCOBOL 2.2)",
+    judge0Id: 77,
+    extension: "cob",
+    monacoLang: "plaintext",
+    color: "#1e3a8a",
+    version: "GnuCOBOL 2.2",
+    isLatest: true,
+    starter: `       IDENTIFICATION DIVISION.
+       PROGRAM-ID. HELLO-WORLD.
+       PROCEDURE DIVISION.
+           DISPLAY 'Hello, World!'.
+           STOP RUN.
+`,
+    info: {
+      description: "GnuCOBOL enterprise business data processing language.",
+      version: "GnuCOBOL 2.2",
+      tip: "COBOL programs require standard DIVISION layout headers.",
+      website: "https://gnucobol.sourceforge.io",
+    },
+  },
+
+  // ── Common Lisp ────────────────────────────────────────────────────────
+  lisp: {
+    id: "lisp",
+    name: "Common Lisp (SBCL 2.0.0)",
+    judge0Id: 55,
+    extension: "lisp",
+    monacoLang: "scheme",
+    color: "#475569",
+    version: "SBCL 2.0.0",
+    isLatest: true,
+    starter: `;; Common Lisp (SBCL 2.0.0)
+(format t "Hello, World!~%")
+
+(defun square (x)
+  (* x x))
+
+(format t "Square of 5: ~a~%" (square 5))
+`,
+    info: {
+      description: "Steel Bank Common Lisp high-performance Common Lisp compiler.",
+      version: "SBCL 2.0.0",
+      tip: "(format t \"...~%\") prints text with a trailing newline.",
+      website: "https://sbcl.org",
+    },
+  },
+
+  // ── D ──────────────────────────────────────────────────────────────────
+  d: {
+    id: "d",
+    name: "D (DMD 2.089.1)",
+    judge0Id: 56,
+    extension: "d",
+    monacoLang: "c",
+    color: "#b91c1c",
+    version: "DMD 2.089.1",
+    isLatest: true,
+    starter: `// D (DMD 2.089.1)
+import std.stdio;
+
+void main() {
+    writeln("Hello, World!");
+    int[] nums = [1, 2, 3, 4, 5];
+    foreach (n; nums) {
+        writefln("  %d squared is %d", n, n * n);
+    }
+}
+`,
+    info: {
+      description: "General-purpose systems programming language with C++ power and clean syntax.",
+      version: "DMD 2.089.1",
+      tip: "Use std.stdio writeln and writefln for formatted output.",
+      website: "https://dlang.org",
+    },
+  },
+
+  // ── Elixir ─────────────────────────────────────────────────────────────
+  elixir: {
+    id: "elixir",
+    name: "Elixir (1.9.4)",
+    judge0Id: 57,
+    extension: "ex",
+    monacoLang: "elixir",
+    color: "#6e3f89",
+    version: "1.9.4",
+    isLatest: true,
+    starter: `# Elixir 1.9.4
+IO.puts "Hello, World!"
+
+squares = 1..5 |> Enum.map(&(&1 * &1))
+IO.inspect squares, label: "Squares"
+`,
+    info: {
+      description: "Concurrent functional language built on the Erlang BEAM virtual machine.",
+      version: "1.9.4",
+      tip: "Use the pipe operator |> to chain data transformations cleanly.",
+      website: "https://elixir-lang.org",
+    },
+  },
+
+  // ── Erlang ─────────────────────────────────────────────────────────────
+  erlang: {
+    id: "erlang",
+    name: "Erlang (OTP 22.2)",
+    judge0Id: 58,
+    extension: "erl",
+    monacoLang: "plaintext",
+    color: "#a90533",
+    version: "OTP 22.2",
+    isLatest: true,
+    starter: `% Erlang OTP 22.2
+-module(main).
+-export([start/0]).
+
+start() ->
+    io:format("Hello, World!~n"),
+    Nums = [1, 2, 3, 4, 5],
+    Squares = lists:map(fun(X) -> X * X end, Nums),
+    io:format("Squares: ~p~n", [Squares]).
+`,
+    info: {
+      description: "Battle-tested functional runtime powering distributed, fault-tolerant telecom systems.",
+      version: "OTP 22.2",
+      tip: "Module name must match execution entry; finish statements with a period.",
+      website: "https://erlang.org",
+    },
+  },
+
+  // ── Executable ─────────────────────────────────────────────────────────
+  executable: {
+    id: "executable",
+    name: "Executable",
+    judge0Id: 44,
+    extension: "exe",
+    monacoLang: "plaintext",
+    color: "#475569",
+    version: "Binary",
+    isLatest: true,
+    starter: `#!/bin/sh
+# Executable runner
+echo "Executable script runner active."
+`,
+    info: {
+      description: "Direct executable binary runner sandbox in Judge0 CE.",
+      version: "Binary",
+      tip: "Runs uploaded or generated executable binaries.",
+      website: "https://judge0.com",
+    },
+  },
+
+  // ── F# ─────────────────────────────────────────────────────────────────
+  fsharp: {
+    id: "fsharp",
+    name: "F# (.NET Core SDK 3.1.202)",
+    judge0Id: 87,
+    extension: "fs",
+    monacoLang: "fsharp",
+    color: "#30b9db",
+    version: ".NET Core 3.1.202",
+    isLatest: true,
+    starter: `// F# (.NET Core SDK 3.1.202)
+printfn "Hello, World!"
+
+let square x = x * x
+let numbers = [1 .. 5]
+let squares = List.map square numbers
+
+printfn "Squares: %A" squares
+`,
+    info: {
+      description: "Universal programming language for writing succinct, robust, and performant code on .NET.",
+      version: ".NET Core 3.1.202",
+      tip: "Use %A in printfn to format any structured data or collections.",
+      website: "https://fsharp.org",
+    },
+  },
+
+  // ── Fortran ────────────────────────────────────────────────────────────
+  fortran: {
+    id: "fortran",
+    name: "Fortran (GFortran 9.2.0)",
+    judge0Id: 59,
+    extension: "f90",
+    monacoLang: "fortran",
+    color: "#734f96",
+    version: "GFortran 9.2.0",
+    isLatest: true,
+    starter: `! Fortran 90 (GFortran 9.2.0)
+program hello
+    implicit none
+    integer :: i, total
+    print *, "Hello, World!"
+
+    total = 0
+    do i = 1, 5
+        total = total + i * i
+    end do
+    print *, "Sum of squares:", total
+end program hello
+`,
+    info: {
+      description: "High-performance numerical and scientific computing language.",
+      version: "GFortran 9.2.0",
+      tip: "Always declare 'implicit none' to catch unassigned type bugs.",
+      website: "https://fortran-lang.org",
+    },
+  },
+
+  // ── Go ─────────────────────────────────────────────────────────────────
   go: {
     id: "go",
-    name: "Go",
+    name: "Go (1.13.5)",
     judge0Id: 60,
     extension: "go",
     monacoLang: "go",
     color: "#06b6d4",
-    starter: `// Go 1.22
+    version: "1.13.5",
+    isLatest: true,
+    starter: `// Go 1.13.5
 package main
 
-import (
-	"fmt"
-	"sort"
-	"strings"
-)
-
-func fibonacci(n int) []int {
-	seq := []int{0, 1}
-	for i := 2; i < n; i++ {
-		seq = append(seq, seq[i-1]+seq[i-2])
-	}
-	return seq[:n]
-}
+import "fmt"
 
 func main() {
-	fmt.Println("Hello, World!")
-
-	// Slices
-	nums := fibonacci(8)
-	fmt.Println("Fibonacci:", nums)
-
-	// Maps
-	words := strings.Fields("go is fast and simple")
-	sort.Strings(words)
-	fmt.Println("Sorted words:", words)
+    fmt.Println("Hello, World!")
+    nums := []int{1, 2, 3, 4, 5}
+    sum := 0
+    for _, n := range nums {
+        sum += n * n
+    }
+    fmt.Printf("Sum of squares: %d\\n", sum)
 }
 `,
     info: {
-      description:
-        "Google's language for scalable cloud software. Fast compilation, built-in concurrency with goroutines, simple syntax.",
-      version: "1.22",
-      tip: "fmt.Println() for output. := for short variable declaration. Goroutines: go myFunc(). Channels: make(chan int)",
+      description: "Fast, concurrent, statically typed language developed by Google.",
+      version: "1.13.5",
+      tip: "Use := for short variable declarations and range for iterating slices.",
       website: "https://go.dev",
     },
   },
 
-  rust: {
-    id: "rust",
-    name: "Rust",
-    judge0Id: 73,
-    extension: "rs",
-    monacoLang: "rust",
-    color: "#f97316",
-    starter: `// Rust 1.78
-fn fibonacci(n: u32) -> Vec<u64> {
-    let mut seq = vec![0u64, 1];
-    for i in 2..n as usize {
-        let next = seq[i-1] + seq[i-2];
-        seq.push(next);
-    }
-    seq.truncate(n as usize);
-    seq
-}
+  // ── Groovy ─────────────────────────────────────────────────────────────
+  groovy: {
+    id: "groovy",
+    name: "Groovy (3.0.3)",
+    judge0Id: 88,
+    extension: "groovy",
+    monacoLang: "groovy",
+    color: "#4298b8",
+    version: "3.0.3",
+    isLatest: true,
+    starter: `// Groovy 3.0.3
+println "Hello, World!"
 
-fn main() {
-    println!("Hello, World!");
-
-    // Ownership & iterators
-    let nums: Vec<i32> = (1..=5).collect();
-    let squares: Vec<i32> = nums.iter().map(|&x| x * x).collect();
-    println!("Squares: {:?}", squares);
-
-    // Pattern matching
-    let fibs = fibonacci(8);
-    println!("Fibonacci: {:?}", fibs);
-
-    let sum: u64 = fibs.iter().sum();
-    println!("Sum: {}", sum);
-}
+def numbers = [1, 2, 3, 4, 5]
+def squares = numbers.collect { it * it }
+println "Squares: " + squares
 `,
     info: {
-      description:
-        "Memory-safe systems language with no garbage collector. Ownership model prevents data races at compile time.",
-      version: "1.78 (stable)",
-      tip: "println!() is a macro. let = immutable, let mut = mutable. .iter() for references, .into_iter() for ownership.",
-      website: "https://rust-lang.org",
+      description: "Powerful, multi-faceted language for the Java platform with concise syntax.",
+      version: "3.0.3",
+      tip: "Use .collect { it * 2 } for mapping operations over collections.",
+      website: "https://groovy-lang.org",
     },
   },
 
-  kotlin: {
-    id: "kotlin",
-    name: "Kotlin",
-    judge0Id: 78,
-    extension: "kt",
-    monacoLang: "kotlin",
-    color: "#a855f7",
-    starter: `// Kotlin 2.0
-data class Person(val name: String, val age: Int)
-
-fun List<Int>.squared() = map { it * it }
-
-fun main() {
-    println("Hello, World!")
-
-    // Data classes & extension functions
-    val people = listOf(
-        Person("Alice", 30),
-        Person("Bob", 25),
-        Person("Charlie", 35)
-    )
-
-    people
-        .filter { it.age >= 30 }
-        .sortedBy { it.name }
-        .forEach { println("  \${it.name}: \${it.age}") }
-
-    // Extension function
-    val squares = (1..5).toList().squared()
-    println("Squares: \$squares")
-}
-`,
-    info: {
-      description:
-        "Modern JVM language, 100% interoperable with Java. Official Android language. Concise and expressive with null safety.",
-      version: "2.0",
-      tip: "val = immutable, var = mutable. String templates: \"Hello \$name\". data class auto-generates equals/hashCode/toString.",
-      website: "https://kotlinlang.org",
-    },
-  },
-
-  swift: {
-    id: "swift",
-    name: "Swift",
-    judge0Id: 83,
-    extension: "swift",
-    monacoLang: "swift",
-    color: "#f97316",
-    starter: `// Swift 5.10
-struct Stack<T> {
-    private var elements: [T] = []
-    mutating func push(_ item: T) { elements.append(item) }
-    mutating func pop() -> T? { elements.popLast() }
-    var top: T? { elements.last }
-}
-
-print("Hello, World!")
-
-// Generics
-var stack = Stack<Int>()
-[1, 2, 3, 4, 5].forEach { stack.push($0) }
-print("Top:", stack.top ?? "empty")
-
-// Pattern matching
-let nums = [1, 2, 3, 4, 5, 6]
-let (evens, odds) = nums.reduce(([Int](), [Int]())) { acc, n in
-    n % 2 == 0 ? (acc.0 + [n], acc.1) : (acc.0, acc.1 + [n])
-}
-print("Evens:", evens, "Odds:", odds)
-`,
-    info: {
-      description:
-        "Apple's language for iOS, macOS, watchOS, and tvOS development. Fast, safe, and expressive with powerful type inference.",
-      version: "5.10",
-      tip: "let = constant, var = variable. Optionals: String? for nullable. Guard statements for early exit.",
-      website: "https://swift.org",
-    },
-  },
-
-  ruby: {
-    id: "ruby",
-    name: "Ruby",
-    judge0Id: 72,
-    extension: "rb",
-    monacoLang: "ruby",
-    color: "#ef4444",
-    starter: `# Ruby 3.3
-class Animal
-  attr_reader :name, :sound
-
-  def initialize(name, sound)
-    @name = name
-    @sound = sound
-  end
-
-  def speak
-    "#{@name} says #{@sound}!"
-  end
-end
-
-puts "Hello, World!"
-
-# OOP
-animals = [
-  Animal.new("Dog", "Woof"),
-  Animal.new("Cat", "Meow"),
-  Animal.new("Cow", "Moo"),
-]
-
-animals.each { |a| puts a.speak }
-
-# Enumerable magic
-numbers = (1..10).to_a
-puts "Evens: #{numbers.select(&:even?)}"
-puts "Sum:   #{numbers.sum}"
-`,
-    info: {
-      description:
-        "Expressive, elegant dynamic language. Everything is an object. Famous for Ruby on Rails web framework.",
-      version: "3.3",
-      tip: "puts for printing with newline. Blocks: {|x| x * 2} or do |x| ... end. Symbol :name vs string \"name\".",
-      website: "https://ruby-lang.org",
-    },
-  },
-
-  php: {
-    id: "php",
-    name: "PHP",
-    judge0Id: 68,
-    extension: "php",
-    monacoLang: "php",
-    color: "#818cf8",
-    starter: `<?php
-// PHP 8.3
-declare(strict_types=1);
-
-readonly class Point {
-    public function __construct(
-        public float $x,
-        public float $y
-    ) {}
-
-    public function distanceTo(Point $other): float {
-        return sqrt(($this->x - $other->x) ** 2 + ($this->y - $other->y) ** 2);
-    }
-
-    public function __toString(): string {
-        return "Point({$this->x}, {$this->y})";
-    }
-}
-
-echo "Hello, World!\n";
-
-$p1 = new Point(0, 0);
-$p2 = new Point(3, 4);
-echo "Distance: " . $p1->distanceTo($p2) . "\n";
-
-// Array functions
-$nums = range(1, 5);
-$squared = array_map(fn($n) => $n ** 2, $nums);
-echo "Squares: " . implode(", ", $squared) . "\n";
-`,
-    info: {
-      description:
-        "Server-side scripting language powering ~77% of websites. Powers WordPress, Laravel, and Symfony.",
-      version: "8.3",
-      tip: "Variables start with $. echo for output. Arrow functions: fn($x) => $x * 2. Use === for strict equality.",
-      website: "https://php.net",
-    },
-  },
-
-  rust2: undefined as unknown as LanguageConfig,
-
-  scala: {
-    id: "scala",
-    name: "Scala",
-    judge0Id: 81,
-    extension: "scala",
-    monacoLang: "scala",
-    color: "#ef4444",
-    starter: `// Scala 3.4
-@main def run(): Unit =
-  println("Hello, World!")
-
-  // Case classes (like records)
-  case class Point(x: Double, y: Double):
-    def distanceTo(other: Point): Double =
-      math.sqrt(math.pow(x - other.x, 2) + math.pow(y - other.y, 2))
-
-  val p1 = Point(0, 0)
-  val p2 = Point(3, 4)
-  println(s"Distance: {p1.distanceTo(p2)}")
-
-  // Functional collections
-  val nums = (1 to 5).toList
-  val result = nums
-    .filter(_ % 2 != 0)
-    .map(n => n * n)
-  println(s"Odd squares: $result")
-`,
-    info: {
-      description:
-        "Combines OOP and functional programming on the JVM. Used at Twitter, LinkedIn, and Netflix for big data (Apache Spark).",
-      version: "3.4",
-      tip: "val = immutable, var = mutable. Case classes have equals/hashCode/toString for free. Use for-comprehensions.",
-      website: "https://scala-lang.org",
-    },
-  },
-
-  r: {
-    id: "r",
-    name: "R",
-    judge0Id: 80,
-    extension: "r",
-    monacoLang: "r",
-    color: "#2563eb",
-    starter: `# R 4.4 — Statistical Computing
-cat("Hello, World!\n")
-
-# Vectors (fundamental R type)
-x <- c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
-cat("Mean:", mean(x), "\n")
-cat("SD:", round(sd(x), 3), "\n")
-cat("Median:", median(x), "\n")
-
-# Vectorized operations
-squares <- x^2
-cat("Squares:", squares, "\n")
-
-# Apply family
-mat <- matrix(1:12, nrow = 3)
-row_sums <- apply(mat, 1, sum)
-cat("Row sums:", row_sums, "\n")
-`,
-    info: {
-      description:
-        "Statistical computing and graphics language. The go-to for data analysis, bioinformatics, and academic research.",
-      version: "4.4",
-      tip: "Vectors: c(1,2,3). Assignment: x <- value. Apply family replaces loops. pipe: x |> mean()",
-      website: "https://r-project.org",
-    },
-  },
-
-  bash: {
-    id: "bash",
-    name: "Bash",
-    judge0Id: 46,
-    extension: "sh",
-    monacoLang: "shell",
-    color: "#22c55e",
-    starter: `#!/bin/bash
-# Bash 5.2
-echo "Hello, World!"
-
-# Arrays
-fruits=("apple" "banana" "cherry" "date")
-echo "Fruits: "
-# echo "Count: "
-
-# Loop with C-style
-for ((i=1; i<=5; i++)); do
-    square=$((i * i))
-    echo "  $i² = $square"
-done
-
-# String operations
-greeting="Hello, Bash!"
-echo "Upper: "
-echo "Length: "
-
-# Function
-greet() {
-    local name="$1"
-    echo "Welcome, $name!"
-}
-greet "Developer"
-`,
-    info: {
-      description:
-        "Unix shell scripting language for automating system tasks. Glues programs together. Essential for DevOps and sysadmin.",
-      version: "Bash 5.2",
-      tip: "$var for variables, ${var} in strings. $(cmd) for command substitution. [[ ]] for modern conditionals.",
-      website: "https://gnu.org/software/bash",
-    },
-  },
-
-  lua: {
-    id: "lua",
-    name: "Lua",
-    judge0Id: 64,
-    extension: "lua",
-    monacoLang: "lua",
-    color: "#3b82f6",
-    starter: `-- Lua 5.4
-print("Hello, World!")
-
--- Tables are everything in Lua
-local function create_stack()
-    local stack = { items = {}, size = 0 }
-    
-    function stack:push(val)
-        self.size = self.size + 1
-        self.items[self.size] = val
-    end
-    
-    function stack:pop()
-        if self.size == 0 then return nil end
-        local val = self.items[self.size]
-        self.items[self.size] = nil
-        self.size = self.size - 1
-        return val
-    end
-    
-    return stack
-end
-
-local s = create_stack()
-for i = 1, 5 do s:push(i * i) end
-
-print("Popping stack:")
-for i = 1, 5 do
-    print("  " .. s:pop())
-end
-`,
-    info: {
-      description:
-        "Lightweight, embeddable scripting language. Popular in game dev (Roblox, Love2D, World of Warcraft), Redis, and nginx.",
-      version: "5.4",
-      tip: "Tables are the only data structure. Local variables with local keyword. String concat with ..",
-      website: "https://lua.org",
-    },
-  },
-
+  // ── Haskell ────────────────────────────────────────────────────────────
   haskell: {
     id: "haskell",
-    name: "Haskell",
+    name: "Haskell (GHC 8.8.1)",
     judge0Id: 61,
     extension: "hs",
     monacoLang: "haskell",
     color: "#8b5cf6",
-    starter: `-- Haskell GHC 9.8
+    version: "GHC 8.8.1",
+    isLatest: true,
+    starter: `-- Haskell (GHC 8.8.1)
 module Main where
 
-import Data.List (sort, group)
-
--- Pure function
 factorial :: Integer -> Integer
 factorial 0 = 1
 factorial n = n * factorial (n - 1)
 
--- Higher-order functions
-applyTwice :: (a -> a) -> a -> a
-applyTwice f = f . f
-
--- List comprehension
-pythagorean :: Int -> [(Int, Int, Int)]
-pythagorean n =
-  [(a, b, c) | c <- [1..n], b <- [1..c], a <- [1..b], a^2 + b^2 == c^2]
-
 main :: IO ()
 main = do
-  putStrLn "Hello, World!"
-  print $ map factorial [0..7]
-  print $ applyTwice (+3) 10
-  print $ pythagorean 20
+    putStrLn "Hello, World!"
+    putStrLn $ "Factorial 5: " ++ show (factorial 5)
 `,
     info: {
-      description:
-        "Pure functional language with lazy evaluation and strong static typing. Influential in academic PL research.",
-      version: "GHC 9.8",
-      tip: "Everything is a function. Pattern matching is fundamental. $ reduces parentheses. . for function composition.",
+      description: "Purely functional programming language with strong static typing and lazy evaluation.",
+      version: "GHC 8.8.1",
+      tip: "Use pattern matching for recursive mathematical functions.",
       website: "https://haskell.org",
     },
   },
 
-  dart: {
-    id: "dart",
-    name: "Dart",
-    judge0Id: 90,
-    extension: "dart",
-    monacoLang: "dart",
-    color: "#06b6d4",
-    starter: `// Dart 3.4
-void main() {
-  print('Hello, World!');
+  // ── Java ───────────────────────────────────────────────────────────────
+  java: {
+    id: "java",
+    name: "Java (OpenJDK 13.0.1)",
+    judge0Id: 62,
+    extension: "java",
+    monacoLang: "java",
+    color: "#f97316",
+    version: "OpenJDK 13.0.1",
+    isLatest: true,
+    starter: `// Java (OpenJDK 13.0.1)
+import java.util.Arrays;
+import java.util.List;
 
-  // Records (Dart 3+)
-  final point = (x: 3.0, y: 4.0);
-  final distance = (point.x * point.x + point.y * point.y);
-  print('Distance: \${distance.toString()}');
-
-  // Collections
-  final numbers = List.generate(5, (i) => i + 1);
-  final squares = numbers.map((n) => n * n).toList();
-  print('Squares: \$squares');
-
-  // Null safety
-  String? nullableStr;
-  final length = nullableStr?.length ?? 0;
-  print('Length of null: \$length');
-  
-  // Pattern matching (Dart 3)
-  final value = 42;
-  final result = switch (value) {
-    < 0 => 'negative',
-    0 => 'zero',
-    > 0 => 'positive',
-    _ => 'unknown'
-  };
-  print('Value is: \$result');
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+        List<Integer> nums = Arrays.asList(1, 2, 3, 4, 5);
+        int sum = nums.stream().mapToInt(n -> n * n).sum();
+        System.out.println("Sum of squares: " + sum);
+    }
 }
 `,
     info: {
-      description:
-        "Google's language. Foundation of Flutter for cross-platform mobile, web, and desktop apps from a single codebase.",
-      version: "3.4",
-      tip: "Strong typing with inference. Null safety built-in: String? for nullable. async/await for asynchronous code.",
-      website: "https://dart.dev",
+      description: "Popular object-oriented language running on OpenJDK 13.0.1 virtual machine.",
+      version: "OpenJDK 13.0.1",
+      tip: "Class name must be Main for the Judge0 sandbox entry point.",
+      website: "https://openjdk.org",
     },
   },
 
+  // ── Kotlin ─────────────────────────────────────────────────────────────
+  kotlin: {
+    id: "kotlin",
+    name: "Kotlin (1.3.70)",
+    judge0Id: 78,
+    extension: "kt",
+    monacoLang: "kotlin",
+    color: "#a855f7",
+    version: "1.3.70",
+    isLatest: true,
+    starter: `// Kotlin 1.3.70
+fun main() {
+    println("Hello, World!")
+    val numbers = listOf(1, 2, 3, 4, 5)
+    val squares = numbers.map { it * it }
+    println("Squares: $squares")
+}
+`,
+    info: {
+      description: "Modern JVM language, fully interoperable with Java, designed by JetBrains.",
+      version: "1.3.70",
+      tip: "String templates allow inline interpolation: \"Value: $variable\".",
+      website: "https://kotlinlang.org",
+    },
+  },
+
+  // ── Lua ────────────────────────────────────────────────────────────────
+  lua: {
+    id: "lua",
+    name: "Lua (5.3.5)",
+    judge0Id: 64,
+    extension: "lua",
+    monacoLang: "lua",
+    color: "#3b82f6",
+    version: "5.3.5",
+    isLatest: true,
+    starter: `-- Lua 5.3.5
+print("Hello, World!")
+
+local nums = {1, 2, 3, 4, 5}
+local sum = 0
+for i = 1, #nums do
+    sum = sum + (nums[i] * nums[i])
+end
+print("Sum of squares: " .. sum)
+`,
+    info: {
+      description: "Lightweight, embeddable scripting language used across game engines and systems.",
+      version: "5.3.5",
+      tip: "Lua array indexing starts at 1, and .. is the string concatenation operator.",
+      website: "https://lua.org",
+    },
+  },
+
+  // ── Multi-file program ─────────────────────────────────────────────────
+  multifile: {
+    id: "multifile",
+    name: "Multi-file program",
+    judge0Id: 89,
+    extension: "zip",
+    monacoLang: "plaintext",
+    color: "#64748b",
+    version: "Multi-file",
+    isLatest: true,
+    starter: `# Multi-file program support in Judge0
+# Submit zip or multipart code bundle
+`,
+    info: {
+      description: "Execution mode for multi-file code packages in Judge0 CE.",
+      version: "Multi-file",
+      tip: "Bundle dependencies or multiple source files for compilation.",
+      website: "https://judge0.com",
+    },
+  },
+
+  // ── Objective-C ────────────────────────────────────────────────────────
+  objectivec: {
+    id: "objectivec",
+    name: "Objective-C (Clang 7.0.1)",
+    judge0Id: 79,
+    extension: "m",
+    monacoLang: "objective-c",
+    color: "#438eff",
+    version: "Clang 7.0.1",
+    isLatest: true,
+    starter: `// Objective-C (Clang 7.0.1)
+#import <Foundation/Foundation.h>
+
+int main(int argc, const char * argv[]) {
+    @autoreleasepool {
+        NSLog(@"Hello, World!");
+        NSArray *nums = @[@1, @2, @3, @4, @5];
+        NSLog(@"Count: %lu", (unsigned long)[nums count]);
+    }
+    return 0;
+}
+`,
+    info: {
+      description: "General-purpose, object-oriented language that adds Smalltalk-style messaging to C.",
+      version: "Clang 7.0.1",
+      tip: "Use @autoreleasepool to handle automatic memory draining in Foundation apps.",
+      website: "https://developer.apple.com",
+    },
+  },
+
+  // ── OCaml ──────────────────────────────────────────────────────────────
+  ocaml: {
+    id: "ocaml",
+    name: "OCaml (4.09.0)",
+    judge0Id: 65,
+    extension: "ml",
+    monacoLang: "plaintext",
+    color: "#ea6e1d",
+    version: "4.09.0",
+    isLatest: true,
+    starter: `(* OCaml 4.09.0 *)
+let () =
+  print_endline "Hello, World!";
+  let nums = [1; 2; 3; 4; 5] in
+  let squares = List.map (fun x -> x * x) nums in
+  List.iter (fun x -> Printf.printf "%d " x) squares;
+  print_newline ()
+`,
+    info: {
+      description: "General-purpose industrial-strength functional language with type inference.",
+      version: "4.09.0",
+      tip: "Use List.map with anonymous function (fun x -> ...) for transformations.",
+      website: "https://ocaml.org",
+    },
+  },
+
+  // ── Octave ─────────────────────────────────────────────────────────────
+  octave: {
+    id: "octave",
+    name: "Octave (5.1.0)",
+    judge0Id: 66,
+    extension: "m",
+    monacoLang: "matlab",
+    color: "#08579e",
+    version: "5.1.0",
+    isLatest: true,
+    starter: `% GNU Octave 5.1.0
+disp("Hello, World!");
+
+A = [1, 2; 3, 4];
+disp("Matrix A:");
+disp(A);
+disp("Determinant:");
+disp(det(A));
+`,
+    info: {
+      description: "High-level language primarily intended for numerical computations, mostly compatible with MATLAB.",
+      version: "5.1.0",
+      tip: "Use disp() to print variables and matrices directly to console.",
+      website: "https://gnu.org/software/octave",
+    },
+  },
+
+  // ── Pascal ─────────────────────────────────────────────────────────────
+  pascal: {
+    id: "pascal",
+    name: "Pascal (FPC 3.0.4)",
+    judge0Id: 67,
+    extension: "pas",
+    monacoLang: "pascal",
+    color: "#b91c1c",
+    version: "FPC 3.0.4",
+    isLatest: true,
+    starter: `// Pascal (FPC 3.0.4)
+program HelloWorld;
+var
+  i, sum: integer;
+begin
+  writeln('Hello, World!');
+  sum := 0;
+  for i := 1 to 5 do
+    sum := sum + (i * i);
+  writeln('Sum of squares: ', sum);
+end.
+`,
+    info: {
+      description: "Free Pascal Compiler (FPC 3.0.4) structured procedural language.",
+      version: "FPC 3.0.4",
+      tip: "Statements are separated by semicolons and programs end with 'end.'.",
+      website: "https://freepascal.org",
+    },
+  },
+
+  // ── Perl ───────────────────────────────────────────────────────────────
   perl: {
     id: "perl",
-    name: "Perl",
+    name: "Perl (5.28.1)",
     judge0Id: 85,
     extension: "pl",
     monacoLang: "perl",
     color: "#2563eb",
+    version: "5.28.1",
+    isLatest: true,
     starter: `#!/usr/bin/perl
-# Perl 5.38
+# Perl 5.28.1
 use strict;
 use warnings;
-use List::Util qw(sum min max);
 
-print "Hello, World!\n";
+print "Hello, World!\\n";
 
-# Regular expressions (Perl's superpower)
-my $text = "The quick brown fox jumps over the lazy dog";
-my @words = ($text =~ /\b\w{4,}\b/g);
-print "Long words: @words\n";
-
-# Array operations
-my @nums = (1..10);
-my @evens = grep { $_ % 2 == 0 } @nums;
-my @squares = map { $_ ** 2 } @evens;
-
-print "Even squares: @squares\n";
-print "Sum: " . sum(@squares) . "\n";
-print "Max: " . max(@squares) . "\n";
+my @nums = (1..5);
+my @squares = map { $_ ** 2 } @nums;
+print "Squares: @squares\\n";
 `,
     info: {
-      description:
-        "Text processing powerhouse. Unmatched regular expression support. CPAN has 25,000+ modules. Popular in bioinformatics.",
-      version: "5.38",
-      tip: "$scalar, @array, %hash. grep for filtering, map for transforming. Regular expressions: /pattern/flags",
+      description: "High-level, interpreted scripting language famous for regex and text processing.",
+      version: "5.28.1",
+      tip: "Always enable 'use strict;' and 'use warnings;' in modern Perl.",
       website: "https://perl.org",
     },
   },
 
+  // ── PHP ────────────────────────────────────────────────────────────────
+  php: {
+    id: "php",
+    name: "PHP (7.4.1)",
+    judge0Id: 68,
+    extension: "php",
+    monacoLang: "php",
+    color: "#818cf8",
+    version: "7.4.1",
+    isLatest: true,
+    starter: `<?php
+// PHP 7.4.1
+echo "Hello, World!\\n";
+
+$numbers = range(1, 5);
+$squares = array_map(fn($n) => $n ** 2, $numbers);
+echo "Squares: " . implode(", ", $squares) . "\\n";
+`,
+    info: {
+      description: "Popular general-purpose scripting language that is especially suited to web development.",
+      version: "7.4.1",
+      tip: "PHP 7.4 introduced arrow functions: fn($n) => $n * 2.",
+      website: "https://php.net",
+    },
+  },
+
+  // ── Plain Text ─────────────────────────────────────────────────────────
+  plaintext: {
+    id: "plaintext",
+    name: "Plain Text",
+    judge0Id: 43,
+    extension: "txt",
+    monacoLang: "plaintext",
+    color: "#64748b",
+    version: "Standard",
+    isLatest: true,
+    starter: `Plain Text Document
+You can type, format, and run raw text output here.
+`,
+    info: {
+      description: "Unformatted plain text data stream.",
+      version: "Standard",
+      tip: "Useful for input data files and plain text logs.",
+      website: "https://en.wikipedia.org/wiki/Plain_text",
+    },
+  },
+
+  // ── Prolog ─────────────────────────────────────────────────────────────
+  prolog: {
+    id: "prolog",
+    name: "Prolog (GNU Prolog 1.4.5)",
+    judge0Id: 69,
+    extension: "pro",
+    monacoLang: "plaintext",
+    color: "#c0392b",
+    version: "GNU Prolog 1.4.5",
+    isLatest: true,
+    starter: `% Prolog (GNU Prolog 1.4.5)
+likes(alice, pizza).
+likes(bob, sushi).
+
+:- initialization(main).
+main :-
+    write('Hello, World!'), nl,
+    likes(alice, X),
+    write('Alice likes: '), write(X), nl,
+    halt.
+`,
+    info: {
+      description: "Logic programming language associated with AI and computational linguistics.",
+      version: "GNU Prolog 1.4.5",
+      tip: "Queries and facts end with a period. Variables must start with a capital letter.",
+      website: "http://gprolog.org",
+    },
+  },
+
+  // ── R ──────────────────────────────────────────────────────────────────
+  r: {
+    id: "r",
+    name: "R (4.0.0)",
+    judge0Id: 80,
+    extension: "r",
+    monacoLang: "r",
+    color: "#2563eb",
+    version: "4.0.0",
+    isLatest: true,
+    starter: `# R 4.0.0
+cat("Hello, World!\\n")
+
+x <- c(1, 2, 3, 4, 5)
+cat("Mean:", mean(x), "\\n")
+cat("Squares:", x^2, "\\n")
+`,
+    info: {
+      description: "Language and environment for statistical computing and graphics.",
+      version: "4.0.0",
+      tip: "Vectors are vectorized natively: x^2 calculates squares for all elements.",
+      website: "https://r-project.org",
+    },
+  },
+
+  // ── Ruby ───────────────────────────────────────────────────────────────
+  ruby: {
+    id: "ruby",
+    name: "Ruby (2.7.0)",
+    judge0Id: 72,
+    extension: "rb",
+    monacoLang: "ruby",
+    color: "#ef4444",
+    version: "2.7.0",
+    isLatest: true,
+    starter: `# Ruby 2.7.0
+puts "Hello, World!"
+
+numbers = (1..5).to_a
+squares = numbers.map { |n| n ** 2 }
+puts "Squares: #{squares}"
+`,
+    info: {
+      description: "Dynamic, open-source programming language with a focus on simplicity and productivity.",
+      version: "2.7.0",
+      tip: "Everything in Ruby is an object. Use #{variable} for string interpolation.",
+      website: "https://ruby-lang.org",
+    },
+  },
+
+  // ── Rust ───────────────────────────────────────────────────────────────
+  rust: {
+    id: "rust",
+    name: "Rust (1.40.0)",
+    judge0Id: 73,
+    extension: "rs",
+    monacoLang: "rust",
+    color: "#f97316",
+    version: "1.40.0",
+    isLatest: true,
+    starter: `// Rust 1.40.0
+fn main() {
+    println!("Hello, World!");
+    let nums: Vec<i32> = (1..=5).collect();
+    let sum: i32 = nums.iter().map(|&x| x * x).sum();
+    println!("Sum of squares: {}", sum);
+}
+`,
+    info: {
+      description: "Systems programming language focused on safety, speed, and memory safety without GC.",
+      version: "1.40.0",
+      tip: "println! is a macro. Use .iter() for borrowing and .sum() for summation.",
+      website: "https://rust-lang.org",
+    },
+  },
+
+  // ── Scala ──────────────────────────────────────────────────────────────
+  scala: {
+    id: "scala",
+    name: "Scala (2.13.2)",
+    judge0Id: 81,
+    extension: "scala",
+    monacoLang: "scala",
+    color: "#ef4444",
+    version: "2.13.2",
+    isLatest: true,
+    starter: `// Scala 2.13.2
+object Main {
+  def main(args: Array[String]): Unit = {
+    println("Hello, World!")
+    val numbers = (1 to 5).toList
+    val squares = numbers.map(x => x * x)
+    println(s"Squares: $squares")
+  }
+}
+`,
+    info: {
+      description: "Scala combines object-oriented and functional programming in one concise high-level language on the JVM.",
+      version: "2.13.2",
+      tip: "Use 'val' for immutable bindings and string interpolator s\"...\".",
+      website: "https://scala-lang.org",
+    },
+  },
+
+  // ── SQL ────────────────────────────────────────────────────────────────
   sql: {
     id: "sql",
-    name: "SQL",
+    name: "SQL (SQLite 3.27.2)",
     judge0Id: 82,
     extension: "sql",
     monacoLang: "sql",
     color: "#f59e0b",
-    starter: `-- SQL (PostgreSQL)
--- Create and query tables
+    version: "SQLite 3.27.2",
+    isLatest: true,
+    starter: `-- SQLite 3.27.2
+CREATE TABLE demo (id INTEGER PRIMARY KEY, item TEXT, count INT);
+INSERT INTO demo (item, count) VALUES ('Apples', 10), ('Bananas', 25), ('Cherries', 40);
 
-CREATE TABLE employees (
-    id SERIAL PRIMARY KEY,
-    name VARCHAR(100) NOT NULL,
-    department VARCHAR(50),
-    salary DECIMAL(10, 2)
-);
-
-INSERT INTO employees (name, department, salary) VALUES
-    ('Alice Johnson', 'Engineering', 95000),
-    ('Bob Smith',     'Marketing',   72000),
-    ('Carol White',   'Engineering', 88000),
-    ('David Brown',   'HR',          65000),
-    ('Eve Davis',     'Engineering', 102000);
-
--- Aggregate query
-SELECT 
-    department,
-    COUNT(*) AS headcount,
-    ROUND(AVG(salary), 2) AS avg_salary,
-    MAX(salary) AS max_salary
-FROM employees
-GROUP BY department
-ORDER BY avg_salary DESC;
+SELECT item, count FROM demo WHERE count >= 20 ORDER BY count DESC;
 `,
     info: {
-      description:
-        "Structured Query Language for relational databases. Declarative — describe what you want, not how to get it.",
-      version: "PostgreSQL 16",
-      tip: "SELECT, FROM, WHERE, GROUP BY, ORDER BY are the core. JOINs combine tables. Aggregate: COUNT, SUM, AVG, MAX, MIN.",
-      website: "https://postgresql.org",
+      description: "Relational database SQL executed in SQLite 3.27.2 engine.",
+      version: "SQLite 3.27.2",
+      tip: "Use standard SQL queries: SELECT, INSERT, CREATE TABLE.",
+      website: "https://sqlite.org",
     },
   },
 
+  // ── Swift ──────────────────────────────────────────────────────────────
+  swift: {
+    id: "swift",
+    name: "Swift (5.2.3)",
+    judge0Id: 83,
+    extension: "swift",
+    monacoLang: "swift",
+    color: "#f97316",
+    version: "5.2.3",
+    isLatest: true,
+    starter: `// Swift 5.2.3
+print("Hello, World!")
+
+let numbers = [1, 2, 3, 4, 5]
+let squares = numbers.map { $0 * $0 }
+print("Squares: \\(squares)")
+`,
+    info: {
+      description: "Apple's powerful, intuitive programming language for iOS, macOS, and systems.",
+      version: "5.2.3",
+      tip: "Use let for constants and \\(expression) for string interpolation.",
+      website: "https://swift.org",
+    },
+  },
+
+  // ── Visual Basic.NET ───────────────────────────────────────────────────
+  vbnet: {
+    id: "vbnet",
+    name: "Visual Basic.Net (vbnc 0.0.0.5943)",
+    judge0Id: 84,
+    extension: "vb",
+    monacoLang: "vb",
+    color: "#2563eb",
+    version: "vbnc 0.0.0.5943",
+    isLatest: true,
+    starter: `' Visual Basic.Net (vbnc 0.0.0.5943)
+Imports System
+
+Module Program
+    Sub Main()
+        Console.WriteLine("Hello, World!")
+        Dim nums() As Integer = {1, 2, 3, 4, 5}
+        For Each n As Integer In nums
+            Console.WriteLine("  " & n & " squared = " & (n * n))
+        Next
+    End Sub
+End Module
+`,
+    info: {
+      description: "Visual Basic .NET compiled with Mono vbnc compiler.",
+      version: "vbnc 0.0.0.5943",
+      tip: "Strings are concatenated with the '&' operator.",
+      website: "https://learn.microsoft.com/dotnet/visual-basic",
+    },
+  },
+
+  // ── Web & Data Languages ───────────────────────────────────────────────
   html: {
     id: "html",
     name: "HTML5",
@@ -902,43 +1371,24 @@ ORDER BY avg_salary DESC;
     extension: "html",
     monacoLang: "html",
     color: "#e34f26",
+    version: "HTML5",
+    isLatest: true,
     starter: `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Online HTML5 Playground</title>
-  <style>
-    body {
-      font-family: system-ui, -apple-system, sans-serif;
-      margin: 2rem;
-      background: #f8fafc;
-      color: #0f172a;
-    }
-    .card {
-      padding: 1.5rem;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
-      border-left: 4px solid #f97316;
-    }
-    h1 { color: #f97316; margin-top: 0; }
-  </style>
+  <title>HTML5 Playground</title>
 </head>
 <body>
-  <div class="card">
-    <h1>🚀 HTML5 Online Editor</h1>
-    <p>Build, inspect, and test web markup directly in the browser.</p>
-    <button onclick="alert('Hello from HTML5!')">Click Me</button>
-  </div>
+  <h1>Hello from HTML5!</h1>
+  <p>Live interactive web markup.</p>
 </body>
 </html>
 `,
     info: {
-      description:
-        "HyperText Markup Language standard for structuring modern web applications and accessible interactive pages.",
-      version: "HTML5 Living Standard",
-      tip: "Use semantic elements (<header>, <main>, <article>, <footer>) for superior accessibility and SEO.",
+      description: "HyperText Markup Language standard for creating modern web structures.",
+      version: "HTML5",
+      tip: "Use semantic tags for SEO and accessibility.",
       website: "https://developer.mozilla.org/en-US/docs/Web/HTML",
     },
   },
@@ -950,44 +1400,24 @@ ORDER BY avg_salary DESC;
     extension: "css",
     monacoLang: "css",
     color: "#264de4",
+    version: "CSS3",
+    isLatest: true,
     starter: `/* Modern CSS3 Styling */
 :root {
-  --primary: #f97316;
-  --bg-surface: #ffffff;
-  --radius-lg: 1rem;
+  --primary: #3b82f6;
+  --bg: #ffffff;
 }
 
-.developer-card {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 2rem;
-  background: var(--bg-surface);
-  border-radius: var(--radius-lg);
-  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.developer-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.15);
-}
-
-.badge {
-  display: inline-flex;
-  padding: 0.25rem 0.75rem;
-  border-radius: 9999px;
-  background-color: var(--primary);
-  color: white;
-  font-size: 0.75rem;
-  font-weight: 600;
+body {
+  font-family: system-ui, sans-serif;
+  background: var(--bg);
+  color: #1e293b;
 }
 `,
     info: {
-      description:
-        "Cascading Style Sheets powering responsive layout, custom properties, animations, and modern UI design.",
-      version: "CSS3 / Modern CSS",
-      tip: "Leverage CSS custom properties (--var), Flexbox, CSS Grid, and clamp() for fluid typography.",
+      description: "Cascading Style Sheets powering modern responsive interfaces.",
+      version: "CSS3",
+      tip: "Use CSS variables for theme token management.",
       website: "https://developer.mozilla.org/en-US/docs/Web/CSS",
     },
   },
@@ -999,35 +1429,20 @@ ORDER BY avg_salary DESC;
     extension: "json",
     monacoLang: "json",
     color: "#0f172a",
+    version: "ECMA-404",
+    isLatest: true,
     starter: `{
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "tool": "Online Code Playground",
+  "name": "Coding Playground",
   "version": "2.0.0",
-  "capabilities": {
-    "autoLanguageDetection": true,
-    "instantExecution": true,
-    "syntaxHighlighting": true,
-    "themes": [
-      "vscodeDark",
-      "monokai",
-      "dracula",
-      "githubLight"
-    ]
-  },
-  "metrics": {
-    "supportedLanguages": 27,
-    "uptime": "99.99%",
-    "activeUsers": 125000
-  },
-  "verified": true
+  "languagesCount": 47,
+  "supported": true
 }
 `,
     info: {
-      description:
-        "JavaScript Object Notation, the universal lightweight standard for data interchange, APIs, and configuration.",
+      description: "JavaScript Object Notation universal data-interchange format.",
       version: "ECMA-404",
-      tip: "JSON keys must always be double-quoted. Trailing commas are invalid in standard JSON.",
-      website: "https://www.json.org/",
+      tip: "Keys must always be wrapped in double quotes.",
+      website: "https://json.org",
     },
   },
 
@@ -1038,31 +1453,19 @@ ORDER BY avg_salary DESC;
     extension: "xml",
     monacoLang: "xml",
     color: "#e44d26",
+    version: "1.0",
+    isLatest: true,
     starter: `<?xml version="1.0" encoding="UTF-8"?>
-<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <application>
-    <name>Developer Code Playground</name>
-    <version>2.0.0</version>
-    <environment>production</environment>
-  </application>
-  <features>
-    <feature enabled="true">
-      <id>auto-detect</id>
-      <description>Detects programming language from URL slug</description>
-    </feature>
-    <feature enabled="true">
-      <id>frontend-run</id>
-      <description>Direct client-side and cloud code execution</description>
-    </feature>
-  </features>
-</configuration>
+<application>
+  <name>Coding Playground</name>
+  <version>2.0.0</version>
+</application>
 `,
     info: {
-      description:
-        "Extensible Markup Language used in enterprise configurations, SVG graphics, RSS feeds, and legacy APIs.",
-      version: "1.0 (Fifth Edition)",
-      tip: "Ensure all tags are properly closed and attribute values enclosed in quotes.",
-      website: "https://www.w3.org/XML/",
+      description: "Extensible Markup Language for hierarchical data and configurations.",
+      version: "1.0",
+      tip: "Ensure all tags are properly closed.",
+      website: "https://w3.org/XML",
     },
   },
 
@@ -1073,31 +1476,21 @@ ORDER BY avg_salary DESC;
     extension: "yaml",
     monacoLang: "yaml",
     color: "#cb171e",
-    starter: `# Modern YAML Configuration
+    version: "1.2",
+    isLatest: true,
+    starter: `# YAML Configuration
 version: "3.8"
-
 services:
   app:
-    image: node:20-alpine
-    container_name: coding-playground
-    environment:
-      NODE_ENV: production
-      PORT: 3000
+    image: node:18
     ports:
       - "3000:3000"
-    restart: unless-stopped
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:3000/api/health"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
 `,
     info: {
-      description:
-        "Human-friendly data serialization standard, widely used in Kubernetes, CI/CD pipelines (GitHub Actions), and Docker.",
-      version: "YAML 1.2",
-      tip: "Indentation matters: always use spaces (never tabs) to define hierarchy.",
-      website: "https://yaml.org/",
+      description: "Human-friendly data serialization standard commonly used in CI/CD and Docker.",
+      version: "1.2",
+      tip: "Indentation must use spaces, never tabs.",
+      website: "https://yaml.org",
     },
   },
 
@@ -1108,48 +1501,30 @@ services:
     extension: "md",
     monacoLang: "markdown",
     color: "#083fa1",
-    starter: `# 🚀 Markdown Online Editor & Live Documentation
+    version: "GFM",
+    isLatest: true,
+    starter: `# Markdown Live Document
 
-Welcome to the **browser-based Markdown compiler & editor**.
+Welcome to the **Monaco Online Code Runner**.
 
-## Features Checklist
-- [x] Full GitHub Flavored Markdown (GFM)
-- [x] Syntax-highlighted code blocks
-- [x] Fast instant rendering & editing
-- [x] Free and open for everyone
-
-### Sample Code Block
-\`\`\`typescript
-interface Developer {
-  name: string;
-  tools: string[];
-}
-
-const coder: Developer = {
-  name: "Alex",
-  tools: ["Next.js", "TypeScript", "TailwindCSS"]
-};
-\`\`\`
-
-> *"Simplicity is prerequisite for reliability."* — Edsger W. Dijkstra
+- [x] 47 Judge0 Compilers & Runtimes
+- [x] Latest Version Badges & Filter
+- [x] Syntax Highlighting
 `,
     info: {
-      description:
-        "Lightweight formatting syntax designed to be converted into structurally valid HTML and rich documentation.",
-      version: "CommonMark / GFM",
-      tip: "Use triple backticks with a language tag for formatted code blocks.",
-      website: "https://commonmark.org/",
+      description: "Lightweight formatting syntax for documentation and notes.",
+      version: "GFM",
+      tip: "Use # for titles and - for list items.",
+      website: "https://commonmark.org",
     },
   },
 };
-
-// Remove the placeholder
-delete (LANGUAGES as Record<string, unknown>).rust2;
 
 // Helper to resolve icon component for any language ID
 export function getLanguageIcon(id: string): React.ComponentType<{ className?: string; style?: React.CSSProperties }> {
   const map: Record<string, React.ComponentType<{ className?: string; style?: React.CSSProperties }>> = {
     python: Terminal,
+    python2: Terminal,
     javascript: Play,
     typescript: SquareCode,
     html: Code,
@@ -1158,7 +1533,13 @@ export function getLanguageIcon(id: string): React.ComponentType<{ className?: s
     json: FileJson,
     xml: FileCode,
     cpp: Cpu,
+    cpp_gcc8: Cpu,
+    cpp_gcc7: Cpu,
+    cpp_clang: Cpu,
     c: Cpu,
+    c_gcc8: Cpu,
+    c_gcc7: Cpu,
+    c_clang: Cpu,
     csharp: Hash,
     java: Coffee,
     go: Zap,
@@ -1174,20 +1555,69 @@ export function getLanguageIcon(id: string): React.ComponentType<{ className?: s
     lua: Boxes,
     scala: Layers,
     perl: FileCode,
+    assembly: Binary,
+    basic: FileCode,
+    clojure: Brackets,
+    cobol: FileText,
+    lisp: Brackets,
+    d: Cpu,
+    elixir: Feather,
+    erlang: Feather,
+    executable: Terminal,
+    fsharp: SquareCode,
+    fortran: FileCode,
+    groovy: Coffee,
+    haskell: Brackets,
+    multifile: Boxes,
+    objectivec: Cpu,
+    ocaml: Feather,
+    octave: FileText,
+    pascal: FileCode,
+    plaintext: FileText,
+    prolog: FileCode,
+    vbnet: FileCode,
   };
   return map[id] || FileCode;
 }
 
-// Automatically assign icon component and default image to each language config
-for (const key in LANGUAGES) {
-  LANGUAGES[key].icon = getLanguageIcon(key);
-  if (!LANGUAGES[key].image) {
-    LANGUAGES[key].image = "/programming-languages/python.svg";
+// Automatically assign icons and images to primary language configs
+for (const key in PRIMARY_LANGUAGES) {
+  PRIMARY_LANGUAGES[key].icon = getLanguageIcon(key);
+  if (!PRIMARY_LANGUAGES[key].image) {
+    PRIMARY_LANGUAGES[key].image = pythonSvg.src || "/programming-languages/python.svg";
   }
 }
 
-export const LANGUAGE_LIST = Object.values(LANGUAGES);
+/**
+ * Global lookup table of all languages and their aliases (slugs and numeric IDs).
+ */
+export const LANGUAGES: Record<string, LanguageConfig> = { ...PRIMARY_LANGUAGES };
 
-export function getLanguage(id: string): LanguageConfig | undefined {
-  return LANGUAGES[id];
+// Add numeric Judge0 ID aliases and compiler aliases
+for (const lang of Object.values(PRIMARY_LANGUAGES)) {
+  LANGUAGES[String(lang.judge0Id)] = lang;
+}
+
+// Additional specific convenience aliases
+LANGUAGES["c_gcc9"] = PRIMARY_LANGUAGES.c;
+LANGUAGES["cpp_gcc9"] = PRIMARY_LANGUAGES.cpp;
+LANGUAGES["python3"] = PRIMARY_LANGUAGES.python;
+
+/**
+ * Unique list of all available languages for UI lists.
+ */
+export const LANGUAGE_LIST: LanguageConfig[] = Object.values(PRIMARY_LANGUAGES);
+
+/**
+ * Filtered list of only the latest version of each language family.
+ */
+export const LATEST_LANGUAGE_LIST: LanguageConfig[] = LANGUAGE_LIST.filter(
+  (lang) => lang.isLatest !== false
+);
+
+/**
+ * Getter with fallback support.
+ */
+export function getLanguage(id: string | number): LanguageConfig | undefined {
+  return LANGUAGES[String(id)];
 }

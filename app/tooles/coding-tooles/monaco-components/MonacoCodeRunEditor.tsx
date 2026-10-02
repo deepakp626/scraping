@@ -6,7 +6,27 @@ import dynamic from "next/dynamic";
 import type * as MonacoType from "monaco-editor";
 import { LANGUAGES, getLanguage } from "../lib/languages";
 import { executeCode, formatOutput, Judge0Error } from "../lib/judge0";
+import { apiClient } from "@/lib/apiClient";
+import { API_ENDPOINTS } from "@/lib/apiEndpoints";
 import type { RunStatus, OutputTab } from "../types/editor";
+
+export interface CodeRunStatus {
+  id?: number;
+  description?: string;
+}
+
+// Shape of the raw API response from the backend / Judge0
+export interface CodeRunResponse {
+  token?: string;
+  status?: string | CodeRunStatus;
+  status_id?: number;
+  stdout?: string | null;
+  stderr?: string | null;
+  compile_output?: string | null;
+  message?: string | null;
+  time?: string | null;
+  memory?: number | null;
+}
 import MonacoToolbar from "./MonacoToolbar";
 import MonacoOutputPanel from "./MonacoOutputPanel";
 import MonacoStatusBar from "./MonacoStatusBar";
@@ -18,26 +38,26 @@ import { X, FileCode } from "lucide-react";
 const MonacoEditor = dynamic(() => import("./MonacoEditor"), {
   ssr: false,
   loading: () => (
-    <div className="flex-1 w-full h-full flex items-center justify-center bg-slate-950 text-slate-400">
+    <div className="flex flex-1 justify-center items-center bg-slate-950 w-full h-full text-slate-400">
       <div className="flex flex-col items-center gap-3">
-        <div className="w-8 h-8 border-2 border-primary-theme border-t-transparent rounded-full animate-spin" />
-        <span className="font-mono text-xs text-slate-400 tracking-wide">Loading Monaco Core…</span>
+        <div className="border-2 border-primary-theme border-t-transparent rounded-full w-8 h-8 animate-spin" />
+        <span className="font-mono text-slate-400 text-xs tracking-wide">Loading Monaco Core…</span>
       </div>
     </div>
   ),
 });
 
-const MonacoDiffEditor = dynamic(() => import("./MonacoDiffEditor"), {
-  ssr: false,
-  loading: () => (
-    <div className="flex-1 w-full h-full flex items-center justify-center bg-slate-950 text-slate-400">
-      <div className="flex items-center gap-2 text-xs">
-        <div className="w-4 h-4 border-2 border-primary-theme border-t-transparent rounded-full animate-spin" />
-        <span>Loading Diff View…</span>
-      </div>
-    </div>
-  ),
-});
+// const MonacoDiffEditor = dynamic(() => import("./MonacoDiffEditor"), {
+//   ssr: false,
+//   loading: () => (
+//     <div className="flex flex-1 justify-center items-center bg-slate-950 w-full h-full text-slate-400">
+//       <div className="flex items-center gap-2 text-xs">
+//         <div className="border-2 border-primary-theme border-t-transparent rounded-full w-4 h-4 animate-spin" />
+//         <span>Loading Diff View…</span>
+//       </div>
+//     </div>
+//   ),
+// });
 
 export interface MonacoCodeRunEditorProps {
   /** Initial language ID (default: "python") */
@@ -52,6 +72,8 @@ export interface MonacoCodeRunEditorProps {
   onCodeChange?: (code: string, langId: string) => void;
   /** Custom wrapper CSS class */
   className?: string;
+  /** If true, the editor opens in fullscreen mode on mount */
+  initialFullscreen?: boolean;
 }
 
 function detectLangFromFilename(filename: string, fallback: string): string {
@@ -67,13 +89,14 @@ export default function MonacoCodeRunEditor({
   showStatusBar = true,
   onCodeChange,
   className = "",
+  initialFullscreen = false,
 }: MonacoCodeRunEditorProps) {
   // 1. Language State
   const initialLang = LANGUAGES[defaultLang] ? defaultLang : "python";
   const [currentLangId, setCurrentLangId] = useState(initialLang);
 
   // 2. Multi-File Explorer State (VS Code File Menu)
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [files, setFiles] = useState<EditorFile[]>(() => {
     const mainExt = LANGUAGES[initialLang]?.extension || "py";
     const initialContent = defaultCode ?? (LANGUAGES[initialLang]?.starter || "");
@@ -101,8 +124,7 @@ export default function MonacoCodeRunEditor({
   const [lineNumbers, setLineNumbers] = useState<"on" | "off">("on");
 
   // 4. Modes: Fullscreen & Diff View
-  const [isFullscreen, setIsFullscreen] = useState(false);
-  const [isDiffMode, setIsDiffMode] = useState(false);
+  const [isFullscreen, setIsFullscreen] = useState(initialFullscreen);
 
   // 5. Execution State
   const [stdin, setStdin] = useState("");
@@ -114,6 +136,9 @@ export default function MonacoCodeRunEditor({
   const [statusLabel, setStatusLabel] = useState<string>("");
   const [activeOutputTab, setActiveOutputTab] = useState<OutputTab>("output");
 
+  // 5b. Raw API Response State
+  const [apiResponse, setApiResponse] = useState<CodeRunResponse | null>(null);
+  console.log("apiResponse",apiResponse)
   // 6. Cursor & Document Statistics
   const [stats, setStats] = useState<MonacoEditorStats>({
     lines: 1,
@@ -307,7 +332,7 @@ export default function MonacoCodeRunEditor({
     setCurrentLangId(detected);
   }, [currentLangId]);
 
-  // Run Code Execution Handler
+  // Run Code Execution Handler — calls backend API, falls back to Judge0/local
   const handleRunCode = useCallback(async () => {
     if (runStatus === "running") return;
     const lang = getLanguage(currentLangId);
@@ -322,33 +347,65 @@ export default function MonacoCodeRunEditor({
     startTimeRef.current = Date.now();
 
     try {
-      const result = await executeCode({
+      // ── Primary: FastAPI backend ──────────────────────────────────────────
+      const response = await apiClient.post(API_ENDPOINTS.CODE.RUN, {
         source_code: code,
         language_id: lang.judge0Id,
-        stdin: stdin || undefined,
+        stdin: stdin || "",
       });
 
-      const { text, isError, statusLabel: label } = formatOutput(result);
+      console.log("response :- ", response?.data);
+
+      const result = response.data;
       const elapsed = ((Date.now() - startTimeRef.current) / 1000).toFixed(3);
+
+      // Store raw API response
+      setApiResponse(result as CodeRunResponse);
+
+      // Normalise backend response (same shape as ExecutionResult)
+      const { text, isError, statusLabel: label } = formatOutput(result);
 
       setOutput(text);
       setOutputIsError(isError);
       setRunStatus(isError ? "error" : "success");
-      setExecTime(result.time || elapsed);
-      setExecMemory(result.memory || null);
+      setExecTime(result.time ?? elapsed);
+      setExecMemory(result.memory ?? null);
       setStatusLabel(label);
-    } catch (err) {
-      const elapsed = ((Date.now() - startTimeRef.current) / 1000).toFixed(3);
-      if (err instanceof Judge0Error) {
-        setOutput(
-          `⚠️  Execution Note:\n\n${err.message}\n\nTo enable remote Judge0 execution, provide NEXT_PUBLIC_JUDGE0_API_KEY in your environment.`
-        );
-      } else {
-        setOutput(`Execution Error: ${String(err)}`);
+    } catch (backendErr) {
+      // ── Fallback: Judge0 / local browser execution ────────────────────────
+      console.warn("[CodeRunner] Backend unreachable, falling back to local execution:", backendErr);
+      try {
+        const result = await executeCode({
+          source_code: code,
+          language_id: lang.judge0Id,
+          stdin: stdin || undefined,
+        });
+
+        const { text, isError, statusLabel: label } = formatOutput(result);
+        const elapsed = ((Date.now() - startTimeRef.current) / 1000).toFixed(3);
+
+        // Store raw API response (Judge0 fallback)
+        setApiResponse(result as unknown as CodeRunResponse);
+
+        setOutput(text);
+        setOutputIsError(isError);
+        setRunStatus(isError ? "error" : "success");
+        setExecTime(result.time || elapsed);
+        setExecMemory(result.memory || null);
+        setStatusLabel(label);
+      } catch (err) {
+        const elapsed = ((Date.now() - startTimeRef.current) / 1000).toFixed(3);
+        if (err instanceof Judge0Error) {
+          setOutput(
+            `⚠️  Execution Note:\n\n${err.message}\n\nTo enable remote execution, ensure the backend server is running or provide NEXT_PUBLIC_JUDGE0_API_KEY.`
+          );
+        } else {
+          setOutput(`Execution Error: ${String(err)}`);
+        }
+        setOutputIsError(true);
+        setRunStatus("error");
+        setExecTime(elapsed);
       }
-      setOutputIsError(true);
-      setRunStatus("error");
-      setExecTime(elapsed);
     }
   }, [runStatus, currentLangId, code, stdin]);
 
@@ -380,7 +437,6 @@ export default function MonacoCodeRunEditor({
         minimap={minimap}
         wordWrap={wordWrap}
         lineNumbers={lineNumbers}
-        isDiffMode={isDiffMode}
         isFullscreen={isFullscreen}
         runStatus={runStatus}
         code={code}
@@ -391,17 +447,16 @@ export default function MonacoCodeRunEditor({
         onMinimapChange={setMinimap}
         onWordWrapChange={setWordWrap}
         onLineNumbersChange={setLineNumbers}
-        onDiffToggle={() => setIsDiffMode((v) => !v)}
         onFullscreenToggle={handleFullscreenToggle}
         onFormat={handleFormatCode}
         onRun={handleRunCode}
         onReset={handleResetCode}
-        onCopy={() => {}}
+        onCopy={() => { navigator.clipboard.writeText(code).catch(() => { }); }}
         onFileImport={handleFileImport}
       />
 
       {/* 2. Main Workspace Split: Left File Explorer + Center Editor + Right Output */}
-      <div ref={containerRef} className="flex flex-1 min-h-0 relative">
+      <div ref={containerRef} className="relative flex flex-1 min-h-0">
         {/* Left Side: VS Code File Explorer & Activity Bar */}
         <MonacoFileExplorer
           files={files}
@@ -417,24 +472,23 @@ export default function MonacoCodeRunEditor({
         {/* Center: Editor Pane (or Diff Pane) */}
         <div
           style={{ width: `${splitPercent}%` }}
-          className="flex flex-col min-h-0 overflow-hidden bg-slate-950 flex-1"
+          className="flex flex-col flex-1 bg-slate-950 min-h-0 overflow-hidden"
         >
           {/* Top File Tabs Bar (VS Code Tab Bar) */}
-          <div className="flex items-center bg-slate-900 border-b border-slate-800 shrink-0 overflow-x-auto select-none">
+          <div className="flex items-center bg-slate-900 border-slate-800 border-b overflow-x-auto select-none shrink-0">
             {files.map((file) => {
               const isActive = file.id === activeFileId;
               return (
                 <div
                   key={file.id}
                   onClick={() => handleSelectFile(file.id)}
-                  className={`group flex items-center gap-2 px-3 py-1.5 text-xs font-mono cursor-pointer border-r border-slate-800 transition-colors ${
-                    isActive
-                      ? "bg-slate-950 text-white font-semibold border-t-2 border-t-primary-theme"
-                      : "bg-slate-900/70 text-slate-400 hover:bg-slate-800 hover:text-slate-200"
-                  }`}
+                  className={`group flex items-center gap-2 px-3 py-1.5 text-xs font-mono cursor-pointer border-r border-slate-800 transition-colors ${isActive
+                    ? "bg-slate-950 text-white font-semibold border-t-2 border-t-primary-theme"
+                    : "bg-slate-900/70 text-slate-400 hover:bg-slate-800 hover:text-slate-200"
+                    }`}
                 >
                   <FileCode className="w-3.5 h-3.5 text-primary-theme shrink-0" />
-                  <span className="truncate max-w-[120px]">{file.name}</span>
+                  <span className="max-w-[120px] truncate">{file.name}</span>
 
                   {files.length > 1 && (
                     <button
@@ -442,7 +496,7 @@ export default function MonacoCodeRunEditor({
                         e.stopPropagation();
                         handleDeleteFile(file.id);
                       }}
-                      className="p-0.5 rounded text-slate-500 hover:text-white hover:bg-slate-800 opacity-0 group-hover:opacity-100 transition"
+                      className="hover:bg-slate-800 opacity-0 group-hover:opacity-100 p-0.5 rounded text-slate-500 hover:text-white transition"
                       title="Close file"
                     >
                       <X className="w-3 h-3" />
@@ -454,23 +508,13 @@ export default function MonacoCodeRunEditor({
 
             <div className="flex-1" />
 
-            <span className="text-[10px] text-slate-500 font-mono px-3 hidden lg:inline">
+            <span className="hidden lg:inline px-3 font-mono text-[10px] text-slate-500">
               Ctrl+Enter to run • F1 for commands
             </span>
           </div>
 
-          <div className="flex-1 relative min-h-0 overflow-hidden">
-            {isDiffMode ? (
-              <MonacoDiffEditor
-                originalCode={starterCode}
-                modifiedCode={code}
-                langId={currentLangId}
-                themeId={themeId}
-                fontSize={fontSize}
-                fontFamily={fontFamily}
-                onModifiedChange={handleCodeChange}
-              />
-            ) : (
+          <div className="relative flex-1 min-h-0 overflow-hidden">
+            {(
               <MonacoEditor
                 code={code}
                 langId={currentLangId}
@@ -494,9 +538,9 @@ export default function MonacoCodeRunEditor({
         {/* Draggable Resizer Splitter */}
         <div
           onMouseDown={handleMouseDown}
-          className="w-1.5 cursor-col-resize bg-slate-800 hover:bg-primary-theme active:bg-primary-theme transition-colors shrink-0 select-none relative group"
+          className="group relative bg-slate-800 hover:bg-primary-theme active:bg-primary-theme w-1.5 transition-colors cursor-col-resize select-none shrink-0"
         >
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-8 rounded-full bg-slate-700 opacity-0 group-hover:opacity-100 transition-opacity" />
+          <div className="top-1/2 left-1/2 absolute bg-slate-700 opacity-0 group-hover:opacity-100 rounded-full w-3 h-8 transition-opacity -translate-x-1/2 -translate-y-1/2" />
         </div>
 
         {/* Output Console Pane */}
@@ -505,19 +549,17 @@ export default function MonacoCodeRunEditor({
           className="flex flex-col min-h-0 overflow-hidden"
         >
           <MonacoOutputPanel
-            output={output}
-            isError={outputIsError}
+            apiResponse={apiResponse}
             runStatus={runStatus}
-            execTime={execTime}
-            execMemory={execMemory}
-            statusLabel={statusLabel}
             activeTab={activeOutputTab}
             currentLangId={currentLangId}
             stdin={stdin}
+            fontSize={fontSize}
             onTabChange={setActiveOutputTab}
             onStdinChange={setStdin}
             onClear={() => {
               setOutput("");
+              setApiResponse(null);
               setRunStatus("idle");
               setExecTime(null);
               setExecMemory(null);

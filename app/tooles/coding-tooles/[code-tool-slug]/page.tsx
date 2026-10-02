@@ -360,7 +360,8 @@ export default function DynamicCodeToolPage() {
             /> */}
             <MonacoCodeRunEditor 
               defaultLang={detectedLangId} 
-              height="80vh" 
+              height="80vh"
+              initialFullscreen={true}
             />
           </div>
 

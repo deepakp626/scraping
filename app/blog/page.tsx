@@ -1,149 +1,308 @@
 "use client";
 
-import React from "react";
+import { useEffect, useState, useCallback } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { API_ENDPOINTS } from "@/lib/apiEndpoints";
+import apiClient from "@/lib/apiClient";
 
-const posts = [
-  {
-    id: 1,
-    title: "Mastering Web Scraping in 2026",
-    desc: "Learn modern scraping techniques using Python, Playwright, and APIs.",
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
-    date: "March 20, 2026",
-  },
-  {
-    id: 2,
-    title: "Next.js Performance Tips",
-    desc: "Optimize your Next.js apps for lightning-fast performance.",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-    date: "March 18, 2026",
-  },
-  {
-    id: 3,
-    title: "Build AI Tools with FastAPI",
-    desc: "Step-by-step guide to building AI-powered APIs.",
-    image: "https://images.unsplash.com/photo-1677442135136-760c813a7434",
-    date: "March 15, 2026",
-  },
-  {
-    id: 4,
-    title: "The Future of Data Extraction",
-    desc: "How AI and machine learning are transforming large-scale data extraction workflows.",
-    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa",
-    date: "March 12, 2026",
-  },
-  {
-    id: 5,
-    title: "Scaling Distributed Crawlers",
-    desc: "Architectural patterns for crawling millions of pages without getting blocked.",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
-    date: "March 10, 2026",
-  },
-  {
-    id: 6,
-    title: "Bypassing Advanced Anti-Bots",
-    desc: "Strategies for ethical scraping when dealing with Cloudflare and Datadome.",
-    image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5",
-    date: "March 5, 2026",
-  },
-  {
-    id: 7,
-    title: "GraphQL vs REST for Data Mining",
-    desc: "Which API paradigm offers the best efficiency for automated data collection?",
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
-    date: "March 1, 2026",
-  },
-  {
-    id: 8,
-    title: "Automating Browsers with Puppeteer",
-    desc: "A deep dive into headless browser automation for dynamic single-page applications.",
-    image: "https://images.unsplash.com/photo-1627398246734-d8bc74bead10",
-    date: "February 25, 2026",
-  },
-  {
-    id: 9,
-    title: "Data Pipelines with Apache Airflow",
-    desc: "Orchestrate your scraping jobs and ETL workflows like a pro.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
-    date: "February 20, 2026",
-  }
-];
+// Types for the API response
+interface BlogPost {
+  id: number;
+  slug: string;
+  title: string;
+  description: string;
+  html_content: string;
+  date: string;
+  thumbnail_image_url: string | null;
+  thumbnail_image_name: string | null;
+}
+
+interface Pagination {
+  page: number;
+  limit: number;
+  total_records: number;
+  total_pages: number;
+  has_next: boolean;
+  has_previous: boolean;
+}
+
+interface PaginatedBlogsResponse {
+  data: BlogPost[];
+  pagination: Pagination;
+}
+
+const BLOGS_PER_PAGE = 9;
 
 export default function Blog() {
+  const [blogs, setBlogs] = useState<BlogPost[]>([]);
+  const [pagination, setPagination] = useState<Pagination | null>(null);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  const fetchBlogs = useCallback(async (page: number) => {
+    setLoading(true);
+    setError(null);
+    try {
+      const response = await apiClient.get<PaginatedBlogsResponse>(
+        API_ENDPOINTS.BLOG.GET_PAGINATED_BLOGS,
+        {
+          params: {
+            page,
+            limit: BLOGS_PER_PAGE,
+          },
+        }
+      );
+      setBlogs(response.data.data);
+      setPagination(response.data.pagination);
+    } catch (err: any) {
+      setError(err?.response?.data?.detail || "Failed to load blogs. Please try again.");
+    } finally {
+      setLoading(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    fetchBlogs(currentPage);
+  }, [currentPage, fetchBlogs]);
+
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  // Generate page numbers for pagination
+  const getPageNumbers = (): (number | "...")[] => {
+    if (!pagination) return [];
+    const { total_pages } = pagination;
+    if (total_pages <= 5) {
+      return Array.from({ length: total_pages }, (_, i) => i + 1);
+    }
+    const pages: (number | "...")[] = [1];
+    if (currentPage > 3) pages.push("...");
+    for (
+      let i = Math.max(2, currentPage - 1);
+      i <= Math.min(total_pages - 1, currentPage + 1);
+      i++
+    ) {
+      pages.push(i);
+    }
+    if (currentPage < total_pages - 2) pages.push("...");
+    pages.push(total_pages);
+    return pages;
+  };
+
+  // Format date string nicely
+  const formatDate = (dateStr: string) => {
+    try {
+      return new Date(dateStr).toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      });
+    } catch {
+      return dateStr;
+    }
+  };
+
   return (
-    <div className="container mx-auto min-h-screen from-orange-50 to-white px-6 py-12 pt-18">
+    <div className="from-orange-50 to-white mx-auto px-6 py-12 pt-18 min-h-screen container">
       {/* Header */}
       <motion.div
         initial={{ opacity: 0, y: -40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-center mb-12"
+        className="mb-12 text-center"
       >
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-800">
+        <h1 className="font-bold text-gray-800 text-4xl md:text-5xl">
           Our Blog
         </h1>
-        <p className="text-gray-500 mt-3">
+        <p className="mt-3 text-gray-500">
           Insights, tutorials & latest tech updates
         </p>
       </motion.div>
 
-      {/* Blog Grid */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {posts.map((post, index) => (
-          <motion.div
-            key={post.id}
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.2 }}
-            whileHover={{ scale: 1.03 }}
-            className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition"
+      {/* Error State */}
+      {error && (
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="bg-red-50 mx-auto mb-8 p-6 border border-red-200 rounded-xl max-w-md text-center"
+        >
+          <p className="font-medium text-red-600">{error}</p>
+          <button
+            onClick={() => fetchBlogs(currentPage)}
+            className="bg-red-100 hover:bg-red-200 mt-3 px-4 py-2 rounded-lg text-red-700 text-sm transition"
           >
-            <img
-              src={`${post.image}?auto=format&fit=crop&w=800&q=80`}
-              alt={post.title}
-              className="h-48 w-full object-cover"
-            />
+            Try Again
+          </button>
+        </motion.div>
+      )}
 
-            <div className="p-5">
-              <p className="text-sm text-orange-500 font-medium">
-                {post.date}
-              </p>
-              <h2 className="text-xl font-semibold mt-2 text-gray-800">
-                {post.title}
-              </h2>
-              <p className="text-gray-500 mt-2 text-sm">
-                {post.desc}
-              </p>
-
-              <button className="mt-4 inline-block text-orange-600 font-medium hover:underline">
-                Read More →
-              </button>
+      {/* Loading Skeleton */}
+      {loading && (
+        <div className="gap-8 grid md:grid-cols-2 lg:grid-cols-3">
+          {Array.from({ length: BLOGS_PER_PAGE }).map((_, index) => (
+            <div
+              key={index}
+              className="bg-white shadow-lg rounded-2xl overflow-hidden animate-pulse"
+            >
+              <div className="bg-gray-200 w-full h-48" />
+              <div className="p-5 space-y-3">
+                <div className="bg-gray-200 rounded w-24 h-4" />
+                <div className="bg-gray-200 rounded w-3/4 h-6" />
+                <div className="bg-gray-200 rounded w-full h-4" />
+                <div className="bg-gray-200 rounded w-28 h-4" />
+              </div>
             </div>
-          </motion.div>
-        ))}
-      </div>
+          ))}
+        </div>
+      )}
+
+      {/* Blog Grid */}
+      {!loading && !error && blogs.length > 0 && (
+        <div className="gap-8 grid md:grid-cols-2 lg:grid-cols-3">
+          {blogs.map((post, index) => (
+            <motion.div
+              key={post.id}
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.1 }}
+              whileHover={{ scale: 1.03 }}
+              className="bg-white shadow-lg hover:shadow-2xl rounded-2xl overflow-hidden transition"
+            >
+              <Link href={`/blog/${post.slug}`}>
+                {post.thumbnail_image_url ? (
+                  <img
+                    src={post.thumbnail_image_url}
+                    alt={post.title}
+                    className="w-full h-48 object-cover"
+                  />
+                ) : (
+                  <div className="flex justify-center items-center bg-gradient-to-br from-orange-100 to-orange-200 w-full h-48">
+                    <span className="text-4xl">📝</span>
+                  </div>
+                )}
+              </Link>
+
+              <div className="p-5">
+                <p className="font-medium text-orange-500 text-sm">
+                  {formatDate(post.date)}
+                </p>
+                <h2 className="mt-2 font-semibold text-gray-800 text-xl line-clamp-2">
+                  {post.title}
+                </h2>
+                <p className="mt-2 text-gray-500 text-sm line-clamp-2">
+                  {post.description}
+                </p>
+
+                <Link
+                  href={`/blog/${post.slug}`}
+                  className="inline-block mt-4 font-medium text-orange-600 hover:underline"
+                >
+                  Read More →
+                </Link>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      )}
+
+      {/* Empty State */}
+      {!loading && !error && blogs.length === 0 && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          className="py-16 text-center"
+        >
+          <span className="text-5xl">📭</span>
+          <p className="mt-4 font-medium text-gray-600 text-lg">
+            No blog posts yet.
+          </p>
+          <p className="mt-1 text-gray-400 text-sm">
+            Check back soon for fresh content!
+          </p>
+        </motion.div>
+      )}
+
+      {/* Pagination Controls */}
+      {!loading && pagination && pagination.total_pages > 1 && (
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3 }}
+          className="flex justify-center items-center gap-2 mt-12"
+        >
+          {/* Previous Button */}
+          <button
+            onClick={() => handlePageChange(currentPage - 1)}
+            disabled={!pagination.has_previous}
+            className="px-4 py-2 border border-gray-300 disabled:opacity-40 rounded-lg text-gray-600 text-sm transition hover:bg-orange-50 disabled:cursor-not-allowed"
+          >
+            ← Prev
+          </button>
+
+          {/* Page Numbers */}
+          {getPageNumbers().map((page, idx) =>
+            page === "..." ? (
+              <span key={`ellipsis-${idx}`} className="px-2 text-gray-400">
+                …
+              </span>
+            ) : (
+              <button
+                key={page}
+                onClick={() => handlePageChange(page as number)}
+                className={`px-4 py-2 rounded-lg text-sm font-medium transition ${
+                  currentPage === page
+                    ? "bg-orange-500 text-white shadow-md"
+                    : "border border-gray-300 text-gray-600 hover:bg-orange-50"
+                }`}
+              >
+                {page}
+              </button>
+            )
+          )}
+
+          {/* Next Button */}
+          <button
+            onClick={() => handlePageChange(currentPage + 1)}
+            disabled={!pagination.has_next}
+            className="px-4 py-2 border border-gray-300 disabled:opacity-40 rounded-lg text-gray-600 text-sm transition hover:bg-orange-50 disabled:cursor-not-allowed"
+          >
+            Next →
+          </button>
+        </motion.div>
+      )}
+
+      {/* Pagination Info */}
+      {!loading && pagination && pagination.total_records > 0 && (
+        <p className="mt-4 text-center text-gray-400 text-sm">
+          Showing page {pagination.page} of {pagination.total_pages} ({pagination.total_records} total posts)
+        </p>
+      )}
 
       {/* CTA Section */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.6 }}
-        className="mt-16 text-center bg-orange-500 text-white py-10 rounded-2xl shadow-lg"
+        className="bg-orange-500 shadow-lg mt-16 py-10 rounded-2xl text-white text-center"
       >
-        <h2 className="text-2xl md:text-3xl font-bold">
+        <h2 className="font-bold text-2xl md:text-3xl">
           Stay Updated 🚀
         </h2>
         <p className="mt-2 text-orange-100">
           Subscribe to get latest blog updates directly in your inbox
         </p>
 
-        <div className="mt-5 flex justify-center gap-2">
+        <div className="flex justify-center gap-2 mt-5">
           <input
             type="email"
             placeholder="Enter your email"
-            className="px-4 py-2 rounded-lg text-black w-64 outline-none"
+            className="px-4 py-2 rounded-lg outline-none w-64 text-black"
           />
-          <button className="bg-black px-5 py-2 rounded-lg hover:bg-gray-800 transition">
+          <button className="bg-black hover:bg-gray-800 px-5 py-2 rounded-lg transition">
             Subscribe
           </button>
         </div>

@@ -141,7 +141,7 @@ const Navbar = () => {
 
   const resourcesMenu = [
     { name: 'Blog', href: '/blog', desc: 'Read our latest insights and tutorials', icon: <FileText size={18} /> },
-    { name: 'Case Studies', href: '/case-studies', desc: 'See how we helped other businesses', icon: <BarChart3 size={18} /> },
+    // { name: 'Case Studies', href: '/case-studies', desc: 'See how we helped other businesses', icon: <BarChart3 size={18} /> },
   ];
 
   const toolsMenu = [
@@ -187,13 +187,13 @@ const Navbar = () => {
           {/* Logo */}
           <motion.div
             variants={itemVariants}
-            className="cursor-pointer group"
+            className="group cursor-pointer"
           >
             <Link href="/" className='flex items-center gap-2'>
-              <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-amber-600 rounded-xl flex items-center justify-center shadow-lg group-hover:rotate-12 transition-transform">
+              <div className="flex justify-center items-center bg-gradient-to-br from-orange-500 to-amber-600 shadow-lg rounded-xl w-10 h-10 group-hover:rotate-12 transition-transform">
                 <Zap className="fill-white" size={20} />
               </div>
-              <span className="text-xl font-bold tracking-tight text-white">
+              <span className="font-bold text-white text-xl tracking-tight">
                 Scraping
               </span>
             </Link>
@@ -210,7 +210,7 @@ const Navbar = () => {
               >
                 <motion.button
                   variants={itemVariants}
-                  className="flex items-center gap-1 text-base font-medium text-slate-300 hover:text-white transition-colors py-2"
+                  className="flex items-center gap-1 py-2 font-medium text-slate-300 hover:text-white text-base transition-colors"
                 >
                   <Link href="/about">{link.name}</Link>
                   {link.hasDropdown && <ChevronDown size={14} className={`transition-transform duration-300 ${activeDropdown === link.name ? 'rotate-180' : ''}`} />}
@@ -218,7 +218,7 @@ const Navbar = () => {
 
                 {/* Dropdown Bridge to prevent flickering */}
                 {link.hasDropdown && activeDropdown === link.name && (
-                  <div className="absolute top-full left-0 right-0 h-4 z-[40]" />
+                  <div className="top-full right-0 left-0 z-[40] absolute h-4" />
                 )}
 
                 <AnimatePresence>
@@ -239,17 +239,17 @@ const Navbar = () => {
                         <ToolsMegaMenu />
                       ) : link.name === 'AI Tools' ? (
                         <div className="flex flex-col gap-2">
-                          <h3 className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">
+                          <h3 className="mb-2 font-bold text-slate-500 text-xs uppercase tracking-wider">
                             Featured AI Tools
                           </h3>
                           {aiTools.map((tool) => (
-                            <button key={tool.name} className="flex items-start gap-4 p-3 rounded-xl hover:bg-slate-50 transition-colors text-left group">
-                              <div className="mt-1 text-orange-600 group-hover:text-orange-700 transition-colors p-2 bg-orange-50 rounded-lg group-hover:bg-orange-100">
+                            <button key={tool.name} className="group flex items-start gap-4 hover:bg-slate-50 p-3 rounded-xl text-left transition-colors">
+                              <div className="bg-orange-50 group-hover:bg-orange-100 mt-1 p-2 rounded-lg text-orange-600 group-hover:text-orange-700 transition-colors">
                                 {tool.icon}
                               </div>
                               <div>
-                                <div className="text-base font-semibold text-slate-800 group-hover:text-orange-600 transition-colors">{tool.name}</div>
-                                <div className="text-xs text-slate-500 mt-0.5">{tool.desc}</div>
+                                <div className="font-semibold text-slate-800 group-hover:text-orange-600 text-base transition-colors">{tool.name}</div>
+                                <div className="mt-0.5 text-slate-500 text-xs">{tool.desc}</div>
                               </div>
                             </button>
                           ))}
@@ -260,24 +260,24 @@ const Navbar = () => {
                         <ServicesMegaMenu />
                       ) : link.name === 'Resources' ? (
                         <div className="flex flex-col gap-2">
-                          <h3 className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">
+                          <h3 className="mb-2 font-bold text-slate-500 text-xs uppercase tracking-wider">
                             Knowledge Center
                           </h3>
                           {resourcesMenu.map((item) => (
-                            <Link href={item.href} key={item.name} className="flex items-start gap-4 p-3 rounded-xl hover:bg-slate-50 transition-colors text-left group">
-                              <div className="mt-1 text-orange-600 group-hover:text-orange-700 transition-colors p-2 bg-orange-50 rounded-lg group-hover:bg-orange-100">
+                            <Link href={item.href} key={item.name} className="group flex items-start gap-4 hover:bg-slate-50 p-3 rounded-xl text-left transition-colors">
+                              <div className="bg-orange-50 group-hover:bg-orange-100 mt-1 p-2 rounded-lg text-orange-600 group-hover:text-orange-700 transition-colors">
                                 {item.icon}
                               </div>
                               <div>
-                                <div className="text-base font-semibold text-slate-800 group-hover:text-orange-600 transition-colors">{item.name}</div>
-                                <div className="text-xs text-slate-500 mt-0.5">{item.desc}</div>
+                                <div className="font-semibold text-slate-800 group-hover:text-orange-600 text-base transition-colors">{item.name}</div>
+                                <div className="mt-0.5 text-slate-500 text-xs">{item.desc}</div>
                               </div>
                             </Link>
                           ))}
                         </div>
                       ) : (
                         <div className="flex flex-col gap-2">
-                          <div className="p-4 text-base text-slate-600">Content for {link.name}</div>
+                          <div className="p-4 text-slate-600 text-base">Content for {link.name}</div>
                         </div>
                       )}
                     </motion.div>
@@ -292,7 +292,7 @@ const Navbar = () => {
             <button className="p-2 text-slate-400 hover:text-white transition-colors">
               <Search size={20} />
             </button>
-            <Link href="/contact" className="px-5 py-2.5 bg-orange-600 hover:bg-orange-500 rounded-xl text-sm font-bold text-white transition-all shadow-lg shadow-orange-500/20 active:scale-95">
+            <Link href="/contact" className="bg-orange-600 hover:bg-orange-500 shadow-lg shadow-orange-500/20 px-5 py-2.5 rounded-xl font-bold text-white text-sm active:scale-95 transition-all">
               Contact
             </Link>
           </motion.div>
@@ -317,25 +317,25 @@ const Navbar = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setMobileMenuOpen(false)}
-              className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[60] md:hidden"
+              className="md:hidden z-[60] fixed inset-0 bg-black/60 backdrop-blur-sm"
             />
             <motion.div
               initial="closed"
               animate="opened"
               exit="closed"
               variants={mobileMenuVariants}
-              className="fixed top-0 right-0 bottom-0 w-[85%] max-w-sm bg-slate-950 z-[70] p-8 md:hidden shadow-2xl border-l border-white/5 flex flex-col"
+              className="md:hidden top-0 right-0 bottom-0 z-[70] fixed flex flex-col bg-slate-950 shadow-2xl p-8 border-white/5 border-l w-[85%] max-w-sm"
             >
-              <div className="flex items-center justify-between mb-12">
-                <span className="text-xl font-bold text-white">NEXUS</span>
-                <button onClick={() => setMobileMenuOpen(false)} className="p-2 hover:bg-white/5 rounded-lg text-white">
+              <div className="flex justify-between items-center mb-12">
+                <span className="font-bold text-white text-xl">NEXUS</span>
+                <button onClick={() => setMobileMenuOpen(false)} className="hover:bg-white/5 p-2 rounded-lg text-white">
                   <X size={24} />
                 </button>
               </div>
 
               <div className="flex flex-col gap-8">
                 {navLinks.map((link) => (
-                  <button key={link.name} className="text-3xl font-medium text-slate-300 hover:text-orange-400 transition-colors text-left flex justify-between items-center">
+                  <button key={link.name} className="flex justify-between items-center font-medium text-slate-300 hover:text-orange-400 text-3xl text-left transition-colors">
                     {link.name}
                     {link.hasDropdown && <ChevronDown size={24} />}
                   </button>
@@ -343,10 +343,10 @@ const Navbar = () => {
               </div>
 
               <div className="mt-auto">
-                <button className="w-full py-4 bg-orange-600 rounded-xl font-bold text-white mb-6">
+                <button className="bg-orange-600 mb-6 py-4 rounded-xl w-full font-bold text-white">
                   Launch App
                 </button>
-                <div className="flex gap-6 justify-center text-slate-500">
+                <div className="flex justify-center gap-6 text-slate-500">
                   <Github className="hover:text-white cursor-pointer" />
                   <Twitter className="hover:text-white cursor-pointer" />
                 </div>
@@ -366,7 +366,7 @@ export default Navbar;
 //  */
 // export default function App() {
 //   return (
-//     <div className="min-h-screen bg-slate-950 text-white selection:bg-orange-500/30">
+//     <div className="bg-slate-950 selection:bg-orange-500/30 min-h-screen text-white">
 //       <Navbar />
 //     </div>
 //   );
