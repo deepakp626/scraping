@@ -1,7 +1,10 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
+import { ChevronLeft, ChevronRight, ArrowRight, ShoppingBag, Truck, Apple, ShoppingCart, Home, Wine, Share2, Globe } from 'lucide-react';
+
 
 /* ─────────────────────────── DATA ─────────────────────────────── */
 
@@ -14,32 +17,32 @@ const stats = [
 
 const features = [
   {
-    icon: "🗂️",
+    imagePath: "/images/datasets/database.png",
     title: "Structured Datasets",
     desc: "Receive data in clean, structured formats — CSV, JSON, Excel, or directly into your database.",
   },
   {
-    icon: "🌐",
+    imagePath: "/images/datasets/www.png",
     title: "Any Website",
     desc: "We extract data from any public website — e-commerce, real estate, job boards, directories, and more.",
   },
   {
-    icon: "📍",
+    imagePath: "/images/datasets/gps.png",
     title: "Location Targeted",
     desc: "Get geo-filtered datasets by city, region, or country — tailored exactly to your target market.",
   },
   {
-    icon: "⚡",
+    imagePath: "/images/datasets/lightning.png",
     title: "Fast Turnaround",
     desc: "Most datasets are delivered within 1–3 business days depending on volume and complexity.",
   },
   {
-    icon: "✅",
+    imagePath: "/images/datasets/check-button.png",
     title: "Validated & Clean",
     desc: "Every record is validated, deduplicated, and cleaned before delivery — no junk, no gaps.",
   },
   {
-    icon: "🔄",
+    imagePath: "/images/datasets/automation.png",
     title: "Recurring Updates",
     desc: "Set up automated delivery schedules — daily, weekly, or monthly fresh data drops.",
   },
@@ -98,32 +101,6 @@ const testimonials = [
   },
 ];
 
-const faqs = [
-  {
-    q: "What types of data can you collect?",
-    a: "We can collect virtually any publicly available data — product listings, prices, reviews, contact details, job postings, real estate listings, news articles, business directories, and much more.",
-  },
-  {
-    q: "Which websites do you support?",
-    a: "We support any public-facing website. This includes e-commerce platforms, job boards, real estate portals, social media directories, review sites, news outlets, and government data portals.",
-  },
-  {
-    q: "How long does it take to deliver a dataset?",
-    a: "Most datasets are delivered within 1–3 business days. Larger or more complex projects may take 3–7 days. We always provide a clear timeline before starting.",
-  },
-  {
-    q: "In what formats is the data delivered?",
-    a: "We deliver in CSV, Excel (XLSX), JSON, Google Sheets, or directly into your database (MySQL, PostgreSQL, MongoDB). Just let us know your preference.",
-  },
-  {
-    q: "Can I get recurring/updated datasets?",
-    a: "Yes! We offer scheduled data delivery — hourly, daily, weekly, or monthly. Your data stays fresh automatically.",
-  },
-  {
-    q: "Is the data accurate and validated?",
-    a: "Absolutely. Every dataset goes through our QA pipeline — deduplication, field validation, and completeness checks — before delivery.",
-  },
-];
 
 const datasetCategories = [
   {
@@ -167,7 +144,7 @@ const datasetCategories = [
 /* ─────────────────────────── PAGE ─────────────────────────────── */
 
 export default function DatasetPage() {
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
 
   return (
     <main className="bg-white text-gray-800 overflow-x-hidden">
@@ -211,53 +188,18 @@ export default function DatasetPage() {
             </div>
           </div>
 
-          {/* Hero visual card */}
-          <div className="hidden lg:flex flex-col gap-4">
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm">
-              <p className="text-xs text-gray-400 mb-3 uppercase tracking-widest font-semibold">Sample Dataset Preview</p>
-              <div className="overflow-x-auto">
-                <table className="w-full text-sm text-left">
-                  <thead>
-                    <tr className="text-primary-theme text-xs font-bold border-b border-white/10">
-                      <th className="pb-2 pr-4">Product</th>
-                      <th className="pb-2 pr-4">Price</th>
-                      <th className="pb-2 pr-4">Rating</th>
-                      <th className="pb-2">Location</th>
-                    </tr>
-                  </thead>
-                  <tbody className="text-gray-300 text-xs">
-                    {[
-                      ["Laptop Pro X1", "$1,299", "4.8 ★", "New York"],
-                      ["Smart Watch S5", "$349", "4.6 ★", "London"],
-                      ["Wireless Buds", "$89", "4.7 ★", "Dubai"],
-                      ["4K Monitor", "$599", "4.9 ★", "Sydney"],
-                      ["Gaming Chair", "$279", "4.5 ★", "Toronto"],
-                    ].map((row, i) => (
-                      <tr key={i} className="border-b border-white/5 hover:bg-white/5 transition-colors">
-                        {row.map((cell, j) => (
-                          <td key={j} className="py-2 pr-4">{cell}</td>
-                        ))}
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-              <div className="mt-4 flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-                <span className="text-green-400 text-xs font-semibold">Live extraction in progress…</span>
-              </div>
-            </div>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="bg-primary-theme/10 border border-primary-theme/20 rounded-xl p-4 text-center">
-                <p className="text-2xl font-black text-primary-theme">500K+</p>
-                <p className="text-gray-400 text-xs mt-1">Records this week</p>
-              </div>
-              <div className="bg-white/5 border border-white/10 rounded-xl p-4 text-center">
-                <p className="text-2xl font-black text-white">99.2%</p>
-                <p className="text-gray-400 text-xs mt-1">Data accuracy</p>
-              </div>
-            </div>
-          </div>
+          {/* hero image */}
+          <Image
+            src="/images/datasets/dataset-hero.png"
+            // src="/images/datasets/dataset-hero.svg"
+            alt="Hero Image"
+            width={500}
+            height={500}
+            className="w-full h-auto"
+          />
+
+
+
         </div>
       </section>
 
@@ -294,7 +236,8 @@ export default function DatasetPage() {
                 key={f.title}
                 className="bg-white rounded-2xl p-7 border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer group"
               >
-                <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">{f.icon}</div>
+                <Image src={f.imagePath} alt={f.title} width={50} height={50} className="mb-4 group-hover:scale-110 transition-transform duration-300" />
+                {/* <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">{f.icon}</div> */}
                 <h3 className="text-lg font-bold text-secondary-theme mb-2">{f.title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed">{f.desc}</p>
               </div>
@@ -302,6 +245,10 @@ export default function DatasetPage() {
           </div>
         </div>
       </section>
+
+
+      {/*    IndustrySolutions tab section  */}
+      <IndustrySolutions />
 
       {/* ── How It Works ─────────────────────────────────────────────── */}
       <section className="py-20 px-6">
@@ -328,7 +275,7 @@ export default function DatasetPage() {
                   <div className="w-20 h-20 rounded-full bg-linear-to-br from-primary-theme to-gradient-end-color flex items-center justify-center text-white font-black text-xl shadow-lg mb-5">
                     {step.step}
                   </div>
-                  <h3 className="font-bold text-secondary-theme text-lg mb-2">{step.title}</h3>
+                  <h3 className="font-semibold text-secondary-theme text-lg mb-2">{step.title}</h3>
                   <p className="text-gray-500 text-sm leading-relaxed">{step.desc}</p>
                 </div>
               ))}
@@ -375,43 +322,7 @@ export default function DatasetPage() {
         </div>
       </section>
 
-      {/* ── Testimonials ────────────────────────────────────────────── */}
-      <section className="py-20 px-6 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-14">
-            <span className="text-primary-theme text-sm font-semibold tracking-widest uppercase">
-              Client Reviews
-            </span>
-            <h2 className="text-3xl font-bold mt-2 text-secondary-theme">
-              What Our Clients Say About Us
-            </h2>
-          </div>
-          <div className="grid sm:grid-cols-3 gap-6">
-            {testimonials.map((t) => (
-              <div
-                key={t.name}
-                className="bg-white rounded-2xl p-7 border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300"
-              >
-                <div className="flex items-center gap-4 mb-5">
-                  <div className="w-12 h-12 rounded-full bg-linear-to-br from-primary-theme to-gradient-end-color flex items-center justify-center text-white font-black text-sm shrink-0">
-                    {t.avatar}
-                  </div>
-                  <div>
-                    <p className="font-bold text-secondary-theme text-sm">{t.name}</p>
-                    <p className="text-gray-400 text-xs">{t.role}</p>
-                  </div>
-                </div>
-                <div className="flex gap-0.5 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <span key={i} className="text-primary-theme text-sm">★</span>
-                  ))}
-                </div>
-                <p className="text-gray-500 text-sm leading-relaxed italic">&ldquo;{t.text}&rdquo;</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       {/* ── Dataset Categories ─────────────────────────────────────── */}
       <section id="categories" className="py-20 px-6">
@@ -445,7 +356,7 @@ export default function DatasetPage() {
                     key={row.category}
                     className={`${i % 2 === 0 ? "bg-white" : "bg-gray-50"} hover:bg-orange-50 transition-colors`}
                   >
-                    <td className="px-6 py-4 font-bold text-secondary-theme">{row.category}</td>
+                    <td className="px-6 py-4 font-semibold text-secondary-theme">{row.category}</td>
                     <td className="px-6 py-4">
                       <div className="flex flex-wrap gap-1">
                         {row.examples.map((ex) => (
@@ -476,96 +387,206 @@ export default function DatasetPage() {
         </div>
       </section>
 
-      {/* ── FAQ ───────────────────────────────────────────────────── */}
-      <section className="bg-gray-50 py-20 px-6">
-        <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-14">
-            <span className="text-primary-theme text-sm font-semibold tracking-widest uppercase">
-              FAQs
-            </span>
-            <h2 className="text-3xl font-bold mt-2 text-secondary-theme">
-              Frequently Asked Questions
-            </h2>
-          </div>
-          <div className="space-y-4">
-            {faqs.map((faq, i) => (
-              <div
-                key={i}
-                className="bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm"
-              >
-                <button
-                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                  className="w-full text-left px-6 py-5 flex items-center justify-between gap-4 cursor-pointer hover:bg-orange-50 transition-colors"
-                >
-                  <span className="font-semibold text-secondary-theme text-sm">{faq.q}</span>
-                  <span
-                    className={`shrink-0 w-7 h-7 rounded-full bg-primary-theme/10 text-primary-theme flex items-center justify-center font-bold text-lg transition-transform duration-300 ${openFaq === i ? "rotate-45" : ""}`}
-                  >
-                    +
-                  </span>
-                </button>
-                {openFaq === i && (
-                  <div className="px-6 pb-5 text-gray-500 text-sm leading-relaxed border-t border-gray-50 pt-4">
-                    {faq.a}
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
-      {/* ── CTA ───────────────────────────────────────────────────── */}
-      <section className="relative bg-secondary-theme overflow-hidden py-24 px-6">
-        <div className="absolute -top-20 -left-20 w-80 h-80 rounded-full bg-primary-theme/20 blur-3xl pointer-events-none" />
-        <div className="absolute -bottom-20 -right-20 w-80 h-80 rounded-full bg-gradient-end-color/20 blur-3xl pointer-events-none" />
-
-        <div className="relative z-10 max-w-4xl mx-auto text-center">
-          <span className="inline-block mb-5 bg-primary-theme/15 border border-primary-theme/30 text-primary-theme text-xs font-bold tracking-widest uppercase px-5 py-2 rounded-full">
-            🚀 Get Started Today
-          </span>
-          <h2 className="text-4xl sm:text-5xl font-extrabold text-white leading-tight mb-5">
-            Ready for Your{" "}
-            <span className="text-transparent bg-clip-text bg-linear-to-r from-primary-theme to-gradient-end-color">
-              Custom Dataset?
-            </span>
-          </h2>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
-            Share your requirements and we&apos;ll get back to you within 24 hours
-            with a timeline and quote. Fast, accurate, and fully customised to
-            your needs.
-          </p>
-          <div className="flex flex-wrap justify-center gap-4 mb-10">
-            {[
-              { icon: "⚡", text: "Avg. 2-Day Delivery" },
-              { icon: "✅", text: "Validated & Clean Data" },
-              { icon: "🌍", text: "Any Website · Any Location" },
-            ].map((item) => (
-              <div
-                key={item.text}
-                className="flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-5 py-2.5 text-sm text-gray-300"
-              >
-                <span>{item.icon}</span>
-                <span>{item.text}</span>
-              </div>
-            ))}
-          </div>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/contact"
-              className="inline-block bg-linear-to-r from-primary-theme to-gradient-end-color text-white font-bold px-10 py-4 rounded-full shadow-lg hover:scale-105 transition-all duration-300 text-base"
-            >
-              Request a Dataset →
-            </Link>
-            <Link
-              href="/about"
-              className="inline-block border border-white/20 text-white font-semibold px-10 py-4 rounded-full hover:bg-white/10 transition-all duration-300 text-base"
-            >
-              Learn More About Us
-            </Link>
-          </div>
-        </div>
-      </section>
     </main>
   );
 }
+
+
+const IndustrySolutions = () => {
+  const [activeTab, setActiveTab] = useState(6); // Default to Social Media (index 6)
+  
+
+  const industries = [
+    {
+      id: 0,
+      title: "Retail Datasets",
+      description: "Monitor product pricing, availability, and customer reviews across major e-commerce platforms to stay competitive.",
+      icon: "/images/datasets/IndustryIcon/Real-Estate-Datasets.svg",
+      image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=800",
+    },
+    {
+      id: 1,
+      title: "Logistics Datasets",
+      description: "Optimize supply chain routes and delivery performance with real-time tracking data and logistics analytics.",
+      icon: "/images/datasets/IndustryIcon/Restaurant-&-Food-Delivery-Tracking.svg",
+      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800",
+    },
+    {
+      id: 2,
+      title: "Grocery Datasets",
+      description: "Track fresh produce trends, inventory levels, and regional grocery pricing for better procurement strategies.",
+      icon:  "/images/datasets/IndustryIcon/Grocery-Datasets.svg",
+      image: "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=800",
+    },
+    {
+      id: 3,
+      title: "E-commerce Datasets",
+      description: "Deep dive into marketplace dynamics, seller ratings, and global product catalogues for market research.",
+      icon:  "/images/datasets/IndustryIcon/Ecommerce-Datasets.svg",
+      image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800",
+    },
+    {
+      id: 4,
+      title: "Real Estate Datasets",
+      description: "Aggregate property listings, historical price data, and neighborhood demographics for investment analysis.",
+      icon:  "/images/datasets/IndustryIcon/Real-Estate-Datasets.svg",
+      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800",
+    },
+
+    {
+      id: 5,
+      title: "Social Media Datasets",
+      description: "Track influencers, engagement metrics, trending content, and hashtags across global platforms for branding and audience analysis.",
+      icon:  "/images/datasets/IndustryIcon/Social-Media-Datasets.svg",
+      image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=800",
+    },
+{
+  "id": 6,
+  "title": "Travel Datasets",
+  "description": "Analyze flight patterns, tourist flows, and seasonal travel demands to optimize your service offerings.",
+  "icon": "/images/datasets/IndustryIcon/Travel-Datasets.svg",
+  "image": "https://imgs.search.brave.com/cW8puSGmiO-PbTkZ6BUlW5odyu78mpNgfx0wH3x_FvA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNDg5/NTU2NDc4L3Bob3Rv/L3RyYXZlbGxpbmct/dG9vbHMuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPVF0TEdD/Wm5Pckg1dnk4UTM5/SGk5ZDZUVjNfSU14/YjNramdkTkRoOFFa/Sms9"
+},
+{
+  "id": 7,
+  "title": "Liquor Datasets",
+  "description": "Track consumer preferences, spirits market trends, and regional sales performance to refine your inventory.",
+  "icon": "/images/datasets/IndustryIcon/Liquor-Datasets.svg",
+  "image": "https://imgs.search.brave.com/Mzf19Ezuoo8O6eu0eLMwCwOTDTEr8riqvGprbKtH5fQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNTA2/MDE4NzkwL3Bob3Rv/L2dyb2Nlcnktc3Rv/cmUtbGlxdW9yLWRl/cGFydG1lbnQuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPUZo/dXJVOFhzbTFfLTls/R2hVblBieE9HUnZD/VS1OWUlFN0dyWFdV/X0NCYTQ9"
+}
+  ];
+
+  const scrollContainerRef = useRef<HTMLDivElement | null>(null);
+
+  const scroll = (direction: 'left' | 'right') => {
+    const container = scrollContainerRef.current;
+    if (!container) return;
+
+    const scrollTo = direction === 'left'
+      ? container.scrollLeft - 200
+      : container.scrollLeft + 200;
+
+    container.scrollTo({ left: scrollTo, behavior: 'smooth' });
+  };
+
+  const currentData = industries.find((ind) => ind.id === activeTab) ?? industries[0];
+
+  return (
+    <div className="w-full max-w-6xl mx-auto p-4 md:p-8 font-sans" >
+      {/* Header Section */}
+      <div className="text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">
+          Explore Industry-Specific Solutions Offered by Scraping Toolkit
+        </h2>
+        <p className="text-slate-600 max-w-4xl mx-auto leading-relaxed">
+          At Scraping Toolkit, we deliver highly focused, industry-ready datasets designed to meet the specific demands of different business verticals. Each dataset is structured to capture the most relevant, actionable information from trusted online sources. Here is our full list of industry-specific dataset services below:
+        </p>
+      </div>
+
+      {/* Tabs Navigation */}
+      <div className="relative flex items-center justify-center mb-16">
+        <button 
+          onClick={() => scroll('left')}
+          className="p-2 rounded-full border border-slate-200 hover:bg-slate-50 transition-colors z-10 hidden md:block"
+        >
+          <ChevronLeft className="w-5 h-5 text-slate-600" />
+        </button>
+
+        <div 
+          ref={scrollContainerRef}
+          className="flex-1 flex justify-center overflow-x-auto gap-4 px-4 py-4 scrollbar-hide no-scrollbar"
+          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+        >
+          {industries.map((industry) => (
+            <button
+              key={industry.id}
+              onClick={() => setActiveTab(industry.id)}
+              className={`shrink-0 w-20 h-20 md:w-24 md:h-24 flex items-center justify-center rounded-lg transition-all duration-300 transform cursor-pointer ${
+                activeTab === industry.id 
+                  ? 'bg-primary-theme text-black shadow-xl scale-110 -translate-y-2' 
+                  : 'bg-white text-slate-400 border border-slate-100 hover:border-slate-300 shadow-md'
+              }`}
+            >
+              {/* {industry.icon} */}
+              {/* <Image src={industry.icon} alt={industry.title} width={50} height={50} className="focus:text-black" /> */}
+            
+              <Image
+                src={industry.icon}
+                alt={industry.title}
+                width={50}
+                height={50}
+                className={`${
+                  activeTab === industry.id 
+                    ? "brightness-0 invert" 
+                    : "opacity-50"
+                }`}
+              />
+            </button>
+          ))}
+        </div>
+
+        <button 
+          onClick={() => scroll('right')}
+          className="p-2 rounded-full border border-slate-200 hover:bg-slate-50 transition-colors z-10 hidden md:block"
+        >
+          <ChevronRight className="w-5 h-5 text-slate-600" />
+        </button>
+      </div>
+
+      {/* Content Area */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center bg-white rounded-3xl overflow-hidden shadow-sm min-h-100">
+        {/* Text Content */}
+        <div className="p-8 md:p-12 order-2 lg:order-1 animate-fadeIn">
+          <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-6 transition-all">
+            {currentData.title}
+          </h3>
+          <p className="text-slate-600 text-lg leading-relaxed mb-8">
+            {currentData.description}
+          </p>
+          <button 
+            className="flex items-center gap-3 px-8 py-3 rounded-full text-white font-semibold transition-all hover:opacity-90 active:scale-95 shadow-lg group"
+            style={{ 
+              background: `linear-gradient(90deg, var(--primary) 0%, var(--gradient-end) 100%)`,
+              backgroundColor: 'var(--primary)' 
+            }}
+          >
+            <span>View More</span>
+            <div className="bg-white/20 rounded-full p-1 transition-transform group-hover:translate-x-1">
+              <ArrowRight className="w-4 h-4" />
+            </div>
+          </button>
+        </div>
+
+        {/* Image Display */}
+        <div className="relative h-75 lg:h-full overflow-hidden order-1 lg:order-2">
+          <div className="absolute inset-0 bg-slate-200 animate-pulse" />
+          <img 
+            key={activeTab} // Forces re-animation on tab change
+            src={currentData.image} 
+            alt={currentData.title}
+            className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 animate-slideInRight"
+            style={{ 
+              borderBottomLeftRadius: '100px',
+              borderTopLeftRadius: '20px'
+            }}
+          />
+        </div>
+      </div>
+
+      <style dangerouslySetInnerHTML={{ __html: `
+        @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(10px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideInRight {
+          from { opacity: 0; transform: translateX(20px); }
+          to { opacity: 1; transform: translateX(0); }
+        }
+        .animate-fadeIn { animation: fadeIn 0.5s ease-out forwards; }
+        .animate-slideInRight { animation: slideInRight 0.6s cubic-bezier(0.2, 1, 0.3, 1) forwards; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+      `}} />
+    </div>
+  );
+};

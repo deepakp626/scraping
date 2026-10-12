@@ -1,0 +1,1059 @@
+{
+  "nodes": [
+    {
+      "id": "industryicon_travel_datasets",
+      "label": "Travel Datasets Icon",
+      "file_type": "image",
+      "source_file": "public/images/datasets/IndustryIcon/Travel-Datasets.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "datasets_automation",
+      "label": "Automation",
+      "file_type": "image",
+      "source_file": "public/images/datasets/automation.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "datasets_check_button",
+      "label": "Check Button",
+      "file_type": "image",
+      "source_file": "public/images/datasets/check-button.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "datasets_database",
+      "label": "Database",
+      "file_type": "image",
+      "source_file": "public/images/datasets/database.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "datasets_dataset_hero",
+      "label": "Dataset Hero",
+      "file_type": "image",
+      "source_file": "public/images/datasets/dataset-hero.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "datasets_dataset_hero",
+      "label": "Dataset Hero Icon",
+      "file_type": "image",
+      "source_file": "public/images/datasets/dataset-hero.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "datasets_gps",
+      "label": "Gps",
+      "file_type": "image",
+      "source_file": "public/images/datasets/gps.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "datasets_lightning",
+      "label": "Lightning",
+      "file_type": "image",
+      "source_file": "public/images/datasets/lightning.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "datasets_www",
+      "label": "Www",
+      "file_type": "image",
+      "source_file": "public/images/datasets/www.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "images_car_rental_data_scraping_services",
+      "label": "Car Rental Data Scraping Services",
+      "file_type": "image",
+      "source_file": "public/images/hero/IndustryTabSection/Images/Car-rental-Data-Scraping-services.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "images_ecommerce_data_scraping_services",
+      "label": "Ecommerce Data Scraping Services",
+      "file_type": "image",
+      "source_file": "public/images/hero/IndustryTabSection/Images/Ecommerce-Data-Scraping-services.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "images_food_delivery_data_scraping_services",
+      "label": "Food Delivery Data Scraping Services",
+      "file_type": "image",
+      "source_file": "public/images/hero/IndustryTabSection/Images/Food-Delivery-Data-Scraping-Services.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "images_grocery___supermarket_scraping_services",
+      "label": "Grocery And Supermarket Scraping Services",
+      "file_type": "image",
+      "source_file": "public/images/hero/IndustryTabSection/Images/Grocery-&-Supermarket-Scraping-Services.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "images_hotel_data_scraping_services",
+      "label": "Hotel Data Scraping Services",
+      "file_type": "image",
+      "source_file": "public/images/hero/IndustryTabSection/Images/Hotel-Data-Scraping-Services.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "images_liquor___alcohol_scraping_services",
+      "label": "Liquor And Alcohol Scraping Services",
+      "file_type": "image",
+      "source_file": "public/images/hero/IndustryTabSection/Images/Liquor-&-Alcohol-Scraping-Services.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "images_ott_media_data_scraping_services",
+      "label": "Ott Media Data Scraping Services",
+      "file_type": "image",
+      "source_file": "public/images/hero/IndustryTabSection/Images/OTT-Media-Data-Scraping-Services.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "images_pharmaceutical_data_scraping_services",
+      "label": "Pharmaceutical Data Scraping Services",
+      "file_type": "image",
+      "source_file": "public/images/hero/IndustryTabSection/Images/Pharmaceutical-Data-Scraping-Services.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "images_quick_commerce_data_scraping_services",
+      "label": "Quick Commerce Data Scraping Services",
+      "file_type": "image",
+      "source_file": "public/images/hero/IndustryTabSection/Images/Quick-Commerce-Data-Scraping-Services.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "images_real_estate_data_scraping_services",
+      "label": "Real Estate Data Scraping Services",
+      "file_type": "image",
+      "source_file": "public/images/hero/IndustryTabSection/Images/Real-Estate-Data-Scraping-Services.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "images_restaurant_data_scraping_services",
+      "label": "Restaurant Data Scraping Services",
+      "file_type": "image",
+      "source_file": "public/images/hero/IndustryTabSection/Images/Restaurant-Data-Scraping-Services.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "images_car_rental_data_scraping_services",
+      "target": "images_ecommerce_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_car_rental_data_scraping_services",
+      "target": "images_food_delivery_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_car_rental_data_scraping_services",
+      "target": "images_grocery___supermarket_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_car_rental_data_scraping_services",
+      "target": "images_hotel_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_car_rental_data_scraping_services",
+      "target": "images_liquor___alcohol_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_car_rental_data_scraping_services",
+      "target": "images_ott_media_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_car_rental_data_scraping_services",
+      "target": "images_pharmaceutical_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_car_rental_data_scraping_services",
+      "target": "images_quick_commerce_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_car_rental_data_scraping_services",
+      "target": "images_real_estate_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_car_rental_data_scraping_services",
+      "target": "images_restaurant_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_ecommerce_data_scraping_services",
+      "target": "images_food_delivery_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_ecommerce_data_scraping_services",
+      "target": "images_grocery___supermarket_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_ecommerce_data_scraping_services",
+      "target": "images_hotel_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_ecommerce_data_scraping_services",
+      "target": "images_liquor___alcohol_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_ecommerce_data_scraping_services",
+      "target": "images_ott_media_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_ecommerce_data_scraping_services",
+      "target": "images_pharmaceutical_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_ecommerce_data_scraping_services",
+      "target": "images_quick_commerce_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_ecommerce_data_scraping_services",
+      "target": "images_real_estate_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_ecommerce_data_scraping_services",
+      "target": "images_restaurant_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_food_delivery_data_scraping_services",
+      "target": "images_grocery___supermarket_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_food_delivery_data_scraping_services",
+      "target": "images_hotel_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_food_delivery_data_scraping_services",
+      "target": "images_liquor___alcohol_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_food_delivery_data_scraping_services",
+      "target": "images_ott_media_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_food_delivery_data_scraping_services",
+      "target": "images_pharmaceutical_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_food_delivery_data_scraping_services",
+      "target": "images_quick_commerce_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_food_delivery_data_scraping_services",
+      "target": "images_real_estate_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_food_delivery_data_scraping_services",
+      "target": "images_restaurant_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_grocery___supermarket_scraping_services",
+      "target": "images_hotel_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_grocery___supermarket_scraping_services",
+      "target": "images_liquor___alcohol_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_grocery___supermarket_scraping_services",
+      "target": "images_ott_media_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_grocery___supermarket_scraping_services",
+      "target": "images_pharmaceutical_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_grocery___supermarket_scraping_services",
+      "target": "images_quick_commerce_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_grocery___supermarket_scraping_services",
+      "target": "images_real_estate_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_grocery___supermarket_scraping_services",
+      "target": "images_restaurant_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_hotel_data_scraping_services",
+      "target": "images_liquor___alcohol_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_hotel_data_scraping_services",
+      "target": "images_ott_media_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_hotel_data_scraping_services",
+      "target": "images_pharmaceutical_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_hotel_data_scraping_services",
+      "target": "images_quick_commerce_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_hotel_data_scraping_services",
+      "target": "images_real_estate_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_hotel_data_scraping_services",
+      "target": "images_restaurant_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_liquor___alcohol_scraping_services",
+      "target": "images_ott_media_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_liquor___alcohol_scraping_services",
+      "target": "images_pharmaceutical_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_liquor___alcohol_scraping_services",
+      "target": "images_quick_commerce_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_liquor___alcohol_scraping_services",
+      "target": "images_real_estate_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_liquor___alcohol_scraping_services",
+      "target": "images_restaurant_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_ott_media_data_scraping_services",
+      "target": "images_pharmaceutical_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_ott_media_data_scraping_services",
+      "target": "images_quick_commerce_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_ott_media_data_scraping_services",
+      "target": "images_real_estate_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_ott_media_data_scraping_services",
+      "target": "images_restaurant_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_pharmaceutical_data_scraping_services",
+      "target": "images_quick_commerce_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_pharmaceutical_data_scraping_services",
+      "target": "images_real_estate_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_pharmaceutical_data_scraping_services",
+      "target": "images_restaurant_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_quick_commerce_data_scraping_services",
+      "target": "images_real_estate_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_quick_commerce_data_scraping_services",
+      "target": "images_restaurant_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_real_estate_data_scraping_services",
+      "target": "images_restaurant_data_scraping_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/hero/IndustryTabSection/Images/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "datasets_automation",
+      "target": "datasets_check_button",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "public/images/datasets/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "datasets_automation",
+      "target": "datasets_database",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "public/images/datasets/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "datasets_automation",
+      "target": "datasets_dataset_hero",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "public/images/datasets/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "datasets_automation",
+      "target": "datasets_dataset_hero",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "public/images/datasets/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "datasets_automation",
+      "target": "datasets_gps",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "public/images/datasets/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "datasets_automation",
+      "target": "datasets_lightning",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "public/images/datasets/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "datasets_automation",
+      "target": "datasets_www",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "public/images/datasets/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "datasets_check_button",
+      "target": "datasets_database",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "public/images/datasets/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "datasets_check_button",
+      "target": "datasets_dataset_hero",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "public/images/datasets/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "datasets_check_button",
+      "target": "datasets_dataset_hero",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "public/images/datasets/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "datasets_check_button",
+      "target": "datasets_gps",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "public/images/datasets/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "datasets_check_button",
+      "target": "datasets_lightning",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "public/images/datasets/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "datasets_check_button",
+      "target": "datasets_www",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "public/images/datasets/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "datasets_database",
+      "target": "datasets_dataset_hero",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "public/images/datasets/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "datasets_database",
+      "target": "datasets_dataset_hero",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "public/images/datasets/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "datasets_database",
+      "target": "datasets_gps",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "public/images/datasets/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "datasets_database",
+      "target": "datasets_lightning",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "public/images/datasets/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "datasets_database",
+      "target": "datasets_www",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "public/images/datasets/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "datasets_dataset_hero",
+      "target": "datasets_dataset_hero",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "public/images/datasets/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "datasets_dataset_hero",
+      "target": "datasets_gps",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "public/images/datasets/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "datasets_dataset_hero",
+      "target": "datasets_lightning",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "public/images/datasets/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "datasets_dataset_hero",
+      "target": "datasets_www",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "public/images/datasets/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "datasets_dataset_hero",
+      "target": "datasets_gps",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "public/images/datasets/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "datasets_dataset_hero",
+      "target": "datasets_lightning",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "public/images/datasets/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "datasets_dataset_hero",
+      "target": "datasets_www",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "public/images/datasets/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "datasets_gps",
+      "target": "datasets_lightning",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "public/images/datasets/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "datasets_gps",
+      "target": "datasets_www",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "public/images/datasets/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "datasets_lightning",
+      "target": "datasets_www",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "public/images/datasets/",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="100%" height="100%">
+  <defs>
+    <linearGradient id="benBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fff7ed"/>
+    </linearGradient>
+    <linearGradient id="benOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#eb1c3f"/>
+    </linearGradient>
+    <filter id="benShadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#0f172a" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="1000" rx="36" fill="url(#benBg)"/>
+
+  <!-- Center Card Container -->
+  <g transform="translate(100, 80)" filter="url(#benShadow)">
+    <rect width="800" height="840" rx="28" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+
+    <!-- Header -->
+    <text x="40" y="60" font-family="system-ui, sans-serif" font-weight="900" font-size="24" fill="#0f172a">Enterprise FMCG Digital Shelf ROI</text>
+    <text x="40" y="86" font-family="system-ui, sans-serif" font-weight="600" font-size="13" fill="#64748b">Proven business impact delivered through reliable retail web scraping</text>
+
+    <!-- Top Big Showcase Card -->
+    <g transform="translate(40, 115)">
+      <rect width="720" height="240" rx="20" fill="url(#benOrange)"/>
+      
+      <g transform="translate(36, 40)">
+        <text x="0" y="30" font-family="system-ui, sans-serif" font-weight="900" font-size="14" fill="#fed7aa" letter-spacing="2">KEY FMCG ADVANTAGE</text>
+        <text x="0" y="75" font-family="system-ui, sans-serif" font-weight="900" font-size="44" fill="#ffffff">+38.5%</text>
+        <text x="0" y="110" font-family="system-ui, sans-serif" font-weight="800" font-size="20" fill="#ffffff">Share-of-Search Growth in 90 Days</text>
+        <text x="0" y="136" font-family="system-ui, sans-serif" font-weight="600" font-size="13" fill="#ffedd5">Achieved through automated keyword tracking and retail media audit optimization.</text>
+      </g>
+
+      <!-- Decorative Shield / Badge -->
+      <g transform="translate(560, 45)">
+        <circle cx="60" cy="60" r="54" fill="#ffffff" opacity="0.2"/>
+        <circle cx="60" cy="60" r="42" fill="#ffffff"/>
+        <path d="M 44 60 L 55 71 L 76 50" fill="none" stroke="#f97316" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="60" y="130" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="900" font-size="12" fill="#ffffff">VERIFIED ROI</text>
+      </g>
+    </g>
+
+    <!-- 4 Benefit Cards Grid -->
+    <g transform="translate(40, 385)">
+      <!-- Benefit 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="345" height="195" rx="18" fill="#f8fafc" stroke="#f1f5f9" stroke-width="1.5"/>
+        <circle cx="44" cy="44" r="20" fill="#fff7ed"/>
+        <text x="44" y="50" text-anchor="middle" font-size="18">📈</text>
+        
+        <text x="24" y="94" font-family="system-ui, sans-serif" font-weight="900" font-size="17" fill="#0f172a">Optimize Retail Media ROI</text>
+        <text x="24" y="122" font-family="system-ui, sans-serif" font-weight="600" font-size="12" fill="#64748b">Verify paid banner and search placements are active and delivering planned impressions across portals.</text>
+        <text x="24" y="165" font-family="system-ui, sans-serif" font-weight="800" font-size="12" fill="#f97316">100% Placement Compliance →</text>
+      </g>
+
+      <!-- Benefit 2 -->
+      <g transform="translate(375, 0)">
+        <rect width="345" height="195" rx="18" fill="#f8fafc" stroke="#f1f5f9" stroke-width="1.5"/>
+        <circle cx="44" cy="44" r="20" fill="#ecfdf5"/>
+        <text x="44" y="50" text-anchor="middle" font-size="18">🏆</text>
+        
+        <text x="24" y="94" font-family="system-ui, sans-serif" font-weight="900" font-size="17" fill="#0f172a">Win on the Digital Shelf</text>
+        <text x="24" y="122" font-family="system-ui, sans-serif" font-weight="600" font-size="12" fill="#64748b">Monitor organic search rankings daily to secure top positions for primary and category-level terms.</text>
+        <text x="24" y="165" font-family="system-ui, sans-serif" font-weight="800" font-size="12" fill="#10b981">Top #3 Average Position →</text>
+      </g>
+
+      <!-- Benefit 3 -->
+      <g transform="translate(0, 215)">
+        <rect width="345" height="195" rx="18" fill="#f8fafc" stroke="#f1f5f9" stroke-width="1.5"/>
+        <circle cx="44" cy="44" r="20" fill="#fee2e2"/>
+        <text x="44" y="50" text-anchor="middle" font-size="18">⚡</text>
+        
+        <text x="24" y="94" font-family="system-ui, sans-serif" font-weight="900" font-size="17" fill="#0f172a">React Faster to Competitors</text>
+        <text x="24" y="122" font-family="system-ui, sans-serif" font-weight="600" font-size="12" fill="#64748b">Receive instant webhook alerts when rival SKUs drop price or launch promotional discount campaigns.</text>
+        <text x="24" y="165" font-family="system-ui, sans-serif" font-weight="800" font-size="12" fill="#ef4444">Real-Time Price Sync →</text>
+      </g>
+
+      <!-- Benefit 4 -->
+      <g transform="translate(375, 215)">
+        <rect width="345" height="195" rx="18" fill="#f8fafc" stroke="#f1f5f9" stroke-width="1.5"/>
+        <circle cx="44" cy="44" r="20" fill="#eff6ff"/>
+        <text x="44" y="50" text-anchor="middle" font-size="18">🛡️</text>
+        
+        <text x="24" y="94" font-family="system-ui, sans-serif" font-weight="900" font-size="17" fill="#0f172a">Build Stronger Brand Equity</text>
+        <text x="24" y="122" font-family="system-ui, sans-serif" font-weight="600" font-size="12" fill="#64748b">Track sentiment shifts and consumer review themes to optimize product packaging and content.</text>
+        <text x="24" y="165" font-family="system-ui, sans-serif" font-weight="800" font-size="12" fill="#2563eb">Sentiment Trend Alerting →</text>
+      </g>
+    </g>
+  </g>
+</svg>

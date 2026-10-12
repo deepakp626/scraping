@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="rtBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fff7ed"/>
+    </linearGradient>
+    <filter id="rtShadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#0f172a" flood-opacity="0.07"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="900" rx="36" fill="url(#rtBg)"/>
+
+  <g transform="translate(80, 70)" filter="url(#rtShadow)">
+    <rect width="1040" height="760" rx="28" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+
+    <text x="40" y="56" font-family="system-ui, sans-serif" font-weight="900" font-size="24" fill="#0f172a">Product Ratings, Reviews &amp; Sentiment Intelligence</text>
+    <text x="40" y="82" font-family="system-ui, sans-serif" font-weight="600" font-size="13" fill="#64748b">NLP sentiment analysis, review volume growth, and star rating drift tracking across SKUs</text>
+
+    <!-- Top Row: Rating Overview Cards -->
+    <g transform="translate(40, 110)">
+      <!-- Card 1: Star Rating -->
+      <rect x="0" y="0" width="300" height="200" rx="18" fill="#f8fafc" stroke="#f1f5f9" stroke-width="1"/>
+      <text x="24" y="36" font-family="system-ui, sans-serif" font-weight="800" font-size="12" fill="#94a3b8">OVERALL STAR RATING</text>
+      <text x="24" y="90" font-family="system-ui, sans-serif" font-weight="900" font-size="52" fill="#f59e0b">4.85</text>
+      <text x="145" y="65" font-size="24">★★★★★</text>
+      <text x="24" y="130" font-family="system-ui, sans-serif" font-weight="700" font-size="14" fill="#0f172a">18,940 Verified Reviews</text>
+      <text x="24" y="155" font-family="system-ui, sans-serif" font-weight="600" font-size="12" fill="#16a34a">▲ +0.2 Star drift vs last quarter</text>
+
+      <!-- Card 2: Star Distribution Bars -->
+      <rect x="320" y="0" width="380" height="200" rx="18" fill="#f8fafc" stroke="#f1f5f9" stroke-width="1"/>
+      <text x="24" y="36" font-family="system-ui, sans-serif" font-weight="800" font-size="12" fill="#94a3b8">STAR BREAKDOWN</text>
+      
+      <!-- 5 Star -->
+      <text x="24" y="66" font-family="system-ui, sans-serif" font-weight="700" font-size="11" fill="#334155">5 ★</text>
+      <rect x="52" y="56" width="260" height="10" rx="5" fill="#e2e8f0"/>
+      <rect x="52" y="56" width="210" height="10" rx="5" fill="#f59e0b"/>
+      <text x="325" y="66" font-family="system-ui, sans-serif" font-weight="700" font-size="11" fill="#64748b">81%</text>
+
+      <!-- 4 Star -->
+      <text x="24" y="96" font-family="system-ui, sans-serif" font-weight="700" font-size="11" fill="#334155">4 ★</text>
+      <rect x="52" y="86" width="260" height="10" rx="5" fill="#e2e8f0"/>
+      <rect x="52" y="86" width="36" height="10" rx="5" fill="#f59e0b"/>
+      <text x="325" y="96" font-family="system-ui, sans-serif" font-weight="700" font-size="11" fill="#64748b">14%</text>
+
+      <!-- 3 Star -->
+      <text x="24" y="126" font-family="system-ui, sans-serif" font-weight="700" font-size="11" fill="#334155">3 ★</text>
+      <rect x="52" y="116" width="260" height="10" rx="5" fill="#e2e8f0"/>
+      <rect x="52" y="116" width="10" height="10" rx="5" fill="#f59e0b"/>
+      <text x="325" y="126" font-family="system-ui, sans-serif" font-weight="700" font-size="11" fill="#64748b">3%</text>
+
+      <!-- 1-2 Star -->
+      <text x="24" y="156" font-family="system-ui, sans-serif" font-weight="700" font-size="11" fill="#334155">1-2★</text>
+      <rect x="52" y="146" width="260" height="10" rx="5" fill="#e2e8f0"/>
+      <rect x="52" y="146" width="6" height="10" rx="5" fill="#ef4444"/>
+      <text x="325" y="156" font-family="system-ui, sans-serif" font-weight="700" font-size="11" fill="#64748b">2%</text>
+
+      <!-- Card 3: Sentiment Gauge -->
+      <rect x="720" y="0" width="240" height="200" rx="18" fill="#f8fafc" stroke="#f1f5f9" stroke-width="1"/>
+      <text x="24" y="36" font-family="system-ui, sans-serif" font-weight="800" font-size="12" fill="#94a3b8">NLP SENTIMENT</text>
+      
+      <circle cx="120" cy="100" r="50" fill="none" stroke="#e2e8f0" stroke-width="14"/>
+      <circle cx="120" cy="100" r="50" fill="none" stroke="#10b981" stroke-width="14" stroke-dasharray="270 314" stroke-dashoffset="0" stroke-linecap="round"/>
+      <text x="120" y="106" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="900" font-size="20" fill="#0f172a">94%</text>
+      <text x="120" y="170" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="800" font-size="13" fill="#059669">Net Positive Score</text>
+    </g>
+
+    <!-- Bottom Section: Customer Key Topic Drivers & Feedback Quotes -->
+    <g transform="translate(40, 340)">
+      <rect width="960" height="370" rx="20" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+      <text x="28" y="38" font-family="system-ui, sans-serif" font-weight="900" font-size="16" fill="#0f172a">Consumer Feedback Drivers &amp; Topic Modeling</text>
+      <text x="28" y="60" font-family="system-ui, sans-serif" font-weight="600" font-size="12" fill="#64748b">Automated topic extraction from 50+ supermarket and delivery app review feeds</text>
+
+      <!-- Topic Badges Grid -->
+      <g transform="translate(28, 80)">
+        <rect x="0" y="0" width="210" height="90" rx="14" fill="#ffffff" stroke="#f1f5f9" stroke-width="1"/>
+        <text x="16" y="28" font-family="system-ui, sans-serif" font-weight="800" font-size="11" fill="#10b981">TOP PROMOTER (+98%)</text>
+        <text x="16" y="55" font-family="system-ui, sans-serif" font-weight="900" font-size="16" fill="#0f172a">"Flavor &amp; Crunch"</text>
+        <text x="16" y="75" font-family="system-ui, sans-serif" font-weight="600" font-size="11" fill="#64748b">6,420 Mentions</text>
+
+        <rect x="230" y="0" width="210" height="90" rx="14" fill="#ffffff" stroke="#f1f5f9" stroke-width="1"/>
+        <text x="16" y="28" font-family="system-ui, sans-serif" font-weight="800" font-size="11" fill="#10b981">PACKAGING (+94%)</text>
+        <text x="16" y="55" font-family="system-ui, sans-serif" font-weight="900" font-size="16" fill="#0f172a">"Resealable Pouch"</text>
+        <text x="16" y="75" font-family="system-ui, sans-serif" font-weight="600" font-size="11" fill="#64748b">3,120 Mentions</text>
+
+        <rect x="460" y="0" width="210" height="90" rx="14" fill="#ffffff" stroke="#f1f5f9" stroke-width="1"/>
+        <text x="16" y="28" font-family="system-ui, sans-serif" font-weight="800" font-size="11" fill="#f97316">HEALTH CLAIM (+91%)</text>
+        <text x="16" y="55" font-family="system-ui, sans-serif" font-weight="900" font-size="16" fill="#0f172a">"No Added Sugar"</text>
+        <text x="16" y="75" font-family="system-ui, sans-serif" font-weight="600" font-size="11" fill="#64748b">2,840 Mentions</text>
+
+        <rect x="690" y="0" width="210" height="90" rx="14" fill="#ffffff" stroke="#f1f5f9" stroke-width="1"/>
+        <text x="16" y="28" font-family="system-ui, sans-serif" font-weight="800" font-size="11" fill="#ef4444">CRITIQUE TOPIC (-8%)</text>
+        <text x="16" y="55" font-family="system-ui, sans-serif" font-weight="900" font-size="16" fill="#0f172a">"Stock Out at Target"</text>
+        <text x="16" y="75" font-family="system-ui, sans-serif" font-weight="600" font-size="11" fill="#64748b">512 Mentions</text>
+      </g>
+
+      <!-- Review Quote Preview -->
+      <g transform="translate(28, 195)">
+        <rect width="904" height="145" rx="14" fill="#ffffff" stroke="#fed7aa" stroke-width="1.5"/>
+        <text x="24" y="32" font-family="system-ui, sans-serif" font-weight="800" font-size="12" fill="#ea580c">VERIFIED BUYER REVIEW SCRAPED IN REAL-TIME</text>
+        <text x="24" y="60" font-family="system-ui, sans-serif" font-weight="600" font-size="14" fill="#334155">"Hands down the best breakfast cereal we've tried. Delicious crunch without being overly sweet. My kids love it and it stays crisp in milk."</text>
+        <text x="24" y="90" font-family="system-ui, sans-serif" font-weight="700" font-size="12" fill="#0f172a">★★★★★ • Whole Foods Market Shopper • Verified Purchase</text>
+        <text x="24" y="115" font-family="system-ui, sans-serif" font-weight="600" font-size="11" fill="#10b981">NLP Classification: 0.96 Positive | Intent: Repeat Purchase | SKU: OAT-CRUNCH-500G</text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -2,12 +2,15 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer";
 import Resources from "./components/Resources";
 import WhatsAppChatIcon from "./components/WhatsAppChatIcon";
 import ConditionalContact from "./components/ConditionalContact";
 import Review from "./components/Review";
+import FAQ from "./components/FAQ";
+import CTA from "./components/CTA";
+
 import NextTopLoader from "nextjs-toploader";
 
 const geistSans = Geist({
@@ -33,13 +36,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased  bg-white`}
       >
         <NextTopLoader color={'#f97316'} showSpinner={false} />
         <Navbar />
         {children}
+        <CTA />
+        <FAQ />
         <Resources />
-
         <Review />
         <ConditionalContact />
         <Footer />

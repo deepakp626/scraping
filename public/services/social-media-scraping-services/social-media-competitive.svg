@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="520" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#040d1a"/>
+      <stop offset="100%" stop-color="#0a1628"/>
+    </linearGradient>
+    <radialGradient id="radarGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.15"/>
+      <stop offset="60%" stop-color="#4f46e5" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#4f46e5" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="brand1Fill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#4f46e5" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="brand2Fill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#0891b2" stop-opacity="0.25"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="16" flood-color="#06b6d4" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="520" fill="url(#bg)"/>
+
+  <!-- Ambient blobs -->
+  <ellipse cx="400" cy="260" rx="250" ry="250" fill="url(#radarGlow)"/>
+  <ellipse cx="120" cy="80" rx="100" ry="80" fill="#4f46e5" fill-opacity="0.05"/>
+  <ellipse cx="680" cy="440" rx="120" ry="100" fill="#06b6d4" fill-opacity="0.05"/>
+
+  <!-- Radar chart base - concentric pentagons / circles -->
+  <!-- Ring 5 outermost -->
+  <circle cx="400" cy="260" r="180" stroke="#1e2d45" stroke-width="1" fill="none"/>
+  <circle cx="400" cy="260" r="144" stroke="#1e2d45" stroke-width="1" fill="none"/>
+  <circle cx="400" cy="260" r="108" stroke="#1e2d45" stroke-width="1" fill="none"/>
+  <circle cx="400" cy="260" r="72" stroke="#1e2d45" stroke-width="1" fill="none"/>
+  <circle cx="400" cy="260" r="36" stroke="#1e2d45" stroke-width="1" fill="none"/>
+
+  <!-- Radar axis lines (5 axes) -->
+  <line x1="400" y1="260" x2="400" y2="80" stroke="#1e2d45" stroke-width="1"/>
+  <line x1="400" y1="260" x2="571" y2="175" stroke="#1e2d45" stroke-width="1"/>
+  <line x1="400" y1="260" x2="505" y2="408" stroke="#1e2d45" stroke-width="1"/>
+  <line x1="400" y1="260" x2="295" y2="408" stroke="#1e2d45" stroke-width="1"/>
+  <line x1="400" y1="260" x2="229" y2="175" stroke="#1e2d45" stroke-width="1"/>
+
+  <!-- Brand 1 area (our brand - purple) -->
+  <!-- Points at ~85%, 75%, 90%, 70%, 80% on each axis -->
+  <polygon points="400,107 537,182 469,385 331,385 263,182" fill="url(#brand1Fill)" stroke="#8b5cf6" stroke-width="2" opacity="0.85"/>
+
+  <!-- Brand 2 area (competitor - cyan) -->
+  <!-- Points at ~55%, 80%, 60%, 85%, 65% -->
+  <polygon points="400,161 549,189 463,363 337,363 251,189" fill="url(#brand2Fill)" stroke="#06b6d4" stroke-width="2" opacity="0.7"/>
+
+  <!-- Axis labels -->
+  <text x="400" y="70" font-family="Inter,Arial,sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle" font-weight="600">REACH</text>
+  <text x="600" y="168" font-family="Inter,Arial,sans-serif" font-size="11" fill="#94a3b8" text-anchor="start" font-weight="600">ENGAGEMENT</text>
+  <text x="540" y="428" font-family="Inter,Arial,sans-serif" font-size="11" fill="#94a3b8" text-anchor="start" font-weight="600">SENTIMENT</text>
+  <text x="260" y="428" font-family="Inter,Arial,sans-serif" font-size="11" fill="#94a3b8" text-anchor="end" font-weight="600">HASHTAG PERF</text>
+  <text x="200" y="168" font-family="Inter,Arial,sans-serif" font-size="11" fill="#94a3b8" text-anchor="end" font-weight="600">SHARE OF VOICE</text>
+
+  <!-- Center dot -->
+  <circle cx="400" cy="260" r="4" fill="#a78bfa" filter="url(#glow)"/>
+
+  <!-- Brand 1 data dots -->
+  <circle cx="400" cy="107" r="5" fill="#8b5cf6" filter="url(#glow)"/>
+  <circle cx="537" cy="182" r="5" fill="#8b5cf6" filter="url(#glow)"/>
+  <circle cx="469" cy="385" r="5" fill="#8b5cf6" filter="url(#glow)"/>
+  <circle cx="331" cy="385" r="5" fill="#8b5cf6" filter="url(#glow)"/>
+  <circle cx="263" cy="182" r="5" fill="#8b5cf6" filter="url(#glow)"/>
+
+  <!-- Brand 2 data dots -->
+  <circle cx="400" cy="161" r="4" fill="#06b6d4" filter="url(#glow)"/>
+  <circle cx="549" cy="189" r="4" fill="#06b6d4" filter="url(#glow)"/>
+  <circle cx="463" cy="363" r="4" fill="#06b6d4" filter="url(#glow)"/>
+  <circle cx="337" cy="363" r="4" fill="#06b6d4" filter="url(#glow)"/>
+  <circle cx="251" cy="189" r="4" fill="#06b6d4" filter="url(#glow)"/>
+
+  <!-- Trending hashtag sidebar -->
+  <g filter="url(#shadow)">
+    <rect x="610" y="55" width="165" height="200" rx="14" fill="#0d1f35" stroke="#06b6d4" stroke-width="1" stroke-opacity="0.4"/>
+  </g>
+  <text x="628" y="78" font-family="Inter,Arial,sans-serif" font-size="10" fill="#06b6d4" font-weight="700">TRENDING HASHTAGS</text>
+  <line x1="625" y1="85" x2="762" y2="85" stroke="#1e3a5f" stroke-width="1"/>
+  <!-- Hashtag bars -->
+  <text x="628" y="102" font-family="Inter,Arial,sans-serif" font-size="10" fill="#e2e8f0">#brandlaunch</text>
+  <rect x="628" y="107" width="120" height="6" rx="3" fill="#8b5cf6" opacity="0.8"/>
+  <text x="750" y="116" font-family="monospace,Arial" font-size="9" fill="#a78bfa">98K</text>
+
+  <text x="628" y="128" font-family="Inter,Arial,sans-serif" font-size="10" fill="#e2e8f0">#newproduct</text>
+  <rect x="628" y="133" width="100" height="6" rx="3" fill="#06b6d4" opacity="0.8"/>
+  <text x="730" y="142" font-family="monospace,Arial" font-size="9" fill="#06b6d4">82K</text>
+
+  <text x="628" y="154" font-family="Inter,Arial,sans-serif" font-size="10" fill="#e2e8f0">#techtrends</text>
+  <rect x="628" y="159" width="85" height="6" rx="3" fill="#10b981" opacity="0.8"/>
+  <text x="715" y="168" font-family="monospace,Arial" font-size="9" fill="#10b981">70K</text>
+
+  <text x="628" y="180" font-family="Inter,Arial,sans-serif" font-size="10" fill="#e2e8f0">#viral2025</text>
+  <rect x="628" y="185" width="72" height="6" rx="3" fill="#f59e0b" opacity="0.8"/>
+  <text x="702" y="194" font-family="monospace,Arial" font-size="9" fill="#f59e0b">60K</text>
+
+  <text x="628" y="206" font-family="Inter,Arial,sans-serif" font-size="10" fill="#e2e8f0">#marketwatch</text>
+  <rect x="628" y="211" width="58" height="6" rx="3" fill="#ec4899" opacity="0.8"/>
+  <text x="688" y="220" font-family="monospace,Arial" font-size="9" fill="#ec4899">48K</text>
+  <text x="628" y="244" font-family="Inter,Arial,sans-serif" font-size="8" fill="#6b7280">Last 48h across 6 platforms</text>
+
+  <!-- Share of voice panel -->
+  <g filter="url(#shadow)">
+    <rect x="25" y="55" width="165" height="165" rx="14" fill="#0d1f35" stroke="#8b5cf6" stroke-width="1" stroke-opacity="0.4"/>
+  </g>
+  <text x="43" y="78" font-family="Inter,Arial,sans-serif" font-size="10" fill="#a78bfa" font-weight="700">SHARE OF VOICE</text>
+  <!-- Pie chart -->
+  <!-- SVG circle-based donut -->
+  <circle cx="108" cy="167" r="50" fill="none" stroke="#8b5cf6" stroke-width="20" stroke-dasharray="125 314"/>
+  <circle cx="108" cy="167" r="50" fill="none" stroke="#06b6d4" stroke-width="20" stroke-dasharray="82 314" stroke-dashoffset="-125"/>
+  <circle cx="108" cy="167" r="50" fill="none" stroke="#10b981" stroke-width="20" stroke-dasharray="62 314" stroke-dashoffset="-207"/>
+  <circle cx="108" cy="167" r="50" fill="none" stroke="#f59e0b" stroke-width="20" stroke-dasharray="45 314" stroke-dashoffset="-269"/>
+  <circle cx="108" cy="167" r="36" fill="#0d1f35"/>
+  <text x="108" y="163" font-family="Inter,Arial,sans-serif" font-size="11" fill="white" text-anchor="middle" font-weight="700">40%</text>
+  <text x="108" y="176" font-family="Inter,Arial,sans-serif" font-size="8" fill="#a78bfa" text-anchor="middle">Your brand</text>
+  <!-- Legend -->
+  <circle cx="43" cy="206" r="5" fill="#8b5cf6"/>
+  <text x="52" y="210" font-family="Inter,Arial,sans-serif" font-size="8" fill="#94a3b8">You 40%</text>
+  <circle cx="100" cy="206" r="5" fill="#06b6d4"/>
+  <text x="109" y="210" font-family="Inter,Arial,sans-serif" font-size="8" fill="#94a3b8">Comp1 26%</text>
+  <circle cx="155" cy="206" r="5" fill="#10b981"/>
+  <text x="163" y="210" font-family="Inter,Arial,sans-serif" font-size="8" fill="#94a3b8">+</text>
+
+  <!-- Legend for radar -->
+  <rect x="305" y="460" width="14" height="8" rx="2" fill="#8b5cf6" opacity="0.8"/>
+  <text x="325" y="468" font-family="Inter,Arial,sans-serif" font-size="10" fill="#a78bfa">Your Brand</text>
+  <rect x="420" y="460" width="14" height="8" rx="2" fill="#06b6d4" opacity="0.8"/>
+  <text x="440" y="468" font-family="Inter,Arial,sans-serif" font-size="10" fill="#06b6d4">Competitor</text>
+
+  <!-- Bottom benchmark metrics -->
+  <g filter="url(#shadow)">
+    <rect x="25" y="290" width="165" height="190" rx="14" fill="#0d1f35" stroke="#10b981" stroke-width="1" stroke-opacity="0.4"/>
+  </g>
+  <text x="43" y="312" font-family="Inter,Arial,sans-serif" font-size="10" fill="#10b981" font-weight="700">CAMPAIGN BENCH</text>
+  <line x1="40" y1="320" x2="177" y2="320" stroke="#1e3a2a" stroke-width="1"/>
+  <text x="43" y="340" font-family="Inter,Arial,sans-serif" font-size="9" fill="#9ca3af">CTR vs Industry</text>
+  <text x="43" y="358" font-family="Inter,Arial,sans-serif" font-size="18" fill="white" font-weight="700">+3.2x</text>
+  <text x="43" y="374" font-family="Inter,Arial,sans-serif" font-size="9" fill="#10b981">Above average</text>
+  <line x1="40" y1="384" x2="177" y2="384" stroke="#1e3a2a" stroke-width="1"/>
+  <text x="43" y="402" font-family="Inter,Arial,sans-serif" font-size="9" fill="#9ca3af">Competitor Posts/day</text>
+  <text x="43" y="420" font-family="Inter,Arial,sans-serif" font-size="18" fill="white" font-weight="700">47</text>
+  <text x="43" y="436" font-family="Inter,Arial,sans-serif" font-size="9" fill="#f59e0b">vs your 34 posts</text>
+  <line x1="40" y1="446" x2="177" y2="446" stroke="#1e3a2a" stroke-width="1"/>
+  <text x="43" y="466" font-family="Inter,Arial,sans-serif" font-size="9" fill="#9ca3af">Best post time: 7–9 PM UTC</text>
+</svg>

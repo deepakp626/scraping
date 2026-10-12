@@ -1,0 +1,230 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="heroBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#fff7ed"/>
+      <stop offset="100%" stop-color="#ffedd5"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e"/>
+      <stop offset="100%" stop-color="#eb1c3f"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#eb1c3f"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+    <filter id="shadowLg" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#0f172a" flood-opacity="0.08"/>
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.04"/>
+    </filter>
+    <filter id="shadowSm" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#0f172a" flood-opacity="0.06"/>
+    </filter>
+    <filter id="glowOrange" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="15" flood-color="#f97316" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Clean Base Background -->
+  <rect width="1200" height="900" rx="36" fill="url(#heroBgGrad)"/>
+
+  <!-- Decorative Tech Grid & Subtle Circular Rings -->
+  <g opacity="0.4">
+    <circle cx="950" cy="220" r="300" fill="none" stroke="#fed7aa" stroke-width="1.5" stroke-dasharray="6 6"/>
+    <circle cx="950" cy="220" r="450" fill="none" stroke="#fed7aa" stroke-width="1" stroke-dasharray="8 8"/>
+    <circle cx="200" cy="700" r="220" fill="none" stroke="#ffedd5" stroke-width="1.5" stroke-dasharray="4 4"/>
+  </g>
+
+  <!-- Ground Plane Isometric Grid -->
+  <g opacity="0.35">
+    <path d="M 150 780 L 600 600 L 1050 780 L 600 960 Z" fill="#ffffff" stroke="#fed7aa" stroke-width="1.5"/>
+    <line x1="262" y1="735" x2="712" y2="915" stroke="#fed7aa" stroke-width="1"/>
+    <line x1="375" y1="690" x2="825" y2="870" stroke="#fed7aa" stroke-width="1"/>
+    <line x1="487" y1="645" x2="937" y2="825" stroke="#fed7aa" stroke-width="1"/>
+  </g>
+
+  <!-- Modern FMCG Products Showcase Center -->
+  <!-- Product 1: Premium Beverage Can -->
+  <g transform="translate(380, 360)" filter="url(#shadowLg)">
+    <ellipse cx="60" cy="240" rx="60" ry="18" fill="#cbd5e1" opacity="0.4"/>
+    <!-- Can Body -->
+    <rect x="15" y="60" width="90" height="180" rx="14" fill="url(#orangeGrad)"/>
+    <ellipse cx="60" cy="60" rx="45" ry="12" fill="#fed7aa"/>
+    <ellipse cx="60" cy="56" rx="42" ry="10" fill="#f8fafc"/>
+    <ellipse cx="60" cy="56" rx="20" ry="5" fill="#e2e8f0"/>
+    <!-- Can Graphics & Label -->
+    <path d="M 15 110 Q 60 130 105 110 L 105 170 Q 60 190 15 170 Z" fill="#ffffff" opacity="0.2"/>
+    <text x="60" y="130" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="14" fill="#ffffff" letter-spacing="2">CITRUS</text>
+    <text x="60" y="148" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="9" fill="#fed7aa" letter-spacing="1">ENERGY 330ml</text>
+    <rect x="42" y="175" width="36" height="12" rx="4" fill="#ffffff"/>
+    <text x="60" y="184" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="7" fill="#ea580c">ORGANIC</text>
+  </g>
+
+  <!-- Product 2: CPG Packaged Box / Cereal / Snack -->
+  <g transform="translate(480, 240)" filter="url(#shadowLg)">
+    <!-- Shadow -->
+    <ellipse cx="120" cy="370" rx="110" ry="24" fill="#94a3b8" opacity="0.3"/>
+    <!-- Box Left Face -->
+    <path d="M 50 120 L 140 70 L 140 330 L 50 380 Z" fill="url(#redGrad)"/>
+    <!-- Box Right Face -->
+    <path d="M 140 70 L 250 120 L 250 380 L 140 330 Z" fill="#ffffff"/>
+    <!-- Box Top Face -->
+    <path d="M 50 120 L 140 70 L 250 120 L 160 170 Z" fill="#ffe4e6"/>
+    <!-- Front Face Content -->
+    <rect x="155" y="145" width="80" height="24" rx="6" fill="#fff1f2"/>
+    <text x="195" y="161" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="11" fill="#eb1c3f">CPG BRAND</text>
+    <text x="195" y="195" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="16" fill="#0f172a">OAT CRUNCH</text>
+    <text x="195" y="215" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="10" fill="#64748b">WHOLE GRAIN • 500g</text>
+    
+    <!-- Mini nutrition badge -->
+    <circle cx="175" cy="245" r="14" fill="#ecfdf5"/>
+    <text x="175" y="249" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="9" fill="#059669">A+</text>
+    <circle cx="210" cy="245" r="14" fill="#fff7ed"/>
+    <text x="210" y="249" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="9" fill="#ea580c">BIO</text>
+
+    <!-- Barcode at bottom of package -->
+    <rect x="160" y="295" width="70" height="30" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+    <g transform="translate(166, 301)">
+      <line x1="2" y1="0" x2="2" y2="18" stroke="#1e293b" stroke-width="2"/>
+      <line x1="7" y1="0" x2="7" y2="18" stroke="#1e293b" stroke-width="1"/>
+      <line x1="12" y1="0" x2="12" y2="18" stroke="#1e293b" stroke-width="3"/>
+      <line x1="18" y1="0" x2="18" y2="18" stroke="#1e293b" stroke-width="1.5"/>
+      <line x1="24" y1="0" x2="24" y2="18" stroke="#1e293b" stroke-width="2"/>
+      <line x1="30" y1="0" x2="30" y2="18" stroke="#1e293b" stroke-width="4"/>
+      <line x1="38" y1="0" x2="38" y2="18" stroke="#1e293b" stroke-width="1"/>
+      <line x1="44" y1="0" x2="44" y2="18" stroke="#1e293b" stroke-width="2"/>
+      <line x1="52" y1="0" x2="52" y2="18" stroke="#1e293b" stroke-width="2.5"/>
+    </g>
+  </g>
+
+  <!-- Product 3: Shampoo / Cosmetic Pump Bottle -->
+  <g transform="translate(730, 320)" filter="url(#shadowLg)">
+    <ellipse cx="60" cy="280" rx="55" ry="16" fill="#94a3b8" opacity="0.3"/>
+    <!-- Bottle Body -->
+    <rect x="20" y="90" width="80" height="190" rx="28" fill="url(#cardGrad)" stroke="#fed7aa" stroke-width="2"/>
+    <!-- Pump Neck & Top -->
+    <rect x="52" y="60" width="16" height="30" fill="#cbd5e1"/>
+    <path d="M 40 50 L 70 50 L 85 45 L 85 55 L 40 55 Z" fill="#f97316"/>
+    <!-- Bottle Label -->
+    <rect x="28" y="130" width="64" height="95" rx="10" fill="url(#orangeGrad)"/>
+    <text x="60" y="160" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="11" fill="#ffffff">HYDRA</text>
+    <text x="60" y="174" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="8" fill="#ffedd5">CARE</text>
+    <line x1="38" y1="184" x2="82" y2="184" stroke="#ffffff" stroke-width="1" opacity="0.4"/>
+    <text x="60" y="196" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="7" fill="#ffffff">400 ML</text>
+  </g>
+
+  <!-- Holographic Scanner / Laser Scan Beam -->
+  <g opacity="0.85">
+    <line x1="320" y1="440" x2="860" y2="440" stroke="url(#accentGrad)" stroke-width="3" filter="url(#glowOrange)"/>
+    <polygon points="320,440 860,440 880,480 300,480" fill="url(#accentGrad)" opacity="0.12"/>
+    <circle cx="590" cy="440" r="5" fill="#f97316" filter="url(#glowOrange)"/>
+  </g>
+
+  <!-- Floating HUD Card 1: Share of Search Index (Top Left) -->
+  <g transform="translate(100, 140)" filter="url(#shadowLg)">
+    <rect width="280" height="150" rx="20" fill="#ffffff" stroke="#f1f5f9" stroke-width="1.5"/>
+    <rect x="18" y="18" width="40" height="40" rx="12" fill="#fff7ed"/>
+    <path d="M 28 42 L 35 34 L 43 39 L 51 28" fill="none" stroke="#f97316" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="70" y="34" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="11" fill="#94a3b8" letter-spacing="1">SHARE OF SEARCH</text>
+    <text x="70" y="54" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="20" fill="#0f172a">42.8% <tspan font-size="12" font-weight="700" fill="#10b981">▲ +8.4%</tspan></text>
+    
+    <line x1="18" y1="74" x2="262" y2="74" stroke="#f1f5f9" stroke-width="1"/>
+    
+    <!-- Mini Progress Bars -->
+    <text x="18" y="94" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="11" fill="#334155">Your Brand</text>
+    <text x="262" y="94" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="11" fill="#f97316">Rank #1</text>
+    <rect x="18" y="102" width="244" height="6" rx="3" fill="#f1f5f9"/>
+    <rect x="18" y="102" width="180" height="6" rx="3" fill="url(#orangeGrad)"/>
+    
+    <text x="18" y="126" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="10" fill="#64748b">Keyword: "organic almond snack"</text>
+  </g>
+
+  <!-- Floating HUD Card 2: Digital Shelf Audit (Top Right) -->
+  <g transform="translate(820, 120)" filter="url(#shadowLg)">
+    <rect width="290" height="165" rx="20" fill="#ffffff" stroke="#f1f5f9" stroke-width="1.5"/>
+    <rect x="18" y="18" width="40" height="40" rx="12" fill="#fff1f2"/>
+    <circle cx="38" cy="38" r="10" fill="none" stroke="#eb1c3f" stroke-width="2.5"/>
+    <path d="M 34 38 L 37 41 L 43 35" fill="none" stroke="#eb1c3f" stroke-width="2" stroke-linecap="round"/>
+    
+    <text x="70" y="34" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="11" fill="#94a3b8" letter-spacing="1">DIGITAL SHELF AUDIT</text>
+    <text x="70" y="54" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="18" fill="#0f172a">99.8% Compliant</text>
+    
+    <line x1="18" y1="74" x2="272" y2="74" stroke="#f1f5f9" stroke-width="1"/>
+    
+    <g transform="translate(18, 90)">
+      <rect width="76" height="56" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+      <text x="38" y="24" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="14" fill="#0f172a">50+</text>
+      <text x="38" y="42" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="9" fill="#64748b">Retail Portals</text>
+    </g>
+    <g transform="translate(104, 90)">
+      <rect width="78" height="56" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+      <text x="39" y="24" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="14" fill="#f97316">500M+</text>
+      <text x="39" y="42" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="9" fill="#64748b">SKUs Tracked</text>
+    </g>
+    <g transform="translate(192, 90)">
+      <rect width="80" height="56" rx="10" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1"/>
+      <text x="40" y="24" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="14" fill="#059669">Live</text>
+      <text x="40" y="42" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="9" fill="#047857">Hourly Feed</text>
+    </g>
+  </g>
+
+  <!-- Floating HUD Card 3: Live FMCG Price Tag & Rating (Bottom Left) -->
+  <g transform="translate(140, 580)" filter="url(#shadowLg)">
+    <rect width="260" height="135" rx="20" fill="#ffffff" stroke="#f1f5f9" stroke-width="1.5"/>
+    <rect x="18" y="18" width="56" height="24" rx="6" fill="#fee2e2"/>
+    <text x="46" y="34" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="11" fill="#dc2626">-25% OFF</text>
+    
+    <text x="18" y="70" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="28" fill="#0f172a">$4.99 <tspan font-size="14" font-weight="500" fill="#94a3b8" text-decoration="line-through">$6.65</tspan></text>
+    <text x="18" y="92" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="11" fill="#16a34a">✓ In Stock (Dark Store A-14)</text>
+    <text x="18" y="112" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="10" fill="#64748b">SKU: FMCG-99201 • Supermarket API</text>
+  </g>
+
+  <!-- Floating HUD Card 4: Customer Sentiment & Review Pulse (Bottom Right) -->
+  <g transform="translate(800, 560)" filter="url(#shadowLg)">
+    <rect width="290" height="160" rx="20" fill="#ffffff" stroke="#f1f5f9" stroke-width="1.5"/>
+    <div style="display:flex;">
+      <text x="18" y="34" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="11" fill="#94a3b8" letter-spacing="1">CONSUMER SENTIMENT</text>
+      <text x="272" y="34" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="11" fill="#10b981">96% POSITIVE</text>
+    </div>
+    
+    <g transform="translate(18, 48)">
+      <text x="0" y="24" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="26" fill="#f59e0b">4.9 ★</text>
+      <text x="90" y="16" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="12" fill="#0f172a">14,820 Reviews</text>
+      <text x="90" y="32" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="10" fill="#64748b">Extracted across 12 portals</text>
+    </g>
+
+    <line x1="18" y1="92" x2="272" y2="92" stroke="#f1f5f9" stroke-width="1"/>
+
+    <g transform="translate(18, 106)">
+      <rect x="0" y="0" width="75" height="24" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+      <text x="37" y="16" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="10" fill="#334155">+ Taste 98%</text>
+      <rect x="83" y="0" width="85" height="24" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+      <text x="125" y="16" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="10" fill="#334155">+ Package 95%</text>
+      <rect x="176" y="0" width="75" height="24" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+      <text x="213" y="16" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="10" fill="#334155">+ Value 91%</text>
+    </g>
+  </g>
+
+  <!-- Bottom Tech Badge -->
+  <g transform="translate(480, 810)">
+    <rect width="240" height="42" rx="21" fill="#ffffff" stroke="#fed7aa" stroke-width="1.5" filter="url(#shadowSm)"/>
+    <circle cx="22" cy="21" r="6" fill="#10b981"/>
+    <text x="38" y="26" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="12" fill="#0f172a">Enterprise FMCG Ingestion</text>
+  </g>
+</svg>

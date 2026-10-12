@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cpBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fff7ed"/>
+    </linearGradient>
+    <filter id="cpShadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#0f172a" flood-opacity="0.07"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="900" rx="36" fill="url(#cpBg)"/>
+
+  <g transform="translate(80, 70)" filter="url(#cpShadow)">
+    <rect width="1040" height="760" rx="28" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+
+    <!-- Header -->
+    <text x="40" y="56" font-family="system-ui, sans-serif" font-weight="900" font-size="24" fill="#0f172a">Competitor SKU Catalog &amp; Pricing Intelligence</text>
+    <text x="40" y="82" font-family="system-ui, sans-serif" font-weight="600" font-size="13" fill="#64748b">Track competitor promo cadences, price-matching variances, and new SKU market entries</text>
+
+    <!-- Real-time Alert Banner -->
+    <g transform="translate(40, 110)">
+      <rect width="960" height="60" rx="14" fill="#fee2e2" stroke="#fca5a5" stroke-width="1"/>
+      <circle cx="36" cy="30" r="14" fill="#ef4444"/>
+      <text x="36" y="36" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="900" font-size="16" fill="#ffffff">!</text>
+      <text x="66" y="28" font-family="system-ui, sans-serif" font-weight="800" font-size="14" fill="#991b1b">COMPETITOR PRICE DROP DETECTED (12 mins ago)</text>
+      <text x="66" y="48" font-family="system-ui, sans-serif" font-weight="600" font-size="12" fill="#b91c1c">Competitor X reduced price by -18% ($5.49 → $4.49) on 500ml Body Wash on Walmart &amp; Amazon</text>
+      <rect x="830" y="14" width="110" height="32" rx="8" fill="#ef4444"/>
+      <text x="885" y="34" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="800" font-size="11" fill="#ffffff">Adjust Price</text>
+    </g>
+
+    <!-- Multi-Brand Price Matrix Table -->
+    <g transform="translate(40, 195)">
+      <rect width="960" height="310" rx="18" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+      
+      <!-- Table Header -->
+      <rect width="960" height="48" rx="18" fill="#f1f5f9"/>
+      <text x="24" y="30" font-family="system-ui, sans-serif" font-weight="800" font-size="12" fill="#475569">BRAND &amp; SKU NAME</text>
+      <text x="360" y="30" font-family="system-ui, sans-serif" font-weight="800" font-size="12" fill="#475569">REGULAR PRICE</text>
+      <text x="510" y="30" font-family="system-ui, sans-serif" font-weight="800" font-size="12" fill="#475569">PROMO PRICE</text>
+      <text x="670" y="30" font-family="system-ui, sans-serif" font-weight="800" font-size="12" fill="#475569">DISCOUNT %</text>
+      <text x="830" y="30" font-family="system-ui, sans-serif" font-weight="800" font-size="12" fill="#475569">STOCK STATUS</text>
+
+      <!-- Row 1: Your Brand -->
+      <g transform="translate(0, 50)">
+        <rect width="960" height="60" fill="#ffffff"/>
+        <text x="24" y="36" font-family="system-ui, sans-serif" font-weight="900" font-size="14" fill="#f97316">Your Brand - Hydrating Shower Gel 500ml</text>
+        <text x="360" y="36" font-family="system-ui, sans-serif" font-weight="700" font-size="14" fill="#0f172a">$5.99</text>
+        <text x="510" y="36" font-family="system-ui, sans-serif" font-weight="900" font-size="15" fill="#0f172a">$4.99</text>
+        <rect x="670" y="18" width="60" height="24" rx="6" fill="#fff7ed"/>
+        <text x="700" y="34" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="800" font-size="11" fill="#ea580c">-16%</text>
+        <text x="830" y="36" font-family="system-ui, sans-serif" font-weight="800" font-size="13" fill="#10b981">In Stock (99.2%)</text>
+      </g>
+
+      <!-- Row 2: Competitor A -->
+      <g transform="translate(0, 112)">
+        <rect width="960" height="60" fill="#f8fafc"/>
+        <text x="24" y="36" font-family="system-ui, sans-serif" font-weight="800" font-size="14" fill="#334155">Competitor A - Daily Moisture Wash 500ml</text>
+        <text x="360" y="36" font-family="system-ui, sans-serif" font-weight="700" font-size="14" fill="#64748b">$5.49</text>
+        <text x="510" y="36" font-family="system-ui, sans-serif" font-weight="900" font-size="15" fill="#ef4444">$4.49</text>
+        <rect x="670" y="18" width="60" height="24" rx="6" fill="#fee2e2"/>
+        <text x="700" y="34" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="800" font-size="11" fill="#dc2626">-18%</text>
+        <text x="830" y="36" font-family="system-ui, sans-serif" font-weight="800" font-size="13" fill="#10b981">In Stock (94.0%)</text>
+      </g>
+
+      <!-- Row 3: Competitor B -->
+      <g transform="translate(0, 174)">
+        <rect width="960" height="60" fill="#ffffff"/>
+        <text x="24" y="36" font-family="system-ui, sans-serif" font-weight="800" font-size="14" fill="#334155">Competitor B - Herbal Nourish Bath 450ml</text>
+        <text x="360" y="36" font-family="system-ui, sans-serif" font-weight="700" font-size="14" fill="#64748b">$6.29</text>
+        <text x="510" y="36" font-family="system-ui, sans-serif" font-weight="900" font-size="15" fill="#64748b">$6.29</text>
+        <text x="670" y="36" font-family="system-ui, sans-serif" font-weight="700" font-size="13" fill="#94a3b8">0% (MSRP)</text>
+        <text x="830" y="36" font-family="system-ui, sans-serif" font-weight="800" font-size="13" fill="#f59e0b">Low Stock (3 units)</text>
+      </g>
+
+      <!-- Row 4: Private Label Retailer Brand -->
+      <g transform="translate(0, 236)">
+        <rect width="960" height="60" fill="#f8fafc"/>
+        <text x="24" y="36" font-family="system-ui, sans-serif" font-weight="800" font-size="14" fill="#475569">Retailer Private Label Basic Soap 500ml</text>
+        <text x="360" y="36" font-family="system-ui, sans-serif" font-weight="700" font-size="14" fill="#64748b">$3.99</text>
+        <text x="510" y="36" font-family="system-ui, sans-serif" font-weight="900" font-size="15" fill="#64748b">$3.49</text>
+        <rect x="670" y="18" width="60" height="24" rx="6" fill="#f1f5f9"/>
+        <text x="700" y="34" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="800" font-size="11" fill="#64748b">-12%</text>
+        <text x="830" y="36" font-family="system-ui, sans-serif" font-weight="800" font-size="13" fill="#ef4444">Out of Stock</text>
+      </g>
+    </g>
+
+    <!-- Bottom Trend Chart Preview -->
+    <g transform="translate(40, 530)">
+      <rect width="960" height="190" rx="18" fill="#0f172a"/>
+      <text x="28" y="34" font-family="system-ui, sans-serif" font-weight="800" font-size="13" fill="#94a3b8">30-DAY PROMOTIONAL CADENCE &amp; MARKDOWN FREQUENCY</text>
+      
+      <!-- Sparkline graphs -->
+      <g transform="translate(30, 60)">
+        <!-- Grid lines -->
+        <line x1="0" y1="0" x2="900" y2="0" stroke="#334155" stroke-dasharray="4 4"/>
+        <line x1="0" y1="40" x2="900" y2="40" stroke="#334155" stroke-dasharray="4 4"/>
+        <line x1="0" y1="80" x2="900" y2="80" stroke="#334155" stroke-dasharray="4 4"/>
+
+        <!-- Line 1: Your Brand Price Line -->
+        <path d="M 0 30 L 150 30 L 160 55 L 300 55 L 310 30 L 500 30 L 510 50 L 650 50 L 660 30 L 900 30" fill="none" stroke="#f97316" stroke-width="3"/>
+
+        <!-- Line 2: Competitor Price Line -->
+        <path d="M 0 20 L 200 20 L 210 60 L 400 60 L 410 20 L 700 20 L 710 70 L 900 70" fill="none" stroke="#38bdf8" stroke-width="2.5" stroke-dasharray="6 4"/>
+      </g>
+
+      <text x="30" y="165" font-family="system-ui, sans-serif" font-weight="700" font-size="12" fill="#f97316">● Your Brand Price ($4.99 - $5.99)</text>
+      <text x="280" y="165" font-family="system-ui, sans-serif" font-weight="700" font-size="12" fill="#38bdf8">-- Competitor A Price ($4.49 - $5.49)</text>
+      <text x="890" y="165" text-anchor="end" font-family="system-ui, sans-serif" font-weight="600" font-size="12" fill="#94a3b8">Updated: 10 mins ago • Hourly Refresh</text>
+    </g>
+  </g>
+</svg>

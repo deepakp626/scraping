@@ -50,10 +50,12 @@ export default function PdfUnlock() {
 
       let pdfDoc;
       try {
-        pdfDoc = await PDFDocument.load(arrayBuffer, {
-          password: password || undefined,
-          ignoreEncryption: false, 
-        });
+        const loadOptions: any = { ignoreEncryption: false };
+        if (password) {
+          loadOptions.password = password;
+        }
+
+        pdfDoc = await PDFDocument.load(arrayBuffer, loadOptions);
       } catch (err: any) {
         if (err.message && err.message.toLowerCase().includes("password")) {
           throw new Error("This PDF is encrypted with a strong password. Please provide the correct password below to unlock it.");
@@ -65,7 +67,7 @@ export default function PdfUnlock() {
       const pdfBytes = await pdfDoc.save();
 
       // Create Blob and download
-      const blob = new Blob([pdfBytes], { type: "application/pdf" });
+      const blob = new Blob([pdfBytes.buffer as ArrayBuffer], { type: "application/pdf" });
       const url = URL.createObjectURL(blob);
       const link = document.createElement("a");
       link.href = url;
@@ -142,7 +144,7 @@ export default function PdfUnlock() {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
-                  className="border-2 border-dashed border-slate-300 rounded-2xl p-12 text-center hover:border-primary-theme hover:bg-primary-theme/5 transition-all duration-300 cursor-pointer group flex flex-col items-center justify-center min-h-[300px]"
+                  className="border-2 border-dashed border-slate-300 rounded-2xl p-12 text-center hover:border-primary-theme hover:bg-primary-theme/5 transition-all duration-300 cursor-pointer group flex flex-col items-center justify-center min-h-75"
                   onDragOver={handleDragOver}
                   onDrop={handleDrop}
                   onClick={() => fileInputRef.current?.click()}
@@ -175,7 +177,7 @@ export default function PdfUnlock() {
                   initial={{ opacity: 0, scale: 0.95 }}
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0 }}
-                  className="flex flex-col items-center justify-center py-8 min-h-[300px]"
+                  className="flex flex-col items-center justify-center py-8 min-h-75"
                 >
                   <div className="w-24 h-32 bg-slate-50 border-2 border-slate-200 rounded-lg flex flex-col items-center justify-center shadow-lg relative mb-8">
                     <FileText size={40} className="text-primary-theme mb-2" />
@@ -246,7 +248,7 @@ export default function PdfUnlock() {
                       <div className="flex gap-4 mt-2">
                         <button 
                           onClick={resetTool}
-                          className="px-6 py-4 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold rounded-xl transition-colors min-w-[120px]"
+                          className="px-6 py-4 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold rounded-xl transition-colors min-w-30"
                           disabled={status === "unlocking"}
                         >
                           Cancel

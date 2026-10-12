@@ -1,0 +1,1142 @@
+{
+  "nodes": [
+    {
+      "id": "images_travel_data_scraping_services",
+      "label": "Travel Data Scraping Services Hero Image",
+      "file_type": "image",
+      "source_file": "public/images/hero/IndustryTabSection/Images/Travel-Data-Scraping-Services.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "slider_expedia_logo",
+      "label": "Expedia Logo",
+      "file_type": "image",
+      "source_file": "public/images/slider/Expedia_Logo.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "slider_food_panda",
+      "label": "Food Panda Logo",
+      "file_type": "image",
+      "source_file": "public/images/slider/Food-Panda.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "slider_godhrej_logo",
+      "label": "Godrej Logo",
+      "file_type": "image",
+      "source_file": "public/images/slider/Godhrej-logo.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "slider_p_g",
+      "label": "P&G Logo",
+      "file_type": "image",
+      "source_file": "public/images/slider/P-g.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "slider_proximo_spirit_logo",
+      "label": "Proximo Spirits Logo",
+      "file_type": "image",
+      "source_file": "public/images/slider/Proximo-Spirit-logo.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "slider_pwc",
+      "label": "PwC Logo",
+      "file_type": "image",
+      "source_file": "public/images/slider/PwC.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "slider_tata_consumer_logo",
+      "label": "TATA Consumer Logo",
+      "file_type": "image",
+      "source_file": "public/images/slider/TATA-Consumer-logo.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "slider_unilever",
+      "label": "Unilever Logo",
+      "file_type": "image",
+      "source_file": "public/images/slider/Unilever.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "slider_decathlon",
+      "label": "Decathlon Logo",
+      "file_type": "image",
+      "source_file": "public/images/slider/decathlon.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "slider_flipkart",
+      "label": "Flipkart Logo",
+      "file_type": "image",
+      "source_file": "public/images/slider/flipkart.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "slider_loreal",
+      "label": "L Oreal Logo",
+      "file_type": "image",
+      "source_file": "public/images/slider/loreal.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "slider_myntra",
+      "label": "Myntra Logo",
+      "file_type": "image",
+      "source_file": "public/images/slider/myntra.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "slider_subway",
+      "label": "Subway Logo",
+      "file_type": "image",
+      "source_file": "public/images/slider/subway.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "slider_zomato",
+      "label": "Zomato Logo",
+      "file_type": "image",
+      "source_file": "public/images/slider/zomato.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_next",
+      "label": "Next.js Framework Icon",
+      "file_type": "image",
+      "source_file": "public/next.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_vercel",
+      "label": "Vercel Deployment Icon",
+      "file_type": "image",
+      "source_file": "public/vercel.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_window",
+      "label": "Window Icon",
+      "file_type": "image",
+      "source_file": "public/window.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "slider_expedia_logo",
+      "target": "slider_food_panda",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_expedia_logo",
+      "target": "slider_godhrej_logo",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_expedia_logo",
+      "target": "slider_p_g",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_expedia_logo",
+      "target": "slider_proximo_spirit_logo",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_expedia_logo",
+      "target": "slider_pwc",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_expedia_logo",
+      "target": "slider_tata_consumer_logo",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_expedia_logo",
+      "target": "slider_unilever",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_expedia_logo",
+      "target": "slider_decathlon",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_expedia_logo",
+      "target": "slider_flipkart",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_expedia_logo",
+      "target": "slider_loreal",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_expedia_logo",
+      "target": "slider_myntra",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_expedia_logo",
+      "target": "slider_subway",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_expedia_logo",
+      "target": "slider_zomato",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_food_panda",
+      "target": "slider_godhrej_logo",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_food_panda",
+      "target": "slider_p_g",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_food_panda",
+      "target": "slider_proximo_spirit_logo",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_food_panda",
+      "target": "slider_pwc",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_food_panda",
+      "target": "slider_tata_consumer_logo",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_food_panda",
+      "target": "slider_unilever",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_food_panda",
+      "target": "slider_decathlon",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_food_panda",
+      "target": "slider_flipkart",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_food_panda",
+      "target": "slider_loreal",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_food_panda",
+      "target": "slider_myntra",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_food_panda",
+      "target": "slider_subway",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_food_panda",
+      "target": "slider_zomato",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_godhrej_logo",
+      "target": "slider_p_g",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_godhrej_logo",
+      "target": "slider_proximo_spirit_logo",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_godhrej_logo",
+      "target": "slider_pwc",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_godhrej_logo",
+      "target": "slider_tata_consumer_logo",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_godhrej_logo",
+      "target": "slider_unilever",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_godhrej_logo",
+      "target": "slider_decathlon",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_godhrej_logo",
+      "target": "slider_flipkart",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_godhrej_logo",
+      "target": "slider_loreal",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_godhrej_logo",
+      "target": "slider_myntra",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_godhrej_logo",
+      "target": "slider_subway",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_godhrej_logo",
+      "target": "slider_zomato",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_p_g",
+      "target": "slider_proximo_spirit_logo",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_p_g",
+      "target": "slider_pwc",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_p_g",
+      "target": "slider_tata_consumer_logo",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_p_g",
+      "target": "slider_unilever",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_p_g",
+      "target": "slider_decathlon",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_p_g",
+      "target": "slider_flipkart",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_p_g",
+      "target": "slider_loreal",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_p_g",
+      "target": "slider_myntra",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_p_g",
+      "target": "slider_subway",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_p_g",
+      "target": "slider_zomato",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_proximo_spirit_logo",
+      "target": "slider_pwc",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_proximo_spirit_logo",
+      "target": "slider_tata_consumer_logo",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_proximo_spirit_logo",
+      "target": "slider_unilever",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_proximo_spirit_logo",
+      "target": "slider_decathlon",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_proximo_spirit_logo",
+      "target": "slider_flipkart",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_proximo_spirit_logo",
+      "target": "slider_loreal",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_proximo_spirit_logo",
+      "target": "slider_myntra",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_proximo_spirit_logo",
+      "target": "slider_subway",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_proximo_spirit_logo",
+      "target": "slider_zomato",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_pwc",
+      "target": "slider_tata_consumer_logo",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_pwc",
+      "target": "slider_unilever",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_pwc",
+      "target": "slider_decathlon",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_pwc",
+      "target": "slider_flipkart",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_pwc",
+      "target": "slider_loreal",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_pwc",
+      "target": "slider_myntra",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_pwc",
+      "target": "slider_subway",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_pwc",
+      "target": "slider_zomato",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_tata_consumer_logo",
+      "target": "slider_unilever",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_tata_consumer_logo",
+      "target": "slider_decathlon",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_tata_consumer_logo",
+      "target": "slider_flipkart",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_tata_consumer_logo",
+      "target": "slider_loreal",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_tata_consumer_logo",
+      "target": "slider_myntra",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_tata_consumer_logo",
+      "target": "slider_subway",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_tata_consumer_logo",
+      "target": "slider_zomato",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_unilever",
+      "target": "slider_decathlon",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_unilever",
+      "target": "slider_flipkart",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_unilever",
+      "target": "slider_loreal",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_unilever",
+      "target": "slider_myntra",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_unilever",
+      "target": "slider_subway",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_unilever",
+      "target": "slider_zomato",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_decathlon",
+      "target": "slider_flipkart",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_decathlon",
+      "target": "slider_loreal",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_decathlon",
+      "target": "slider_myntra",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_decathlon",
+      "target": "slider_subway",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_decathlon",
+      "target": "slider_zomato",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_flipkart",
+      "target": "slider_loreal",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_flipkart",
+      "target": "slider_myntra",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_flipkart",
+      "target": "slider_subway",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_flipkart",
+      "target": "slider_zomato",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_loreal",
+      "target": "slider_myntra",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_loreal",
+      "target": "slider_subway",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_loreal",
+      "target": "slider_zomato",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_myntra",
+      "target": "slider_subway",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_myntra",
+      "target": "slider_zomato",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "slider_subway",
+      "target": "slider_zomato",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/slider/",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "client_brand_logos_slider",
+      "label": "Client Brand Logos Slider",
+      "nodes": [
+        "slider_expedia_logo",
+        "slider_food_panda",
+        "slider_godhrej_logo",
+        "slider_p_g",
+        "slider_proximo_spirit_logo",
+        "slider_pwc",
+        "slider_tata_consumer_logo",
+        "slider_unilever",
+        "slider_decathlon",
+        "slider_flipkart",
+        "slider_loreal",
+        "slider_myntra",
+        "slider_subway",
+        "slider_zomato"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/images/slider/"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

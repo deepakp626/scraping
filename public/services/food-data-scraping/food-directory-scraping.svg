@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="f1Bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fff7ed"/>
+    </linearGradient>
+    <linearGradient id="f1Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+    <filter id="f1Shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0f172a" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="800" rx="32" fill="url(#f1Bg)"/>
+
+  <!-- Left: Source Platform Stacks -->
+  <g transform="translate(60, 100)">
+    <!-- Source 1 -->
+    <rect width="260" height="110" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" filter="url(#f1Shadow)"/>
+    <circle cx="35" cy="40" r="18" fill="#ef4444"/>
+    <text x="27" y="47" fill="#ffffff" font-family="system-ui, sans-serif" font-size="18" font-weight="900">Y</text>
+    <text x="65" y="38" fill="#0f172a" font-family="system-ui, sans-serif" font-size="15" font-weight="800">Yelp Directory</text>
+    <text x="65" y="58" fill="#64748b" font-family="system-ui, sans-serif" font-size="12">14,280 Records</text>
+    <rect x="20" y="80" width="220" height="16" rx="8" fill="#dcfce7"/>
+    <text x="30" y="92" fill="#166534" font-family="system-ui, sans-serif" font-size="10" font-weight="700">✓ Real-time Sync Active</text>
+
+    <!-- Source 2 -->
+    <g transform="translate(0, 135)">
+      <rect width="260" height="110" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" filter="url(#f1Shadow)"/>
+      <circle cx="35" cy="40" r="18" fill="#3b82f6"/>
+      <text x="27" y="47" fill="#ffffff" font-family="system-ui, sans-serif" font-size="18" font-weight="900">G</text>
+      <text x="65" y="38" fill="#0f172a" font-family="system-ui, sans-serif" font-size="15" font-weight="800">Google Maps Places</text>
+      <text x="65" y="58" fill="#64748b" font-family="system-ui, sans-serif" font-size="12">28,950 Records</text>
+      <rect x="20" y="80" width="220" height="16" rx="8" fill="#dbeafe"/>
+      <text x="30" y="92" fill="#1e40af" font-family="system-ui, sans-serif" font-size="10" font-weight="700">✓ CID &amp; Geo Extracted</text>
+    </g>
+
+    <!-- Source 3 -->
+    <g transform="translate(0, 270)">
+      <rect width="260" height="110" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" filter="url(#f1Shadow)"/>
+      <circle cx="35" cy="40" r="18" fill="#10b981"/>
+      <text x="26" y="47" fill="#ffffff" font-family="system-ui, sans-serif" font-size="16" font-weight="900">TA</text>
+      <text x="65" y="38" fill="#0f172a" font-family="system-ui, sans-serif" font-size="15" font-weight="800">TripAdvisor Portal</text>
+      <text x="65" y="58" fill="#64748b" font-family="system-ui, sans-serif" font-size="12">9,820 Records</text>
+      <rect x="20" y="80" width="220" height="16" rx="8" fill="#fef3c7"/>
+      <text x="30" y="92" fill="#92400e" font-family="system-ui, sans-serif" font-size="10" font-weight="700">✓ Diner Reviews Parsed</text>
+    </g>
+
+    <!-- Source 4 -->
+    <g transform="translate(0, 405)">
+      <rect width="260" height="110" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" filter="url(#f1Shadow)"/>
+      <circle cx="35" cy="40" r="18" fill="#ea580c"/>
+      <text x="26" y="47" fill="#ffffff" font-family="system-ui, sans-serif" font-size="16" font-weight="900">OT</text>
+      <text x="65" y="38" fill="#0f172a" font-family="system-ui, sans-serif" font-size="15" font-weight="800">OpenTable</text>
+      <text x="65" y="58" fill="#64748b" font-family="system-ui, sans-serif" font-size="12">5,410 Records</text>
+      <rect x="20" y="80" width="220" height="16" rx="8" fill="#ffedd5"/>
+      <text x="30" y="92" fill="#c2410c" font-family="system-ui, sans-serif" font-size="10" font-weight="700">✓ Table Availability Ingested</text>
+    </g>
+  </g>
+
+  <!-- Flow Arrows connecting Left to Right -->
+  <g stroke="#f97316" stroke-width="2.5" stroke-dasharray="6 4" fill="none">
+    <path d="M 330 155 C 380 155, 380 380, 430 380"/>
+    <path d="M 330 290 C 380 290, 380 390, 430 390"/>
+    <path d="M 330 425 C 380 425, 380 410, 430 410"/>
+    <path d="M 330 560 C 380 560, 380 420, 430 420"/>
+  </g>
+
+  <!-- Right: Unified Master Restaurant Profile Card -->
+  <g filter="url(#f1Shadow)" transform="translate(440, 80)">
+    <rect width="500" height="640" rx="24" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    
+    <!-- Header banner -->
+    <path d="M 0 24 Q 0 0 24 0 L 476 0 Q 500 0 500 24 L 500 80 L 0 80 Z" fill="#0f172a"/>
+    <text x="25" y="38" fill="#ffffff" font-family="system-ui, sans-serif" font-size="18" font-weight="800">
+      UNIFIED RESTAURANT ENTITY
+    </text>
+    <text x="25" y="60" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">
+      Cross-Platform Aggregation &amp; Deduplication Engine
+    </text>
+    <rect x="360" y="24" width="115" height="30" rx="15" fill="#f97316"/>
+    <text x="375" y="44" fill="#ffffff" font-family="system-ui, sans-serif" font-size="11" font-weight="800">DEDUPED</text>
+
+    <!-- Details Grid -->
+    <g transform="translate(30, 110)">
+      <!-- Restaurant Identity -->
+      <rect width="440" height="85" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+      <text x="20" y="30" fill="#0f172a" font-family="system-ui, sans-serif" font-size="16" font-weight="800">L’Aura Bella Ristorante</text>
+      <text x="20" y="52" fill="#64748b" font-family="system-ui, sans-serif" font-size="12">Parent Group: Milano Dining Ventures LLC (Chain ID: #8890)</text>
+      <text x="20" y="72" fill="#f97316" font-family="system-ui, sans-serif" font-size="12" font-weight="700">★ 4.88 Master Rating (Aggregated from 4 Portals)</text>
+
+      <!-- Location & Contact -->
+      <g transform="translate(0, 100)">
+        <rect width="440" height="110" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+        <text x="20" y="28" fill="#0f172a" font-family="system-ui, sans-serif" font-size="13" font-weight="800">GEO-CODED CONTACT SPECS</text>
+        <text x="20" y="52" fill="#475569" font-family="system-ui, sans-serif" font-size="12">📍 Address: 1045 Broadway Blvd, Suite 200, New York, NY</text>
+        <text x="20" y="74" fill="#475569" font-family="system-ui, sans-serif" font-size="12">🌐 Coordinates: Lat 40.7580 • Lng -73.9855 (Accuracy 100%)</text>
+        <text x="20" y="96" fill="#475569" font-family="system-ui, sans-serif" font-size="12">📞 Tel: +1 (212) 555-0199 • reservation@laurabella.com</text>
+      </g>
+
+      <!-- Amenities & Attributes -->
+      <g transform="translate(0, 225)">
+        <rect width="440" height="120" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+        <text x="20" y="28" fill="#0f172a" font-family="system-ui, sans-serif" font-size="13" font-weight="800">EXTRACTED AMENITIES &amp; FLAGS</text>
+        
+        <rect x="20" y="42" width="120" height="26" rx="13" fill="#ffedd5"/>
+        <text x="32" y="59" fill="#c2410c" font-family="system-ui, sans-serif" font-size="11" font-weight="700">🌿 Outdoor Patio</text>
+
+        <rect x="150" y="42" width="110" height="26" rx="13" fill="#dcfce7"/>
+        <text x="162" y="59" fill="#15803d" font-family="system-ui, sans-serif" font-size="11" font-weight="700">🚗 Valet Parking</text>
+
+        <rect x="270" y="42" width="140" height="26" rx="13" fill="#e0f2fe"/>
+        <text x="282" y="59" fill="#0369a1" font-family="system-ui, sans-serif" font-size="11" font-weight="700">♿ Wheelchair Access</text>
+
+        <rect x="20" y="78" width="110" height="26" rx="13" fill="#fef3c7"/>
+        <text x="32" y="95" fill="#92400e" font-family="system-ui, sans-serif" font-size="11" font-weight="700">📶 Free Wi-Fi</text>
+
+        <rect x="140" y="78" width="140" height="26" rx="13" fill="#f3e8ff"/>
+        <text x="152" y="95" fill="#7e22ce" font-family="system-ui, sans-serif" font-size="11" font-weight="700">💳 Apple Pay / Amex</text>
+      </g>
+
+      <!-- Operating Hours & Delivery -->
+      <g transform="translate(0, 360)">
+        <rect width="440" height="135" rx="14" fill="#0f172a"/>
+        <text x="20" y="28" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="800">OPERATING HOURS &amp; CHANNELS</text>
+        <text x="20" y="52" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Monday – Thursday: 11:30 AM – 10:30 PM</text>
+        <text x="20" y="74" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Friday – Sunday: 11:00 AM – 11:30 PM</text>
+        <text x="20" y="96" fill="#22c55e" font-family="system-ui, sans-serif" font-size="12" font-weight="700">✓ Dine-In • Curbside Pickup • Direct Delivery</text>
+        <text x="20" y="118" fill="#f59e0b" font-family="monospace" font-size="11">ENTITY_HASH: b84f901192e • CONFIDENCE: 99.8%</text>
+      </g>
+    </g>
+  </g>
+</svg>

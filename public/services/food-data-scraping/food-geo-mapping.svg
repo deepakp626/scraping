@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="f4Bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fff7ed"/>
+    </linearGradient>
+    <filter id="f4Shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0f172a" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="800" rx="32" fill="url(#f4Bg)"/>
+
+  <!-- Left: 3D Map Visualization Card -->
+  <g filter="url(#f4Shadow)" transform="translate(60, 80)">
+    <rect width="480" height="640" rx="24" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+    <path d="M 0 24 Q 0 0 24 0 L 456 0 Q 480 0 480 24 L 480 70 L 0 70 Z" fill="#1e293b"/>
+    <text x="24" y="42" fill="#ffffff" font-family="system-ui, sans-serif" font-size="16" font-weight="800">
+      GEO-DENSITY &amp; RESTAURANT PINS
+    </text>
+    <circle cx="430" cy="35" r="6" fill="#22c55e"/>
+
+    <!-- Map Grid Lines -->
+    <g transform="translate(30, 100)">
+      <!-- Map Background Graphic -->
+      <rect width="420" height="420" rx="16" fill="#1e293b"/>
+      
+      <!-- City Road Lines -->
+      <path d="M 40 0 L 40 420 M 120 0 L 120 420 M 200 0 L 200 420 M 280 0 L 280 420 M 360 0 L 360 420" stroke="#334155" stroke-width="1"/>
+      <path d="M 0 60 L 420 60 M 0 140 L 420 140 M 0 220 L 420 220 M 0 300 L 420 300 M 0 380 L 420 380" stroke="#334155" stroke-width="1"/>
+      <path d="M 0 100 Q 150 180 420 280" stroke="#475569" stroke-width="6" fill="none"/>
+      <path d="M 220 0 Q 250 200 200 420" stroke="#475569" stroke-width="8" fill="none"/>
+
+      <!-- Heatmap Density Blobs -->
+      <circle cx="210" cy="180" r="90" fill="#f97316" opacity="0.25"/>
+      <circle cx="210" cy="180" r="50" fill="#ef4444" opacity="0.35"/>
+      <circle cx="320" cy="290" r="60" fill="#f97316" opacity="0.2"/>
+
+      <!-- Restaurant Pin 1: Primary -->
+      <g transform="translate(200, 150)">
+        <circle cx="10" cy="10" r="20" fill="#f97316" opacity="0.4"/>
+        <path d="M 10 0 C 4.5 0 0 4.5 0 10 C 0 17.5 10 28 10 28 C 10 28 20 17.5 20 10 C 20 4.5 15.5 0 10 0 Z" fill="#f97316"/>
+        <circle cx="10" cy="10" r="4" fill="#ffffff"/>
+      </g>
+
+      <!-- Pin 2 -->
+      <g transform="translate(110, 80)">
+        <path d="M 8 0 C 3.5 0 0 3.5 0 8 C 0 14 8 22 8 22 C 8 22 16 14 16 8 C 16 3.5 12.5 0 8 0 Z" fill="#38bdf8"/>
+        <circle cx="8" cy="8" r="3" fill="#ffffff"/>
+      </g>
+
+      <!-- Pin 3 -->
+      <g transform="translate(300, 100)">
+        <path d="M 8 0 C 3.5 0 0 3.5 0 8 C 0 14 8 22 8 22 C 8 22 16 14 16 8 C 16 3.5 12.5 0 8 0 Z" fill="#38bdf8"/>
+        <circle cx="8" cy="8" r="3" fill="#ffffff"/>
+      </g>
+
+      <!-- Pin 4 -->
+      <g transform="translate(130, 260)">
+        <path d="M 8 0 C 3.5 0 0 3.5 0 8 C 0 14 8 22 8 22 C 8 22 16 14 16 8 C 16 3.5 12.5 0 8 0 Z" fill="#38bdf8"/>
+        <circle cx="8" cy="8" r="3" fill="#ffffff"/>
+      </g>
+
+      <!-- Pin 5 -->
+      <g transform="translate(330, 280)">
+        <path d="M 8 0 C 3.5 0 0 3.5 0 8 C 0 14 8 22 8 22 C 8 22 16 14 16 8 C 16 3.5 12.5 0 8 0 Z" fill="#22c55e"/>
+        <circle cx="8" cy="8" r="3" fill="#ffffff"/>
+      </g>
+
+      <!-- Radius Range Circle -->
+      <circle cx="210" cy="180" r="130" fill="none" stroke="#f97316" stroke-width="1.5" stroke-dasharray="4 4"/>
+      <text x="215" y="65" fill="#f97316" font-family="system-ui, sans-serif" font-size="11" font-weight="700">3.0 KM DELIVERY RADIUS</text>
+    </g>
+
+    <g transform="translate(30, 545)">
+      <rect width="420" height="65" rx="12" fill="#1e293b"/>
+      <text x="16" y="26" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" font-weight="700">MAP BOUNDING BOX</text>
+      <text x="16" y="48" fill="#ffffff" font-family="monospace" font-size="12">LAT [40.712, 40.789] • LNG [-74.015, -73.935]</text>
+    </g>
+  </g>
+
+  <!-- Right: Location Intelligence & Market Saturation Analytics -->
+  <g filter="url(#f4Shadow)" transform="translate(570, 80)">
+    <rect width="370" height="640" rx="24" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <path d="M 0 24 Q 0 0 24 0 L 346 0 Q 370 0 370 24 L 370 70 L 0 70 Z" fill="#f97316"/>
+    <text x="24" y="42" fill="#ffffff" font-family="system-ui, sans-serif" font-size="16" font-weight="800">
+      MARKET GAP &amp; EXPANSION
+    </text>
+
+    <g transform="translate(20, 90)">
+      <!-- Zone Stats Box 1 -->
+      <rect width="330" height="120" rx="14" fill="#fff7ed" stroke="#fed7aa" stroke-width="1.5"/>
+      <text x="16" y="26" fill="#0f172a" font-family="system-ui, sans-serif" font-size="14" font-weight="800">Downtown Metro Zone</text>
+      <text x="16" y="48" fill="#64748b" font-family="system-ui, sans-serif" font-size="12">Cuisine Density: High Saturation</text>
+      <text x="16" y="80" fill="#ea580c" font-family="system-ui, sans-serif" font-size="24" font-weight="900">184 Venues</text>
+      <rect x="16" y="92" width="120" height="18" rx="9" fill="#fed7aa"/>
+      <text x="24" y="105" fill="#9a3412" font-family="system-ui, sans-serif" font-size="10" font-weight="800">62 Italian • 45 Asian</text>
+
+      <!-- Zone Stats Box 2: Opportunity -->
+      <g transform="translate(0, 135)">
+        <rect width="330" height="135" rx="14" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.5"/>
+        <text x="16" y="26" fill="#166534" font-family="system-ui, sans-serif" font-size="14" font-weight="800">✨ West Midtown (Opportunity Zone)</text>
+        <text x="16" y="48" fill="#4b5563" font-family="system-ui, sans-serif" font-size="12">High Footfall • Low Specialty Dine</text>
+        <text x="16" y="80" fill="#16a34a" font-family="system-ui, sans-serif" font-size="24" font-weight="900">+34% Demand Gap</text>
+        <text x="16" y="105" fill="#15803d" font-family="system-ui, sans-serif" font-size="11" font-weight="700">Ideal for Dark Kitchen / QSR Outlet</text>
+      </g>
+
+      <!-- Proximity Metrics -->
+      <g transform="translate(0, 285)">
+        <rect width="330" height="110" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+        <text x="16" y="26" fill="#0f172a" font-family="system-ui, sans-serif" font-size="13" font-weight="800">PROXIMITY METRICS</text>
+        <text x="16" y="52" fill="#475569" font-family="system-ui, sans-serif" font-size="12">🚗 Avg Delivery ETA: 24 mins</text>
+        <text x="16" y="74" fill="#475569" font-family="system-ui, sans-serif" font-size="12">📦 Delivery Radius Coverage: 98.2%</text>
+        <text x="16" y="96" fill="#475569" font-family="system-ui, sans-serif" font-size="12">🏙️ Neighborhood Tags: 48 Districts</text>
+      </g>
+
+      <!-- Export CTA -->
+      <g transform="translate(0, 410)">
+        <rect width="330" height="95" rx="14" fill="#0f172a"/>
+        <text x="16" y="28" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="800">EXPORT GEO-DATA FEED</text>
+        <text x="16" y="52" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">GeoJSON • Shapefile • BigQuery GIS</text>
+        <text x="16" y="76" fill="#22c55e" font-family="monospace" font-size="11">GIS_EXPORT_STATUS: READY</text>
+      </g>
+    </g>
+  </g>
+</svg>
