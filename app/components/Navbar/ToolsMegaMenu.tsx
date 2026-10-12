@@ -186,7 +186,7 @@ export function ToolsMegaMenu() {
   const activeCategory = toolCategories.find((c) => c.id === activeTab)!;
 
   return (
-    <div style={{ minWidth: 780, maxWidth: 900 }}>
+    <div className="w-[820px] max-w-[calc(100vw-4rem)]">
       {/* ── Horizontal tab bar ── */}
       <div className="flex items-center gap-1 border-b border-slate-200 mb-4 pb-0">
         {toolCategories.map((cat) => {
@@ -197,7 +197,7 @@ export function ToolsMegaMenu() {
               key={cat.id}
               onMouseEnter={() => setActiveTab(cat.id)}
               onClick={() => setActiveTab(cat.id)}
-              className={`relative flex items-center gap-2 px-4 py-2.5 text-sm font-medium transition-all duration-200 ${isActive
+              className={`relative flex items-center gap-2 px-4 py-2.5 text-sm font-medium transition-all duration-200 cursor-pointer ${isActive
                   ? 'text-orange-600'
                   : 'text-slate-500 hover:text-slate-800'
                 }`}
@@ -244,12 +244,12 @@ export function ToolsMegaMenu() {
                 <Link
                   key={tool.name}
                   href={tool.link}
-                  className="flex items-center gap-2.5 px-3 py-2.5 rounded-xl hover:bg-slate-50 transition-all group"
+                  className="flex items-center gap-2.5 px-3 py-2 rounded-xl hover:bg-slate-50 transition-all group"
                 >
                   <div className="shrink-0 p-1.5 bg-orange-50 rounded-lg group-hover:bg-orange-100 transition-colors">
                     <Icon size={14} className="text-orange-600 group-hover:text-orange-700 transition-colors" />
                   </div>
-                  <span className="text-base font-medium text-slate-700 group-hover:text-orange-600 transition-colors leading-tight">
+                  <span className="text-sm font-medium text-slate-700 group-hover:text-orange-600 transition-colors leading-tight truncate">
                     {tool.name}
                   </span>
                 </Link>

@@ -273,7 +273,7 @@ export function DatasetsMegaMenu() {
   const activeIndustry = datasetIndustries.find((ind) => ind.id === activeTab)!;
 
   return (
-    <div style={{ minWidth: 780, maxWidth: 900 }}>
+    <div className="w-[820px] max-w-[calc(100vw-4rem)]">
       {/* ── Horizontal tab bar (identical pattern to ToolsMegaMenu) ── */}
       <div className="flex items-center gap-1 border-b border-slate-200 mb-4 pb-0 overflow-x-auto scrollbar-none">
         {datasetIndustries.map((ind) => {
@@ -284,7 +284,7 @@ export function DatasetsMegaMenu() {
               key={ind.id}
               onMouseEnter={() => setActiveTab(ind.id)}
               onClick={() => setActiveTab(ind.id)}
-              className={`relative flex items-center gap-2 px-4 py-2.5 text-sm font-medium whitespace-nowrap transition-all duration-200 shrink-0 ${
+              className={`relative flex items-center gap-2 px-4 py-2.5 text-sm font-medium whitespace-nowrap transition-all duration-200 shrink-0 cursor-pointer ${
                 isActive ? 'text-orange-600' : 'text-slate-500 hover:text-slate-800'
               }`}
             >
@@ -330,7 +330,7 @@ export function DatasetsMegaMenu() {
                 <Link
                   key={dataset.name}
                   href={dataset.link}
-                  className="flex items-center gap-2.5 px-3 py-2.5 rounded-xl hover:bg-slate-50 transition-all group"
+                  className="flex items-center gap-2.5 px-3 py-2 rounded-xl hover:bg-slate-50 transition-all group"
                 >
                   <div className="shrink-0 p-1.5 bg-orange-50 rounded-lg group-hover:bg-orange-100 transition-colors">
                     <Icon
@@ -338,7 +338,7 @@ export function DatasetsMegaMenu() {
                       className="text-orange-600 group-hover:text-orange-700 transition-colors"
                     />
                   </div>
-                  <span className="text-base font-medium text-slate-700 group-hover:text-orange-600 transition-colors leading-tight">
+                  <span className="text-sm font-medium text-slate-700 group-hover:text-orange-600 transition-colors leading-tight truncate">
                     {dataset.name}
                   </span>
                 </Link>

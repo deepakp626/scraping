@@ -10,9 +10,9 @@ import ScrapingTechnology from "./homeComponents/ScrapingTechnology";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-slate-950 text-white ">
+    <main className="bg-slate-950 min-h-screen text-white">
       <HeroSection />
-      <section className="container mx-auto px-4 -mt-10 relative z-20">
+      <section className="z-20 relative mx-auto -mt-10 px-4 container">
         <Slider />
       </section>
       <FirecrawlFeatures />

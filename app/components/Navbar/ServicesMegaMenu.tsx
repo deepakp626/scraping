@@ -120,25 +120,25 @@ export const servicesColumns: ServiceGroup[][] = [
 
 export function ServicesMegaMenu() {
   return (
-    <div style={{ minWidth: 980, maxWidth: 1100 }} className="grid grid-cols-5 gap-8 p-2 text-left">
+    <div className="w-[940px] max-w-[calc(100vw-4rem)] grid grid-cols-5 gap-5 p-2 text-left">
       {servicesColumns.map((column, colIdx) => (
-        <div key={colIdx} className="flex flex-col gap-6">
+        <div key={colIdx} className="flex flex-col gap-5">
           {column.map((group, groupIdx) => (
             <div key={groupIdx}>
-              <h4 className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-3 underline underline-offset-6">
+              <h4 className="text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-2.5 underline underline-offset-4">
                 {group.title}
               </h4>
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-1.5">
                 {group.links.map((link) => {
                   const Icon = link.icon;
                   return (
                     <Link
                       key={`${link.href}-${link.label}`}
                       href={link.href}
-                      className="flex items-center gap-2 text-base font-medium text-slate-700 hover:text-orange-600 transition-colors py-1 group"
+                      className="flex items-center gap-2 text-sm font-medium text-slate-700 hover:text-orange-600 transition-colors py-1 group"
                     >
-                      <Icon size={16} className="text-slate-400 group-hover:text-orange-600 transition-colors shrink-0" />
-                      <span>{link.label}</span>
+                      <Icon size={15} className="text-slate-400 group-hover:text-orange-600 transition-colors shrink-0" />
+                      <span className="truncate">{link.label}</span>
                     </Link>
                   );
                 })}
