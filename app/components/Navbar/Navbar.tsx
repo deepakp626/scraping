@@ -120,12 +120,12 @@ const Navbar = () => {
       desc: 'In-depth web scraping tutorials & technical guides',
       icon: <FileText size={18} className="text-orange-600" />
     },
-    {
-      name: 'Case Studies',
-      href: '/blog',
-      desc: 'Real-world data extraction stories and benchmarks',
-      icon: <BarChart3 size={18} className="text-orange-600" />
-    },
+    // {
+    //   name: 'Case Studies',
+    //   href: '/blog',
+    //   desc: 'Real-world data extraction stories and benchmarks',
+    //   icon: <BarChart3 size={18} className="text-orange-600" />
+    // },
     {
       name: 'Developer Tools',
       href: '/tooles',
