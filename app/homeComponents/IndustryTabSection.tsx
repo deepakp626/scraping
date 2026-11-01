@@ -106,9 +106,9 @@ export default function IndustryTabSection() {
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <header className="mb-12">
-          <h1 className="text-4xl font-bold mb-4">
+          <h2 className="text-4xl font-bold mb-4">
             Which Data Can We <span className="text-orange-600">Extract?</span>
-          </h1>
+          </h2>
           <p className="text-gray-600 max-w-3xl text-lg leading-relaxed">
             Gain valuable insights with our powerful data extraction services. Whether you're 
             looking to optimize operations or make data-driven decisions, we've got you covered!

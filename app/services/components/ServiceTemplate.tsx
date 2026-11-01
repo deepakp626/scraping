@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { CheckCircle2, ArrowRight, LucideIcon } from "lucide-react";
+import { CheckCircle2, ArrowRight, LucideIcon, Sliders, Package, Camera, TrendingDown, Clock, Database, Search, Sparkles, Globe, Tag, ShoppingBag } from "lucide-react";
 
 export interface StatItem {
   value: string;
@@ -135,35 +135,35 @@ export default function ServiceTemplate({
   const [activeBenefit, setActiveBenefit] = useState(0);
 
   return (
-    <main className="min-h-screen bg-white text-slate-900 overflow-hidden">
+    <main className="bg-white min-h-screen overflow-hidden text-slate-900">
       {/* Ambient background blobs */}
-      <div className="pointer-events-none fixed inset-0 overflow-hidden -z-10">
-        <div className="absolute top-[-10%] right-[-5%] w-[40rem] h-[40rem] rounded-full bg-primary-theme/5 blur-3xl" />
-        <div className="absolute top-[40%] left-[-10%] w-[35rem] h-[35rem] rounded-full bg-gradient-end-color/5 blur-3xl" />
-        <div className="absolute bottom-[5%] right-[10%] w-[30rem] h-[30rem] rounded-full bg-primary-theme/5 blur-3xl" />
+      <div className="-z-10 fixed inset-0 overflow-hidden pointer-events-none">
+        <div className="top-[-10%] right-[-5%] absolute bg-primary-theme/5 blur-3xl rounded-full w-[40rem] h-[40rem]" />
+        <div className="top-[40%] left-[-10%] absolute bg-gradient-end-color/5 blur-3xl rounded-full w-[35rem] h-[35rem]" />
+        <div className="right-[10%] bottom-[5%] absolute bg-primary-theme/5 blur-3xl rounded-full w-[30rem] h-[30rem]" />
       </div>
 
       {/* ══ HERO SECTION ══════════════════════════════════════ */}
-      <section className="relative z-10 pt-24 pb-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <section className="z-10 relative px-4 sm:px-6 lg:px-8 pt-24 pb-16">
+        <div className="mx-auto max-w-7xl">
+          <div className="items-center gap-12 lg:gap-16 grid grid-cols-1 lg:grid-cols-2">
             {/* Left: Text content */}
             <div className="flex flex-col justify-center">
-              <h1 className="text-4xl sm:text-5xl xl:text-6xl font-black tracking-tight leading-[1.1] mb-6">
+              <h1 className="mb-6 font-black text-4xl sm:text-5xl xl:text-6xl leading-[1.1] tracking-tight">
                 {heroTitlePrefix}{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-theme to-gradient-end-color">
+                <span className="bg-clip-text bg-gradient-to-r from-primary-theme to-gradient-end-color text-transparent">
                   {heroTitleHighlight}
                 </span>{" "}
                 {heroTitleSuffix}
               </h1>
 
-              <p className="text-slate-600 text-base sm:text-lg leading-relaxed mb-8 max-w-xl">
+              <p className="mb-8 max-w-xl text-slate-600 text-base sm:text-lg leading-relaxed">
                 {heroDescription}
               </p>
 
-              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 mb-10">
+              <ul className="gap-2.5 grid grid-cols-1 sm:grid-cols-2 mb-10">
                 {heroHighlights.slice(0, 8).map((item) => (
-                  <li key={item} className="flex items-center gap-2 text-sm md:text-base text-slate-700">
+                  <li key={item} className="flex items-center gap-2 text-slate-700 text-sm md:text-base">
                     <CheckCircle2 size={15} className="text-primary-theme shrink-0" />
                     {item}
                   </li>
@@ -173,7 +173,7 @@ export default function ServiceTemplate({
               <div className="flex flex-wrap gap-4">
                 <Link
                   href={sampleDataLink}
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-primary-theme to-gradient-end-color text-white font-bold text-sm hover:scale-105 hover:shadow-lg hover:shadow-primary-theme/25 transition-all duration-300"
+                  className="inline-flex items-center gap-2 bg-gradient-to-r from-primary-theme to-gradient-end-color hover:shadow-lg hover:shadow-primary-theme/25 px-6 py-3 rounded-xl font-bold text-white text-sm hover:scale-105 transition-all duration-300"
                 >
                   {HeroCtaIcon && <HeroCtaIcon size={16} />}
                   Get Free Sample Data
@@ -181,7 +181,7 @@ export default function ServiceTemplate({
                 </Link>
                 <Link
                   href={allServicesLink}
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-slate-200 bg-slate-50 text-slate-700 font-bold text-sm hover:border-primary-theme/40 hover:bg-primary-theme/5 transition-all duration-300"
+                  className="inline-flex items-center gap-2 bg-slate-50 hover:bg-primary-theme/5 px-6 py-3 border border-slate-200 hover:border-primary-theme/40 rounded-xl font-bold text-slate-700 text-sm transition-all duration-300"
                 >
                   View All Services
                 </Link>
@@ -189,9 +189,9 @@ export default function ServiceTemplate({
             </div>
 
             {/* Right: Hero image */}
-            <div className="relative flex items-center justify-center">
-              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-primary-theme/10 to-gradient-end-color/10 blur-2xl scale-95" />
-              <div className="relative w-full max-w-lg mx-auto rounded-3xl overflow-hidden border border-slate-200/80 shadow-xl shadow-slate-200/60">
+            <div className="relative flex justify-center items-center">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary-theme/10 to-gradient-end-color/10 blur-2xl rounded-3xl scale-95" />
+              <div className="relative shadow-slate-200/60 shadow-xl mx-auto border border-slate-200/80 rounded-3xl w-full max-w-lg overflow-hidden">
                 <Image
                   src={heroImage}
                   alt={heroImageAlt}
@@ -208,15 +208,15 @@ export default function ServiceTemplate({
 
       {/* ══ STATS BAR ════════════════════════════════════════ */}
       {stats && stats.length > 0 && (
-        <section className="relative z-10 border-y border-slate-100 bg-slate-50/60 py-10 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-5xl mx-auto">
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
+        <section className="z-10 relative bg-slate-50/60 px-4 sm:px-6 lg:px-8 py-10 border-slate-100 border-y">
+          <div className="mx-auto max-w-5xl">
+            <div className="gap-6 grid grid-cols-2 sm:grid-cols-4 text-center">
               {stats.map((stat) => (
                 <div key={stat.label} className="flex flex-col items-center gap-1">
-                  <span className="text-3xl sm:text-4xl font-black mb-2">
+                  <span className="mb-2 font-black text-3xl sm:text-4xl">
                     {stat.value}
                   </span>
-                  <span className="text-xs sm:text-sm font-semibold text-slate-500 uppercase tracking-wider">
+                  <span className="font-semibold text-slate-500 text-xs sm:text-sm uppercase tracking-wider">
                     {stat.label}
                   </span>
                 </div>
@@ -227,24 +227,24 @@ export default function ServiceTemplate({
       )}
 
       {/* ══ ABOUT / EXPLANATION SECTION ═══════════════════════ */}
-      <section className="relative z-10 py-20 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-black text-slate-900 text-center mb-6 leading-tight">
+      <section className="z-10 relative bg-white px-4 sm:px-6 lg:px-8 py-20">
+        <div className="mx-auto max-w-5xl">
+          <h2 className="mb-6 font-black text-slate-900 text-3xl sm:text-4xl text-center leading-tight">
             {aboutTitle}
           </h2>
 
-          <p className="text-slate-500 text-base sm:text-lg leading-relaxed text-center max-w-3xl mx-auto mb-10">
+          <p className="mx-auto mb-10 max-w-3xl text-slate-500 text-base sm:text-lg text-center leading-relaxed">
             {aboutDescription}
           </p>
 
           {aboutBulletPoints && aboutBulletPoints.length > 0 && (
-            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-4xl mx-auto">
+            <ul className="gap-4 grid grid-cols-1 sm:grid-cols-2 mx-auto max-w-4xl">
               {aboutBulletPoints.map((item, i) => (
                 <li
                   key={i}
-                  className="flex items-start gap-3 bg-slate-50 border border-slate-200 rounded-xl px-5 py-4 hover:border-primary-theme transition-colors"
+                  className="flex items-start gap-3 bg-slate-50 px-5 py-4 border border-slate-200 hover:border-primary-theme rounded-xl transition-colors"
                 >
-                  <span className="mt-0.5 flex-shrink-0 w-5 h-5 rounded-full bg-primary-theme/10 flex items-center justify-center text-primary-theme text-xs font-bold">
+                  <span className="flex flex-shrink-0 justify-center items-center bg-primary-theme/10 mt-0.5 rounded-full w-5 h-5 font-bold text-primary-theme text-xs">
                     ✓
                   </span>
                   <span className="text-slate-600 text-sm sm:text-base leading-relaxed">{item}</span>
@@ -256,21 +256,21 @@ export default function ServiceTemplate({
       </section>
 
       {/* ══ DATA FIELDS COMPILATION SECTION ═══════════════════ */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white bg-gradient-to-br from-primary-theme/5 to-gradient-end-color/5">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 text-center mb-6 leading-tight">
+      <section className="bg-white bg-gradient-to-br from-primary-theme/5 to-gradient-end-color/5 px-4 sm:px-6 lg:px-8 py-20">
+        <h2 className="mb-6 font-black text-slate-900 text-2xl md:text-3xl lg:text-4xl text-center leading-tight">
           {dataFieldsTitle}
         </h2>
         {dataFieldsDescription && (
-          <p className="text-slate-500 text-base sm:text-lg leading-relaxed text-center max-w-3xl mx-auto mb-10">
+          <p className="mx-auto mb-10 max-w-3xl text-slate-500 text-base sm:text-lg text-center leading-relaxed">
             {dataFieldsDescription}
           </p>
         )}
 
-        <div className="flex flex-col md:flex-row justify-center items-center gap-8 max-w-6xl mx-auto">
+        <div className="flex md:flex-row flex-col justify-center items-center gap-8 mx-auto max-w-6xl">
           {/* Left Fields Grid */}
-          <div className="grid items-center grid-cols-2 gap-4 text-center [&>*]:bg-white w-full md:w-1/3">
+          <div className="items-center gap-4 grid grid-cols-2 [&>*]:bg-white w-full md:w-1/3 text-center">
             {dataFieldsLeft.map((field, idx) => (
-              <div key={idx} className="p-2 rounded-lg shadow-md border border-slate-100 hover:scale-105 transition-transform duration-300">
+              <div key={idx} className="shadow-md p-2 border border-slate-100 rounded-lg hover:scale-105 transition-transform duration-300">
                 {field}
               </div>
             ))}
@@ -288,9 +288,9 @@ export default function ServiceTemplate({
           </div>
 
           {/* Right Fields Grid */}
-          <div className="grid items-center grid-cols-2 gap-4 text-center [&>*]:bg-white w-full md:w-1/3">
+          <div className="items-center gap-4 grid grid-cols-2 [&>*]:bg-white w-full md:w-1/3 text-center">
             {dataFieldsRight.map((field, idx) => (
-              <div key={idx} className="p-2 rounded-lg shadow-md border border-slate-100 hover:scale-105 transition-transform duration-300">
+              <div key={idx} className="shadow-md p-2 border border-slate-100 rounded-lg hover:scale-105 transition-transform duration-300">
                 {field}
               </div>
             ))}
@@ -300,23 +300,23 @@ export default function ServiceTemplate({
 
       {/* ══ POWERFUL FEATURES ROWS SECTION ═══════════════════ */}
       {featureBlocks && featureBlocks.length > 0 && (
-        <section className="py-10 md:py-20 bg-white">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 text-center mb-6 leading-tight">
+        <section className="bg-white py-10 md:py-20">
+          <h2 className="mb-6 font-black text-slate-900 text-2xl md:text-3xl lg:text-4xl text-center leading-tight">
             {featuresSectionTitle}
           </h2>
 
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+          <div className="space-y-16 mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
             {featureBlocks.map((block, idx) => {
               const isImageLeft = idx % 2 === 0;
               return (
                 <div key={idx} className="mt-8 rounded-3xl overflow-hidden">
                   <div className={`flex flex-col ${isImageLeft ? "md:flex-row" : "md:flex-row-reverse"} items-center gap-10 px-6 py-12 md:px-12`}>
                     {/* Image Side */}
-                    <div className="w-full md:w-1/2 flex items-center justify-center">
+                    <div className="flex justify-center items-center w-full md:w-1/2">
                       <div className="relative w-full max-w-[500px]">
-                        <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary-theme/20 to-gradient-end-color/20 blur-2xl scale-105" />
+                        <div className="absolute inset-0 bg-gradient-to-br from-primary-theme/20 to-gradient-end-color/20 blur-2xl rounded-2xl scale-105" />
                         <Image
-                          className="relative mx-auto rounded-2xl shadow-2xl shadow-primary-theme/10 border border-white/80 object-cover w-full h-auto"
+                          className="relative shadow-2xl shadow-primary-theme/10 mx-auto border border-white/80 rounded-2xl w-full h-auto object-cover"
                           alt={block.imageAlt}
                           src={block.image}
                           width={500}
@@ -326,8 +326,8 @@ export default function ServiceTemplate({
                     </div>
 
                     {/* Text Side */}
-                    <div className="w-full md:w-1/2 flex flex-col gap-5">
-                      <h3 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 leading-tight">
+                    <div className="flex flex-col gap-5 w-full md:w-1/2">
+                      <h3 className="font-black text-slate-900 text-2xl md:text-3xl lg:text-4xl leading-tight">
                         {block.title}
                       </h3>
 
@@ -338,7 +338,7 @@ export default function ServiceTemplate({
                       <ul className="space-y-3">
                         {block.bulletPoints.map((item) => (
                           <li key={item.title} className="flex items-start gap-3">
-                            <span className="mt-0.5 flex-shrink-0 w-5 h-5 rounded-full bg-primary-theme/10 flex items-center justify-center text-primary-theme text-xs font-bold">
+                            <span className="flex flex-shrink-0 justify-center items-center bg-primary-theme/10 mt-0.5 rounded-full w-5 h-5 font-bold text-primary-theme text-xs">
                               ✓
                             </span>
                             <span className="text-slate-600 text-sm sm:text-base leading-relaxed">
@@ -360,32 +360,32 @@ export default function ServiceTemplate({
       {/* ══ BENEFITS TAB SECTION ══════════════════════════════ */}
       {benefits && benefits.length > 0 && (
         <section className="py-16">
-          <div className="max-w-7xl mx-auto px-6">
-            <h2 className="text-4xl font-bold text-center mb-12">
+          <div className="mx-auto px-6 max-w-7xl">
+            <h2 className="mb-12 font-bold text-4xl text-center">
               {benefitsTitle}
             </h2>
 
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="items-center gap-12 grid lg:grid-cols-2">
               {/* Left Accordion */}
               <div>
                 {benefits.map((item, index) => (
-                  <div key={index} className="border-b border-slate-100">
+                  <div key={index} className="border-slate-100 border-b">
                     <button
                       onClick={() =>
                         setActiveBenefit(activeBenefit === index ? -1 : index)
                       }
-                      className="w-full flex items-center justify-between py-5 text-left cursor-pointer outline-none focus:outline-none"
+                      className="flex justify-between items-center py-5 outline-none focus:outline-none w-full text-left cursor-pointer"
                     >
-                      <span className="text-xl font-semibold hover:text-primary-theme transition-colors">
+                      <span className="font-semibold hover:text-primary-theme text-xl transition-colors">
                         {item.title}
                       </span>
-                      <span className="text-2xl text-slate-400">
+                      <span className="text-slate-400 text-2xl">
                         {activeBenefit === index ? "−" : "+"}
                       </span>
                     </button>
 
                     {activeBenefit === index && (
-                      <p className="pb-5 text-base sm:text-lg text-slate-600 leading-relaxed">
+                      <p className="pb-5 text-slate-600 text-base sm:text-lg leading-relaxed">
                         {item.content}
                       </p>
                     )}
@@ -401,7 +401,7 @@ export default function ServiceTemplate({
                     alt={benefitsImageAlt}
                     width={500}
                     height={500}
-                    className="rounded-lg object-cover w-full h-auto border border-slate-100 shadow-md"
+                    className="shadow-md border border-slate-100 rounded-lg w-full h-auto object-cover"
                   />
                 </div>
               </div>
@@ -412,30 +412,30 @@ export default function ServiceTemplate({
 
       {/* ══ GRID FEATURES SECTION ═════════════════════════════ */}
       {gridFeatures && gridFeatures.length > 0 && (
-        <section className="relative z-10 py-20 px-4 sm:px-6 lg:px-8 border-t border-slate-50">
-          <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-14">
-              <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mb-4">
+        <section className="z-10 relative px-4 sm:px-6 lg:px-8 py-20 border-slate-50 border-t">
+          <div className="mx-auto max-w-7xl">
+            <div className="mb-14 text-center">
+              <h2 className="mb-4 font-black text-slate-900 text-3xl sm:text-4xl">
                 {gridSectionTitle}
               </h2>
-              <p className="text-slate-600 text-lg sm:text-xl leading-relaxed text-center max-w-3xl mx-auto">
+              <p className="mx-auto max-w-3xl text-slate-600 text-lg sm:text-xl text-center leading-relaxed">
                 {gridSectionDescription}
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="gap-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
               {gridFeatures.map((feat) => {
                 const Icon = feat.icon;
                 return (
                   <div
                     key={feat.title}
-                    className="group flex flex-col gap-4 p-6 rounded-3xl bg-slate-50 border border-slate-200/80 hover:border-primary-theme/30 hover:-translate-y-1 transition-all duration-300 shadow-sm cursor-pointer"
+                    className="group flex flex-col gap-4 bg-slate-50 shadow-sm p-6 border border-slate-200/80 hover:border-primary-theme/30 rounded-3xl transition-all hover:-translate-y-1 duration-300 cursor-pointer"
                   >
-                    <div className="p-3 w-fit rounded-xl bg-primary-theme/5 border border-primary-theme/10 text-primary-theme group-hover:bg-primary-theme group-hover:text-white transition-all duration-300">
+                    <div className="bg-primary-theme/5 group-hover:bg-primary-theme p-3 border border-primary-theme/10 rounded-xl w-fit text-primary-theme group-hover:text-white transition-all duration-300">
                       <Icon size={20} />
                     </div>
                     <div>
-                      <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-1.5 group-hover:text-primary-theme transition-colors">
+                      <h3 className="mb-1.5 font-bold text-slate-900 group-hover:text-primary-theme text-lg sm:text-xl transition-colors">
                         {feat.title}
                       </h3>
                       <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
@@ -452,30 +452,30 @@ export default function ServiceTemplate({
 
       {/* ══ USE CASES SECTION ════════════════════════════════ */}
       {useCases && useCases.length > 0 && (
-        <section className="relative z-10 py-20 px-4 sm:px-6 lg:px-8 border-t border-slate-100">
-          <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-14">
-              <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mb-4">
+        <section className="z-10 relative px-4 sm:px-6 lg:px-8 py-20 border-slate-100 border-t">
+          <div className="mx-auto max-w-7xl">
+            <div className="mb-14 text-center">
+              <h2 className="mb-4 font-black text-slate-900 text-3xl sm:text-4xl">
                 {useCasesSectionTitle}
               </h2>
-              <p className="text-slate-600 text-lg sm:text-xl max-w-xl mx-auto">
+              <p className="mx-auto max-w-xl text-slate-600 text-lg sm:text-xl">
                 {useCasesSectionDescription}
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div className="gap-6 grid grid-cols-1 sm:grid-cols-2">
               {useCases.map((uc) => {
                 const Icon = uc.icon;
                 return (
                   <div
                     key={uc.title}
-                    className="group flex gap-5 p-6 rounded-3xl bg-slate-50 border border-slate-200/80 hover:border-primary-theme/30 hover:bg-white hover:shadow-md transition-all duration-300 cursor-pointer"
+                    className="group flex gap-5 bg-slate-50 hover:bg-white hover:shadow-md p-6 border border-slate-200/80 hover:border-primary-theme/30 rounded-3xl transition-all duration-300 cursor-pointer"
                   >
-                    <div className="shrink-0 p-3 rounded-xl bg-primary-theme/5 border border-primary-theme/10 text-primary-theme h-fit group-hover:bg-primary-theme group-hover:text-white transition-all duration-300">
+                    <div className="bg-primary-theme/5 group-hover:bg-primary-theme p-3 border border-primary-theme/10 rounded-xl h-fit text-primary-theme group-hover:text-white transition-all duration-300 shrink-0">
                       <Icon size={20} />
                     </div>
                     <div>
-                      <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-1.5 group-hover:text-primary-theme transition-colors">
+                      <h3 className="mb-1.5 font-bold text-slate-900 group-hover:text-primary-theme text-lg sm:text-xl transition-colors">
                         {uc.title}
                       </h3>
                       <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
@@ -492,24 +492,24 @@ export default function ServiceTemplate({
 
       {/* ══ BRAND / PLATFORMS SECTION ═════════════════════════ */}
       {platforms && platforms.length > 0 && (
-        <section className="border-t border-slate-100 py-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="w-[80%] mx-auto mb-10 text-center">
-              <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mb-4">
+        <section className="py-16 border-slate-100 border-t">
+          <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+            <div className="mx-auto mb-10 w-[80%] text-center">
+              <h2 className="mb-4 font-black text-slate-900 text-3xl sm:text-4xl">
                 {platformsSectionTitle}
               </h2>
-              <p className="text-slate-600 text-lg sm:text-xl max-w-xl mx-auto">
+              <p className="mx-auto max-w-xl text-slate-600 text-lg sm:text-xl">
                 {platformsSectionDescription}
               </p>
             </div>
 
-            <div className="flex flex-wrap gap-6 justify-center items-center my-8">
+            <div className="flex flex-wrap justify-center items-center gap-6 my-8">
               {platforms.map((item, index) => (
                 <div
                   key={index}
-                  className="flex flex-col justify-center items-center border-2 border-slate-200 rounded-lg shadow-sm px-4 py-3 hover:border-primary-theme/30 hover:bg-white hover:shadow-md transition-all duration-300 cursor-pointer w-[11rem] h-[8rem]"
+                  className="flex flex-col justify-center items-center hover:bg-white shadow-sm hover:shadow-md px-4 py-3 border-2 border-slate-200 hover:border-primary-theme/30 rounded-lg w-[11rem] h-[8rem] transition-all duration-300 cursor-pointer"
                 >
-                  <div className="mb-3 relative w-12 h-12 flex items-center justify-center">
+                  <div className="relative flex justify-center items-center mb-3 w-12 h-12">
                     <Image
                       src={item.imagePath}
                       alt={item.name}
@@ -518,7 +518,7 @@ export default function ServiceTemplate({
                       className="object-contain"
                     />
                   </div>
-                  <div className="text-center font-semibold ">
+                  <div className="font-semibold text-center">
                     {item.name}
                   </div>
                 </div>
