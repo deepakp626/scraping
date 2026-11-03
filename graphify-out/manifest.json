@@ -24,9 +24,9 @@
     "semantic_hash": ""
   },
   "app/blog/page.tsx": {
-    "mtime": 1791837801.5030208,
-    "seen": 1793400003.6110368,
-    "ast_hash": "637dae7f160f0734f53a30c9f4647ebe",
+    "mtime": 1793569172.6354525,
+    "seen": 1793569565.9006908,
+    "ast_hash": "542ed1d4626cbade99b5796e82f4fbde",
     "semantic_hash": ""
   },
   "app/components/CTA.tsx": {
@@ -113,18 +113,6 @@
     "ast_hash": "6357d79a7f6f1a605bea1f3cfc5b091b",
     "semantic_hash": ""
   },
-  "app/dataset/e-commerce-dataset/page.tsx": {
-    "mtime": 1791837801.509236,
-    "seen": 1793400003.611066,
-    "ast_hash": "13d1e4e10269896cb1b6990bad773d78",
-    "semantic_hash": ""
-  },
-  "app/dataset/page.tsx": {
-    "mtime": 1791837801.509236,
-    "seen": 1793400003.6110682,
-    "ast_hash": "57b1dc1ccb76531bba31e5c7b32d96ec",
-    "semantic_hash": ""
-  },
   "app/homeComponents/CountSection.tsx": {
     "mtime": 1791837801.509835,
     "seen": 1793400003.61107,
@@ -144,8 +132,8 @@
     "semantic_hash": ""
   },
   "app/homeComponents/IndustryTabSection.tsx": {
-    "mtime": 1793405845.9905334,
-    "seen": 1793475167.054465,
+    "mtime": 1793569172.6364524,
+    "seen": 1793569565.9007578,
     "ast_hash": "87c31f60d6d0cc6dd2d4ce6b7208f955",
     "semantic_hash": ""
   },
@@ -168,14 +156,14 @@
     "semantic_hash": ""
   },
   "app/layout.tsx": {
-    "mtime": 1793405859.8623276,
-    "seen": 1793475167.0544713,
+    "mtime": 1793569172.6364524,
+    "seen": 1793569565.9007697,
     "ast_hash": "f1d8419778dd3d444bdfdd89bbc5aa6c",
     "semantic_hash": ""
   },
   "app/page.tsx": {
-    "mtime": 1793405876.1960843,
-    "seen": 1793475167.0544727,
+    "mtime": 1793569172.6364524,
+    "seen": 1793569565.9007723,
     "ast_hash": "acbb69f620b72d74ddf5f93350c06b6e",
     "semantic_hash": ""
   },
@@ -192,20 +180,20 @@
     "semantic_hash": ""
   },
   "app/services/car-rental-data-scraping/page.tsx": {
-    "mtime": 1793565585.9262722,
-    "seen": 1793566900.2171402,
+    "mtime": 1793569172.6374526,
+    "seen": 1793569565.900788,
     "ast_hash": "c6f517da530c724c0abcd439f9601dbd",
     "semantic_hash": ""
   },
   "app/services/components/ServiceTemplate.tsx": {
-    "mtime": 1793562354.657106,
-    "seen": 1793566900.2171466,
+    "mtime": 1793569172.6394525,
+    "seen": 1793569565.9007971,
     "ast_hash": "b0e450bb40295d295867a28bf0ea9669",
     "semantic_hash": ""
   },
   "app/services/ecommerce-data-scraping/page.tsx": {
-    "mtime": 1793478273.1503139,
-    "seen": 1793566900.21715,
+    "mtime": 1793569172.6404526,
+    "seen": 1793569565.9008029,
     "ast_hash": "fa71981f6944fe7ba5c5cc8efe09e489",
     "semantic_hash": ""
   },
@@ -216,8 +204,8 @@
     "semantic_hash": ""
   },
   "app/services/fashion-scraping/page.tsx": {
-    "mtime": 1793562649.6845622,
-    "seen": 1793566900.2171545,
+    "mtime": 1793569172.6404526,
+    "seen": 1793569565.9008117,
     "ast_hash": "620c215f35bae209ec42e46fda115a7a",
     "semantic_hash": ""
   },
@@ -228,8 +216,8 @@
     "semantic_hash": ""
   },
   "app/services/finance-and-stock-scraping/page.tsx": {
-    "mtime": 1793566470.9939303,
-    "seen": 1793566900.2171595,
+    "mtime": 1793569172.6420715,
+    "seen": 1793569565.9008207,
     "ast_hash": "37d7987340716c476b85ad80baf44592",
     "semantic_hash": ""
   },
@@ -240,8 +228,8 @@
     "semantic_hash": ""
   },
   "app/services/food-data-scraping/page.tsx": {
-    "mtime": 1793565853.5267527,
-    "seen": 1793566900.217164,
+    "mtime": 1793569172.6424527,
+    "seen": 1793569565.9008303,
     "ast_hash": "a74e55367d2867c21f127873f269afa8",
     "semantic_hash": ""
   },
@@ -252,8 +240,8 @@
     "semantic_hash": ""
   },
   "app/services/food-delivery-data-scraping-service/page.tsx": {
-    "mtime": 1793566086.6196835,
-    "seen": 1793566900.2171679,
+    "mtime": 1793569172.6434526,
+    "seen": 1793569565.9008396,
     "ast_hash": "3121fde0d4fe232b6eb986c12a682d7a",
     "semantic_hash": ""
   },
@@ -264,8 +252,8 @@
     "semantic_hash": ""
   },
   "app/services/grocery-scraping/page.tsx": {
-    "mtime": 1793563527.7761025,
-    "seen": 1793566900.2171721,
+    "mtime": 1793569172.6454527,
+    "seen": 1793569565.9008512,
     "ast_hash": "238485035426d386cf18e36f552eb6de",
     "semantic_hash": ""
   },
@@ -276,8 +264,8 @@
     "semantic_hash": ""
   },
   "app/services/healthcare-data-scraping/page.tsx": {
-    "mtime": 1793566863.6604435,
-    "seen": 1793566900.2171764,
+    "mtime": 1793569172.6470125,
+    "seen": 1793569565.900863,
     "ast_hash": "f1097bd8bd9791598e7ffa388e38305e",
     "semantic_hash": ""
   },
@@ -288,9 +276,9 @@
     "semantic_hash": ""
   },
   "app/services/liquor-or-alchol-data-scraping/page.tsx": {
-    "mtime": 1791837801.522127,
-    "seen": 1793400003.611126,
-    "ast_hash": "c88ac2fa0d0ce3f35ae07b7b4c038476",
+    "mtime": 1793569172.6474528,
+    "seen": 1793569565.9008737,
+    "ast_hash": "ef9df6bdcd4aae24d1b8c47c4b2a563f",
     "semantic_hash": ""
   },
   "app/services/ott-streaming-data-scraping-service/ottStreamingData.ts": {
@@ -300,9 +288,9 @@
     "semantic_hash": ""
   },
   "app/services/ott-streaming-data-scraping-service/page.tsx": {
-    "mtime": 1791837801.5228505,
-    "seen": 1793400003.6111295,
-    "ast_hash": "b18ab0d8654517b048f8f90d7943cead",
+    "mtime": 1793569172.6484528,
+    "seen": 1793569565.900883,
+    "ast_hash": "86f963e51572ef6dea59a741a50a518a",
     "semantic_hash": ""
   },
   "app/services/page.tsx": {
@@ -318,14 +306,14 @@
     "semantic_hash": ""
   },
   "app/services/quick-commerce-fmcg-data-scraping/page.tsx": {
-    "mtime": 1793564945.5555382,
-    "seen": 1793566900.2171884,
+    "mtime": 1793569172.6484528,
+    "seen": 1793569565.9008949,
     "ast_hash": "7dfcf917a0cff12d9d24312c0950b3b8",
     "semantic_hash": ""
   },
   "app/services/quick-commerce-scraping/page.tsx": {
-    "mtime": 1793564548.9415529,
-    "seen": 1793566900.2171907,
+    "mtime": 1793569172.6494527,
+    "seen": 1793569565.900901,
     "ast_hash": "904e85160a3c4aadc322be89d71604ab",
     "semantic_hash": ""
   },
@@ -336,9 +324,9 @@
     "semantic_hash": ""
   },
   "app/services/real-estate-property-data-scraping/page.tsx": {
-    "mtime": 1791837801.5239878,
-    "seen": 1793400003.6111405,
-    "ast_hash": "23742dea9eb32a801c5a16a15861b05c",
+    "mtime": 1793569172.6504529,
+    "seen": 1793569565.9009104,
+    "ast_hash": "8183bda894c96d0807e8a48ad71c7aaa",
     "semantic_hash": ""
   },
   "app/services/real-estate-property-data-scraping/realEstatePropertyDataScrapingData.ts": {
@@ -348,9 +336,9 @@
     "semantic_hash": ""
   },
   "app/services/recruitment-data-scraping-service/page.tsx": {
-    "mtime": 1791837801.5248337,
-    "seen": 1793400003.6111438,
-    "ast_hash": "37719b4c9fcd0f48d6b5bda6fc8ea9fe",
+    "mtime": 1793569172.6514528,
+    "seen": 1793569565.9009187,
+    "ast_hash": "0d8c3f88edc13b180c30f22d1e2c93d2",
     "semantic_hash": ""
   },
   "app/services/recruitment-data-scraping-service/recruitmentScrapingData.ts": {
@@ -366,9 +354,9 @@
     "semantic_hash": ""
   },
   "app/services/social-media-scraping-services/page.tsx": {
-    "mtime": 1791837801.5258336,
-    "seen": 1793400003.6111495,
-    "ast_hash": "e76a5b00ceb6c3c7f7bb5bd0d96d8686",
+    "mtime": 1793569172.652299,
+    "seen": 1793569565.9009311,
+    "ast_hash": "4e2cb5661606975111baa411746bfa32",
     "semantic_hash": ""
   },
   "app/services/social-media-scraping-services/socialMediaScrapingData.ts": {
@@ -378,8 +366,8 @@
     "semantic_hash": ""
   },
   "app/services/travel-data-scraping/page.tsx": {
-    "mtime": 1793565354.5635343,
-    "seen": 1793566900.2172048,
+    "mtime": 1793569172.652453,
+    "seen": 1793569565.9009402,
     "ast_hash": "a6da8372be7c73d5348a2b5e4184c07e",
     "semantic_hash": ""
   },
@@ -1248,8 +1236,8 @@
     "semantic_hash": ""
   },
   "next.config.ts": {
-    "mtime": 1793403465.4175844,
-    "seen": 1793475167.0547326,
+    "mtime": 1793569172.6664531,
+    "seen": 1793569565.9013894,
     "ast_hash": "a755886013290c64333e9e0370ec4a0d",
     "semantic_hash": ""
   },
@@ -2772,93 +2760,165 @@
     "semantic_hash": ""
   },
   "app/robots.ts": {
-    "mtime": 1793399694.8262877,
-    "seen": 1793400003.611089,
+    "mtime": 1793569172.6374526,
+    "seen": 1793569565.9007757,
     "ast_hash": "6e91073d5ca3e414422f5c7b0fc97a86",
     "semantic_hash": ""
   },
   "app/sitemap.ts": {
-    "mtime": 1793399722.173341,
-    "seen": 1793400003.6111567,
+    "mtime": 1793569172.6534529,
+    "seen": 1793569565.9009461,
     "ast_hash": "4bcb3980c979355d100d1c037919a1bd",
     "semantic_hash": ""
   },
   "app/services/ecommerce-data-scraping/EcommercePageClient.tsx": {
-    "mtime": 1793475112.927227,
-    "seen": 1793475167.0544825,
+    "mtime": 1793569172.6402972,
+    "seen": 1793569565.9008002,
     "ast_hash": "e1f2332b02549771d3cedfc2cec78308",
     "semantic_hash": ""
   },
   "app/services/car-rental-data-scraping/CarRentalClient.tsx": {
-    "mtime": 1793565562.1808887,
-    "seen": 1793566900.2171354,
+    "mtime": 1793569172.6374526,
+    "seen": 1793569565.900782,
     "ast_hash": "13ab513a33e8f50c708f68b68f5587b4",
     "semantic_hash": ""
   },
   "app/services/components/BenefitsAccordion.tsx": {
-    "mtime": 1793555143.8631868,
-    "seen": 1793566900.2171428,
+    "mtime": 1793569172.6384525,
+    "seen": 1793569565.9007907,
     "ast_hash": "abf43aa941a27dce71a5bf6442a88019",
     "semantic_hash": ""
   },
   "app/services/components/ServiceSchema.tsx": {
-    "mtime": 1793476175.2963006,
-    "seen": 1793566900.2171445,
+    "mtime": 1793569172.6384525,
+    "seen": 1793569565.9007938,
     "ast_hash": "2bb2b0fe4cbcd625fa319bcaf04d316a",
     "semantic_hash": ""
   },
   "app/services/fashion-scraping/FashionScrapingClient.tsx": {
-    "mtime": 1793562636.1320932,
-    "seen": 1793566900.2171516,
+    "mtime": 1793569172.6404526,
+    "seen": 1793569565.900806,
     "ast_hash": "6c02b705f8422c3d9ee171e23de4d6c0",
     "semantic_hash": ""
   },
   "app/services/finance-and-stock-scraping/FinanceStockClient.tsx": {
-    "mtime": 1793566232.231458,
-    "seen": 1793566900.2171562,
+    "mtime": 1793569172.6414526,
+    "seen": 1793569565.9008148,
     "ast_hash": "0fb65e69172aabdb5c44943bcb85aec8",
     "semantic_hash": ""
   },
   "app/services/food-data-scraping/FoodClient.tsx": {
-    "mtime": 1793565837.173819,
-    "seen": 1793566900.2171607,
+    "mtime": 1793569172.6420715,
+    "seen": 1793569565.900824,
     "ast_hash": "7364877f2925f9aaac2042be6391d6fa",
     "semantic_hash": ""
   },
   "app/services/food-delivery-data-scraping-service/FoodDeliveryClient.tsx": {
-    "mtime": 1793566068.094385,
-    "seen": 1793566900.217165,
+    "mtime": 1793569172.6424527,
+    "seen": 1793569565.9008336,
     "ast_hash": "14864e45b925a95e78d7601cbf554098",
     "semantic_hash": ""
   },
   "app/services/grocery-scraping/groceryScrapingClient.tsx": {
-    "mtime": 1793563283.0537484,
-    "seen": 1793566900.2171688,
+    "mtime": 1793569172.6434526,
+    "seen": 1793569565.900843,
     "ast_hash": "18b70c0c48cd1f0c40fb98685986bba3",
     "semantic_hash": ""
   },
   "app/services/healthcare-data-scraping/HealthcareClient.tsx": {
-    "mtime": 1793566854.0116272,
-    "seen": 1793566900.2171733,
+    "mtime": 1793569172.6454527,
+    "seen": 1793569565.9008548,
     "ast_hash": "759e501d1db13b8e6646432faefdcc29",
     "semantic_hash": ""
   },
   "app/services/quick-commerce-fmcg-data-scraping/FmcgClient.tsx": {
-    "mtime": 1793564928.9642568,
-    "seen": 1793566900.2171853,
+    "mtime": 1793569172.6484528,
+    "seen": 1793569565.9008887,
     "ast_hash": "d6cbc81d056675a38769f0c6136e0854",
     "semantic_hash": ""
   },
   "app/services/quick-commerce-scraping/QuickCommerceClient.tsx": {
-    "mtime": 1793564230.1018972,
-    "seen": 1793566900.2171893,
+    "mtime": 1793569172.6494527,
+    "seen": 1793569565.9008985,
     "ast_hash": "973a7b3cf04213c83205d33a8c3c3908",
     "semantic_hash": ""
   },
   "app/services/travel-data-scraping/TravelClient.tsx": {
-    "mtime": 1793565338.3289225,
-    "seen": 1793566900.2172031,
+    "mtime": 1793569172.652453,
+    "seen": 1793569565.9009376,
     "ast_hash": "1a65a01858a2bb6885b8b3baa6fef987",
+    "semantic_hash": ""
+  },
+  "app/blog/BlogClient.tsx": {
+    "mtime": 1793569172.6354525,
+    "seen": 1793569565.9006815,
+    "ast_hash": "b0ee60cbd3a59e4a348cd3fa7f81a2ec",
+    "semantic_hash": ""
+  },
+  "app/components/blog-schema.tsx": {
+    "mtime": 1793569172.6354525,
+    "seen": 1793569565.9007316,
+    "ast_hash": "b196c8058ca43e7e41bd287fbabdf754",
+    "semantic_hash": ""
+  },
+  "app/services/liquor-or-alchol-data-scraping/LiquorClient.tsx": {
+    "mtime": 1793569172.6470125,
+    "seen": 1793569565.9008663,
+    "ast_hash": "061cc89080783074fc50ab081a38ec3b",
+    "semantic_hash": ""
+  },
+  "app/services/ott-streaming-data-scraping-service/OttStreamingClient.tsx": {
+    "mtime": 1793569172.6474528,
+    "seen": 1793569565.9008763,
+    "ast_hash": "5b2dff0f2d42620f9f39fe2772f219a3",
+    "semantic_hash": ""
+  },
+  "app/services/real-estate-property-data-scraping/RealEstateClient.tsx": {
+    "mtime": 1793569172.6494527,
+    "seen": 1793569565.9009073,
+    "ast_hash": "37ab22eae6189bb8ded6f3b86326f2fa",
+    "semantic_hash": ""
+  },
+  "app/services/recruitment-data-scraping-service/RecruitmentClient.tsx": {
+    "mtime": 1793569172.6504529,
+    "seen": 1793569565.9009156,
+    "ast_hash": "d316ff323f60d0d612afaf3a3dcfec93",
+    "semantic_hash": ""
+  },
+  "app/services/social-media-scraping-services/SocialMediaClient.tsx": {
+    "mtime": 1793569172.6514528,
+    "seen": 1793569565.900928,
+    "ast_hash": "f46c3fab32a539d5df15be415206f2e8",
+    "semantic_hash": ""
+  },
+  "app/datasets/ecommerce/page.tsx": {
+    "mtime": 1793656425.9458265,
+    "seen": 1793656512.9581122,
+    "ast_hash": "c65aa9c98ff55c8e3509ff82632d3801",
+    "semantic_hash": ""
+  },
+  "app/datasets/ecommerce/product-listings/ProductListingsClient.tsx": {
+    "mtime": 1793656252.082525,
+    "seen": 1793656512.9581187,
+    "ast_hash": "299d64d1b7b4a7d31c125eb648a23767",
+    "semantic_hash": ""
+  },
+  "app/datasets/ecommerce/product-listings/page.tsx": {
+    "mtime": 1793655708.2940702,
+    "seen": 1793655931.779738,
+    "ast_hash": "5e62667bb45b762397fe238777ae5218",
+    "semantic_hash": ""
+  },
+  "app/datasets/page.tsx": {
+    "mtime": 1791837801.509236,
+    "seen": 1793655931.7797403,
+    "ast_hash": "57b1dc1ccb76531bba31e5c7b32d96ec",
+    "semantic_hash": ""
+  },
+  "app/datasets/ecommerce/pricing-data/page.tsx": {
+    "mtime": 1793656416.8212068,
+    "seen": 1793656512.9581156,
+    "ast_hash": "323ca171eab4c2ac814f14e9ad1baac4",
     "semantic_hash": ""
   }
 }
