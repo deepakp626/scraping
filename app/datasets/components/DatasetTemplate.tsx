@@ -168,7 +168,7 @@ const defaultExploreCards = [
       '100% Free & Client-Side Secure'
     ],
     ctaText: 'Explore Developer Tools',
-    ctaLink: '/tooles',
+    ctaLink: '/tools',
     borderClass: 'border border-slate-200 hover:border-slate-300'
   },
   {

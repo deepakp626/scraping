@@ -27,14 +27,14 @@ const Footer = () => {
   ];
 
   const toolLinks = [
-    { name: 'PDF Tools & Converters', href: '/tooles/pdf-tooles' },
-    { name: 'Image Compression & Resize', href: '/tooles/image-tooles' },
-    { name: 'JSON Formatter & Validator', href: '/tooles/json-tooles' },
-    { name: 'Online Code Playgrounds', href: '/tooles/coding-tooles' },
-    { name: 'File & Data Converters', href: '/tooles/converter-tools' },
-    { name: 'Merge PDF Documents', href: '/tooles/pdf-tooles/merge-pdf' },
-    { name: 'Compress Image Files', href: '/tooles/image-tooles/compress-image' },
-    { name: 'JSON to CSV Converter', href: '/tooles/json-tooles/json-to-csv' },
+    { name: 'PDF Tools & Converters', href: '/tools/pdf-tools' },
+    { name: 'Image Compression & Resize', href: '/tools/image-tools' },
+    { name: 'JSON Formatter & Validator', href: '/tools/json-tools' },
+    { name: 'Online Code Playgrounds', href: '/tools/coding-tools' },
+    { name: 'File & Data Converters', href: '/tools/converter-tools' },
+    { name: 'Merge PDF Documents', href: '/tools/pdf-tools/merge-pdf' },
+    { name: 'Compress Image Files', href: '/tools/image-tools/compress-image' },
+    { name: 'JSON to CSV Converter', href: '/tools/json-tools/json-to-csv' },
   ];
 
   const companyLinks = [
@@ -131,7 +131,7 @@ const Footer = () => {
                 </li>
               ))}
               <li className="pt-1.5">
-                <Link href="/tooles" className="inline-flex items-center gap-1 text-xs font-semibold text-orange-400 hover:text-orange-300 transition-colors">
+                <Link href="/tools" className="inline-flex items-center gap-1 text-xs font-semibold text-orange-400 hover:text-orange-300 transition-colors">
                   <span>Explore All 50+ Tools</span>
                   <ChevronRight size={14} />
                 </Link>
