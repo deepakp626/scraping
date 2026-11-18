@@ -1,5 +1,5 @@
-import GroceryDatasetPage from '../GroceryDatasetPage';
+import { redirect } from "next/navigation";
 
 export default function GroceryPromotionsDealsPage() {
-  return <GroceryDatasetPage datasetKey="promotionsDeals" />;
+  redirect("/datasets/grocery/promotions");
 }

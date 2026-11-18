@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
-import { PdfToolsSection } from "./pdf-tools/page";
-import { ImageToolsSection } from "./image-tools/page";
+import PdfToolsSection from "./pdf-tools/components/PdfToolsSection";
+import { ImageToolsSection } from "./image-tools/components/ImageToolsSection";
 import { CodingToolsSection } from "./coding-tools/page";
-import { ConverterToolsSection } from "./converter-tools/page";
-import { JsonToolsSection } from "./json-tools/page";
+import { ConverterToolsSection } from "./converter-tools/components/ConverterToolsSection";
+import { JsonToolsSection } from "./json-tools/components/JsonToolsSection";
 
 export default function Hero() {
   return (
@@ -59,8 +59,6 @@ export default function Hero() {
     </>
   );
 }
-
-
 
 
 

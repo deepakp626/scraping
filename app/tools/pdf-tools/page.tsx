@@ -1,60 +1,82 @@
-import Link from "next/link";
-import { FileText, Unlock, Lock, Merge, Split, FilePlus, FileMinus, RotateCw, RotateCcw, FileImage, FileSignature, FileCheck, FileSearch, FileCode, FileDigit, FileUp, FileDown, FileX, ShieldCheck, Eye } from "lucide-react";
+import type { Metadata } from "next";
+import PdfToolsSection, { pdfTools } from "./components/PdfToolsSection";
 
+const pageUrl = "https://compilepilot.com/tools/pdf-tools";
 
-export  function PdfToolsSection() {
-  const tools = [
-  { name: "Merge PDF", icon: Merge, link: "/tools/pdf-tools/merge-pdf" },
-  { name: "Split PDF", icon: Split, link: "/tools/pdf-tools/split-pdf" },
-  { name: "Compress PDF", icon: FileMinus, link: "/tools/pdf-tools/compress-pdf" },
-  { name: "PDF to Word", icon: FileText, link: "/tools/pdf-tools/pdf-to-word" },
-  { name: "Word to PDF", icon: FilePlus, link: "/tools/pdf-tools/word-to-pdf" },
-  { name: "PDF to Image", icon: FileImage, link: "/tools/pdf-tools/pdf-to-image" },
-  { name: "Image to PDF", icon: FileImage, link: "/tools/pdf-tools/image-to-pdf" },
-  { name: "Unlock PDF", icon: Unlock, link: "/tools/pdf-tools/unlock-pdf" },
-  { name: "Lock PDF", icon: Lock, link: "/tools/pdf-tools/lock-pdf" },
-  { name: "Rotate PDF", icon: RotateCw, link: "/tools/pdf-tools/rotate-pdf" },
-  { name: "Rotate Left", icon: RotateCcw, link: "/tools/pdf-tools/rotate-left" },
-  { name: "Add Watermark", icon: FileSignature, link: "/tools/pdf-tools/add-watermark" },
-  { name: "Remove Pages", icon: FileX, link: "/tools/pdf-tools/remove-pages" },
-  { name: "Extract Pages", icon: FileDown, link: "/tools/pdf-tools/extract-pages" },
-  { name: "Add Page Numbers", icon: FileDigit, link: "/tools/pdf-tools/page-numbers" },
-  { name: "OCR PDF", icon: Eye, link: "/tools/pdf-tools/ocr-pdf" },
-  { name: "Sign PDF", icon: FileSignature, link: "/tools/pdf-tools/sign-pdf" },
-  // { name: "Protect PDF", icon: ShieldCheck, link: "/tools/pdf-tools/protect-pdf" },
-  { name: "PDF to HTML", icon: FileCode, link: "/tools/pdf-tools/pdf-to-html" },
-  { name: "Search in PDF", icon: FileSearch, link: "/tools/pdf-tools/search-pdf" },
-  { name: "Extract Images from PDF", icon: FileImage, link: "/tools/pdf-tools/extract-images-from-pdf"},
-];
+export const metadata: Metadata = {
+  title: "Free Online PDF Tools & Converters | CompilePilot",
+  description:
+    "Use free online PDF tools to merge, split, compress, convert, rotate, unlock, sign and edit PDF files. Manage documents quickly with CompilePilot.",
+  alternates: {
+    canonical: pageUrl,
+  },
+  openGraph: {
+    title: "Free PDF Tools & Online PDF Converters | CompilePilot",
+    description:
+      "Explore free PDF tools to merge, split, compress, convert, rotate, unlock, sign, add watermarks, extract pages and images, and perform OCR. Manage PDF documents online with CompilePilot.",
+    url: pageUrl,
+    siteName: "CompilePilot",
+    type: "website",
+    images: [
+      {
+        url: "https://compilepilot.com/pdf-tools-og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Free online PDF tools and converters by CompilePilot",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Free PDF Tools & Online PDF Converters | CompilePilot",
+    description:
+      "Use CompilePilot's online PDF tools to merge, split, compress, convert, rotate, sign and edit PDF files. Manage documents quickly and easily.",
+    images: ["https://compilepilot.com/pdf-tools-og-image.png"],
+  },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": `${pageUrl}#webpage`,
+      url: pageUrl,
+      name: "Free Online PDF Tools & Converters | CompilePilot",
+      description:
+        "Use free online PDF tools to merge, split, compress, convert, rotate, unlock, sign and edit PDF files. Manage documents quickly with CompilePilot.",
+      isPartOf: {
+        "@id": "https://compilepilot.com/#website",
+      },
+      mainEntity: {
+        "@id": `${pageUrl}#pdftools`,
+      },
+    },
+    {
+      "@type": "ItemList",
+      "@id": `${pageUrl}#pdftools`,
+      name: "Online PDF Tools",
+      itemListOrder: "https://schema.org/ItemListOrderAscending",
+      numberOfItems: pdfTools.length,
+      itemListElement: pdfTools.map((tool, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: tool.name,
+      })),
+    },
+  ],
+};
+
+export default function PdfToolsPage() {
   return (
-    <section className="py-12 px-4  md:px-10 bg-gray-50">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-2xl sm:text-4xl font-bold text-center tracking-tight text-slate-900 mb-10">
-          Explore Our PDF Tools
-        </h2>
-
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
-          {tools.map((tool, index) => {
-            const Icon = tool.icon;
-            return (
-              <Link
-                key={index}
-                href={tool.link}
-                className="group flex flex-col items-center justify-center p-5 bg-white rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer"
-              >
-                <div className="p-4 bg-gray-100 rounded-full group-hover:bg-primary-theme transition">
-                  <Icon className="w-8 h-8 text-primary-theme group-hover:text-black" />
-                </div>
-                <p className="mt-3 text-sm font-medium text-gray-700 text-center group-hover:text-primary-theme transition">
-                  {tool.name}
-                </p>
-              </Link>
-            );
-          })}
-        </div>
-      </div>
-    </section>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
+      <PdfToolsSection />
+    </>
   );
 }
-
-export default PdfToolsSection;

@@ -1,7 +1,10 @@
 import React from "react";
 import dynamic from "next/dynamic";
+import type { Metadata } from "next";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
+import JsonToolsSchema from "../components/JsonToolsSchema";
+import { getJsonToolSeo } from "../seo";
 
 interface PageProps {
   params: Promise<{
@@ -9,9 +12,14 @@ interface PageProps {
   }>;
 }
 
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  return getJsonToolSeo(slug)?.metadata ?? {};
+}
+
 const componentsMap: Record<
   string,
-  { title: string; subtitle: string; component: any }
+  { title: string; subtitle: string; component: React.ComponentType }
 > = {
   "json-formatter": {
     title: "JSON Formatter",
@@ -207,32 +215,36 @@ export default async function JsonToolPage({ params }: PageProps) {
   }
 
   const DynamicComponent = tool.component;
+  const toolSeo = getJsonToolSeo(slug);
 
   return (
-    <section className="min-h-screen bg-white text-slate-900 py-20 px-4 md:px-6">
-      <div className="mx-auto max-w-7xl bg-white border border-slate-200 rounded-[2rem] p-5 md:p-10 shadow-sm relative">
-        <Link
-          href="/tools/json-tools"
-          className="inline-flex items-center gap-2 text-sm text-slate-500 hover:text-primary-theme font-medium transition-colors"
-        >
-          <ArrowLeft className="w-4 h-4" />
-          Back to all JSON tools
-        </Link>
+    <>
+      {toolSeo && <JsonToolsSchema schema={toolSeo.buildSchema()} />}
+      <section className="min-h-screen bg-white text-slate-900 py-20 px-4 md:px-6">
+        <div className="mx-auto max-w-7xl bg-white border border-slate-200 rounded-[2rem] p-5 md:p-10 shadow-sm relative">
+          <Link
+            href="/tools/json-tools"
+            className="inline-flex items-center gap-2 text-sm text-slate-500 hover:text-primary-theme font-medium transition-colors"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            Back to all JSON tools
+          </Link>
 
-        <div className="space-y-3 mb-8">
-          {/* <div className="inline-flex rounded-full bg-primary-theme/10 px-4 py-1.5 text-xs font-bold text-primary-theme uppercase tracking-wider">
+          <div className="space-y-3 mb-8">
+            {/* <div className="inline-flex rounded-full bg-primary-theme/10 px-4 py-1.5 text-xs font-bold text-primary-theme uppercase tracking-wider">
             JSON Tool
           </div> */}
-          {/* <h1 className="text-3xl md:text-5xl font-black tracking-tight text-slate-900">
+            {/* <h1 className="text-3xl md:text-5xl font-black tracking-tight text-slate-900">
             {tool.title}
           </h1>
           <p className="text-base text-slate-500">{tool.subtitle}</p> */}
-        </div>
+          </div>
 
-        <div>
-          <DynamicComponent />
+          <div>
+            <DynamicComponent />
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }

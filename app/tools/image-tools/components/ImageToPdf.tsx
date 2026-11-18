@@ -7,7 +7,8 @@ import { jsPDF } from "jspdf";
 export default function ImageToPDF() {
   const [images, setImages] = useState<string[]>([]);
   const [loading, setLoading] = useState(false);
-  const [pdfName, setPdfName] = useState("converted-images");
+  const pdfName = "converted-images";
+  const [pageMargin, setPageMargin] = useState(24);
 
   // Handle image upload
   const handleFileChange = async (
@@ -69,18 +70,20 @@ export default function ImageToPDF() {
           img.onload = () => {
             const pdfWidth = pdf.internal.pageSize.getWidth();
             const pdfHeight = pdf.internal.pageSize.getHeight();
+            const contentWidth = pdfWidth - pageMargin * 2;
+            const contentHeight = pdfHeight - pageMargin * 2;
 
             // Maintain aspect ratio
             const ratio = Math.min(
-              pdfWidth / img.width,
-              pdfHeight / img.height
+              contentWidth / img.width,
+              contentHeight / img.height
             );
 
             const imgWidth = img.width * ratio;
             const imgHeight = img.height * ratio;
 
-            const x = (pdfWidth - imgWidth) / 2;
-            const y = (pdfHeight - imgHeight) / 2;
+            const x = pageMargin + (contentWidth - imgWidth) / 2;
+            const y = pageMargin + (contentHeight - imgHeight) / 2;
 
             if (i > 0) {
               pdf.addPage();
@@ -140,35 +143,55 @@ export default function ImageToPDF() {
         </span>
       </div>
 
-      {/* PDF Name */}
+          {/* PDF Page Margin and Previews */}
       {images.length > 0 && (
-  <div className="mt-6 grid grid-cols-2 md:grid-cols-3 gap-4">
-    {images.map((image, index) => (
-      <div
-        key={index}
-        className="relative rounded-2xl overflow-hidden border border-slate-200 bg-slate-50"
-      >
-        <img
-          src={image}
-          alt={`Preview ${index + 1}`}
-          className="w-full h-40 object-cover"
-        />
+        <>
+          <div className="mt-6">
+            <label
+              htmlFor="pdf-page-margin"
+              className="mb-2 flex items-center justify-between text-sm font-medium text-slate-700"
+            >
+              <span>PDF page margin</span>
+              <span>{pageMargin} px</span>
+            </label>
+            <input
+              id="pdf-page-margin"
+              type="range"
+              min="0"
+              max="80"
+              step="4"
+              value={pageMargin}
+              onChange={(event) => setPageMargin(Number(event.target.value))}
+              className="w-full accent-orange-500"
+            />
+          </div>
+          <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-3">
+            {images.map((image, index) => (
+              <div
+                key={index}
+                className="relative overflow-hidden rounded-2xl border border-slate-200 bg-slate-50"
+              >
+                <img
+                  src={image}
+                  alt={`Preview ${index + 1}`}
+                  className="h-40 w-full object-cover"
+                />
 
-        <button
-          onClick={() =>
-            setImages((prev) =>
-              prev.filter((_, i) => i !== index)
-            )
-          }
-          className="absolute top-2 right-2 bg-white/90 border border-slate-200 rounded-lg px-2 py-1 text-xs font-semibold text-red-500 hover:bg-red-50 cursor-pointer"
-        >
-          ✕
-        </button>
-      </div>
-    ))}
-  </div>
-)}
-
+                <button
+                  onClick={() =>
+                    setImages((prev) =>
+                      prev.filter((_, imageIndex) => imageIndex !== index)
+                    )
+                  }
+                  className="absolute right-2 top-2 cursor-pointer rounded-lg border border-slate-200 bg-white/90 px-2 py-1 text-xs font-semibold text-red-500 hover:bg-red-50"
+                >
+                  ✕
+                </button>
+              </div>
+            ))}
+          </div>
+        </>
+      )}
 
       {/* Convert Button */}
       <button

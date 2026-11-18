@@ -1,6 +1,10 @@
 import React from "react";
 import dynamic from "next/dynamic";
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import { imageTools, ImageTool } from "../data/imageTools";
+import ImageToolSchema from "../components/ImageToolSchema";
+import { getImageToolSeo } from "../seo";
 
 interface PageProps {
   params: Promise<{
@@ -8,11 +12,19 @@ interface PageProps {
   }>;
 }
 
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+
+  return getImageToolSeo(slug)?.metadata ?? {};
+}
+
 /* -----------------------------------
    Dynamic Component Imports
 ----------------------------------- */
 
-const componentsMap: Record<string, any> = {
+const componentsMap: Record<string, React.ComponentType> = {
   CompressImage: dynamic(() => import("../components/CompressImage")),
   ResizeImage: dynamic(() => import("../components/ResizeImage")),
   CropImage: dynamic(() => import("../components/CropImage")),
@@ -47,7 +59,7 @@ function ImageToolDetails({
   DynamicComponent,
 }: {
   tool: ImageTool;
-  DynamicComponent: React.ComponentType<any>;
+  DynamicComponent: React.ComponentType;
 }) {
 
   return (
@@ -112,26 +124,21 @@ export default async function ImageToolPage({
 }: PageProps) {
 
   const { slug } = await params;
-
-  /* -----------------------------------
-     Find Tool
-  ----------------------------------- */
-
-  const tool =
-    imageTools[slug] ||
-    imageTools["resize-image"];
-
-  /* -----------------------------------
-     Load Dynamic Component
-  ----------------------------------- */
-
+  const tool = imageTools[slug];
+  if (!tool) {
+    notFound();
+  }
   const DynamicComponent =
     componentsMap[tool.component];
+  const seo = getImageToolSeo(slug);
 
   return (
-    <ImageToolDetails
-      tool={tool}
-      DynamicComponent={DynamicComponent}
-    />
+    <>
+      {seo && <ImageToolSchema schema={seo.schema} />}
+      <ImageToolDetails
+        tool={tool}
+        DynamicComponent={DynamicComponent}
+      />
+    </>
   );
 }

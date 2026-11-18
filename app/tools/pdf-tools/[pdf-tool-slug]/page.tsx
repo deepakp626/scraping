@@ -1,7 +1,15 @@
 import React from "react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
+import type { Metadata } from "next";
 import { ArrowLeft } from "lucide-react";
+import { getPdfToolSeo } from "../seo";
+import PdfToolSchema from "../components/PdfToolSchema";
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const resolvedParams = await params;
+  return getPdfToolSeo(resolvedParams["pdf-tool-slug"])?.metadata ?? {};
+}
 
 interface PageProps {
   params: Promise<{
@@ -149,6 +157,7 @@ export default async function PdfToolPage({ params }: PageProps) {
   const resolvedParams = await params;
   const slug = resolvedParams["pdf-tool-slug"];
   const tool = componentsMap[slug];
+  const seo = getPdfToolSeo(slug);
 
   if (!tool) {
     return (
@@ -198,6 +207,7 @@ export default async function PdfToolPage({ params }: PageProps) {
 
         {/* Dynamic Tool Component */}
         <div>
+          {seo && <PdfToolSchema schema={seo.schema} />}
           <DynamicComponent />
         </div>
       </div>

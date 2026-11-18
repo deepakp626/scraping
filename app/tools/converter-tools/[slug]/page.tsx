@@ -1,7 +1,10 @@
 import React from "react";
 import dynamic from "next/dynamic";
+import type { Metadata } from "next";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
+import ConverterToolsSchema from "../components/ConverterToolsSchema";
+import { getConverterToolSeo } from "../seo";
 
 interface PageProps {
   params: Promise<{
@@ -9,7 +12,17 @@ interface PageProps {
   }>;
 }
 
-const componentsMap: Record<string, { title: string; subtitle: string; component: any }> = {
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  return getConverterToolSeo(slug)?.metadata ?? {};
+}
+
+const componentsMap: Record<
+  string,
+  { title: string; subtitle: string; component: React.ComponentType }
+> = {
   "excel-to-pdf": {
     title: "Excel to PDF Converter",
     subtitle: "Convert Excel worksheets (.xlsx, .xls) to PDF documents instantly.",
@@ -201,34 +214,38 @@ export default async function ConverterToolPage({ params }: PageProps) {
   }
 
   const DynamicComponent = tool.component;
+  const seo = getConverterToolSeo(slug);
 
   return (
-    <section className="min-h-screen bg-slate-50 text-slate-900 py-16 px-4 md:px-6">
-      <div className="mx-auto max-w-4xl bg-white border border-slate-200 rounded-[2rem] p-6 md:p-10 shadow-sm relative">
-        {/* Back Link */}
-        <Link href="/tools" className="inline-flex items-center gap-2 text-sm text-slate-500 hover:text-primary-theme font-medium mb-6 transition-colors">
-          <ArrowLeft className="w-4 h-4" />
-          Back to all tools
-        </Link>
+    <>
+      {seo && <ConverterToolsSchema schema={seo.schema} />}
+      <section className="min-h-screen bg-slate-50 text-slate-900 py-16 px-4 md:px-6">
+        <div className="mx-auto max-w-4xl bg-white border border-slate-200 rounded-[2rem] p-6 md:p-10 shadow-sm relative">
+          {/* Back Link */}
+          <Link href="/tools" className="inline-flex items-center gap-2 text-sm text-slate-500 hover:text-primary-theme font-medium mb-6 transition-colors">
+            <ArrowLeft className="w-4 h-4" />
+            Back to all tools
+          </Link>
 
-        {/* Header */}
-        <div className="space-y-3 mb-8">
-          <div className="inline-flex rounded-full bg-primary-theme/10 px-4 py-1.5 text-xs font-bold text-primary-theme uppercase tracking-wider">
-            Converter Tool
+          {/* Header */}
+          <div className="space-y-3 mb-8">
+            <div className="inline-flex rounded-full bg-primary-theme/10 px-4 py-1.5 text-xs font-bold text-primary-theme uppercase tracking-wider">
+              Converter Tool
+            </div>
+            <h1 className="text-3xl md:text-5xl font-black tracking-tight text-slate-900">
+              {tool.title}
+            </h1>
+            <p className="text-base text-slate-500">
+              {tool.subtitle}
+            </p>
           </div>
-          <h1 className="text-3xl md:text-5xl font-black tracking-tight text-slate-900">
-            {tool.title}
-          </h1>
-          <p className="text-base text-slate-500">
-            {tool.subtitle}
-          </p>
-        </div>
 
-        {/* Dynamic Component Wrapper */}
-        <div className="">
-          <DynamicComponent />
+          {/* Dynamic Component Wrapper */}
+          <div className="">
+            <DynamicComponent />
+          </div>
         </div>
-      </div>
-    </section>
+        </section>
+    </>
   );
 }

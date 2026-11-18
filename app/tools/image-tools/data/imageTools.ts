@@ -84,7 +84,7 @@ export const imageTools: Record<string, ImageTool> = {
     title: "Image to PDF",
     subtitle: "Convert images to PDF document",
     description: "Combine or convert images into a clean PDF document.",
-    features: ["Merge multiple images", "Adjust margins", "Vector quality preservation"],
+    features: ["Merge multiple images", "Adjust page margins", "Preserve image aspect ratio"],
     actionLabel: "Convert Now",
     component: "ImageToPdf"
   },
