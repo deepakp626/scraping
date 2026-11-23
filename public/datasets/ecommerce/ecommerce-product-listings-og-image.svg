@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="1" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f97316"/>
+      <stop offset="1" stop-color="#fb923c"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#f97316" stop-opacity=".25"/>
+      <stop offset="1" stop-color="#f97316" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#background)"/>
+  <circle cx="1095" cy="85" r="330" fill="url(#glow)"/>
+  <circle cx="80" cy="600" r="330" fill="url(#glow)" opacity=".55"/>
+  <path d="M0 500h1200" stroke="#fff" stroke-opacity=".06"/>
+
+  <g transform="translate(78 62)">
+    <rect width="42" height="42" rx="12" fill="url(#accent)"/>
+    <path d="M11 28V14h5v14zm8 0V9h5v19zm8 0v-9h5v9z" fill="#fff"/>
+    <text x="56" y="30" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700">CompilePilot</text>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="80" y="178" width="270" height="42" rx="21" fill="#f97316" fill-opacity=".12" stroke="#f97316" stroke-opacity=".45"/>
+    <circle cx="104" cy="199" r="5" fill="#fb923c"/>
+    <text x="121" y="205" fill="#fdba74" font-size="15" font-weight="700" letter-spacing="1.5">GLOBAL RETAIL CATALOG DATA</text>
+    <text x="78" y="299" fill="#fff" font-size="58" font-weight="700" letter-spacing="-2">Product listings,</text>
+    <text x="78" y="367" fill="#fff" font-size="58" font-weight="700" letter-spacing="-2">made structured.</text>
+    <text x="82" y="416" fill="#cbd5e1" font-size="21">Identifiers, pricing, inventory, ratings, and more.</text>
+    <text x="82" y="454" fill="#94a3b8" font-size="18">Normalized catalog data across retail marketplaces.</text>
+  </g>
+
+  <g transform="translate(675 155)">
+    <rect width="445" height="330" rx="22" fill="#0f172a" stroke="#334155"/>
+    <rect x="1" y="1" width="443" height="56" rx="21" fill="#1e293b"/>
+    <circle cx="28" cy="29" r="5" fill="#f97316"/>
+    <text x="47" y="35" fill="#e2e8f0" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700">Retail product catalog</text>
+    <text x="358" y="35" fill="#fb923c" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">LIVE DATA</text>
+    <g font-family="Arial, Helvetica, sans-serif" font-size="13">
+      <text x="27" y="91" fill="#64748b">PRODUCT</text>
+      <text x="218" y="91" fill="#64748b">PRICE</text>
+      <text x="312" y="91" fill="#64748b">RATING</text>
+      <path d="M26 108h393M26 165h393M26 222h393M26 279h393" stroke="#334155"/>
+      <rect x="27" y="121" width="30" height="30" rx="7" fill="#1e293b"/>
+      <path d="M35 128h14v16H35zm-2 0h18l-2-4H35z" fill="#fb923c"/>
+      <text x="68" y="141" fill="#f8fafc" font-size="14">Everyday essentials</text>
+      <text x="218" y="141" fill="#fdba74" font-size="14">$24.90</text>
+      <text x="312" y="141" fill="#fbbf24" font-size="14">★ 4.8</text>
+      <rect x="27" y="178" width="30" height="30" rx="7" fill="#1e293b"/>
+      <path d="M35 185h14v16H35zm-2 0h18l-2-4H35z" fill="#fb923c"/>
+      <text x="68" y="198" fill="#f8fafc" font-size="14">Home &amp; kitchen</text>
+      <text x="218" y="198" fill="#fdba74" font-size="14">$58.00</text>
+      <text x="312" y="198" fill="#fbbf24" font-size="14">★ 4.6</text>
+      <rect x="27" y="235" width="30" height="30" rx="7" fill="#1e293b"/>
+      <path d="M35 242h14v16H35zm-2 0h18l-2-4H35z" fill="#fb923c"/>
+      <text x="68" y="255" fill="#f8fafc" font-size="14">Wireless audio</text>
+      <text x="218" y="255" fill="#fdba74" font-size="14">$89.50</text>
+      <text x="312" y="255" fill="#fbbf24" font-size="14">★ 4.9</text>
+    </g>
+    <g transform="translate(27 294)">
+      <circle cx="7" cy="7" r="6" fill="#22c55e"/>
+      <text x="21" y="12" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="14">Identifiers · stock · sellers · variants</text>
+    </g>
+  </g>
+
+  <g transform="translate(80 548)" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700">
+    <rect width="152" height="42" rx="21" fill="#1e293b"/>
+    <text x="23" y="27" fill="#e2e8f0">IDENTIFY</text>
+    <path d="M165 21h36m-7-6 7 6-7 6" fill="none" stroke="#fb923c" stroke-width="2"/>
+    <rect x="214" width="142" height="42" rx="21" fill="#1e293b"/>
+    <text x="240" y="27" fill="#e2e8f0">ENRICH</text>
+    <path d="M369 21h36m-7-6 7 6-7 6" fill="none" stroke="#fb923c" stroke-width="2"/>
+    <rect x="418" width="150" height="42" rx="21" fill="#1e293b"/>
+    <text x="443" y="27" fill="#e2e8f0">DELIVER</text>
+  </g>
+</svg>

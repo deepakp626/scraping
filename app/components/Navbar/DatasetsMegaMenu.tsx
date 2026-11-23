@@ -84,7 +84,7 @@ export const datasetIndustries: DatasetIndustry[] = [
       { name: 'SKU Catalog', icon: Package, link: '/datasets/grocery/sku-catalog' },
       { name: 'Price Monitoring', icon: TrendingUp, link: '/datasets/grocery/price-monitoring' },
       { name: 'Availability', icon: AlertCircle, link: '/datasets/grocery/availability' },
-      { name: 'Promotions & Deals', icon: Percent, link: '/datasets/grocery/promotions' },
+      { name: 'Promotions & Deals', icon: Percent, link: '/datasets/grocery/promotions-deals' },
       { name: 'Nutritional Data', icon: ShieldCheck, link: '/datasets/grocery/nutritional-data' },
       { name: 'Store Locations', icon: MapPin, link: '/datasets/grocery/store-locations' },
       { name: 'Brand Coverage', icon: Tag, link: '/datasets/grocery/brand-coverage' },

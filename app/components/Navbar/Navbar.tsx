@@ -128,7 +128,7 @@ const Navbar = () => {
     // },
     {
       name: 'Developer Tools',
-      href: '/tooles',
+      href: '/tools',
       desc: 'PDF, Image, JSON & Code transformation utilities',
       icon: <Code size={18} className="text-orange-600" />
     },
@@ -452,7 +452,7 @@ const Navbar = () => {
                         {/* View all link for category */}
                         <div className="mt-2 text-right">
                           <Link
-                            href={`/tooles/${activeMobileToolCategory.id}-tooles`}
+                            href={`/tools/${activeMobileToolCategory.id}-tools`}
                             onClick={closeMobileMenu}
                             className="inline-flex items-center gap-1 font-semibold text-orange-600 hover:text-orange-700 text-xs"
                           >

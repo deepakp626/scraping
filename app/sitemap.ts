@@ -281,7 +281,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.9,
     },
     {
-      url: `${SITE_URL}/tooles`,
+      url: `${SITE_URL}/tools`,
       lastModified: currentDate,
       changeFrequency: "weekly",
       priority: 0.9,
@@ -299,31 +299,31 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // 3. Tool category hub pages
   const toolHubPages: MetadataRoute.Sitemap = [
     {
-      url: `${SITE_URL}/tooles/pdf-tooles`,
+      url: `${SITE_URL}/tools/pdf-tools`,
       lastModified: currentDate,
       changeFrequency: "weekly",
       priority: 0.8,
     },
     {
-      url: `${SITE_URL}/tooles/converter-tools`,
+      url: `${SITE_URL}/tools/converter-tools`,
       lastModified: currentDate,
       changeFrequency: "weekly",
       priority: 0.8,
     },
     {
-      url: `${SITE_URL}/tooles/json-tooles`,
+      url: `${SITE_URL}/tools/json-tools`,
       lastModified: currentDate,
       changeFrequency: "weekly",
       priority: 0.8,
     },
     {
-      url: `${SITE_URL}/tooles/image-tooles`,
+      url: `${SITE_URL}/tools/image-tools`,
       lastModified: currentDate,
       changeFrequency: "weekly",
       priority: 0.8,
     },
     {
-      url: `${SITE_URL}/tooles/coding-tooles`,
+      url: `${SITE_URL}/tools/coding-tools`,
       lastModified: currentDate,
       changeFrequency: "weekly",
       priority: 0.8,
@@ -332,7 +332,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // 4. PDF Tools
   const pdfToolPages: MetadataRoute.Sitemap = PDF_TOOL_SLUGS.map((slug) => ({
-    url: `${SITE_URL}/tooles/pdf-tooles/${slug}`,
+    url: `${SITE_URL}/tools/pdf-tools/${slug}`,
     lastModified: currentDate,
     changeFrequency: "monthly",
     priority: 0.7,
@@ -340,7 +340,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // 5. Converter Tools
   const converterToolPages: MetadataRoute.Sitemap = CONVERTER_TOOL_SLUGS.map((slug) => ({
-    url: `${SITE_URL}/tooles/converter-tools/${slug}`,
+    url: `${SITE_URL}/tools/converter-tools/${slug}`,
     lastModified: currentDate,
     changeFrequency: "monthly",
     priority: 0.7,
@@ -348,7 +348,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // 6. JSON Tools
   const jsonToolPages: MetadataRoute.Sitemap = JSON_TOOL_SLUGS.map((slug) => ({
-    url: `${SITE_URL}/tooles/json-tooles/${slug}`,
+    url: `${SITE_URL}/tools/json-tools/${slug}`,
     lastModified: currentDate,
     changeFrequency: "monthly",
     priority: 0.7,
@@ -356,7 +356,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // 7. Image Tools
   const imageToolPages: MetadataRoute.Sitemap = IMAGE_TOOL_SLUGS.map((slug) => ({
-    url: `${SITE_URL}/tooles/image-tooles/${slug}`,
+    url: `${SITE_URL}/tools/image-tools/${slug}`,
     lastModified: currentDate,
     changeFrequency: "monthly",
     priority: 0.7,
@@ -364,7 +364,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // 8. Coding Tools
   const codingToolPages: MetadataRoute.Sitemap = CODING_TOOL_SLUGS.map((slug) => ({
-    url: `${SITE_URL}/tooles/coding-tooles/${slug}`,
+    url: `${SITE_URL}/tools/coding-tools/${slug}`,
     lastModified: currentDate,
     changeFrequency: "monthly",
     priority: 0.7,

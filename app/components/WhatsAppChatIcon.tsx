@@ -11,7 +11,7 @@ const WhatsAppChatIcon = () => {
       </div>
 
       <a 
-        href="https://wa.me/123456789" 
+        href="https://wa.me/6260009609" 
         target="_blank" 
         rel="noopener noreferrer"
         className="relative flex items-center justify-center w-14 h-14 bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-full shadow-lg hover:shadow-[#25D366]/40 transition-all duration-300 hover:-translate-y-1"

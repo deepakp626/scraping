@@ -55,12 +55,12 @@ const Contact = () => {
                                 <div>
                                     <h3 className="text-white font-semibold mb-1">Email Us</h3>
                                     <p className="text-slate-400 text-sm mb-1">Our friendly team is here to help.</p>
-                                    <a href="mailto:hello@scraping.inc" className="text-primary-theme hover:text-orange-300 transition-colors font-medium">hello@scraping.inc</a>
+                                    <a href="mailto:deepakcontact626@gmail.com" className="text-primary-theme hover:text-orange-300 transition-colors font-medium">deepakcontact626@gmail.com</a>
                                 </div>
                             </div>
 
                             {/* Contact Method 2 */}
-                            <div className="flex items-start gap-4">
+                            {/* <div className="flex items-start gap-4">
                                 <div className="w-12 h-12 rounded-2xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center shrink-0">
                                     <MapPin className="text-primary-theme" size={24} />
                                 </div>
@@ -69,7 +69,7 @@ const Contact = () => {
                                     <p className="text-slate-400 text-sm mb-1">Come say hello at our office HQ.</p>
                                     <span className="text-primary-theme font-medium">100 Innovation Drive, Tech City, CA 94043</span>
                                 </div>
-                            </div>
+                            </div> */}
 
                             {/* Contact Method 3 */}
                             <div className="flex items-start gap-4">
@@ -78,8 +78,7 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <h3 className="text-white font-semibold mb-1">Phone</h3>
-                                    <p className="text-slate-400 text-sm mb-1">Mon-Fri from 8am to 5pm.</p>
-                                    <a href="tel:+11234567890" className="text-primary-theme hover:text-orange-300 transition-colors font-medium">+1 (123) 456-7890</a>
+                                    <a href="tel:+916260009609" className="text-primary-theme hover:text-orange-300 transition-colors font-medium">+91 626-000-9609</a>
                                 </div>
                             </div>
                         </div>

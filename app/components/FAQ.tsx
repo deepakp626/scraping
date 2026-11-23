@@ -1,8 +1,15 @@
 "use client"
 import React, { useState } from 'react'
+import { usePathname } from 'next/navigation'
 
 const FAQ = () => {
+    const pathname = usePathname();
     const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+    // Hide the FAQ component on any subpages under /datasets/
+    if (pathname?.startsWith('/datasets/')) {
+        return null;
+    }
 
     const faqs = [
         {
@@ -32,13 +39,13 @@ const FAQ = () => {
     ];
 
     return (
-        <section className="bg-gray-50 py-20 px-6">
-            <div className="max-w-3xl mx-auto">
-                <div className="text-center mb-14">
-                    <span className="text-primary-theme text-sm font-semibold tracking-widest uppercase">
+        <section className="bg-gray-50 px-6 py-20">
+            <div className="mx-auto max-w-3xl">
+                <div className="mb-14 text-center">
+                    <span className="font-semibold text-primary-theme text-sm uppercase tracking-widest">
                         FAQs
                     </span>
-                    <h2 className="text-3xl font-bold mt-2 text-secondary-theme">
+                    <h2 className="mt-2 font-bold text-secondary-theme text-3xl">
                         Frequently Asked Questions
                     </h2>
                 </div>
@@ -46,11 +53,11 @@ const FAQ = () => {
                     {faqs.map((faq, i) => (
                         <div
                             key={i}
-                            className="bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm"
+                            className="bg-white shadow-sm border border-gray-100 rounded-2xl overflow-hidden"
                         >
                             <button
                                 onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                                className="w-full text-left px-6 py-5 flex items-center justify-between gap-4 cursor-pointer hover:bg-orange-50 transition-colors"
+                                className="flex justify-between items-center gap-4 hover:bg-orange-50 px-6 py-5 w-full text-left transition-colors cursor-pointer"
                             >
                                 <span className="font-semibold text-secondary-theme text-lg">{faq.q}</span>
                                 <span
@@ -60,7 +67,7 @@ const FAQ = () => {
                                 </span>
                             </button>
                             {openFaq === i && (
-                                <div className="px-6 pb-5 text-gray-500 text-base leading-relaxed border-t border-gray-50 pt-4">
+                                <div className="px-6 pt-4 pb-5 border-gray-50 border-t text-gray-500 text-base leading-relaxed">
                                     {faq.a}
                                 </div>
                             )}

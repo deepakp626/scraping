@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="1" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f97316"/>
+      <stop offset="1" stop-color="#fb923c"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#f97316" stop-opacity=".24"/>
+      <stop offset="1" stop-color="#f97316" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#background)"/>
+  <circle cx="1090" cy="90" r="330" fill="url(#glow)"/>
+  <circle cx="75" cy="600" r="330" fill="url(#glow)" opacity=".55"/>
+  <path d="M0 500h1200" stroke="#fff" stroke-opacity=".06"/>
+
+  <g transform="translate(78 62)">
+    <rect width="42" height="42" rx="12" fill="url(#accent)"/>
+    <path d="M11 28V14h5v14zm8 0V9h5v19zm8 0v-9h5v9z" fill="#fff"/>
+    <text x="56" y="30" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700">CompilePilot</text>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="80" y="180" width="282" height="42" rx="21" fill="#f97316" fill-opacity=".12" stroke="#f97316" stroke-opacity=".45"/>
+    <circle cx="104" cy="201" r="5" fill="#fb923c"/>
+    <text x="121" y="207" fill="#fdba74" font-size="16" font-weight="700" letter-spacing="2">CUSTOM DATASET SERVICES</text>
+    <text x="78" y="300" fill="#fff" font-size="62" font-weight="700" letter-spacing="-2">Web data,</text>
+    <text x="78" y="371" fill="#fff" font-size="62" font-weight="700" letter-spacing="-2">ready to use.</text>
+    <text x="82" y="421" fill="#cbd5e1" font-size="22">Collect, clean, and deliver structured public website data.</text>
+    <text x="82" y="456" fill="#94a3b8" font-size="19">Choose your fields, locations, categories, and format.</text>
+  </g>
+
+  <g transform="translate(690 164)">
+    <rect width="432" height="314" rx="22" fill="#0f172a" stroke="#334155"/>
+    <rect x="1" y="1" width="430" height="55" rx="21" fill="#1e293b"/>
+    <circle cx="28" cy="28" r="5" fill="#f97316"/>
+    <text x="47" y="34" fill="#e2e8f0" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700">Structured dataset</text>
+    <text x="354" y="34" fill="#fb923c" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">CSV</text>
+    <g font-family="Arial, Helvetica, sans-serif" font-size="14">
+      <text x="27" y="91" fill="#64748b">NAME</text>
+      <text x="167" y="91" fill="#64748b">LOCATION</text>
+      <text x="318" y="91" fill="#64748b">PRICE</text>
+      <path d="M26 108h380M26 157h380M26 206h380M26 255h380" stroke="#334155"/>
+      <text x="27" y="139" fill="#f8fafc">Product Alpha</text>
+      <text x="167" y="139" fill="#cbd5e1">New York</text>
+      <text x="318" y="139" fill="#fdba74">$49.00</text>
+      <text x="27" y="188" fill="#f8fafc">Product Beta</text>
+      <text x="167" y="188" fill="#cbd5e1">Austin</text>
+      <text x="318" y="188" fill="#fdba74">$32.50</text>
+      <text x="27" y="237" fill="#f8fafc">Product Gamma</text>
+      <text x="167" y="237" fill="#cbd5e1">Seattle</text>
+      <text x="318" y="237" fill="#fdba74">$68.00</text>
+    </g>
+    <g transform="translate(27 275)">
+      <circle cx="7" cy="7" r="6" fill="#22c55e"/>
+      <text x="21" y="12" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="14">Clean · validated · delivery-ready</text>
+    </g>
+  </g>
+
+  <g transform="translate(80 548)" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700">
+    <rect width="160" height="42" rx="21" fill="#1e293b"/>
+    <text x="24" y="27" fill="#e2e8f0">COLLECT</text>
+    <path d="M173 21h36" stroke="#fb923c" stroke-width="2"/>
+    <path d="m203 15 7 6-7 6" fill="none" stroke="#fb923c" stroke-width="2"/>
+    <rect x="222" width="145" height="42" rx="21" fill="#1e293b"/>
+    <text x="247" y="27" fill="#e2e8f0">CLEAN</text>
+    <path d="M380 21h36" stroke="#fb923c" stroke-width="2"/>
+    <path d="m410 15 7 6-7 6" fill="none" stroke="#fb923c" stroke-width="2"/>
+    <rect x="429" width="160" height="42" rx="21" fill="#1e293b"/>
+    <text x="452" y="27" fill="#e2e8f0">DELIVER</text>
+  </g>
+</svg>
